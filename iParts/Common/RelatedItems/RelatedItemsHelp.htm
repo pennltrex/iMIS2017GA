@@ -1,0 +1,144 @@
+<html>
+<head></head>
+<body>
+	<h1>Related Items</h1>
+    <p>The Related Items iPart displays a list of images based on the results of an IQA query. 
+    For example, you can write a query to display the profile pictures of everyone who has registered for an event, 
+    or to display products in the same category.</p>
+		<ul>
+			<li><strong>Name</strong> - Enter a name for the content item. 
+			This text only appears during design mode (configuration).</li>
+
+			<li><strong>Title</strong> - Enter the text to display above this 
+			iPart on the rendered page. If blank, no title displays.</li>
+
+			<li><strong>Do not render in design mode</strong> - Enable this option 
+			to prevent content record data from being loaded in the content editor. 
+			This improves performance during design time (configuration).</li>
+
+			<li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class that 
+        will be applied to the iPart at runtime. Add this CSS 
+        class to an appropriate style sheet. Using such classes lets you apply special 
+        formatting to targeted iParts in a reusable way.</li>
+            <li><strong>Display a border around this content</strong> - Enable this 
+			option to display a border around this iPart on the rendered page.</li>
+
+            <li><strong>Display content within a collapsible panel</strong> - Enable to allow users
+                to minimize the panel within the page, to work with dense pages more efficiently.</li>
+            <ul>
+                <li><strong>Show the content as collapsed </strong>- Enable to display the panel minimized
+                    by default.
+                    <br />
+                    <i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is hidden
+                    from view.</li>
+            </ul>             
+
+            <li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+            <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                hidden on extra small devices, such as smartphones, where the width of the 
+                screen is less than 768px.</li>
+            <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                small devices, such as tablets, where the width of the screen is greater than 
+                768px and less than 991px.</li>
+            <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                medium devices, such as laptops, where the width of the screen is greater than 
+                992px and less than 1199px.</li>
+            <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                large devices, such as wide computer monitors, where the width of the screen is 
+                greater than or equal to 1200px wide.
+            <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for 
+                a page are displayed, regardless of the <strong>Display on screen sizes (for 
+                responsive themes only)</strong> options that are selected.</li>
+            </ul>
+        </li>
+
+            <li><strong>Source query</strong> - Click <strong>select</strong> and browse to the IQA query that 
+            you want to see results for in the list.</li>
+
+            <li><strong>Maximum results</strong> - Enter the total number of results to be 
+                displayed. </li>
+            
+            <li><strong>Description</strong> - If you want a description to be displayed below the title and above
+            the list, enter the text for the description here. The variable {0} can be used in the description to display
+            the total record count number. For example, <i>{0} people also bought this product.</i></li>	
+
+            <li><strong>No results found message</strong> - Message displayed if no results are returned. 
+                If this field is blank, no message is displayed to the user when there are no results.</li>
+            
+    </ul>
+    <p>
+        <b>Filter Options</b></p>
+        You can dynamically filter the query results 
+    based on the value of a particular property.
+        If a <b>Filter column</b> is selected, the iPart looks for a URL parameter to set the value for that property. 
+        The name of the URL parameter is defined in the <b>Filter on URL parameter</b> field. 
+    For example, to filter the query to show only the category passed in the URL 
+    (for example <i>Category=GIFTS</i>), choose the <i>ProductCategory</i> column and specify <i>Category</i> as the URL parameter.
+    <ul>
+            <li><strong>Filter column</strong> - Select a data column to filter the query 
+                results on. <i>Note: </i>Each property you select on the <b>Display</b> tab 
+                of your query in IQA is available as a <b>Filter column</b> option. </li>            		
+            
+            <li><strong>Filter on URL parameter</strong> - Enter the URL parameter name by which you want to 
+                filter values. You can use an existing URL parameter, for example <i>Category</i>, 
+                or you can enter a unique value.</li>
+            
+    </ul>
+    <p>
+        <b>Display Options</b></p>
+    <ul>           
+            
+            <li><strong>Item image file path</strong> - Enter the file path where item images 
+                are located, or leave blank to use the default path. If the source query has a 
+                column with an alias of <i>Image</i>, then that value is used for the 
+                image file name, and the default path (if not specified in the query) is <i>/images/ImageLibrary</i>. If there 
+                is no <i>Image</i> column in the source query, then the default path is 
+                <i>/images/Profile</i>. In this case, the iPart will attempt to locate a profile 
+                picture based on the ID for each result.</li>  
+			
+            <li><strong>Default item image</strong> - Enter the file name for the image to display when a query result has no image. 
+                Include the file path if it is different than the default path or the path 
+                specified in <strong>Item image file path</strong>. Example: 
+                <em>/images/MySite/default_product.jpg</em>.</li>
+
+            <li><strong>Item image size</strong> - Choose a size for the images that are displayed for the query results.</li>
+
+        <li><strong>List orientation</strong> - Choose whether to display the list of results horizontally or vertically.</li>
+        <ul>
+            <li><strong>Enable horizontal scrolling</strong> - If the <strong>List orientation</strong> is Horizontal, select this option to 
+                display the results in a scrollable list. If this option is enabled, the Tooltip 
+                option is not available for <strong>Display item name as.</strong></li>
+            <li><strong>Scroll width</strong> - If <strong>Enable horizontal scrolling</strong> is enabled, enter the number of pixels for the 
+                width of the scrollable list. A value of 0 sets the width to 100% of the column where the iPart is placed.</li>
+        </ul>
+
+            <li><strong>Display item name as</strong> - Choose whether to display the name of each result as a tooltip when the user 
+            hovers over the image or as a label which appears below the image. The source query 
+                must include a column with an alias of <i>Name</i> in order to display an 
+                item name.</li>
+                <ul>
+                <li><strong>Label length</strong> - If displaying the item name as a label, choose the number of characters to display in the label. 
+                Names longer than this will be truncated.</li>                     
+                </ul>
+            <li><strong>Items link to (URL or shortcut)</strong> - The URL or shortcut used when the image is clicked. 
+            If blank, the image is not clickable. The URL may be relative to 
+                the website root; for example the link to <i>
+                http://www.yoursite.com/Member/iMIS/ContactManagement/ContactLayouts/Account_Page.aspx</i> 
+                can be entered as <i>
+                Member/iMIS/ContactManagement/ContactLayouts/Account_Page.aspx</i>. 
+            URL parameters may be added to the URL or shortcut. To dynamically add the value of an item property, 
+            you can include the property or column name as a variable by enclosing it in {}. For example, to include a 
+            product ID in the URL where the column name for product ID is <i>key_Id</i>, you can append <i>?iProductID={key_Id}</i> 
+                to the URL. For queries that return contacts, the ID value
+            of the contact is automatically appended to the URL.  </li>
+                                        
+		</ul>
+		
+	<p><strong>Notes</strong></p>
+		<ul>
+			<li>For sample queries that work with this iPart, see <i>$/Samples/RelatedItems</i> and <i>$/Samples/QueryProfilePictureList</i> in IQA.</li>
+			<li>For more information, see "<span class="C1HJump">Displaying query results in iParts</span>".</li>
+    </ul>
+    
+</body>
+</html>

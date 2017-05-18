@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLNUMERIC          1       19      ""   1     TaggedPageSectionID                        ""
+2       SQLNUMERIC          1       19      ""   2     TaggedPageLayoutID                         ""
+3       SQLNUMERIC          1       19      ""   3     TaggedSectionID                            ""
+4       SQLNUMERIC          1       19      ""   4     SectionWidth                               ""

@@ -1,0 +1,20 @@
+10.0
+18
+1       SQLNCHAR            2       60      ""   1     TABLE_NAME                             SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       60      ""   2     FIELD_NAME                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     FIELD_TYPE                             SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              0       4       ""   4     FIELD_LENGTH                           ""
+5       SQLTINYINT          0       1       ""   5     DECIMAL_POSITIONS                      ""
+6       SQLNCHAR            2       60      ""   6     PROMPT                                 SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       60      ""   7     VALIDATION_TABLE                       SQL_Latin1_General_CP1_CI_AS
+8       SQLBIT              1       1       ""   8     MULTI_SELECT                           ""
+9       SQLNCHAR            2       510     ""   9     MICRO_HELP                             SQL_Latin1_General_CP1_CI_AS
+10      SQLINT              0       4       ""   10    SEQ                                    ""
+11      SQLNCHAR            2       60      ""   11    OLD_FIELD_NAME                         SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       120     ""   12    FORMAT_MASK                            SQL_Latin1_General_CP1_CI_AS
+13      SQLINT              0       4       ""   13    OBJ_HEIGHT                             ""
+14      SQLINT              0       4       ""   14    OBJ_WIDTH                              ""
+15      SQLINT              0       4       ""   15    PROMPT_WIDTH                           ""
+16      SQLTINYINT          0       1       ""   16    AUTO_CONVERSION                        ""
+17      SQLNCHAR            2       510     ""   17    DEFAULT_VALUE                          SQL_Latin1_General_CP1_CI_AS
+18      SQLBINARY           2       8       ""   18    TIME_STAMP                             ""

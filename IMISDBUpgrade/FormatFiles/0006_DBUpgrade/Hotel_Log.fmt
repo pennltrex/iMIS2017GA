@@ -1,0 +1,10 @@
+11.0
+8
+1       SQLINT              0       4       ""   1     HOTEL_LOG_NUMBER                     ""
+2       SQLNCHAR            2       20      ""   2     MEETING                              SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       62      ""   3     PRODUCT_CODE                         SQL_Latin1_General_CP1_CI_AS
+4       SQLNUMERIC          1       19      ""   4     ORDER_NUMBER                         ""
+5       SQLNCHAR            2       20      ""   5     CHANGE_TYPE                          SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            4       0       ""   6     TEXT                                 SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         1       8       ""   7     DATE_TIME                            ""
+8       SQLBINARY           2       8       ""   8     TIME_STAMP                           ""

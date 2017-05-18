@@ -1,0 +1,2 @@
+<%@ Control Language="c#" Inherits="Asi.Web.UI.Common.WorkflowManagement.Utilities.AdLibDesign" CodeFile="AdLibDesign.ascx.cs" %>
+<p align=center><h3>AdLib Design</h3></p>

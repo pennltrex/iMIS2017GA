@@ -1,0 +1,32 @@
+11.0
+30
+1       SQLNCHAR            2       20      ""   1     ID                                               SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     OriginalTransaction                              ""
+3       SQLINT              0       4       ""   3     TransactionNumber                                ""
+4       SQLNCHAR            2       20      ""   4     SourceSystem                                     SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     TransactionDate                                  ""
+6       SQLDATETIME         1       8       ""   6     DateReceived                                     ""
+7       SQLNUMERIC          1       19      ""   7     Amount                                           ""
+8       SQLNCHAR            2       20      ""   8     Fund                                             SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       80      ""   9     AppealCode                                       SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       20      ""   10    SolicitorID                                      SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       20      ""   11    CheckNumber                                      SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       22      ""   12    PaymentType                                      SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       20      ""   13    CampaignCode                                     SQL_Latin1_General_CP1_CI_AS
+14      SQLINT              0       4       ""   14    FiscalYear                                       ""
+15      SQLINT              0       4       ""   15    FiscalMonth                                      ""
+16      SQLNCHAR            2       60      ""   16    GiftType                                         SQL_Latin1_General_CP1_CI_AS
+17      SQLINT              0       4       ""   17    InvoiceReferenceNumber                           ""
+18      SQLINT              0       4       ""   18    ReceiptID                                        ""
+19      SQLINT              0       4       ""   19    MatchingTransaction                              ""
+20      SQLTINYINT          0       1       ""   20    IsMatchingGift                                   ""
+21      SQLNCHAR            2       20      ""   21    MemorialID                                       SQL_Latin1_General_CP1_CI_AS
+22      SQLNCHAR            2       20      ""   22    PledgeID                                         SQL_Latin1_General_CP1_CI_AS
+23      SQLNCHAR            2       510     ""   23    ListAs                                           SQL_Latin1_General_CP1_CI_AS
+24      SQLNUMERIC          1       19      ""   24    RequestNumber                                    ""
+25      SQLDATETIME         1       8       ""   25    InstallmentDate                                  ""
+26      SQLNCHAR            2       200     ""   26    MemorialNameText                                 SQL_Latin1_General_CP1_CI_AS
+27      SQLMONEY            0       8       ""   27    FairMktValue                                     ""
+28      SQLNCHAR            2       20      ""   28    MemorialTributeType                              SQL_Latin1_General_CP1_CI_AS
+29      SQLNCHAR            4       0       ""   29    MemorialTributeMessage                           SQL_Latin1_General_CP1_CI_AS
+30      SQLBINARY           2       8       ""   30    TIME_STAMP                                       ""

@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLNCHAR            2       100     ""   1     TaxAuthorityLevelDesc                          SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     TaxAuthorityLevelCode                          ""
+3       SQLUNIQUEID         1       16      ""   3     TaxAuthorityLevelKey                           ""

@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLUNIQUEID         1       16      ""   1     MethodSetDetailKey                                   ""
+2       SQLBIT              1       1       ""   2     IsAvailableForCreditHold                             ""
+3       SQLUNIQUEID         1       16      ""   3     PaymentMethodKey                                     ""

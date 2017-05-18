@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" Inherits="Asi.Web.UI.TemplateGalleryMasterPageBase" %>
+<!DOCTYPE html>
+<script language="C#" runat="server">
+
+
+    /// <summary>
+    /// Provides information about content areas that this template uses.
+    /// </summary>
+    override protected void EnsureContentAreas()
+    {
+        HomepageContentAreas = new List<ContentTemplateArea>(
+            new[] { HomepageContentArea1 });
+        InteriorContentAreas = new List<ContentTemplateArea>(
+            new[] { HeaderLogo });
+    }
+
+    protected override void OnPreRender(EventArgs e)
+    {
+        base.OnPreRender(e);
+
+        //Set logo link
+        if (Page is Asi.Web.UI.DisplayPageBase && ((Asi.Web.UI.DisplayPageBase)Page).iMISWebsite != null)
+            HeaderLogoLink.NavigateUrl = ((Asi.Web.UI.DisplayPageBase)Page).iMISWebsite.WebsiteBaseUrl;
+        else
+            HeaderLogoLink.NavigateUrl = Asi.Web.Utilities.GetTildeExpansion();
+
+    }
+</script>
+<html id="MainHtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Print Master Page</title>
+    <asp:ContentPlaceHolder ID="TemplateHead" runat="server" />
+</head>
+<body id="MainBody" runat="server" clientidmode="Static">
+    <form id="TemplateForm" method="post" runat="server">
+    <telerik:RadScriptManager ID="ScriptManager1" runat="server" EnableCdn="false" EnablePageMethods="true"
+        EnablePartialRendering="true" EnableScriptGlobalization="true" AsyncPostBackTimeout="3600">
+    </telerik:RadScriptManager>
+    <div id="masterWrapper">
+        <div id="doc3" class="yui-t2" role="banner">
+            <div id="hd" role="banner">
+                <div id="masterHeaderBackground">
+                    <!-- This <div> block is for optional display of a header image -->
+                    <asp:HyperLink ID="HeaderLogoLink" runat="server" ToolTip="Home">
+                        <!-- Logo -->
+                        <asiweb:ContentTemplateArea ID="HeaderLogo" TemplateAreaName="HeaderLogo" HonorContentRecordLayout="true"
+                            runat="server" />
+                    </asp:HyperLink>
+                </div>
+            </div>
+        </div>
+        <div id="bd">
+            <div id="masterContentArea">
+                <!-- This panel contains the Main content area for a page -->
+                <asp:Panel role="main" class="ContentPanel" runat="server" ID="ContentPanel">
+                    <!-- This provides a placeholder for any applicable User Messages that a page needs to display -->
+                    <asp:ContentPlaceHolder ID="TemplateUserMessages" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <asp:Panel ID="TemplatePrintDisplay" runat="server">
+                    </asp:Panel>
+                    <asp:ContentPlaceHolder ID="TemplateBody" runat="server">
+                    </asp:ContentPlaceHolder>
+                </asp:Panel>
+                <!-- This panel will contain the Button panel for any page that has command buttons (e.g., Save/Cancel) -->
+                <asp:Panel class="ButtonPanel NotPrinted" runat="server" ID="ButtonPanel">
+                    <div id="masterMainButtonBar" class="CommandBar">
+                        <asiweb:CommandButtonBar ID="ButtonBar" runat="server" TargetControlID="ContentDiv" />
+                        <asp:ContentPlaceHolder ID="TemplateButtonBar" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </asp:Panel>
+            </div>
+        </div>
+        <div id="masterFooterPush">
+        </div>
+    </div>
+    <div id="ft">
+        <div id="masterFooterNavigation">
+        </div>
+        <div id="masterFooterCopyright">
+            Copyright &copy; Advanced Solutions International.
+        </div>
+    </div>
+    <asp:Panel ID="InteriorPageContent" runat="server" Visible="false">
+    </asp:Panel>
+    <asp:Panel ID="HomePageContent" runat="server" Visible="false">
+        <asiweb:ContentTemplateArea ID="HomepageContentArea1" TemplateAreaName="HomepageContentArea1"
+            HonorContentRecordLayout="true" runat="server" Visible="false" />
+    </asp:Panel>
+    </form>
+
+        <!--jscript from Page.ResgisterStartupScript extention is loaded here -->
+        <asp:contentplaceholder id ="TemplateScripts" runat="server"></asp:contentplaceholder>	    
+        
+</body>
+</html>

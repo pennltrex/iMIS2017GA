@@ -1,0 +1,18 @@
+10.0
+16
+1       SQLUNIQUEID         1       16      ""   1     OrderTaxLineKey                                    ""
+2       SQLUNIQUEID         1       16      ""   2     OrderKey                                           ""
+3       SQLUNIQUEID         1       16      ""   3     ProductKey                                         ""
+4       SQLDECIMAL          1       19      ""   4     TaxAmount                                          ""
+5       SQLDECIMAL          1       19      ""   5     TaxAmountHome                                      ""
+6       SQLDECIMAL          1       19      ""   6     TaxableAmount                                      ""
+7       SQLDECIMAL          1       19      ""   7     ExemptAmount                                       ""
+8       SQLBIT              1       1       ""   8     IsExemptFromIncludedTax                            ""
+9       SQLBIT              1       1       ""   9     IsTaxInclusive                                     ""
+10      SQLUNIQUEID         1       16      ""   10    OrderLineKey                                       ""
+11      SQLNCHAR            2       400     ""   11    TaxPlan                                            SQL_Latin1_General_CP1_CI_AS
+12      SQLUNIQUEID         1       16      ""   12    UpdatedByUserKey                                   ""
+13      SQLDATETIME         0       8       ""   13    UpdatedOn                                          ""
+14      SQLUNIQUEID         1       16      ""   14    CreatedByUserKey                                   ""
+15      SQLDATETIME         0       8       ""   15    CreatedOn                                          ""
+16      SQLDATETIME         1       8       ""   16    MarkedForDeleteOn                                  ""

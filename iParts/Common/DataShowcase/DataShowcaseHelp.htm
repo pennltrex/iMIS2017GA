@@ -1,0 +1,218 @@
+<html>
+<body>
+    <h1>
+        Data Showcase</h1>
+    <!-- Use class="v10only" to make a tag visible for iMIS 15 only;
+		 Use class="v100only" to make a tag visible for iMIS 100 only;
+		 everything else appears common to both products.
+		-->
+    <p>
+        The Content HTML iPart lets you leverage HTML to create compelling designs; the
+        Data Showcase iPart lets you combine this power with variables that merge in your
+        <i>iMIS</i> data, dynamically and reusably. When you specify data sources, such
+        as <i>Event</i> and <i>Party</i>, you can then use variables in your HTML that will
+        insert values from these data sources (such as venue details), styled for your needs.
+        You can use for each structures to display groups of values (such as all functions),
+        and you can have the iPart hide itself if it detects any data errors.
+    </p>
+    <ul>
+        <li><strong>Name</strong> - Enter a name for the content item. This text appears during
+            design mode (configuration).</li>
+        <li><strong>Title</strong> - Enter the text to display above this iPart on the rendered
+            page. If blank, no title displays. The title may contain data placeholders which
+            will be resolved against the data sources e.g. if the iPart is showing details of
+            an Event, the Event name could be shown within the title.</li>
+        <li><strong>Do not render in design mode</strong> - Select this option to prevent content
+            record data from being loaded in the content editor. This improves performance during
+            design time (configuration).</li>
+        <li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class to associate
+            with this iPart, which will add a DIV so named around the iPart. Add this CSS class
+            to an appropriate style sheet. Using such classes lets you apply special formatting
+            to targeted iParts in a reusable way.</li>
+        <li><strong>Display a border around this content</strong> - Select this option to display
+            a border around this iPart on the rendered page.</li>
+        <li><strong>Display content within a collapsible panel</strong> - Enable to allow users
+            to minimize the panel within the page, to work with dense pages more efficiently.</li>
+        <ul>
+            <li><strong>Show the content as collapsed </strong>- Enable to display the panel minimized
+                by default.
+                <br />
+                <i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is hidden
+                from view.</li>
+        </ul>
+        <li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+            <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                hidden on extra small devices, such as smartphones, where the width of the 
+                screen is less than 768px.</li>
+            <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                small devices, such as tablets, where the width of the screen is greater than 
+                768px and less than 991px.</li>
+            <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                medium devices, such as laptops, where the width of the screen is greater than 
+                992px and less than 1199px.</li>
+            <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                large devices, such as wide computer monitors, where the width of the screen is 
+                greater than or equal to 1200px wide.
+            <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for 
+                a page are displayed, regardless of the <strong>Display on screen sizes (for 
+                responsive themes only)</strong> options that are selected.</li>
+            </ul>
+        </li>
+<!-- end common base class options -->
+        <li><strong>Hide content if any errors are found</strong>
+            - Hide the content from the user if any errors are detected that will stop the content
+            resolving fully. This will prevent the user from seeing partly resolved content
+            due to
+            <ul>
+                <li>Invalid datasource definitions</li>
+                <li>Invalid placeholder structure within the content</li>
+                <li>References to datasource properties that do not exist</li>
+                <li>Data sources that do not return any data</li>
+            </ul>
+        </li>
+        <li><strong>Data sources</strong> - The <a href="#datasources">data sources</a> used
+            to resolve placeholders in the content. </li>
+        <li><strong>Content</strong> - The HTML content, containing <a href="#placeholders">
+            placeholders</a>, that will be resolved against the data sources and displayed to
+            the user.</li>
+    </ul>
+    <p id="datasources">
+        <b>Data sources</b></p>
+    <ul>
+        <li>You can define any number of data sources. </li>
+        <li>For your data source, you may use any valid data contract (<em>minus</em> the &quot;Data&quot;
+            suffix -- that is, <strong><a href="http://docs.imis.com/SOA/#!XMLDocuments/SOA/html/N_Asi_Soa_Events_DataContracts.htm">
+                EventData</a></strong> is sourced as <strong>Event</strong>).<ul>
+                    <p><em>Tip:</em> Browse the <a href="http://docs.imis.com/SOA/#!commonentitytypes1.htm">
+                        <strong>Common Entity Types</strong> (SOA Helpsite</a>) for key data contracts (entities)
+                        and their properties:</p>
+                    <li class="style1"><a href="http://docs.imis.com/SOA/membershipprimaryent.htm">Membership
+                        entities</a> </li>
+                    <li class="style1"><a href="http://docs.imis.com/SOA/commerceprimaryentit.htm">Commerce
+                        entities</a> </li>
+                    <li class="style1"><a href="http://docs.imis.com/SOA/eventprimaryentities.htm">Event
+                        entities</a> </li>
+                    <li class="style1"><a href="http://docs.imis.com/SOA/fundraisingprimaryen.htm">Fundraising
+                        entities</a></li>
+                </ul>
+        </li>
+        <li>Each data source has the following properties:<ul>
+            <li><strong>As</strong> - The name by which to refer to the data source. Each data source
+                must have a unique name. </li>
+            <li><strong>From</strong> - The SOA Entity type that the data source returns.</li>
+            <li><strong>Where</strong> - The where clause used to locate the Entity. Consists of
+                <ul>
+                    <li><strong>Property</strong> - The Entity property to search on. Typically the Entity
+                        Id e.g. EventId, PartyId, ItemId. Multiple properties may be specified using | as
+                        a delimiter e.g. PartyId|ItemId.</li>
+                    <li><strong>Value</strong> - The value to search for. Can be retrieved from a URL parameter.
+                        When using multiple <strong>Where</strong> properties, supply a value for <em>each</em> property
+                        using | as a delimiter e.g. 260|G15</li>
+                </ul>
+        </ul>
+        </li>
+        <li>You can use the <strong>@SelectedID</strong> variable to filter by a selected contact ID. The ID is selected based on the ID passed in the URL parameter. If no ID is passed in the URL, the ID is considered to be the <strong>On Behalf Of</strong> contact&#39;s ID (if set), or the logged in user&#39;s ID. You can use this variable when you specify <strong>PartyId</strong> as the <strong>Property</strong>.<li>You can retrieve the <strong>Value</strong> property of the <strong>Where</strong>
+            clause from the URL. This allows a single iPart to dynamically display details from
+            a given Entity by providing the id value of the Entity (or other such unique property
+            value) in the URL.</li>
+        <br />To read a parameter value from the URL, use the syntax <i>url:parameter,</i> where
+            <i>parameter</i> is the name of the URL parameter (for example, <i>url:EventKey)</i>
+        <br><em>Note: </em>Where the data source matches multiple entities, only the first entity
+            is resolved into the content. </br>
+    </ul>
+    <p id="placeholders">
+        <b>Placeholders</b></p>
+    <p>
+        Use placeholders within the content and the title to denote areas that will resolve
+        against the data sources. Placeholders may also be used to populate attributes
+        within HTML tags, such as the src attribute of &lt;img&gt; and &lt;a&gt; tags.
+        <br />
+        Placeholders are specified using {} notation.
+    </p>
+    <pre>Data {#datasource[.property...] [attributes]}</pre>
+    <p>
+        The {#...} placeholder embeds data into the content or title at the placeholder
+        location. The placeholder consists of the following components.</p>
+    <ul>
+        <li><strong>datasource</strong> - The name of the data source </li>
+        <li><strong>property</strong> - Optional. The name of the property. May be chained together
+            using dot notation e.g. prop1.prop2.prop3. Where the property is a collection, a
+            specific item may be accessed using [i] notation e.g. .Address[1] would return the
+            item at index position 1 from the Address collection.</li>
+        <li><strong>attributes</strong> - Optional. A space delimited set of attributes, some
+            of which require values. Multiple attributes may be specified.</li>
+        <ul>
+            <li><strong>uppercase</strong> - convert the data to uppercase </li>
+            <li><strong>lowercase</strong> - convert the data to lowercase </li>
+            <li><strong>format</strong> - format non-string values, such as <strong>Format=&quot;d&quot;</strong>,
+                for date (search MSDN for iFormattable)</li>
+            <li><strong>noencode</strong> - do not HTML encode the data. This is useful where the
+                data contains HTML markup that you wish to be rendered in the browser.</li>
+            <li><strong>resolve=~</strong> - replace any ~ (tilde) characters in the data with the
+                webroot url. This is useful where the property is a URL that uses ~ notation to
+                denote the webroot, such as Events.ImageUrl. </li>
+        </ul>
+    </ul>
+    <p>
+        Examples:</p>
+    <pre>
+         {#event.Name}
+        {#event.Name uppercase}
+        {#event.StartDateTime format="d"}
+        {#party.Status.Name}
+        {#party.Addresses[1].Address.CityName}
+        &lt;img src="{#event.ImageUrl resolve=~}"&gt;</pre>
+    <pre>Foreach {foreach alias in source [orderby [property,...]] [limit[number]]}<em><b> </b></em></pre>
+    <p>
+        The {foreach...} placeholder is used to iterate through a collection, repeating
+        and resolving the inner content against each item in the collection.
+    </p>
+    <p>
+        The opening {foreach...} placeholder must have a closing {/foreach} placeholder.
+        The content between the opening and closing placeholders is the inner content. The
+        inner content may contain placeholders, including nested {foreach...} placeholders.
+        The inner content is repeated and resolved against each item in the collection.
+    </p>
+    <p>
+        The placeholder consists of the following components.</p>
+    <ul>
+        <li><strong>alias</strong> - A name for the data source that will represent the current
+            item in the collection. This data source will be used in placeholders within the
+            inner content to refer to the item being processed. </li>
+        <li><strong>source</strong> - A data source and property path that refers to the collection
+            to iterate through e.g. event.Functions. If the data source itself is a collection,
+            the property path may be ommitted (typically only used in nested foreach loops for
+            iterating through collections of collections).</li>
+        <li><strong>orderby</strong> -<i>(optional) </i>To order the collection, use the <b>
+            orderby</b> keyword followed by a comma-delimited list of properties to order the
+            collection by.
+            <ul>
+                <li>A maximum of 5 sorting properties may be specified.
+                    <li>Property names must refer to properties of the objects within the collection and
+                        may be chained using dot notation.
+                        <li>
+                Do not specify a data source in the property names.
+            </ul>
+            The entire collection is ordered before the optional <strong>limit</strong> clause is applied.
+        <li><strong>limit</strong> - (optional) To limit the number of records processed in the collection, use the <strong>limit</strong> keyword followed by the maximum number of records you want processed. <strong>Limit</strong> is applied after the entire collection has been sorted using the <strong>orderby</strong> clause.
+</li>
+    </ul>
+    <p>
+        Examples:</p>
+    <ul>
+        <li>Display the city from each party address:<br />
+            <pre><span class="exampleplaceholders">{foreach a in #party.Addresses}
+&nbsp;&nbsp;&nbsp;&nbsp; {#a.Address.CityName}
+{/foreach} </span></pre>
+            <br />
+        <li>Display the name of each function in an event, order by the start date and name:<br />
+            Display the data as an ordered list.<br />
+            <pre><span class="exampleplaceholders">&lt;ol&gt;
+{foreach f in #event.Functions orderby StartDateTime,Name}
+&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;{#f.Name}&lt;/li&gt;
+{/foreach}
+&lt;/ol&gt;</span></pre>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,111 @@
+-- Drop FK constraints on DocumentMain to allow bulk loading
+SET NOCOUNT ON
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentMain' AND CONSTRAINT_NAME = N'FK_DocumentMain_AccessMain')
+    ALTER TABLE [DocumentMain] DROP CONSTRAINT [FK_DocumentMain_AccessMain]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentMain' AND CONSTRAINT_NAME = N'FK_DocumentMain_AccessMain_DefaultChild')
+    ALTER TABLE [DocumentMain] DROP CONSTRAINT [FK_DocumentMain_AccessMain_DefaultChild]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentMain' AND CONSTRAINT_NAME = N'FK_DocumentMain_DocumentStatusRef')
+    ALTER TABLE [DocumentMain] DROP CONSTRAINT [FK_DocumentMain_DocumentStatusRef]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentMain' AND CONSTRAINT_NAME = N'FK_DocumentMain_DocumentTypeRef')
+    ALTER TABLE [DocumentMain] DROP CONSTRAINT [FK_DocumentMain_DocumentTypeRef]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentMain' AND CONSTRAINT_NAME = N'FK_DocumentMain_UniformRegistry')
+    ALTER TABLE [DocumentMain] DROP CONSTRAINT [FK_DocumentMain_UniformRegistry]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentMain' AND CONSTRAINT_NAME = N'FK_DocumentMain_UniformRegistry_DocumentVersionKey')
+    ALTER TABLE [DocumentMain] DROP CONSTRAINT [FK_DocumentMain_UniformRegistry_DocumentVersionKey]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentMain' AND CONSTRAINT_NAME = N'FK_DocumentMain_UserMain_CreatedBy')
+    ALTER TABLE [DocumentMain] DROP CONSTRAINT [FK_DocumentMain_UserMain_CreatedBy]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentMain' AND CONSTRAINT_NAME = N'FK_DocumentMain_UserMain_LockedBy')
+    ALTER TABLE [DocumentMain] DROP CONSTRAINT [FK_DocumentMain_UserMain_LockedBy]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentMain' AND CONSTRAINT_NAME = N'FK_DocumentMain_UserMain_StatusUpdatedBy')
+    ALTER TABLE [DocumentMain] DROP CONSTRAINT [FK_DocumentMain_UserMain_StatusUpdatedBy]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentMain' AND CONSTRAINT_NAME = N'FK_DocumentMain_UserMain_UpdatedBy')
+    ALTER TABLE [DocumentMain] DROP CONSTRAINT [FK_DocumentMain_UserMain_UpdatedBy]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'Hierarchy' AND CONSTRAINT_NAME = N'FK_Hierarchy_Hierarchy_Ancestor')
+    ALTER TABLE [Hierarchy] DROP CONSTRAINT [FK_Hierarchy_Hierarchy_Ancestor]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'Hierarchy' AND CONSTRAINT_NAME = N'FK_Hierarchy_Hierarchy_Parent')
+    ALTER TABLE [Hierarchy] DROP CONSTRAINT [FK_Hierarchy_Hierarchy_Parent]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'Hierarchy' AND CONSTRAINT_NAME = N'FK_Hierarchy_UniformTypeRef')
+    ALTER TABLE [Hierarchy] DROP CONSTRAINT [FK_Hierarchy_UniformTypeRef]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE [TABLE_NAME] = N'HierarchyRoot' AND [CONSTRAINT_NAME] = N'FK_HierarchyRoot_AccessMain')
+    ALTER TABLE [dbo].[HierarchyRoot] DROP CONSTRAINT [FK_HierarchyRoot_AccessMain]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE [TABLE_NAME] = N'HierarchyRoot' AND [CONSTRAINT_NAME] = N'FK_HierarchyRoot_Hierarchy')
+    ALTER TABLE [dbo].[HierarchyRoot] DROP CONSTRAINT [FK_HierarchyRoot_Hierarchy]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE [TABLE_NAME] = N'HierarchyRoot' AND [CONSTRAINT_NAME] = N'FK_HierarchyRoot_Organization')
+    ALTER TABLE [dbo].[HierarchyRoot] DROP CONSTRAINT [FK_HierarchyRoot_Organization]
+go
+
+IF  EXISTS (SELECT * FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE [TABLE_NAME] = N'HierarchyRoot' AND [CONSTRAINT_NAME] = N'FK_HierarchyRoot_UserMain_CreatedBy')
+    ALTER TABLE [dbo].[HierarchyRoot] DROP CONSTRAINT [FK_HierarchyRoot_UserMain_CreatedBy]
+go
+
+IF  EXISTS (SELECT * FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE [TABLE_NAME] = N'HierarchyRoot' AND [CONSTRAINT_NAME] = N'FK_HierarchyRoot_UserMain_UpdatedBy')
+    ALTER TABLE [dbo].[HierarchyRoot] DROP CONSTRAINT [FK_HierarchyRoot_UserMain_UpdatedBy]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE [TABLE_NAME] = N'PublishRequestDetail' AND [CONSTRAINT_NAME] = N'FK_PUblishRequestDetail_ContentDocumentKey')
+    ALTER TABLE [dbo].[PublishRequestDetail] DROP CONSTRAINT [FK_PUblishRequestDetail_ContentDocumentKey]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE [TABLE_NAME] = N'PublishRequestDetail' AND [CONSTRAINT_NAME] = N'FK_PublishRequestDetail_ContentDocumentKey')
+    ALTER TABLE [dbo].[PublishRequestDetail] DROP CONSTRAINT [FK_PublishRequestDetail_ContentDocumentKey]
+go
+
+IF  EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE [TABLE_NAME] = N'Perspective' AND [CONSTRAINT_NAME] = N'FK_Perspective_Hierarchy')
+    ALTER TABLE [dbo].[Perspective] DROP CONSTRAINT [FK_Perspective_Hierarchy]
+go
+
+IF  EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE [TABLE_NAME] = N'Perspective' AND [CONSTRAINT_NAME] = N'FK_Perspective_HierarchyRoot')
+    ALTER TABLE [dbo].[Perspective] DROP CONSTRAINT [FK_Perspective_HierarchyRoot]
+go
+
+IF  EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE [TABLE_NAME] = N'Perspective' AND [CONSTRAINT_NAME] = N'FK_Perspective_Hierarchy_HomePage')
+    ALTER TABLE [dbo].[Perspective] DROP CONSTRAINT [FK_Perspective_Hierarchy_HomePage]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentStorage' AND CONSTRAINT_NAME = N'FK_DocumentStorage_UserMain_CreatedBy')
+    ALTER TABLE [DocumentStorage] DROP CONSTRAINT [FK_DocumentStorage_UserMain_CreatedBy]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'DocumentStorage' AND CONSTRAINT_NAME = N'FK_DocumentStorage_UserMain_UpdatedBy')
+    ALTER TABLE [DocumentStorage] DROP CONSTRAINT [FK_DocumentStorage_UserMain_UpdatedBy]
+go
+
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.CONSTRAINT_TABLE_USAGE WHERE TABLE_NAME = N'OrgControlImages' AND CONSTRAINT_NAME = N'FK_OrgControlImages_DocumentStorageKey')
+    ALTER TABLE [OrgControlImages] DROP CONSTRAINT [FK_OrgControlImages_DocumentStorageKey]
+go
+
+
+
+SET NOCOUNT OFF
+
+

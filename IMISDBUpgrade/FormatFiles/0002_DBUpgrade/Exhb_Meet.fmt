@@ -1,0 +1,16 @@
+10.0
+14
+1       SQLNCHAR            2       20      ""   1     EXHB_ID                                    SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     MEET_ID                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       4       ""   3     STATUS                                     SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              0       4       ""   4     FREE_PASS_USED                             ""
+5       SQLDATETIME         1       8       ""   5     DATE_SPACE_RESERVED                        ""
+6       SQLDATETIME         1       8       ""   6     DATE_CONTRACT_RET                          ""
+7       SQLNCHAR            4       0       ""   7     COMMENTS                                   SQL_Latin1_General_CP1_CI_AS
+8       SQLDATETIME         1       8       ""   8     INTENT_TO_EDIT                             ""
+9       SQLNCHAR            2       20      ""   9     EDITED_BY                                  SQL_Latin1_General_CP1_CI_AS
+10      SQLINT              0       4       ""   10    PRIORITY_POINTS                            ""
+11      SQLNCHAR            2       20      ""   11    EXHB_COMP_ID                               SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       20      ""   12    EXHB_CAT                                   SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            4       0       ""   13    SIGNAGE                                    SQL_Latin1_General_CP1_CI_AS
+14      SQLBINARY           2       8       ""   14    TIME_STAMP                                 ""

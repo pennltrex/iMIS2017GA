@@ -1,0 +1,7 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="BooleanBinaryOperatorRow.ascx.cs" Inherits="Asi.Bae.Web.Customer.AccountManagement.CertificationManagement.BooleanBinaryOperatorRow" %>
+
+<tr>
+    <td colspan="8">
+        <asiweb:StyledLabel ID="lblBBinaryOperatorType" runat="server" />
+    </td>
+</tr>

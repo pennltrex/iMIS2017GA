@@ -1,0 +1,4 @@
+10.0
+2
+1       SQLNCHAR            2       510     ""   1     SystemConfigParameterName                              SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       80      ""   2     SystemVariableName                                     SQL_Latin1_General_CP1_CI_AS

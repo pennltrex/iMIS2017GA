@@ -1,0 +1,158 @@
+using System;
+using Asi.Business.CertificationManagement;
+using Asi.ProcessManager;
+using Asi.ProcessManager.Operations;
+using Asi.Web.UI.Common.Controls.CertificationManagement;
+using Asi.Security;
+using Asi.Business.Common;
+using System.Configuration;
+
+namespace Asi.Bae.Web.Customer.AccountManagement.CertificationManagement
+{
+    /// <summary>
+    /// Display a row with a boolean binary operator.
+    /// </summary>
+    public partial class BooleanBinaryOperatorRow : CertificationProgramRegistrationControlScreenBase
+    {
+        /// <summary>
+        /// Gets or sets the stage ID.
+        /// </summary>
+        /// <value>The stage ID.</value>
+        public string StageID
+        {
+            get
+            {
+                if (ViewState["StageID"] != null)
+                {
+                    return (string)ViewState["StageID"];
+                }
+                return null;
+            }
+            set { ViewState["StageID"] = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the action item ID.
+        /// </summary>
+        /// <value>The action item ID.</value>
+        public string ActionItemID
+        {
+            get
+            {
+                if (ViewState["ActionItemID"] != null)
+                {
+                    return (string)ViewState["ActionItemID"];
+                }
+                return null;
+            }
+            set { ViewState["ActionItemID"] = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the index of the operands collection, where there is the component container action item.
+        /// </summary>
+        /// <value>The index of the operand.</value>
+        public int OperandIndex
+        {
+            get
+            {
+                if (ViewState["OperandIndex"] != null)
+                {
+                    return (int)ViewState["OperandIndex"];
+                }
+                return -1;
+            }
+            set { ViewState["OperandIndex"] = value; }
+        }
+
+        /// <summary>
+        /// Gets the stage.
+        /// </summary>
+        /// <value>The stage.</value>
+        private Stage stage
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(StageID))
+                {
+                    return CertificationProgramRegistration.ActionManifest.Stages[StageID];
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Gets the component container action item.
+        /// </summary>
+        /// <value>The component container action item.</value>
+        private ComponentContainerActionItem componentContainerActionItem
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(ActionItemID) && stage != null)
+                {
+                    return stage.ActionItems[ActionItemID] as ComponentContainerActionItem;
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Gets the b binary operator.
+        /// </summary>
+        /// <value>The b binary operator.</value>
+        private IBooleanBinaryOperator bBinaryOperator
+        {
+            get
+            {
+                if (OperandIndex != -1 && componentContainerActionItem != null)
+                {
+                    return componentContainerActionItem.GetOperands()[OperandIndex] as IBooleanBinaryOperator;
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// <see cref="Asi.Web.UI.UserControlBase.OnDataBinding"/>
+        /// </summary>
+        protected override void OnDataBinding(EventArgs e)
+        {
+            base.OnDataBinding(e);
+
+            SetVisibility();
+            lblBBinaryOperatorType.Text =
+                Enum.GetName(typeof (BooleanOperationType), bBinaryOperator.BooleanOperationType);
+        }
+
+        private bool isCurrentStage()
+        {
+            Stage currentStage = CertificationProgramRegistration.ActionManifest.CurrentStage;
+            bool validAMStatus = CertificationProgramRegistration.ActionManifest.Status == ManifestStatus.NotStarted ||
+                                 CertificationProgramRegistration.ActionManifest.Status == ManifestStatus.Started;
+            return (currentStage == null && validAMStatus) || (currentStage != null && stage.ID == currentStage.ID);
+        }
+
+        /// <summary>
+        /// Sets the visibility of the Binary Operators.
+        /// </summary>
+        private void SetVisibility()
+        {
+            bool iscurrentstage = isCurrentStage();
+            bool hasStaffRoles = (AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupAdminName) ||
+                                  AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupUserName) ||
+                                  AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupManagerName) ||
+                                  AppPrincipal.CurrentPrincipal.IsInRole(Role.SysAdminRoleKey.ToString()));
+            bool visiblePublicUser = componentContainerActionItem.IsPublicUserVisible(bBinaryOperator);
+
+            if (ConfigurationManager.AppSettings["IsStaffSite"] != null)
+            {
+                lblBBinaryOperatorType.Visible = iscurrentstage;
+            }
+            else
+            {
+                lblBBinaryOperatorType.Visible = iscurrentstage && (visiblePublicUser || hasStaffRoles);
+            }
+        }
+    }
+}

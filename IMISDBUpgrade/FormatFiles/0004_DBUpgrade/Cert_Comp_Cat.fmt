@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLNCHAR            2       62      ""   1     CATEGORY                               SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       200     ""   2     DESCRIPTION                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNUMERIC          1       19      ""   3     UNITS_REQUIRED                         ""
+4       SQLBIT              1       1       ""   4     SUPER_CATEGORY                         ""
+5       SQLNCHAR            4       0       ""   5     SUBCATEGORY_NAMES                      SQL_Latin1_General_CP1_CI_AS
+6       SQLBINARY           2       8       ""   6     TIME_STAMP                             ""

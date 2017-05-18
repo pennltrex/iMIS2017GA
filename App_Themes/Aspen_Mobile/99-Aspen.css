@@ -1,0 +1,1317 @@
+﻿/***###################################***/
+/***        ASPEN STYLE SHEET          ***/
+/***###################################***/
+/**
+ * Aspen mobile styles for iMIS - UltraWave
+ *
+ * This document contains styles specific to the mobile-optimized Aspen theme.
+ *
+ * @colordef    #360    green           (links)
+ * @colordef    #250    jungle green    (headers)
+ * @colordef    #609060 bayleaf green   (master header background)
+ * @colordef    #8ba05d moss green      (standard button background, vertical tab tab selected link highlight)
+ * @colordef    #86934a a different moss(standard button border)
+ * @colordef    #d4e5ba seafoam green   (selected item highlight, CalloutPart1 background)
+ * @colordef    #79be79 lily pad        (selected tab)
+ * @colordef    #406e0b clean green     (total box background)
+ * @colordef    #dfe9db soft green      (search box background)
+ * @colordef    #d18b1c goldenrod       (primary button background, left nav header background)
+ * @colordef    #c7620a fall orange     (primary button border)
+ * @colordef    yellow  yellow          (cart indicator)
+ * @colordef    #94c2e6 sky blue        (CalloutPanelField1 label background)
+ * @colordef    #044c88 dark blue       (CalloutPanelField1 label text)
+ * @colordef    #013299 smalt blue      (Helper text)
+ *
+ * @colordef    #555    dark grey       (search box shadow)
+ * @colordef    #606060 battleship grey (footer copyright text)
+ * @colordef    #777    just grey       (search box text)
+ * @colordef    #808080 magnetic grey   (CalloutBlockType1 background)
+ * @colordef    #999    goose grey      (disabled tab text)
+ * @colordef    #E0E0E0 light grey      (footer copyright background)
+ * @colordef    #EEE whisper grey       (CCOGrayBG background, CalloutPart2 background, Event Display summary background)
+ *
+ * @colordef    Black   black           (background)
+ * @colordef    #000    black           (misc.)
+ * @colordef    White   white           (misc.)
+ * @colordef    #FFF    white           (misc.)
+ * 
+ * TABLE OF CONTENTS:
+ * General
+ * Action Icons
+ * UltraWave Overrides
+ * MasterPage
+ * Cart Indicator
+ * Left Nav
+ * Content Borders
+ * Headers
+ * Forms
+ * Event Display
+ * Rad Controls
+ * Zones
+ * iParts
+ * PanelFields
+ * Unauthenticated Home Page
+ */ 
+ 
+ /*********************************************/
+ /*                  General                  */
+ /*********************************************/
+
+ /* Defines link color */
+a, .ContentPanel .InLineOption_Controls_Always_Display a, #AddButtonPanelTop a, a.NotPrinted
+{
+    color:#360;
+}
+.RadGrid a
+{
+    color:#360!important; /* !important needed for Telerik style override */
+}
+.RadGrid .rgSelectedRow a
+{
+    color:#FFF!important;
+}
+
+/* Support background image with text overlay */
+.bg-img-conference-tall {
+  background-color: #081337;
+  background-image: url("../../images/SampleSites/conferencebannertall.jpg");
+}
+
+.bg-img-conference-small {
+  background-color: #081337;
+  background-image: url("../../images/SampleSites/Member/cairnsnight.jpg");
+}
+
+.bg-img-tiger-tall {
+  background-color: #04080B;
+  background-image: url("../../images/ImageLibrary/tiger-tall.jpg");
+  background-position: center center;
+}
+
+.banner-tall, .banner-short {
+  text-decoration: none;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+.banner-tall, .banner-tall:visited, .banner-tall:active, .banner-tall:hover, .banner-tall:focus, .banner-tall h2, .banner-short, .banner-short:visited, .banner-short:active, .banner-short:hover, .banner-short:focus, .banner-short h2 {
+  color: #fff;
+}
+
+.banner-text h2 {
+  font-size: 100%;
+}
+
+.banner-tall {
+  height: 500px;
+  max-width: 300px;
+}
+.banner-tall .banner-text {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 0 0 5px 5px;
+}
+
+.banner-short {
+  min-height: 150px;
+  max-width: 300px;
+}
+.banner-short .banner-text {
+  padding: 5px;
+  min-height: 150px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+/******************************************/
+/*        Mobile Optimization             */
+/******************************************/
+/* Overrides and styles for mobile optimization */
+/* We do not want surf-to-edit to appear in a mobile phone environment, but it should be available in desktop */
+@media all and (max-width: 700px) {
+  .SurfEdit, .ContentItemButtonPanel, .ContentRecordPageButtonPanel, .NoContentSTEContainer, .SurfEditOn {
+    display: none!important; } }
+.PanelField {
+  width: 99%; }
+
+div.PanelField label,
+tr.PanelField label {
+  width: 8.5em; }
+
+input {
+  width: 10em; }
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+  display: inline-block;
+  min-height: 1.4em;
+  padding: 5px !important;
+  font-size: 100%;
+  line-height: 1.4em;
+  }
+
+input.rdfd_ {
+  min-height: 0;
+  /* Have to specifically reset the min-height for an input that is meant to be hidden in the rad date picker */ }
+
+/* <Event Display > */
+.EventDetails .ContactLocationArea,
+.EventDetails .RegistrationArea {
+  width: auto;
+  float: none; }
+
+.RegistrationArea .TextButton {
+  width: 100%; }
+
+/* no longer needed in mobile context */
+.ProgramItemSummary .WhenColumn { 
+    display: none;
+}
+
+.ProgramItemSummary .DescriptionColumn,
+.ProgramItemSummary .IteneraryColumn {
+  width: auto;
+  float: none;
+  margin-left: 0; }
+
+.ProgramItemSummary .IteneraryColumn {
+  padding-left: 3px;
+  /* to align the Remove and Add buttons with the progarm item details text */ }
+
+.RegistrantInfoContainer 
+{
+    padding: 0;
+}
+
+.RegistrantInfoEntry 
+{
+    position: relative;
+    float: left;
+    width: 290px;
+    border: none;
+    padding-right: 0;
+    left: 0;
+}
+
+.RegistrantInfoAddressList 
+{
+    margin-left: auto;
+    clear: left;
+}
+
+.RegistrantInfoBadgeBackground 
+{
+    background-color: #ffffff;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.RegistrantInfoBadge 
+{
+    background-color: #ECECEB;
+    border: 1px solid #ADADAD;
+    padding: 0;
+    margin: 0;
+}
+
+.RegistrantInfoBadge img 
+{
+    display: none;
+}
+
+.RegistrantInfoAddressEntry
+{
+    background-color: #F8F7F6;
+    padding: 0;
+    margin-top: 5px;
+}
+
+/* For any event questions defined that accept answers within a multi-line textbox, this selector reduces the width of the textarea */
+.FormFieldResponse textarea
+{
+    width: 16em;
+}
+
+/* </Event Display > */
+
+
+
+/* Make sure the address in the address editor doesn't overlap the right column */
+.AddressEditor .col-sm-6 {
+    width:100%;
+    margin-bottom: .5em;
+}
+
+/******************************************/
+/*             Action Icons               */
+/******************************************/
+
+/* This is used to display the add, edit, delete, move up, and move down icons */
+.IconSprite, .DeleteImage /* DeleteImage is for compatibility purposes */
+{
+    background-image: url(images/IconSprite.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+}
+.IconSprite.AddIcon, .IconSprite.SaveIcon, .IconSprite.AddIcon[disabled]:hover, .IconSprite.SaveIcon[disabled]:hover
+{
+    background-position: 0 0;
+}
+.IconSprite.AddIcon:hover, .IconSprite.SaveIcon:hover
+{
+    background-position: 0 -35px;
+}
+.IconSprite.EditIcon, .IconSprite.EditIcon[disabled]:hover
+{
+    background-position: -35px 0;
+}
+.IconSprite.EditIcon:hover
+{
+    background-position: -35px -35px;
+}
+.IconSprite.DeleteIcon, .IconSprite.DeleteIcon[disabled]:hover, 
+.DeleteImage, .IconSprite.DeleteImage[disabled]:hover /* DeleteImage is for compatibility purposes */
+{
+    background-position: -70px 0;
+}
+.IconSprite.DeleteIcon:hover, .DeleteImage:hover /* DeleteImage is for compatibility purposes */
+{
+    background-position: -70px -35px;
+}
+.IconSprite.UpIcon, .IconSprite.UpIcon[disabled]:hover
+{
+    background-position: -105px 0;
+}
+.IconSprite.UpIcon:hover
+{
+    background-position: -105px -35px;
+}
+.IconSprite.DownIcon, .IconSprite.DownIcon[disabled]:hover
+{
+    background-position: -140px 0;
+}
+.IconSprite.DownIcon:hover
+{
+    background-position: -140px -35px;
+}
+.IconSprite.ConfigureIcon, .IconSprite.ConfigureIcon[disabled]:hover
+{
+    background-position: -420px 0;
+}
+.IconSprite.ConfigureIcon:hover, .IconSprite.ConfigureIcon:focus, 
+a:hover .IconSprite.ConfigureIcon, a:focus .IconSprite.ConfigureIcon
+{
+    background-position: -420px -35px;
+}
+/**** End Action Icons Styling ****/
+
+/* <Event Display > */
+.EventSummary .DetailsBlock, .EventSummary .PhotoArea, .EventSummary .DesignTimePhotoArea, 
+.EventSummary .Description, .EventSummary .RegistrationArea, .ProgramItemSummary .IteneraryColumn, 
+.ProgramItemSummary .WhenColumn, .ProgramItemSummary .DescriptionColumn
+{
+    display: block;
+}
+
+.EventSummary .Details, .EventSummary .RegistrationArea, .EventDisplay .RegistrationOptionsGrid, .ProgramItemSummary .IteneraryColumn, 
+.ProgramItemSummary .WhenColumn, .ProgramItemSummary .DescriptionColumn
+{
+    float: none;
+    width: auto;
+}
+/* </Event Display > */
+
+/* Make the search results description wrap under the picture */
+.SearchResultSummary .Description {
+    margin-left: 0;
+}
+
+.SearchResultSummary .ImageSection {
+    text-align: left;
+}
+
+/* Make sure images do not extend the bounds of their container */
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+/**** End UltraWave Overrides ****/
+
+/******************************************/
+/*           MasterPage Styling           */
+/******************************************/
+/* This section defines items that display on every page */
+
+/* This applies to the loading bar at the top of the page */
+.ProgressDiv
+{
+    background-color: #ffdd6f;
+}
+
+#masterHeaderBackground
+{
+    background-color: #609060;
+}
+
+/* Defines the header logo */
+#masterHeaderImage, #masterDonorHeaderImage
+{
+    background-image:url(images/HeaderLogo.png);
+    background-repeat:no-repeat;
+    /* Change the width and height to match your logo's dimensions */
+    width:100px;
+    height:38px;
+    float: left;
+    /* The following are needed to hide the text, but allow it to be read by screen readers */
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+#masterTopBarAuxiliary
+{
+    font-weight:bold;
+}
+
+#masterTopBarAuxiliary a
+{
+    text-decoration:none;
+    color: white;
+}
+
+#masterTopBarAuxiliary .NavigationUnorderedList li, #masterFooterNavigation .NavigationUnorderedList li
+{
+    border-left:solid 1px #470;
+}
+
+#masterTopBarAuxiliary .NavigationUnorderedList li:first-child
+{
+    border: none;
+}
+
+#masterSearchArea
+{
+    text-align: center;
+    padding: 1em;
+    background-color: #dfe9db;
+}
+
+#masterSearchArea input[type="text"]
+{
+    width: 75%;
+    margin-right: .5em;
+}
+
+#masterFooterNavigation #masterSocialNetworking img, #masterFooterNavigation #masterSocialNetworking strong
+{
+    vertical-align:middle;
+}
+
+/* Defines the copyright area of the footer and the footer logo */
+#ft
+{
+    text-align:center;
+    color:#606060;
+}
+
+#ft a
+{
+    text-decoration:none;
+}
+
+/**** End MasterPage Styling ****/
+
+
+/******************************************/
+/*         Cart Indicator Styling         */
+/******************************************/
+.cartSprite
+{
+    background-image: url(images/Aspen_MobileSprite.png);
+}
+
+#masterTopBarAuxiliary .cartSprite
+{
+    background-repeat:no-repeat;
+    height:14px;
+    display:inline-block;
+    padding-left:0!important;
+    padding-right:0!important;
+    vertical-align:top;
+    position:relative;
+    top:7px;
+}
+
+#masterTopBarAuxiliary .cartEmpty .cartSprite
+{
+    width:23px;
+    background-position: 0 -267px;
+}
+
+#masterTopBarAuxiliary .cartLeft.cartSprite
+{
+    width:11px;
+    background-position: -57px -267px;
+}
+#masterTopBarAuxiliary .cartCenter.cartSprite
+{
+    background-position: -68px -267px;
+}
+#masterTopBarAuxiliary .cartCenter span
+{
+    color: yellow;
+    position:relative;
+    top:-11px;
+}
+#masterTopBarAuxiliary .cartRight.cartSprite
+{
+    width:9px;
+    background-position: -171px -267px;
+}
+
+#masterFooterNavigation .cartEmpty, #masterFooterNavigation .cartFull
+{
+    display:none;
+}
+/**** End cart indicator styling  ****/
+
+/* Defines the background of the Proxy panel when you are working on behalf of another account */
+.ProxyPanelContact
+{
+    background: #e7e7e7; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNlN2U3ZTciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1MCUiIHN0b3AtY29sb3I9IiNkM2QzZDMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #e7e7e7 50%, #d3d3d3 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#e7e7e7), color-stop(50%,#d3d3d3)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e7e7e7 50%,#d3d3d3 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e7e7e7 50%,#d3d3d3 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e7e7e7 50%,#d3d3d3 50%); /* IE10+ */
+    background: linear-gradient(top, #e7e7e7 50%,#d3d3d3 50%); /* W3C */
+    -moz-box-shadow: 0px 5px 8px #555;
+    -webkit-box-shadow: 0px 5px 8px #555;
+    box-shadow: 0px 5px 8px #555;
+    margin-bottom:.4em;
+}
+
+
+/***********************************************/
+/*          Sub Nav Styling                    */
+/***********************************************/
+
+.SubNavPanelHead
+{
+    background-color:#d18b1c;
+    color:White;
+    font-family: Trebuchet MS, Arial, Sans-Serif;
+}
+
+.PageSubNavMenu 
+{
+    margin: .75em;
+}
+
+.PageSubNavMenu table:first-child
+{
+    border-top: 1px solid #CCC!important;
+}
+
+.navlink
+{
+    font-size: 120%;
+    width: 100%;
+    line-height: 2.3em;
+    font-weight: bold;
+    padding-left: .25em;
+}
+
+.navlinkselected a
+{
+    color: #d18b1c;
+}
+
+/**** End Left Nav Styling ****/
+
+
+/******************************************************/
+/*              Content Border Styling                */
+/******************************************************/
+
+/* Defines the border of the top iPart or standard panel with rounded corners */
+.ContentBorder, 
+.StandardPanel,
+.panel
+{
+    -moz-border-radius:10px 10px 0 0;
+    -webkit-border-radius:10px 10px 0 0;
+    border-radius:10px 10px 0 0;
+}
+
+/* This puts a border around CCO content */
+.ContentWizardDisplay
+{
+    padding:0.5em 0.5em 1em 1em;
+    border:solid 1px #CCC;
+    border-top:none;
+}
+
+/* This puts a border around content below a set of tabs (i.e; Contact Address Editor iPart)*/
+.ContentTabbedDisplay,
+.ContentTabbedDisplay > .StandardPanel,
+.ContentTabbedDisplay > .panel
+{
+    padding:0;
+    border:solid 1px #CCC; 
+    border-top: none !important;
+    -moz-border-radius:0 !important;
+    -webkit-border-radius:0 !important;
+    border-radius:0 !important;     
+}
+
+/**** End content border styling ****/
+
+/**************************************************/
+/*               Header Styling                   */
+/**************************************************/
+
+/* Put the class "PageTitle" on a div to have the text inside act as a title */
+h1, .PageTitle, h3, .SectionTitle
+{
+    color:#250;
+    font-family:Trebuchet MS, Helvetica, Sans-Serif;
+}
+
+h2, .PanelTitle
+{
+    font-size: 170%;
+    font-family:Trebuchet MS, Helvetica, Sans-Serif;
+}
+
+/* Defines the styling for the new title bar */
+.TitleBarCaption, .PanelHead.Distinguish, h2, div.PanelTitle, div.ShowFieldset fieldset, .panel-heading.Distinguish, .StandardPanel, .panel-border, .ContentBorder
+{
+    border-color:#CCC;
+}
+
+/* The following is used by the title bar when an action (e.g. select) is available */
+.TitleBarActionBox {
+  height: 24px;
+  width: 24px;
+  background-image: url("images/titlebaractionbox.gif");
+  margin-left: 8px; }
+
+.PanelHead.Distinguish,
+.panel-heading.Distinguish
+{
+    padding:.4em;
+}
+
+.PanelHeadCollapseImage,
+.panel-head-collapse-img
+{
+    padding-top:3px;
+    padding-left:3px;
+}
+
+.HelperText
+{
+    color: #013299;
+}
+
+/***** End of Header Styling *****/
+
+
+/**************************************************/
+/*                 Form Styling                   */
+/**************************************************/
+/* These styles apply to form labels, fields and buttons */
+
+/* Styling for the buttons */
+/* You can make html links use this style by applying the class "btn" to the <a> tag */
+.TextButton, .btn, .RadUpload .ruButton, .RadUploadProgressArea .ruButton
+{
+    display: inline-block;
+    white-space: normal;
+    background: #b0c192; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2IwYzE5MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ4JSIgc3RvcC1jb2xvcj0iI2IwYzE5MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUyJSIgc3RvcC1jb2xvcj0iIzlhYWU3MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM4NTlhNTMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #b0c192 0%, #b0c192 48%, #9aae72 52%, #859a53 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b0c192), color-stop(48%,#b0c192), color-stop(52%,#9aae72), color-stop(100%,#859a53)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #b0c192 0%,#b0c192 48%,#9aae72 52%,#859a53 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #b0c192 0%,#b0c192 48%,#9aae72 52%,#859a53 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #b0c192 0%,#b0c192 48%,#9aae72 52%,#859a53 100%); /* IE10+ */
+    background: linear-gradient(top, #b0c192 0%,#b0c192 48%,#9aae72 52%,#859a53 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0c192', endColorstr='#859a53',GradientType=0 ); /* IE6-8 */
+    background-repeat: repeat-x;
+    border:1px solid #86934a;
+    line-height:2em;
+    font-size: 120%!important;
+    line-height: 2em; 
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding-left:0.5em!important;
+    padding-right:0.5em!important;
+    color:#FFF;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    font-weight:bold!important;
+    cursor: pointer;
+    vertical-align:bottom;
+}
+
+a.btn, a.TextButton
+{
+    text-decoration:none;
+}
+
+.RadUpload .ruButton, .RadUploadProgressArea .ruButton
+{
+    background-position: 0 0!important;
+    cursor: pointer;
+}
+
+.RadGrid_Default input.TextButton {
+    color: #fff;
+}
+
+/* Defines a second button in orange */
+.TextButton.PrimaryButton, .btn.PrimaryButton, 
+.TextButton.SaveAndClose, .TextButton.Save, .TextButton.SaveAs, 
+.UsePrimaryButton .TextButton, .UsePrimaryButton .btn
+{
+    background: rgb(224,172,40); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UwYWMyOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ4JSIgc3RvcC1jb2xvcj0iI2UwYWMyOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUyJSIgc3RvcC1jb2xvcj0iI2Q2OTcyMiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjYzc4MDQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(224,172,40,1) 0%, rgba(224,172,40,1) 48%, rgba(214,151,34,1) 52%, rgba(204,120,4,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(224,172,40,1)), color-stop(48%,rgba(224,172,40,1)), color-stop(52%,rgba(214,151,34,1)), color-stop(100%,rgba(204,120,4,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(224,172,40,1) 0%,rgba(224,172,40,1) 48%,rgba(214,151,34,1) 52%,rgba(204,120,4,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(224,172,40,1) 0%,rgba(224,172,40,1) 48%,rgba(214,151,34,1) 52%,rgba(204,120,4,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(224,172,40,1) 0%,rgba(224,172,40,1) 48%,rgba(214,151,34,1) 52%,rgba(204,120,4,1) 100%); /* IE10+ */
+    background: linear-gradient(top, rgba(224,172,40,1) 0%,rgba(224,172,40,1) 48%,rgba(214,151,34,1) 52%,rgba(204,120,4,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0ac28', endColorstr='#cc7804',GradientType=0 ); /* IE6-8 */
+    border-color:#c7620a;
+}
+
+/* Defines disabled buttons */
+.TextButton[disabled], .btn[disabled], .TextButton[disabled]:hover, .btn[disabled]:hover,
+.TextButton[disabled]:focus, .btn[disabled]:focus, .TextButton[disabled]:active, .btn[disabled]:active
+{
+    background: #e0e0e0; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UwZTBlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ4JSIgc3RvcC1jb2xvcj0iI2UwZTBlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUyJSIgc3RvcC1jb2xvcj0iI2NmY2ZjZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjNWM1YzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #e0e0e0 0%, #e0e0e0 48%, #cfcfcf 52%, #c5c5c5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(48%,#e0e0e0), color-stop(52%,#cfcfcf), color-stop(100%,#c5c5c5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e0e0e0 0%,#e0e0e0 48%,#cfcfcf 52%,#c5c5c5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e0e0e0 0%,#e0e0e0 48%,#cfcfcf 52%,#c5c5c5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e0e0e0 0%,#e0e0e0 48%,#cfcfcf 52%,#c5c5c5 100%); /* IE10+ */
+    background: linear-gradient(top, #e0e0e0 0%,#e0e0e0 48%,#cfcfcf 52%,#c5c5c5 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#c5c5c5',GradientType=0 ); /* IE6-8 */
+    border-color:#EEE;
+    cursor: auto;
+}
+
+.MediumButton, .UseMediumButton .TextButton, .UseMediumButton .TextButtonWithImage 
+{
+  font-size: 120% !important;
+  padding: 9px 14px !important; 
+}
+
+.LargeButton, .UseLargeButton .TextButton, .UseLargeButton .TextButtonWithImage 
+{
+  font-size: 150% !important;
+  padding: 12px 17px !important; 
+}
+
+/* Social sign in buttons*/
+.SignInButton.Facebook {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#3b5998), to(#30487b));
+  background-image: -webkit-linear-gradient(top, #3b5998 0%, #30487b 100%);
+  background-image: -moz-linear-gradient(top, #3b5998 0%, #30487b 100%);
+  background-image: linear-gradient(to bottom, #3b5998 0%, #30487b 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF3B5998', endColorstr='#FF30487B', GradientType=0);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  line-height: 1.9em;
+  border: 1px solid #2a3f6c;
+}
+.SignInButton.Facebook:hover, .SignInButton.Facebook:focus, .SignInButton.Facebook:active, .SignInButton.Facebook:visited {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#466ab5), to(#3b5998));
+  background-image: -webkit-linear-gradient(top, #466ab5 0%, #3b5998 100%);
+  background-image: -moz-linear-gradient(top, #466ab5 0%, #3b5998 100%);
+  background-image: linear-gradient(to bottom, #466ab5 0%, #3b5998 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF466AB5', endColorstr='#FF3B5998', GradientType=0);
+}
+.SignInButton.LinkedIn {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#0077B5), to(#005c8c));
+  background-image: -webkit-linear-gradient(top, #0077B5 0%, #005c8c 100%);
+  background-image: -moz-linear-gradient(top, #0077B5 0%, #005c8c 100%);
+  background-image: linear-gradient(to bottom, #0077b5 0%, #005c8c 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0077B5', endColorstr='#FF005C8C', GradientType=0);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  line-height: 1.9em;
+  border: 1px solid #004f78;
+}
+.SignInButton.LinkedIn:hover, .SignInButton.LinkedIn:active, .SignInButton.LinkedIn:visited {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#0092de), to(#0077B5));
+  background-image: -webkit-linear-gradient(top, #0092de 0%, #0077B5 100%);
+  background-image: -moz-linear-gradient(top, #0092de 0%, #0077B5 100%);
+  background-image: linear-gradient(to bottom, #0092de 0%, #0077b5 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0092DE', endColorstr='#FF0077B5', GradientType=0);
+}
+
+/* This gives certain selected items (eg. in the PeoplePanel in the Event Showcase) a colored background */
+.SelectedItem
+{
+    background-color:#d4e5ba;
+}
+
+/**** End Form Styling ****/
+
+
+/***************************************/
+/*       Event Display                 */
+/***************************************/
+.EventSummary {
+  background-color: #d4e5ba; }
+  .EventSummary .PhotoArea {
+    padding: 1em; }
+    .EventSummary .PhotoArea img {
+      border: 1px solid #CCC!important;
+      /* Solves a display problem in IE8 */
+      max-width: none;
+    }
+  .EventSummary .Description {
+    padding: 1em; }
+
+.ProgramGroup .StandardPanel,
+.ProgramGroup .panel {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0; }
+.ProgramGroup .PanelHead,
+.ProgramGroup .panel-head {
+  background-color: #d4e5ba; }
+.ProgramGroup .PanelTitle,
+.ProgramGroup .panel-title {
+  background-image: none;
+  padding-left: 0;
+  font-size: 130%;
+  line-height: 1.7; }
+/**** End Event Display Styles ****/
+
+
+
+/* Carousel
+   ========================================================================== */
+/* Used by the Slideshow iPart */
+.carousel h1, .carousel h2, .carousel h3, .carousel h4, .carousel h5 {
+  color: #fff;
+}
+.carousel h2, .carousel .panel-heading {
+  border-bottom: none;
+}
+
+
+/***********************************************/
+/*            Rad Control Styles               */
+/***********************************************/
+
+/*<RadTabStrip>*/
+.RadTabStrip_Aspen .rtsOut, .RadTabStrip_Aspen .rtsIn, .RadTabStrip_Aspen .rtsLevel1 .rtsTxt
+{
+    padding:0!important;
+}
+
+.RadTabStrip_Aspen .rtsLevel1
+{
+    border-bottom:2px solid #79be79;
+}
+
+.RadTabStrip_Aspen .rtsLink
+{
+    color:#000;
+    line-height: 36px;
+    font-weight: bold;
+    border:1px solid #CCC;
+    border-bottom:none;
+    margin-right:0.313em;
+    -moz-border-radius:7px 7px 0 0;
+    -webkit-border-radius:7px 7px 0 0;
+    border-radius:7px 7px 0 0;
+    padding:0 1.154em!important;
+}
+
+.RadTabStrip_Aspen .rtsSelected
+{
+    background-color:#79be79;
+    color:#FFF;
+}
+
+.RadTabStrip_Aspen .rtsDisabled
+{
+    color: #999;
+}
+
+/*.RadTabStrip_Aspen .rtsLink:hover
+{
+    text-decoration: underline;
+}
+
+.RadTabStrip_Aspen .rtsDisabled:hover
+{
+    text-decoration:none;
+}*/
+
+/*<VerticalRadTabStrip>*/
+
+.RadTabStripVertical.RadTabStrip_Aspen .rtsLevel1
+{
+    border-bottom:none;
+}
+
+.RadTabStripVertical.RadTabStrip_Aspen .rtsLink
+{
+    color:#000;
+    line-height: 2em;
+    border:none;
+    border-bottom:1px solid #CCC;
+    margin-right:0;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    border-radius:0;
+    padding:0 .5em!important;
+    font-weight:normal;
+    text-align:left!important;
+}
+/*.RadTabStripVertical.RadTabStrip_Aspen .rtsLink:hover
+{
+    background-color:#d4e5ba;
+}*/
+.RadTabStripVertical.RadTabStrip_Aspen .rtsSelected /*, .RadTabStripVertical.RadTabStrip_Aspen .rtsSelected:hover*/
+{
+    background-color:#8ba05d;
+    color:White;
+    font-weight:bold;
+}
+
+/*</RadTabStrip>*/
+
+
+/*<RadToolTip>*/
+/* Currently used by the QueryMenu iPart */
+.RadToolTip_Telerik a:hover
+{
+    background-color:#d4e5ba;
+}
+/*</RadToolTip>*/
+
+
+/**** End RadTools Styles ****/
+
+
+
+
+/******************************************************/
+/*                   Zone Styles                      */
+/******************************************************/
+/* Add these classes to specific zones in WCM for some special styling */
+
+/* Add zone style "CCOGrayBg" to give CCO content a gray background */
+.CCOGrayBg .ContentWizardDisplay
+{
+    background-color:#ebebeb;
+}
+
+.CCOGrayBg .yui-g
+{
+    float:none;
+}
+
+/* Add zone style "TitleBarNoBorder" to remove the bottom border from the title bar caption */
+.TitleBarNoBorder .PanelHead.Distinguish, .TitleBarNoBorder .TitleBarCaption,
+.TitleBarNoBorder .PanelHead.Distinguish, .TitleBarNoBorder .TitleBarCaption
+{
+    border-bottom-color: transparent;
+}
+
+/* Add zone style "CalloutBlockType1" to give any iParts in the zone with the content border turned on a different look and feel */
+.CalloutBlockType1 .ContentBorder
+{
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    border-radius:0;
+    background:#808080 url('images/GrayContentBg.gif') repeat-x;
+    border:none;
+    padding: 0 10px 10px;
+}
+
+.CalloutBlockType1 .ContentBorder>div
+{
+    background-color:#CCC;
+    padding:0.385em;
+}
+
+.CalloutBlockType1 .ContentBorder .InLineOption
+{
+    padding-bottom:.3em;
+}
+
+/**** End Zone Styles ****/
+
+/*****************************************/
+/*            iPart Styles               */
+/*****************************************/
+/* These classes may be used in iPart configuration */
+
+/* Use the iPartChain class along with the appropriate placement class (FirstPart, MiddlePart or LastPart) 
+to give several stacked iParts a conjoined look. */
+.iPartChain.FirstPart .StandardPanel,
+.iPartChain.FirstPart > .panel
+{
+    border-bottom-width:0!important;
+}
+
+.iPartChain.MiddlePart .StandardPanel,
+.iPartChain.MiddlePart > .panel
+{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-top-width:0!important;
+    border-bottom-width:0!important;
+}
+
+.iPartChain.LastPart .StandardPanel,
+.iPartChain.LastPart > .panel
+{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-top-width:0!important;
+}
+
+.iPartChain.MiddlePart, .iPartChain.LastPart
+{
+    margin-top: -0.9em;
+}
+
+/* CalloutPart1 and CalloutPart2 may be used in iPart configuration to add a distinguishing background */
+.CalloutPart1 .PanelBody,
+.CalloutPart1 .panel-body
+{
+    background-color:#d4e5ba;
+}
+
+.CalloutPart2 .PanelBody,
+.CalloutPart2 .panel-body
+{
+    background-color:#EBEBEB;
+}
+
+/**** End iPart Styles ****/
+
+/*****************************************/
+/*          PanelField Styles            */
+/*****************************************/
+/* These styles can be used either as a wrapper for or directly on a PanelField to achieve a specific styling */
+
+/* CalloutPanelField1 can be used on or as a wrapper for a PanelField, or on the PanelField directly, to create a callout on the label.
+Eg. See the Tribute Gift Editor display */
+.CalloutPanelField1 .PanelField label:first-child, .PanelField.CalloutPanelField1 label:first-child,
+.CalloutPanelField1 .PanelField .Label:first-child, .PanelField.CalloutPanelField1 .Label:first-child
+{
+    width:auto;
+    padding:.75em .75em 1.5em;
+    margin:.25em;
+    background: #94c2e6 url(images/BlueArrow.gif) no-repeat 50% 100%;
+    color: #044c88;
+}
+
+/* TotalBox can be used as a wrapper for PanelFields, or on the PanelField directly, to visually distinguish a calculated total. */
+.TotalBox .PanelField, .PanelField.TotalBox
+{
+    border-color: #CCC;
+}
+
+.TotalBox .PanelFieldLabel
+{
+    background-color:#406e0b;
+    color:White;
+    padding:.25em .75em;
+}
+
+.TotalBox .PanelField .PanelFieldLabel label, 
+.PanelField.TotalBox .PanelFieldLabel label
+{
+    color:White;
+}
+
+.LabelSpacer, .LabelSpacer.PanelField {
+    padding-left: 8em;
+}
+/**** End PanelField Styles ****/
+
+
+
+/*****************************************************/
+/*        Unauthenticated Home Page Styles           */
+/*****************************************************/
+/* These classes should be used specifically for the unauthenticated home page */
+
+/* Add this class to a div to create the unauthenticated home page banner */
+.homeBanner
+{
+    position:absolute;
+    width:100%;
+    height:359px;
+    left:0;
+    margin:0 -1px;
+    border: 1px solid White;
+    background:url('images/homebanner.jpg') no-repeat 100% 0;
+}
+
+/* Add this class to a div outside the .homeBanner div to create some spacing behind the banner*/
+.homeBannerPush
+{
+    height:359px;
+}
+
+/* Add this class to a div to give it the look and feel of the login area on the unathenticated home */
+.homeLogin
+{
+    border:4px solid #dfe9db;
+    position: relative; 
+    background-color: white;
+    width: 200px; 
+    height: 254px; 
+    top: 3em;
+    padding:.5em;
+}
+
+.homeLogin h1
+{
+    font-size: 150%; 
+    font-family: Trebuchet MS, Helvetica, Sans-Serif;
+}
+
+.homeLogin h1, .homeLogin h4
+{
+    color:#360;
+}
+
+/* </unautenticated home page> */
+
+
+
+/* Alt background colors
+   ========================================================================== */
+.AltBgColor1 {
+  background-color: #f4f5ed;
+  padding: 10px;
+}
+
+.AltBgColor2 > .panel, .AltBgColor2 > .panel h2,
+.AltBgColor3 > .panel,
+.AltBgColor3 > .panel h2,
+.AltBgColor4 > .panel,
+.AltBgColor4 > .panel h2,
+.AltBgColor5 > .panel,
+.AltBgColor5 > .panel h2 {
+  color: #fff;
+}
+.AltBgColor2 > .panel a, .AltBgColor2 > .panel a:hover, .AltBgColor2 > .panel a:active, .AltBgColor2 > .panel a:focus, .AltBgColor2 > .panel a:visited,
+.AltBgColor3 > .panel a,
+.AltBgColor3 > .panel a:hover,
+.AltBgColor3 > .panel a:active,
+.AltBgColor3 > .panel a:focus,
+.AltBgColor3 > .panel a:visited,
+.AltBgColor4 > .panel a,
+.AltBgColor4 > .panel a:hover,
+.AltBgColor4 > .panel a:active,
+.AltBgColor4 > .panel a:focus,
+.AltBgColor4 > .panel a:visited,
+.AltBgColor5 > .panel a,
+.AltBgColor5 > .panel a:hover,
+.AltBgColor5 > .panel a:active,
+.AltBgColor5 > .panel a:focus,
+.AltBgColor5 > .panel a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+.AltBgColor2 > .panel .ProgressBar > span,
+.AltBgColor3 > .panel .ProgressBar > span,
+.AltBgColor4 > .panel .ProgressBar > span,
+.AltBgColor5 > .panel .ProgressBar > span {
+  /* Make the progress tracker indicator use a white bar instead of default */
+  background-color: #fff;
+}
+
+.AltBgColor2 > .panel {
+  background-color: #00abbe;
+}
+.AltBgColor2 > .panel.panel-border {
+  border-color: #0094a5;
+}
+
+.AltBgColor3 > .panel {
+  background-color: #dc4f00;
+}
+.AltBgColor3 > .panel.panel-border {
+  border-color: #c34600;
+}
+
+.AltBgColor4 > .panel {
+  background-color: #e98300;
+}
+.AltBgColor4 > .panel.panel-border {
+  border-color: #d07500;
+}
+
+.AltBgColor5 > .panel {
+  background-color: #8e51ae;
+}
+.AltBgColor5 > .panel.panel-border {
+  border-color: #80499d;
+}
+
+/* ==========================================================================
+   DASHBOARDS
+   ========================================================================== */
+/* Zone or iPart style for the staff dashboards for consistent styling */
+.ProgressTracker_Dashboard .panel-body,
+.ProgressTracker_Dashboard_Overview .panel-body {
+  padding-top: 0;
+}
+.ProgressTracker_Dashboard .label,
+.ProgressTracker_Dashboard_Overview .label {
+  font-size: 120%;
+  display: block;
+  margin-top: 10px;
+}
+.ProgressTracker_Dashboard .ProgressBar,
+.ProgressTracker_Dashboard_Overview .ProgressBar {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.ProgressTracker2 ul,
+.ProgressTracker_Dashboard ul,
+.ProgressTracker_Dashboard_Overview ul {
+  margin: 0;
+  padding: 0;
+}
+.ProgressTracker2 ul, .ProgressTracker2 li,
+.ProgressTracker_Dashboard ul,
+.ProgressTracker_Dashboard li,
+.ProgressTracker_Dashboard_Overview ul,
+.ProgressTracker_Dashboard_Overview li {
+  list-style-type: none;
+}
+.ProgressTracker2 .count,
+.ProgressTracker_Dashboard .count,
+.ProgressTracker_Dashboard_Overview .count {
+  font-weight: bold;
+  display: block;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.ProgressTracker2 .label,
+.ProgressTracker_Dashboard .label,
+.ProgressTracker_Dashboard_Overview .label {
+  line-height: 1;
+}
+.ProgressTracker2 .ProgressBar,
+.ProgressTracker_Dashboard .ProgressBar,
+.ProgressTracker_Dashboard_Overview .ProgressBar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #e6e6e6;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.ProgressTracker2 .ProgressBar > span,
+.ProgressTracker_Dashboard .ProgressBar > span,
+.ProgressTracker_Dashboard_Overview .ProgressBar > span {
+  display: block;
+  height: 100%;
+  background-color: #dc4f00;
+  position: relative;
+  overflow: hidden;
+}
+.ProgressTracker2 p,
+.ProgressTracker_Dashboard p,
+.ProgressTracker_Dashboard_Overview p {
+  margin-bottom: 0;
+}
+
+.ProgressTracker_Dashboard .panel-heading.Distinguish {
+  padding-bottom: 0;
+}
+.ProgressTracker_Dashboard .inset {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.ProgressTracker2 .count,
+.ProgressTracker_Dashboard .count {
+  font-size: 350%;
+}
+.ProgressTracker2 .ProgressBar,
+.ProgressTracker_Dashboard .ProgressBar {
+  padding: 0;
+  height: 18px;
+}
+
+.ProgressTracker_Dashboard_Overview .panel {
+  /* default the overview PTs to the same height */
+  min-height: 137px;
+}
+.ProgressTracker_Dashboard_Overview .panel-heading.Distinguish {
+  border-bottom-color: transparent;
+}
+.ProgressTracker_Dashboard_Overview .count {
+  font-size: 250%;
+}
+.ProgressTracker_Dashboard_Overview .ProgressBar {
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+.StaffDashboard h2,
+.StaffDashboard .panel-heading.Distinguish,
+.StaffDashboard .PanelHead.Distinguish,
+.StaffDashboard .TitleBarCaption {
+  border-bottom-color: transparent;
+}
+.StaffDashboard h2.Collapsible,
+.StaffDashboard .panel-heading.Distinguish.Collapsible,
+.StaffDashboard .PanelHead.Distinguish.Collapsible,
+.StaffDashboard .TitleBarCaption.Collapsible {
+  border-bottom-color: #ddd;
+}

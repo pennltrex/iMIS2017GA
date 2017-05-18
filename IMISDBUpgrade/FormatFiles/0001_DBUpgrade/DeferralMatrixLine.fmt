@@ -1,0 +1,14 @@
+10.0
+12
+1       SQLUNIQUEID         1       16      ""   1     DeferralMatrixLineKey                              ""
+2       SQLUNIQUEID         1       16      ""   2     DeferralMatrixKey                                  ""
+3       SQLUNIQUEID         1       16      ""   3     InvoiceKey                                         ""
+4       SQLNCHAR            2       100     ""   4     InvoiceNumber                                      SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         0       8       ""   5     EffectiveDate                                      ""
+6       SQLDECIMAL          1       19      ""   6     AmountDeferred                                     ""
+7       SQLDECIMAL          1       19      ""   7     AmountConverted                                    ""
+8       SQLDATETIME         0       8       ""   8     UpdatedOn                                          ""
+9       SQLDECIMAL          1       19      ""   9     TotalAmountToBeDeferred                            ""
+10      SQLUNIQUEID         1       16      ""   10    InvoiceLineKey                                     ""
+11      SQLINT              1       4       ""   11    InvoiceLineNumber                                  ""
+12      SQLDATETIME         1       8       ""   12    MarkedForDeleteOn                                  ""

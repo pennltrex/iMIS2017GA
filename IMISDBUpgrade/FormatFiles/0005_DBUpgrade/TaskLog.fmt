@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLUNIQUEID         1       16      ""   1     TaskLogKey                             ""
+2       SQLUNIQUEID         1       16      ""   2     TaskDefinitionKey                      ""
+3       SQLINT              0       4       ""   3     Status                                 ""
+4       SQLNCHAR            2       200     ""   4     TriggerEventType                       SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         0       8       ""   5     StartTime                              ""
+6       SQLDATETIME         1       8       ""   6     EndTime                                ""
+7       SQLUNIQUEID         1       16      ""   7     CreatedByUserKey                       ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                              ""
+9       SQLUNIQUEID         1       16      ""   9     UpdatedByUserKey                       ""
+10      SQLDATETIME         1       8       ""   10    UpdatedOn                              ""

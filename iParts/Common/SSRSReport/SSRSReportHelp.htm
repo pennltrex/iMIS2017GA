@@ -1,0 +1,58 @@
+<html>
+<body>
+<h1>SSRS Report</h1>
+<ul>
+	<li><strong>Name</strong> - Enter a name for the content item. 
+	This text appears during design mode (configuration).</li>
+	<li><strong>Title</strong> - Enter the text to display above 
+	this iPart on the rendered page. If blank, no title displays.</li>
+	<li><strong>Do not render in design mode</strong> - Select this 
+	option to prevent content record data from being loaded in the content 
+	editor. This improves performance during design time (configuration).</li>
+	<li><strong>Display a border around this content</strong> - Select this 
+	option to display a border around this iPart on the rendered page.</li>
+
+	<li><strong>Display the PDF Export button</strong> - Disabled by default.</li>
+	<li><strong>Display the Excel Export button</strong> - Disabled by default.</li>
+	<li><strong>Document system path to the SSRS Report runtime</strong> - 
+		<i>Required.</i> Enter a link to an existing Reporting Services Report
+		(process engine):</li>
+	<ol>
+		<li>Click the <strong>select</strong> link next to the textbox</li>
+		<li>Browse to <strong>$/Samples/ReportingServices</strong> or another report folder.</li>
+		<li>Select a report (icon has an arrow on top of the report image).</li>
+	</ol>
+    <li><strong>Hide the parameters section</strong> - Prevents users 	
+        from seeing or changing the parameters for the report.</li>
+    <li><strong>Hide the toolbar</strong> - Hides the report viewer toolbar entirely.</li>
+    <li><strong>Hide the page navigation controls on the toolbar</strong> - Shows the 
+        report viewer toolbar without the page navigation controls.</li>
+    <li><strong>Hide all toolbar controls except the Print button</strong> - (Internet 
+        Explorer specific feature) Shows the toolbar with only the Print button. On all 
+        other browsers, hides the report viewer toolbar entirely.</li>
+    <li><strong>Inspect Session for parameters</strong> - Select this option to
+        tell the iPart to look in Session for query parameter values.</li>
+    <li><strong>Inspect query string for parameters</strong> - Select this option to
+        tell the iPart to look in the query string for query parameter values.<ul>
+            <li><em>Tip: </em>See this
+                <a href="http://www.imiscommunity.com/ssrs_ipart_parameters_from_session_and_query_string">
+                <em>iMIS</em> Community post</a> for examples on how to use these parameter 
+                inspection options.</li>
+        </ul>
+    </li>
+
+</ul>
+
+<p><strong>Notes</strong></p>
+<ul>
+	<li>This iPart uses version 11.0 ReportViewer, which supports IE8 natively and 
+	adds a <strong>Print</strong> button (IE8 and higher) to the toolbar. </li>
+	<li>You can change the SSRS report formatting defaults by editing the SSRS 
+	parameters in the <i>iMIS</i> <strong>SystemConfig</strong> table. </li>
+	<li>The process engine specified by the iPart loads a report template (.RDL file) from the 
+	document system and then creates a report data source (a DataTable) based on the 
+	SQL source for the IQA query. The report viewer combines the template and query to 
+	generate output. </li>
+</ul>
+</body>
+</html>

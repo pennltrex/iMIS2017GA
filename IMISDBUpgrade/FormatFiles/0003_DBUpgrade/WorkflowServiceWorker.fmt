@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLUNIQUEID         1       16      ""   1     WorkflowServiceKey                         ""
+2       SQLUNIQUEID         1       16      ""   2     WorkItemQueueKey                           ""
+3       SQLUNIQUEID         1       16      ""   3     WorkflowInstanceKey                        ""
+4       SQLDATETIME         0       8       ""   4     CreatedOn                                  ""

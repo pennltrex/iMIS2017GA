@@ -1,0 +1,109 @@
+﻿<html>
+	<body>
+		<h1>Panel Collection Editor</h1>
+			<ul>
+				<li><strong>Name</strong> - Enter a name for the content item. 
+				This text appears during design mode (configuration).</li>
+
+                <li><strong>Title</strong> - Enter the text to display above 
+                this iPart on the rendered page. If blank, no title displays.</li>
+
+                <li><strong>Do not render in design mode</strong> - Select this option 
+                to prevent content record data from being loaded in the content editor. 
+                This improves performance during design time (configuration).</li>
+
+    <li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class that 
+        will be applied to the iPart at runtime. Add this CSS 
+        class to an appropriate style sheet. Using such classes lets you apply special 
+        formatting to targeted iParts in a reusable way.</li>
+                <li><strong>Display a border around this content</strong> - (required for 
+        collapsible panels) Select this option to display a border around this iPart 
+    on the rendered page. </li>
+    <li><strong>Display content within a collapsible panel</strong> - Enable to allow 
+        users to minimize the panel within the page, to work with dense pages more efficiently.<ul>
+            <li><strong>Show the content as collapsed </strong>- Enable to display the panel 
+                minimized by default. </li>
+            <br><i>Tip: </i>Be sure that the <strong>Title</strong> makes 
+                clear what data is hidden from view.
+        </ul>
+                </li>
+
+				<li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+            <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                hidden on extra small devices, such as smartphones, where the width of the 
+                screen is less than 768px.</li>
+            <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                small devices, such as tablets, where the width of the screen is greater than 
+                768px and less than 991px.</li>
+            <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                medium devices, such as laptops, where the width of the screen is greater than 
+                992px and less than 1199px.</li>
+            <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                large devices, such as wide computer monitors, where the width of the screen is 
+                greater than or equal to 1200px wide.
+            <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for 
+                a page are displayed, regardless of the <strong>Display on screen sizes (for 
+                responsive themes only)</strong> options that are selected.</li>
+            </ul>
+        </li>
+                
+                <li><strong>Use all available panels</strong> adds all existing panels 
+                    in alphabetical order, each on its own tab.</li>
+                    
+                <li><strong>Select individual panels</strong> lets you add a subset of your existing panels in alphabetical order, each on its own tab.</li>
+                                              
+			                                    
+			    <li><strong>Allow users to edit</strong> - Select this checkbox to enable people to 
+                    enter or change their current data.
+                    <ul>
+                    <li><strong>Open single-instance panels in edit mode by default</strong> - Select this checkbox to always display a single-instance panel in edit mode for website users who have permission to edit the panel data. If Panel Editor is configured to open in edit mode by default, an option to set a commit sequence also displays:</li>
+                    <ul>
+                    <li><strong>Commit Sequence</strong> - Allows you to explicitly define the execution order of multiple content items in a content record. The number in this field indicates the processing order for this content item, relative to the other content items in the same content record. The value must be 0 or greater. You can leave the default value of 0 if the execution order of content items is not a concern. Content items with a value of 0 are processed <em>after</em> any other content items with a non-zero <strong>Commit sequence</strong> value that are on the same content record.</li>
+                    </ul>
+                    <em>Note:</em> <strong>Open single-instance panels in edit mode by default</strong> only displays as 
+a configuration option when a single-instance panel is selected.
+                    </ul>
+                    <ul>
+                        <li><strong>Edit window width</strong> - Enter the default width, 
+                    in pixels, of the pop-up edit window for a multi-instance panel.</li>
+                        <li><strong>Edit window height</strong> - Enter the default height, 
+                    in pixels, of the pop-up edit window for a multi-instance panel.<br />
+                    <em>Note:</em> <strong>Edit window width</strong> and <strong>Edit window height</strong> only display when the Panel Editor 
+is configured to <strong>Allow users to edit</strong> for a multi-instance panel.
+                    </li>
+                    </ul>
+                </li>
+			</ul>
+
+<p>The following options are only available when a multi-instance panel is selected:</p>
+    <ul>
+<li><strong>Enable scrolling for panel</strong> - Select this checkbox to set a height and width for
+                    a multi-instance panel. If the panel exceeds the set dimensions, scrolling is enabled.
+                    <ul>
+                        <li><strong>Panel width</strong> - Enter the width in pixels.</li>
+                        <li><strong>Panel height</strong> - Enter the height in pixels.</li>
+                    </ul>
+                </li>  
+                                
+			    <li><strong>Enable scrolling for cells -</strong> Select this checkbox to enable a vertical scrollbar for cells whose values are greater than 100 characters. </li>
+                <li><strong>Allow users to delete</strong> - Select this checkbox to enable users to delete their data from a multi-instance panel.</li>
+    </ul>
+<p><strong>Notes</strong></p>
+<ul>
+    <li><strong>Refreshing other panels on the content record</strong>
+    <ul>
+        <li>You can connect panel-displaying iParts on the same content record so that they 
+            dynamically refresh each other after user edits.</li>
+        <li>To create a connection, edit the content record, select the <strong>Connect</strong> 
+            option from the panel iPart&#39;s title bar menu, create an <strong>Object Consumer</strong> connection, 
+            select a panel iPart from the <strong>Object Provider</strong><em> </em>drop-list, and 
+            select <strong>Connect</strong>. </li>
+        <li>For details, see "<span class="C1HJump">Connecting iParts to refresh panels</span>"
+            <span class="C1HManual"> on the Helpsite</span></li>.</ul>
+    </li>
+    <li>When a Panel Editor content item in a contact’s public profile is configured to 
+        open in <em>edit</em> mode by default, the panel still displays in <em>read-only</em> mode for 
+        unauthenticated users who have access to the contact. The panel does not display 
+        to unauthenticated users who do not have permission to view the contact. </li>
+    </body>
+</html>

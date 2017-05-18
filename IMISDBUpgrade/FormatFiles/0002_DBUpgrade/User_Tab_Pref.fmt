@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLINT              0       4       ""   1     PREF_ID                            ""
+2       SQLNCHAR            2       64      ""   2     PREF_NAME                          SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       128     ""   3     PREF_DESC                          SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       32      ""   4     PROFILE_VERSION                    SQL_Latin1_General_CP1_CI_AS
+5       SQLBINARY           2       8       ""   5     TIME_STAMP                         ""

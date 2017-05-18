@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLINT              0       4       ""   1     JobId                            ""
+2       SQLNCHAR            2       128     ""   2     Title                            SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         1       8       ""   3     RunDate                          ""
+4       SQLDATETIME         1       8       ""   4     ExpirationDate                   ""
+5       SQLNCHAR            2       120     ""   5     UserId                           SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       20      ""   6     ImisSystem                       SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       40      ""   7     Category                         SQL_Latin1_General_CP1_CI_AS
+8       SQLBINARY           2       8       ""   8     TIME_STAMP                       ""

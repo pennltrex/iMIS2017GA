@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLNCHAR            2       20      ""   1     ID                               SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     COMMUNITY_SEQ                    ""
+3       SQLINT              0       4       ""   3     FORUM_SEQ                        ""
+4       SQLNCHAR            2       10      ""   4     ITEM_TYPE                        SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     LAST_READ_DATE                   ""
+6       SQLBINARY           2       8       ""   6     TIME_STAMP                       ""

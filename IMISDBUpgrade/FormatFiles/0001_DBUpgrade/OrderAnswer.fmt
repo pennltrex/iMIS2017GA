@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLFLT8             0       8       ""   1     OrderNumber                ""
+2       SQLINT              0       4       ""   2     QuestionID                 ""
+3       SQLNCHAR            2       1024    ""   3     Answer                     SQL_Latin1_General_CP1_CI_AS

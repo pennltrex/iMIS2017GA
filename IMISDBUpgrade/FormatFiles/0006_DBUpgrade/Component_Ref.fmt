@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLNCHAR            0       4       ""   1     ComponentCode                          SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       60      ""   2     ComponentDesc                          SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       60      ""   3     ComponentTable                         SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       60      ""   4     ComponentColumn                        SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       60      ""   5     DisplayColumnName                      SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       400     ""   6     SearchURL                              SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       400     ""   7     EditURL                                SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       100     ""   8     IconFileName                           SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       2       ""   9     UseInSearchFlag                        SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       510     ""   10    DirectoryName                          SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       2       ""   11    ActiveFlag                             SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            0       2       ""   12    TaggableFlag                           SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       60      ""   13    IconDesc                               SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLINT              0       4       ""   1     COMMENT_LOG_NUM                    ""
+2       SQLNCHAR            2       20      ""   2     ID                                 SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       200     ""   3     FROM_EMAIL                         SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       200     ""   4     SUBJECT                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       120     ""   5     COMMENT_TYPE                       SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         1       8       ""   6     CREATE_DATE                        ""
+7       SQLNCHAR            2       6       ""   7     PROCESSED                          SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            4       0       ""   8     COMMENT_CONTENT                    SQL_Latin1_General_CP1_CI_AS
+9       SQLBINARY           2       8       ""   9     TIME_STAMP                         ""

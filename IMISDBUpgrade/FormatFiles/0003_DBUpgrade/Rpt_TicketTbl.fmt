@@ -1,0 +1,17 @@
+10.0
+15
+1       SQLNCHAR            2       120     ""   1     MEET_MASTER_TITLE                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       120     ""   2     PRODUCT_TITLE                          SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         1       8       ""   3     BEGIN_DATE_TIME                        ""
+4       SQLDATETIME         1       8       ""   4     END_DATE_TIME                          ""
+5       SQLNCHAR            2       140     ""   5     FULL_NAME                              SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       40      ""   6     TICKET_NUMBER                          SQL_Latin1_General_CP1_CI_AS
+7       SQLFLT8             0       8       ""   7     ORDER_NUMBER                           ""
+8       SQLNCHAR            2       100     ""   8     UserID_Date                            SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       20      ""   9     BADGE_TYPE                             SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       200     ""   10    LAST_FIRST                             SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       40      ""   11    DESIGNATION                            SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       62      ""   12    PRODUCT_CODE                           SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       160     ""   13    COMPANY                                SQL_Latin1_General_CP1_CI_AS
+14      SQLBIT              1       1       ""   14    IS_FR_ITEM                             ""
+15      SQLBINARY           2       8       ""   15    TIME_STAMP                             ""

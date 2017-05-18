@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLNUMERIC          1       19      ""   1     AncestorNavMenuID                      ""
+2       SQLNUMERIC          1       19      ""   2     NavMenuID                              ""
+3       SQLNCHAR            2       510     ""   3     Name                                   SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       510     ""   4     Title                                  SQL_Latin1_General_CP1_CI_AS
+5       SQLNUMERIC          1       19      ""   5     ParentNavMenuID                        ""
+6       SQLNUMERIC          1       19      ""   6     CategoryDepth                          ""
+7       SQLNCHAR            2       2       ""   7     MembersOnlyFlag                        SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       510     ""   8     PostFuseURL                            SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       510     ""   9     FilePath                               SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     ProductKey                             ""
+2       SQLNCHAR            2       20      ""   2     CultureCode                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     Title                                  SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            4       0       ""   4     Description                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       510     ""   5     ImageURL                               SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                      ""

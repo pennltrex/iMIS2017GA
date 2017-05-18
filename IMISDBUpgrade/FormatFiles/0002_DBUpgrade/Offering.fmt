@@ -1,0 +1,18 @@
+10.0
+16
+1       SQLUNIQUEID         1       16      ""   1     OfferingKey                                        ""
+2       SQLUNIQUEID         1       16      ""   2     ExperienceDefinitionKey                            ""
+3       SQLNCHAR            2       100     ""   3     OfferingName                                       SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     OfferingCode                                       SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       500     ""   5     OfferingDesc                                       SQL_Latin1_General_CP1_CI_AS
+6       SQLUNIQUEID         1       16      ""   6     ContactKey                                         ""
+7       SQLUNIQUEID         1       16      ""   7     LocationKey                                        ""
+8       SQLDATETIME         1       8       ""   8     OfferingDate                                       ""
+9       SQLDATETIME         0       8       ""   9     UpdatedOn                                          ""
+10      SQLUNIQUEID         1       16      ""   10    UpdatedByUserKey                                   ""
+11      SQLDATETIME         0       8       ""   11    CreatedOn                                          ""
+12      SQLUNIQUEID         1       16      ""   12    CreatedByUserKey                                   ""
+13      SQLDATETIME         1       8       ""   13    MarkedForDeleteOn                                  ""
+14      SQLNCHAR            2       4       ""   14    OfferingStatusCode                                 SQL_Latin1_General_CP1_CI_AS
+15      SQLBIT              1       1       ""   15    AllowChangesFlag                                   ""
+16      SQLUNIQUEID         1       16      ""   16    LinkedProgramKey                                   ""

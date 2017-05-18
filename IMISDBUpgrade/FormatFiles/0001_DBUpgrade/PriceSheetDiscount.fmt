@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     PriceSheetVersionKey                         ""
+2       SQLUNIQUEID         1       16      ""   2     DiscountRuleKey                              ""
+3       SQLDATETIME         0       8       ""   3     UpdatedOn                                    ""
+4       SQLUNIQUEID         1       16      ""   4     UpdatedByUserKey                             ""
+5       SQLDATETIME         1       8       ""   5     MarkedForDeleteOn                            ""

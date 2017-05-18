@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLDATETIME         1       8       ""   1     LogDateTime                ""
+2       SQLNCHAR            2       40      ""   2     Direction                  SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       40      ""   3     RecordType                 SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       40      ""   4     Status                     SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            8       0       ""   5     Message                    SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       20      ""   6     ID                         SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       20      ""   7     NrdsId                     SQL_Latin1_General_CP1_CI_AS

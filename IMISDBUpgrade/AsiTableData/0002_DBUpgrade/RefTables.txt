@@ -1,0 +1,5 @@
+AsiGPSMeasureRef
+DocumentTypeRef
+ExperienceUnit
+FileTypeRef
+URLMappingTypeRef

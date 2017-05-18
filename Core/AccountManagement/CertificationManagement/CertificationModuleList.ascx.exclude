@@ -1,0 +1,36 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="CertificationModuleList.ascx.cs" Inherits="Asi.Bae.Web.Customer.AccountManagement.CertificationManagement.CertificationModuleList" %>
+<%@ Register Src="StageRows.ascx" TagName="StageRows" TagPrefix="Certification" %>
+
+<script type="text/javascript">
+
+    function RegisterCallBackFunction(radWindow, returnValue)
+    {
+        var hiddenResult = document.getElementById('<%# hiddenResult.ClientID %>');
+        if (returnValue)
+        {
+            hiddenResult.value = returnValue;
+            document.forms[0].submit();
+            wait();
+        }
+    }
+    
+    function DetailCallBackFunction(radwindow, returnValue)
+    {
+        if (returnValue)
+        {
+            document.forms[0].submit();
+        }
+    }
+
+</script>
+
+<input type="hidden" id="hiddenResult" runat="server" />
+
+<asp:Repeater ID="StageRepeater" runat="server">
+<ItemTemplate>
+    <Certification:StageRows ID="StageRows1" 
+        CertificationProgramRegistrationKey='<%# CertificationProgramRegistrationKey %>'
+        StageID='<%# DataBinder.Eval(Container.DataItem, "ID") %>' 
+        runat="server" />
+</ItemTemplate>
+</asp:Repeater>

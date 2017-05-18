@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLUNIQUEID         1       16      ""   1     UniformResourceActionKey                             ""
+2       SQLUNIQUEID         1       16      ""   2     UniformResourceKey                                   ""
+3       SQLUNIQUEID         1       16      ""   3     WorkflowDocumentKey                                  ""
+4       SQLUNIQUEID         1       16      ""   4     ResourceActionKey                                    ""
+5       SQLUNIQUEID         1       16      ""   5     ComponentKey                                         ""
+6       SQLBIT              1       1       ""   6     IsActive                                             ""
+7       SQLUNIQUEID         1       16      ""   7     OrganizationKey                                      ""
+8       SQLDATETIME         1       8       ""   8     MarkedForDeleteOn                                    ""

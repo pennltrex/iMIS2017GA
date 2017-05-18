@@ -1,0 +1,28 @@
+10.0
+26
+1       SQLNCHAR            2       20      ""   1     PRODUCT_CATEGORY                           SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       510     ""   2     DESCRIPTION                                SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     TAXABLE                                    ""
+4       SQLBIT              1       1       ""   4     STOCK_ITEM                                 ""
+5       SQLBIT              1       1       ""   5     COMMISSIONABLE                             ""
+6       SQLNUMERIC          1       19      ""   6     COMMISSION_PERCENT                         ""
+7       SQLNCHAR            2       100     ""   7     INCOME_ACCOUNT                             SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       100     ""   8     INVENTORY_ACCOUNT                          SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       100     ""   9     COG_ACCOUNT                                SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       100     ""   10    ADJUSTMENTS_ACCOUNT                        SQL_Latin1_General_CP1_CI_AS
+11      SQLBIT              1       1       ""   11    PST_TAXABLE                                ""
+12      SQLNCHAR            2       30      ""   12    TAX_AUTHORITY                              SQL_Latin1_General_CP1_CI_AS
+13      SQLTINYINT          0       1       ""   13    WEB_OPTION                                 ""
+14      SQLNCHAR            2       200     ""   14    IMAGE_URL                                  SQL_Latin1_General_CP1_CI_AS
+15      SQLBIT              1       1       ""   15    APPLY_IMAGE                                ""
+16      SQLBIT              1       1       ""   16    IS_KIT                                     ""
+17      SQLNCHAR            2       200     ""   17    INFO_URL                                   SQL_Latin1_General_CP1_CI_AS
+18      SQLBIT              1       1       ""   18    APPLY_INFO                                 ""
+19      SQLBIT              1       1       ""   19    IS_PUBLICATION                             ""
+20      SQLNCHAR            2       60      ""   20    UF_1                                       SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       60      ""   21    UF_2                                       SQL_Latin1_General_CP1_CI_AS
+22      SQLNCHAR            2       60      ""   22    UF_3                                       SQL_Latin1_General_CP1_CI_AS
+23      SQLNCHAR            2       60      ""   23    UF_4                                       SQL_Latin1_General_CP1_CI_AS
+24      SQLBIT              1       1       ""   24    PREMIUM                                    ""
+25      SQLNCHAR            2       20      ""   25    CONTACT_ID                                 SQL_Latin1_General_CP1_CI_AS
+26      SQLBINARY           2       8       ""   26    TIME_STAMP                                 ""

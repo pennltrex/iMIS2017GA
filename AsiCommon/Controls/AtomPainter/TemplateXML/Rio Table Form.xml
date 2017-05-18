@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AtomPainter:Template xmlns:AtomPainter="http://www.advsol.com/AtomPainter" TemplateTypeCode="10">
+	<AtomPainter:TemplatePage>
+		<AtomPainter:TemplateBody>
+			<table cellspacing="1" cellpadding="3" width="100%" border="0">
+				<tbody>
+					<tr>
+						<td class="PanelTablePrompt" noWrap="true" width="20%">Prompt</td>
+						<td class="PanelTableValue" width="80%">Value</td>
+					</tr>
+					<tr>
+						<td class="PanelTablePrompt" noWrap="true">Prompt</td>
+						<td class="PanelTableValue">Value</td>
+					</tr>
+					<tr>
+						<td class="PanelTablePrompt" noWrap="true">Prompt</td>
+						<td class="PanelTableValue">Value</td>
+					</tr>
+				</tbody>
+			</table>
+		</AtomPainter:TemplateBody>
+	</AtomPainter:TemplatePage>
+</AtomPainter:Template>

@@ -1,0 +1,13 @@
+10.0
+11
+1       SQLUNIQUEID         1       16      ""   1     ScheduleKey                            ""
+2       SQLDATETIME         1       8       ""   2     EffectiveDate                          ""
+3       SQLINT              0       4       ""   3     IntervalCount                          ""
+4       SQLINT              0       4       ""   4     IntervalTypeCode                       ""
+5       SQLINT              1       4       ""   5     IntervalDuration                       ""
+6       SQLUNIQUEID         1       16      ""   6     CreatedByUserKey                       ""
+7       SQLDATETIME         0       8       ""   7     CreatedOn                              ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                       ""
+9       SQLDATETIME         0       8       ""   9     UpdatedOn                              ""
+10      SQLUNIQUEID         1       16      ""   10    SystemEntityKey                        ""
+11      SQLDATETIME         1       8       ""   11    MarkedForDeleteOn                      ""

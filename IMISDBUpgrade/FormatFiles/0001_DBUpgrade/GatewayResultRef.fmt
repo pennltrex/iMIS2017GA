@@ -1,0 +1,4 @@
+10.0
+2
+1       SQLINT              0       4       ""   1     GatewayResultCode                      ""
+2       SQLNCHAR            2       60      ""   2     GatewayResultDesc                      SQL_Latin1_General_CP1_CI_AS

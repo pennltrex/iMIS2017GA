@@ -1,0 +1,65 @@
+﻿<html>
+<body>
+    <h1>Batch Invoice Payment Processing</h1>
+    <p>This iPart enables users to search for recurring donations payments due for collection by date and process all invoices from a single location.</p>
+        <!-- Use class="v10only" to make a tag visible for iMIS 20 only;
+        Use class="v100only" to make a tag visible for iMIS 100 only;
+        everything else appears common to both products.
+        -->
+    
+        <ul>
+			<li><strong>Name</strong> - Enter a name for the content item. 
+			This text only appears during design mode (configuration).</li>
+
+			<li><strong>Title</strong> - Enter the text to display above this 
+			iPart on the rendered page. If blank, no title displays.</li>
+            <li><strong>Do not render in design mode</strong> - Enable this option 
+			to prevent content record data from being loaded in the content editor. 
+			This improves performance during design time (configuration).</li>
+		<li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class to associate with 
+		this iPart, which will add a DIV so named around the iPart. Add this CSS class to an appropriate 
+		style sheet. Using such classes lets you apply special formatting to targeted iParts in a reusable way.</li>
+		<li><strong>Display a border around this content</strong> - Select this option to display a border 
+		around this iPart on the rendered page.</li>
+		<li><strong>Display content within a collapsible panel</strong> - Enable to allow users to minimize 
+		the panel within the page, to work with dense pages more efficiently.</li>
+		<ul>
+			<li><strong>Show the content as collapsed </strong>- Enable to display the panel minimized by default.</li>
+            </ul>
+		    <li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+            <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                hidden on extra small devices, such as smartphones, where the width of the 
+                screen is less than 768px.</li>
+            <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                small devices, such as tablets, where the width of the screen is greater than 
+                768px and less than 991px.</li>
+            <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                medium devices, such as laptops, where the width of the screen is greater than 
+                992px and less than 1199px.</li>
+            <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                large devices, such as wide computer monitors, where the width of the screen is 
+                greater than or equal to 1200px wide.
+            <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for 
+                a page are displayed, regardless of the <strong>Display on screen sizes (for 
+                responsive themes only)</strong> options that are selected.</li>
+            </ul>
+        </li>
+		<li><strong>Source Query -</strong> Select the Query to run to return the list of outstanding invoices. </li>
+        <li><strong>Button Label</strong> - The text to appear on the button to process the invoice payments.</li>
+            <li class="v10only"><strong>Batch History Content Code</strong> - The code given to the content which is reached via the <strong>Click Me</strong> hyperlink. </li>
+            <li><strong>&#39;Click Me&#39; Hyperlink text</strong> - Enter the text to appear on the button to submit the batch. This link directs to the content specified in the Batch History Content Code.</li>
+            <li><strong>Payments sent to DataVault text</strong> - Enter the text that displays when a payment batch has been submitted. </li>
+
+
+		</ul>
+            		    </ul>		
+     <p>
+        <strong>Notes</strong></p>
+    <ul>
+        <li>To make this iPart active, the option to allow recurring donations must be enabled from the Staff Site.&nbsp; (<strong>RiSE &gt; Set up web components &gt; General Configuration</strong>).</li>
+        <li>The Recurring Donation Creator iPart is available to those with an AutoPay license key.</li>
+    </ul>
+    	</body>
+</html>
+
+

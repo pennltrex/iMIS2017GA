@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLNUMERIC          1       19      ""   1     InterestCategoryID                       ""
+2       SQLNCHAR            2       510     ""   2     Name                                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     Description                              SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       2       ""   4     IndustryFlag                             SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       8       ""   5     SICCode                                  SQL_Latin1_General_CP1_CI_AS
+6       SQLNUMERIC          1       19      ""   6     ParentCategoryID                         ""
+7       SQLNUMERIC          1       19      ""   7     AncestorCategoryID                       ""
+8       SQLNUMERIC          1       19      ""   8     CategoryDepth                            ""
+9       SQLNUMERIC          1       19      ""   9     AncestorOrder                            ""
+10      SQLNUMERIC          1       19      ""   10    SortOrder                                ""

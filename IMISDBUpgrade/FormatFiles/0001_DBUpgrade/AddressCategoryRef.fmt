@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLINT              0       4       ""   1     AddressCategoryCode                        ""
+2       SQLNCHAR            2       100     ""   2     AddressCategoryDesc                        SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     IsPhysicalAddress                          ""
+4       SQLNCHAR            2       40      ""   4     AddressCategoryName                        SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       510     ""   5     FormatMask                                 SQL_Latin1_General_CP1_CI_AS

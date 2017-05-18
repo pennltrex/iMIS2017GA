@@ -1,0 +1,18 @@
+10.0
+16
+1       SQLUNIQUEID         1       16      ""   1     OrderTypeKey                                         ""
+2       SQLNCHAR            2       100     ""   2     Title                                                SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       1000    ""   3     Description                                          SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     AutoPostFlag                                         ""
+5       SQLBIT              1       1       ""   5     AutoEvalReadinessFlag                                ""
+6       SQLUNIQUEID         1       16      ""   6     DefaultWarehouseKey                                  ""
+7       SQLBIT              1       1       ""   7     IncursHandlingChargeFlag                             ""
+8       SQLBIT              1       1       ""   8     IncursRestockChargeFlag                              ""
+9       SQLNCHAR            2       40      ""   9     ResponseMediaCode                                    SQL_Latin1_General_CP1_CI_AS
+10      SQLUNIQUEID         1       16      ""   10    CreatedByUserKey                                     ""
+11      SQLDATETIME         0       8       ""   11    CreatedOn                                            ""
+12      SQLUNIQUEID         1       16      ""   12    UpdatedByUserKey                                     ""
+13      SQLDATETIME         0       8       ""   13    UpdatedOn                                            ""
+14      SQLUNIQUEID         1       16      ""   14    SystemEntityKey                                      ""
+15      SQLNCHAR            2       1000    ""   15    DefaultDescription                                   SQL_Latin1_General_CP1_CI_AS
+16      SQLDATETIME         1       8       ""   16    MarkedForDeleteOn                                    ""

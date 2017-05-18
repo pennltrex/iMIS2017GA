@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLNCHAR            2       40      ""   1     TaskStatusCode                   SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     TaskStatusDesc                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       40      ""   3     TaskStatusName                   SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsComplete                       ""

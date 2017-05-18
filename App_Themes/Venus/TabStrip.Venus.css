@@ -1,0 +1,137 @@
+/** Tabstrip container */
+.RadTabStrip_Venus {}
+
+	.RadTabStripTop_Venus .rtsLevel {}
+	.RadTabStripTop_Venus .rtsLevel1 {
+		background-color: #EADDBE;
+	}
+
+/** Tabs holder */
+.RadTabStrip_Venus .rtsUL {
+	background-color: #ffffff;
+}
+
+	.RadTabStrip_Venus .rtsLevel1 .rtsUL {
+		background-color: #EADDBE;
+	}
+
+	.RadTabStripTop_Venus .rtsLevel1 .rtsUL {padding: 5px; padding-bottom: 0}
+	.RadTabStripBottom_Venus .rtsLevel1 .rtsUL {padding: 5px; padding-top: 0}
+
+
+/** rtsLI */
+.RadTabStrip_Venus .rtsLI {
+	color: #757575;
+	font: 12px/22px "Segoe UI", Arial, sans-serif;
+}
+
+	.RadTabStrip_Venus .rtsLevel1 .rtsLI {
+		color: #ffffff;
+	}
+
+	.RadTabStripTop_Venus .rtsUL .rtsLI,
+	.RadTabStripBottom_Venus .rtsUL .rtsLI {padding: 0 0 0 1px}
+	.RadTabStripTop_Venus .rtsUL .rtsFirst,
+	.RadTabStripBottom_Venus .rtsUL .rtsFirst {padding: 0 0 0 1px}
+
+/** rtsLink */
+.RadTabStrip_Venus .rtsLink {
+	padding: 0 15px;
+	color: #757575;
+	font: 14px/22px "Segoe UI", Arial, sans-serif;
+}
+
+	.RadTabStrip_Venus .rtsLink:hover {
+		color: #000000;
+	}
+
+	.RadTabStrip_Venus .rtsLevel1 .rtsLink {
+		color: #655643;
+		border: 1px solid #EADDBE;
+	}
+	.RadTabStrip_Venus .rtsLevel1 .rtsLink:hover {
+		border-color: #ffffff;
+	}
+
+	.RadTabStripTop_Venus .rtsLevel1 .rtsLink {border-bottom: 0}
+	.RadTabStripBottom_Venus .rtsLevel1 .rtsLink {border-top: 0}
+	.RadTabStripRight_Venus .rtsLevel1 .rtsLink {border-left: 0}
+	.RadTabStripLeft_Venus .rtsLevel1 .rtsLink {border-right: 0}
+
+/** rtsSelected */
+.RadTabStrip_Venus .rtsSelected {
+	color: #000000;
+	background-color: #e6e6e6;
+}
+
+	.RadTabStrip_Venus .rtsSelected:hover {}
+
+	.RadTabStrip_Venus .rtsLevel1 .rtsSelected {
+		border-color: #ffffff;
+		color: #655643;
+		background-color: #ffffff;
+	}
+	.RadTabStrip_Venus .rtsLevel1 .rtsSelected:hover {
+		color: #000000;
+	}
+
+	.RadTabStripTop_Venus .rtsSelected:hover {}
+	.RadTabStripBottom_Venus .rtsSelected:hover {}
+	.RadTabStripRight_Venus .rtsSelected:hover {}
+	.RadTabStripLeft_Venus .rtsSelected:hover {}
+
+/** rtsDisabled */
+.RadTabStrip_Venus .rtsDisabled,
+.RadTabStrip_Venus .rtsDisabled:hover
+{
+	color: #cccccc;
+}
+
+	.RadTabStrip_Venus .rtsLevel1 .rtsDisabled,
+	.RadTabStrip_Venus .rtsLevel1 .rtsDisabled:hover
+	{
+		border-color: #EADDBE;
+		color: #DBBB95;
+	}
+
+/** rtsText */
+.RadTabStrip_Venus .rtsLevel .rtsOut,
+.RadTabStrip_Venus .rtsLevel .rtsIn,
+.RadTabStrip_Venus .rtsLevel .rtsTxt {padding: 0}
+
+/** rtsSeparator */
+.RadTabStrip_Venus .rtsSeparator {}
+
+/** Scrolling arrows */
+.RadTabStrip_Venus .rtsNextArrow,
+.RadTabStrip_Venus .rtsPrevArrow,
+.RadTabStrip_Venus .rtsPrevArrowDisabled,
+.RadTabStrip_Venus .rtsNextArrowDisabled
+{
+	background-image: url('TabStrip/TabStripStates.png');
+}
+.RadTabStrip_Venus .rtsLevel .rtsNextArrow { background-position: -18px 0; }
+.RadTabStrip_Venus .rtsLevel .rtsPrevArrow { background-position: 0 0; }
+.RadTabStrip_Venus .rtsLevel .rtsNextArrow:hover { background-position: -54px 0; }
+.RadTabStrip_Venus .rtsLevel .rtsPrevArrow:hover { background-position: -36px 0; }
+.RadTabStrip_Venus .rtsLevel .rtsPrevArrowDisabled,
+.RadTabStrip_Venus .rtsLevel .rtsPrevArrowDisabled:hover { background-position: -72px 0; }
+.RadTabStrip_Venus .rtsLevel .rtsNextArrowDisabled,
+.RadTabStrip_Venus .rtsLevel .rtsNextArrowDisabled:hover { background-position: -90px 0; }
+
+.RadTabStripLeft_Venus .rtsLevel .rtsNextArrow,
+.RadTabStripRight_Venus .rtsLevel .rtsNextArrow { background-position: -18px -20px; }
+.RadTabStripLeft_Venus .rtsLevel .rtsPrevArrow,
+.RadTabStripRight_Venus .rtsLevel .rtsPrevArrow { background-position: 0 -20px; }
+.RadTabStripLeft_Venus .rtsLevel .rtsNextArrow:hover,
+.RadTabStripRight_Venus .rtsLevel .rtsNextArrow:hover  { background-position: -54px -20px; }
+.RadTabStripLeft_Venus .rtsLevel .rtsPrevArrow:hover,
+.RadTabStripRight_Venus .rtsLevel .rtsPrevArrow:hover { background-position: -36px -20px; }
+.RadTabStripLeft_Venus .rtsLevel .rtsPrevArrowDisabled,
+.RadTabStripLeft_Venus .rtsLevel .rtsPrevArrowDisabled:hover,
+.RadTabStripRight_Venus .rtsLevel .rtsPrevArrowDisabled,
+.RadTabStripRight_Venus .rtsLevel .rtsPrevArrowDisabled:hover { background-position: -72px -20px; }
+.RadTabStripLeft_Venus .rtsLevel .rtsNextArrowDisabled,
+.RadTabStripLeft_Venus .rtsLevel .rtsNextArrowDisabled:hover,
+.RadTabStripRight_Venus .rtsLevel .rtsNextArrowDisabled,
+.RadTabStripRight_Venus .rtsLevel .rtsNextArrowDisabled:hover { background-position: -90px -20px; }

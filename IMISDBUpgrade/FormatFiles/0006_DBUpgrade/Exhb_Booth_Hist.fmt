@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLNCHAR            2       20      ""   1     EXHB_ID                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     MEET_ID                      SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         0       8       ""   3     EXHB_DATE                    ""
+4       SQLNCHAR            2       60      ""   4     OLD_DATA                     SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       60      ""   5     NEW_DATA                     SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       80      ""   6     ITEM                         SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       40      ""   7     BOOTH_NUMBER                 SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            4       0       ""   8     COMMENTS                     SQL_Latin1_General_CP1_CI_AS
+9       SQLBINARY           2       8       ""   9     TIME_STAMP                   ""

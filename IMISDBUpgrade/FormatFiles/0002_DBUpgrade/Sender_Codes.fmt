@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLNCHAR            2       80      ""   1     SENDER_CODE                              SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       200     ""   2     SENDER_DESCRIPTION                       SQL_Latin1_General_CP1_CI_AS
+3       SQLBINARY           2       8       ""   3     TIME_STAMP                               ""

@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLUNIQUEID         1       16      ""   1     PipelineKey                            ""
+2       SQLNCHAR            2       100     ""   2     Name                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     OrderTypeKey                           ""
+4       SQLDATETIME         1       8       ""   4     MarkedForDeleteOn                      ""

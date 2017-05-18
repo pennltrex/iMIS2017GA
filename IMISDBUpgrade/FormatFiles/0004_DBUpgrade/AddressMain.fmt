@@ -1,0 +1,16 @@
+11.0
+14
+1       SQLUNIQUEID         1       16      ""   1     AddressKey                                 ""
+2       SQLBIT              1       1       ""   2     IsPhysicalAddress                          ""
+3       SQLNCHAR            2       2       ""   3     AddressStatusCode                          SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       600     ""   4     FormattedAddress                           SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     LastVerifiedOn                             ""
+6       SQLUNIQUEID         1       16      ""   6     BadAddressReasonKey                        ""
+7       SQLDATETIME         0       8       ""   7     UpdatedOn                                  ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                           ""
+9       SQLUNIQUEID         1       16      ""   9     CreatedByUserKey                           ""
+10      SQLDATETIME         0       8       ""   10    CreatedOn                                  ""
+11      SQLUNIQUEID         1       16      ""   11    SystemEntityKey                            ""
+12      SQLINT              0       4       ""   12    AddressCategoryCode                        ""
+13      SQLUNIQUEID         1       16      ""   13    OwnerContactKey                            ""
+14      SQLDATETIME         1       8       ""   14    MarkedForDeleteOn                          ""

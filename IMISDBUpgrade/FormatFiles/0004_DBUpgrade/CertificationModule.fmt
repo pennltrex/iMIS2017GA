@@ -1,0 +1,21 @@
+11.0
+19
+1       SQLUNIQUEID         1       16      ""   1     CertificationModuleKey                                         ""
+2       SQLNCHAR            2       100     ""   2     CertificationModuleName                                        SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     CertificationModuleCode                                        SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       500     ""   4     CertificationModuleDesc                                        SQL_Latin1_General_CP1_CI_AS
+5       SQLDECIMAL          1       19      ""   5     NumberOfUnits                                                  ""
+6       SQLBIT              1       1       ""   6     RequiresGradeFlag                                              ""
+7       SQLBIT              1       1       ""   7     RequiresApprovalFlag                                           ""
+8       SQLBIT              1       1       ""   8     CertificationStaffOnlyFlag                                     ""
+9       SQLNCHAR            2       100     ""   9     CertificationModuleLocation                                    SQL_Latin1_General_CP1_CI_AS
+10      SQLDATETIME         1       8       ""   10    CertificationModuleDate                                        ""
+11      SQLNCHAR            2       4       ""   11    CertificationModuleStatusCode                                  SQL_Latin1_General_CP1_CI_AS
+12      SQLDATETIME         0       8       ""   12    UpdatedOn                                                      ""
+13      SQLUNIQUEID         1       16      ""   13    UpdatedByUserKey                                               ""
+14      SQLDATETIME         0       8       ""   14    CreatedOn                                                      ""
+15      SQLUNIQUEID         1       16      ""   15    CreatedByUserKey                                               ""
+16      SQLDATETIME         1       8       ""   16    MarkedForDeleteOn                                              ""
+17      SQLNCHAR            2       500     ""   17    AttachmentInstructions                                         SQL_Latin1_General_CP1_CI_AS
+18      SQLTINYINT          0       1       ""   18    FileAttachment                                                 ""
+19      SQLBIT              1       1       ""   19    EnrolleeCanRecordFlag                                          ""

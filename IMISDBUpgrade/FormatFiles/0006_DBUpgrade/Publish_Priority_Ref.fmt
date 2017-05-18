@@ -1,0 +1,4 @@
+11.0
+2
+1       SQLSMALLINT         0       2       ""   1     PublishPriorityCode                        ""
+2       SQLNCHAR            2       20      ""   2     PublishPriorityDesc                        SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,23 @@
+11.0
+21
+1       SQLUNIQUEID         1       16      ""   1     RecurringDonationCommitmentKey                                   ""
+2       SQLUNIQUEID         1       16      ""   2     ContactKey                                                       ""
+3       SQLDECIMAL          1       19      ""   3     DonationAmount                                                   ""
+4       SQLINT              0       4       ""   4     RecurringDonationFrequencyCode                                   ""
+5       SQLNCHAR            2       20      ""   5     PaymentMethod                                                    SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       62      ""   6     Distribution                                                     SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       80      ""   7     Appeal                                                           SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       20      ""   8     Campaign                                                         SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       20      ""   9     Fund                                                             SQL_Latin1_General_CP1_CI_AS
+10      SQLDATETIME         1       8       ""   10    StartDate                                                        ""
+11      SQLDATETIME         1       8       ""   11    EndDate                                                          ""
+12      SQLNCHAR            2       2       ""   12    CommitmentStatusInd                                              SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       8000    ""   13    CommitmentNotes                                                  SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       36      ""   14    MatchReference                                                   SQL_Latin1_General_CP1_CI_AS
+15      SQLUNIQUEID         1       16      ""   15    CreatedByUserKey                                                 ""
+16      SQLDATETIME         0       8       ""   16    CreatedOn                                                        ""
+17      SQLUNIQUEID         1       16      ""   17    UpdatedByUserKey                                                 ""
+18      SQLDATETIME         0       8       ""   18    UpdatedOn                                                        ""
+19      SQLNCHAR            2       12      ""   19    BranchSortCode                                                   SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            2       16      ""   20    BankAccountNumber                                                SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       36      ""   21    BankAccountName                                                  SQL_Latin1_General_CP1_CI_AS

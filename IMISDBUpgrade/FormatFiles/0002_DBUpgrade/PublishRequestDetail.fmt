@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     PublishRequestDetailKey                              ""
+2       SQLUNIQUEID         1       16      ""   2     PublishRequestKey                                    ""
+3       SQLINT              0       4       ""   3     PublishRequestStatusCode                             ""
+4       SQLNCHAR            2       2       ""   4     PublishServerCode                                    SQL_Latin1_General_CP1_CI_AS
+5       SQLINT              0       4       ""   5     Frequency                                            ""
+6       SQLBIT              1       1       ""   6     IsRegenerate                                         ""
+7       SQLBIT              1       1       ""   7     IsDelete                                             ""
+8       SQLINT              0       4       ""   8     NumOfAttempts                                        ""
+9       SQLDATETIME         1       8       ""   9     PublishedDateTime                                    ""
+10      SQLUNIQUEID         1       16      ""   10    ContentDocumentKey                                   ""

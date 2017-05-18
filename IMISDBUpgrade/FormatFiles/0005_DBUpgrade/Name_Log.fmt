@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLDATETIME         0       8       ""   1     DATE_TIME                ""
+2       SQLNCHAR            2       20      ""   2     LOG_TYPE                 SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     SUB_TYPE                 SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       120     ""   4     USER_ID                  SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       20      ""   5     ID                       SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       16000   ""   6     LOG_TEXT                 SQL_Latin1_General_CP1_CI_AS
+7       SQLBINARY           2       8       ""   7     TIME_STAMP               ""

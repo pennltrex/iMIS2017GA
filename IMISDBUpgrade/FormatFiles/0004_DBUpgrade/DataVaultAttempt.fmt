@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLUNIQUEID         1       16      ""   1     DataVaultAttemptKey                            ""
+2       SQLINT              0       4       ""   2     Attempt                                        ""
+3       SQLUNIQUEID         1       16      ""   3     DataVaultLogDetailKey                          ""
+4       SQLUNIQUEID         1       16      ""   4     DataVaultLogKey                                ""
+5       SQLNCHAR            2       2000    ""   5     FailedMessage                                  SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       2       ""   6     Status                                         SQL_Latin1_General_CP1_CI_AS

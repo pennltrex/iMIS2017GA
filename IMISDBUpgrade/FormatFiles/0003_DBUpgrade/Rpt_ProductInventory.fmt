@@ -1,0 +1,28 @@
+10.0
+26
+1       SQLINT              1       4       ""   1     PTRANS_NUMBER                              ""
+2       SQLNCHAR            2       62      ""   2     PRODUCT_CODE                               SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       200     ""   3     DESCRIPTION                                SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              1       4       ""   4     TRANS_GROUP_NUMBER                         ""
+5       SQLNCHAR            2       30      ""   5     PO_REFERENCE_NUMBER                        SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         1       8       ""   6     TRANSACTION_DATE                           ""
+7       SQLFLT8             1       8       ""   7     QUANTITY                                   ""
+8       SQLNUMERIC          1       19      ""   8     UNIT_COST                                  ""
+9       SQLNUMERIC          1       19      ""   9     TOTAL_AMOUNT                               ""
+10      SQLNCHAR            2       20      ""   10    FROM_LOCATION                              SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       20      ""   11    FROM_BIN                                   SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       20      ""   12    TO_LOCATION                                SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       20      ""   13    TO_BIN                                     SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       20      ""   14    TRANSACTION_TYPE                           SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       120     ""   15    TITLE                                      SQL_Latin1_General_CP1_CI_AS
+16      SQLFLT8             1       8       ""   16    ORDER_NUMBER                               ""
+17      SQLNCHAR            2       20      ""   17    BT_ID                                      SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       140     ""   18    FULL_NAME                                  SQL_Latin1_General_CP1_CI_AS
+19      SQLDATETIME         1       8       ""   19    ORDER_DATE                                 ""
+20      SQLNCHAR            2       20      ""   20    ORDER_TYPE_CODE                            SQL_Latin1_General_CP1_CI_AS
+21      SQLTINYINT          1       1       ""   21    FLAG                                       ""
+22      SQLNCHAR            2       100     ""   22    UserId_Date                                SQL_Latin1_General_CP1_CI_AS
+23      SQLFLT8             1       8       ""   23    BACKORDERED                                ""
+24      SQLNCHAR            2       20      ""   24    STAGE                                      SQL_Latin1_General_CP1_CI_AS
+25      SQLNCHAR            2       2       ""   25    PRODUCT_STATUS                             SQL_Latin1_General_CP1_CI_AS
+26      SQLBINARY           2       8       ""   26    TIME_STAMP                                 ""

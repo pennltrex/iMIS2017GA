@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLINT              0       4       ""   1     AtomPanelTemplateTypeCode                              ""
+2       SQLNCHAR            2       100     ""   2     AtomPanelTemplateTypeDesc                              SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            4       0       ""   3     PainterToDesignXSLT                                    SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            4       0       ""   4     TemplateToPainterXSLT                                  SQL_Latin1_General_CP1_CI_AS
+5       SQLBIT              1       1       ""   5     MultiPageFlag                                          ""
+6       SQLBIT              1       1       ""   6     ChildFlag                                              ""
+7       SQLNCHAR            2       40      ""   7     AtomPanelTemplateTypeName                              SQL_Latin1_General_CP1_CI_AS

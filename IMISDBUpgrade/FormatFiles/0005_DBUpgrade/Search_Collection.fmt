@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLNUMERIC          1       19      ""   1     ID                                       ""
+2       SQLNCHAR            0       2       ""   2     ActiveCollection                         SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         0       8       ""   3     LastUpdateDateTime                       ""

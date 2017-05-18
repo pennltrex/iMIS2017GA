@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLUNIQUEID         1       16      ""   1     OrganizationKey                        ""
+2       SQLUNIQUEID         1       16      ""   2     SystemEntityKey                        ""
+3       SQLNCHAR            2       60      ""   3     CounterName                            SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              0       4       ""   4     CurrentValue                           ""
+5       SQLDATETIME         0       8       ""   5     UpdatedOn                              ""
+6       SQLUNIQUEID         1       16      ""   6     UpdatedByUserKey                       ""
+7       SQLUNIQUEID         1       16      ""   7     CreatedByUserKey                       ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                              ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                      ""

@@ -1,0 +1,10 @@
+11.0
+8
+1       SQLUNIQUEID         1       16      ""   1     GLExportKey                            ""
+2       SQLNCHAR            2       100     ""   2     DeferredAccount                        SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         0       8       ""   3     BeginningPeriod                        ""
+4       SQLINT              0       4       ""   4     Term                                   ""
+5       SQLNCHAR            2       100     ""   5     IncomeAccount                          SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       10      ""   6     OrgCode                                SQL_Latin1_General_CP1_CI_AS
+7       SQLMONEY            0       8       ""   7     OriginalAmount                         ""
+8       SQLMONEY            0       8       ""   8     AmountTransferred                      ""

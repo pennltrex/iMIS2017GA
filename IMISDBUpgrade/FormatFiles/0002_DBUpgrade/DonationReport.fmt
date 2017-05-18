@@ -1,0 +1,22 @@
+10.0
+20
+1       SQLNCHAR            2       20      ""   1     ID                                         SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     OriginalTransaction                        ""
+3       SQLINT              0       4       ""   3     InvoiceRefNum                              ""
+4       SQLNCHAR            2       20      ""   4     SourceSystem                               SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     TransactionDate                            ""
+6       SQLDATETIME         1       8       ""   6     DateReceived                               ""
+7       SQLNUMERIC          1       19      ""   7     Amount                                     ""
+8       SQLNCHAR            2       20      ""   8     SolicitorID                                SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       20      ""   9     CheckNumber                                SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       22      ""   10    PaymentType                                SQL_Latin1_General_CP1_CI_AS
+11      SQLINT              0       4       ""   11    FiscalMonth                                ""
+12      SQLINT              0       4       ""   12    FiscalYear                                 ""
+13      SQLNCHAR            2       12      ""   13    GiftType                                   SQL_Latin1_General_CP1_CI_AS
+14      SQLINT              0       4       ""   14    MatchingTransaction                        ""
+15      SQLTINYINT          0       1       ""   15    IsMatchingGift                             ""
+16      SQLNCHAR            2       20      ""   16    MemorialID                                 SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       510     ""   17    ListAs                                     SQL_Latin1_General_CP1_CI_AS
+18      SQLNUMERIC          1       19      ""   18    RequestNumber                              ""
+19      SQLNCHAR            2       200     ""   19    MemorialNameText                           SQL_Latin1_General_CP1_CI_AS
+20      SQLBINARY           2       8       ""   20    TIME_STAMP                                 ""

@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLUNIQUEID         1       16      ""   1     WebsiteKey                                             ""
+2       SQLINT              0       4       ""   2     AtomPanelTemplateTypeCode                              ""
+3       SQLNCHAR            2       60      ""   3     TemplateName                                           SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            4       0       ""   4     TemplateXML                                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            4       0       ""   5     DesignToPainterXSLT                                    SQL_Latin1_General_CP1_CI_AS

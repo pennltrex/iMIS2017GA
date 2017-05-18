@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLUNIQUEID         1       16      ""   1     NotificationSetKey                                           ""
+2       SQLNCHAR            2       100     ""   2     NotificationSetName                                          SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       1000    ""   3     NotificationSetDesc                                          SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     NotificationSetLimitUserView                                 ""
+5       SQLBIT              1       1       ""   5     NotificationSetIsSystem                                      ""
+6       SQLBIT              1       1       ""   6     NotificationSetIsDefault                                     ""
+7       SQLUNIQUEID         1       16      ""   7     CreatedByUserKey                                             ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                                                    ""
+9       SQLUNIQUEID         1       16      ""   9     UpdatedByUserKey                                             ""
+10      SQLDATETIME         0       8       ""   10    UpdatedOn                                                    ""

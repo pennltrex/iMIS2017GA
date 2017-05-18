@@ -1,0 +1,182 @@
+<html>
+<body>
+    <h1>Donation Creator</h1>
+    	<!-- Use class="v10only" to make a tag visible for iMIS 20 only;
+		    Use class="v100only" to make a tag visible for iMIS 100 only;
+		    everything else appears common to both products.
+		    -->This content item enables users to add a gift (donation) to the cart. The content item defaults to a single, empty Gift Amount field, but can be pre-populated or set to show a range of suggested gift amounts. This content item will add its title information, typically the name of the donation item, to the browser window or tab page title when the <strong>Use dynamic page titles</strong> checkbox is selected on the parent content record.
+    <ul>
+        <li><strong>Name</strong> - Enter a name for the content item. This text appears during design mode (configuration).</li>
+
+        <li><strong>Title</strong> - Enter the text to display above this content item on the rendered page. 
+        If blank, no title displays.</li>
+
+        <li><strong>Do not render in design mode</strong> - Select this option to prevent content 
+        record data from being loaded in the content editor. This improves performance during design time (configuration).</li>
+        <li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class that 
+            will be applied to the content item at runtime. Add this CSS class to an appropriate 
+            style sheet. Using such classes lets you apply special formatting to targeted content items in a reusable way.</li>
+
+        <li><strong>Display a border around this content</strong> - Select this option to display a border around this content item on the rendered page.</li>
+        <li><strong>Display content within a collapsible panel</strong> - Enable to allow users to minimize 
+                the panel within the page, to work with dense pages more efficiently.</li>
+                <ul>
+                <li><strong>Show the content as collapsed </strong>- Enable to display the panel minimized by default. 
+                <br /><i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is hidden from view.</li>
+                </ul>
+                <li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+            <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                hidden on extra small devices, such as smartphones, where the width of the 
+                screen is less than 768px.</li>
+            <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                small devices, such as tablets, where the width of the screen is greater than 
+                768px and less than 991px.</li>
+            <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                medium devices, such as laptops, where the width of the screen is greater than 
+                992px and less than 1199px.</li>
+            <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                large devices, such as wide computer monitors, where the width of the screen is 
+                greater than or equal to 1200px wide.
+            <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for 
+                a page are displayed, regardless of the <strong>Display on screen sizes (for 
+                responsive themes only)</strong> options that are selected.</li>
+            </ul>
+        </li>
+                </li>
+<!-- end base class options -->
+
+        <li class="v10only"><strong>Display the gift item description</strong> - If you want to display a detailed description of the donation&#39;s distribution on the rendered page, enable this checkbox. You can find your distribution codes and edit the descriptions in Advanced Accounting Console. Go to <strong>Settings &gt; Fundraising &gt; Set up tables &gt; Distributions and premiums</strong>. </li>
+        <li class="v100only"><strong>Display the Gift Item description</strong> - If you want to display a detailed description of the donation&#39;s description on the rendered page, enable this checkbox. You can edit the Gift Item descriptions in the Staff site. Go to <strong>Fundraising &gt; Find gift items</strong>. Select the Gift Item, then click the <strong>Edit</strong> icon. </li>
+        <li class="v100only"><strong>Allow staff users to assign soft credits</strong> - (Enabled by default) Staff users can assign credit to a contact who contributed to a donation in a non-monetary capacity.</li>
+<li><strong>Processing mode</strong> - Donations made through this content item can be processed
+            in one of two ways. Choose the option that best fits your use of this content item.
+            <ul>
+                <li><strong>Add donation to the cart</strong> - When selected, donations made through
+                    this content item are added as an item in the user&#39;s shopping cart. They can then check
+                    out and pay for the donation as well as any other items in their cart.</li> 
+                <li><strong>Process donation immediately</strong> - When selected, donations can be
+                    processed and paid for without using the shopping cart. If this option is selected,
+                    then other content items need to be added to the content record, with the proper
+                    <strong>Commit sequence</strong>.
+                    </li>
+            </ul>
+        </li>
+        <li>
+            <strong>Payment term options</strong> - If enabled, donors can make their donation in one payment, or select to make installment payments.<ul>
+                <li><strong>None</strong> - The donor can still specify a single amount for a gift, but will not see any option to pay with installment payments. Enable this option if you want your donors to submit full payment for their donation.</li>
+                <li><strong>Fixed payment options</strong> - Enable this option to provide the ability for donors to choose to pay a donation with a single payment, or make installment payments to fulfill a specific donation amount.</li>
+                <br /> <em>Note:</em> <strong>Payment term options</strong> is only available when the <strong>Processing mode</strong> is set to <strong>Process donation immediately</strong>.</br>
+            </ul>
+        </li>
+        <li class="v10only"><b>Gift item</b> -&nbsp; Donations made through your website must be 
+            associated with a valid gift item code defined in <em>iMIS</em>. This code can be 
+            specified in two ways:
+            <ul>
+                <li><b>Set the gift item by an ItemId URL parameter</b> - Indicates that the 
+                    content record containing the Donation Creator will be dynamically populated 
+                    based on the value of an ItemId parameter in the URL. If selected, you must pass 
+                    a valid distribution code to your Donation Creator content item using a relative link, 
+                    absolute link, or navigation item. The URL parameter is <strong>ItemId=[Distribution code]</strong>.
+            For example, if you want to create an absolute link to a donation page for the BLDG distribution,
+            set the URL to <strong>http://mywebsite.com/donationpage.aspx?ItemId=BLDG</strong>. Or, 
+                    if you want to assign that same parameter from the navigation item instead, 
+                    enter <b>ItemId=BLDG</b> into the <b>URL Parameters</b> field. </li>
+                <li><b>Select a gift item </b>- Specifies a single distribution code to be 
+                    used for any donations made from the content item. If selected, this option overrides 
+                    the value of <b>ItemId</b> parameters in the URL.</li>
+            </ul>
+        </li>
+        <li class="v100only"><b>Gift Item</b> -&nbsp; Donations made through your website must be 
+            associated with the <b>Item Code</b> of a <b>Gift Item</b> (go to <strong>Fundraising &gt; Add gift item</strong>). You can associate donations with the required <b>Item 
+            Code</b> in two ways:
+            <ul>
+                <li><b>Set the Gift Item by an ItemId URL parameter</b> - Indicates that the 
+                    content record containing the Donation Creator will be dynamically populated 
+                    based on the value of an ItemId parameter in the URL. If selected, you must pass 
+                    a valid <b>Item Code</b> GUID to your Donation Creator content item using a relative 
+                    link, absolute link, or navigation item. To identify the GUID, open your gift 
+                    item and copy that URL&#39;s identifying string, such as 
+                    &quot;4fe78e06-d0ae-4637-8122-c4e56a92f620&quot;.<ul>
+                        <li><em>Absolute link</em>: enter <strong>http://mywebsite.com/donationpage.aspx?ItemId=[GUID]</strong></li>
+                        <li><em>Navigation item</em>: 
+                    enter <b>ItemId=[GUID]</b> </li>
+                    </ul>
+                </li>
+                <li><b>Select a Gift Item </b>- Specifies a single <b>Gift Item</b> to be 
+                    used for any donations made from the content item. If selected, this option overrides 
+                    the value of <b>ItemId</b> parameters in the URL.</li>
+            </ul>
+        </li>
+        <li><strong>Commit sequence</strong> - Allows you to explicitly define the execution order of multiple content items in a content record. The number in this field indicates the processing order for this content item, relative to the other content items in the same content record. The value must be <strong>0</strong> or greater. You can leave the default value of <strong>0</strong> if the execution order of content items is not a concern. Content items with a value of <strong>0</strong> are processed after any other content items with a non-zero <strong>Commit sequence</strong> value that are on the same content record.  
+            <br>For example, processing a donation immediately requires that multiple content items are defined in a single content record. It does not matter the order in which the content items are defined on the page. In the scenario outlined below, where the Recurring Donation Creator is the first content item displayed on the page and the Submit Order Button Link is the last content item displayed, the <strong>Commit sequence </strong>value controls the order in which the content items are processed. When the donation is submitted from the content record, execution control is given to each content item based on the <strong>Commit sequence</strong> value shown in parentheses:
+                <ul>
+                    <li>Donation Creator (<strong>2</strong>)</li>
+                    <li>Recurring Donation Creator (<strong>3</strong>)</li>
+                    <li>Contact Account Creator (<strong>1</strong>)</li>
+                    <li>Payment Creator (<strong>5</strong>)</li>
+                    <li>Submit Order Button Link (<strong>6</strong>)<br />
+                    </li>
+                </ul>
+        </li>
+        <li><b>Item added message (Cart mode)</b> - Enter the message to display when a 
+            donation is successfully added to a user&#39;s cart. This text is only displayed if 
+            the content item&#39;s <b>Processing mode</b> is <b>Add donation to the cart</b>. 
+        </li>
+        <li class="v10only"><strong>Personalized gift array query</strong> - Specifies a query that generates an array 
+            of gift amounts based on the signed-in user&#39;s prior giving history. For example, 
+            if a user&#39;s last donation was $50, the gift array shown would be 55, 110, 220, 
+            440, and a free text entry field. A sample query has been provided in 
+            <em>$/Fundraising/DefaultSystem/Queries/ProductFundraising/GiftArray</em>. If no query is 
+            selected, or if an unauthenticated user navigates to the page, the default gift 
+            array for the distribution displays (defined in the GIFT_AMOUNT lookup table). 
+        </li>
+        <li class="v100only"><strong>Personalized gift array query</strong> - This option is planned for a future 
+            release.</li>
+        <li><strong>Display premiums</strong> - Enable if you want your donors to have the option to select a gift premium.  <br><i>Note: </i>The <strong>Processing mode</strong> must be set to <strong>Process donation immediately</strong> if <strong>Display of premiums</strong> is turned on.<ul>
+            <li><strong>Display mode</strong> - Select the mode by which the premiums display is shown.<ul>
+                <li><strong>Donor enters gift amount first </strong>- Users will enter the amount of their gift, and then will see a list of eligible premiums for that gift amount. Premiums that require a higher gift amount will not appear.</li>
+                <li><strong>Donor chooses premium with associated gift amount </strong>- All premiums appear with their associated gift amounts. When a user selects a premium, that establishes the amount of their gift.</li>
+                </ul>
+            </li>
+            <li><strong>Section title</strong> - Enter desired text to appear at the top of the list of premiums.</li>
+            <li><strong>Include option for donor to choose no premium</strong> (<em>only displayed when <strong>Donor enters gift amount first</strong> selected</em>) - When enabled, if the donor’s gift amount is eligible for selecting a premium, they will also see a button to opt out of a premium.<ul>
+                <li><strong>No premium title</strong> - Enter the text that will appear for choosing to opt out of a premium.</li>
+                <li><strong>No premium description </strong>– Enter any text you want to appear in the area next to the button to opt out.</li>
+                </ul>
+            </li>
+            <li><strong>Gift amount label </strong>(<em>only displayed when <strong>Donor chooses premium with associated gift amount</strong> selected</em>) - Enter the text that will appear next to the gift amount associated with each premium</li>
+            </ul>
+        </li>
+    </ul>
+   <p><strong>Notes</strong></p>
+    <ul>
+        <li class="v10only">By default, the Donation Creator displays a single, empty <strong>
+            Gift Amount</strong> field. However, you also have the option to display
+            an array of gift amounts from which the user can select, or to display a single
+            <strong>Gift Amount </strong>field that is pre-populated with
+            a gift amount of your choice.
+            To do either of these, first create a <strong>GIFT_AMOUNT</strong> table. In the Advanced Accounting Console, go to <strong>Settings &gt; Membership &gt; Set up tables &gt; Lookup/validation tables</strong>.
+            In the <strong>Code</strong> field, enter the distribution code for which you want 
+            to customize the display. For example, BLDG. The values you enter in the 
+            <strong>Description</strong> field determine what is displayed on the donation webpage:
+            <ul>
+                <li>To display an array of gift amounts, enter a comma-separated list of gift values 
+                    that you want to appear in the list. For example, entering 50,100,200,500 
+                    results in a radio list of those values displayed on the page. To preselect an 
+                    option, precede the number with an asterisk: 15,*25,75. The gift array always displays an option for the user to select <strong>Other</strong>
+                    and enter any amount.</li>
+                <li>To display a single <strong>Gift Amount</strong> field with a pre-populated gift amount, enter a 
+                    single amount. For example, 25.</li>
+            </ul>
+        </li>
+        <li>If a content record contains several dynamic content items, it is recommended that you turn dynamic page titles off for the entire page in order to limit the title length.</li>
+    </ul>
+    <p>
+        <strong>Related Helpsite topics</strong></p>
+    <ul>
+        <li class="v10only"><span class="C1HJump"> 
+<i>Building donation pages </span></i></li>
+        <li class="v100only"><i>Fundraising</i></li>
+    </ul>
+</body>
+</html>

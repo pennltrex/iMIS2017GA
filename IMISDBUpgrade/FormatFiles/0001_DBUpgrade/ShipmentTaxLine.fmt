@@ -1,0 +1,17 @@
+10.0
+15
+1       SQLUNIQUEID         1       16      ""   1     ShipmentTaxLineKey                                 ""
+2       SQLUNIQUEID         1       16      ""   2     ShipmentKey                                        ""
+3       SQLUNIQUEID         1       16      ""   3     ProductKey                                         ""
+4       SQLDECIMAL          1       19      ""   4     TaxAmount                                          ""
+5       SQLDECIMAL          1       19      ""   5     TaxableAmount                                      ""
+6       SQLDECIMAL          1       19      ""   6     ExemptAmount                                       ""
+7       SQLBIT              1       1       ""   7     IsExemptFromIncludedTax                            ""
+8       SQLBIT              1       1       ""   8     IsTaxInclusive                                     ""
+9       SQLUNIQUEID         1       16      ""   9     OrderLineKey                                       ""
+10      SQLNCHAR            2       400     ""   10    TaxPlan                                            SQL_Latin1_General_CP1_CI_AS
+11      SQLUNIQUEID         1       16      ""   11    UpdatedByUserKey                                   ""
+12      SQLDATETIME         0       8       ""   12    UpdatedOn                                          ""
+13      SQLUNIQUEID         1       16      ""   13    CreatedByUserKey                                   ""
+14      SQLDATETIME         0       8       ""   14    CreatedOn                                          ""
+15      SQLDATETIME         1       8       ""   15    MarkedForDeleteOn                                  ""

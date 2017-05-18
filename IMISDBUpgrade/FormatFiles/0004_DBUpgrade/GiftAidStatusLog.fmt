@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLINT              0       4       ""   1     GiftAidStatusLogID                       ""
+2       SQLDATETIME         1       8       ""   2     StatusCheckedOn                          ""
+3       SQLNCHAR            2       100     ""   3     StatusTimeStamp                          SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     CorrelationId                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       500     ""   5     Status                                   SQL_Latin1_General_CP1_CI_AS

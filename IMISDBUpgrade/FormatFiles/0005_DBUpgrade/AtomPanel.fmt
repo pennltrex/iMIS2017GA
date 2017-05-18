@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLUNIQUEID         1       16      ""   1     AtomPanelKey                                           ""
+2       SQLUNIQUEID         1       16      ""   2     ComponentKey                                           ""
+3       SQLNCHAR            2       200     ""   3     AtomPanelName                                          SQL_Latin1_General_CP1_CI_AS
+4       SQLSMALLINT         0       2       ""   4     AtomPanelStatusCode                                    ""
+5       SQLSMALLINT         0       2       ""   5     AtomPanelTypeCode                                      ""
+6       SQLSMALLINT         0       2       ""   6     AtomPanelPurposeCode                                   ""
+7       SQLSMALLINT         0       2       ""   7     AtomPanelFactoryStateCode                              ""
+8       SQLBIT              1       1       ""   8     DefaultForPurposeFlag                                  ""
+9       SQLNCHAR            2       4000    ""   9     AtomPanelDescription                                   SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            4       0       ""   10    AtomPanelDesign                                        SQL_Latin1_General_CP1_CI_AS
+11      SQLDATETIME         0       8       ""   11    UpdatedOn                                              ""
+12      SQLUNIQUEID         1       16      ""   12    UpdatedByUserKey                                       ""
+13      SQLDATETIME         1       8       ""   13    MarkedForDeleteOn                                      ""

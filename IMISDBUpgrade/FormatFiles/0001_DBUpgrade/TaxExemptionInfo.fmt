@@ -1,0 +1,14 @@
+10.0
+12
+1       SQLUNIQUEID         1       16      ""   1     TaxExemptionInfoKey                            ""
+2       SQLUNIQUEID         1       16      ""   2     ContactKey                                     ""
+3       SQLUNIQUEID         1       16      ""   3     ExemptTaxAuthorityKey                          ""
+4       SQLNCHAR            2       100     ""   4     RegistrationCode                               SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     Reason                                         SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         1       8       ""   6     StartDate                                      ""
+7       SQLDATETIME         1       8       ""   7     EndDate                                        ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                               ""
+9       SQLDATETIME         0       8       ""   9     UpdatedOn                                      ""
+10      SQLUNIQUEID         1       16      ""   10    CreatedByUserKey                               ""
+11      SQLDATETIME         0       8       ""   11    CreatedOn                                      ""
+12      SQLDATETIME         1       8       ""   12    MarkedForDeleteOn                              ""

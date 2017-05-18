@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="EngagementScoreFormulaListConfigEdit.ascx.cs" Inherits="Asi.Web.iParts.Communications.EngagementScoreFormulaList.EngagementScoreFormulaListConfigEdit" %>

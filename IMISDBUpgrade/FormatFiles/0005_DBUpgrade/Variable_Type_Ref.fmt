@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLNCHAR            0       2       ""   1     VariableTypeCode                             SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       40      ""   2     VariableTypeDesc                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     VariableTypeHelpText                         SQL_Latin1_General_CP1_CI_AS

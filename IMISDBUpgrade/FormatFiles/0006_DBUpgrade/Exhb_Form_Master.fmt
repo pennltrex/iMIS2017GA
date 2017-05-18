@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLNCHAR            2       20      ""   1     FORM_ID                  SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       60      ""   2     FORM_TITLE               SQL_Latin1_General_CP1_CI_AS
+3       SQLBINARY           2       8       ""   3     TIME_STAMP               ""

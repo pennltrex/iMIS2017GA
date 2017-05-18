@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     PublishMessageLogKey                               ""
+2       SQLUNIQUEID         1       16      ""   2     PublishRequestKey                                  ""
+3       SQLUNIQUEID         1       16      ""   3     PublishRequestDetailKey                            ""
+4       SQLNCHAR            2       2       ""   4     PublishServerCode                                  SQL_Latin1_General_CP1_CI_AS
+5       SQLINT              1       4       ""   5     MessageNumber                                      ""
+6       SQLNCHAR            2       4000    ""   6     MessageText                                        SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         0       8       ""   7     MessageDateTime                                    ""
+8       SQLNCHAR            2       200     ""   8     Location                                           SQL_Latin1_General_CP1_CI_AS
+9       SQLBIT              1       1       ""   9     DisplayFlag                                        ""

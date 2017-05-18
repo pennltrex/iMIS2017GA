@@ -1,0 +1,16 @@
+11.0
+14
+1       SQLUNIQUEID         1       16      ""   1     LicenseMasterKey                                               ""
+2       SQLUNIQUEID         1       16      ""   2     LicenseKey                                                     ""
+3       SQLINT              0       4       ""   3     NamedLicenseCount                                              ""
+4       SQLINT              0       4       ""   4     UnnamedLicenseCount                                            ""
+5       SQLNCHAR            2       500     ""   5     Checksum                                                       SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         0       8       ""   6     EffectiveDate                                                  ""
+7       SQLDATETIME         1       8       ""   7     ExpirationDate                                                 ""
+8       SQLUNIQUEID         1       16      ""   8     CreatedByUserKey                                               ""
+9       SQLDATETIME         0       8       ""   9     CreatedOn                                                      ""
+10      SQLUNIQUEID         1       16      ""   10    UpdatedByUserKey                                               ""
+11      SQLDATETIME         0       8       ""   11    UpdatedOn                                                      ""
+12      SQLDATETIME         1       8       ""   12    MarkedForDeleteOn                                              ""
+13      SQLINT              0       4       ""   13    GracePeriod                                                    ""
+14      SQLUNIQUEID         1       16      ""   14    LicenseOrganizationVersionKey                                  ""

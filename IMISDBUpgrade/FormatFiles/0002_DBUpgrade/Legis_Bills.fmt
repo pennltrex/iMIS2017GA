@@ -1,0 +1,35 @@
+10.0
+33
+1       SQLNCHAR            2       20      ""   1     BILL_ID                              SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       10      ""   2     BILL_TYPE                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     COMPANION                            SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       20      ""   4     AUTHOR_CODE                          SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       120     ""   5     AUTHOR_NAME                          SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       20      ""   6     COAUTHOR_CODE                        SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       120     ""   7     COAUTHOR_NAME                        SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       20      ""   8     SPONSOR_CODE                         SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       120     ""   9     SPONSOR_NAME                         SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       510     ""   10    TITLE                                SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       10      ""   11    STATUS                               SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       160     ""   12    LAST_ACTION                          SQL_Latin1_General_CP1_CI_AS
+13      SQLDATETIME         1       8       ""   13    LAST_ACTION_DATE                     ""
+14      SQLNCHAR            2       510     ""   14    SUBJECT_CODE                         SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       80      ""   15    CATEGORY                             SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       160     ""   16    SUBJECT                              SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            4       0       ""   17    SYNOPSIS                             SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            4       0       ""   18    ANALYSIS                             SQL_Latin1_General_CP1_CI_AS
+19      SQLDATETIME         1       8       ""   19    DATE_ADDED                           ""
+20      SQLDATETIME         1       8       ""   20    LAST_UPDATED                         ""
+21      SQLNCHAR            2       120     ""   21    UPDATED_BY                           SQL_Latin1_General_CP1_CI_AS
+22      SQLBIT              1       1       ""   22    BRIEFED                              ""
+23      SQLNCHAR            4       0       ""   23    NOTES                                SQL_Latin1_General_CP1_CI_AS
+24      SQLNCHAR            4       0       ""   24    ACTION_HISTORY                       SQL_Latin1_General_CP1_CI_AS
+25      SQLNCHAR            2       200     ""   25    UF1                                  SQL_Latin1_General_CP1_CI_AS
+26      SQLNCHAR            2       200     ""   26    UF2                                  SQL_Latin1_General_CP1_CI_AS
+27      SQLNCHAR            2       200     ""   27    UF3                                  SQL_Latin1_General_CP1_CI_AS
+28      SQLNCHAR            2       200     ""   28    UF4                                  SQL_Latin1_General_CP1_CI_AS
+29      SQLNCHAR            2       200     ""   29    UF5                                  SQL_Latin1_General_CP1_CI_AS
+30      SQLDATETIME         1       8       ""   30    UF6                                  ""
+31      SQLDATETIME         1       8       ""   31    UF7                                  ""
+32      SQLDATETIME         1       8       ""   32    UF8                                  ""
+33      SQLBINARY           2       8       ""   33    TIME_STAMP                           ""

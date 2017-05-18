@@ -1,0 +1,20 @@
+11.0
+18
+1       SQLNCHAR            2       20      ""   1     ID                                                 SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       60      ""   2     IP_ADDRESS                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     ST_ID                                              SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       30      ""   4     PRODUCT_MINOR                                      SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       30      ""   5     PRODUCT_MAJOR                                      SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       62      ""   6     PRODUCT_CODE                                       SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       120     ""   7     TITLE                                              SQL_Latin1_General_CP1_CI_AS
+8       SQLDATETIME         1       8       ""   8     BEGIN_DATE                                         ""
+9       SQLDATETIME         1       8       ""   9     END_DATE                                           ""
+10      SQLDATETIME         1       8       ""   10    BEGIN_TIME                                         ""
+11      SQLDATETIME         1       8       ""   11    END_TIME                                           ""
+12      SQLMONEY            0       8       ""   12    EXTENDED_AMOUNT                                    ""
+13      SQLNCHAR            2       100     ""   13    INCOME_ACCOUNT                                     SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       100     ""   14    DEFERRED_INCOME_ACCOUNT                            SQL_Latin1_General_CP1_CI_AS
+15      SQLFLT8             0       8       ""   15    QUANTITY_ORDERED                                   ""
+16      SQLNCHAR            2       10      ""   16    ORG_CODE                                           SQL_Latin1_General_CP1_CI_AS
+17      SQLBIT              1       1       ""   17    IS_FR_ITEM                                         ""
+18      SQLBINARY           2       8       ""   18    TIME_STAMP                                         ""

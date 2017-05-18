@@ -1,0 +1,57 @@
+<html>
+<body>
+	<h1>Utility Navigation</h1>
+	This content item is used to display service and user account functions. In order for the utility functions to 
+    be accessible to users, drag and drop the desired control box from 
+    <strong>Available</strong> to <strong>Selected</strong>. Add the content item to various areas on the page 
+    to spread out the controls and links.
+	<!-- Use class="v10only" to make a tag visible for iMIS 15 only;
+		 Use class="v100only" to make a tag visible for iMIS 100 only;
+		 everything else appears common to both products.
+		-->
+	<ul>
+		<li><strong>Name</strong> - Enter a name for the content item. 
+		This text appears during design mode (configuration).</li>
+		<li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class to associate with 
+		this iPart, which will add a DIV so named around the iPart. Add this CSS class to an appropriate 
+		style sheet. Using such classes lets you apply special formatting to targeted iParts in a reusable way.</li>
+        <li><strong>Available</strong> - The remaining available utility controls.</li>
+        <li><strong>Selected</strong> - The utility controls accessible to users.</li>
+	</ul>
+    <h2>Utility controls</h2>
+		<ul>
+            <li><strong>Account area</strong> - From the Staff site, this displays as a user account drop-down. 
+            This drop-down contains On Behalf Of, My account, Sign out, and links to other active websites. From member-facing 
+            websites, the logged in user's full name displays as a hyperlink.</li>
+            <li><strong>Navigation links</strong> - Displays the links specified by <strong>Navigation area</strong>.</li>
+            <ul>
+                <li><strong>Navigation area</strong> - Each <strong>Website Navigation Item</strong> can be configured to only display
+                 in a particular navigation area of the website (Manage sitemaps > Options tab > Always show in the following navigation areas). 
+                For example, you may only want the shopping cart to display in the auxiliary navigation. 
+                From this drop-down, select which navigation area to display. All <strong>Website Navigation Items</strong> with the
+                 <strong>Navigation area</strong> you select will appear on each page.</li>
+            </ul>
+            <li><strong>Easy edit</strong> - Displays the easy edit icon.</li>
+            <li><strong>Sign in/out</strong> - Displays the sign in/out link.</li>
+            <ul>
+                <li><strong>Sign in text</strong> - Enter alternate text to display instead of "Sign in."</li>
+                <li><strong>Sign out text</strong> - Enter alternate text to display instead of "Sign out."</li>
+                <li><strong>CSS Class</strong> - Enter a CSS Class to apply to this link. For example, a button class so the link 
+                displays as a button.</li>
+            </ul>
+            <li class="v10only"><strong>Translation</strong> - Displays the translation drop-down. This option will only appear if you are 
+            licensed for translation.</li>
+            <li><strong>Universal search</strong> - Displays the site search bar.</li>
+            <ul>
+                <li><strong>Default text</strong> - Enter the text you want initially displayed in the search bar.</li>
+                <li><strong>CSS Class</strong> - Enter a CSS Class to apply to the search bar.</li>
+            </ul>
+            <li><strong>Navigation toggle</strong> - Will display the primary navigation in a hamburger toggle for certain screen sizes if you 
+            are using a responsive template. If there is no Primary Navigation iPart on the page, this option will have no impact.</li>
+      <li>
+        <strong>On behalf of</strong> - Will display a link to select a user to go on behalf of for product purchases or event registrations. This 
+        will only appear for users who have on behalf of permissions.
+      </li>
+        </ul>
+</body>
+</html>

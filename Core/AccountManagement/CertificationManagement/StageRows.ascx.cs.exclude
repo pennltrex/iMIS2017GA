@@ -1,0 +1,87 @@
+using System;
+using System.Collections.Generic;
+using Asi.Business.CertificationManagement;
+using Asi.ProcessManager;
+using Asi.ProcessManager.Actions;
+using Asi.Web.UI.Common.Controls.CertificationManagement;
+
+namespace Asi.Bae.Web.Customer.AccountManagement.CertificationManagement
+{
+    /// <summary>
+    /// Displays rows for an specific stage
+    /// </summary>
+    public partial class StageRows : CertificationProgramRegistrationControlScreenBase
+    {
+        /// <summary>
+        /// Gets or sets the stage ID.
+        /// </summary>
+        /// <value>The stage ID.</value>
+        public string StageID
+        {
+            get
+            {
+                if(ViewState["StageID"] != null)
+                {
+                    return (string) ViewState["StageID"];
+                }
+                return null;
+            }
+            set { ViewState["StageID"] = value; }
+        }
+
+        /// <summary>
+        /// Gets the stage.
+        /// </summary>
+        /// <value>The stage.</value>
+        private Stage stage
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(StageID))
+                {
+                    return CertificationProgramRegistration.ActionManifest.Stages[StageID];
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// <see cref="Asi.Web.UI.UserControlBase.OnDataBinding"/>
+        /// </summary>
+        protected override void OnDataBinding(EventArgs e)
+        {
+            base.OnDataBinding(e);
+
+            ComponentContainerActionItem ccActionItem = GetComponentContainerActionItem();
+            if (ccActionItem != null)
+            {
+                // mmmmm .... HORRIBLE!
+                int n = ccActionItem.GetOperands().Count;
+                List<string> actionItemId = new List<string>();
+                for (int i = 0; i < n; i++)
+                {
+                    actionItemId.Add(ccActionItem.ID);
+                }
+
+                OperandRepeater.DataSource = actionItemId;
+                OperandRepeater.DataBind();
+            }
+        }
+
+        /// <summary>
+        /// Gets the component container action item included in the stage.
+        /// </summary>
+        /// <returns></returns>
+        private ComponentContainerActionItem GetComponentContainerActionItem()
+        {
+            foreach (ActionItem item in stage.ActionItems)
+            {
+                if (item is ComponentContainerActionItem)
+                {
+                    return (ComponentContainerActionItem) item;
+                }
+            }
+            return null;
+        }
+    }
+}

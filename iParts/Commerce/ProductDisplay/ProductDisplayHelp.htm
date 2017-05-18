@@ -1,0 +1,115 @@
+﻿<html>
+	<body>
+		<h1>Product Display</h1>
+			
+            <p>
+                <em>This iPart is deprecated. Use the General Product Display iPart instead.</em>
+            </p>
+            
+            <ul>
+				<li><strong>Name</strong> - Enter a name for the content item. This text appears during design mode (configuration).</li>
+
+<li><strong>Title</strong> - Enter the text to display above this iPart on the rendered page. If blank, no title displays.</li>
+
+<li><strong>Do not render in design mode</strong> - Select this option to prevent content record data from being loaded in the content editor. This improves performance during design time (configuration).</li>
+
+<li><strong>Display a border around this content</strong> - Select this option to display a border around this iPart on the rendered page.</li>
+
+				<li>
+					<strong>Default product to display</strong> - Specify the code of the 
+					product you wish to display, or leave empty to display none. Enter
+					[FirstFeaturedProduct] to display the first item returned by the 
+					Standard Featured Products query.
+				</li>
+				<li>
+					<strong>Display the item picture</strong> - Specify whether to have the 
+					item picture appear in the listing.
+				</li>
+				<li>
+					<strong>Maximum picture width</strong> - Set the maximum available width in 
+					pixels for displaying the picture. If the picture is wider than this, it is 
+					scaled down to fit. To disable all scaling, enter a value of 0; this allows 
+					the picture to take as much space as it requires.
+				</li>
+				<li>
+					<strong>Enlarge picture to maximum width</strong> - Specify whether, if the 
+					picture width is less than the specified maximum, to scale (resize) it up to 
+					the maximum width. This option allows for a uniform size for all pictures, 
+					but be aware that stretching a graphic to appear larger may not look good 
+					in all cases.
+				</li>
+				<li>
+					<strong>Non-member price label</strong> - Specify how you want non-members 
+					to see their price. Include<strong><code>${0:###,###,##0.00}</code></strong> 
+					as a placeholder for the price itself.*
+				</li>
+				<li>
+					<strong>Member price label</strong> - Specify how you want members to see 
+					their price. Include <strong><code>${0:###,###,##0.00}</code></strong> as 
+					a placeholder for the price itself.*
+                </li>
+				<li>
+					<strong>Show both prices to non-members</strong> - Specify whether to 
+					display non-member prices to members.
+				</li>
+				<li>
+					<strong>Member price label for non-members</strong> - Specify how you want 
+                    non-members to see the member price. Include <strong><code>
+					${0:###,###,##0.00}</code></strong> 
+                    as a placeholder for the price itself.*
+                </li>
+				<li>
+					<strong>Show both prices to members</strong> - Specify whether to display 
+					non-member prices to members.
+				</li>
+				<li>
+					<strong>Non-member price label for members</strong> - Specify how you want
+					members to see the non-member  price. Include <strong><code>
+					${0:###,###,##0.00}</code></strong> as a placeholder for the price itself.*
+                </li>
+				<li>
+					<strong>Show discount percentage</strong> - Specify whether to display 
+					the percentage of the member discount.
+				</li>
+				<li>
+					<strong>Discount label</strong> - Specify how you want to display the 
+					percentage of the member discount. Include <strong><code>{0:0%}</code></strong> 
+					as a placeholder for the percentage itself. To display decimal places, adjust 
+					the display mask accordingly e.g. <strong><code>{0:0.00%}</code></strong> would
+					display 2 decimal places.
+				</li>
+				<li>
+					<strong>Display Add to Cart button</strong> - Display the button that enables 
+                    users to add the product to their carts. Note that products must be enabled for 
+                    Sell on Web in <em>iMIS </em>Desktop.
+                </li>
+			</ul>
+		<p>
+            <a href="http://msdn.microsoft.com/en-us/library/0c899ak8.aspx">
+            * Formatting Numeric Strings</a>&nbsp;</p>
+        <ul>
+            <li>
+                $1,234.50 = <code>${0:###,###,##0.00}</code>
+            </li>
+            <li>
+                20% = <code>{0:0%}</code></li>
+            <li>
+                20.13% = <code>{0:0.00%}</code>
+            </li>
+                <p style="MARGIN-LEFT: 40px">
+                    # - displays a number if one is relevant<br />
+                    0 - displays a number or zero placeholder<br />
+                    {0} - simple placeholder for value<br />
+                    : - precedes formatting options, if used
+                </p>
+        </ul>
+		<p><strong>Notes</strong></p>
+		<ul>
+			<li>Handles insufficient stock by prompting users to reduce the quantity up to the 
+			current maximum, and it grays out the <em>Add to Cart</em> button for out-of-stock 
+			items.</li>			   
+			<li>Supports adding a custom quantity and offers a configurable notification when 
+			items are added to the cart.</li>	
+		</ul>
+	</body>
+</html>

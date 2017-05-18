@@ -1,0 +1,82 @@
+<html>
+<body>
+	<h1>Gift Aid Declaration</h1>
+    <em>This content item is under development for future release.</em>
+	
+	<!-- Use class="v10only" to make a tag visible for iMIS 15 only;
+		 Use class="v100only" to make a tag visible for iMIS 100 only;
+		 everything else appears common to both products.
+		-->
+	<p>The Gift Aid Declaration content item enables a user to select to add Gift Aid to their current gift, so that a charity maximizes the value of their donation.</p>
+    <ul>
+		<li><strong>Name</strong> - Enter a name for the content item. 
+		This text appears during design mode (configuration).</li>
+		<li><strong>Title</strong> - Enter the text to display above this content item on the rendered page. 
+		If blank, no title displays.</li>
+		<li><strong>Do not render in design mode</strong> - Select this option to prevent content 
+		record data from being loaded in the content editor. This improves performance during design time 
+		(configuration).</li>
+		<li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class to associate with 
+		this content item, which will add a DIV so named around the content item. Add this CSS class to an appropriate 
+		style sheet. Using such classes lets you apply special formatting to targeted content items in a reusable way.</li>
+		  <li><strong>Display a border around this content</strong> - Select this option to display a border around this content item on the rendered page.</li>
+        <li><strong>Display content within a collapsible panel</strong> - Enable to allow users to minimize 
+                the panel within the page, to work with dense pages more efficiently.</li>
+                <ul>
+                <li><strong>Show the content as collapsed </strong>- Enable to display the panel minimized by default. 
+                <br /><i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is hidden from view.</li>
+                </ul>
+                <li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+            <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                hidden on extra small devices, such as smartphones, where the width of the 
+                screen is less than 768px.</li>
+            <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                small devices, such as tablets, where the width of the screen is greater than 
+                768px and less than 991px.</li>
+            <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                medium devices, such as laptops, where the width of the screen is greater than 
+                992px and less than 1199px.</li>
+            <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                large devices, such as wide computer monitors, where the width of the screen is 
+                greater than or equal to 1200px wide.
+            <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for 
+                a page are displayed, regardless of the <strong>Display on screen sizes (for 
+                responsive themes only)</strong> options that are selected.</li>
+            </ul>
+        </li>
+        <li class="v100only"><strong>Commit sequence</strong> - Commit sequence affects how multiple content 
+            items interact on a page. Enter a non-zero number to specify the order that 
+            changes are saved relative to other inline editable content items on the 
+            rendered page. Zero (default) = save order is not important.</li>
+        <li class="v100only"><strong>Mode</strong> - Select <strong>GiveNGo</strong> if this content item is being displayed on a Give Now page, or <strong>Profile</strong> if this content item is being displayed on a profile page. If you select <strong>Profile</strong>, the content item is not displayed for non-Staff users. Only Staff users will be able to use this content item in the <strong>Profile</strong> mode.</li>
+        <li class="v100only"><strong>Gift Aid checkbox label</strong> - Customize the message that is 
+            displayed to users to confirm their transaction. This label reads <strong>Yes, 
+            add Gift Aid</strong> by default.</li>
+        <li class="v100only"><strong>Override default text for Gift Aid checkbox confirmation</strong> - Select this option to 
+            override the message specified in the system settings.<ul>
+                <li><strong>Gift Aid confirmation text</strong> - Specify the text to use in place of the 
+                    <strong>Default 
+                    Gift Aid checkbox confirmation text</strong>.
+                    <br><em>Note:</em> If the <strong>Override default text for Gift Aid checkbox 
+                    confirmation</strong> option is selected, then the text in the <strong>Gift Aid 
+                    confirmation text</strong> field will be used for this instance of the <strong>
+                    Gift Aid Declaration</strong> content item only.</li>
+            </ul>
+        </li>
+	
+			
+	    <li><strong>Active declaration text</strong> - The text that is displayed when a donor already has an active Gift Aid declaration. </li>
+	
+			
+	</ul>
+		
+	<p><strong>Notes</strong></p>
+	<ul>
+		<li class="v100only"> If a donor chooses to add Gift Aid, this selection is persisted. If the donor 
+            returns to make another gift, the Gift Aid option will be checked by default. 
+            The donor can uncheck the checkbox if it is selected. After deselecting Gift Aid 
+            for a specific gift, the next gift will still be checked by default. The donor 
+            can only deselect Gift Aid for a single transaction.</li>
+	</ul>
+</body>
+</html>

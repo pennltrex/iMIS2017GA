@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLINT              0       4       ""   1     ContactDuplicateCheckFormulaTypeCode                                         ""
+2       SQLNCHAR            2       30      ""   2     ContactDuplicateCheckFormulaTypeName                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     ContactDuplicateCheckFormulaTypeDesc                                         SQL_Latin1_General_CP1_CI_AS

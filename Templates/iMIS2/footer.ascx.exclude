@@ -1,0 +1,51 @@
+<%@ Control Language="c#" AutoEventWireup="false" %>
+<script language="C#" runat="server">
+    protected override void OnInit(EventArgs e)
+    {
+        base.OnInit(e);
+        this.ButtonBar.CommandButtonClick += new Asi.Web.UI.CommandButtonEventHandler(this.ButtonBar_CommandButtonClick);
+    }
+    override protected void OnPreRender(EventArgs e)
+    {
+        base.OnPreRender(e);
+
+        Asi.Web.UI.CommandButtonRequisiteArgs buttonArgs = new Asi.Web.UI.CommandButtonRequisiteArgs();
+        Template.CommandButtonRequisites(buttonArgs);
+
+        System.Array commandButtons = Enum.GetValues(typeof(Asi.Web.UI.CommandButtonType));
+        Asi.Web.UI.CommandButtonType flags = 0;
+        foreach (Asi.Web.UI.CommandButtonType commandButton in commandButtons)
+        {
+            if (buttonArgs.ShowButton(commandButton))
+                flags = flags | commandButton;
+        }
+
+        ButtonBar.VisibleButtons = flags;
+    }
+
+    private Asi.Web.UI.Common.ContentManagement.Template Template
+    {
+        get
+        {
+            return (Asi.Web.UI.Common.ContentManagement.Template)Parent.Parent;
+        }
+    }
+    private void ButtonBar_CommandButtonClick(object sender, Asi.Web.UI.CommandButtonEventArgs e)
+    {
+        Template.HandleCommandButtonClick(sender, e.ButtonType);
+    }
+    
+</script>
+
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:right;">
+                <!--Footer...if you see this then please tell someone to remove it.-->
+                <asiweb:CommandButtonBar id="ButtonBar" runat="server" />
+            </td>
+        </tr>
+    </table>
+</div>

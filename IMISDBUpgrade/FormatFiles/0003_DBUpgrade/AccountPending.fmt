@@ -1,0 +1,37 @@
+10.0
+35
+1       SQLINT              0       4       ""   1     AccountPendingID                     ""
+2       SQLNCHAR            2       120     ""   2     Username                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       64      ""   3     Password                             SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       50      ""   4     Prefix                               SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       40      ""   5     FirstName                            SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       40      ""   6     MiddleName                           SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       60      ""   7     LastName                             SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       20      ""   8     Suffix                               SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       64      ""   9     Designation                          SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       40      ""   10    Informal                             SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       160     ""   11    Title                                SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       160     ""   12    Organization                         SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       80      ""   13    Address1                             SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       80      ""   14    Address2                             SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       80      ""   15    Address3                             SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       50      ""   16    County                               SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       80      ""   17    City                                 SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       30      ""   18    StateProvince                        SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       20      ""   19    PostalCode                           SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            2       50      ""   20    Country                              SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       40      ""   21    AddressPurpose                       SQL_Latin1_General_CP1_CI_AS
+22      SQLNCHAR            2       200     ""   22    Email                                SQL_Latin1_General_CP1_CI_AS
+23      SQLNCHAR            2       510     ""   23    Website                              SQL_Latin1_General_CP1_CI_AS
+24      SQLNCHAR            2       50      ""   24    WorkPhone                            SQL_Latin1_General_CP1_CI_AS
+25      SQLNCHAR            2       50      ""   25    HomePhone                            SQL_Latin1_General_CP1_CI_AS
+26      SQLNCHAR            2       50      ""   26    TollFree                             SQL_Latin1_General_CP1_CI_AS
+27      SQLNCHAR            2       50      ""   27    Fax                                  SQL_Latin1_General_CP1_CI_AS
+28      SQLDATETIME         1       8       ""   28    BirthDate                            ""
+29      SQLNCHAR            2       16      ""   29    Gender                               SQL_Latin1_General_CP1_CI_AS
+30      SQLNCHAR            2       20      ""   30    SICCode                              SQL_Latin1_General_CP1_CI_AS
+31      SQLBIT              1       1       ""   31    ExcludeDirectory                     ""
+32      SQLBIT              1       1       ""   32    ExcludeMail                          ""
+33      SQLINT              0       4       ""   33    RecordAdded                          ""
+34      SQLNCHAR            4       0       ""   34    UserDefinedField                     SQL_Latin1_General_CP1_CI_AS
+35      SQLNCHAR            2       10      ""   35    MemberType                           SQL_Latin1_General_CP1_CI_AS

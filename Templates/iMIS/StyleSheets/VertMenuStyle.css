@@ -1,0 +1,221 @@
+#configuration{list-style: none;
+}
+
+#configuration ul
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 99;
+	padding-bottom: 0px;
+	margin: 0px 0px 0px 0px;
+	overflow: visible;
+	width: 13em;
+	padding-top: 0px;
+	list-style-type: none;
+	position: static;
+	border-right: gray 1px solid;
+	border-left: gray 1px solid;
+	border-top: gray 1px solid;
+	border-bottom: gray 1px solid;
+
+}
+
+#configuration li
+{
+	display: block;
+	margin: 0px 0px 0px -22px;
+	width: 13em;
+	border-bottom: medium none;
+	position: relative;
+	height: 1.5em;	
+}
+
+#configuration li li
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	width: 13em;
+	border-bottom: medium none;
+	position: relative;
+	height: 1.5em;
+	background-color: menu;
+	background-image: url(../images/hi/tab_default_2tr.gif);
+	background-repeat: no-repeat;
+	
+}
+
+#configuration li li li
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	width: 20em;
+	border-bottom: medium none;
+	position: relative;
+	height: 1.5em;
+	background-color: menu;
+	background-image: url(../images/hi/trans_bar.gif);
+	background-repeat: no-repeat;
+}
+
+
+#configuration a
+{
+	padding-right: 1px;
+	display: block;
+	padding-left: 1px;
+	padding-bottom: 3px;
+	margin: 1px;
+	width: 11.5em;
+	color: black;
+	padding-top: 3px;
+	height: 1em;
+	text-decoration: none;
+}
+
+#configuration li li li a
+{
+	padding-right: 1px;
+	display: block;
+	padding-left: 1px;
+	padding-bottom: 3px;
+	margin: 1px;
+	width: 15.5em;
+	color: black;
+	padding-top: 3px;
+	height: 1em;
+	text-decoration: none;
+}
+
+#configuration li li a:hover
+{
+	color: #ffffff;
+	background-color: #5050f0;
+}
+
+#configuration ul, #configuration ul ul, #configuration ul ul ul{
+    display:none; 
+    position:absolute; 
+    top:0; 
+    left:13em;
+}
+
+#configuration li:hover ul ul, #configuration li:hover ul ul ul{
+    display:none; 
+}
+
+#configuration li:hover ul, #configuration ul li:hover ul, #configuration ul ul li:hover ul{
+    display:block;
+}
+
+li>ul { 
+	top: auto;
+	left: auto;
+}
+
+/* Win IE only \*/
+* html #configuration li{float:left;} 
+/* end hack */
+
+#commerce{list-style: none;
+}
+
+#commerce ul
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	z-index: 99;
+	padding-bottom: 0px;
+	margin: 0px 0px 0px 0px;
+	overflow: visible;
+	width: 13em;
+	padding-top: 0px;
+	list-style-type: none;
+	position: static;
+	border-right: gray 1px solid;
+	border-left: gray 1px solid;
+	border-top: gray 1px solid;
+	border-bottom: gray 1px solid;
+
+}
+
+#commerce li
+{
+	display: block;
+	margin: 0px 0px 0px -22px;
+	width: 13em;
+	border-bottom: medium none;
+	position: relative;
+	height: 1.5em;	
+}
+
+#commerce li li
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	width: 13em;
+	border-bottom: medium none;
+	position: relative;
+	height: 1.5em;
+	background-color: menu;
+	background-repeat: no-repeat;
+	
+}
+
+#commerce li li li
+{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	width: 13em;
+	border-bottom: medium none;
+	position: relative;
+	height: 1.5em;
+	background-color: menu;
+	background-image: url(../images/hi/trans_bar.gif);
+	background-repeat: no-repeat;
+}
+
+
+#commerce a
+{
+	padding-right: 1px;
+	display: block;
+	padding-left: 3px;
+	padding-bottom: 2px;
+	margin: 1px;
+	width: 11.5em;
+	color: black;
+	padding-top: 3px;
+	height: 1em;
+	text-decoration: none;
+}
+
+#commerce li li a:hover
+{
+	color: #ffffff;
+	background-color: #5050f0;
+}
+
+#commerce ul, #commerce ul ul, #commerce ul ul ul{
+    display:none; 
+    position:absolute; 
+    top:0; 
+    left:13em;
+}
+
+#commerce li:hover ul ul, #commerce li:hover ul ul ul{
+    display:none; 
+}
+
+#commerce li:hover ul, #commerce ul li:hover ul, #commerce ul ul li:hover ul{
+    display:block;
+}
+
+li>ul { 
+	top: auto;
+	left: auto;
+}
+
+/* Win IE only \*/
+* html #commerce li{float:left;} 
+/* end hack */
+

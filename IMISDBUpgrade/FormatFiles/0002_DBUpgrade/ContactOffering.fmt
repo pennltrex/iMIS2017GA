@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLUNIQUEID         1       16      ""   1     ContactKey                               ""
+2       SQLUNIQUEID         1       16      ""   2     ContactOfferingKey                       ""
+3       SQLDATETIME         1       8       ""   3     MarkedForDeleteOn                        ""

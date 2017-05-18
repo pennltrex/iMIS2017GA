@@ -1,0 +1,10 @@
+11.0
+8
+1       SQLUNIQUEID         1       16      ""   1     BillingLogKey                        ""
+2       SQLNCHAR            2       60      ""   2     BillingCycleName                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     BillingType                          SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         0       8       ""   4     BillingDate                          ""
+5       SQLDATETIME         0       8       ""   5     EffectiveDate                        ""
+6       SQLDATETIME         1       8       ""   6     BeginRebillDate                      ""
+7       SQLNCHAR            2       60      ""   7     Chapter                              SQL_Latin1_General_CP1_CI_AS
+8       SQLINT              0       4       ""   8     Status                               ""

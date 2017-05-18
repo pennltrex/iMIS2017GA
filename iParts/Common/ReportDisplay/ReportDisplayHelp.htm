@@ -1,0 +1,99 @@
+<html>
+<body>
+<h1>Report Display</h1>
+    <p>The new Report Display content item displays an SSRS report using an RDL template stored 
+        in the iMIS Document System. This is different from the SSRS Report content item, which 
+        requires you to begin with an IQA source query and requires an SSRS runtime object. The 
+        Report Display content item permits you to create reports outside of <em>iMIS</em> or 
+        pull in already-existing reports by simply adding an RDL to the Document System.</p>
+<ul>
+	<li><strong>Name</strong> - Enter a name for the content item. 
+	This text appears during design mode (configuration).</li>
+	<li><strong>Title</strong> - Enter the text to display above 
+	this content item on the rendered page. If blank, no title displays.</li>
+	<li><strong>Do not render in design mode</strong> - Select this 
+	option to prevent content record data from being loaded in the content 
+	editor. This improves performance during design time (configuration).</li>
+	<li><strong>Display a border around this content</strong> - Select this 
+	option to display a border around this content item on the rendered page.</li>
+
+	<li><strong>Display the PDF Export button</strong> - Disabled by default.</li>
+	<li><strong>Display the Excel Export button</strong> - Disabled by default.</li>
+	<li><strong>Document system path to the SSRS Report template or folder</strong> - 
+		<i>Required.</i> Select the the path in the Document System to display the SSRS 
+        template or folder.
+        <i>Note:</i> If the path points to a folder, then any SSRS report templates (.rdl) in that folder are available as additional 
+        reports to view. The first report in the folder is the default report displayed. Choose a different report to display from the 
+    <strong>Report</strong> drop-down.
+		</li>
+	</li>
+    <li><strong>Hide the parameters section</strong> - Prevents users 	
+        from seeing or changing the parameters for the report.</li>
+    <li>
+        <strong>Toolbar</strong> -
+        Defines the actions of the toolbar for this content item:<ul>
+            <li><strong>(none)</strong> - Displays the full report viewer toolbar.</li>
+            <li><strong>Hide the toolbar</strong> - Hides the report viewer toolbar entirely.</li>
+            <li>
+                <strong>Hide the page navigation controls on the toolbar</strong> - Shows the
+                report viewer toolbar without the page navigation controls.
+            </li>
+            <li>
+                <strong>Hide all toolbar controls except the Print button</strong> - (Internet
+                Explorer-specific feature) Shows the toolbar with only the Print button. On all
+                other browsers, hides the report viewer toolbar entirely.
+            </li>
+        </ul>
+    <li>
+        <strong>Limit users who can view data for other contacts</strong> - (enabled by default) If this option is enabled, only authorized users can view information for
+        contacts other than themselves. This prevents other users from changing the ID in the URL to access another contact's data. Authorized users include staff and
+        Company Administrators for a group that the contact belongs to. Disable this option to allow all users to view information for other contacts, such as for a public profile.
+        If this option is disabled, the system security settings determine whether a user must be logged in to view information for other contacts.
+    </li>
+    <li><strong>Inspect query string for parameters</strong> - Select this option to
+        tell the content item to look in the query string for query parameter values.<br />
+The parameter values should be in the following form: &URLParameter1Name=URLParameter1Value<br />
+    <i>Note: </i>The Name and Values defined in the report should be the same names and values defined 
+    here - including the spaces that are present in the report names and values. 
+        <p><strong>For example:</strong></p>
+     <ul>
+        <li>
+         &Event Name=Annual Conference
+         </li>
+        <li>
+            &Date Registered (between)="01/01/2015","06/01/2015"
+        </li>
+         <li>
+             &Event Name (contains)=Annual
+         </li>
+         <li>
+             &Chapter=North
+         </li>
+        </ul>
+    <br />
+       </li>
+            <ul><li><strong>Hide the parameter option if a value has been passed in via the URL</strong> - If a parameter&#39;s value is passed in using the URL and this option is selected, the parameter does not appear in the report as an option.</li>
+        </ul>
+    </li>
+    <li><strong>Inspect Session for parameters</strong> - Select this option to
+        tell the content item to look in Session for query parameter values.</li>
+    
+
+</ul>
+
+<p><strong>Notes</strong></p>
+<ul>
+	<li>This content item uses version 11.0 ReportViewer, which supports IE8 natively and 
+	adds a <strong>Print</strong> button (IE8 and higher) to the toolbar. </li>
+	<li>The SSRS Template specified by the content item loads a report template (.RDL file) from the 
+	    document system.  The content item then interprets the template, gathering parameters and data sources, 
+	    and creates parameter input fields and report data sources (DataTables) as necessary.
+	    The report viewer then generates output.
+        </li>
+    <li>If using a report that used to be tied to an IQA query, you must replace the 
+        dataset in the RDL. Download and open the RDL, and replace the existing < DataSet > 
+        with the most recent IQA query statement.</li>
+</ul>
+
+</body>
+</html>

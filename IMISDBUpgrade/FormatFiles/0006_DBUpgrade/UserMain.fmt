@@ -1,0 +1,17 @@
+11.0
+15
+1       SQLUNIQUEID         1       16      ""   1     UserKey                                                ""
+2       SQLNCHAR            2       100     ""   2     ContactMaster                                          SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       120     ""   3     UserId                                                 SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsDisabled                                             ""
+5       SQLDATETIME         0       8       ""   5     EffectiveDate                                          ""
+6       SQLDATETIME         1       8       ""   6     ExpirationDate                                         ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                                       ""
+8       SQLDATETIME         0       8       ""   8     UpdatedOn                                              ""
+9       SQLUNIQUEID         1       16      ""   9     CreatedByUserKey                                       ""
+10      SQLDATETIME         0       8       ""   10    CreatedOn                                              ""
+11      SQLDATETIME         1       8       ""   11    MarkedForDeleteOn                                      ""
+12      SQLUNIQUEID         1       16      ""   12    DefaultDepartmentGroupKey                              ""
+13      SQLUNIQUEID         1       16      ""   13    DefaultPerspectiveKey                                  ""
+14      SQLNCHAR            2       200     ""   14    ProviderKey                                            SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            8       0       ""   15    MultiFactorInfo                                        SQL_Latin1_General_CP1_CI_AS

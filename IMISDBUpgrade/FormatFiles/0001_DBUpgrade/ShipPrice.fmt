@@ -1,0 +1,13 @@
+10.0
+11
+1       SQLUNIQUEID         1       16      ""   1     ShipPriceKey                           ""
+2       SQLUNIQUEID         1       16      ""   2     CreatedByUserKey                       ""
+3       SQLDATETIME         0       8       ""   3     CreatedOn                              ""
+4       SQLDECIMAL          1       19      ""   4     MinAmount                              ""
+5       SQLDECIMAL          1       19      ""   5     Price                                  ""
+6       SQLINT              0       4       ""   6     PricingTypeCode                        ""
+7       SQLUNIQUEID         1       16      ""   7     ShipMethodKey                          ""
+8       SQLUNIQUEID         1       16      ""   8     ShipZoneKey                            ""
+9       SQLUNIQUEID         1       16      ""   9     UpdatedByUserKey                       ""
+10      SQLDATETIME         0       8       ""   10    UpdatedOn                              ""
+11      SQLDATETIME         1       8       ""   11    MarkedForDeleteOn                      ""

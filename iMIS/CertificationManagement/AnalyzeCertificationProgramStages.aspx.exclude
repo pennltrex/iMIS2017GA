@@ -1,0 +1,22 @@
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="Asi.Web.UI.DisplayPageBase"  %>
+<%@ Register Src="~/AsiCommon/Controls/CertificationManagement/AnalyzeCertificationProgramStage.ascx" TagPrefix="asiweb" TagName="AnalyzeCertificationProgramStage" %>
+<%@ Import Namespace="Asi.Web.UI"%>
+
+<script runat="server">
+
+    /// <seealso cref="DisplayPageBase.OnLoad(EventArgs)" />
+    protected override void OnLoad(EventArgs e)
+    {
+        base.OnLoad(e);
+
+        if (!Page.IsPostBack)
+        {
+            DataBind();
+        }
+    }
+
+</script>
+
+<asp:Content runat="server" ContentPlaceHolderID="TemplateBody">
+    <asiweb:AnalyzeCertificationProgramStage ID="analyzeCertificationProgramStage" runat="server"  />        
+</asp:Content>

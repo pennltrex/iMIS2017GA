@@ -1,0 +1,3 @@
+IF EXIST __TEMPDIR__\BODAssembly.dll DEL /F __TEMPDIR__\BODAssembly.dll
+EXIT /B
+

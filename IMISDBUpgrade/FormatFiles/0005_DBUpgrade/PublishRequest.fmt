@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLUNIQUEID         1       16      ""   1     PublishRequestKey                          ""
+2       SQLINT              0       4       ""   2     PublishPriorityCode                        ""
+3       SQLUNIQUEID         1       16      ""   3     DocumentKey                                ""
+4       SQLDATETIME         0       8       ""   4     RequestDateTime                            ""
+5       SQLUNIQUEID         1       16      ""   5     UserKey                                    ""
+6       SQLDATETIME         1       8       ""   6     PublishedDateTime                          ""

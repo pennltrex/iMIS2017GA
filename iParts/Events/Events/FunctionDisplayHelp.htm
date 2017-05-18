@@ -1,0 +1,68 @@
+<html>
+	<body>
+		<h1>Function Display</h1>
+			<ul>
+				<li>
+					<strong>Name</strong> - Enter a name for the iPart. This text only 
+					appears during design mode (configuration).
+				</li>
+				<li>
+					<strong>Title</strong> - If you want a title bar to appear above this 
+					iPart on the rendered page, enter the text for the title bar to display.
+				</li>
+				<li>
+					<strong>Do not render in design mode</strong> - To boost performance 
+					during design time (configuration), enable this checkbox to prevent 
+					content record data from being loaded in the content editor.
+				</li>
+				<li>
+					<strong>Display a border around this content</strong> - If you want 
+					a border to appear around this iPart on the rendered page, enable this checkbox.
+				</li> 
+                <li>
+                    <strong>Event key</strong> - The key of the parent event for the function. 
+                    <span class="v100only">This comes from the <strong>Event.EventKey</strong> column. </span>
+                    <span class="v10only">This comes from the <strong>Event Code</strong> defined in <strong>iMIS 
+                    Desktop &gt; Events &gt; Define an event</strong>.</span> 
+                    The key may also be supplied via the URL.
+                    A key specified in the iPart configuration takes precedence over a key in the URL.
+                </li>
+                <li>
+                    <strong>Function key</strong> - The key of the specific function to display. 
+                    <span class="v100only">This comes from the <strong>EventFunction.EventFunctionKey</strong> column. </span> 
+                    <span class="v10only">This comes from the <strong>Function Code</strong> defined when editing an event function 
+                    from <strong>iMIS Desktop &gt; Events &gt; Define an event</strong>.</span> The key may also be supplied via the URL.
+                    A key specified in the iPart configuration takes precedence over a key in the URL.
+                </li>
+				<li><strong>Width of image</strong> - The width in pixels of the image to be displayed.
+					Smaller pictures are scaled up to this width; larger pictures are scaled down.
+					</li>
+                    <ul>
+                        <li><strong>0</strong> - displays the image at full size</li>
+                        <li><strong>1</strong> - hides the image</li>
+                    </ul>
+			</ul>
+		
+		<p><strong>Notes</strong></p>
+            <ul>
+				<li> 
+					If no key values are set in the configuration page, the iPart looks for keys in 
+                    the URL. To include the event key in the URL, use the parameter name EventKey, 
+                    such as 
+                    <span class="v10only"><strong>?EventKey=SPR12</strong></span>
+					<span class="v100only"><strong>?EventKey=72290518-44B9-428B-909D-10142B4B6B9F</strong></span>.
+                    To include the function key in the URL, use the parameter name FunctionKey, such as
+					<span class="v10only"><strong>?FunctionKey=LUNCH</strong></span>
+					<span class="v100only"><strong>?FunctionKey=C890923B-E6A9-4800-B7DB-FF1988AFAE12</strong></span>.
+                    I. 
+                    A key specified in the iPart configuration takes precedence over a key in the 
+                    URL.
+				</li>
+                <li class="v10only"> 
+					The iPart displays details of an event function defined in iMIS Desktop. From 
+                    ick <strong>Insert</strong> or <strong>Edit</strong> to define the function 
+                    information, such as the <strong>Title</strong>, <strong>Dates</strong>, and <strong>Description</strong>.
+				</li>
+            </ul>
+	</body>
+</html>

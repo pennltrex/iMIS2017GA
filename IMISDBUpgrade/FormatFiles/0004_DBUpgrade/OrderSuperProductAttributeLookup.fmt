@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLINT              0       4       ""   1     OrderProductID                                               ""
+2       SQLINT              0       4       ""   2     OrderSuperProductAttributeID                                 ""
+3       SQLINT              0       4       ""   3     SortOrder                                                    ""

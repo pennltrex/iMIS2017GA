@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLUNIQUEID         1       16      ""   1     ProductKey                         ""
+2       SQLUNIQUEID         1       16      ""   2     TaxAuthorityKey                    ""
+3       SQLUNIQUEID         1       16      ""   3     TaxCategoryKey                     ""

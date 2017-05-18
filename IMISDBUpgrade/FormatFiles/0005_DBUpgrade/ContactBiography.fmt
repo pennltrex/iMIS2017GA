@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLUNIQUEID         1       16      ""   1     ContactKey                                 ""
+2       SQLNCHAR            2       510     ""   2     Summary                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            4       0       ""   3     Text                                       SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsPublic                                   ""
+5       SQLDECIMAL          1       19      ""   5     InBusinessSinceYear                        ""
+6       SQLNCHAR            2       510     ""   6     Locations                                  SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         0       8       ""   7     UpdatedOn                                  ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                           ""
+9       SQLNCHAR            2       510     ""   9     BiographyReferences                        SQL_Latin1_General_CP1_CI_AS
+10      SQLDATETIME         1       8       ""   10    MarkedForDeleteOn                          ""

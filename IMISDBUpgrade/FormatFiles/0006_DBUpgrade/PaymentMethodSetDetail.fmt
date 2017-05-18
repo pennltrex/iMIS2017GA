@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLUNIQUEID         1       16      ""   1     PaymentMethodSetId                       ""
+2       SQLNCHAR            2       20      ""   2     PaymentMethodId                          SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       80      ""   3     DisplayName                              SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsDefault                                ""
+5       SQLINT              0       4       ""   5     SortOrder                                ""

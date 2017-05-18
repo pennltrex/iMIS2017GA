@@ -1,0 +1,73 @@
+<html>
+    <body>
+        <h1>Advanced Accounting Console</h1>
+	
+        <!-- Use class="v10only" to make a tag visible for iMIS 15 only;
+            Use class="v100only" to make a tag visible for iMIS 100 only;
+            everything else appears common to both products.
+            -->
+        <ul>
+            <li><strong>Name</strong> - Enter a name for the content item. 
+                This text appears during design mode (configuration).</li>
+            <li><strong>Title</strong> - Enter the text to display above this iPart on the rendered page. 
+                If blank, no title displays.</li>
+            <li><strong>Do not render in design mode</strong> - Select this option to prevent content 
+                record data from being loaded in the content editor. This improves performance during design time 
+                (configuration).</li>
+            <li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class to associate with 
+                this iPart, which will add a DIV so named around the iPart. Add this CSS class to an appropriate 
+                style sheet. Using such classes lets you apply special formatting to targeted iParts in a reusable way.</li>
+            <li><strong>Display a border around this content</strong> - Select this option to display a border 
+                around this iPart on the rendered page.</li>
+            <li><strong>Display content within a collapsible panel</strong> - Enable to allow users to minimize 
+                the panel within the page, to work with dense pages more efficiently.</li>
+            <ul>
+                <li><strong>Show the content as collapsed </strong>- Enable to display the panel minimized by default. 
+                    <br /><i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is hidden from view.</li>
+            </ul>
+            <li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+            <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                hidden on extra small devices, such as smartphones, where the width of the 
+                screen is less than 768px.</li>
+            <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                small devices, such as tablets, where the width of the screen is greater than 
+                768px and less than 991px.</li>
+            <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                medium devices, such as laptops, where the width of the screen is greater than 
+                992px and less than 1199px.</li>
+            <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                large devices, such as wide computer monitors, where the width of the screen is 
+                greater than or equal to 1200px wide.
+            <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for 
+                a page are displayed, regardless of the <strong>Display on screen sizes (for 
+                responsive themes only)</strong> options that are selected.</li>
+            </ul>
+        </li>
+        </ul>   
+        <p id="rdp"><strong>RDP Connection</strong></p>
+        <ul>
+            <li><strong>Server address</strong> - The address of the terminal server on which the Advanced Accounting Console is installed.</li>
+            <li><strong>Windows domain</strong> - The domain name to use when logging onto the terminal server.</li>
+            <li><strong>Windows username</strong> - The username for logging onto the terminal server.</li>
+            <li><strong>Windows password</strong> - The password for logging onto the terminal server.</li>
+            <li><strong>Width</strong> - The width in pixels to display the remote desktop screen. </li>
+            <li><strong>Height</strong> - The height in pixels to display the remote desktop screen.</li>
+        </ul>
+        <p id="adminConsole"><strong>Advanced Accounting Console</strong></p>
+        <ul>
+            <li><strong>Command line</strong> - The command line to launch the Advanced Accounting Console on the terminal server. This will be the path of the Omnis7.exe. You must include imis4.lbr as the first command line parameter.</li>
+            <li><strong>Working directory</strong> - The working directory. This will be the parent directory of the path specified in Command Line. This directory contains all the .lbr files.</li>
+        </ul></body>
+    <p><strong>Notes</strong></p>
+        <p>
+            This iPart should be placed on its own on a content page. It will take full control of the content page and redirect to a specific page which hosts the RDP control. No other iParts will be displayed. Although not essential it is generally advisable to configure a navigation link to open the content page in a new window.</p>
+        <p>
+            Only Full and Casual users will be able to access to use this facility, all other users will see &quot;Access denied&quot;.</p>
+        <p>
+&nbsp;The page hosting the RDP control will contain the connection details for the terminal server. Some consideration should therefore be given to security. The page will use the same transport protocol as the content page containing the iPart i.e. if the content page is opened using https then the page hosting the control will also use https. Public and Guest users will never have access to the connection details.</p>
+        <p>
+            The terminal server must be specifically configured to allow the Advanced Accounting Console to be remotely launched. </p>
+        <p>
+            The Advanced Accounting Console installed on the terminal server must be preconfigured to connect to the same iMIS application server as the website. This connection information is not passed through from the website.</p>
+&nbsp;
+</html>

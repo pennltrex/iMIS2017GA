@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLINT              0       4       ""   1     ATTACH_SEQN                      ""
+2       SQLNCHAR            2       510     ""   2     TEMPLATE                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            4       0       ""   3     ATTACH_TEXT                      SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              0       4       ""   4     ACTIVITY_SEQN                    ""
+5       SQLNCHAR            2       510     ""   5     FILE_NAME                        SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         1       8       ""   6     FILE_TIMESTAMP                   ""
+7       SQLNCHAR            2       80      ""   7     INTENT_TO_EDIT                   SQL_Latin1_General_CP1_CI_AS
+8       SQLIMAGE            4       0       ""   8     ATTACH_IMAGE                     ""
+9       SQLBIT              1       1       ""   9     READ_ONLY                        ""
+10      SQLBINARY           2       8       ""   10    TIME_STAMP                       ""

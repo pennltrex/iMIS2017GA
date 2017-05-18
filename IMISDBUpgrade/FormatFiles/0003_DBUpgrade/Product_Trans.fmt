@@ -1,0 +1,22 @@
+10.0
+20
+1       SQLINT              0       4       ""   1     PTRANS_NUMBER                              ""
+2       SQLNCHAR            2       20      ""   2     TRANSACTION_TYPE                           SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         1       8       ""   3     ENTERED_DATE                               ""
+4       SQLNCHAR            2       120     ""   4     ENTERED_BY                                 SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       200     ""   5     DESCRIPTION                                SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       62      ""   6     PRODUCT_CODE                               SQL_Latin1_General_CP1_CI_AS
+7       SQLFLT8             0       8       ""   7     QUANTITY                                   ""
+8       SQLNUMERIC          1       19      ""   8     UNIT_COST                                  ""
+9       SQLDATETIME         1       8       ""   9     MODIFIED_DATE                              ""
+10      SQLNCHAR            2       120     ""   10    MODIFIED_BY                                SQL_Latin1_General_CP1_CI_AS
+11      SQLNUMERIC          1       19      ""   11    TOTAL_AMOUNT                               ""
+12      SQLNCHAR            2       30      ""   12    PO_REFERENCE_NUMBER                        SQL_Latin1_General_CP1_CI_AS
+13      SQLDATETIME         1       8       ""   13    TRANSACTION_DATE                           ""
+14      SQLINT              0       4       ""   14    TRANS_GROUP_NUMBER                         ""
+15      SQLBIT              1       1       ""   15    POSTED                                     ""
+16      SQLNCHAR            2       20      ""   16    FROM_LOCATION                              SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       20      ""   17    FROM_BIN                                   SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       20      ""   18    TO_LOCATION                                SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       20      ""   19    TO_BIN                                     SQL_Latin1_General_CP1_CI_AS
+20      SQLBINARY           2       8       ""   20    TIME_STAMP                                 ""

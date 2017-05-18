@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLNCHAR            2       120     ""   1     UserId                     SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       200     ""   2     Password                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       120     ""   3     UPPERUserId                SQL_Latin1_General_CP1_CI_AS

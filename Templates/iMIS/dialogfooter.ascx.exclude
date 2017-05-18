@@ -1,0 +1,50 @@
+<%@ Control Language="c#" AutoEventWireup="false" %>
+<%@ Register TagPrefix="asi" Assembly="Asi.Web" Namespace="Asi.Web.UI.WebControls" %>
+<script language="C#" runat="server">
+	private void Page_Load(object sender, System.EventArgs e)
+	{
+		
+	}
+
+	override protected void OnInit(EventArgs e)
+	{
+        this.Load += new System.EventHandler(this.Page_Load);
+		base.OnInit(e);
+		this.ButtonBar.CommandButtonClick += new Asi.Web.UI.CommandButtonEventHandler(this.ButtonBar_CommandButtonClick);
+	}
+	
+	private Asi.Web.UI.Common.ContentManagement.Template Template
+	{
+		get
+		{
+			return (Asi.Web.UI.Common.ContentManagement.Template) Parent.Parent;
+		}
+	}
+
+	override protected void OnPreRender(EventArgs e)
+	{
+		base.OnPreRender(e);
+
+		Asi.Web.UI.CommandButtonRequisiteArgs buttonArgs = new Asi.Web.UI.CommandButtonRequisiteArgs();
+		Template.CommandButtonRequisites(buttonArgs);
+
+		System.Array commandButtons = Enum.GetValues(typeof(Asi.Web.UI.CommandButtonType));
+		Asi.Web.UI.CommandButtonType flags = 0;
+		foreach (Asi.Web.UI.CommandButtonType commandButton in commandButtons)
+		{
+			if (buttonArgs.ShowButton(commandButton))
+				flags = flags | commandButton;
+		}
+		
+		ButtonBar.VisibleButtons = flags;
+	}
+	private void ButtonBar_CommandButtonClick(object sender, Asi.Web.UI.CommandButtonEventArgs e)
+	{
+		Template.HandleCommandButtonClick(sender, e.ButtonType);
+	}
+</script>
+</div>
+<div id="dialogbottombuttonbar">
+    <asi:CommandButtonBar id="ButtonBar" runat="server" TemplateName="iMIS"/>
+    <asi:StyledButton ID="DialogCancelButton" runat="server" AlternateText='<%# Asi.ResourceManager.GetPhrase("CancelAndCloseDialog", "Cancel and close dialog") %>' CommandButtonType="Cancel" OnClientClick="window.close();this.disabled='disabled';" /></div>
+</body>

@@ -1,0 +1,31 @@
+10.0
+29
+1       SQLNCHAR            2       20      ""   1     ID                                                       SQL_Latin1_General_CP1_CI_AS
+2       SQLUNIQUEID         1       16      ""   2     GiftAidDeclarationKey                                    ""
+3       SQLDATETIME         1       8       ""   3     DeclarationReceivedDate                                  ""
+4       SQLNCHAR            2       20      ""   4     DeclarationMethodKey                                     SQL_Latin1_General_CP1_CI_AS
+5       SQLBIT              1       1       ""   5     IsConfirmationRequired                                   ""
+6       SQLBIT              1       1       ""   6     IsUsing6YearRule                                         ""
+7       SQLDATETIME         1       8       ""   7     DeclarationStartDate                                     ""
+8       SQLDATETIME         1       8       ""   8     DeclarationEndDate                                       ""
+9       SQLNCHAR            2       8000    ""   9     DeclarationNotes                                         SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       80      ""   10    TaxpayerFirstName                                        SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       80      ""   11    TaxpayerLastName                                         SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       40      ""   12    TaxpayerPrefix                                           SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       80      ""   13    TaxpayerAddress1                                         SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       80      ""   14    TaxpayerAddress2                                         SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       80      ""   15    TaxpayerAddress3                                         SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       80      ""   16    TaxpayerCity                                             SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       30      ""   17    TaxpayerCounty                                           SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       20      ""   18    TaxpayerPostcode                                         SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       50      ""   19    TaxpayerCountry                                          SQL_Latin1_General_CP1_CI_AS
+20      SQLBIT              1       1       ""   20    IsHighRateTaxpayer                                       ""
+21      SQLBIT              1       1       ""   21    IsTaxRecoveredUnrestricted                               ""
+22      SQLNCHAR            2       20      ""   22    Status                                                   SQL_Latin1_General_CP1_CI_AS
+23      SQLDATETIME         1       8       ""   23    StatusUpdatedDate                                        ""
+24      SQLNCHAR            2       80      ""   24    AppealCode                                               SQL_Latin1_General_CP1_CI_AS
+25      SQLDATETIME         1       8       ""   25    ConfirmationSentDate                                     ""
+26      SQLUNIQUEID         1       16      ""   26    CreatedByUserKey                                         ""
+27      SQLDATETIME         0       8       ""   27    CreatedOn                                                ""
+28      SQLUNIQUEID         1       16      ""   28    UpdatedByUserKey                                         ""
+29      SQLDATETIME         0       8       ""   29    UpdatedOn                                                ""

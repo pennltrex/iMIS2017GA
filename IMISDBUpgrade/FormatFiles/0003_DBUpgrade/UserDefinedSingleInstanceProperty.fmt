@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLNCHAR            2       256     ""   1     TableName                                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       256     ""   2     PropertyName                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       32      ""   3     RowID                                          SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     RowKey                                         ""
+5       SQLINT              1       4       ""   5     PropertyIntValue                               ""
+6       SQLDATETIME         1       8       ""   6     PropertyDateTimeValue                          ""
+7       SQLUNIQUEID         1       16      ""   7     PropertyGuidValue                              ""
+8       SQLDECIMAL          1       19      ""   8     PropertyDecimalValue                           ""
+9       SQLBIT              1       1       ""   9     PropertyBooleanValue                           ""
+10      SQLNCHAR            2       800     ""   10    PropertyStringValue                            SQL_Latin1_General_CP1_CI_AS

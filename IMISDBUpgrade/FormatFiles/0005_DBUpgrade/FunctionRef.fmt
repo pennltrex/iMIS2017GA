@@ -1,0 +1,4 @@
+11.0
+2
+1       SQLINT              0       4       ""   1     FunctionId                   ""
+2       SQLNCHAR            2       100     ""   2     FunctionName                 SQL_Latin1_General_CP1_CI_AS

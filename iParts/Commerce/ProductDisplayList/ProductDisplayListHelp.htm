@@ -1,0 +1,124 @@
+﻿<html>
+	<body>
+		<h1>Product Display List</h1>
+		
+			<ul>
+				<li><strong>Name</strong> - Enter a name for the content item. This text appears during design mode (configuration).</li>
+
+<li><strong>Title</strong> - Enter the text to display above this iPart on the rendered page. If blank, no title displays.</li>
+
+<li><strong>Do not render in design mode</strong> - Select this option to prevent content record data from being loaded in the content editor. This improves performance during design time (configuration).</li>
+
+<li><strong>Display a border around this content</strong> - Select this option to display a border around this iPart on the rendered page.</li>
+
+				<li>
+					<strong>Source query</strong> - Specifies which IQA query to use as the datasource for the list. The query must return certain named columns: see 
+                    <u><strong><a href="#IQA_Query_required_columns">IQA query required columns</a></strong></u> below
+				</li>
+				<li>
+					<strong>Results per page</strong> - Enter a value for the number of rows to list before the user must click arrows or page numbers to get to additional pages of results. The default value is 10 listings before paging is activated. 
+				</li>
+				<li>
+					<strong>Display the item picture</strong> - Specify whether to have the item picture appear in the listing. To support this option, the IQA query must contain a column named THUMBNAIL_URL: see<u><strong>
+                    <a href="#IQA_Query_required_columns">IQA query required columns</a></strong></u> below.
+				</li>
+				<li>
+					<strong>Maximum picture width</strong> - Set the maximum available width in pixels for displaying the picture. If the picture is wider than this, it is scaled down to fit. To disable all scaling, enter a value of 0; this allows the picture to take as much space as it requires.
+				</li>
+				<li>
+					<strong>Enlarge picture to maximum width</strong> - Specify whether, if the picture width is less than the specified maximum, to scale (resize) it up to the maximum width. This option allows for a uniform size for all pictures, but be aware that stretching a graphic to appear larger may not look good in all cases.
+				</li>
+				<li>
+					<strong>Non-member price label</strong> - Specify how you want non-members to see their price. Include<strong><code>${0:###,###,##0.00}</code></strong> as a placeholder for the price itself.*
+				</li>
+				<li>
+					<strong>Member price label</strong> - Specify how you want members to see their price. Include <strong><code>${0:###,###,##0.00}</code></strong> as a placeholder for the price itself.*
+                </li>
+				<li>
+					<strong>Show both prices to non-members</strong> - Specify whether to display non-member prices to members.
+				</li>
+				<li>
+					<strong>Member price label for non-members</strong> - Specify how you want 
+                    non-members to see the member price. Include <strong><code>${0:###,###,##0.00}</code></strong> 
+                    as a placeholder for the price itself.*
+                </li>
+				<li>
+					<strong>Show both prices to members</strong> - Specify whether to display non-member prices to members.
+				</li>
+				<li>
+					<strong>Non-member price label for members</strong> - Specify how you want members to see the non-member 
+                    price. Include <strong><code>${0:###,###,##0.00}</code></strong> as a 
+                    placeholder for the price itself.*
+                </li>
+				<li>
+					<strong>Show discount percentage</strong> - Specify whether to display the percentage of the member discount.
+				</li>
+				<li>
+					<strong>Discount label</strong> - Specify how you want to display the percentage of 
+                    the member discount. Include <strong><code>{0:0%}</code></strong> as 
+                    a placeholder for the percentage itself. To display decimal places, adjust the display mask accordingly e.g. <strong><code>{0:0.00%}</code></strong> would display 2 decimal places.
+				</li>
+				<li>
+					<strong>Display Add to Cart button</strong> - Display the button that enables 
+                    users to add the product to their carts. Note that products must be enabled for 
+                    Sell on Web in <em>iMIS </em>Desktop.
+                </li>
+				
+			</ul>
+		
+		<p>
+            <a href="http://msdn.microsoft.com/en-us/library/0c899ak8.aspx" target="_blank">
+            * Formatting Numeric Strings</a>&nbsp;</p>
+        <ul>
+            <li>
+                $1,235.50 = <code>${0:###,###,##0.00}</code>
+            </li>
+             <li>
+                20% = <code>{0:0%}</code></li>
+            <li>
+                20.13% = <code>{0:0.00%}</code>
+            </li>
+                <p style="MARGIN-LEFT: 40px">
+                    # - displays a number if one is relevant<br />
+                    0 - displays a number or zero placeholder<br />
+                    {0} - simple placeholder for value<br />
+                    : - precedes formatting options, if used
+                </p>
+        </ul>
+	    <p>
+            <strong><a name="IQA_Query_required_columns">IQA query required columns</a></strong></p>
+        <p>
+            In order for the product listing to display data, the IQA query must return the 
+            specific named columns below. You can change the order of the columns in the IQA 
+            query to change the order in which they appear in the product list.</p>
+        <ol>
+            <li>THUMBNAIL_URL
+                <ul>
+                    <li>
+                            This field is the URL of the product image relative to the website root. 
+                            Typically the URL will be prefixed with <tt><strong>~ </strong></tt>to represent 
+                            the webroot, such as<br />
+                            <code><tt>~/Images/MyProduct.png</tt></code>
+                    </li>
+                    <li>               
+                            If you have disabled the option to have the list include product images, the 
+                            query does not need to return this column.
+                    </li>
+                </ul>
+            </li>
+            <li>Title
+                <ul>
+                    <li>This field is the title of the product, to display in the list.</li>
+                </ul>
+            </li>
+            <li>Product code<ul>
+                <li>The query must contain the Product code, which must be aliased as <b>key_ProductCode</b>. Without the Product code, the Product Display List will not use the query, and an error will be displayed.</li>
+                </ul>
+            </li>
+        </ol>
+        <p><em>Tip: </em>If the iPart throws a &quot;problem loading&quot; error, you might need to filter out problematic products. For example, 
+            if certain items are set to <em>show</em> but not <em>sell</em> on the web in Desktop, 
+            edit your underlying query and add a filter for WEB_OPTION = 2, to include only purchasable  
+            ones.</p>
+	</body>
+</html>

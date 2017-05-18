@@ -1,0 +1,22 @@
+10.0
+20
+1       SQLUNIQUEID         1       16      ""   1     WorkMonetaryApplicationKey                               ""
+2       SQLDECIMAL          1       19      ""   2     Amount                                                   ""
+3       SQLUNIQUEID         1       16      ""   3     SrcWorkPaymentKey                                        ""
+4       SQLNCHAR            2       100     ""   4     InvoiceNumber                                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     OrderNumber                                              SQL_Latin1_General_CP1_CI_AS
+6       SQLINT              1       4       ""   6     InvoiceLineNumber                                        ""
+7       SQLUNIQUEID         1       16      ""   7     InvoiceKey                                               ""
+8       SQLUNIQUEID         1       16      ""   8     InvoiceLineKey                                           ""
+9       SQLUNIQUEID         1       16      ""   9     SrcWorkInvoiceLineKey                                    ""
+10      SQLUNIQUEID         1       16      ""   10    SrcInvoiceLineKey                                        ""
+11      SQLUNIQUEID         1       16      ""   11    SrcPaymentKey                                            ""
+12      SQLDECIMAL          1       19      ""   12    DiscountTaken                                            ""
+13      SQLDECIMAL          1       19      ""   13    CurrencyVariance                                         ""
+14      SQLUNIQUEID         1       16      ""   14    InvoiceDistributionKey                                   ""
+15      SQLUNIQUEID         1       16      ""   15    PaymentScheduleLineKey                                   ""
+16      SQLINT              1       4       ""   16    OrderLineNumber                                          ""
+17      SQLDATETIME         0       8       ""   17    TransactionDate                                          ""
+18      SQLINT              0       4       ""   18    TransactionType                                          ""
+19      SQLDATETIME         1       8       ""   19    MarkedForDeleteOn                                        ""
+20      SQLUNIQUEID         1       16      ""   20    BatchKey                                                 ""

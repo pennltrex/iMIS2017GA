@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLINT              0       4       ""   1     BatchTypeCode                            ""
+2       SQLINT              0       4       ""   2     BatchCriterionCode                       ""
+3       SQLNCHAR            2       100     ""   3     ObjectName                               SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     AttributeName                            SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     MarkedForDeleteOn                        ""

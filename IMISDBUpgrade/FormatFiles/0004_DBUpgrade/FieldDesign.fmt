@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLINT              0       4       ""   1     FieldDesignId                                        ""
+2       SQLNCHAR            2       60      ""   2     TableName                                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       60      ""   3     FieldName                                            SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              0       4       ""   4     FieldState                                           ""
+5       SQLNCHAR            2       510     ""   5     RegularExpression                                    SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       510     ""   6     RegularExpressionExample                             SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       510     ""   7     MemberTypes                                          SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,54 @@
+<asiweb:BusinessDataGrid runat="server" SkinID="StandardGrid"
+    CssClass="Grid"
+	ItemStyle-CssClass="GridRow"
+	PagerStyle-CssClass="GridPager"
+	AlternatingItemStyle-CssClass="GridAlternateRow"
+	HeaderStyle-CssClass="GridHeader"
+	FooterStyle-CssClass="GridFooter"
+	CssClassHover="GridRowHover"
+	UseHoverStyle="true"
+    CssClassNoRecords="PanelTableDataLastRow"
+    SelectedItemStyle-CssClass="GridRowSelected"
+    >
+</asiweb:BusinessDataGrid>
+
+<asp:DataGrid runat="server" SkinID="StandardGrid"
+    CssClass="Grid"
+	ItemStyle-CssClass="GridRow"
+	AlternatingItemStyle-CssClass="GridAlternateRow"
+	HeaderStyle-CssClass="GridHeader"
+	FooterStyle-CssClass="GridFooter"
+	CssClassHover="GridRowHover"
+	UseHoverStyle="true"
+    CssClassNoRecords="PanelTableDataLastRow"
+    SelectedItemStyle-CssClass="GridRowSelected"
+    ></asp:DataGrid>
+    
+    <asp:GridView runat="server" SkinID="StandardGrid"
+    CssClass="Grid"
+	ItemStyle-CssClass="GridRow"
+	AlternatingItemStyle-CssClass="GridAlternateRow"
+	HeaderStyle-CssClass="GridHeader"
+	FooterStyle-CssClass="GridFooter"
+	CssClassHover="GridRowHover"
+	UseHoverStyle="true"
+    CssClassNoRecords="PanelTableDataLastRow"
+    SelectedItemStyle-CssClass="GridRowSelected"
+    >
+    </asp:GridView>
+
+    <asp:Menu runat="server" SkinID="VerticalMenu"     
+    Orientation="Vertical" StaticDisplayLevels="2" MaximumDynamicDisplayLevels="0" ItemWrap="true" 
+    ScrollDownImageUrl="images/expand.gif" ScrollUpImageUrl="images/collapse.gif"
+    StaticMenuItemStyle-CssClass="navlink" 
+    StaticHoverStyle-CssClass="navlinkhover"
+    StaticSelectedStyle-CssClass="navlinkselected"
+    Width="150px"></asp:Menu>
+    
+<asp:Menu runat="server" SkinID="HorizontalTabs"
+    Orientation="Horizontal" StaticDisplayLevels="1"
+    StaticMenuItemStyle-CssClass="HTabStatic" 
+    StaticHoverStyle-CssClass="HTabHover"
+    StaticSelectedStyle-CssClass="HTabSelected"
+    StaticMenuItemStyle-Height="27px"></asp:Menu>
+    

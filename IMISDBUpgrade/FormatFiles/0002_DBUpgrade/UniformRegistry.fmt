@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLUNIQUEID         1       16      ""   1     UniformKey                             ""
+2       SQLUNIQUEID         1       16      ""   2     ComponentKey                           ""
+3       SQLDATETIME         1       8       ""   3     MarkedForDeleteOn                      ""

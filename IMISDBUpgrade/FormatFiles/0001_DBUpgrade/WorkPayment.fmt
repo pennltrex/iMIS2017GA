@@ -1,0 +1,29 @@
+10.0
+27
+1       SQLUNIQUEID         1       16      ""   1     WorkPaymentKey                                                         ""
+2       SQLDECIMAL          1       19      ""   2     Amount                                                                 ""
+3       SQLINT              1       4       ""   3     PaymentApplicationRestrictionCode                                      ""
+4       SQLUNIQUEID         1       16      ""   4     PaymentAuthorizationKey                                                ""
+5       SQLUNIQUEID         1       16      ""   5     FinancialEntityKey                                                     ""
+6       SQLDATETIME         1       8       ""   6     PaymentDate                                                            ""
+7       SQLDECIMAL          1       19      ""   7     AmountHome                                                             ""
+8       SQLNCHAR            2       6       ""   8     CurrencyCode                                                           SQL_Latin1_General_CP1_CI_AS
+9       SQLUNIQUEID         1       16      ""   9     OriginalPaymentKey                                                     ""
+10      SQLNCHAR            2       4       ""   10    CreditTypeCode                                                         SQL_Latin1_General_CP1_CI_AS
+11      SQLUNIQUEID         1       16      ""   11    PayorContactKey                                                        ""
+12      SQLNCHAR            2       100     ""   12    SummaryDisplay                                                         SQL_Latin1_General_CP1_CI_AS
+13      SQLUNIQUEID         1       16      ""   13    AccessKey                                                              ""
+14      SQLUNIQUEID         1       16      ""   14    CreatedByUserKey                                                       ""
+15      SQLDATETIME         0       8       ""   15    CreatedOn                                                              ""
+16      SQLUNIQUEID         1       16      ""   16    UpdatedByUserKey                                                       ""
+17      SQLDATETIME         0       8       ""   17    UpdatedOn                                                              ""
+18      SQLUNIQUEID         1       16      ""   18    SystemEntityKey                                                        ""
+19      SQLUNIQUEID         1       16      ""   19    OwnerGroupKey                                                          ""
+20      SQLUNIQUEID         1       16      ""   20    PaymentMethodKey                                                       ""
+21      SQLNCHAR            2       100     ""   21    PaymentReferenceData                                                   SQL_Latin1_General_CP1_CI_AS
+22      SQLUNIQUEID         1       16      ""   22    PaymentDetailKey                                                       ""
+23      SQLDATETIME         1       8       ""   23    MarkedForDeleteOn                                                      ""
+24      SQLUNIQUEID         1       16      ""   24    BatchKey                                                               ""
+25      SQLUNIQUEID         1       16      ""   25    OriginatingBatchKey                                                    ""
+26      SQLINT              1       4       ""   26    BatchLineStatusCode                                                    ""
+27      SQLNCHAR            2       400     ""   27    BatchStatusMessage                                                     SQL_Latin1_General_CP1_CI_AS

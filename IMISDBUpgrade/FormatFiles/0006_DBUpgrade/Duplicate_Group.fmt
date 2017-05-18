@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLNUMERIC          1       19      ""   1     SEQN                           ""
+2       SQLNCHAR            2       510     ""   2     DUP_MATCH_KEY                  SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     MERGE_NOTE                     SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              1       4       ""   4     PREF_MAIL                      ""
+5       SQLINT              1       4       ""   5     PREF_BILL                      ""
+6       SQLNCHAR            2       510     ""   6     MERGE_IDS                      SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       510     ""   7     DELETE_IDS                     SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       510     ""   8     KEEP_IDS                       SQL_Latin1_General_CP1_CI_AS
+9       SQLINT              1       4       ""   9     ADDR_1_NUM                     ""
+10      SQLINT              1       4       ""   10    ADDR_2_NUM                     ""
+11      SQLINT              1       4       ""   11    ADDR_3_NUM                     ""
+12      SQLNCHAR            2       24      ""   12    RETAIN_ID                      SQL_Latin1_General_CP1_CI_AS
+13      SQLINT              1       4       ""   13    PREF_SHIP                      ""

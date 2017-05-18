@@ -1,0 +1,17 @@
+10.0
+15
+1       SQLNCHAR            0       4       ""   1     ComponentCode                              SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            0       4       ""   2     ComponentScriptCode                        SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       200     ""   3     ComponentScriptDesc                        SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       510     ""   4     ParameterScript                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       510     ""   5     ParameterFormScript                        SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       510     ""   6     NewScript                                  SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       510     ""   7     ShortListScript                            SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       510     ""   8     FullListScript                             SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       510     ""   9     PublishScript                              SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       510     ""   10    DisplayScript                              SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       2       ""   11    ShowInTemplateFlag                         SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       2       ""   12    SendSectionFlag                            SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            0       2       ""   13    AspNetFlag                                 SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       4       ""   14    SubComponentCode                           SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       510     ""   15    EditScript                                 SQL_Latin1_General_CP1_CI_AS

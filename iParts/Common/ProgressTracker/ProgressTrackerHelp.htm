@@ -1,0 +1,146 @@
+<html>
+<head></head>
+<body>
+    <h1>Progress Tracker</h1>
+    <ul>
+        <li>
+            <strong>Name</strong> - Enter a name for the content item. This text appears during
+            design mode (configuration).
+        </li>
+        <li>
+            <strong>Title</strong> - Enter the text to display above this iPart on the rendered
+            page. If blank, no title displays.
+        </li>
+        <li>
+            <strong>Do not render in design mode</strong> - Select this option to prevent content
+            record data from being loaded in the content editor. This improves performance during
+            design time (configuration).
+        </li>
+        <li>
+            <strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class to associate
+            with this iPart, which will add a DIV so named around the iPart. Add this CSS class
+            to an appropriate style sheet. Using such classes lets you apply special formatting
+            to targeted iParts in a reusable way.
+        </li>
+        <li>
+            <strong>Display a border around this content</strong> - Select this option to display
+            a border around this iPart on the rendered page.
+        </li>
+        <li>
+            <strong>Display content within a collapsible panel</strong> - Enable to allow users
+            to minimize the panel within the page, to work with dense pages more efficiently.
+        </li>
+        <ul>
+            <li>
+                <strong>Show the content as collapsed </strong>- Enable to display the panel minimized
+                by default.
+                <br />
+                <i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is hidden
+                from view.
+            </li>
+        </ul>
+
+        <li>
+            <strong>Display on screen sizes (for responsive themes only):</strong><ul>
+                <li>
+                    <strong>Extra-small screens</strong> - When disabled, this content item is
+                    hidden on extra small devices, such as smartphones, where the width of the
+                    screen is less than 768px.
+                </li>
+                <li>
+                    <strong>Small screens</strong> - When disabled, this content item is hidden on
+                    small devices, such as tablets, where the width of the screen is greater than
+                    768px and less than 991px.
+                </li>
+                <li>
+                    <strong>Medium screens</strong> - When disabled, this content item is hidden on
+                    medium devices, such as laptops, where the width of the screen is greater than
+                    992px and less than 1199px.
+                </li>
+                <li>
+                    <strong>Large screens</strong> - When disabled, this content item is hidden on
+                    large devices, such as wide computer monitors, where the width of the screen is
+                    greater than or equal to 1200px wide.
+                    <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for
+                    a page are displayed, regardless of the <strong>
+                        Display on screen sizes (for
+                        responsive themes only)
+                    </strong> options that are selected.
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Source query</strong> - Click <strong>select</strong> and browse to the IQA query that
+            you want to see results for in the Progress Tracker. The query must contain specific aliases:
+            <ul>
+                <li><strong>Goal_Amount: </strong>Indicates which property is the goal amount.</li>
+                <li><strong>Sum_Total: </strong>Indicates which property is the amount to be summed.</li>
+                <li><strong>End_Date: </strong>Indicates which property specifies the end date. This alias is only required if you want to display an end date.</li>
+            </ul>
+        </li>
+
+    </ul>
+    <p>
+        <b>Filter Options</b></p>
+        This section can be used if you want to dynamically filter the query results 
+    based on the value of a particular property.
+        When you choose a data column to filter on, iMIS looks for a URL parameter to set the value for that property. 
+        The URL parameter it looks for is the one specified in the <b>URL parameter</b> field. 
+    For example, to filter the query to show only the item ID passed in the URL, 
+    choose the query column for the item ID and specify <i>ItemId</i> as the URL parameter.
+    <ul>
+            <li><strong>Filter on data column</strong> - Select a data column to filter the query results on. 
+            <i>Note: </i>Each property you select on the <b>Display</b> tab 
+                of your query in IQA is available as a <b>Filter on data column</b> option. </li>            		
+            
+            <li><strong>URL parameter</strong> - If you choose a data column to filter 
+                the query on, enter the parameter name by which you want to 
+                filter values. You can use an existing URL parameter, for example <i>ItemId</i> 
+                (which the Donation Creator iPart also 
+                uses), or you can enter a unique value.</li>
+            
+        </ul>
+    <p>
+        <b>Display Messages</b></p>
+    <ul>
+            <li><strong>Description</strong> - If you want to display a description below the Progress Tracker, enter the text for the description here. The variables 
+                below can be used in the description. For example, &quot;Help us reach our goal of 
+                [GoalTotal] new members by [EndDateLong]&quot;<ul>
+                    <li>[GoalTotal] displays the goal total<br/></li>
+                    <li>[CurrentTotal] displays the current sum total or count<br/></li>
+                    <li>[EndDateLong] displays the end date in a long format (Example: Tuesday, October 28, 2014)</li>
+                    <li>[EndDateShort] displays the end date in a short format (Example: 02/10/2014)<br/></li>
+                </ul>
+            </li>
+                
+            <li><strong>Successful message</strong> - The message displayed with the progress bar once a goal has been successfully reached.</li>
+                           
+        </ul>
+    <p>
+        <b>Caption Options</b></p>
+    <ul>
+            <li><strong>Progress bar location</strong> - Choose to display the progress bar 
+                above or below the captions. If <b>(None)</b> is selected, no progress bar is 
+                displayed. The progress bar indicates the current percentage of the goal.</li>
+            <li><strong>Display percent</strong> - Displays the percentage of the goal.</li>
+            <li><strong>Percent description</strong> - The description for the percentage amount.</li>
+
+            <li><strong>Display total</strong> - Displays the total amount.</li>
+            <li><strong>Total description</strong> - The description for the total amount.</li>
+
+            <li><strong>Display days remaining</strong> - Display the days remaining count.</li>
+            <li><strong>Days remaining description</strong> - The description for the days remaining count.</li>
+                            
+        </ul>
+        
+    <p><strong>Notes</strong></p>
+        <ul>
+            <li>For sample queries that work with this iPart, see <i>
+                $/Samples/ProgressTracker/</i> in IQA.</li>
+        </ul>
+    <p>
+
+    
+</body>
+</html>

@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLTINYINT          0       1       ""   1     ADDRESS_FORMAT                   ""
+2       SQLNCHAR            2       510     ""   2     ADDRESS_LAYOUT                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     FORMULA                          SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       510     ""   4     DESCRIPTION                      SQL_Latin1_General_CP1_CI_AS
+5       SQLBINARY           2       8       ""   5     TIME_STAMP                       ""

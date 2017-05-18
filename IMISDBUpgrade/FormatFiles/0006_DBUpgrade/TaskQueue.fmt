@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLBIGINT           0       8       ""   1     TaskQueueId                        ""
+2       SQLINT              0       4       ""   2     TaskQueueTypeId                    ""
+3       SQLDATETIME         0       8       ""   3     RequestedOn                        ""

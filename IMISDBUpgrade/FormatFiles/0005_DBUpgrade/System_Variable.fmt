@@ -1,0 +1,17 @@
+11.0
+15
+1       SQLNCHAR            0       4       ""   1     ComponentCode                                        SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            0       2       ""   2     VariableTypeCode                                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       80      ""   3     Name                                                 SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            0       4       ""   4     DataTypeCode                                         SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       1500    ""   5     Value                                                SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       1500    ""   6     DefaultValue                                         SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       2       ""   7     ChangeOnDeployFlag                                   SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       2       ""   8     RelativeToFileWebCodeInd                             SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       4000    ""   9     Description                                          SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       2000    ""   10    AllowedValues                                        SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       2       ""   11    IsAQueryFlag                                         SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       2       ""   12    ResetInLoginFlag                                     SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       2       ""   13    CustomForClientFlag                                  SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       2       ""   14    ActiveForClientFlag                                  SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       4000    ""   15    InternalNote                                         SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLNCHAR            2       20      ""   1     ID                         SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     SEQN                       ""
+3       SQLNCHAR            2       40      ""   3     IdType                     SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     AlternateId                SQL_Latin1_General_CP1_CI_AS

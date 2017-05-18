@@ -1,0 +1,124 @@
+using System;
+using Asi.Business.CertificationManagement;
+using Asi.ProcessManager;
+using Asi.ProcessManager.Operations;
+using Asi.Web.UI.Common.Controls.CertificationManagement;
+
+namespace Asi.Bae.Web.Customer.AccountManagement.CertificationManagement
+{
+    /// <summary>
+    /// Displays component action items included in a BooleanBulkOperator
+    /// </summary>
+    public partial class BooleanBulkOperatorRows : CertificationProgramRegistrationControlScreenBase
+    {
+        /// <summary>
+        /// Gets or sets the stage ID.
+        /// </summary>
+        /// <value>The stage ID.</value>
+        public string StageID
+        {
+            get
+            {
+                if (ViewState["StageID"] != null)
+                {
+                    return (string)ViewState["StageID"];
+                }
+                return null;
+            }
+            set { ViewState["StageID"] = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the action item ID.
+        /// </summary>
+        /// <value>The action item ID.</value>
+        public string ActionItemID
+        {
+            get
+            {
+                if (ViewState["ActionItemID"] != null)
+                {
+                    return (string)ViewState["ActionItemID"];
+                }
+                return null;
+            }
+            set { ViewState["ActionItemID"] = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the index of the operands collection, where there is the component container action item.
+        /// </summary>
+        /// <value>The index of the operand.</value>
+        public int OperandIndex
+        {
+            get
+            {
+                if (ViewState["OperandIndex"] != null)
+                {
+                    return (int)ViewState["OperandIndex"];
+                }
+                return -1;
+            }
+            set { ViewState["OperandIndex"] = value; }
+        }
+
+        /// <summary>
+        /// Gets the stage.
+        /// </summary>
+        /// <value>The stage.</value>
+        private Stage stage
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(StageID))
+                {
+                    return CertificationProgramRegistration.ActionManifest.Stages[StageID];
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Gets the component container action item.
+        /// </summary>
+        /// <value>The component container action item.</value>
+        private ComponentContainerActionItem componentContainerActionItem
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(ActionItemID) && stage != null)
+                {
+                    return stage.ActionItems[ActionItemID] as ComponentContainerActionItem;
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Gets the b bulkoperator.
+        /// </summary>
+        /// <value>The b bulkoperator.</value>
+        private IBooleanBulkOperator bBulkoperator
+        {
+            get
+            {
+                if (OperandIndex != -1 && componentContainerActionItem != null)
+                {
+                    return componentContainerActionItem.GetOperands()[OperandIndex] as IBooleanBulkOperator;
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// <see cref="Asi.Web.UI.UserControlBase.OnDataBinding"/>
+        /// </summary>
+        protected override void OnDataBinding(EventArgs e)
+        {
+            base.OnDataBinding(e);
+
+            ComponentActionItemRepeater.DataSource = bBulkoperator.Operands;
+            ComponentActionItemRepeater.DataBind();
+        }
+    }
+}

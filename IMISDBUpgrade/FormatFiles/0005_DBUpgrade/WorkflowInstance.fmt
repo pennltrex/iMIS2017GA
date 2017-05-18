@@ -1,0 +1,14 @@
+11.0
+12
+1       SQLUNIQUEID         1       16      ""   1     WorkflowInstanceKey                        ""
+2       SQLUNIQUEID         1       16      ""   2     ProcessId                                  ""
+3       SQLIMAGE            4       0       ""   3     InstanceGraph                              ""
+4       SQLUNIQUEID         1       16      ""   4     LockedByUserKey                            ""
+5       SQLDATETIME         1       8       ""   5     LockedOn                                   ""
+6       SQLDATETIME         1       8       ""   6     KeepAlive                                  ""
+7       SQLNCHAR            4       0       ""   7     LogText                                    SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       40      ""   8     WorkflowStatus                             SQL_Latin1_General_CP1_CI_AS
+9       SQLUNIQUEID         1       16      ""   9     InitiatedByUserKey                         ""
+10      SQLDATETIME         1       8       ""   10    InitiatedOn                                ""
+11      SQLNCHAR            2       100     ""   11    ProcessName                                SQL_Latin1_General_CP1_CI_AS
+12      SQLDATETIME         1       8       ""   12    MarkedForDeleteOn                          ""

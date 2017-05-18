@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     CustomerExperienceKey                                        ""
+2       SQLNCHAR            2       1000    ""   2     CustomerExperienceNote                                       SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       4       ""   3     CustomerExperienceStatusCode                                 SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     UserKey                                                      ""
+5       SQLDATETIME         0       8       ""   5     CreatedOn                                                    ""
+6       SQLUNIQUEID         1       16      ""   6     CreatedByUserKey                                             ""

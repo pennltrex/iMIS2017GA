@@ -1,0 +1,18 @@
+10.0
+16
+1       SQLUNIQUEID         1       16      ""   1     GLTransactionLineKey                                   ""
+2       SQLUNIQUEID         1       16      ""   2     GLTransactionKey                                       ""
+3       SQLDECIMAL          1       19      ""   3     Amount                                                 ""
+4       SQLUNIQUEID         1       16      ""   4     GLAccountKey                                           ""
+5       SQLNCHAR            2       100     ""   5     Description                                            SQL_Latin1_General_CP1_CI_AS
+6       SQLUNIQUEID         1       16      ""   6     DeferralTermsKey                                       ""
+7       SQLBIT              1       1       ""   7     DeferralProcessedFlag                                  ""
+8       SQLNCHAR            2       100     ""   8     GLEntryType                                            SQL_Latin1_General_CP1_CI_AS
+9       SQLUNIQUEID         1       16      ""   9     InvoiceLineKey                                         ""
+10      SQLUNIQUEID         1       16      ""   10    PaymentKey                                             ""
+11      SQLUNIQUEID         1       16      ""   11    ContactKey                                             ""
+12      SQLUNIQUEID         1       16      ""   12    ProductKey                                             ""
+13      SQLINT              0       4       ""   13    TransactionSequenceNumber                              ""
+14      SQLINT              1       4       ""   14    LineGroup                                              ""
+15      SQLDATETIME         1       8       ""   15    MarkedForDeleteOn                                      ""
+16      SQLUNIQUEID         1       16      ""   16    TargetGLAccountKey                                     ""

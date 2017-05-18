@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLNCHAR            2       510     ""   1     URL                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       510     ""   2     URL_TITLE                SQL_Latin1_General_CP1_CI_AS
+3       SQLIMAGE            4       0       ""   3     URL_IMAGE                ""
+4       SQLNCHAR            2       120     ""   4     URL_TYPE                 SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            4       0       ""   5     URL_TEXT                 SQL_Latin1_General_CP1_CI_AS
+6       SQLBINARY           2       8       ""   6     TIME_STAMP               ""

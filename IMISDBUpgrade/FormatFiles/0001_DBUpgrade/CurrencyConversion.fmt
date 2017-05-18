@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLNCHAR            2       6       ""   1     FromCurrencyCode                       SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       6       ""   2     ToCurrencyCode                         SQL_Latin1_General_CP1_CI_AS
+3       SQLDECIMAL          1       19      ""   3     Rate                                   ""
+4       SQLDATETIME         0       8       ""   4     CreatedOn                              ""
+5       SQLUNIQUEID         1       16      ""   5     CreatedByUserKey                       ""
+6       SQLDATETIME         0       8       ""   6     UpdatedOn                              ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                       ""
+8       SQLDATETIME         1       8       ""   8     MarkedForDeleteOn                      ""

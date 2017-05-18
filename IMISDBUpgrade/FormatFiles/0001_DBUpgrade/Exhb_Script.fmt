@@ -1,0 +1,18 @@
+10.0
+16
+1       SQLNCHAR            2       60      ""   1     SECT_ID                    SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       60      ""   2     SCRIPT_ID                  SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       60      ""   3     MSTR_ID                    SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            4       0       ""   4     SCRIPT_TEXT                SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            4       0       ""   5     PROMPT1                    SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            4       0       ""   6     PROMPT2                    SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            4       0       ""   7     PROMPT3                    SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            4       0       ""   8     PROMPT4                    SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            4       0       ""   9     PROMPT5                    SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       60      ""   10    PROMPT_ID1                 SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       60      ""   11    PROMPT_ID2                 SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       60      ""   12    PROMPT_ID3                 SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       60      ""   13    PROMPT_ID4                 SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       60      ""   14    PROMPT_ID5                 SQL_Latin1_General_CP1_CI_AS
+15      SQLBIT              1       1       ""   15    SHOW_LIST                  ""
+16      SQLBINARY           2       8       ""   16    TIME_STAMP                 ""

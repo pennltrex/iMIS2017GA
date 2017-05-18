@@ -1,0 +1,116 @@
+﻿<%@ Register TagPrefix="asi" TagName="PageNavR" Src="~/AsiCommon/Controls/Navigation/PageNavR.ascx" %>
+
+<asi:PageNavR runat="server" EnableRootItemScroll="false" Flow="Horizontal" DefaultGroupSettings_Flow="Vertical" DefaultGroupSettings_OffsetX="0" Width="100%"/>
+
+<%-- Default RadToolTip - used by InfoIcon control --%>
+<telerik:RadToolTip runat="server" skin="Telerik" RenderInPageRoot="true" Animation="None" ShowDelay="0" HideDelay="200" />
+
+<telerik:RadRotator runat="server" Width="100%" ItemWidth="110" RotatorType="SlideShowButtons"  
+    ScrollDuration="800" CssClass="RelatedItemsHorizontal" WrapFrames="false" SkinID="RelatedItems">
+    <SlideShowAnimation Duration="500" Type="Fade" />
+</telerik:RadRotator>
+
+<telerik:RadTabStrip runat="server" Skin="SubTabStrip" CssClass="SubTabStrip" SkinID="SubTabs" EnableEmbeddedSkins="false" ShowBaseLine="false" />
+
+<telerik:RadAsyncUpload runat="server" skin="Default" Width="350px">
+    <Localization Select="Select" />  
+    <Localization Remove="Remove" /> 
+</telerik:RadAsyncUpload> 
+<telerik:RadButton runat="server" SkinID="PanelCommandButtonEdit" Height="20" Width="20" >
+    <Image ImageUrl="Images/Edit.png" HoveredImageUrl="Images/Edit_hover.png" />
+</telerik:RadButton>
+<telerik:RadButton runat="server" SkinID="PanelCommandButtonAdd" Height="20" Width="20" >
+    <Image ImageUrl="Images/Add.png" HoveredImageUrl="Images/Add_hover.png" />
+</telerik:RadButton>
+<telerik:RadButton runat="server" SkinID="PanelCommandButtonDelete" Height="20" Width="20" >
+    <Image ImageUrl="Images/Delete.png" HoveredImageUrl="Images/Delete_hover.png" />
+</telerik:RadButton>
+<telerik:RadButton runat="server" SkinID="MoveItemUpButton" Height="20" Width="20" >
+    <Image ImageUrl="Images/Up.png" HoveredImageUrl="Images/Up_hover.png" />
+</telerik:RadButton>
+<telerik:RadButton runat="server" SkinID="MoveItemDownButton" Height="20" Width="20" >
+    <Image ImageUrl="images/Down.png" HoveredImageUrl="Images/Down_hover.png" />
+</telerik:RadButton>
+<telerik:RadButton runat="server" SkinID="SaveItemButton" Height="20" Width="20" >
+    <Image ImageUrl="images/Add.png" HoveredImageUrl="Images/Add_hover.png" />
+</telerik:RadButton>
+<telerik:RadButton runat="server" SkinID="HideButton" Height="16" Width="16" >
+    <Image ImageURL="images/icon_detail.gif" />
+</telerik:RadButton>
+<asp:ImageButton runat="server" SkinID="PanelCommandButtonEdit" ImageUrl="Images/Edit.png" /> 
+<asp:ImageButton runat="server" SkinID="PanelCommandButtonAdd" ImageUrl="Images/Add.png" />
+<asp:ImageButton runat="server" SkinID="PanelCommandButtonDelete" ImageUrl="Images/Delete.png" />
+<asp:ImageButton runat="server" SkinID="PanelCommandButtonSave" ImageUrl="Images/Up.png" />
+<asp:ImageButton runat="server" SkinID="MoveItemUpButton" ImageUrl="images/Down.png" />
+<asp:ImageButton runat="server" SkinID="SaveItemButton" ImageUrl="images/Add.png" />
+
+<asp:Image runat="server" SkinId="UndoImage" ImageUrl="images/icon_undo.gif" />
+<asp:ImageButton runat="server" SkinID="UndoButton" ImageUrl="images/icon_undo.gif" />
+<asp:Image runat="server" SkinId="ResetImage" ImageUrl="images/icon_undo.gif" />
+<asp:ImageButton runat="server" SkinID="ResetButton" ImageUrl="images/icon_undo.gif" />
+
+<asiweb:BusinessCalendar2 runat="server" />
+<asiweb:BusinessCheckBox runat="server" />
+<asiweb:BusinessComboBox runat="server" />
+<asiweb:BusinessDropDownList runat="server" />
+<asiweb:BusinessHtmlEditor runat="server" />
+<asiweb:BusinessHyperLink runat="server" />
+<asiweb:BusinessLabel runat="server" />
+<asiweb:BusinessTextBox runat="server" />
+<asiweb:SmartControl runat="server" />
+<asiweb:StyledHyperlink runat="server" />
+<asiweb:StyledLabel runat="server" />
+<asiweb:BusinessCalendar runat="server" CalendarButtonImageUrl="images/Calendar.gif" CssClass="CalendarInput" />
+<asiweb:Lister2 runat="server" Style="padding:5px;" HideResultsCssClass="ListSearchPrompt" TitleCssClass="GridTitlePanel" RefreshButtonType="Image" RefreshButtonImageUrl="~/AsiCommon/images/icon_refresh.gif" ExportButtonType="Image" ExportButtonImageUrl="~/AsiCommon/Images/icon_word_shortcut.gif,~/AsiCommon/Images/icon_excel_shortcut.gif,~/AsiCommon/Images/icon_pdf_shortcut.gif,~/AsiCommon/Images/icon_csv_shortcut.gif,~/AsiCommon/Images/icon_xml_square.gif"  />
+<asiweb:MultiselectControl2 runat="server" />
+<asiweb:PanelTemplateColumn runat="server" CssClass="PanelColumn" />
+<asiweb:PanelTemplateControl runat="server" CssClass="StandardPanel" RoundedCorners="false" CollapsedImage="Images/ExpandIcon.jpg" ExpandedImage="Images/CollapseIcon.jpg" CollapsedText="" ExpandedText=""  />
+<asiweb:PanelTemplateControl2 runat="server" CollapsedImage="Images/ExpandIcon.png" ExpandedImage="Images/CollapseIcon.png" DisplayCollapseText="false" />
+
+<%-- Images used in search results --%>
+<asp:Image runat="server" SkinID="EventSearchImage" ImageUrl="Images/icon_event.png" AlternateText="Calendar Icon" />
+<asp:Image runat="server" SkinID="GroupSearchImage" ImageUrl="Images/icon_group.png"  AlternateText="Group Icon" />
+<asp:Image runat="server" SkinID="CommunitySearchImage" ImageUrl="images/icon_group.png" AlternateText="Community Icon" />
+<asp:Image runat="server" SkinID="ProductSearchImage" ImageUrl="Images/icon_product.png"  AlternateText="Product Icon" />
+<asp:Image runat="server" SkinID="GiftSearchImage" ImageUrl="images/icon_fundraising.png" AlternateText="Gift Icon" />
+<asp:Image runat="server" SkinID="SearchDefaultImage" ImageUrl="Images/icon_content.png" AlternateText="Content Icon" />
+<asp:Image runat="server" SkinID="ImportantSearchImage" ImageUrl="images/icon_important.png" AlternateText="Important" />
+<asp:Image runat="server" SkinID="MembersOnlySearchImage" ImageUrl="images/icon_membersonly.png" AlternateText="Members Only"/>
+<asp:Image runat="server" SkinID="PersonSearchImage" ImageUrl="Images/icon_person.png" AlternateText="Person Icon" />
+<asp:Image runat="server" SkinID="OrgSearchImage" ImageUrl="Images/icon_org.png"  AlternateText="Organization Icon" />
+
+<asp:Image runat="server" SkinId="LoginImage" ImageUrl="images/login/imis_orange.jpg" />
+
+<%-- User message images --%>
+<asp:Image runat="server" SkinId="ErrorMessageIcon" ImageUrl="images/Error.png" AlternateText="Error icon"></asp:Image>
+<asp:Image runat="server" SkinId="WarningMessageIcon" ImageUrl="images/Warning.png" AlternateText="Warning icon"></asp:Image>
+<asp:Image runat="server" SkinId="InformationMessageIcon" ImageUrl="images/Note.png" AlternateText="Note icon"></asp:Image>
+
+<asp:Image runat="server" SkinId="AsiError" ImageUrl="images/AsiError.png" AlternateText="Error icon"></asp:Image>
+<asp:Image runat="server" SkinId="AsiWarning" ImageUrl="images/AsiWarning.png" AlternateText="Warning icon"></asp:Image>
+<asp:Image runat="server" SkinId="AsiInformation" ImageUrl="images/AsiInformation.png" AlternateText="Information icon"></asp:Image>
+<asp:Image runat="server" SkinId="AsiValidation" ImageUrl="images/AsiValidation.png" AlternateText="Validation icon"></asp:Image>
+<asp:Image runat="server" SkinId="AsiSuccess" ImageUrl="images/AsiSuccess.png" AlternateText="Success icon"></asp:Image>
+
+<asp:Image runat="server" SkinID="SmallIconGroups" CssClass="FeatureSprite SmallIcon GroupIcon" ImageUrl="images/Pixel.png" />
+<asp:Image runat="server" SkinID="SmallIconEvents" CssClass="FeatureSprite SmallIcon EventIcon" ImageUrl="images/Pixel.png" />
+<asp:Image runat="server" SkinID="SmallIconContacts" CssClass="FeatureSprite SmallIcon PersonIcon" ImageUrl="images/Pixel.png" />
+<asp:Image runat="server" SkinID="SmallIconProducts" CssClass="FeatureSprite SmallIcon CartIcon" ImageUrl="images/Pixel.png" />
+<asp:Image runat="server" SkinID="SmallIconQueries" CssClass="FeatureSprite SmallIcon FindIcon" ImageUrl="images/Pixel.png" />
+
+<asp:Image runat="server" SkinId="ProgressBar" ImageUrl="images/progressbar.gif" />
+
+<asp:ImageButton runat="server" SkinID="EnableSurfToEditButton" ImageUrl="Images/enablesurftoedit.png" ToolTip="Easy edit is off. Click to turn it on." ImageAlign="Middle" CssClass="SurfEdit" AlternateText="Disabled easy edit icon" />
+<asp:ImageButton runat="server" SkinID="DisableSurfToEditButton" ImageUrl="Images/disablesurftoedit.png" ToolTip="Easy edit is on. Click to turn it off." ImageAlign="Middle" CssClass="SurfEdit" AlternateText="Enabled easy edit icon" />
+<asp:ImageButton runat="server" SkinID="EnableSurfToEditButton_Disabled" ImageUrl="Images/enablesurftoedit_disabled.png" ToolTip="Easy edit is not enabled on this page." ImageAlign="Middle" CssClass="SurfEdit" AlternateText="Disabled easy edit icon" />
+
+<%-- Control used by SmartControl to display info icon and fly-out tooltip --%>
+<%-- This should replace the one currently in UltraWave.skin.  This is updated for the latest InfoIcon changes in Asi.Web. --%>
+<asiweb:InfoControl runat="server" BehaviorType="OnClick" AnimationsEnabled="true"
+    ButtonType="Image" ButtonImageUrl="images/icon_info.png" CssClass="moreInfo"
+     InfoCssClass="moreInfoPanel" Title="More Info" />
+<%-- TitleBar Control. Action Box Image. --%>
+<asp:ImageButton runat="server" SkinID="TitleBarActionBoxButton" ImageUrl="Images/titlebaractionbox.gif" ToolTip="" ImageAlign="Middle" />    
+
+<%-- Validation summary error message. --%>
+<asp:ValidationSummary runat="server" CssClass="AsiValidationSummary" HeaderText="" ForeColor="" />       

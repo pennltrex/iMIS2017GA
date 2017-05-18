@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLNCHAR            2       16      ""   1     EventSetupQuestionChoiceID                               SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     EventSetupQuestionID                                     ""
+3       SQLNCHAR            2       128     ""   3     Answer                                                   SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     NotificationSetDetailKey                                         ""
+2       SQLUNIQUEID         1       16      ""   2     NotificationSetKey                                               ""
+3       SQLUNIQUEID         1       16      ""   3     TaskDefinitionKey                                                ""
+4       SQLINT              0       4       ""   4     NotificationSetDetailPriority                                    ""
+5       SQLBIT              1       1       ""   5     NotificationSetDetailIsDefault                                   ""
+6       SQLUNIQUEID         1       16      ""   6     CreatedByUserKey                                                 ""
+7       SQLDATETIME         0       8       ""   7     CreatedOn                                                        ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                                                 ""
+9       SQLDATETIME         0       8       ""   9     UpdatedOn                                                        ""

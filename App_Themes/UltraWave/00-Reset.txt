@@ -1,0 +1,335 @@
+﻿/* Reset to a standard base */
+
+@import url("../../YUI/build/reset-fonts-grids/reset-fonts-grids.css");
+@import url("../../YUI/build/base/base.css");
+
+/*****************************************/
+/***        RESET STYLE SHEET          ***/
+/*****************************************/
+/**
+ * Browser reset style sheet
+ *
+ * This document contains styles to reduce browser inconsistencies.
+ * DO NOT EDIT THIS DOCUMENT DIRECTLY. Your changes WILL be lost when you upgrade.
+ * Instead, create a new style sheet to override the styles that you want to change.
+ */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/* The HTML5 display definitions are taken from normalize.css v1.1.1 - git.io/normalize */
+
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * Standard container sizing.
+ * These are required to ensure popup windows size correctly.
+ */
+html, body, form
+{
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/**
+ * Force overflowing content to hide itself       
+ * This resolves the issue of greyed out vertical scrollbars in IE8 and earlier                  
+*/
+html
+{
+	overflow: auto;
+}
+
+body
+{
+	line-height: 1.385em;  /* added to ensure that all borders around StandardPanels appear complete */
+	text-align: left !important; /* added to ensure that text-align:center does not apply when iPart ajax post back occurs */
+}
+
+/* ==========================================================================
+   YUI 2 Grids
+   ========================================================================== */
+
+/**
+ * Reduce the margins between the yui grid containers by overriding the following classes 
+ */
+
+.yui-gb .yui-u 
+{
+	margin-left: 1.9%;
+}
+
+.yui-gd .yui-u 
+{
+	width: 67%;
+	margin-left: 0.9%;
+	float: left;
+}
+
+.yui-g .yui-u 
+{
+	width: 49.9%;
+	float: right;
+}
+
+.yui-gc .yui-u 
+{
+	width: 33%;
+	margin-left: 0;
+	float: left;
+}
+
+.yui-gf .yui-ge .yui-u
+{
+    width: 18%;
+}
+
+/* Left column on account layouts */
+.yui-gf DIV.first
+{
+	width: 24% !important;
+}
+
+/* Middle column on account layouts */
+
+	/* IE7 Specific class */
+	*+html .yui-gf .yui-ge DIV.first
+	{
+		width: 78% !important;
+	}
+	/* All other browsers */
+	.yui-gf .yui-ge DIV.first
+	{
+		width: 54% !important;
+	}
+
+/* Right column on account layouts */
+.yui-gf .yui-ge .yui-u  
+{
+	width: 22% !important;
+}
+
+/* Issue: 12188, 12264 BEGIN */
+/* Styles below are special overrides of the YUI styles in order to properly display content 
+within a Content Collection Organizer (CCO) control. These styles should be updated whenever 
+a new Content Layout is added that will be used within a CCO. Content Collection Organizer 
+always adds a DIV with ID: ContentWizardDisplay_Wrapper and style: ContentWizardDisplay */
+.ContentWizardDisplay .yui-ge .yui-u, 
+.ContentWizardDisplay .yui-ge .yui-g, 
+.ContentWizardDisplay .yui-gf div.first {
+	width:24% !important;
+}
+
+.ContentWizardDisplay .yui-ge .yui-u.first { width:74.2% !important; }
+
+.ContentWizardDisplay .yui-g .yui-gc div.first, 
+.ContentWizardDisplay .yui-g .yui-ge div.first, 
+.ContentWizardDisplay .yui-g div.first, 
+.ContentWizardDisplay .yui-gc div.first, 
+.ContentWizardDisplay .yui-gc div.first div.first, 
+.ContentWizardDisplay .yui-gd div.first, 
+.ContentWizardDisplay .yui-ge div.first, 
+.ContentWizardDisplay .yui-gf div.first {
+	float:left;
+} 
+
+.yui-g .ContentWizardDisplay .yui-u,
+.yui-g .ContentWizardDisplay .yui-g, 
+.yui-g .ContentWizardDisplay .yui-gb, 
+.yui-g .ContentWizardDisplay .yui-gc, 
+.yui-g .ContentWizardDisplay .yui-gd, 
+.yui-g .ContentWizardDisplay .yui-ge, 
+.yui-g .ContentWizardDisplay .yui-gf {
+	width:100%;
+}
+
+.yui-g .ContentWizardDisplay .yui-u, 
+.yui-g .ContentWizardDisplay .yui-g, 
+.yui-g .ContentWizardDisplay .yui-gb, 
+.yui-g .ContentWizardDisplay .yui-gc, 
+.yui-g .ContentWizardDisplay .yui-gd, 
+.yui-g .ContentWizardDisplay .yui-ge, 
+.yui-g .ContentWizardDisplay .yui-gf, 
+.yui-gc .ContentWizardDisplay .yui-u, 
+.yui-gd .ContentWizardDisplay .yui-g, 
+.yui-g .ContentWizardDisplay .yui-gc .yui-u, 
+.yui-ge .ContentWizardDisplay .yui-u, 
+.yui-ge .ContentWizardDisplay .yui-g, 
+.yui-gf .ContentWizardDisplay .yui-g, 
+.yui-gf .ContentWizardDisplay .yui-u {
+	float:none;
+}
+
+/* Center column */
+.ContentWizardDisplay .yui-gf .yui-ge div.first { 
+	margin-left: 0.8em !important;
+	width:55.7% !important; 
+	*width:80.1% !important;
+}
+
+/* Right column */
+.ContentWizardDisplay .yui-gf .yui-ge .yui-u {
+	margin-left: 0.8em !important;
+	width: 18% !important;
+	float: left;
+}
+
+.ContentWizardDisplay .yui-g .yui-u, 
+.ContentWizardDisplay .yui-g .yui-g,
+.ContentWizardDisplay .yui-g .yui-gb, 
+.ContentWizardDisplay .yui-g .yui-gc, 
+.ContentWizardDisplay .yui-g .yui-gd, 
+.ContentWizardDisplay .yui-g .yui-ge, 
+.ContentWizardDisplay .yui-g .yui-gf,
+.ContentWizardDisplay .yui-gc .yui-u,
+.ContentWizardDisplay .yui-gd .yui-g, 
+.ContentWizardDisplay .yui-g .yui-gc .yui-u, 
+.ContentWizardDisplay .yui-ge .yui-u, 
+.ContentWizardDisplay .yui-ge .yui-g, 
+.ContentWizardDisplay .yui-gf .yui-g, 
+.ContentWizardDisplay .yui-gf .yui-u {
+	float:right;
+}
+
+.ContentWizardDisplay .yui-g .yui-u {
+	float:right;
+	width:49.9% !important;
+}
+
+.ContentWizardDisplay .yui-g .yui-u, 
+.ContentWizardDisplay .yui-g .yui-g, 
+.ContentWizardDisplay .yui-g .yui-gb, 
+.ContentWizardDisplay .yui-g .yui-gc, 
+.ContentWizardDisplay .yui-g .yui-gd,
+.ContentWizardDisplay .yui-g .yui-ge,
+.ContentWizardDisplay .yui-g .yui-gf {
+	width:49.1% !important;
+	
+}
+
+/* Left column */
+.ContentWizardDisplay .yui-g .yui-u, 
+.ContentWizardDisplay .yui-g .yui-g, 
+.ContentWizardDisplay .yui-g .yui-gb, 
+.ContentWizardDisplay .yui-g .yui-gc, 
+.ContentWizardDisplay .yui-g .yui-gd, 
+.ContentWizardDisplay .yui-g .yui-ge, 
+.ContentWizardDisplay .yui-g .yui-gf, 
+.ContentWizardDisplay .yui-gc .yui-u, 
+.ContentWizardDisplay .yui-gd .yui-g, 
+.ContentWizardDisplay .yui-g .yui-gc 
+.ContentWizardDisplay .yui-u, 
+.ContentWizardDisplay .yui-ge .yui-u,
+.ContentWizardDisplay .yui-ge .yui-g,
+.ContentWizardDisplay .yui-gf .yui-g,
+.ContentWizardDisplay .yui-gf .yui-u {
+	float:right;
+}
+
+/* Styles to properly display single column layout */
+.ContentWizardDisplay .yui-g {
+	width:100%;
+}
+
+/* If multiple CCO iParts are on a single content record this class */
+/* is needed to handle the height correctly */
+#ContentWizardDisplay_Wrapper #ContentWizardDisplay_Wrapper,
+#ContentWizardDisplay_Wrapper #ContentWizardDisplay_Wrapper #ContentWizardDisplay_Wrapper
+{
+	height:100%;
+    overflow:hidden;
+    zoom:1;
+}
+
+/* Fix for 3 over 1 layout in Dashboard CCO */
+.ContentWizardDisplay .yui-gb .yui-u {
+    width: 32.6% !important;
+    float: left!important;
+    margin-left: 0;
+}
+
+/* Fix for 33/66 layout in CCO */
+.ContentWizardDisplay .yui-gd .yui-u { 
+	margin-left: 0.8em;
+	width:65.6% !important; 
+	float:right!important;
+}
+
+.ContentWizardDisplay .yui-gd .yui-u.first { 
+	width:32.6% !important; 
+	float:left!important;
+	margin-left:0;
+}
+
+.ContentWizardDisplay .yui-gb .yui-u { 
+	width:32.6% !important; 
+	float:left!important;
+	margin-left:0;
+}
+
+/* Padding is lost on iParts within CCO. Adding it back here */
+.ContentWizardDisplay .ContentItemContainer
+{	margin-top: 0.9em; }
+
+/* To avoid doubling up the margins if ContentItemContainers are nested inside of another */
+.ContentWizardDisplay .ContentItemContainer .ContentItemContainer
+{	margin-top: 0; }
+
+/* Styles to properly display nested CCO iParts */
+.ContentWizardDisplay .yui-g .yui-g {
+    width:100%!important;
+    float:left!important;
+}

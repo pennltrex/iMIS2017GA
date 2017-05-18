@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLUNIQUEID         1       16      ""   1     CreditInvoiceExportKey                           ""
+2       SQLINT              0       4       ""   2     NumberOfTransactions                             ""
+3       SQLMONEY            0       8       ""   3     Amount                                           ""
+4       SQLUNIQUEID         1       16      ""   4     CreatedByUserKey                                 ""
+5       SQLDATETIME         0       8       ""   5     CreatedOn                                        ""
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                                ""

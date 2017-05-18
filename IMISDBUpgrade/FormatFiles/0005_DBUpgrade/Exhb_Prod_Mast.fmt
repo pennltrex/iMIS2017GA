@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLNCHAR            2       20      ""   1     PRODUCT_ID                           SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            4       0       ""   2     PRODUCT_DESCRIPT                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       120     ""   3     PRODUCT_TITLE                        SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       120     ""   4     PRODUCT_CAT                          SQL_Latin1_General_CP1_CI_AS
+5       SQLBINARY           2       8       ""   5     TIME_STAMP                           ""

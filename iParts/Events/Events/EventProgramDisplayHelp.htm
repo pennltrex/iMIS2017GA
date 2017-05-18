@@ -1,0 +1,74 @@
+<html>
+	<body>
+		<h1>Event Program Display</h1>
+			<p>This iPart lists the functions that make up the program of an event.</p>
+			<ul>
+				<li>
+					<strong>Name</strong> - Enter a name for the iPart. This text only 
+					appears during design mode (configuration).
+				</li>
+				<li>
+					<strong>Title</strong> - If you want a title bar to appear above this 
+					iPart on the rendered page, enter the text for the title bar to display.
+				    You can use a <b>[Name]</b> variable in the <b>Title</b> to dynamically display the name of the user registering
+                    for the event. For example, if you enter <b>Program - [Name]</b>, and John Smith logs in
+                    to register for an event, <b>Program - John Smith</b> displays as the title. Additionally,
+                    if you have enabled the option to allow users to register someone else in the Event
+                    Display iPart, the <b>[Name]</b> in the title reflects the user being registered.
+				</li>
+				<li>
+					<strong>Do not render in design mode</strong> - To boost performance 
+					during design time (configuration), enable this checkbox to prevent 
+					content record data from being loaded in the content editor.
+				</li>
+				<li>
+					<strong>Display a border around this content</strong> - If you want 
+					a border to appear around this iPart on the rendered page, enable this checkbox.
+				</li> 
+			    <li><strong>Select 'Only display program items in registrant's itinerary' by default</strong> - Enable if you wish to display only program 
+                items in the registrant's itinerary by default when the iPart is loaded. The user can disable this checkbox to see all program items.
+					</li>
+                <li>
+					<strong>Event key</strong> - The key of the specific event to be displayed. 
+					<span class="v100only">This comes from the <b>Event.EventKey</b> column. </span>
+					<span class="v10only">This comes from the <b>Event Code</b> defined in <b>iMIS Desktop &gt; Events &gt; Define
+                    an event</b>.</span> The key may also be supplied via the URL. A key specified 
+                    in the iPart configuration takes precedence over a key in the URL.</li> 
+			</ul>
+		
+		<p><b>Notes</b></p>
+			<ul>
+				<li> 
+					If a key value is not set in the configuration page, the iPart looks for the key 
+                    in the URL. To include the key in the URL, use the parameter name EventKey, such as
+					<span class="v10only"><b>?EventKey=SPR12</b></span>
+                    <span class="v100only"><b>?EventKey=72290518-44B9-428B-909D-10142B4B6B9F</b></span>. 
+                    A key specified in the iPart configuration takes precedence over a key in 
+                    the URL.
+				</li>
+				<li> 
+					If no <b>Event key</b> is specified, the iPart hides itself on the page.
+				</li>
+                <li class="v10only"> 
+					The iPart displays a list of the event's functions defined in <i>iMIS</i> Desktop. A 
+                    function is only displayed in the list if the <b>Show this function on the Web?</b> 
+                    option is enabled. The <b>Status</b> of an event function is disregarded. To 
+                    enable a function for the web, or to edit function information such as the <b>
+                    Title</b>, <b>Dates</b>, and <b>Description</b>, from <b>Events &gt; Define an 
+                    event</b>, select the event and then click <b>Insert</b> or <b>Edit</b>.
+				</li>
+				<li class="v10only"> 
+					The iPart lets users group and view functions by <b>Date</b> as well as by <b>Track</b> and 
+					<b>Category</b>, if you assigned any to the event's functions in <i>iMIS</i> Desktop.
+					Users can double-click the section bars to collapse and expand these groupings.
+				</li>
+			    <li class="v10only"> 
+			        The iPart will be hidden if there are no functions for the specified event.</li>
+                <li class="v100only"> 
+					The iPart will be hidden if there are no functions for the specified event and 
+                    the user does not have permission to add functions.</li>
+			</ul>
+	    <p>
+            &nbsp;</p>
+	</body>
+</html>

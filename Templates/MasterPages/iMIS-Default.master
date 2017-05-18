@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" Inherits="Asi.Web.UI.WebsiteMasterPageBase" %>
+<%@ Register TagPrefix="CM" TagName="ContentPage" Src="~/AsiCommon/Controls/ContentManagement/ContentPage.ascx" %>
+<%@ Register TagPrefix="CM" TagName="ContentPageFooter" Src="~/AsiCommon/Controls/ContentManagement/ContentPageFooter.ascx" %>
+<%@ Register TagPrefix="CM" TagName="ContentWebUserControl_PrimaryNavigation" Src="~/asicommon/controls/Navigation/PageNavR.ascx" %>
+
+<!DOCTYPE html>
+
+<script language="C#" runat="server">
+    protected override void EnsureChildUserControls()
+    {
+	    base.EnsureChildUserControls();
+
+	    Asi.Web.UI.IUserControl childUserControl;
+	    Guid key;
+
+	    childUserControl = ciPrimaryNavigation as Asi.Web.UI.IUserControl;
+	    if (childUserControl != null)
+		    AddChildUserControl(childUserControl);
+	    key = new System.Guid("8a001b52-41ea-43b0-9ea8-9231692476a8");
+	    if(!ContentItemKeyMap.ContainsKey(key))
+		    ContentItemKeyMap.Add(key, ciPrimaryNavigation);
+    }
+</script>
+
+<html id="MainHtml" lang="en" class="html-main">
+    <head id="Head1" runat="server">
+        <title>iMIS</title>
+        <asp:ContentPlaceHolder id="TemplateHead" runat="server" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+        <script type="text/javascript">
+            // Add a class to the <html> tag of browsers that do not support Media Queries
+            var mqSupported = Modernizr.mq('only all');
+            if (!mqSupported) {
+                document.documentElement.className += ' no-mqs';
+            }
+        </script>       
+        <meta name="Description" content="Advanced Solutions International (ASI) is the maker of iMIS Engagement Management System. iMIS, the leading membership &amp; fundraising software, allows non profits to manage both members &amp; donors. See why to choose iMIS over CRM &amp; database software" />
+	    <meta name="Keywords" content="membership software fundraising software charity software donor association software online fundraising crm database cms" />
+    </head>
+    <body id="MainBody" runat="server" clientidmode="Static">
+        <%-- Skip to main content link for accessibility. Hidden to sighted users except when focused. --%>
+        <a href="#contentstart" class="screen-reader-text show-on-focus">Skip to main content</a>
+        <form class="form-main" id="TemplateForm" method="post" runat="server">
+            <asp:HiddenField runat="server" ClientIDMode="Static" id="lastClickedElementId" />
+            <telerik:RadScriptManager AsyncPostBackTimeout="3600" EnableCdn="false" 
+		        EnableHistory="true" EnablePageMethods="true" EnablePartialRendering="true" 
+		        EnableScriptGlobalization="true" EnableSecureHistoryState="false" ID="ScriptManager1" runat="server">
+	        </telerik:RadScriptManager>             
+	        <div class="row">
+                <div class="col-sm-12">
+				    <div ID="WTZone1_Page1" class="WTZone ">
+				        <asp:Panel ID="ste_container_PrimaryNavigation" runat="server" style="position: relative; min-height: 20px; zoom: 1 !important; padding: 0px; margin: 0px;"><CM:ContentWebUserControl_PrimaryNavigation ID="ciPrimaryNavigation" runat="server" /><asiweb:SurfToEditButtonPanel ID="ste_ciPrimaryNavigation" runat="server" ContentKey="12a08ab3-a661-48d0-9d55-60bba0f267b0" ContentItemKey="e41a0398-3d3d-4001-bbaa-067e26408a5c" /></asp:Panel>
+					</div>
+                </div>
+            </div>                               
+	        <div class="row">
+                <div class="col-sm-12">
+				    <div ID="WTZone2_Page1" class="WTZone ">
+                        <a id="contentstart" tabindex="-1"></a>
+                        <asp:ContentPlaceHolder ID="TemplateUserMessages" runat="server" />
+			            <asp:ContentPlaceHolder ID="TemplateBody" runat="server" />
+					</div>
+			        <asp:Panel class="ButtonPanel NotPrinted" runat="server" ID="ButtonPanel" data-height-offset="true">
+			            <div id="masterMainButtonBar" class="CommandBar">
+			                <asiweb:CommandButtonBar ID="ButtonBar" runat="server" TargetControlID="ContentDiv" />
+			                <asp:ContentPlaceHolder ID="TemplateButtonBar" runat="server"></asp:ContentPlaceHolder>
+			            </div>
+			        </asp:Panel>    
+                    <asp:ContentPlaceHolder ID="SideBarPlaceHolder" runat="server" Visible="false"/>
+                </div>
+            </div>
+            <CM:ContentPageFooter ID="ContentPageFooter1" runat="server" NumberOfPages="1" />                                       
+            <!--Jscript from Page.ResgisterStartupScript extention is loaded here -->
+            <asp:ContentPlaceHolder id="TemplateScripts" runat="server" />           	            
+        </form>
+    </body>
+</html>

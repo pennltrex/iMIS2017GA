@@ -1,0 +1,39 @@
+using System;
+using Asi.Web.UI.Common.Controls.CertificationManagement;
+
+namespace Asi.Bae.Web.Customer.AccountManagement.CertificationManagement
+{
+    /// <summary>
+    /// Displays the component action item included in a program certification
+    /// </summary>
+    public partial class CertificationModuleList : CertificationProgramRegistrationControlScreenBase
+    {
+        /// <summary>
+        /// <see cref="Asi.Web.UI.UserControlBase.OnLoad"/>
+        /// </summary>
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            if (CertificationProgramRegistration != null)
+            {
+                StageRepeater.DataSource = CertificationProgramRegistration.ActionManifest.Stages;
+                StageRepeater.DataBind();
+            }
+        }
+
+        /// <summary>
+        /// <see cref="Asi.Web.UI.UserControlBase.OnDataBinding"/>
+        /// </summary>
+        protected override void OnDataBinding(EventArgs e)
+        {
+            base.OnDataBinding(e);
+
+            if (CertificationProgramRegistration != null)
+            {
+                StageRepeater.DataSource = CertificationProgramRegistration.ActionManifest.Stages;
+                StageRepeater.DataBind();
+            }
+        }
+    }
+}

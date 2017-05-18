@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLUNIQUEID         1       16      ""   1     AddressPurposeKey                        ""
+2       SQLNCHAR            2       40      ""   2     AddressPurposeDesc                       SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     IsSystem                                 ""
+4       SQLDATETIME         0       8       ""   4     UpdatedOn                                ""
+5       SQLUNIQUEID         1       16      ""   5     UpdatedByUserKey                         ""
+6       SQLBIT              1       1       ""   6     IsActive                                 ""
+7       SQLUNIQUEID         1       16      ""   7     CreatedByUserKey                         ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                                ""

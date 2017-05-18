@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLUNIQUEID         1       16      ""   1     GatewayTransactionKey                          ""
+2       SQLNCHAR            2       100     ""   2     TransactionId                                  SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     TransactionGroupId                             SQL_Latin1_General_CP1_CI_AS
+4       SQLDECIMAL          1       19      ""   4     TransactionAmount                              ""
+5       SQLNCHAR            2       510     ""   5     AssociatedEntities                             SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       100     ""   6     ContactId                                      SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       60      ""   7     PaymentType                                    SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            8       0       ""   8     RequestString                                  SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            8       0       ""   9     ResponseString                                 SQL_Latin1_General_CP1_CI_AS
+10      SQLDATETIME         1       8       ""   10    TransactionDate                                ""

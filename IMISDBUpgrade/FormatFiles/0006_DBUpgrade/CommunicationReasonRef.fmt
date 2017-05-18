@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLUNIQUEID         1       16      ""   1     CommunicationReasonKey                             ""
+2       SQLNCHAR            2       200     ""   2     CommunicationReasonName                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       1000    ""   3     Formula                                            SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsDefaultType                                      ""
+5       SQLBIT              1       1       ""   5     DefaultOptOutFlag                                  ""
+6       SQLBIT              1       1       ""   6     CannotOptOutFlag                                   ""
+7       SQLBIT              1       1       ""   7     IsSolicitation                                     ""
+8       SQLBIT              1       1       ""   8     IsSystem                                           ""
+9       SQLBIT              1       1       ""   9     Status                                             ""
+10      SQLNCHAR            2       1000    ""   10    CommunicationReasonDesc                            SQL_Latin1_General_CP1_CI_AS

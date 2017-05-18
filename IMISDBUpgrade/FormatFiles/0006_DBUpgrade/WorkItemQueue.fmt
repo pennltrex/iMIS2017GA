@@ -1,0 +1,21 @@
+11.0
+19
+1       SQLUNIQUEID         1       16      ""   1     WorkItemQueueKey                           ""
+2       SQLUNIQUEID         1       16      ""   2     WorkflowInstanceKey                        ""
+3       SQLUNIQUEID         1       16      ""   3     PackageId                                  ""
+4       SQLUNIQUEID         1       16      ""   4     ProcessId                                  ""
+5       SQLUNIQUEID         1       16      ""   5     ActivityId                                 ""
+6       SQLUNIQUEID         1       16      ""   6     PerformerKey                               ""
+7       SQLNCHAR            2       400     ""   7     Description                                SQL_Latin1_General_CP1_CI_AS
+8       SQLINT              1       4       ""   8     ExecutionMode                              ""
+9       SQLBIT              1       1       ""   9     IsInteractive                              ""
+10      SQLNCHAR            2       100     ""   10    Category                                   SQL_Latin1_General_CP1_CI_AS
+11      SQLINT              1       4       ""   11    Priority                                   ""
+12      SQLDATETIME         1       8       ""   12    BeginOn                                    ""
+13      SQLDATETIME         1       8       ""   13    EnqueuedOn                                 ""
+14      SQLUNIQUEID         1       16      ""   14    SelectionLock                              ""
+15      SQLDATETIME         1       8       ""   15    SelectedOn                                 ""
+16      SQLDATETIME         1       8       ""   16    KeepAlive                                  ""
+17      SQLIMAGE            4       0       ""   17    WorkItemGraph                              ""
+18      SQLBIT              1       1       ""   18    RecoveryPoint                              ""
+19      SQLDATETIME         1       8       ""   19    MarkedForDeleteOn                          ""

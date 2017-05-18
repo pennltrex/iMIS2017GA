@@ -1,0 +1,105 @@
+<html>
+<body>
+    <h1>Query Chart Viewer</h1>
+    <p>The Query Chart Viewer displays query results in a chart, which can be set to a range of sizes, skins, and chart types.</p>
+        <ul>
+            <li><strong>Name</strong> (required) - Enter a name for the content item. This text appears during design mode (configuration).</li>
+
+            <li><strong>Title</strong> - Enter the text to display above this content item on the rendered page. If blank, no title displays.</li>
+
+            <li><strong>Do not render in design mode</strong> - Select this option to prevent content record data from being loaded in the content editor. This improves performance during design time (configuration).</li>
+
+            <li><strong>Display a border around this content</strong> - Select this option to display a border around this content item on the rendered page.</li>
+
+            <li>
+                <strong>Limit users who can view data for other contacts</strong> - If this option is enabled,
+                only authorized users can view information for contacts other than themselves. This prevents other users from changing the ID in
+                the URL to access another contact's data. Authorized users include staff and Company Administrators for a group that the contact belongs to.
+                Disable this option to allow all users to view information for other contacts, such as for a public profile. If this option is disabled,
+                the system security settings determine whether a user must be logged in to view information for other contacts.
+            </li>
+
+            <li><strong>Chart data</strong> - Use the following options to configure the type of chart data to display:</li>
+
+            <ul>
+                <li><strong>Source query</strong> - Click <strong>select</strong> and browse to the IQA query that you want to see results for in the chart. Note that depending on the type of chart displayed the performance of the content item may be affected by how the query is sorted. The query for a pie chart, for example, should be sorted by the data column.</li>
+                <li><strong>Series data column</strong> - Choose the query column to use for multiple values of data.</li>
+                <p>
+                    <i>Note:</i> This option is only displayed when the source IQA query has a <strong>Subtotal</strong> option checked in the <strong>display</strong> tab, and the selected display <strong>Type</strong> is one of the following:
+                </p>
+        <ul>
+            <li><strong>Area</strong></li>
+            <li><strong>Line</strong> </li>
+            <li><strong>Bar - Horizontal</strong></li>
+            <li><strong>Bar - Vertical</strong></li>
+        </ul>
+        <li><strong>Series data format</strong> - Choose the query column to use multiple values of data labels. </li>
+                <p>
+                    <i>Note:</i> This option is only displayed when the source IQA query has a <strong>Subtotal</strong> option checked in the <strong>display</strong> tab, and the selected display <strong>Type</strong> is one of the following:
+                </p>
+        <ul>
+            <li><strong>Area</strong></li>
+            <li><strong>Line</strong> </li>
+            <li><strong>Bar - Horizontal</strong></li>
+            <li><strong>Bar - Vertical</strong></li>
+        </ul>
+        <li><strong>Data axis</strong> - Choose the query column to use for data values. For a pie chart, this will determine the sections of the pie, and for other charts this will be the <strong>Y</strong> axis. </li>
+                <p>
+                    <i>Note:</i> Each property you select on the <strong>display</strong> tab of your query in IQA is available as a data column display option.<br/>
+                </p>
+        <li><strong>Data axis format</strong> - Choose the format for the data in the data column.</li>
+        <li><strong>Label axis column</strong> - Choose the query column to use for data labels. For a pie chart, these labels will be displayed next to the corresponding section, and for other charts this will be the <strong>X</strong> axis.</li>
+        <li><strong>Label axis format</strong> - Choose the format for the labels in the label column.</li>
+        <li><strong>Hide chart when no data is found</strong> - Select this option to hide the chart when no data results are returned.</li>
+        <li><strong>No data text</strong> - Enter the text to display when no data results are returned.</li>
+
+        </ul>
+
+        <li><strong>Display options</strong> - Use the following options to configure how the chart data will be displayed:</li>
+
+        <ul>
+            <li><strong>Title</strong> - If you want a title to be displayed within the chart, enter the text for the title here.</li>
+            <li><strong>Type</strong> (required) - Choose the type of chart to display. For examples of how each chart appears, refer to the <a href="http://www.help.imis.com">documentation</a>.</li>
+            <li><strong>Enable stacked series</strong> - Enable this option to display related data stacked on the same data-point bar.</li>
+            <p>
+                <i>Note:</i> This option is only available for <strong>Bar - Horizontal</strong> and <strong>Bar - Vertical</strong> display types.
+            </p>
+        <li><strong>Skin</strong> - Choose a skin to determine the color scheme and appearance of the chart.</li>
+        <li><strong>Width</strong> (required) - Enter the width of the chart in pixels.</li>
+            <p>
+                <i>Note:</i> Width can be set to <strong>0</strong>. If set to <strong>0</strong>, then 100% is implied. This applies to all chart types except the Sparkline variation of a chart.
+            </p>
+        <li><strong>Height</strong> (required) - Enter the height of the chart in pixels.</li>
+            <p>
+                <i>Note:</i> Height can be set to <strong>0</strong>. If set to <strong>0</strong>, then 100% is implied. This applies to all chart types except the Sparkline variation of a chart.
+            </p>
+        </ul>
+
+        <li><strong>Labels</strong> - Use the following options to configure the type of chart data to display:</li>
+
+        <ul>
+            <li><strong>Legend label</strong> - If you want a series label to appear on the chart, enter the text for the label here.</li>
+            <p>
+                <i>Note:</i> You cannot add a series label for <strong>Pie</strong> or <strong>Donut</strong> chart types.
+            </p>
+        <li><strong>Legend position</strong> (required) - Select where to display the series label for the chart:</li>
+        <ul>
+            <li><strong>Hidden</strong></li>
+            <li><strong>Top</strong></li>
+            <li><strong>Bottom</strong></li>
+            <li><strong>Left</strong></li>
+            <li><strong>Right</strong></li>
+        </ul>
+        <li><strong>Display axis labels</strong> - Select this option to enable displaying a chart series label.</li>
+        <li><strong>Axis label angle</strong> - Enter the degree of rotation for the labels on the chart. For example, a value of <strong>45</strong> will display the labels at a 45-degree angle.</li>
+        <li><strong>Enable tooltips</strong> - Select this option to enable tooltips in the chart.</li>
+
+        </ul>
+    </ul>
+
+    <p><strong>Notes</strong></p>
+    <ul>
+        <li>For details, see <b>Designing queries for Query Chart Viewer</b> in the <a href="http://www.help.imis.com">documentation</a>.</li>
+    </ul>
+</body>
+</html>

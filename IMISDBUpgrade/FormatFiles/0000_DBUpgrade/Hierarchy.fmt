@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     HierarchyKey                                     ""
+2       SQLUNIQUEID         1       16      ""   2     RootHierarchyKey                                 ""
+3       SQLUNIQUEID         1       16      ""   3     ParentHierarchyKey                               ""
+4       SQLINT              0       4       ""   4     SortOrder                                        ""
+5       SQLINT              0       4       ""   5     Depth                                            ""
+6       SQLNCHAR            2       200     ""   6     UniformType                                      SQL_Latin1_General_CP1_CI_AS
+7       SQLUNIQUEID         1       16      ""   7     UniformKey                                       ""
+8       SQLBIT              1       1       ""   8     IsChildAMemberOfParent                           ""
+9       SQLNCHAR            2       200     ""   9     HierarchyCode                                    SQL_Latin1_General_CP1_CI_AS
+10      SQLDATETIME         1       8       ""   10    MarkedForDeleteOn                                ""

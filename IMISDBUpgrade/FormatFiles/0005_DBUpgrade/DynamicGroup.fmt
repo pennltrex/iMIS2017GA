@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLNCHAR            2       130     ""   1     GroupName                                          SQL_Latin1_General_CP1_CI_AS
+2       SQLUNIQUEID         1       16      ""   2     QueryDocumentVersionKey                            ""
+3       SQLUNIQUEID         1       16      ""   3     GroupKey                                           ""
+4       SQLNCHAR            2       138     ""   4     ViewName                                           SQL_Latin1_General_CP1_CI_AS
+5       SQLINT              0       4       ""   5     ScheduleFrequencyCode                              ""
+6       SQLDATETIME         0       8       ""   6     LastPublishDateTime                                ""

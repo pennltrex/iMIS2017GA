@@ -1,0 +1,14 @@
+10.0
+12
+1       SQLUNIQUEID         1       16      ""   1     CommitmentKey                              ""
+2       SQLDATETIME         0       8       ""   2     DateCommitted                              ""
+3       SQLUNIQUEID         1       16      ""   3     ProductInventoryKey                        ""
+4       SQLUNIQUEID         1       16      ""   4     OrderKey                                   ""
+5       SQLUNIQUEID         1       16      ""   5     OrderLineKey                               ""
+6       SQLDECIMAL          1       19      ""   6     QuantityCommitted                          ""
+7       SQLDATETIME         1       8       ""   7     ExpirationDate                             ""
+8       SQLUNIQUEID         1       16      ""   8     CreatedByUserKey                           ""
+9       SQLDATETIME         0       8       ""   9     CreatedOn                                  ""
+10      SQLUNIQUEID         1       16      ""   10    UpdatedByUserKey                           ""
+11      SQLDATETIME         0       8       ""   11    UpdatedOn                                  ""
+12      SQLDATETIME         1       8       ""   12    MarkedForDeleteOn                          ""

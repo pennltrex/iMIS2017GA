@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     OfferedCustomerExperienceKey                                           ""
+2       SQLUNIQUEID         1       16      ""   2     OfferingKey                                                            ""
+3       SQLNCHAR            2       100     ""   3     OfferedCustomerExperienceGrade                                         SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     OfferedCustomerExperienceGradeKey                                      ""
+5       SQLDATETIME         1       8       ""   5     OfferedCustomerExperienceDate                                          ""

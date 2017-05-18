@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     CommunicationLogEventKey                                       ""
+2       SQLUNIQUEID         1       16      ""   2     CommunicationLogRecipientKey                                   ""
+3       SQLINT              0       4       ""   3     CommunicationLogEventTypeCode                                  ""
+4       SQLNCHAR            2       1000    ""   4     EventReason                                                    SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       1000    ""   5     UserAgent                                                      SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       100     ""   6     Ip                                                             SQL_Latin1_General_CP1_CI_AS
+7       SQLUNIQUEID         1       16      ""   7     CreatedByUserKey                                               ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                                                      ""
+9       SQLDATETIME         1       8       ""   9     EventDateTime                                                  ""

@@ -1,0 +1,2 @@
+These Angular files should not be checked in, they are built via our gulp tasks and contain several angular API's
+At the moment we do not have node/gulp on our drones which is why they are temp checked in.

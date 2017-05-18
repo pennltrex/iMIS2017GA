@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLNCHAR            2       62      ""   1     PROGRAM_ID                                             SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       62      ""   2     COMPONENT_CODE                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       62      ""   3     COMPONENT_CATEGORY                                     SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              0       4       ""   4     LINE_NUMBER                                            ""
+5       SQLNCHAR            2       20      ""   5     LINE_TYPE                                              SQL_Latin1_General_CP1_CI_AS
+6       SQLNUMERIC          1       19      ""   6     UNITS_REQUIRED_FOR_CREDIT                              ""
+7       SQLTINYINT          0       1       ""   7     REQUIREMENT_TYPE                                       ""
+8       SQLBINARY           2       8       ""   8     TIME_STAMP                                             ""

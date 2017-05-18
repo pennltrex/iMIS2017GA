@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     AVSBillingLogKey                                 ""
+2       SQLNCHAR            2       30      ""   2     IPIMISServer                                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       30      ""   3     IPBrowser                                        SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       20      ""   4     UserType                                         SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       20      ""   5     VerificationType                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       6       ""   6     CountryCode                                      SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       510     ""   7     iMISSerialNumber                                 SQL_Latin1_General_CP1_CI_AS
+8       SQLDATETIME         1       8       ""   8     CreatedOn                                        ""
+9       SQLDATETIME         1       8       ""   9     UpdatedOn                                        ""
+10      SQLBIT              1       1       ""   10    IsSuccesfulTransaction                           ""

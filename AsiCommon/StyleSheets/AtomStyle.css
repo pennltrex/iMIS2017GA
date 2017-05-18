@@ -1,0 +1,432 @@
+.AtomPainterPrompt
+{
+	font-size: 12px;
+	font-family: verdana,tahoma,arial,helvetica;
+	text-align: right;
+}
+
+.AtomPainterPromptLine
+{
+	text-align: left;
+	font-size: 12px;
+	font-family: verdana,tahoma,arial,helvetica;
+}
+
+.AtomPainterSeperator
+{
+	font-size: 12px;
+	font-family: verdana,tahoma,arial,helvetica;
+	color: Blue;
+}
+
+.AtomPainterSeperatorLine
+{
+	width: 100%;
+	background-image: url(..\Images\AtomPainter\graydot.gif);
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+.AtomPainterText
+{ 
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 12px;
+}
+
+.AtomPainterButton
+{	
+	height: auto;	
+	font-weight: normal;
+	font-size: 12px;
+	width: auto;
+	font-family: verdana,tahoma,arial,helvetica;
+	text-align: center;
+	text-decoration: none;
+}
+.AtomPainterImageButton
+{	
+	border-right: none;
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+	height: auto;	
+	font-weight: normal;
+	font-size: 12px;
+	width: auto;
+	font-family: verdana,tahoma,arial,helvetica;
+	text-align: center;
+	text-decoration: none;
+}
+.AtomPainterInput
+{	
+	font-weight: normal;
+	font-size: 12px;
+	width: auto;
+	font-family: verdana,tahoma,arial,helvetica;
+	text-align: left;
+	text-decoration: none;
+}
+.AtomPainterRadio
+{	
+	border-right: none;
+	border-top: none;
+	border-left: none;
+	border-bottom: none;
+	font-weight: normal;
+	font-size: 12px;
+	width: auto;
+	font-family: verdana,tahoma,arial,helvetica;
+	text-align: left;
+	text-decoration: none;
+}
+.AtomPainterTabBody
+{
+	border-right: #94a6ce 1px solid;
+	padding-right: 4px;
+	border-top: none;
+	padding-left: 4px;
+	border-left: #94a6ce 1px solid;
+	border-bottom: #94a6ce 1px solid;
+	background-color: #fcfbfe;
+}
+
+.AtomPainterTabDefault
+{
+	border-right: #94a6ce 1px solid;
+	padding-right: 4px;
+	border-top: #94a6ce 1px solid;
+	padding-left: 4px;
+	border-left: #94a6ce 1px solid;
+	width: 100px;
+	color: black;
+	border-bottom: #94a6ce 1px solid;
+	font-family: tahoma;
+	height: 20px;
+	background-color: #efefe7;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: verdana,tahoma,arial,helvetica;
+}
+.AtomPainterTabSelected
+{
+	border-right: #94a6ce 1px solid;
+	padding-right: 4px;
+	border-top: #ffcc00 3px solid;
+	padding-left: 4px;
+	font-weight: bold;
+	border-left: #94a6ce 1px solid;
+	width: 100px;
+	color: black;
+	border-bottom: medium none;
+	height: 20px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #fcfbfe;
+	font-size: 12px;
+	font-family: verdana,tahoma,arial,helvetica;
+}
+.AtomPainterTabRemainder
+{
+	border-right: none;
+	border-top: none;
+	border-left: none;
+	width: 100%;
+	border-bottom: #94a6ce 1px solid;
+	height: 20px;
+}
+.AtomPainterControl
+{
+	font-weight: bold;
+	background-color: #a8ceff; 
+	background-image: url(..\Images\AtomPainter\sliver_mediumblue_short.jpg); 
+	background-position: bottom left; 
+	background-repeat: repeat-x;
+}
+.AtomPainterIfBlock
+{
+	background-color: Olive;
+	border: 1;
+}
+.AtomPainterPanelError
+{
+	font-weight: bold;
+	color: Red;
+	background-color: #a8ceff; 
+}
+.ExplorerTabPage
+{
+	BORDER-RIGHT: #485f7f 0px solid;
+	BORDER-TOP: #485f7f 1px solid;
+	LEFT: 0px;
+	OVERFLOW: auto;
+	BORDER-LEFT: #485f7f 0px solid;
+	WIDTH: 227px;
+	BORDER-BOTTOM: #485f7f 1px solid;
+	POSITION: relative;
+	TOP: 0px;
+	HEIGHT: 559px;
+}
+.ExplorerTab
+{
+	text-align: left;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 11px;
+	background-color: #a8ceff; 
+	background-image: url(..\Images\AtomPainter\sliver_mediumblue_short.jpg); 
+	background-position: bottom left; 
+	background-repeat: repeat-x;
+	border-right: #485f7f 1px solid;
+	padding-left: 5;
+	padding-right: 5;
+	padding-bottom: 2;
+	padding-top: 4;
+	cursor:hand;
+}
+.ExplorerTabSelected
+{
+	text-align: left;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 11px;
+	font-weight: bold;
+	background-color: #a8ceff; 
+	background-image: url(..\Images\AtomPainter\sliver_orange.jpg); 
+	background-position: bottom left; 
+	background-repeat: repeat-x;
+	border-right: #485f7f 1px solid;
+	padding-left: 5;
+	padding-right: 5;
+	padding-bottom: 4;
+	padding-top: 2;
+	cursor:hand;
+}
+.ExplorerHeader
+{
+	color: White;
+	text-align: center;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #a8ceff; 
+	background-image: url(..\Images\AtomPainter\sliver_darkblue.jpg);
+	background-position: bottom left; 
+	background-repeat: repeat-x;
+	border-bottom: #485f7f 1px solid;
+	padding-left: 5;
+	padding-right: 5;
+	padding-bottom: 3;
+	padding-top: 2;
+}
+.ExplorerTabStrip
+{
+	margin: 0 0 0 0
+}
+th.Explorer
+{
+	text-align: left;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 11px;
+}
+td.Explorer
+{	
+	font-size: 11px;	
+	font-family: verdana,tahoma,arial,helvetica;
+	text-align: left;
+}
+div.ExplorerHeader
+{
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 15px;
+	font-weight: bold;
+	color: White;
+}
+div.Explorer
+{	
+	font-size: 11px;	
+	font-family: verdana,tahoma,arial,helvetica;
+	text-align: left;
+}
+
+.menu{
+position:absolute;
+width:180px;
+border:1px;
+border-color:Gray;
+border-top-style: solid;
+border-left-style: solid;
+border-bottom-style: outset;
+border-right-style: outset;
+background-color:menu;
+font-family: Tahoma, MS Sans Serif;
+line-height:18px;
+cursor:default;
+font-size:11px;
+visibility:hidden;
+z-index: 100000;
+}
+
+.menuitems{
+padding-left:20px;
+padding-right:10px;
+}
+
+.AtomMenu
+{	
+	font-family:Tahoma;
+	font-size:12px;
+}
+
+.AtomMenuSmall
+{	
+	font-size: 11px;	
+	font-family: verdana,tahoma,arial,helvetica;
+}
+
+.AtomMenuHeader
+{
+	font-weight: bold;	
+	font-size: 14px;	
+	font-family: verdana,tahoma,arial,helvetica;
+	text-align: left;
+}
+
+.MenuResultsHeaderText
+{
+	font-weight: bold;	
+	font-size: 13px;	
+	font-family: verdana,tahoma,arial,helvetica;
+	text-align: center;
+	color: White;
+	background-image: url(..\Images\AtomPainter\sliver_darkblue.jpg);
+}
+
+.MenuResultsRow
+{
+	font-size: 12px;	
+	font-family: verdana,tahoma,arial,helvetica;
+	text-align: left;
+	background-image: url(..\Images\AtomPainter\sliver_mediumblue_short.jpg);
+}
+
+.MenuResultsOddRow
+{
+	font-size: 12px;	
+	font-family: verdana,tahoma,arial,helvetica;
+	text-align: left;
+}
+
+#AtomPainterTRRepeat
+{
+	background-image: url(..\Images\AtomPainter\dotted.gif);
+}
+
+TR.Repeat
+{
+	background-image: url(..\Images\AtomPainter\dotted.gif);
+}
+
+.APTDefault 
+{ 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 13px; 
+	VERTICAL-ALIGN: middle; 
+	CURSOR: default; 
+	COLOR: black; 
+	FONT-FAMILY: verdana; 
+}
+
+.APTHov
+{ 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 13px; 
+	VERTICAL-ALIGN: middle; 
+	CURSOR: hand; 
+	COLOR: white; 
+	FONT-FAMILY: verdana; 
+	BACKGROUND-COLOR: lightblue; 
+}
+
+.APTSel 
+{ 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 13px; 
+	VERTICAL-ALIGN: middle; 
+	CURSOR: default; 
+	COLOR: blue; 
+	FONT-FAMILY: verdana; 
+}
+
+.APTIcon 
+{
+	MARGIN-RIGHT: 2px; 
+}
+ 
+.APTSmall
+{ 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	VERTICAL-ALIGN: middle; 
+	CURSOR: default; 
+	COLOR: black; 
+	FONT-FAMILY: verdana; 
+}
+
+.APTHovSmall
+{ 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	VERTICAL-ALIGN: middle; 
+	CURSOR: hand; 
+	COLOR: white; 
+	FONT-FAMILY: verdana; 
+	BACKGROUND-COLOR: lightblue; 
+}
+
+.APTSelSmall
+{ 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 11px; 
+	VERTICAL-ALIGN: middle; 
+	CURSOR: default; 
+	COLOR: blue; 
+	FONT-FAMILY: verdana; 
+}
+
+.APTIconSmall
+{
+	MARGIN-RIGHT: 2px; 
+	VERTICAL-ALIGN: middle; 
+}
+
+.AtomPainterActionTreeDefaultSmall
+{ 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	VERTICAL-ALIGN: middle; 
+	CURSOR: default; 
+	COLOR: black; 
+	FONT-FAMILY: verdana; 
+	BACKGROUND-COLOR: white;
+}
+
+.AtomPainterActionTreeHoverSmall
+{ 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 11px; 
+	VERTICAL-ALIGN: middle; 
+	CURSOR: hand; 
+	COLOR: white; 
+	FONT-FAMILY: verdana; 
+	BACKGROUND-COLOR: lightblue; 
+}
+.AtomPainterActionTreeSelectedSmall
+{ 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 11px; 
+	VERTICAL-ALIGN: middle; 
+	CURSOR: default; 
+	COLOR: white; 
+	FONT-FAMILY: verdana; 
+	BACKGROUND-COLOR: blue; 
+}
+

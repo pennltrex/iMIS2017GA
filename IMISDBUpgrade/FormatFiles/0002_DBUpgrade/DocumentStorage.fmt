@@ -1,0 +1,14 @@
+10.0
+12
+1       SQLUNIQUEID         1       16      ""   1     DocumentStorageKey                       ""
+2       SQLNCHAR            2       100     ""   2     Name                                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     Description                              SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       8       ""   4     FileTypeCode                             SQL_Latin1_General_CP1_CI_AS
+5       SQLUNIQUEID         1       16      ""   5     CreatedByUserKey                         ""
+6       SQLDATETIME         0       8       ""   6     CreatedOn                                ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                         ""
+8       SQLDATETIME         0       8       ""   8     UpdatedOn                                ""
+9       SQLUNIQUEID         1       16      ""   9     UploadedByUserKey                        ""
+10      SQLUNIQUEID         1       16      ""   10    UploadedOn                               ""
+11      SQLIMAGE            4       0       ""   11    Blob                                     ""
+12      SQLDATETIME         1       8       ""   12    MarkedForDeleteOn                        ""

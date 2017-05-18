@@ -1,0 +1,10 @@
+11.0
+8
+1       SQLINT              0       4       ""   1     OrderCategoryID                    ""
+2       SQLNCHAR            2       128     ""   2     Title                              SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       2048    ""   3     Description                        SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     Active                             ""
+5       SQLNCHAR            2       1024    ""   5     Header                             SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       1024    ""   6     Footer                             SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       2048    ""   7     Image                              SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       128     ""   8     SecurityKey                        SQL_Latin1_General_CP1_CI_AS

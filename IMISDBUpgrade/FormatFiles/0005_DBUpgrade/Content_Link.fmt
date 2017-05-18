@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLNUMERIC          1       19      ""   1     ContentLinkID                                  ""
+2       SQLNUMERIC          1       19      ""   2     ContentID                                      ""
+3       SQLNUMERIC          1       19      ""   3     TaggedPageLayoutID                             ""
+4       SQLNCHAR            2       510     ""   4     LinkName                                       SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       510     ""   5     LinkURL                                        SQL_Latin1_General_CP1_CI_AS
+6       SQLNUMERIC          1       19      ""   6     SortOrder                                      ""
+7       SQLNUMERIC          1       19      ""   7     PreviousContentLinkID                          ""

@@ -1,0 +1,20 @@
+11.0
+18
+1       SQLNCHAR            2       20      ""   1     DonorId                                              SQL_Latin1_General_CP1_CI_AS
+2       SQLDATETIME         1       8       ""   2     FirstGiftDate                                        ""
+3       SQLMONEY            1       8       ""   3     FirstGiftAmount                                      ""
+4       SQLNCHAR            2       80      ""   4     FirstGiftAppeal                                      SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     NextLastGiftDate                                     ""
+6       SQLMONEY            1       8       ""   6     NextLastGiftAmount                                   ""
+7       SQLNCHAR            2       80      ""   7     NextLastGiftAppeal                                   SQL_Latin1_General_CP1_CI_AS
+8       SQLDATETIME         1       8       ""   8     LastGiftDate                                         ""
+9       SQLMONEY            1       8       ""   9     LastGiftAmount                                       ""
+10      SQLNCHAR            2       80      ""   10    LastGiftAppeal                                       SQL_Latin1_General_CP1_CI_AS
+11      SQLMONEY            1       8       ""   11    LowestGiftAmount                                     ""
+12      SQLMONEY            1       8       ""   12    HighestGiftAmount                                    ""
+13      SQLINT              1       4       ""   13    NumberOfGifts                                        ""
+14      SQLMONEY            1       8       ""   14    LifetimeGiftValue                                    ""
+15      SQLMONEY            1       8       ""   15    AverageGiftValue                                     ""
+16      SQLINT              1       4       ""   16    ConsecutiveYearsGiving                               ""
+17      SQLINT              0       4       ""   17    HighestTransNumProcessed                             ""
+18      SQLDATETIME         0       8       ""   18    LastUpdatedOn                                        ""

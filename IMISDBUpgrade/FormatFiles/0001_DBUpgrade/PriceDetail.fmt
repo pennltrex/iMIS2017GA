@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLUNIQUEID         1       16      ""   1     PriceDetailKey                         ""
+2       SQLUNIQUEID         1       16      ""   2     ProductKey                             ""
+3       SQLNCHAR            2       6       ""   3     CurrencyCode                           SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         0       8       ""   4     CreatedOn                              ""
+5       SQLUNIQUEID         1       16      ""   5     CreatedByUserKey                       ""
+6       SQLDATETIME         0       8       ""   6     UpdatedOn                              ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                       ""
+8       SQLDATETIME         1       8       ""   8     MarkedForDeleteOn                      ""

@@ -1,0 +1,239 @@
+
+/********************************************/
+/***      MARS MENU STYLE SHEET       ***/
+/********************************************/
+/**
+ * Mars styles for PageNavR (Telerik RadMenu)
+ *
+ * This document contains Mars styles for the PageNavR/RadMenu control.
+ * 
+ * TABLE OF CONTENTS:
+ * RadMenu Default
+ *  * Root items
+ *  * Submenu items
+ *  *  * expand arrows
+ *  *  * rtl
+ *  * Submenu offsets
+ *  * Scrolling arrows
+ *  * Separators
+ */
+
+/* ######################## */
+/*     RadMenu Styling      */
+/* ######################## */
+
+/* <RadMenu / Default> */
+
+.PrimaryNavPanel {
+   
+    height: 70px;
+	background-color: #253351;
+}
+
+.RadMenu_Mars {
+	background-color: #253351;
+    width: 100%;
+}
+
+.RadMenu_Mars .rmRootGroup {
+    width: 936px;
+	margin: 0 auto !important;
+    height: 44px;
+}
+
+.RadMenu_Mars .rmText {
+    color: #FFFFFF;
+    font: bold 154%/2.2 'Open Sans Condensed',Arial,sans-serif; /* font-size = 20px, lineheight = 44px */
+	
+}
+.RadMenu_Mars a.rmLink, .RadMenu_Mars a.rmDisabled, .RadMenu_Mars a.rmDisabled:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+.RadMenu_Mars a.rmRootLink:hover, .RadMenu_Mars a.rmRootLink.rmFocused, .RadMenu_Mars a.rmRootLink.rmSelected {
+    
+    background-color: #1E8DAC;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+.RadMenu_Mars .rmHorizontal .rmRootLink span.rmText {
+    display: inline;
+    padding-left: 12px;
+}
+.RadMenu_Mars_rtl .rmRootLink span.rmText {
+    padding-right: 12px;
+}
+.RadMenu_Mars_Context_rtl .rmRootLink span.rmText {
+    padding-right: 28px;
+}
+.RadMenu_Mars .rmHorizontal a.rmRootLink {
+    padding-left: 0;
+}
+.RadMenu_Mars_rtl a.rmRootLink {
+    margin-left: 0;
+    padding: 0;
+}
+.RadMenu_Mars .rmHorizontal .rmItem > a.rmRootLink {
+    width: 99%;
+}
+.rmRootLink {
+	
+}
+.RadMenu_Mars ul.rmHorizontal .rmLeftImage {
+    margin: 4px -4px 0 6px;
+}
+.RadMenu_Mars_rtl ul.rmHorizontal .rmLeftImage {
+    margin: 4px 6px 0 -4px;
+}
+
+.rmVertical {
+	padding: 5px !important;
+}
+.RadMenu_Mars .rmVertical a.rmLink {
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+a.rmLink:hover {
+	background-color: #1E8DAC;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.RadMenu_Mars .rmVertical a.rmLink:hover, .RadMenu_Mars .rmVertical a.rmFocused, .RadMenu_Mars .rmVertical a.rmSelected, .RadMenu_Mars .rmVertical a.rmExpanded, .RadMenu_Mars .rmVertical a.rmExpanded:hover {
+    border-color: #414141;
+    border-style: solid;
+    border-width: 1px 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.RadMenu_Mars .rmVertical .rmFirst a.rmLink:hover, .RadMenu_Mars .rmVertical .rmFirst a.rmFocused, .RadMenu_Mars .rmVertical .rmFirst a.rmSelected, .RadMenu_Mars .rmVertical .rmFirst a.rmExpanded, .RadMenu_Mars .rmVertical .rmFirst a.rmExpanded:hover {
+    border-top-width: 0;
+    padding-bottom: 0;
+    padding-top: 1px;
+}
+.RadMenu_Mars .rmVertical .rmLast a.rmLink:hover, .RadMenu_Mars .rmVertical .rmLast a.rmFocused, .RadMenu_Mars .rmVertical .rmLast a.rmSelected, .RadMenu_Mars .rmVertical .rmLast a.rmExpanded, .RadMenu_Mars .rmVertical .rmLast a.rmExpanded:hover {
+    border-bottom-width: 0;
+    padding-bottom: 1px;
+    padding-top: 0;
+}
+.RadMenu_Mars .rmVertical .rmItem a.rmDisabled:hover {
+    border-width: 0;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+.RadMenu_Mars a.rmDisabled, .RadMenu_Mars a.rmDisabled:hover {
+    background-color: transparent;
+    color: #CCCCCC;
+}
+.RadMenu_Mars .rmGroup, .RadMenu_Mars .rmMultiColumn, .RadMenu_Mars .rmGroup .rmVertical {
+    background: none repeat scroll 0 0 #253351;
+    
+}
+.RadMenu_Mars .rmGroup .rmItem .rmLink .rmText {
+    padding-left: 15px;
+    padding-right: 54px;
+}
+.RadMenu_Mars .rmTopFix, .RadMenu_Mars .rmBottomFix, .RadMenu_Mars .rmRoundedCorners .rmGroup .rmItem, .RadMenu_Mars .rmRoundedCorners li.rmFirstGroupColumn .rmItem, .RadMenu_Mars .rmRoundedCorners .rmFirstGroupColumn li.rmFirstGroupColumn .rmItem, .RadMenu_Mars .rmRoundedCorners ul.rmHorizontal .rmFirst, .RadMenu_Mars_Context.rmRoundedCorners .rmGroup .rmItem, .RadMenu_Mars_Context.rmRoundedCorners ul.rmHorizontal .rmFirst {
+    background-color: #253351;
+}
+* html .rmRoundedCorners_Mars .rmGroup .rmItem, * html .rmRoundedCorners_Mars ul.rmHorizontal .rmFirst {
+    background-color: #253351;
+}
+.RadMenu_Mars .rmRoundedCorners .rmGroupColumn {
+    background-color: #253351;
+}
+.RadMenu_Mars .rmTopFix, .RadMenu_Mars .rmBottomFix, .RadMenu_Mars .rmRoundedCorners .rmGroup .rmFirst, .RadMenu_Mars_Context.rmRoundedCorners .rmGroup .rmFirst, .rmRoundedCorners_Mars .rmGroup .rmFirst {
+    border-color: #979797;
+}
+.RadMenu_Mars .rmRoundedCorners .rmScrollWrapContainer .rmTopFix, .RadMenu_Mars .rmRoundedCorners .rmScrollWrapContainer .rmBottomFix, .RadMenu_Mars_Context.rmRoundedCorners .rmScrollWrapContainer .rmTopFix, .RadMenu_Mars_Context.rmRoundedCorners .rmScrollWrapContainer .rmBottomFix {
+    background: none repeat scroll 0 0 #253351;
+}
+* html .rmRoundedCorners_Mars .rmScrollWrapContainer .rmTopFix, * html .rmRoundedCorners_Mars .rmScrollWrapContainer .rmBottomFix {
+    background: none repeat scroll 0 0 #253351;
+}
+.RadMenu_Mars .rmRoundedCorners .rmScrollWrapContainer .rmTopArrow, .RadMenu_Mars .rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow, .RadMenu_Mars .rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow, .RadMenu_Mars .rmRoundedCorners .rmScrollWrapContainer .rmRightArrow, .RadMenu_Mars_Context.rmRoundedCorners .rmScrollWrapContainer .rmTopArrow, .RadMenu_Mars_Context.rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow, .RadMenu_Mars_Context.rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow, .RadMenu_Mars_Context.rmRoundedCorners .rmScrollWrapContainer .rmRightArrow {
+    background-color: #253351;
+    border: 0 none;
+}
+* html .rmRoundedCorners_Mars .rmScrollWrapContainer .rmTopArrow, * html .rmRoundedCorners_Mars .rmScrollWrapContainer .rmBottomArrow, * html .rmRoundedCorners_Mars .rmScrollWrapContainer .rmLeftArrow, * html .rmRoundedCorners_Mars .rmScrollWrapContainer .rmRightArrow {
+    background-color: #253351;
+    border: 0 none;
+}
+.RadMenu_Mars .rmRootGroup li.rmItem .rmGroup {
+    padding-bottom: 0;
+}
+.RadMenu_Mars .rmScrollWrap .rmVertical {
+    border: 0 none;
+}
+.RadMenu_Mars .rmGroup .rmItem a.rmLink, .RadMenu_Mars .rmGroup .rmItem a.rmLink:hover, .RadMenu_Mars .rmGroup .rmItem a.rmFocused, .RadMenu_Mars .rmGroup .rmItem a.rmSelected, .RadMenu_Mars .rmGroup .rmItem a.rmExpanded {
+    border: 0 none;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.RadMenu_Mars .rmGroup .rmLast a.rmLink, .RadMenu_Mars .rmGroup .rmLast a.rmLink:hover, .RadMenu_Mars .rmGroup .rmLast a.rmFocused, .RadMenu_Mars .rmGroup .rmLast a.rmSelected, .RadMenu_Mars .rmGroup .rmLast a.rmExpanded {
+    padding-bottom: 1px;
+}
+.RadMenu_Mars .rmGroup .rmText {
+    font-size: 138.46%; /* 18px */
+    line-height: 1.95; /* 35px */
+}
+.RadMenu_Mars .rmRootGroup .rmExpandRight, .RadMenu_Mars .rmGroup .rmExpandDown, .RadMenu_Mars_Context .rmGroup .rmExpandRight, .RadMenu_Mars .rmRootGroup .rmItem a.rmDisabled .rmExpandRight, .RadMenu_Mars .rmGroup .rmItem a.rmDisabled .rmExpandDown, .RadMenu_Mars .rmRootGroup .rmItem a.rmDisabled:hover .rmExpandRight, .RadMenu_Mars .rmGroup .rmItem a.rmDisabled:hover .rmExpandDown {
+    background-image: url("images/navrightarrow.png");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+.RadMenu_Mars .rmSlide {
+    margin: 0 0 0 -1px;
+}
+.RadMenu_Mars .rmVertical .rmSlide, .RadMenu_Mars .rmSlide .rmSlide, .RadMenu_Mars_Context .rmGroup .rmSlide {
+    margin: 0 0 0 -5px;
+}
+.rmSlide, .rmVertical {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.RadMenu_Mars_rtl .rmSlide {
+    margin: 0;
+}
+.RadMenu_Mars_rtl .rmFirst .rmSlide {
+    margin-left: 1px;
+}
+.RadMenu_Mars_rtl .rmVertical .rmSlide, .RadMenu_Mars_rtl .rmSlide .rmSlide, .RadMenu_Mars_Context_rtl .rmGroup .rmSlide {
+    margin: 0 0 0 5px;
+}
+.RadMenu_Mars .rmLeftArrow, .RadMenu_Mars .rmRightArrow {
+    background-color: #E6E6E6;
+}
+.RadMenu_Mars .rmLeftArrow {
+    background-position: -8px -312px;
+    border-right: 1px solid #828282;
+}
+.RadMenu_Mars .rmRightArrow {
+    background-position: -482px -216px;
+    border-left: 1px solid #828282;
+}
+.RadMenu_Mars .rmTopArrow, .RadMenu_Mars .rmBottomArrow, .RadMenu_Mars .rmGroup .rmLeftArrow, .RadMenu_Mars .rmGroup .rmRightArrow {
+    background-color: #666666;
+}
+.RadMenu_Mars .rmTopArrow {
+    background-position: 50% -367px;
+    border-bottom: 1px solid #828282;
+}
+.RadMenu_Mars .rmBottomArrow {
+    background-position: 50% -391px;
+    border-top: 1px solid #828282;
+}
+.RadMenu_Mars .rmHorizontal .rmSeparator .rmText, .RadMenu_Mars .rmVertical .rmHorizontal .rmSeparator .rmText {
+    background-color: #A8A8A8;
+    height: 22px;
+    margin: 1px 0 0;
+    width: 1px;
+}
+.RadMenu_Mars_Context .rmSeparator .rmText, .RadMenu_Mars .rmHorizontal .rmGroup .rmSeparator .rmText, .RadMenu_Mars .rmVertical .rmHorizontal .rmGroup .rmSeparator .rmText {
+    background-color: transparent;
+    background-position: 0 -406px;
+}
+.RadMenu_Mars .rmRootGroup .rmVertical .rmSeparator .rmText, .RadMenu_Mars_Context .rmVertical .rmSeparator .rmText {
+    margin: 1px 5px !important;
+}

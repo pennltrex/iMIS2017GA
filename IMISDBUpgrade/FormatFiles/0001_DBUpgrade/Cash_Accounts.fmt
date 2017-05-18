@@ -1,0 +1,13 @@
+10.0
+11
+1       SQLNCHAR            2       20      ""   1     CASH_ACCOUNT_CODE                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       80      ""   2     DESCRIPTION                            SQL_Latin1_General_CP1_CI_AS
+3       SQLTINYINT          0       1       ""   3     ACCOUNT_TYPE                           ""
+4       SQLNCHAR            2       10      ""   4     ORG_CODE                               SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     GL_ACCOUNT                             SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       40      ""   6     CCAuthAcctCode                         SQL_Latin1_General_CP1_CI_AS
+7       SQLBIT              1       1       ""   7     CSC_REQUIRED_WEB                       ""
+8       SQLBIT              1       1       ""   8     CSC_REQUIRED_CS                        ""
+9       SQLTINYINT          0       1       ""   9     ISSUE_NO_FLAG                          ""
+10      SQLTINYINT          0       1       ""   10    ISSUE_DATE_FLAG                        ""
+11      SQLBINARY           2       8       ""   11    TIME_STAMP                             ""

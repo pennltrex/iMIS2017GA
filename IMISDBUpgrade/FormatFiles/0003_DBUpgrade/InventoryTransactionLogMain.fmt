@@ -1,0 +1,21 @@
+10.0
+19
+1       SQLUNIQUEID         1       16      ""   1     InventoryTransactionLogKey                               ""
+2       SQLDATETIME         0       8       ""   2     TransactionDate                                          ""
+3       SQLUNIQUEID         1       16      ""   3     OrderKey                                                 ""
+4       SQLNCHAR            2       100     ""   4     OrderNumber                                              SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     Vendor                                                   SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       100     ""   6     ReceiptNumber                                            SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       100     ""   7     ReturnAuthorization                                      SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       400     ""   8     Notes                                                    SQL_Latin1_General_CP1_CI_AS
+9       SQLUNIQUEID         1       16      ""   9     CreatedByUserKey                                         ""
+10      SQLDATETIME         0       8       ""   10    CreatedOn                                                ""
+11      SQLUNIQUEID         1       16      ""   11    UpdatedByUserKey                                         ""
+12      SQLDATETIME         0       8       ""   12    UpdatedOn                                                ""
+13      SQLUNIQUEID         1       16      ""   13    SystemEntityKey                                          ""
+14      SQLUNIQUEID         1       16      ""   14    OwnerGroupKey                                            ""
+15      SQLDATETIME         1       8       ""   15    MarkedForDeleteOn                                        ""
+16      SQLUNIQUEID         1       16      ""   16    FinalBatchKey                                            ""
+17      SQLUNIQUEID         1       16      ""   17    OriginatingBatchKey                                      ""
+18      SQLINT              1       4       ""   18    BatchLineStatusCode                                      ""
+19      SQLNCHAR            2       400     ""   19    BatchStatusMessage                                       SQL_Latin1_General_CP1_CI_AS

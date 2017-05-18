@@ -1,0 +1,16 @@
+10.0
+14
+1       SQLNUMERIC          1       19      ""   1     REFERENCE_NUMBER                           ""
+2       SQLNCHAR            2       40      ""   2     OVATRegNumber                              SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       4       ""   3     OVATCountry                                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       6       ""   4     OVATBranchID                               SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       40      ""   5     OUseVATTaxation                            SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       62      ""   6     NTAX_AUTHOR_DEFAULT                        SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       40      ""   7     NVAT_REG_NUMBER                            SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       50      ""   8     NVAT_COUNTRY                               SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       10      ""   9     TYPE                                       SQL_Latin1_General_CP1_CI_AS
+10      SQLTINYINT          0       1       ""   10    CREDIT_SUFFIX                              ""
+11      SQLBIT              1       1       ""   11    TaxOnShipTo                                ""
+12      SQLBIT              1       1       ""   12    IsVatTaxableOrder                          ""
+13      SQLNCHAR            2       30      ""   13    ZeroRatedAuthority                         SQL_Latin1_General_CP1_CI_AS
+14      SQLBINARY           2       8       ""   14    TIME_STAMP                                 ""

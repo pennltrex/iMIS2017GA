@@ -1,0 +1,10 @@
+11.0
+8
+1       SQLUNIQUEID         1       16      ""   1     CertificationModuleGradeKey                                ""
+2       SQLUNIQUEID         1       16      ""   2     CertificationModuleKey                                     ""
+3       SQLUNIQUEID         1       16      ""   3     GradeKey                                                   ""
+4       SQLBIT              1       1       ""   4     PassFlag                                                   ""
+5       SQLDATETIME         0       8       ""   5     UpdatedOn                                                  ""
+6       SQLUNIQUEID         1       16      ""   6     UpdatedByUserKey                                           ""
+7       SQLDATETIME         0       8       ""   7     CreatedOn                                                  ""
+8       SQLUNIQUEID         1       16      ""   8     CreatedByUserKey                                           ""

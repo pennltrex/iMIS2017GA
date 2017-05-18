@@ -1,0 +1,25 @@
+11.0
+23
+1       SQLNCHAR            2       20      ""   1     EXHB_ID                          SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     MEET_ID                          SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     REG_ID                           SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       4       ""   4     STATUS                           SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       2       ""   5     PAYTYPE                          SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       40      ""   6     FIRST_NAME                       SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       60      ""   7     LAST_NAME                        SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       80      ""   8     CITY                             SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       30      ""   9     STATE_PROVINCE                   SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       50      ""   10    COUNTRY                          SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       60      ""   11    BADGE_FIRST                      SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       60      ""   12    BADGE_SECOND                     SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       60      ""   13    BADGE_THIRD                      SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       60      ""   14    BADGE_FOURTH                     SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       60      ""   15    BADGE_FIFTH                      SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       2       ""   16    KEY_CONTACT                      SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            4       0       ""   17    COMMENTS                         SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       2       ""   18    GST_PAYSTAT                      SQL_Latin1_General_CP1_CI_AS
+19      SQLDATETIME         1       8       ""   19    DATE_ENTERED                     ""
+20      SQLDATETIME         1       8       ""   20    DATE_UPDATE                      ""
+21      SQLNCHAR            2       62      ""   21    PRODUCT_CODE                     SQL_Latin1_General_CP1_CI_AS
+22      SQLNCHAR            2       20      ""   22    NAME_ID                          SQL_Latin1_General_CP1_CI_AS
+23      SQLBINARY           2       8       ""   23    TIME_STAMP                       ""

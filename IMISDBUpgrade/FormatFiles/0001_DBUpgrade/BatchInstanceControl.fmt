@@ -1,0 +1,14 @@
+10.0
+12
+1       SQLUNIQUEID         1       16      ""   1     BatchKey                                                 ""
+2       SQLNCHAR            2       100     ""   2     ControlName                                              SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     ControlFunction                                          SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     ControlObjectName                                        SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     ControlAttributeName                                     SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       300     ""   6     ControlSelectionExpression                               SQL_Latin1_General_CP1_CI_AS
+7       SQLBIT              1       1       ""   7     ControlPostFlag                                          ""
+8       SQLDECIMAL          1       19      ""   8     ControlAmount                                            ""
+9       SQLINT              1       4       ""   9     ControlCount                                             ""
+10      SQLDECIMAL          1       19      ""   10    CalculatedAmount                                         ""
+11      SQLINT              1       4       ""   11    CalculatedCount                                          ""
+12      SQLDATETIME         1       8       ""   12    MarkedForDeleteOn                                        ""

@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLINT              0       4       ""   1     LOG_SEQN                 ""
+2       SQLNCHAR            2       60      ""   2     FIELD_NAME               SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     NEW_VALUE                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       510     ""   4     OLD_VALUE                SQL_Latin1_General_CP1_CI_AS

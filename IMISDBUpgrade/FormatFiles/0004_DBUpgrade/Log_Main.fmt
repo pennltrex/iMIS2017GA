@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLINT              0       4       ""   1     LOG_SEQN                   ""
+2       SQLDATETIME         1       8       ""   2     TIME_STAMP                 ""
+3       SQLNCHAR            2       120     ""   3     UPDATED_BY                 SQL_Latin1_General_CP1_CI_AS
+4       SQLSMALLINT         0       2       ""   4     ACTION_TYPE                ""
+5       SQLNCHAR            2       60      ""   5     TABLE_NAME                 SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       160     ""   6     KEY_CLUSTER                SQL_Latin1_General_CP1_CI_AS

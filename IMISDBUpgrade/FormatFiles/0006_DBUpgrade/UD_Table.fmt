@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLNCHAR            2       60      ""   1     TABLE_NAME                                           SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       120     ""   2     DESCRIPTION                                          SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       30      ""   3     APPLICATION                                          SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     EXTERNAL_FLAG                                        ""
+5       SQLNCHAR            2       60      ""   5     LINK_VIA                                             SQL_Latin1_General_CP1_CI_AS
+6       SQLBIT              1       1       ""   6     ALLOW_MULTIPLE_INSTANCES                             ""
+7       SQLBIT              1       1       ""   7     REQUIRED                                             ""
+8       SQLNCHAR            2       200     ""   8     EDIT_TYPES                                           SQL_Latin1_General_CP1_CI_AS
+9       SQLBIT              1       1       ""   9     NAME_ALL_TABLE                                       ""
+10      SQLBINARY           2       8       ""   10    TIME_STAMP                                           ""

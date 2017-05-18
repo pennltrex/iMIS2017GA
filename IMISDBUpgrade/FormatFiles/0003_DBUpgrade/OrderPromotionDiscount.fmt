@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     OrderPromotionDiscountKey                              ""
+2       SQLUNIQUEID         1       16      ""   2     OrderPromotionKey                                      ""
+3       SQLNCHAR            2       62      ""   3     Code                                                   SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsPercent                                              ""
+5       SQLDECIMAL          1       19      ""   5     AdjustmentAmount                                       ""
+6       SQLNCHAR            2       2       ""   6     ItemType                                               SQL_Latin1_General_CP1_CI_AS

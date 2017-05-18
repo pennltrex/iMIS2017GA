@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLUNIQUEID         1       16      ""   1     UserKey                                ""
+2       SQLUNIQUEID         1       16      ""   2     Grantee                                ""
+3       SQLDATETIME         1       8       ""   3     MarkedForDeleteOn                      ""
+4       SQLNCHAR            2       130     ""   4     RoleName                               SQL_Latin1_General_CP1_CI_AS

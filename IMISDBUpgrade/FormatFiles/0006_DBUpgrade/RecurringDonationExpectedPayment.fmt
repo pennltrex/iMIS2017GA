@@ -1,0 +1,24 @@
+11.0
+22
+1       SQLUNIQUEID         1       16      ""   1     RecurringDonationExpectedPaymentKey                                                      ""
+2       SQLUNIQUEID         1       16      ""   2     RecurringDonationExpectedPaymentSetKey                                                   ""
+3       SQLUNIQUEID         1       16      ""   3     RecurringDonationCommitmentKey                                                           ""
+4       SQLUNIQUEID         1       16      ""   4     OpportunityKey                                                                           ""
+5       SQLDECIMAL          1       19      ""   5     DonationAmount                                                                           ""
+6       SQLNCHAR            2       20      ""   6     PaymentMethod                                                                            SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       62      ""   7     Distribution                                                                             SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       80      ""   8     Appeal                                                                                   SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       20      ""   9     Campaign                                                                                 SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       20      ""   10    Fund                                                                                     SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       400     ""   11    Narrative                                                                                SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       36      ""   12    MatchReference                                                                           SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       12      ""   13    BranchSortCode                                                                           SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       16      ""   14    BankAccountNumber                                                                        SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       36      ""   15    BankAccountName                                                                          SQL_Latin1_General_CP1_CI_AS
+16      SQLINT              0       4       ""   16    ResultingTransNum                                                                        ""
+17      SQLINT              0       4       ""   17    ResultingTransLineNum                                                                    ""
+18      SQLSMALLINT         0       2       ""   18    RecurringDonationExpectedPaymentStatusCode                                               ""
+19      SQLUNIQUEID         1       16      ""   19    CreatedByUserKey                                                                         ""
+20      SQLDATETIME         0       8       ""   20    CreatedOn                                                                                ""
+21      SQLUNIQUEID         1       16      ""   21    UpdatedByUserKey                                                                         ""
+22      SQLDATETIME         0       8       ""   22    UpdatedOn                                                                                ""

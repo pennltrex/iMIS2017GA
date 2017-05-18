@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLNCHAR            2       6       ""   1     CurrencyCode                     SQL_Latin1_General_CP1_CI_AS
+2       SQLNUMERIC          1       19      ""   2     ExchangeRate                     ""
+3       SQLDATETIME         1       8       ""   3     LastUpdateDate                   ""
+4       SQLBINARY           2       8       ""   4     TIME_STAMP                       ""

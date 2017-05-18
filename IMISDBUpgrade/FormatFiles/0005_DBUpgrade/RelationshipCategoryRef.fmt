@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLUNIQUEID         1       16      ""   1     RelationshipCategoryKey                                            ""
+2       SQLNCHAR            2       60      ""   2     RelationshipCategoryName                                           SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     RelationshipCategoryDescription                                    SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsSystem                                                           ""
+5       SQLBIT              1       1       ""   5     IsActive                                                           ""

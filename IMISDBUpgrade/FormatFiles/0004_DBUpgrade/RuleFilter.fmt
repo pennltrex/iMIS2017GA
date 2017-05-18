@@ -1,0 +1,13 @@
+11.0
+11
+1       SQLUNIQUEID         1       16      ""   1     RuleFilterKey                          ""
+2       SQLUNIQUEID         1       16      ""   2     RuleCriterionKey                       ""
+3       SQLNCHAR            2       200     ""   3     PropertyName                           SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              1       4       ""   4     ComparisonCode                         ""
+5       SQLNCHAR            2       400     ""   5     ValueOne                               SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       200     ""   6     ValueOneTypeName                       SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       400     ""   7     ValueTwo                               SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       200     ""   8     ValueTwoTypeName                       SQL_Latin1_General_CP1_CI_AS
+9       SQLDATETIME         0       8       ""   9     UpdatedOn                              ""
+10      SQLUNIQUEID         1       16      ""   10    UpdatedByUserKey                       ""
+11      SQLDATETIME         1       8       ""   11    MarkedForDeleteOn                      ""

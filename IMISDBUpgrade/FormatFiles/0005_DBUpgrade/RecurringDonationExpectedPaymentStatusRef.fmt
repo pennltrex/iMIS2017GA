@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLSMALLINT         0       2       ""   1     RecurringDonationExpectedPaymentStatusCode                                               ""
+2       SQLNCHAR            2       80      ""   2     RecurringDonationExpectedPaymentStatusName                                               SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     RecurringDonationExpectedPaymentStatusDesc                                               SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     AppealProductKey                       ""
+2       SQLUNIQUEID         1       16      ""   2     AppealKey                              ""
+3       SQLNCHAR            2       62      ""   3     ProductCode                            SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     MarkedForDeleteOn                      ""
+5       SQLUNIQUEID         1       16      ""   5     ProductKey                             ""

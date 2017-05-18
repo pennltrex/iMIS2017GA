@@ -1,0 +1,977 @@
+﻿/*********************************************/
+/***      COMPATIBILITY STYLE SHEET        ***/
+/*********************************************/
+/**
+ * Compatibility styles for iMIS - UltraWave
+ *
+ * This document contains styles for UltraWave Compatibility for controls written for BlueWave.
+ * It is a temporary document to be used until the controls are updated.
+ *
+ * TABLE OF CONTENTS:
+ * Titles
+ * Left Nav
+ * Communities
+ * Process Manager/Marketing Suite
+ * Tagged List Icons
+ * Desktop
+ * Grid
+ */
+ 
+ /* ################################ */
+ /*             Titles               */
+ /* ################################ */
+
+.mdTitle, #mainTitle
+{
+    color:#250;
+    padding-top:.3em;
+    font-weight: bold; 
+    font-family: 'trebuchet ms', helvetica, sans-serif;
+}
+
+.mdTitle
+{
+    font-size:130%;
+}
+
+#mainTitle
+{
+    font-size: 150%;
+    line-height: 2em;
+    white-space: nowrap;
+}
+
+/* ############################### */
+/*            Left Nav             */
+/* ############################### */
+.SubNavPanel
+{
+    overflow: auto;
+}
+.SubNavPanelBody
+{
+    width: 97%;
+    height: auto;
+}
+/* I think these are used in the framework.master */
+#pagesubnav
+{
+	width: 157px;
+	min-width: 157px;
+	height: 100%;
+	vertical-align: top;
+	margin: 0 12px 0 3px;
+}
+#pagesubnavhead, #pagesubnavbody
+{
+	width: 100%;
+}
+.navlink hr
+{
+	height:1px;
+	color:#000000;
+	width:95%;
+	text-align:center;
+	padding:0;
+}
+a.navlink, span.navlink
+{
+	text-decoration: none;
+	color: #333333;
+	font-weight: bolder;
+	width:100%;
+	cursor: pointer;
+}
+.navlink, .navlinkselected, .navlinkhover
+{
+	font-size: 85%;
+	padding-left: 3px;
+	width:100%;
+}
+.navlinkhover
+{
+	background-color: #d4e5ba;	
+}
+.navlinkselected, .navlinkselected .navlinkhover
+{
+	background-color: #8ba05d;
+}
+.navlinkselected a.navlink
+{
+    color: #FFF;
+}
+
+ /* ################################ */
+ /*    Communities Compatilbility    */
+ /* ################################ */
+ 
+.CommunitySummaryBlock 
+{
+    border: 1px solid #CCC;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Community left nav */
+.CommunitySummaryImage img
+{
+    max-width: 12em;
+}
+
+.CommunityLinksBlock a
+{
+    display:block;
+    text-decoration:none;
+    padding:0 5px;
+    line-height: 2em;
+    margin-right:-5px;
+    margin-left:-5px;
+    border-top:1px solid #CCC;
+    color:Black;
+}
+.CommunityLinksBlock a:hover
+{
+    background-color:#d4e5ba;
+}
+.CommunityLinksBlock a.CommunityLinksSelected, .CommunityLinksBlock a.CommunityLinksSelected:hover
+{
+    background-color:#8ba05d;
+    color:White;
+    font-weight:bold;
+}
+
+.CommunityItemActionLinks
+{
+    text-align: right;
+    clear:both;
+    padding:.25em 0;
+}
+
+.CommunityRepeaterList 
+{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CommunityItemTitle
+{
+    font-weight:bold;
+    font-size:120%;
+    padding:.25em 0;
+}
+
+.CommunityNewItem
+{
+    color: red;
+    text-align: right;
+    float: right;
+}
+
+.CommunityDateLine
+{
+    font-size:85%;
+    font-style:italic;
+}
+
+.CommunityDateLine div
+{
+    float:none!important;
+    display:inline!important;
+    padding:0!important;
+}
+
+.CommunitySideBarSearch
+{
+    width: 70% !important;
+    margin-right:.25em;
+}
+
+/* CommunityBreadCrumb */
+.BreadCrumbCurrent
+{
+    font-size:120%;
+    font-weight:bold;
+}
+
+.CommunityRepeaterList hr
+{
+    border: 0;
+    height: 1px;
+    background: #cccccc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+div.CommunityProfileTitle
+{
+    display: table-cell;
+    padding-bottom: 5px;
+}
+
+.CommunityProfilePicture 
+{
+    float:left;
+}
+
+.CommunityProfilePicture img 
+{
+    width: 38px;
+    height: 38px;
+}
+
+.CommunityTitleDate
+{
+    float: left;
+    padding-left: 5px;
+}
+
+.CommunityCommentItem
+{
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 0px;
+    padding: 0px;
+    padding-top: .5em;
+    margin-left: 3em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.CommunityWikiItem .CommunityRepeaterList .CommunityCommentItem
+{
+    background: #f9f9f9;
+    border-left: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0px;
+    padding: 0px;
+    padding-top: .5em;   
+    margin-left: 0;
+    padding-left: .5em;
+    padding-right: .5em; 
+}
+
+.CommunityReplyForm {
+    margin-left: 3.3em;
+    position:relative;
+    padding:5px 5px;
+    background:#f8f8f8;   
+    border:1px solid #e8e8e8;               
+}
+
+.CommunityLastComment 
+{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    float: right;
+    color: #888     
+}
+
+.CommunityWikiReplyForm
+{    
+    position:relative;
+    padding:5px 5px;
+    background:#f8f8f8;   
+    border:1px solid #e8e8e8;   
+}
+
+/* #################################### */
+/*   Process Manager/Marketing Suite    */
+/* #################################### */
+
+.StageHeader
+{
+    background-color:#d4e5ba;
+    font-weight:bold;
+}
+
+.StageBlock
+{
+    border:1px solid darkgray; 
+    margin:.5em;
+    clear:both;
+}
+
+.StageHeader.StageSetup
+{
+    cursor:pointer;
+    border-top:1px solid darkgrey;
+}
+
+.TaskHeading, .TaskBar, .WorkSpace
+{
+	padding: 3px;
+}
+
+/* ############################# */
+/*      Tagged List Icons        */
+/* ############################# */
+/* Icons used in tagged lists */
+
+/* The "new" icon in tagged lists */
+.reToolbar .iMISNewContentTool, .ImportantContent
+{
+    background: url(../../AsiCommon/Images/AtomPainter/iMISNewContentTool.gif) no-repeat center center;
+}
+
+/* The key icon to indicate member-only content in tagged lists */
+.reToolbar .iMISMembersOnlyTool, .MembersOnlyContent
+{
+    background: url(../../AsiCommon/Images/AtomPainter/iMISMembersOnlyTool.gif) no-repeat center center;
+}
+
+/* The "{...}" icon used for conditional display in the HTML editor */
+.reToolbar .iMISConditionalDisplayTool 
+{
+    background: url(../../AsiCommon/Images/AtomPainter/iMISConditionalDisplayTool.gif) no-repeat center center;
+}
+
+/* The iMIS link icon used in the HTML editor */
+.reToolbar .iMISLinkTool 
+{
+    background: url(../../AsiCommon/Images/AtomPainter/iMISLinkTool.gif) no-repeat center center;
+}
+
+/* The iMIS label icon used in the HTMl editor */
+.reToolbar .iMISLabelTool 
+{   
+    background: url(../../AsiCommon/Images/AtomPainter/iMISLabelTool.gif) no-repeat center center;
+}
+
+.ImportantContent, .MembersOnlyContent
+{
+    padding: 0 10px;
+}
+
+/* ##################################### */
+/*         Desktop Compatibility         */
+/* ##################################### */
+
+#frameworkMaster #doc, #frameworkMaster #doc2, #frameworkMaster #doc3, #frameworkMaster .yui-t1, 
+#frameworkMaster .yui-t2, #frameworkMaster .yui-t3, #frameworkMaster .yui-t4, #frameworkMaster .yui-t5, 
+#frameworkMaster .yui-t6, #frameworkMaster .yui-t7
+{
+    min-width: 100px;
+}
+
+#frameworkMaster #MainBody, #frameworkMaster #MainHtml
+{
+    background: none;
+}
+
+/* <Top Nav> */
+#pagenav, .LogoNavLeft
+{  
+	background-image: url('Menu/rmSprite.png');
+    background-color: #777;
+	background-repeat: repeat-x;
+    height: 24px;
+    width: 100%;
+}
+
+#MenuTable div
+{
+	z-index: 9999;
+}
+
+#MenuTable
+{
+    margin-top: 0!important;
+}
+
+table.HTabStatic, table.HTabSelected, #test2>table
+{ 
+	background-image: url('Menu/rmSprite.png');
+    background-color: transparent;
+	background-repeat: repeat-x;
+}
+
+#test2>table
+{
+	height:24px;
+	border:none;
+    background-position: 0 0;
+    background-color: #777;
+}
+a.HTabStatic
+{
+	font: normal 10px/24px Verdana, Geneva, sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	padding: 0 10px;
+}
+
+table.HTabStatic
+{
+	background-position: 0 -38px;
+	height: 24px;
+}
+
+td:first-child table.HTabStatic
+{
+	background-position:0 -38px;
+}
+
+table.HTabSelected, table.HTabSelected :hover, table.HTabStatic:hover, 
+td:first-child table.HTabSelected, td:first-child table.HTabSelected:hover, td:first-child table.HTabStatic:hover
+{
+	background-position: 0 -71px;
+}
+/* </Top Nav> */
+
+/* Public View Commerce Setup Icons */
+.PVSprite, input[type="button"].OrderPreviousStepButton, input[type="button"].OrderPreviousStepOffButton, 
+input[type="button"].OrderNextStepButton, input[type="button"].OrderNextStepOffButton, .BallBlue, .BallRed, 
+.ShoppingCart, .ShoppingCartOff, .ShoppingCartOffX, .FeaturedProduct, .FeaturedProductOff, .FeaturedNotAvaiable,
+.CheckImage, .CheckOffImage
+{
+    background-image: url(images/PVSprite.png);
+    background-repeat: no-repeat;
+}
+.PVSprite
+{
+    margin-right: 4px;
+}
+input[type="button"].OrderPreviousStepButton, input[type="button"].OrderPreviousStepOffButton, 
+input[type="button"].OrderNextStepButton, input[type="button"].OrderNextStepOffButton, span.BallBlue, span.BallRed,
+span.ShoppingCart, span.ShoppingCartOff, span.ShoppingCartOffX, span.FeaturedProduct, span.FeaturedProductOff, span.FeaturedNotAvaiable,
+span.ArrowUp, span.ArrowUpOff, span.ArrowDown, span.ArrowDownOff, span.CheckImage, span.CheckOffImage
+{
+    display: block;
+}
+input[type="button"].OrderPreviousStepButton, input[type="button"].OrderPreviousStepOffButton, 
+input[type="button"].OrderNextStepButton, input[type="button"].OrderNextStepOffButton
+{
+    background-color: transparent;
+    border: none;
+    margin: 3px;
+}
+.PVSprite.NewFolderButton
+{
+    background-position: 0 -1px;
+    width: 56px;
+    height: 20px;
+}
+.PVSprite.EditFolderButton
+{
+    background-position: 0 -24px;
+    width: 53px;
+    height: 20px;
+}
+.PVSprite.DeleteFolderButton
+{
+    background-position: 0 -47px;
+    width: 66px;
+    height: 20px;
+}
+.PVSprite.LinkProductButton
+{
+    background-position: 0 -70px;
+    width: 100px;
+    height: 20px;
+}
+.PVSprite.TestURLButton
+{
+    background-position: 0 -139px;
+    width: 77px;
+    height: 20px;
+}
+.PVSprite.CloseImage
+{
+    background-position: 0 -468px;
+    width: 14px;
+    height: 14px;
+}
+input[type="button"].OrderPreviousStepButton, input[type="button"].OrderPreviousStepOffButton,
+input[type="button"].OrderPreviousStepButton:hover, input[type="button"].OrderPreviousStepOffButton:hover
+{
+    background-position: 0 -116px;
+    width: 80px;
+    height: 20px;
+}
+input[type="button"].OrderNextStepButton, input[type="button"].OrderNextStepOffButton,
+input[type="button"].OrderNextStepButton:hover, input[type="button"].OrderNextStepOffButton:hover
+{
+    background-position: 0 -93px;
+    width: 59px;
+    height: 20px;
+}
+.BallBlue
+{
+    background-position: -1px -189px;
+    width: 10px;
+    height: 10px;
+}
+.BallRed
+{
+    background-position: -1px -216px;
+    width: 10px;
+    height: 10px;
+}
+.ShoppingCart, .ShoppingCartOff
+{
+    background-position: -2px -276px;
+    width: 12px;
+    height: 14px;
+}
+.ShoppingCartOffX
+{
+    background-position: -2px -315px;
+    width: 14px;
+    height: 14px;
+}
+.FeaturedProduct, .FeaturedProductOff
+{
+    background-position: -2px -355px;
+    width: 14px;
+    height: 14px;
+}
+.FeaturedNotAvaiable
+{
+    background-position: -2px -397px;
+    width: 14px;
+    height: 14px;
+}
+.CheckImage, .CheckOffImage
+{
+    background-position: 0 -241px;
+    width: 17px;
+    height: 17px;
+}
+input[type="button"].OrderPreviousStepOffButton, input[type="button"].OrderNextStepOffButton, .ShoppingCartOff, 
+.FeaturedProductOff, .CheckOffImage
+{
+    opacity: .4;
+    filter:alpha(opacity=40); /* filter needed for IE compatibility */
+}
+
+
+
+input[type="button"].AddItem, input[type="button"].Edit, .actions input[type="button"].Delete, 
+input[type="button"].MoveUp, input[type="button"].MoveDown,
+input[type="button"].ArrowUp, input[type="button"].ArrowUpOff, 
+input[type="button"].ArrowDown, input[type="button"].ArrowDownOff, 
+input[type="button"].DeleteImage, input[type="submit"].DeleteImage,
+ input[type="button"].EditImage, input[type="submit"].EditImage
+{
+    background-image: url(images/IconSprite.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    float: left;
+}
+input[type="button"].AddItem, input[type="button"][disabled].AddItem:hover
+{
+    background-position: 0 0;
+}
+input[type="button"].AddItem:hover
+{
+    background-position: 0 -35px;
+}
+input[type="button"].Edit, input[type="button"][disabled].Edit:hover, 
+input[type="button"].EditImage, input[type="button"][disabled].EditImage, 
+input[type="submit"].EditImage, input[type="submit"][disabled].EditImage
+{
+    background-position: -35px 0;
+}
+input[type="button"].Edit:hover, input[type="button"].EditImage:hover, input[type="submit"].EditImage:hover
+{
+    background-position: -35px -35px;
+}
+.actions input[type="button"].Delete, .actions input[type="button"][disabled].Delete:hover,
+input[type="button"].DeleteImage, input[type="button"][disabled].DeleteImage:hover, 
+input[type="submit"].DeleteImage, input[type="submit"][disabled].DeleteImage
+{
+    background-position: -70px 0;
+}
+input[type="button"].Delete:hover, input[type="button"].DeleteImage:hover, input[type="submit"].DeleteImage:hover
+{
+    background-position: -70px -35px;
+}
+input[type="button"].MoveUp, input[type="button"][disabled].MoveUp:hover,
+input[type="button"].ArrowUp, input[type="button"].ArrowUpOff, input[type="button"].ArrowUpOff:hover
+{
+    background-position: -105px 0;
+}
+input[type="button"].MoveUp:hover, input[type="button"].ArrowUp:hover
+{
+    background-position: -105px -35px;
+}
+input[type="button"].MoveDown, input[type="button"][disabled].MoveDown:hover,
+input[type="button"].ArrowDown, input[type="button"].ArrowDownOff, input[type="button"].ArrowDownOff:hover
+{
+    background-position: -140px 0;
+}
+input[type="button"].MoveDown:hover, input[type="button"].ArrowDown:hover
+{
+    background-position: -140px -35px;
+}
+
+.popupMenu, .PopUp, #linkProduct
+{
+    background-color: white;
+}
+#sowMenuPerimeter
+{
+    border: 1px solid #333;
+    padding: 3px;
+}
+#categories.PanelColumn, #itemsOrders.PanelColumn, #linkProduct.PanelColumn
+{
+    float: left;
+    display: inherit;
+}
+
+td.PanelTablePrompt, td.PanelTableValue
+{
+    padding-bottom: .35em;
+}
+td.PanelTablePrompt
+{
+    font-weight: bold;
+    color: #444;
+    padding-right: .35em;
+}
+
+td.PanelTablePrompt span 
+{
+    margin-left: -4px;
+    padding-left: 9px;
+    display: block;
+}
+
+.formFieldRequired
+{
+    background-position: left center !important;
+	padding-left: 0.688em !important;
+	margin-left: -0.462em !important;
+	background-image: url(images/required.gif) !important;
+	background-repeat: no-repeat;
+}
+
+/* ################################### */
+/*          Grid Styling               */
+/* ################################### */
+/* These styles are used to style Grids like the default Telerik RadGrid */
+
+.GridTitlePanel
+{
+	background: #ffffff;
+	color: #000000;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+Table.Grid
+{
+	margin: 5px;
+	border: #768ca5 1px solid !important;
+}
+
+Table.Grid, Table.Grid TD, Table.Grid TH
+{
+	border-collapse: collapse; /*border: #94a6ce 1px solid;*/
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+Table.Grid TD
+{
+	padding-left: 7px;
+	padding-right: 7px;	
+	padding-top: 4px;
+	padding-bottom: 4px;
+	border-left: solid 1px #999;
+	border-bottom: solid 1px #999;
+	border-right: solid 1px #999;
+}
+
+Table.Grid .ajax__calendar_container TD
+{
+    padding:0px;
+    margin:0px;
+    border:none;
+}
+
+Table.Grid TH, Table.Grid TR.GridHeader TD
+{	
+	font: 12px/16px "segoe ui",arial,sans-serif;
+	background: #DDD url(images/panel/sliver_grey.gif) repeat-x;
+	color: black !important;
+	height: 28px !important;
+	text-align: left;
+	padding-left: 7px;
+	padding-right: 7px;	
+}
+
+TR.GridHeader A
+{
+	color: black;
+	text-decoration: none;	
+}
+
+TR.GridHeader TH
+{
+
+}
+
+Table.Grid TH A
+{
+	color: black;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+TR.GridHeader TH.NumberStyle
+{
+	text-align: center !important;
+	white-space: nowrap;
+}
+
+TR.GridHeader TH.PriceStyles
+{
+	text-align: center !important;
+	white-space: nowrap;
+}
+
+.GridDelete TD
+{
+	font: 12px/16px "segoe ui",arial,sans-serif;
+}
+
+Table.Grid TD
+{	
+	background-color: #ffffff;	
+	font: 12px/16px "segoe ui",arial,sans-serif;
+}
+
+Table.Grid TR.GridAlternateRow TD, Table.Grid TR.tableRowAlt TD
+{
+	background-color: #ffffff;
+}
+
+Table.Grid TR.GridRowHover:hover TD
+{
+    background-color: #ffffff;
+}
+
+Table.Grid TR.GridAlternateRowHover:hover TD
+{
+	background-color: #ffffff;
+}
+
+Table.Grid .GridRowSelected
+{
+    background-color: #e0e3e6;
+}
+
+Table.Grid .eventSelectedRegistrant
+{
+    background-color: #e0e3e6;
+    color: #000000;
+	font-weight: bold;
+}
+
+/* The styling for this is handled in 99-Aspen */
+/*.DeleteImage
+{
+	width: 18px;
+	height: 18px;
+	background-image: url(images/icon_delete.gif);
+}*/
+
+.DeleteImage, .EditImage
+{
+	margin: 1px;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-position: center 50%;
+	border: 0;
+	background-color: transparent;
+	display: block;
+	cursor: pointer;
+}
+
+Table.Grid .DisplayCurrency
+{
+    width: auto;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.NavBullet LI
+{
+	color: #fe7921;
+	list-style-type: square;
+}
+
+.NavSpan LI SPAN
+{
+	color: #000000;
+}
+
+TD.DisplayCurrency
+{
+    text-align: right !important;
+    width: auto;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+/* = Campaign Management using the expandable grid = */
+
+Table.ExpGrid, Table.ExpGrid TD, Table.ExpGrid TH
+{
+	border-collapse: collapse;
+}
+Table.ExpGrid
+{
+	margin: 3px;
+	border: #898d8f 1px solid !important;
+}
+Table.Grid TH, Table.Grid TR.GridHeader TD
+{
+	border-top: solid 1px #777;
+	font: 12px/16px "segoe ui",arial,sans-serif;
+	color: black;
+	border-bottom: solid 1px #777;
+	height: 28px !important;
+	text-align: left;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+/* Column Row with Name, Total Revenue, Target Revenue, Overhead Cost, ROI %, Start Date, End Date, Status */
+TR.ExpGridHeader TH
+{
+	border-top: solid 1px #777;
+	font: 12px/16px "segoe ui",arial,sans-serif;	
+	background: #DDD url(images/panel/sliver_grey.gif) repeat-x;
+	color: Black;
+	border-bottom: solid 1px #777;
+	height: 28px !important;
+	text-align: left;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+/* Row with Campaign - Appeal name */
+TR.ExpGridRow1 TD
+{
+	border-top: solid 1px #777;
+	font: 12px/16px "segoe ui",arial,sans-serif;	
+	border-bottom: solid 1px #777;
+	height: 28px !important;
+	text-align: left;
+	padding-left: 7px;
+	padding-right: 7px;
+	background-color: #DDD;
+}
+
+TR.ExpGridRow1 A
+{
+
+}
+
+/* Row with Solicitations */
+TR.ExpGridRow2 TD
+{
+	border-top: solid 1px #777;
+	font: 12px/16px "segoe ui",arial,sans-serif;	
+	border-bottom: solid 1px #777;
+	height: 28px !important;
+	text-align: left;
+	padding-left: 7px;
+	padding-right: 7px;
+	background-color: #DDD;
+}
+
+Table.ExpGrid TD
+{	
+	border-top: solid 1px #777;
+	border-bottom: solid 1px #777;
+	font: 12px/16px "segoe ui",arial,sans-serif;
+	height: 28px !important;
+}
+
+Table.Grid TR.ExpGridAlternateRow TD
+{
+	background-color: #ffffff;
+}
+
+/* Header row with Code, Segments, 1st Resp, Last Drop, Type, Member Type, Status */
+Table.ExpGrid TR.ExpGridHeaderSourceCode TD, Table.ExpGrid TR.ExpTableRowAlt TD
+{
+	background-color: #CCC;
+	height: 28px !important;
+}
+
+Table.ExpGrid .DisplayCurrency
+{
+    width: auto;
+    padding-left: 10px;
+    padding-right: 5px;
+    font: 12px/16px "segoe ui",arial,sans-serif;
+}
+
+/* Cart check out process tables */
+.CartGridTable
+{
+	width: 375px;
+}
+
+SPAN.CartGridTable TABLE.Grid
+{
+	width: 375px;
+}
+
+.GridPrice
+{
+	width: 40px;
+}
+
+.GridSelect
+{
+	width: 40px;
+}
+
+.GridTableTitle
+{
+	width: 60%;
+}
+
+.rgWrap 
+{
+	white-space:normal !important;
+}
+
+/* Nested table IQA query filter popup calendar */
+Table.GridFilterCalendar
+{
+	border-collapse: collapse !important;
+	background-color: #ffffff !important;
+	margin: 0px !important;
+	border: 0px !important;
+	padding: 0px !important;
+}
+Table.GridFilterCalendar TD, Table.GridFilterCalendar TH
+{
+	border-collapse: collapse !important;
+	margin: 0px !important;
+	border: 0px !important;
+	padding: 0px !important;
+}
+Table.Grid TR.GridAlternateRow Table.GridFilterCalendar TD TD
+{
+	background-color: #ffffff !important;
+}
+
+
+/**** </ Grid Styling > ****/

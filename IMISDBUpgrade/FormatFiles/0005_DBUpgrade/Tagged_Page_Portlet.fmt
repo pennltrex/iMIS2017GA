@@ -1,0 +1,23 @@
+11.0
+21
+1       SQLNUMERIC          1       19      ""   1     TaggedPagePortletID                                ""
+2       SQLNUMERIC          1       19      ""   2     TaggedPageSectionID                                ""
+3       SQLNUMERIC          1       19      ""   3     TaggedPortletID                                    ""
+4       SQLNCHAR            2       100     ""   4     Title                                              SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     TitleImage                                         SQL_Latin1_General_CP1_CI_AS
+6       SQLNUMERIC          1       19      ""   6     MaxRows                                            ""
+7       SQLNCHAR            2       100     ""   7     PrimarySort                                        SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       2       ""   8     PrimarySortAscDescInd                              SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       100     ""   9     SecondarySort                                      SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       2       ""   10    SecondarySortAscDescInd                            SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       100     ""   11    ViewAllMessage                                     SQL_Latin1_General_CP1_CI_AS
+12      SQLNUMERIC          1       19      ""   12    OrderNum                                           ""
+13      SQLNCHAR            2       2       ""   13    RequiredFlag                                       SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            0       2       ""   14    UseOR                                              SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       100     ""   15    ViewAllImage                                       SQL_Latin1_General_CP1_CI_AS
+16      SQLNUMERIC          1       19      ""   16    Border                                             ""
+17      SQLNCHAR            2       40      ""   17    BorderColor                                        SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       40      ""   18    BackgroundColor                                    SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       50      ""   19    RangeFrom                                          SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            2       50      ""   20    RangeTo                                            SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       100     ""   21    RangeColumn                                        SQL_Latin1_General_CP1_CI_AS

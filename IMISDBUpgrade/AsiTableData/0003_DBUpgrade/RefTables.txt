@@ -1,0 +1,6 @@
+DataVaultAttemptStatusRef
+DataVaultStatusRef
+AsiGPSMeasureRef
+DocumentTypeRef
+ExperienceUnit
+URLMappingTypeRef

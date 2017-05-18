@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLINT              0       4       ""   1     WarehouseTypeCode                      ""
+2       SQLNCHAR            2       60      ""   2     WarehouseTypeDesc                      SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     WarehouseTypeName                      SQL_Latin1_General_CP1_CI_AS

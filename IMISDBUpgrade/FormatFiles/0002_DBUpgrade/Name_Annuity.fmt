@@ -1,0 +1,23 @@
+10.0
+21
+1       SQLNCHAR            2       20      ""   1     ID                                             SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     SEQN                                           ""
+3       SQLNCHAR            2       60      ""   3     ANNUITY                                        SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     ANNUITY_DATE                                   ""
+5       SQLFLT8             0       8       ""   5     CHARITABLE_GIFT_VALUE                          ""
+6       SQLNCHAR            2       20      ""   6     SOURCE                                         SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       20      ""   7     FUNDED_FLAG                                    SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       20      ""   8     TYPE_OF_FUNDING                                SQL_Latin1_General_CP1_CI_AS
+9       SQLFLT8             0       8       ""   9     NUMBER_OF_SHARES                               ""
+10      SQLNCHAR            2       20      ""   10    STOCK_SYMBOL                                   SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       20      ""   11    VALUE_PER_SHARE                                SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       20      ""   12    COST_BASIS_PER_SHARE                           SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       20      ""   13    ANNUITY_LIFE                                   SQL_Latin1_General_CP1_CI_AS
+14      SQLFLT8             0       8       ""   14    GIFT_ANNUITY_RATE                              ""
+15      SQLNCHAR            2       20      ""   15    PAYMENT_FREQUENCY                              SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       20      ""   16    PAYMENT_AMOUNT                                 SQL_Latin1_General_CP1_CI_AS
+17      SQLDATETIME         1       8       ""   17    FIRST_PAYMENT_DATE                             ""
+18      SQLNCHAR            2       60      ""   18    PAYMENT_SCHEDULE                               SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       60      ""   19    TAX_TIER                                       SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            4       0       ""   20    EXTENDED_NOTES                                 SQL_Latin1_General_CP1_CI_AS
+21      SQLBINARY           2       8       ""   21    TIME_STAMP                                     ""

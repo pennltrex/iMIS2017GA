@@ -1,0 +1,223 @@
+<html>
+<body>
+    <h1>Contact Account Creator</h1>
+    <p>
+        This iPart allows users to create an account for an individual or organization. 
+        It can be configured to require only a name and an email in order to create an 
+        account. It also has the option to include a name prefix, name suffix, phone, mobile phone, 
+        address, and the option to create a logon.</p>
+    <ul>
+<!-- Start base class options -->
+        <li><strong>Name</strong> - Enter a name for the content item. This text appears 
+            during design mode (configuration). </li>
+        <li><strong>Title</strong> - Enter the text to display above this iPart on the 
+            rendered page. If blank, no title displays. </li>
+        <li><strong>Do not render in design mode</strong> - Select this option to prevent 
+            content record data from being loaded in the content editor. This improves 
+            performance during design time (configuration). </li>
+        <li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class that 
+            will be applied to the iPart at runtime. Add this CSS class to an appropriate 
+            style sheet. Using such classes lets you apply special formatting to targeted 
+            iParts in a reusable way. </li>
+        <li><strong>Display a border around this content</strong> - Select this option to 
+            display a border around this iPart on the rendered page. </li>
+        <li><strong>Display content within a collapsible panel</strong> - Enable to allow 
+            users to minimize the panel within the page, to work with dense pages more 
+            efficiently.
+            <ul>
+                <li><strong>Show the content as collapsed </strong>- Enable to display the panel 
+                    minimized by default.
+                    <br /><i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is 
+                    hidden from view. </li>
+ <!-- End base class options -->
+            </ul>
+            </li>
+                <li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+                    <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                        hidden on extra small devices, such as smartphones, where the width of the 
+                        screen is less than 768px.</li>
+                    <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                        small devices, such as tablets, where the width of the screen is greater than 
+                        768px and less than 991px.</li>
+                    <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                        medium devices, such as laptops, where the width of the screen is greater than 
+                        992px and less than 1199px.</li>
+                    <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                        large devices, such as wide computer monitors, where the width of the screen is 
+                        greater than or equal to 1200px wide.
+                        <br />
+                        <i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for a 
+                        page are displayed, regardless of the <strong>Display on screen sizes (for 
+                        responsive themes only)</strong> options that are selected.</li>
+                    </ul>
+        </li>
+        <li><strong>Hide for authenticated users</strong> - Enable to display this content item only to unauthenticated users. For example, you could hide the content item from authenticated users when making a donation since they would not need to enter their contact information. Unauthenticated users would be required to enter their contact information.</li>
+        <li><strong>Commit sequence</strong> - Allows you to explicitly define the execution
+            order of multiple iParts in a content record. The number in this field indicates
+            the processing order for this iPart, relative to the other iParts in the same content
+            record. The value must be 0 or greater. You can leave the default value of 0 if
+            the execution order of iParts is not a concern. iParts with a value of 0 are processed
+            <em>after</em> any other iParts with a non-zero <strong>Commit sequence</strong> value
+            that are on the same content record. </li>
+            </ul>
+            
+        <p> <strong>Account</strong></p>
+        <ul>
+        <li><b>Type of account to create</b> - Sets the type of account that <em>
+            authenticated</em> users can create from this iPart (note that unauthenticated 
+            users can <em>only</em> create individual accounts):
+            <ul>
+                <li><b>Individual only </b>- Only individual contacts can be created.</li>
+                <li><b>Organization only </b>- Only organization contacts can be created.</li>
+                <li><b>Individual or organization </b>- Either individual or organization contacts 
+                    can be created.</li>
+                </ul>
+            <li><strong>Assign selected user as administrator for new organizations</strong> - Select this option to automatically assign the logged in user as the administrator for newly created organizations. If a staff user creates the organization, they will have the ability to choose the administrator.</li>
+            <li><em>These options apply only when an individual contact is being created:</em>
+            <ul>
+                                <li><strong>Include primary organization for individuals</strong> - This option adds a <strong>Primary Organization</strong> field in which users can add  
+                            their organization name. After the user types several characters, a dynamic 
+                            filter begins presenting the user with possible matching organization records, 
+                            to encourage them to link themselves to an existing organization. If none match, 
+                            the entered name is saved as plain text.  When a matching organization is selected, the individual contact is added to 
+                            the selected organization's roster.
+                                    <br /> <i>Note: </i>To enable the dynamic filter, the <b>Allow all users to link to an organization</b> option must be selected at <b>Settings > Contacts > General.</b></li>
+                                <li><strong>Require primary organization for individuals</strong> - Select this option to force 
+                            users to select an existing organization or enter a new one, to be saved with 
+                            their record.</li>
+                                <li><strong>Organization list query path </strong>-  If 
+                                    needed, select a custom query for listing appropriate organizations, such as if you have content records specific to different types of users.
+                <ul>
+                                        <br /><em>Note: </em>If the query is not found (such as when the query name is mistyped), the iPart will display an empty list.  Delete the query 
+                                        path to re-instate use of the default query.
+                                        <br /><em>Note</em>: Any query used with the Contact Account Creator must include <strong>ID</strong> and <strong>Organization</strong> as Display Columns. Please see the default query 
+                                    (<strong>PrimaryOrganizationSelect</strong> at <strong>$/ContactManagement/DefaultSystem/Queries/Organizations/PrimaryOrganizationSelect</strong>) for an example.</ul>
+                                </li></ul>
+            </li>
+            <li><strong>Include option to sign up using social media</strong> - This option only displays if a social media authorization provider, such as Facebook, is enabled in the social media settings (located in the Staff site at <strong>Settings > Contacts > Social media</strong>). Select to allow users to create new iMIS accounts using their social media credentials in the Contact Account Creator.</li>
+            <li><strong>Include prefix</strong> - Select this option to display the Prefix field.</li>
+            <li><strong>Include middle name</strong> - Deselect this option to hide the Middle name field.</li>
+            <li><strong>Include suffix</strong>- Deselect this option to hide the Suffix field.</li>
+            <li><strong>Include designation</strong> - Select this option to display the Designation field.</li>
+            <li><strong>Include informal name</strong> - Select this option to display the Informal Name field.</li>
+            <li><strong>Include title</strong> - Select this option to display the Title field.</li>
+            <li><strong>Include phone</strong> - Select this option to display the Phone field.</li>
+            <li><strong>Include mobile phone</strong> - Select this option to display the Mobile Phone field.</li>
+            <li class="v10only"><strong>Include email for individuals</strong> -&nbsp; Deselect this option to hide the Email field. For individual contacts, this is selected by default.<ul>
+                <li class="v10only"><strong>Require email for individuals</strong> -&nbsp; <em>(only enabled if Include email is selected)</em> Select this option to require the contact to include an email address. 
+                    This is deselected by default.</li>
+                </ul>
+            </li>
+            <li class="v10only"><strong>Include email for organizations</strong> -&nbsp; Deselect this option to hide the Email field. For organization contacts, this is deselected by default.<ul>
+                <li class="v10only"><strong>Require email for organizations</strong> -&nbsp; <em>(only enabled if Include email is selected)</em> Select this option to require the contact to include an email address. 
+                    This is deselected by default.</li>
+                </ul>
+            </li>
+            <li><strong>Include address</strong> 
+            <ul>
+                <li><strong>Require address</strong> - <em>(required when creating accounts for commerce)
+                                                       </em>Select this option to display the Address fields. When enabled, a user must enter
+                their address information to create an account. If selected, the following options
+                also apply:
+                    <ul>
+                        <li><strong>Multiple lines for street address</strong> - Select this option to display three 
+                            Street address lines. If disabled, only a single line is displayed for the 
+                            Street address.
+                        <br />
+                        <em>Note:</em> This option must be enabled for United Kingdom addresses to properly format.
+                        
+                        </li>
+                        <li><strong>Create address purpose</strong> - Select the address purpose to which the
+                            new address will be applied.</li>
+                    </ul>
+                </ul>
+            </ul>
+<p><strong>Sign in</strong></p>
+<ul> 
+    <li><strong>Include Sign In link</strong> - Select this option to display a <strong>Log
+        On</strong> link for users who are already registered. This link will only display
+        when no user is currently logged in.</li>
+    <li>
+        <strong>Include option to create an account</strong> - Select this option to allow users
+        to create a logon and password at the same time they create their account. When
+        this option is selected, the following options are available:
+        <ul>
+            <li>
+                <strong>Require username and password </strong>- Select this option to require the
+                user to enter a logon and password.
+            </li>
+            <li>
+                <strong>Use email as username</strong> - Select this option to set the logon as the
+                user's email address. The user is prompted to confirm their email
+                address when creating an account.
+            </li>
+        </ul>
+    </li>
+</ul>
+<p><strong>Redirect</strong></p>
+    <ul>
+        <li><strong>Redirect to</strong>
+        <ul>            
+            <li><strong>Do not redirect</strong> - Select this option to return to a fresh version of the page after a successful account creation. (This option is recommended when you use the Contact Account Creator content item within a Content Collection Organizer content item.)</li>
+                <li><strong>Previous page</strong> - Select this option to redirect the user to the 
+                previous page after an account is created.</li>
+            
+            <li><strong>Content record or URL</strong> - Select this option to redirect the 
+                user to a content record or URL after an account is created. </li>
+        </ul>
+        </li>
+        <li><strong>Content or URL to Link to</strong> - Enter the content record 
+            or unique URL link that will be displayed after an account is created. 	
+            This is the target of the navigation link. You can specify an absolute URL to any website, 
+            a relative URL to pages within the website associated with this sitemap, or you can browse for a content record. For relative URLs, use a tilde character to represent 
+            the IIS web site root where this sitemap&#39;s website is located: <em>~/ThisWebsiteFolder/Default.aspx</em></li>
+                      
+        <li class="v10only"><strong>Include ID as a URL parameter</strong> - Include the ID for the newly created account in the URL that is linked to. For example, select this option if you link to a contact profile page and would like to display the newly created contact's profile.</li>
+        <li class="v100only"><strong>Include ContactKey as a URL parameter</strong> - Include the ContactKey for the newly created account in the URL that is linked to. For example, select this option if you link to a contact profile page and would like to display the newly created contact's profile.</li>
+    </ul>
+<p>
+        <b>Notes</b></p>
+<ul>
+    <li>Postal addresses entered through this iPart are automatically uploaded to 
+        a service that verifies and standardizes the address. Users can then either 
+        accept the suggested address or keep the original, as they entered it.</li>
+    <li>The selected default country in iMIS (i.e., SystemDefaultCountry) is used as the default country in the Contact Account Creator.<div class="v10only">To change the default country in iMIS, in the iMIS staff site, navigate to <strong>Settings > Contacts > General</strong> and select an option from the <strong>Set the default country</strong> drop-down list.</div><div class="v100only">To change the default country in iMIS, in the iMIS staff site, navigate to <strong>Settings > Finance > General</strong> and select an option from the <strong>Default country</strong> drop-down list.
+</div></li>
+    <li class="v10only">When adding this iPart to a content record, keep the following notes in mind:
+        <ul>
+            <li>To use this iPart, you must enable the <b>Auto Assign Member Number </b>option from 
+                Customers setup window for<b> Basic Options</b>.</li>
+            <li>The address purposes available in this iPart are based on the <b>ADDRESS_PURPOSE
+                </b>table defined Customers table setup for <b>General lookup/validation</b>. </li>
+            <li>You can select the default <b>Customer Type </b>to use for new contacts created in this 
+                iPart from <b>Settings &gt; Organization</b>.</li>
+        </ul>
+    </li>
+    <li class="v100only">When adding this iPart to a content record, keep the following notes in mind:
+        <ul>
+            <li>Configuration of the password policy for the application is specified in the
+                <b>&lt;system.web&gt;&lt;membership&gt;</b> section in the <b>web.config</b> file. </li>
+            <li>Only inline editable iParts follow the <b>Commit Sequence</b>. The Contact Account 
+                Creator is an inline editable iPart. </li>
+        </ul>
+    </li>
+        <li class="v10only">The Contact Account Creator is required when you set up a donation page
+            that processes payments immediately (instead of through the cart). Processing a
+            donation immediately requires that multiple iParts are defined in a single content
+            record. It does not matter the order in which the iParts are defined on the page.
+            In the scenario outlined below, where the Donation Creator is the first iPart displayed
+            on the page and the Submit Order Button Link is the last iPart displayed, the <b>Commit
+                sequence </b>value controls the order in which the iParts are processed. When
+            the donation is &quot;submitted&quot; from the content record, execution control
+            is given to each iPart based on the <b>Commit sequence</b> value shown in parentheses:
+            <ul>
+                <li>Donation Creator (2) </li>
+                <li>Contact Account Creator (1) </li>
+                <li>Submit Order Button Link (3) </li>
+                <li>Payment Creator (4 or 0) </li>
+            </ul>
+        </li>
+    <li>This iPart uses an application that is external to iMIS.</li>
+    </ul>
+</body>
+</html>

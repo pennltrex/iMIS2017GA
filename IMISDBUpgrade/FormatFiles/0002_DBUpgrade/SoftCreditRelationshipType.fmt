@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     SoftCreditRelationshipKey                              ""
+2       SQLUNIQUEID         1       16      ""   2     RelationshipTypeKey                                    ""
+3       SQLDECIMAL          1       19      ""   3     Percentage                                             ""
+4       SQLUNIQUEID         1       16      ""   4     UpdatedByUserKey                                       ""
+5       SQLDATETIME         0       8       ""   5     UpdatedOn                                              ""
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                                      ""

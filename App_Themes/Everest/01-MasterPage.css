@@ -1,0 +1,229 @@
+﻿/*****************************************/
+/***      MASTERPAGE STYLE SHEET       ***/
+/*****************************************/
+/**
+ * Forest MasterPage styles for iMIS
+ *
+ * This document contains styles to properly align the Forest MasterPage.
+ * 
+ * TABLE OF CONTENTS:
+ * General
+ * Header
+ * Main Content
+ * Footer
+ * StickyFooter
+ **/
+
+/************************************/
+/*	       Header Section           */
+/************************************/
+
+/* This applies to the area behind the header logo and auxiliary navigation */
+#doc3
+{
+	margin: auto !important;
+	width: auto !important;
+}
+
+#masterLogoArea
+{
+    float:left;
+}
+
+/* This applies to the header logo */
+#masterHeaderImage
+{
+    float:left;
+    margin-top:.4em
+}
+
+/* These styles apply to the auxiliary navigation */
+.NavigationUnorderedList
+{
+	padding-left: 0em;
+	margin-left: 0.125em;
+	margin-right: 0.125em;
+	display: inline;
+}
+
+.NavigationListItem
+{
+	list-style-type: none;
+	display: inline;
+	margin-left: 0em;
+}
+
+#masterTopBarAuxiliary, #masterTopBarAuxiliary div
+{
+	white-space: nowrap !important;
+	display: inline-block;
+}
+
+#masterTopBarAuxiliary input.SurfEdit
+{
+    /* Remove the extra padding from the surf-to-edit button */
+    padding:0!important;
+    vertical-align:middle;
+}
+
+#masterTopBarAuxiliary
+{
+	float: right;
+}
+
+#masterSocialNetworking .ContentItemContainer
+{
+    float:left;
+}
+
+#masterTopBarAuxiliary .NavigationUnorderedList .NavigationListItem .NavigationLink
+{
+	width: auto !important;
+	text-transform: none !important;
+	padding-left: 0.313em !important;
+	padding-right: 0.313em !important;
+}
+
+/*#masterTopBarAuxiliaryBottom
+{
+    float:right;
+}*/
+
+/************************************/
+/*  	Main Content Section        */
+/************************************/
+
+#yui-main .yui-b
+{
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+#SideBarPanel
+{
+    height: 100%;
+}
+   
+/* This applies to the breadcrumb area */
+#masterMainBreadcrumb
+{
+	float: none;
+	display:inline;
+	line-height:33px;
+}
+
+/***** Proxy Panel Styling *****/
+/* This applies to the on behalf of (proxy) area */
+/*#masterMainImpersonation
+{
+	float: right;
+}*/
+
+#ProxyPanelLabels, #ProxyPanelActions, .InLineOption_Controls_Always_Display
+{
+    display: inline-block!important;
+}
+
+.ProxyPanelNoContact, .ProxyPanelContact
+{
+    /*font-weight:bold;
+    padding:0 2em;*/
+    white-space: nowrap;
+}
+
+.ProxyTitleBar .InLineOption_Controls_Always_Display
+{
+    float: none!important;
+}
+
+/* This applies to the button area at the bottom of the page (e.g., Save, Cancel) */
+#masterMainButtonBar
+{
+	margin: .5em 2em .5em 0;
+	background-color: White;
+}
+
+/************************************/
+/*	       Footer Section           */
+/************************************/
+
+#masterFooterNavigation .NavigationUnorderedList .NavigationListItem .NavigationLink
+{
+	padding-left: 0.313em !important;
+	padding-right: 0.313em !important;
+    line-height: 1.8em;
+}
+
+#masterFooterCopyright
+{
+    line-height: 1.8em;
+    padding: 0 0.313em;
+}
+
+/* This applies to the page tasks (e.g., Print, Email) that appear under the main navigation */
+#masterPageTasks
+{
+	float: right;
+	padding: .6em .5em 0;
+}
+.PageTasksPanel {
+    display: inline-block;
+}
+
+/************************************/
+/*    	StickyFooter Section        */
+/************************************/
+/** Needed for Sticky Footer, http://ryanfait.com/sticky-footer/ **/
+ *
+{
+	margin: 0;
+}
+html, body
+{
+    height:100%;
+}
+
+#Menu
+{
+    height: 32px;
+    min-width: 100%;
+    z-index: 100;
+    position: absolute;
+}
+
+#masterWrapper
+{
+    /*padding-top: 32px; /* To leave room for the #Menu */
+    min-height: 100%;
+	height: auto !important;
+	height: 100%;
+    margin-bottom: -36px; /* Account for height of #ft and the border on #masterFooterNavigation */
+}
+
+#hd
+{
+    padding-top: 42px; /* To account for the height of #Menu, plus add some spacing */
+}
+
+#masterFooterPush, #ft
+{
+    font-size: 90%;
+    height: 3em;
+}
+
+/* This defines the width of the content area and the margins */
+#masterWrapper, #ft, #masterTopBar
+{
+    min-width:970px;
+    width:98%;
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#masterFooterNavigation, #masterFooterCopyright
+{
+    float: left;
+    height: 3em;
+    line-height:3em;
+}

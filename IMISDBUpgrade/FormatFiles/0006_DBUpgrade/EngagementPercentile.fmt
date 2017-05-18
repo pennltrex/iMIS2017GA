@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLUNIQUEID         1       16      ""   1     EngagementScoreKey                       ""
+2       SQLINT              0       4       ""   2     ScoreYear                                ""
+3       SQLINT              0       4       ""   3     ScoreMonth                               ""
+4       SQLINT              0       4       ""   4     ScoreWeek                                ""
+5       SQLDECIMAL          1       19      ""   5     Score                                    ""
+6       SQLINT              0       4       ""   6     Frequency                                ""
+7       SQLINT              1       4       ""   7     Percentile                               ""

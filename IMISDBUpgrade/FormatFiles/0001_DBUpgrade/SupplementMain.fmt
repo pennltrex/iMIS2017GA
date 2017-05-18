@@ -1,0 +1,18 @@
+10.0
+16
+1       SQLUNIQUEID         1       16      ""   1     SupplementKey                                ""
+2       SQLNCHAR            2       200     ""   2     Name                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     Description                                  SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     DocumentVersionKey                           ""
+5       SQLINT              0       4       ""   5     SupplementStatusCode                         ""
+6       SQLDECIMAL          1       19      ""   6     Cost                                         ""
+7       SQLNCHAR            4       0       ""   7     CostCollection                               SQL_Latin1_General_CP1_CI_AS
+8       SQLDATETIME         0       8       ""   8     UpdatedOn                                    ""
+9       SQLUNIQUEID         1       16      ""   9     UpdatedByUserKey                             ""
+10      SQLUNIQUEID         1       16      ""   10    CreatedByUserKey                             ""
+11      SQLDATETIME         0       8       ""   11    CreatedOn                                    ""
+12      SQLUNIQUEID         1       16      ""   12    AccessKey                                    ""
+13      SQLUNIQUEID         1       16      ""   13    SupplementTypeKey                            ""
+14      SQLUNIQUEID         1       16      ""   14    SystemEntityKey                              ""
+15      SQLUNIQUEID         1       16      ""   15    NotificationGroupKey                         ""
+16      SQLDATETIME         1       8       ""   16    MarkedForDeleteOn                            ""

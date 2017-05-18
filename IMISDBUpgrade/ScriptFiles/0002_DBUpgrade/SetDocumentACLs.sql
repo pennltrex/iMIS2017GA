@@ -1,0 +1,1943 @@
+SET NOCOUNT ON
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'cf4a2f4c-ef4a-40b3-a3c9-0077856046a2' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'cf4a2f4c-ef4a-40b3-a3c9-0077856046a2'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'fd019ae0-6a6d-4a5b-99a1-016048fa9fd3' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'fd019ae0-6a6d-4a5b-99a1-016048fa9fd3'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '00f3723e-210f-483c-80a3-01a0d3f5c63e' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '00f3723e-210f-483c-80a3-01a0d3f5c63e'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'b18f8b91-28f6-42fd-a181-01eaa4087e87' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'b18f8b91-28f6-42fd-a181-01eaa4087e87'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c5209a62-29e7-4edb-a161-03ba19c216f7' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c5209a62-29e7-4edb-a161-03ba19c216f7'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '3f6591f7-ae47-463e-a9a9-0572143886c9' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '3f6591f7-ae47-463e-a9a9-0572143886c9'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '703edfa2-f6ac-4eb9-867b-0625eb12d75a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '703edfa2-f6ac-4eb9-867b-0625eb12d75a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'd383860c-d8b9-4252-8a93-0883e6fac546' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'd383860c-d8b9-4252-8a93-0883e6fac546'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '474fdc06-8f49-40de-8125-0929b289b6f6' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '474fdc06-8f49-40de-8125-0929b289b6f6'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '589b0d07-3e39-482e-a9d3-0956da53a5b9' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '589b0d07-3e39-482e-a9d3-0956da53a5b9'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '330479cc-019c-443a-9e05-0a061894f184' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '330479cc-019c-443a-9e05-0a061894f184'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '6e5ffe1a-31fa-4446-b989-0a8b44537318' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '6e5ffe1a-31fa-4446-b989-0a8b44537318'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c5da15ad-19fc-43c4-917b-0bbfce2983b0' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c5da15ad-19fc-43c4-917b-0bbfce2983b0'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '9f99f08d-93e4-4864-b981-0bd4e00165a4' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '9f99f08d-93e4-4864-b981-0bd4e00165a4'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'db6b32dc-03cb-4c3c-ad1d-0d89f4c1a039' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'db6b32dc-03cb-4c3c-ad1d-0d89f4c1a039'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'adbd3d27-3381-415c-8bbb-0ddce9b8ea5c' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'adbd3d27-3381-415c-8bbb-0ddce9b8ea5c'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '80c1f227-34f5-4297-9681-0e5dfcd10dd9' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '80c1f227-34f5-4297-9681-0e5dfcd10dd9'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '73cc831d-35bb-420c-a94e-1062a116ccce' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '73cc831d-35bb-420c-a94e-1062a116ccce'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a39df412-0ce5-430b-a84b-106bb0163693' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a39df412-0ce5-430b-a84b-106bb0163693'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c0228118-94af-4b2f-b39b-10b50a752428' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c0228118-94af-4b2f-b39b-10b50a752428'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'bb8ad2f4-8d7a-460c-906b-113921893584' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'bb8ad2f4-8d7a-460c-906b-113921893584'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '146efe7e-4cc6-411a-90fc-1801299e4734' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '146efe7e-4cc6-411a-90fc-1801299e4734'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '6b95f8ce-fbf0-4595-af63-19bd7acf443a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '6b95f8ce-fbf0-4595-af63-19bd7acf443a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '4e62e307-a84c-475d-9dd5-1a13368c1e1b' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '4e62e307-a84c-475d-9dd5-1a13368c1e1b'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'e09ba3a3-d52a-4dde-a881-1a9603771122' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'e09ba3a3-d52a-4dde-a881-1a9603771122'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '77625552-25f1-4561-8f32-1b28f8389c81' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '77625552-25f1-4561-8f32-1b28f8389c81'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'e0cee22a-df7e-46ef-a2f6-1c3df6582dc2' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'e0cee22a-df7e-46ef-a2f6-1c3df6582dc2'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '1bdfa957-7ee2-4c5d-80ba-1c895c4395cc' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '1bdfa957-7ee2-4c5d-80ba-1c895c4395cc'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'd07d8ef2-ecd3-4901-82fa-1cf70cc9ea9a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'd07d8ef2-ecd3-4901-82fa-1cf70cc9ea9a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '68396545-173b-4004-9726-1d12a15b8c23' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '68396545-173b-4004-9726-1d12a15b8c23'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'b748b973-ad6a-49e7-b218-1d98bd312ad7' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'b748b973-ad6a-49e7-b218-1d98bd312ad7'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '408ae879-9bc0-4365-aee5-1ed013ca66d1' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '408ae879-9bc0-4365-aee5-1ed013ca66d1'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '74f9adcd-15f5-4bb0-a849-1f8c81599481' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '74f9adcd-15f5-4bb0-a849-1f8c81599481'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '0f00f727-7f66-4498-b753-1fab607a0204' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '0f00f727-7f66-4498-b753-1fab607a0204'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '05b6bf08-fe8f-4d8a-b465-208256613f8e' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '05b6bf08-fe8f-4d8a-b465-208256613f8e'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '1d9132cd-0ae9-48e9-86ae-23f3430b2448' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '1d9132cd-0ae9-48e9-86ae-23f3430b2448'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a534aa5b-efc6-4554-a749-257bef34e80b' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a534aa5b-efc6-4554-a749-257bef34e80b'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'bf5d1b5b-65da-4278-af2c-26e6a4ad0591' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'bf5d1b5b-65da-4278-af2c-26e6a4ad0591'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '7fe767f6-7c16-4fa6-bffc-280e7953e22c' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '7fe767f6-7c16-4fa6-bffc-280e7953e22c'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a83886b6-d43a-408d-a23d-284d3e0c617c' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a83886b6-d43a-408d-a23d-284d3e0c617c'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '03c2bed9-fc54-47d0-8950-289e387f8c8f' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '03c2bed9-fc54-47d0-8950-289e387f8c8f'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '3e55e233-541a-46c4-ab70-2b9117e6cbc5' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '3e55e233-541a-46c4-ab70-2b9117e6cbc5'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'ae0724e8-5dc5-428d-a472-2bfbb1b85f9a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'ae0724e8-5dc5-428d-a472-2bfbb1b85f9a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '9a33f6cd-18c8-4fd4-b7ec-2c94a49f2695' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '9a33f6cd-18c8-4fd4-b7ec-2c94a49f2695'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '45677a9d-1804-4443-bbe1-2cd60b3b403e' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '45677a9d-1804-4443-bbe1-2cd60b3b403e'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a608acc4-4632-4583-b9f9-3077aaac78dd' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a608acc4-4632-4583-b9f9-3077aaac78dd'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '7121c900-bf5f-4ffb-bbe1-30873522e763' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '7121c900-bf5f-4ffb-bbe1-30873522e763'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'cc8def3e-f286-41f6-b2df-3220c355e908' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'cc8def3e-f286-41f6-b2df-3220c355e908'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '21e439a2-f75f-4a77-8ec7-32c4be4409f3' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '21e439a2-f75f-4a77-8ec7-32c4be4409f3'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'eade891f-8587-4f46-b8dd-3457c68e36a1' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'eade891f-8587-4f46-b8dd-3457c68e36a1'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '71eb847a-f4d1-40f8-a236-34f02f8e8d2a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '71eb847a-f4d1-40f8-a236-34f02f8e8d2a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '59d95f28-d0ad-409e-bd32-38b81f897539' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '59d95f28-d0ad-409e-bd32-38b81f897539'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '00ca4e30-8a70-4d40-9e89-3933160131a4' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '00ca4e30-8a70-4d40-9e89-3933160131a4'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'cb68127e-0335-43c8-896f-3a48262e25ba' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'cb68127e-0335-43c8-896f-3a48262e25ba'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '776ef773-5eb6-4590-9794-3af3745642ad' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '776ef773-5eb6-4590-9794-3af3745642ad'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'bae7fd09-15d9-46f0-ac7b-3b5ea6b1505b' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'bae7fd09-15d9-46f0-ac7b-3b5ea6b1505b'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a707a2ee-c3a8-4377-b268-3b6ee97520b2' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a707a2ee-c3a8-4377-b268-3b6ee97520b2'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'e2567593-39fe-4886-a69b-3b7fe0b14b43' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'e2567593-39fe-4886-a69b-3b7fe0b14b43'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '74d820e4-6330-449e-91d6-3c464b231177' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '74d820e4-6330-449e-91d6-3c464b231177'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '7b5da8c9-bbee-4a69-a1f1-3d893fb9b26e' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '7b5da8c9-bbee-4a69-a1f1-3d893fb9b26e'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '00975048-338e-43f1-a3bb-3f5b5b3e1293' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '00975048-338e-43f1-a3bb-3f5b5b3e1293'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '17d8f267-30d4-484a-b184-3fa1e704fae3' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '17d8f267-30d4-484a-b184-3fa1e704fae3'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'e508a8ed-e5a9-44ec-a2ae-404bc3a493be' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'e508a8ed-e5a9-44ec-a2ae-404bc3a493be'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '29a95458-fe9c-4db2-afae-420ac9025b18' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '29a95458-fe9c-4db2-afae-420ac9025b18'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '3c26584d-a51b-4675-8a40-42c8032b13f7' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '3c26584d-a51b-4675-8a40-42c8032b13f7'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '9d569585-1851-4fad-b7fc-432f9e1687a2' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '9d569585-1851-4fad-b7fc-432f9e1687a2'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '91f2e130-8d7f-4393-a1a7-448e8813c635' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '91f2e130-8d7f-4393-a1a7-448e8813c635'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '37a1df77-8879-450a-aa23-484ab41fae33' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '37a1df77-8879-450a-aa23-484ab41fae33'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '43e16792-979b-402c-aa6b-487c6045044b' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '43e16792-979b-402c-aa6b-487c6045044b'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'f54df7e9-745c-4db9-845c-49d31caaf68a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'f54df7e9-745c-4db9-845c-49d31caaf68a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c9bf354f-3cd1-4d95-a815-4a783a1e26b4' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c9bf354f-3cd1-4d95-a815-4a783a1e26b4'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '1f6197ac-9f44-45a9-9710-4d3658f6de97' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '1f6197ac-9f44-45a9-9710-4d3658f6de97'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '61f6d59d-b5d4-4786-b1e4-4e2bdc1898ec' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '61f6d59d-b5d4-4786-b1e4-4e2bdc1898ec'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '55bca580-3928-4cff-8b86-4e81fe5002be' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '55bca580-3928-4cff-8b86-4e81fe5002be'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '2d50d14b-0adf-4773-b890-523f013d0f72' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '2d50d14b-0adf-4773-b890-523f013d0f72'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '51238136-1b88-4bd1-a02e-5381305d7db7' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '51238136-1b88-4bd1-a02e-5381305d7db7'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '2c3f3eb4-2d38-4e70-9eb0-543632eede8f' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '2c3f3eb4-2d38-4e70-9eb0-543632eede8f'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'f134fd50-79ae-4631-a0a1-558edc31f8e4' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'f134fd50-79ae-4631-a0a1-558edc31f8e4'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '940a1f0b-0e27-45af-bb95-56ca7ca7ed90' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '940a1f0b-0e27-45af-bb95-56ca7ca7ed90'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '54daef56-b459-4b34-a685-573131ba7bb8' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '54daef56-b459-4b34-a685-573131ba7bb8'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '373f3ac0-c389-4a46-957d-57a5cc879839' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '373f3ac0-c389-4a46-957d-57a5cc879839'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '0f115f78-a828-42f0-a575-588cc6d071bd' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '0f115f78-a828-42f0-a575-588cc6d071bd'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '2246a26e-cbcc-4a6c-a9e3-5a58a96feef5' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '2246a26e-cbcc-4a6c-a9e3-5a58a96feef5'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '68f1b710-c4fc-4b7a-89a2-5ad91d983f87' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '68f1b710-c4fc-4b7a-89a2-5ad91d983f87'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'f60da6eb-8e9c-4409-9fdd-5af8388b57e6' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'f60da6eb-8e9c-4409-9fdd-5af8388b57e6'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '55ad1cde-3665-4bab-9266-5bc1aef2de1a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '55ad1cde-3665-4bab-9266-5bc1aef2de1a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'cadea5e0-05b6-4850-bdbe-5c093fa4c768' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'cadea5e0-05b6-4850-bdbe-5c093fa4c768'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c834b878-5fa4-4b89-aabe-5c82061e4c12' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c834b878-5fa4-4b89-aabe-5c82061e4c12'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '67c1b1e9-c369-42fa-9d62-5d1c2d5ed5c1' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '67c1b1e9-c369-42fa-9d62-5d1c2d5ed5c1'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '4ab61a84-9716-4c70-a6ea-5e003bac70af' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '4ab61a84-9716-4c70-a6ea-5e003bac70af'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '1769b862-c788-4203-a256-5e982522bf55' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '1769b862-c788-4203-a256-5e982522bf55'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'b5d9cd92-a98d-4892-a6fc-6010ad6a1eff' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'b5d9cd92-a98d-4892-a6fc-6010ad6a1eff'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'd33ed5a7-9c1d-4456-a297-6078796402bb' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'd33ed5a7-9c1d-4456-a297-6078796402bb'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'ad620ca6-1252-499b-9023-6095d8d0eeac' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'ad620ca6-1252-499b-9023-6095d8d0eeac'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '5da5b2ad-9e7a-442e-a6c3-61d37727ed91' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '5da5b2ad-9e7a-442e-a6c3-61d37727ed91'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '8e49bc6a-d236-404a-b092-625ba76ec4a6' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '8e49bc6a-d236-404a-b092-625ba76ec4a6'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c0ae50dd-0212-4992-b0f6-6372c0b95058' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c0ae50dd-0212-4992-b0f6-6372c0b95058'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a2cd636c-b5ed-4467-9f03-648060bafe99' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a2cd636c-b5ed-4467-9f03-648060bafe99'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'd582b7f0-a1ae-4ffc-908d-65720681da95' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'd582b7f0-a1ae-4ffc-908d-65720681da95'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '4b94f23b-dd34-44eb-b937-66386326f22e' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '4b94f23b-dd34-44eb-b937-66386326f22e'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '400df37d-7bda-46a6-a9da-69804e79651d' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '400df37d-7bda-46a6-a9da-69804e79651d'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '2a65acdc-1b04-4f3c-aa24-6b20a6741b95' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '2a65acdc-1b04-4f3c-aa24-6b20a6741b95'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a18736e7-0960-47a5-a213-6b92e01f5a79' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a18736e7-0960-47a5-a213-6b92e01f5a79'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '50e86ca9-5b2f-4282-8a18-6d3aea13e511' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '50e86ca9-5b2f-4282-8a18-6d3aea13e511'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '541379e4-b5a4-4a9b-a24a-6e00ddbace52' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '541379e4-b5a4-4a9b-a24a-6e00ddbace52'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'ce8b308e-4c97-451a-be08-6f16648cac92' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'ce8b308e-4c97-451a-be08-6f16648cac92'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a96c6bb4-a97e-4d66-9aad-701e485176b7' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a96c6bb4-a97e-4d66-9aad-701e485176b7'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c728f940-38e8-49af-8055-7383c220bb8b' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c728f940-38e8-49af-8055-7383c220bb8b'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'ae20de84-d7fb-40a4-a5a1-73c0cac6fae9' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'ae20de84-d7fb-40a4-a5a1-73c0cac6fae9'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '4302d357-e9de-4abe-9331-748ef9687d28' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '4302d357-e9de-4abe-9331-748ef9687d28'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '900af756-7536-465c-943f-76996ddd8a3b' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '900af756-7536-465c-943f-76996ddd8a3b'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '5a0ff461-a953-42f3-bef6-77ce734c9a00' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '5a0ff461-a953-42f3-bef6-77ce734c9a00'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'de16875a-9db0-4b64-b286-77d28b471344' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'de16875a-9db0-4b64-b286-77d28b471344'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '86eb1fea-6d44-4698-b95f-78b66d04a295' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '86eb1fea-6d44-4698-b95f-78b66d04a295'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'b0c7bc37-775e-4082-a292-78c5d25a2c30' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'b0c7bc37-775e-4082-a292-78c5d25a2c30'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'f7d3b0ef-a795-433d-875c-79d46ec92442' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'f7d3b0ef-a795-433d-875c-79d46ec92442'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a176a4b5-9330-4583-b46f-7a3821ecb53a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a176a4b5-9330-4583-b46f-7a3821ecb53a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '22342ae3-60be-49b2-8946-7a5a76ccfbf5' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '22342ae3-60be-49b2-8946-7a5a76ccfbf5'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '689c9b36-73be-4b1b-a9ed-7ad85bd4c7c1' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '689c9b36-73be-4b1b-a9ed-7ad85bd4c7c1'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '410547ba-7f72-4d77-bb19-7eb041444dba' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '410547ba-7f72-4d77-bb19-7eb041444dba'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'b24d499f-a721-4773-b129-7fde92d9e78f' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'b24d499f-a721-4773-b129-7fde92d9e78f'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '81c70b9e-2cf0-4e02-85a4-8029e81e878b' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '81c70b9e-2cf0-4e02-85a4-8029e81e878b'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '5d5a2b13-f61d-437d-aa79-8125789ae60d' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '5d5a2b13-f61d-437d-aa79-8125789ae60d'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '345e91f5-2391-4043-94d9-83cdceed35c5' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '345e91f5-2391-4043-94d9-83cdceed35c5'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '73659a82-756c-445d-9253-85335e1969cc' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '73659a82-756c-445d-9253-85335e1969cc'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '7f5664de-e7d2-43b1-8ef7-85c80b1deaa0' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '7f5664de-e7d2-43b1-8ef7-85c80b1deaa0'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '5f13ab76-c0f1-4e42-ac5f-8a135d64434e' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '5f13ab76-c0f1-4e42-ac5f-8a135d64434e'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '6fbb9a00-7e32-496c-a3c0-8a2969841e2b' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '6fbb9a00-7e32-496c-a3c0-8a2969841e2b'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '40e4b45e-72e6-44dc-a1f6-8a375e578482' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '40e4b45e-72e6-44dc-a1f6-8a375e578482'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '91ec0bee-ddd3-414a-baf1-8a50a05ee1af' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '91ec0bee-ddd3-414a-baf1-8a50a05ee1af'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '72d6604d-fa7b-4877-9328-8a5a49cd796a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '72d6604d-fa7b-4877-9328-8a5a49cd796a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '3d15b4db-7901-4345-845f-8b087dbf2364' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '3d15b4db-7901-4345-845f-8b087dbf2364'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '4c464f3d-f9a3-45f6-85d0-8b38664d64aa' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '4c464f3d-f9a3-45f6-85d0-8b38664d64aa'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a9ee0ab9-b1ab-4672-b35a-8b8ba5a7a6e7' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a9ee0ab9-b1ab-4672-b35a-8b8ba5a7a6e7'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'cf88502e-96c2-467c-b03b-8c7656e32c4d' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'cf88502e-96c2-467c-b03b-8c7656e32c4d'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '3a3934ab-0069-4fb3-8f0d-8d8abff691e7' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '3a3934ab-0069-4fb3-8f0d-8d8abff691e7'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'd862e0cc-3ef7-4815-ba18-8d98a509e60c' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'd862e0cc-3ef7-4815-ba18-8d98a509e60c'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '44a12dbc-027d-4e0d-b407-8e39a0c81260' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '44a12dbc-027d-4e0d-b407-8e39a0c81260'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '915edca6-d638-4f72-b209-8fc8f2895b61' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '915edca6-d638-4f72-b209-8fc8f2895b61'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '2e29abd1-dae9-4167-9863-8fd926d70bb7' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '2e29abd1-dae9-4167-9863-8fd926d70bb7'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '6f5c6891-20ad-4d1b-926a-91471627efb4' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '6f5c6891-20ad-4d1b-926a-91471627efb4'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '2f05078a-4b71-48d5-85a7-9199f092a6d5' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '2f05078a-4b71-48d5-85a7-9199f092a6d5'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '35b61ae9-2bad-43e7-a853-92dd2213df3d' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '35b61ae9-2bad-43e7-a853-92dd2213df3d'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '702e8638-6ca5-4414-90ea-930cc6de2013' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '702e8638-6ca5-4414-90ea-930cc6de2013'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '1be6a3d7-3106-4dad-9150-93c4c32e2e0b' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '1be6a3d7-3106-4dad-9150-93c4c32e2e0b'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '5f741610-2694-4a6c-a06c-93eb0498bc43' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '5f741610-2694-4a6c-a06c-93eb0498bc43'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '5c3ca7fa-2242-40fd-ab69-941a9d23642f' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '5c3ca7fa-2242-40fd-ab69-941a9d23642f'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '06216de1-ab1a-497d-8fa9-96066ec9a895' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '06216de1-ab1a-497d-8fa9-96066ec9a895'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '30b67a16-353f-4288-b67a-964261bccdb3' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '30b67a16-353f-4288-b67a-964261bccdb3'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '5972f8d9-1905-4aaf-8f6e-973462be58b5' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '5972f8d9-1905-4aaf-8f6e-973462be58b5'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '5185ac87-f5dc-4dea-afd7-9762552ed4f1' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '5185ac87-f5dc-4dea-afd7-9762552ed4f1'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '2ea822f8-53fc-4841-8524-98b0773bc638' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '2ea822f8-53fc-4841-8524-98b0773bc638'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'b6bac563-5145-4db9-bb2e-98dd1852cbc8' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'b6bac563-5145-4db9-bb2e-98dd1852cbc8'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '0e50d6b6-37b3-450c-a106-9b338c3f519e' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '0e50d6b6-37b3-450c-a106-9b338c3f519e'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'b9d9a4e8-b071-4c73-8edc-9b71136cc20d' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'b9d9a4e8-b071-4c73-8edc-9b71136cc20d'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '28c005e2-03ae-49bb-a1d1-9e05760c6589' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '28c005e2-03ae-49bb-a1d1-9e05760c6589'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c34e5fa0-db42-4c14-b05e-9ecf60fe5699' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c34e5fa0-db42-4c14-b05e-9ecf60fe5699'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '48196b72-9c54-4ffb-bc29-a16bdff59661' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '48196b72-9c54-4ffb-bc29-a16bdff59661'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'df0ef452-ccf8-4094-acae-a320f2e58d69' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'df0ef452-ccf8-4094-acae-a320f2e58d69'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '9101e7d4-e799-4f47-9916-a3d931a43a42' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '9101e7d4-e799-4f47-9916-a3d931a43a42'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'e0768870-6b24-4940-a024-a4bcc2e0c827' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'e0768870-6b24-4940-a024-a4bcc2e0c827'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '2e362bc8-47fd-4955-8c0c-a4cb158697ed' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '2e362bc8-47fd-4955-8c0c-a4cb158697ed'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'beb34bb5-e99c-4683-9ee1-a615d71e740c' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'beb34bb5-e99c-4683-9ee1-a615d71e740c'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '4c54214b-7cd7-473c-a5da-a8a139455eea' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '4c54214b-7cd7-473c-a5da-a8a139455eea'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '0f3ae7d7-3bf9-4dda-9be5-a95b15ce65d6' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '0f3ae7d7-3bf9-4dda-9be5-a95b15ce65d6'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '6b546768-f471-451e-8178-a98b6e81af59' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '6b546768-f471-451e-8178-a98b6e81af59'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '4d8ddac0-cd11-4bdd-8794-a9d138a9dc7a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '4d8ddac0-cd11-4bdd-8794-a9d138a9dc7a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'cc2b2099-f11f-4395-aa07-aaadafa193c1' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'cc2b2099-f11f-4395-aa07-aaadafa193c1'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '05422752-cd79-46c6-8b92-ac882f8f988a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '05422752-cd79-46c6-8b92-ac882f8f988a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'f58dfed5-c072-43e6-8ff2-ad1e3da2f787' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'f58dfed5-c072-43e6-8ff2-ad1e3da2f787'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '166a2eae-de64-4a63-8524-ad9523bbf415' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '166a2eae-de64-4a63-8524-ad9523bbf415'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a1e8fbca-8c2d-418e-9e8e-add6cc99ebda' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a1e8fbca-8c2d-418e-9e8e-add6cc99ebda'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '2d6e7f09-2dcb-4449-a339-af49a076872d' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '2d6e7f09-2dcb-4449-a339-af49a076872d'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '6597e3f3-badf-4d09-bc6b-afb0c29cb70a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '6597e3f3-badf-4d09-bc6b-afb0c29cb70a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c99c1253-ce5a-4373-8b84-aff6e9e460d7' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c99c1253-ce5a-4373-8b84-aff6e9e460d7'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a2c9207b-1fdb-438b-b676-b00742931973' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a2c9207b-1fdb-438b-b676-b00742931973'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '7d87a4cc-6ad1-4fec-b8b9-b02cf4f810f4' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '7d87a4cc-6ad1-4fec-b8b9-b02cf4f810f4'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'e6ffade1-998c-46d4-ad12-b06c8b8d50b5' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'e6ffade1-998c-46d4-ad12-b06c8b8d50b5'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c2ff525d-09f6-4b97-bce0-b0b3c273d699' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c2ff525d-09f6-4b97-bce0-b0b3c273d699'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '6d8464e0-2d31-4820-8013-b17a18dfbbb2' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '6d8464e0-2d31-4820-8013-b17a18dfbbb2'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '54e8b570-a2b5-48a8-863e-b2eed1395d1c' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '54e8b570-a2b5-48a8-863e-b2eed1395d1c'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '18d2b7e4-0870-4da0-b489-b4c850c1a153' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '18d2b7e4-0870-4da0-b489-b4c850c1a153'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '409e4044-8e35-45ce-a183-b81eb12ae6d3' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '409e4044-8e35-45ce-a183-b81eb12ae6d3'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '1b00a7d7-41ed-4dc2-9a06-bb54475b07a2' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '1b00a7d7-41ed-4dc2-9a06-bb54475b07a2'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'be11c622-8e40-4243-8a80-bc6bf33ea9d3' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'be11c622-8e40-4243-8a80-bc6bf33ea9d3'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '82a8dd49-0e94-489e-bec3-bce8b91beace' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '82a8dd49-0e94-489e-bec3-bce8b91beace'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '8ac0ec16-25df-4998-81d2-be5683e35af7' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '8ac0ec16-25df-4998-81d2-be5683e35af7'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'f2224218-1af1-40da-a56e-bea615a15242' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'f2224218-1af1-40da-a56e-bea615a15242'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c4bcd372-e5f4-4498-ad36-beede15f5248' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c4bcd372-e5f4-4498-ad36-beede15f5248'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '24731741-eb1c-46c7-b4df-bfc826739e63' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '24731741-eb1c-46c7-b4df-bfc826739e63'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'd90872b5-67f9-45b0-9223-bff28e083816' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'd90872b5-67f9-45b0-9223-bff28e083816'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '4bf8da22-9059-44f4-be2d-c2076a0996d0' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '4bf8da22-9059-44f4-be2d-c2076a0996d0'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '191e2749-b2f4-4457-9670-c296597fdceb' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '191e2749-b2f4-4457-9670-c296597fdceb'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '5142e72b-044b-49a2-9257-c598c6fa7e7a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '5142e72b-044b-49a2-9257-c598c6fa7e7a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'd9475219-b0aa-41c4-9d30-c5a27d9853cc' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'd9475219-b0aa-41c4-9d30-c5a27d9853cc'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '31324c90-8aef-470f-857f-c7007955d9c5' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '31324c90-8aef-470f-857f-c7007955d9c5'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'cf02c676-2026-4820-bb17-c9b5bb799d9a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'cf02c676-2026-4820-bb17-c9b5bb799d9a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '75edce57-9c05-418d-9445-cc6ed0aed3fb' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '75edce57-9c05-418d-9445-cc6ed0aed3fb'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '51edda2f-4e9f-4f8d-ba09-ce9ca1f37979' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '51edda2f-4e9f-4f8d-ba09-ce9ca1f37979'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c25743fe-d375-4719-aadb-cf38727fa81b' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c25743fe-d375-4719-aadb-cf38727fa81b'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a8ca9b6c-1a57-4acf-85b1-cf679a977516' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a8ca9b6c-1a57-4acf-85b1-cf679a977516'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '27904411-cb12-49fe-b57c-cf6c958eb744' AND AccessKey = '00000000-0000-0000-0000-000000000e1f') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-0000-000000000ca1'
+     WHERE DocumentKey = '27904411-cb12-49fe-b57c-cf6c958eb744'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '33852a6b-2898-4f27-a722-cfb7a55123dc' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '33852a6b-2898-4f27-a722-cfb7a55123dc'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c075fc1e-f426-4520-9a60-d139b9176744' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c075fc1e-f426-4520-9a60-d139b9176744'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '4f5c487f-0e9b-4e06-ade5-d1e8dace7e09' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '4f5c487f-0e9b-4e06-ade5-d1e8dace7e09'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '038d3bf3-ffb7-46b7-abcf-d332813dea38' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '038d3bf3-ffb7-46b7-abcf-d332813dea38'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'fe7f4f33-1149-4d3b-a9ee-d3cf64a1cdba' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'fe7f4f33-1149-4d3b-a9ee-d3cf64a1cdba'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'd69c542a-02a8-4eaa-8450-d3f1dc540164' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'd69c542a-02a8-4eaa-8450-d3f1dc540164'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '4abbfa6c-15c4-41f9-a794-d42b1ed605af' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '4abbfa6c-15c4-41f9-a794-d42b1ed605af'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'f57e82cd-d5d8-40bb-a9ca-d9dae8f094f1' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'f57e82cd-d5d8-40bb-a9ca-d9dae8f094f1'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '62855f97-8494-4a47-900e-da72ada4dc08' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '62855f97-8494-4a47-900e-da72ada4dc08'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c5a47135-021c-444f-b698-db5259d01d55' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c5a47135-021c-444f-b698-db5259d01d55'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'def113d1-bce7-4ff2-b83b-dbf54f8b1f03' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'def113d1-bce7-4ff2-b83b-dbf54f8b1f03'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '2a02f32e-bfb5-4deb-9bae-dc7a6bd93ff1' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '2a02f32e-bfb5-4deb-9bae-dc7a6bd93ff1'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'f0da9f46-2721-4bfe-ba8a-dd0d0fba3980' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'f0da9f46-2721-4bfe-ba8a-dd0d0fba3980'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'ae4afc30-491e-4e24-bc92-de64dad9c9c4' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'ae4afc30-491e-4e24-bc92-de64dad9c9c4'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'f3bbccd3-2c04-4173-96f0-ded67c8a18aa' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'f3bbccd3-2c04-4173-96f0-ded67c8a18aa'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a5fb7a46-6416-428e-819c-df83a90068ce' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a5fb7a46-6416-428e-819c-df83a90068ce'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'efb23ccf-61ba-409a-9802-e1440cde249f' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'efb23ccf-61ba-409a-9802-e1440cde249f'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'e253c3d1-f180-4203-95d8-e46ba45fbbcd' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'e253c3d1-f180-4203-95d8-e46ba45fbbcd'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '5cbe700d-a1f4-4397-ad4f-e51a9a83e1c2' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '5cbe700d-a1f4-4397-ad4f-e51a9a83e1c2'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '5a99664e-ba24-4458-a9fb-e6236713dceb' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '5a99664e-ba24-4458-a9fb-e6236713dceb'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'efb4182d-fcd6-4056-bbf2-e90acdac809d' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'efb4182d-fcd6-4056-bbf2-e90acdac809d'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c1e740c9-f535-47df-8c27-ea266df1c213' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c1e740c9-f535-47df-8c27-ea266df1c213'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c7ee1f95-ab78-4230-a207-ea4b44825fc3' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c7ee1f95-ab78-4230-a207-ea4b44825fc3'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'cf5e2895-215f-480b-b059-eaec36fe65aa' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'cf5e2895-215f-480b-b059-eaec36fe65aa'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '9fafd80e-3199-4352-aace-f0107f1ad5da' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '9fafd80e-3199-4352-aace-f0107f1ad5da'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'abb4ec85-8678-4d03-99a5-f0d87ed872c9' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'abb4ec85-8678-4d03-99a5-f0d87ed872c9'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '9c130992-3284-4cb7-b773-f1cb45bbee6a' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '9c130992-3284-4cb7-b773-f1cb45bbee6a'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '693557eb-e1da-4529-8baa-f272d4cc2d4d' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '693557eb-e1da-4529-8baa-f272d4cc2d4d'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'a79ed012-a808-4651-ad9b-f3632b203128' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'a79ed012-a808-4651-ad9b-f3632b203128'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'b01d2616-6f71-4afc-8218-f40c141b1b20' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'b01d2616-6f71-4afc-8218-f40c141b1b20'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'c0d8396a-52f8-4895-93f1-f85e86405ca3' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'c0d8396a-52f8-4895-93f1-f85e86405ca3'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'e6f776e4-1594-446a-9daf-f8c18b0ec1cf' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'e6f776e4-1594-446a-9daf-f8c18b0ec1cf'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'b5f26fec-872b-459c-9de8-fabe67e05673' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'b5f26fec-872b-459c-9de8-fabe67e05673'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'fb894210-dcac-4393-b128-fb965101e795' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'fb894210-dcac-4393-b128-fb965101e795'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '74093f6e-1ab2-4a5a-b1f4-fc0652ddaaa2' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '74093f6e-1ab2-4a5a-b1f4-fc0652ddaaa2'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'd5a47574-af55-452c-bcc4-fc2903a2cb0d' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'd5a47574-af55-452c-bcc4-fc2903a2cb0d'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '2746a465-d6c0-4a2e-9dbd-fce096e33375' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '2746a465-d6c0-4a2e-9dbd-fce096e33375'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = '43ea940b-4514-423e-8fe2-fd6bdcbdaaaa' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = '43ea940b-4514-423e-8fe2-fd6bdcbdaaaa'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'cc1c9d70-81c7-44e7-b50c-fe2ee113e139' AND AccessKey = '00000000-0000-0000-ca00-000000000a01') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000ca1'
+     WHERE DocumentKey = 'cc1c9d70-81c7-44e7-b50c-fe2ee113e139'
+END
+
+
+IF EXISTS (SELECT 1 FROM DocumentMain WHERE DocumentKey = 'b3513eef-49b4-48da-9b55-ff17221a4a76' AND AccessKey = '00000000-0000-0000-ca00-000000000e1f') 
+BEGIN
+    UPDATE DocumentMain
+       SET AccessKey = '00000000-0000-0000-ca00-000000000e02'
+     WHERE DocumentKey = 'b3513eef-49b4-48da-9b55-ff17221a4a76'
+END
+
+go
+
+SET NOCOUNT OFF
+go
+

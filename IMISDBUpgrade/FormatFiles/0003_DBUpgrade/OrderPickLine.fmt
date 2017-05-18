@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLUNIQUEID         1       16      ""   1     OrderPickLineKey                                   ""
+2       SQLUNIQUEID         1       16      ""   2     OrderFulfillmentLineKey                            ""
+3       SQLUNIQUEID         1       16      ""   3     ProductInventoryKey                                ""
+4       SQLNUMERIC          1       19      ""   4     QuantityPicked                                     ""

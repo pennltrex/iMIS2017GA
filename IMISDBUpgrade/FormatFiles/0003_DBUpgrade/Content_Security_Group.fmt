@@ -1,0 +1,4 @@
+10.0
+2
+1       SQLNUMERIC          1       19      ""   1     ContentID                              ""
+2       SQLNCHAR            2       40      ""   2     SecurityGroupCode                      SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,33 @@
+10.0
+31
+1       SQLINT              0       4       ""   1     OrderCheckoutID                              ""
+2       SQLNCHAR            2       128     ""   2     UserID                                       SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       140     ""   3     Name                                         SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       40      ""   4     AddressPurpose                               SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       80      ""   5     Address1                                     SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       80      ""   6     Address2                                     SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       80      ""   7     Address3                                     SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       80      ""   8     City                                         SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       30      ""   9     StateProvince                                SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       20      ""   10    PostalCode                                   SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       50      ""   11    Country                                      SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       20      ""   12    CreditCardType                               SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       200     ""   13    CreditCardNumber                             SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       48      ""   14    CreditCardExpiration                         SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       48      ""   15    CreditCardAuthCode                           SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       80      ""   16    CreditCardName                               SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       80      ""   17    CreditCardAddress                            SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       80      ""   18    CreditCardAddress2                           SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       80      ""   19    CreditCardAddress3                           SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            2       80      ""   20    CreditCardCity                               SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       30      ""   21    CreditCardState                              SQL_Latin1_General_CP1_CI_AS
+22      SQLNCHAR            2       20      ""   22    CreditCardPostalCode                         SQL_Latin1_General_CP1_CI_AS
+23      SQLNCHAR            2       50      ""   23    CreditCardCountry                            SQL_Latin1_General_CP1_CI_AS
+24      SQLNCHAR            2       20      ""   24    ISSUE_DATE                                   SQL_Latin1_General_CP1_CI_AS
+25      SQLNCHAR            2       4       ""   25    ISSUE_NUMBER                                 SQL_Latin1_General_CP1_CI_AS
+26      SQLBIT              1       1       ""   26    ReadyForCheckout                             ""
+27      SQLNCHAR            2       20      ""   27    ShipMethod                                   SQL_Latin1_General_CP1_CI_AS
+28      SQLNCHAR            2       256     ""   28    PurchaseOrder                                SQL_Latin1_General_CP1_CI_AS
+29      SQLNCHAR            2       200     ""   29    Email                                        SQL_Latin1_General_CP1_CI_AS
+30      SQLNCHAR            2       10      ""   30    MemberType                                   SQL_Latin1_General_CP1_CI_AS
+31      SQLNCHAR            2       120     ""   31    BillingCategory                              SQL_Latin1_General_CP1_CI_AS

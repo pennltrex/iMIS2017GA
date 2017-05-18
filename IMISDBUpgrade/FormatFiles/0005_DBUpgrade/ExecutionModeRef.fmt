@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLNCHAR            2       40      ""   1     ExecutionModeCode                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       1000    ""   2     ExecutionModeDesc                      SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       40      ""   3     ExecutionModeName                      SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,23 @@
+11.0
+21
+1       SQLUNIQUEID         1       16      ""   1     OpportunityKey                                           ""
+2       SQLUNIQUEID         1       16      ""   2     OpportunityTypeKey                                       ""
+3       SQLINT              0       4       ""   3     Id                                                       ""
+4       SQLNCHAR            2       400     ""   4     Description                                              SQL_Latin1_General_CP1_CI_AS
+5       SQLUNIQUEID         1       16      ""   5     OpportunityOwnerGroupKey                                 ""
+6       SQLUNIQUEID         1       16      ""   6     OpportunityContactGroupKey                               ""
+7       SQLUNIQUEID         1       16      ""   7     ProspectKey                                              ""
+8       SQLNCHAR            2       400     ""   8     CurrentActionPlanStageName                               SQL_Latin1_General_CP1_CI_AS
+9       SQLDECIMAL          1       19      ""   9     WinProbability                                           ""
+10      SQLNCHAR            4       0       ""   10    ActionManifest                                           SQL_Latin1_General_CP1_CI_AS
+11      SQLINT              0       4       ""   11    OpportunityStatusCode                                    ""
+12      SQLUNIQUEID         1       16      ""   12    SourceCodeKey                                            ""
+13      SQLDATETIME         1       8       ""   13    ExpirationDate                                           ""
+14      SQLUNIQUEID         1       16      ""   14    UpdatedByUserKey                                         ""
+15      SQLDATETIME         0       8       ""   15    UpdatedOn                                                ""
+16      SQLUNIQUEID         1       16      ""   16    CreatedByUserKey                                         ""
+17      SQLDATETIME         0       8       ""   17    CreatedOn                                                ""
+18      SQLUNIQUEID         1       16      ""   18    SystemEntityKey                                          ""
+19      SQLUNIQUEID         1       16      ""   19    AccessKey                                                ""
+20      SQLDATETIME         1       8       ""   20    MarkedForDeleteOn                                        ""
+21      SQLUNIQUEID         1       16      ""   21    ProductKey                                               ""

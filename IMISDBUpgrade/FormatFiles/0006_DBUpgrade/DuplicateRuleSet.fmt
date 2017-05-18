@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLNCHAR            2       6       ""   1     DuplicateRuleSetCode                         SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     DuplicateRuleSetName                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       300     ""   3     DuplicateRuleSetDesc                         SQL_Latin1_General_CP1_CI_AS

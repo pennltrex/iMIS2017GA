@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLNUMERIC          1       19      ""   1     SecurityGroupRuleID                        ""
+2       SQLNCHAR            2       60      ""   2     RuleName                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     ValidationScript                           SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            4       0       ""   4     ValidationSQL                              SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     ValidationDSN                              SQL_Latin1_General_CP1_CI_AS

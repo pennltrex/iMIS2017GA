@@ -1,0 +1,57 @@
+<html>
+<body>
+	<h1>Item Creator</h1>
+    <p>The Item Creator iPart allows new items to be added to the Shop list. It also 
+        creates diverse products for sale, such as mechandise, billing and subscription 
+        items, and publications. In addition, you can create fundraising donation items (gift items) using this content item.</p>
+            <ul>
+			<li><strong>Name</strong> - Enter a name for the content item. 
+			This text only appears during design mode (configuration).</li>
+
+			<li><strong>Title</strong> - Enter the text to display above this 
+			iPart on the rendered page. If blank, no title displays.</li>
+
+			<li><strong>Do not render in design mode</strong> - Enable this option 
+			to prevent content record data from being loaded in the content editor. 
+			This improves performance during design time (configuration).</li>
+
+			<li><strong>Display a border around this content</strong> - Enable this 
+			option to display a border around this iPart on the rendered page.</li>
+			<li><strong>Item type</strong> - Select the item type that will be created:
+                <ul>
+                    <li>
+                        <strong>Both</strong> - Selecting <strong>Both</strong> will enable you to create either a Product or Gift item using this content item.
+                    </li>
+                    <li>
+                        <strong>Product</strong> - Selecting <strong>Product</strong> will allow you to only create a commerce product using this content item.
+                        Out-of-the-box from <strong> Commerce > Add product</strong>, <strong>Product</strong> is selected by default.
+                    </li>
+                    <li>
+                        <strong>Gift item</strong> - Selecting <strong>Gift</strong> will allow you to only create a donation gift item using this content item. Out-of-the-box from 
+                        <strong>Fundraising > Add gift item</strong>, <strong>Gift item</strong> is selected by default.
+                    </li>
+                    
+                </ul>
+                </li>
+		</ul>
+		
+<p><b>Notes</b></p>
+    <ul>
+    <li class="v100only">When a user creates a new item, if the <strong>Item Class = Gift Item</strong>, 
+        the <strong>Suggested Amount</strong> option replaces the <strong>Standard Price</strong> option.</li>
+    <li class="v100only">This iPart supports the passing of the following URL parameters: 
+        <ul>
+            <li><strong>iProductID</strong>: Item ID of the item to edit. (a GUID)</li>
+            <li><strong>iProductCode</strong>: Item Code of the item to edit</li>
+        </ul>
+    </li>
+    <li class="v100only">
+     If <em>no</em> parameters are passed, the iPart will be displayed in "Add" mode. If 
+        <em>both</em> parameters are passed, 
+     only the iProductID will be honored. If <em>either</em> parameter is passed and the matching product exists, the 
+     iPart will be displayed in "Edit" mode. Otherwise, it defaults to "Add" mode. </li>
+    </ul>
+
+    </div>
+</body>
+</html>

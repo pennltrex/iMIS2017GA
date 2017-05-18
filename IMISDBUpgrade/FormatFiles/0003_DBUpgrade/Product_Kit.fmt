@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLINT              0       4       ""   1     SEQN                                   ""
+2       SQLNCHAR            2       62      ""   2     PRODUCT_CODE                           SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       62      ""   3     ITEM_PRODUCT_CODE                      SQL_Latin1_General_CP1_CI_AS
+4       SQLDECIMAL          1       19      ""   4     ITEM_QUANTITY                          ""
+5       SQLNCHAR            2       510     ""   5     DESCRIPTION                            SQL_Latin1_General_CP1_CI_AS
+6       SQLMONEY            0       8       ""   6     PRICE_1                                ""
+7       SQLMONEY            0       8       ""   7     PRICE_2                                ""
+8       SQLNCHAR            2       30      ""   8     TAX_AUTHORITY                          SQL_Latin1_General_CP1_CI_AS
+9       SQLBINARY           2       8       ""   9     TIME_STAMP                             ""

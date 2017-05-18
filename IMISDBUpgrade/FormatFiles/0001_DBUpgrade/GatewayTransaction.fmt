@@ -1,0 +1,16 @@
+10.0
+14
+1       SQLUNIQUEID         1       16      ""   1     GatewayTransactionKey                            ""
+2       SQLINT              0       4       ""   2     GatewayTransactionCode                           ""
+3       SQLINT              0       4       ""   3     GatewayResultCode                                ""
+4       SQLDECIMAL          1       19      ""   4     Amount                                           ""
+5       SQLNCHAR            2       2000    ""   5     VendorRequest                                    SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       2000    ""   6     VendorResult                                     SQL_Latin1_General_CP1_CI_AS
+7       SQLUNIQUEID         1       16      ""   7     CreatedByUserKey                                 ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                                        ""
+9       SQLUNIQUEID         1       16      ""   9     UpdatedByUserKey                                 ""
+10      SQLDATETIME         0       8       ""   10    UpdatedOn                                        ""
+11      SQLUNIQUEID         1       16      ""   11    SystemEntityKey                                  ""
+12      SQLNCHAR            2       12      ""   12    AuthorizationCode                                SQL_Latin1_General_CP1_CI_AS
+13      SQLUNIQUEID         1       16      ""   13    PaymentDetailKey                                 ""
+14      SQLDATETIME         1       8       ""   14    MarkedForDeleteOn                                ""

@@ -1,0 +1,3 @@
+FileTypeRef
+LocalizationCulture
+LocalizationVersion

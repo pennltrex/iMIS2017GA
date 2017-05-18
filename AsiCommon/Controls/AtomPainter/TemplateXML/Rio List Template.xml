@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AtomPainter:Template xmlns:AtomPainter="http://www.advsol.com/AtomPainter" TemplateTypeCode="6">
+	<AtomPainter:TemplatePage>
+		<AtomPainter:TemplateBody>
+			<table cellspacing="0" cellpadding="3" border="0" width="100%">
+				<tbody>
+					<tr><td align="right">Action Button(s)</td></tr>
+					<tr><td>
+						<table class="PanelTable" cellspacing="0" cellpadding="3" width="100%" border="1">
+							<tbody>
+								<tr class="PanelTableHeader">
+									<td nowrap="true">Heading</td>
+									<td nowrap="true">Heading</td>
+									<td nowrap="true">Heading</td>
+									<td nowrap="true">Heading</td>
+									<td nowrap="true">Heading</td>
+									<td nowrap="true" width="50">Delete</td>
+								</tr>
+								<tr class="PanelTableData" id="AtomPainterTRRepeat" repeat="true">
+									<td nowrap="true">Value</td>
+									<td nowrap="true">Value</td>
+									<td nowrap="true">Value</td>
+									<td nowrap="true">Value</td>
+									<td nowrap="true">Value</td>						
+									<td align="middle" nowrap="true">Delete Action</td>
+								</tr>
+							</tbody>
+						</table>		
+					</td></tr>
+				</tbody>
+			</table>
+
+		</AtomPainter:TemplateBody>
+	</AtomPainter:TemplatePage>
+</AtomPainter:Template>
+

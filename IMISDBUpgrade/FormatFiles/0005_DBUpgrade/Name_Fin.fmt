@@ -1,0 +1,16 @@
+11.0
+14
+1       SQLNCHAR            2       20      ""   1     ID                                       SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       30      ""   2     TAX_EXEMPT                               SQL_Latin1_General_CP1_CI_AS
+3       SQLMONEY            0       8       ""   3     CREDIT_LIMIT                             ""
+4       SQLBIT              1       1       ""   4     NO_STATEMENTS                            ""
+5       SQLNCHAR            2       10      ""   5     TERMS_CODE                               SQL_Latin1_General_CP1_CI_AS
+6       SQLTINYINT          0       1       ""   6     BACKORDERS                               ""
+7       SQLNUMERIC          1       19      ""   7     RENEW_MONTHS                             ""
+8       SQLDATETIME         1       8       ""   8     RENEWED_THRU                             ""
+9       SQLNCHAR            2       20      ""   9     BT_ID                                    SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       62      ""   10    TAX_AUTHOR_DEFAULT                       SQL_Latin1_General_CP1_CI_AS
+11      SQLBIT              1       1       ""   11    USE_VAT_TAXATION                         ""
+12      SQLNCHAR            2       40      ""   12    VAT_REG_NUMBER                           SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       50      ""   13    VAT_COUNTRY                              SQL_Latin1_General_CP1_CI_AS
+14      SQLBINARY           2       8       ""   14    TIME_STAMP                               ""

@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLNCHAR            2       100     ""   1     Token                  SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       512     ""   2     UserName               SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         0       8       ""   3     CreatedOn              ""
+4       SQLBIT              1       1       ""   4     Expired                ""

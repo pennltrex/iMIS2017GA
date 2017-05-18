@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     CommunicationLogRecipientAttachmentKey                                           ""
+2       SQLUNIQUEID         1       16      ""   2     CommunicationLogRecipientKey                                                     ""
+3       SQLNCHAR            2       100     ""   3     AttachmentName                                                                   SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       8       ""   4     FileTypeCode                                                                     SQL_Latin1_General_CP1_CI_AS
+5       SQLBINARY           8       0       ""   5     Attachment                                                                       ""
+6       SQLUNIQUEID         1       16      ""   6     CreatedByUserKey                                                                 ""
+7       SQLDATETIME         0       8       ""   7     CreatedOn                                                                        ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                                                                 ""
+9       SQLDATETIME         1       8       ""   9     UpdatedOn                                                                        ""

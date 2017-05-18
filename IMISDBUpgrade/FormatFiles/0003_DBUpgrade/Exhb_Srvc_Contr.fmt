@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLNCHAR            2       20      ""   1     MEET_ID                            SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     NAME_ID                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       60      ""   3     SERVICE                            SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     OFFICIAL_STATUS                    ""
+5       SQLBINARY           2       8       ""   5     TIME_STAMP                         ""

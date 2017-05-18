@@ -1,0 +1,4 @@
+11.0
+2
+1       SQLNCHAR            0       4       ""   1     CustomerExperienceStatusCode                                 SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     CustomerExperienceStatusName                                 SQL_Latin1_General_CP1_CI_AS

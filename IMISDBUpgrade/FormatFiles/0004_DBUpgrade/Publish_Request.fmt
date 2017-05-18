@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLINT              0       4       ""   1     PublishRequestID                           ""
+2       SQLNUMERIC          1       19      ""   2     ContactID                                  ""
+3       SQLNUMERIC          1       19      ""   3     NavMenuID                                  ""
+4       SQLDATETIME         0       8       ""   4     RequestDateTime                            ""
+5       SQLDATETIME         1       8       ""   5     PublishedDateTime                          ""
+6       SQLSMALLINT         0       2       ""   6     PublishPriorityCode                        ""

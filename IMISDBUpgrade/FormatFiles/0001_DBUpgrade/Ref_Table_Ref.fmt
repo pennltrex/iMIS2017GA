@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLNCHAR            2       60      ""   1     RefTableName                   SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            0       4       ""   2     ComponentCode                  SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     EditFilePath                   SQL_Latin1_General_CP1_CI_AS

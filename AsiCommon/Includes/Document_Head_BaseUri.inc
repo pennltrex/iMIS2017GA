@@ -1,0 +1,1 @@
+<!--<base href="<%= Asi.Web.Utilities.GetDocumentBaseUri() %>">-->

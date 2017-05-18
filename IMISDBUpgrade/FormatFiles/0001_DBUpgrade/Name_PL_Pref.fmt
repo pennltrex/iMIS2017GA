@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLNCHAR            2       20      ""   1     NAME_ID                            SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       12      ""   2     PLP_CODE                           SQL_Latin1_General_CP1_CI_AS
+3       SQLTINYINT          0       1       ""   3     ADDR_PREF_IND                      ""
+4       SQLINT              0       4       ""   4     NA_ADDRESS_NUM                     ""
+5       SQLBIT              1       1       ""   5     SUPPRESS_NAME                      ""
+6       SQLBIT              1       1       ""   6     SUPPRESS_LABEL                     ""
+7       SQLNCHAR            2       80      ""   7     SALUTATION_CODE                    SQL_Latin1_General_CP1_CI_AS
+8       SQLBINARY           2       8       ""   8     TIME_STAMP                         ""

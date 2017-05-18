@@ -1,0 +1,14 @@
+10.0
+12
+1       SQLUNIQUEID         1       16      ""   1     PriceSheetKey                                      ""
+2       SQLUNIQUEID         1       16      ""   2     ParentPriceSheetKey                                ""
+3       SQLUNIQUEID         1       16      ""   3     ComparisonPriceSheetKey                            ""
+4       SQLNCHAR            2       100     ""   4     Name                                               SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       400     ""   5     Description                                        SQL_Latin1_General_CP1_CI_AS
+6       SQLINT              0       4       ""   6     Priority                                           ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                                   ""
+8       SQLDATETIME         0       8       ""   8     UpdatedOn                                          ""
+9       SQLUNIQUEID         1       16      ""   9     CreatedByUserKey                                   ""
+10      SQLDATETIME         0       8       ""   10    CreatedOn                                          ""
+11      SQLUNIQUEID         1       16      ""   11    SystemEntityKey                                    ""
+12      SQLDATETIME         1       8       ""   12    MarkedForDeleteOn                                  ""

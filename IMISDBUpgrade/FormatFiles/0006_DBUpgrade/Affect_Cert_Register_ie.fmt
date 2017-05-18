@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLINT              0       4       ""   1     SEQN                     ""
+2       SQLNCHAR            2       20      ""   2     STUDENT_ID               SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     BT_ID                    SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLNCHAR            2       6       ""   1     CurrencyCode                               SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     CultureCode                                SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     RoundingMultipleKey                        ""
+4       SQLNCHAR            2       200     ""   4     Name                                       SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         0       8       ""   5     CreatedOn                                  ""
+6       SQLUNIQUEID         1       16      ""   6     CreatedByUserKey                           ""
+7       SQLDATETIME         0       8       ""   7     UpdatedOn                                  ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                           ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                          ""

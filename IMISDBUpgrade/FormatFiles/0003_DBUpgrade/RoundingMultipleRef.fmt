@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLUNIQUEID         1       16      ""   1     RoundingMultipleKey                          ""
+2       SQLDECIMAL          1       19      ""   2     RoundingMultipleCode                         ""
+3       SQLNCHAR            2       100     ""   3     RoundingMultipleDesc                         SQL_Latin1_General_CP1_CI_AS

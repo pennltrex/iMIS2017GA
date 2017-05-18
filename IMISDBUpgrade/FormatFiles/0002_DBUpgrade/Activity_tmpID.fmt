@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLNCHAR            2       20      ""   1     ID_COL                     SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     UserID_Date                SQL_Latin1_General_CP1_CI_AS
+3       SQLBINARY           2       8       ""   3     TIME_STAMP                 ""

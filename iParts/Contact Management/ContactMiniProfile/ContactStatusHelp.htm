@@ -1,0 +1,121 @@
+﻿<html>
+	<body>
+		<h1>Contact Status</h1>
+		
+			<ul>
+				<li><strong>Name</strong> - Enter a name for the content item. This text appears during design mode (configuration).</li>
+
+                <li><strong>Title</strong> - Enter the text to display above this iPart on the rendered page. If blank, no title displays.</li>
+
+                <li><strong>Do not render in design mode</strong> - Select this option to prevent content record data from being loaded in the 
+                content editor. This improves performance during design time (configuration).</li>
+                <li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class that 
+                    will be applied to the iPart at runtime. Add this CSS class to an appropriate 
+                    style sheet. Using such classes lets you apply special formatting to targeted 
+                    iParts in a reusable way. </li>
+
+                <li><strong>Display a border around this content</strong> - Select this option to display a border around this iPart on the 
+                rendered page.</li>
+                <li><strong>Display content within a collapsible panel</strong> - Enable to allow users to minimize 
+                the panel within the page, to work with dense pages more efficiently.</li>
+                <ul>
+                <li><strong>Show the content as collapsed </strong>- Enable to display the panel minimized by default. 
+                <br /><i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is hidden from view.</li>
+                </ul>
+                </li>
+
+                <li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+            <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                hidden on extra small devices, such as smartphones, where the width of the 
+                screen is less than 768px.</li>
+            <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                small devices, such as tablets, where the width of the screen is greater than 
+                768px and less than 991px.</li>
+            <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                medium devices, such as laptops, where the width of the screen is greater than 
+                992px and less than 1199px.</li>
+            <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                large devices, such as wide computer monitors, where the width of the screen is 
+                greater than or equal to 1200px wide.
+            <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for 
+                a page are displayed, regardless of the <strong>Display on screen sizes (for 
+                responsive themes only)</strong> options that are selected.</li>
+            </ul>
+        </li>
+
+               <li class="v10only"><strong> Limit users who can view data for other contacts</strong> - (enabled by default) If this option is enabled, 
+            only authorized users can view information for contacts other than themselves. This prevents other users from changing the ID in 
+            the URL to access another contact's data. Authorized users include staff and Company Administrators for a group that the contact belongs to. 
+            Disable this option to allow all users to view information for other contacts, such as for a public profile. If this option is disabled, 
+            the system security settings determine whether a user must be logged in to view information for other contacts.</li>
+    
+          <li class="v100only"><strong>Limit users who can view data for other contacts</strong> - (enabled by default) If this option is enabled, 
+            only staff authorized users can view information for contacts other than themselves. This prevents other users from changing the ID in 
+            the URL to access another contact's data. Authorized users include staff and Group Member Administrators for a group that the contact belongs to. 
+            Disable this option to allow all users to view information for other contacts, such as for a public profile. If this option is disabled, 
+            the system security settings determine whether a user must be logged in to view information for other contacts.</li>
+
+				
+				<li>
+					<b>Display ID</b> - Enable to display the contact&#39;s ID.
+				    <ul>
+                        <li><b>ID label</b> - Enter the text you want to display as the ID label.
+				</li>
+                    </ul>
+				</li>
+                <li class="v10only">
+					<b>Display billing category </b>- Enable to display the billing 
+                    category to which the contact belongs.
+				    <ul>
+                        <li class="v10only"><b>Billing category label</b> - Enter the text you want to display as 
+                    the billing category label.
+				</li>
+                    </ul>
+				</li>
+                <li class="v10only">
+					<b>Display join date</b> - Enable to display the contact&#39;s join 
+                    date.
+				    <ul>
+                        <li class="v10only"><b>Join date label</b> - Enter the text you want to display as the 
+                    join date label.
+				</li>
+                    </ul>
+				</li>
+                 <li class="v10only">
+					<b>Display type </b>- Enable to display the contact&#39;s type (for example, 
+                    membership type).
+				    <ul>
+                        <li><b>Type label </b>- Enter the text you want to display as the type label.
+				        </li>
+                    </ul>
+				</li>
+                <li>
+					<b>Display status </b>- Enable to display the status of the contact&#39;s 
+                    membership.
+				    <ul>
+                        <li><b>Status label </b>- Enter the text you want to display as the status label.
+				        </li>
+                    </ul>
+				</li>
+                 <li class="v10only">
+					<b>Display paid thru date </b>- Enable to display the date that the contact&#39;s 
+                    membership has been paid through.
+				    <ul>
+                        <li><b>Paid thru date label </b>- Enter the text you want to display as the paid 
+                    through date&#39;s label.
+				</li>
+                    </ul>
+				</li>
+                <li class="v10only">
+					<b>Allow editing </b>- Enable to allow users to edit the 
+                    contact&#39;s status and billing category. These fields can only be edited if 
+                    you have enabled them to display.</li>
+				 <li class="v100only">
+					<b>Allow editing </b>- Enable to allow users to edit the 
+                    contact&#39;s status. This fields can only be edited if 
+                    you have enabled them to display.</li>
+				
+			</ul>
+		
+	</body>
+</html>

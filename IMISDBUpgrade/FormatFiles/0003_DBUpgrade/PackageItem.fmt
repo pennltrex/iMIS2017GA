@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLUNIQUEID         1       16      ""   1     PackageKey                             ""
+2       SQLUNIQUEID         1       16      ""   2     PackageItemKey                         ""
+3       SQLUNIQUEID         1       16      ""   3     SupplementKey                          ""
+4       SQLDATETIME         0       8       ""   4     UpdatedOn                              ""
+5       SQLUNIQUEID         1       16      ""   5     UpdatedByUserKey                       ""
+6       SQLUNIQUEID         1       16      ""   6     CreatedByUserKey                       ""
+7       SQLDATETIME         0       8       ""   7     CreatedOn                              ""
+8       SQLDATETIME         1       8       ""   8     MarkedForDeleteOn                      ""

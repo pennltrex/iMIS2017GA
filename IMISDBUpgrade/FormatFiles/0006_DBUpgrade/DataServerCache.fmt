@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLINT              0       4       ""   1     DataServerCacheKey                       ""
+2       SQLNCHAR            8       0       ""   2     QuerySignature                           SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     QuerySignatureHash                       ""
+4       SQLNCHAR            8       0       ""   4     SerializedResult                         SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         0       8       ""   5     UpdatedOn                                ""
+6       SQLINT              0       4       ""   6     Duration                                 ""

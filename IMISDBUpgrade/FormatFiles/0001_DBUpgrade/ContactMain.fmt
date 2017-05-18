@@ -1,0 +1,25 @@
+10.0
+23
+1       SQLUNIQUEID         1       16      ""   1     ContactKey                                                   ""
+2       SQLNCHAR            2       4       ""   2     ContactStatusCode                                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       220     ""   3     FullName                                                     SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       220     ""   4     SortName                                                     SQL_Latin1_General_CP1_CI_AS
+5       SQLBIT              1       1       ""   5     IsInstitute                                                  ""
+6       SQLNCHAR            2       24      ""   6     TaxIDNumber                                                  SQL_Latin1_General_CP1_CI_AS
+7       SQLBIT              1       1       ""   7     NoSolicitationFlag                                           ""
+8       SQLNCHAR            2       40      ""   8     SyncContactID                                                SQL_Latin1_General_CP1_CI_AS
+9       SQLDATETIME         0       8       ""   9     UpdatedOn                                                    ""
+10      SQLUNIQUEID         1       16      ""   10    UpdatedByUserKey                                             ""
+11      SQLBIT              1       1       ""   11    IsIDEditable                                                 ""
+12      SQLNCHAR            2       24      ""   12    ID                                                           SQL_Latin1_General_CP1_CI_AS
+13      SQLINT              0       4       ""   13    PreferredAddressCategoryCode                                 ""
+14      SQLBIT              1       1       ""   14    IsSortNameOverridden                                         ""
+15      SQLUNIQUEID         1       16      ""   15    PrimaryMembershipGroupKey                                    ""
+16      SQLNCHAR            2       60      ""   16    MajorKey                                                     SQL_Latin1_General_CP1_CI_AS
+17      SQLUNIQUEID         1       16      ""   17    AccessKey                                                    ""
+18      SQLUNIQUEID         1       16      ""   18    CreatedByUserKey                                             ""
+19      SQLDATETIME         0       8       ""   19    CreatedOn                                                    ""
+20      SQLBIT              1       1       ""   20    TextOnlyEmailFlag                                            ""
+21      SQLUNIQUEID         1       16      ""   21    ContactTypeKey                                               ""
+22      SQLBIT              1       1       ""   22    OptOutFlag                                                   ""
+23      SQLDATETIME         1       8       ""   23    MarkedForDeleteOn                                            ""

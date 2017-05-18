@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLUNIQUEID         1       16      ""   1     RFMKey                                           ""
+2       SQLNCHAR            2       100     ""   2     Name                                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       1000    ""   3     Description                                      SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     UserDocumentKey                                  ""
+5       SQLUNIQUEID         1       16      ""   5     TransactionDocumentKey                           ""
+6       SQLBIT              1       1       ""   6     IsAutoMode                                       ""
+7       SQLINT              1       4       ""   7     NumRecency                                       ""
+8       SQLINT              1       4       ""   8     NumFrequency                                     ""
+9       SQLINT              1       4       ""   9     NumMonetary                                      ""
+10      SQLDATETIME         1       8       ""   10    DateExecuted                                     ""

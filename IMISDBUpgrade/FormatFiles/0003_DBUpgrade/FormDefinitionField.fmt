@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLUNIQUEID         1       16      ""   1     FormDefinitionFieldKey                                       ""
+2       SQLUNIQUEID         1       16      ""   2     FormDefinitionSectionKey                                     ""
+3       SQLINT              0       4       ""   3     FormDefinitionFieldSequence                                  ""
+4       SQLNCHAR            2       100     ""   4     FormDefinitionFieldName                                      SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       800     ""   5     FormDefinitionFieldCaption                                   SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       800     ""   6     FormDefinitionFieldDesc                                      SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       40      ""   7     FormDefinitionFieldType                                      SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            8       0       ""   8     SerializedPropertyDefinition                                 SQL_Latin1_General_CP1_CI_AS

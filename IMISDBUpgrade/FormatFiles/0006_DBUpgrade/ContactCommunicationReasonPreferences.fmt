@@ -1,0 +1,16 @@
+11.0
+14
+1       SQLUNIQUEID         1       16      ""   1     ContactKey                                                                           ""
+2       SQLUNIQUEID         1       16      ""   2     CommunicationReasonKey                                                               ""
+3       SQLINT              1       4       ""   3     PreferredAddressCategoryCode                                                         ""
+4       SQLBIT              1       1       ""   4     NoCommunicationByMailFlag                                                            ""
+5       SQLBIT              1       1       ""   5     NoCommunicationByPhoneFlag                                                           ""
+6       SQLBIT              1       1       ""   6     NoCommunicationByFaxFlag                                                             ""
+7       SQLBIT              1       1       ""   7     NoCommunicationByEmailFlag                                                           ""
+8       SQLUNIQUEID         1       16      ""   8     ContactCommunicationReasonPreferencesKey                                             ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                                                                    ""
+10      SQLBIT              1       1       ""   10    OptInFlag                                                                            ""
+11      SQLUNIQUEID         1       16      ""   11    CreatedByUserKey                                                                     ""
+12      SQLDATETIME         0       8       ""   12    CreatedOn                                                                            ""
+13      SQLUNIQUEID         1       16      ""   13    UpdatedByUserKey                                                                     ""
+14      SQLDATETIME         0       8       ""   14    UpdatedOn                                                                            ""

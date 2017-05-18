@@ -1,0 +1,25 @@
+10.0
+23
+1       SQLUNIQUEID         1       16      ""   1     WorkInvoiceLineKey                                   ""
+2       SQLUNIQUEID         1       16      ""   2     WorkInvoiceKey                                       ""
+3       SQLNCHAR            2       100     ""   3     InvoiceNumber                                        SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              0       4       ""   4     InvoiceLineNumber                                    ""
+5       SQLUNIQUEID         1       16      ""   5     ShipToContactKey                                     ""
+6       SQLNUMERIC          1       19      ""   6     QuantitySold                                         ""
+7       SQLDECIMAL          1       19      ""   7     UnitPrice                                            ""
+8       SQLUNIQUEID         1       16      ""   8     ShipToFullAddressKey                                 ""
+9       SQLINT              1       4       ""   9     PayPriority                                          ""
+10      SQLDECIMAL          1       19      ""   10    ExtendedPrice                                        ""
+11      SQLUNIQUEID         1       16      ""   11    ParentWorkInvoiceLineKey                             ""
+12      SQLINT              1       4       ""   12    OrderLineNumber                                      ""
+13      SQLDECIMAL          1       19      ""   13    ExtendedPriceHome                                    ""
+14      SQLUNIQUEID         1       16      ""   14    ProductKey                                           ""
+15      SQLBIT              1       1       ""   15    IsPledge                                             ""
+16      SQLUNIQUEID         1       16      ""   16    SalesTeamGroupKey                                    ""
+17      SQLUNIQUEID         1       16      ""   17    SourceCodeKey                                        ""
+18      SQLUNIQUEID         1       16      ""   18    UomKey                                               ""
+19      SQLUNIQUEID         1       16      ""   19    ShipMethodKey                                        ""
+20      SQLNCHAR            2       100     ""   20    PromoCode                                            SQL_Latin1_General_CP1_CI_AS
+21      SQLDECIMAL          1       19      ""   21    BasePrice                                            ""
+22      SQLUNIQUEID         1       16      ""   22    PriceSheetKey                                        ""
+23      SQLDATETIME         1       8       ""   23    MarkedForDeleteOn                                    ""

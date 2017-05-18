@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLUNIQUEID         1       16      ""   1     SourceCodeKey                        ""
+2       SQLNCHAR            2       100     ""   2     SourceCode                           SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     ParentUniformKey                     ""
+4       SQLBINARY           2       8       ""   4     CreateDate                           ""

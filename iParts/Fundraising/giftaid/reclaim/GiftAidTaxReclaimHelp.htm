@@ -1,0 +1,75 @@
+﻿<html>
+	<body>
+		<h1>Gift Aid Tax Reclaim </h1>
+        <ul>
+				<li><strong>Name</strong> - Enter a name for the content item. This text appears during design mode (configuration).</li>
+				<li>
+					<strong>HMRC Reference</strong> - Specifies your organization's unique HMRC Reference number.
+				</li>
+				<li>
+					<strong>Transactions per Batch</strong> - Specifies the number of transactions 
+                    to be included in each batch as the claim is generated. The claim is built in 
+                    batches to avoid placing an unnecessary load on the server when generating a 
+                    claim for a large database. Reduce this value if you encounter performance 
+                    problems.
+                    <br />
+                    <em>Note</em>: The number of transactions per batch does not limit the number of 
+                    transactions that can appear in a claim.<br />
+                    <em>Note</em>: If you generate a claim for a large number of transactions, you 
+                    may want to adjust the <strong>Transactions per Batch </strong>and <strong>
+                    TimeOut </strong>settings to fine tune the performance of the claim 
+                    generation. A larger value for <strong>Transactions per Batch </strong>may speed 
+                    up the process but potentially at the expense of reducing performance for other 
+                    users. If you increase the <strong>Transactions per Batch</strong>, you may need 
+                    to also increase the <strong>TimeOut </strong>value to allow the large batches 
+                    to complete.
+				</li>
+				<li>
+					<strong>Time-out</strong> - Specifies the time limit in seconds for generating a 
+                    new tax claim. If you have timeout issues when processing claims with large 
+                    amounts of data, then increase this value and / or reduce the <strong>
+                    Transactions per Batch</strong>.
+                </li>
+                <li>
+					<strong>Field name</strong> - Specifies items to be included or excluded from 
+                    Gift Aid claims. You can select items that are associated with:<ul>
+                        <li><strong>Appeal Types </strong>- Lists your iMIS Appeal Codes. We 
+                            recommend that you exclude any appeal codes that are associated with donations 
+                            where the donor has received some type of  benefit from the gift. For example, 
+                            if an event was held and the supporter made a donation at the event, the UK tax 
+                            authorities may rule that the supporter had received a benefit (i.e. by 
+                            attending the event) and hence the tax could not be recovered. In these 
+                            circumstances, an appeal code created for the event should be associated with 
+                            the donations received at the event. You could then exclude donations associated 
+                            with that appeal code, so that they do not appear in a claim.
+                        </li>
+                        <li><strong>Cash Accounts</strong> - Lists your iMIS Cash Accounts. Certain types of 
+                            payment, such as CAF vouchers and CAF Account payments, must be excluded from a 
+                            tax reclaim as they are already tax efficient - i.e. the tax reclaim is managed 
+                            by the organisation (e.g. CAF) that issues the voucher. If you accept donations 
+                            via such payment methods, you must create cash account codes for them and 
+                            exclude these cash account codes from your reclaim to prevent the tax being 
+                            reclaimed twice.
+                        </li>
+                        <li><strong>Categories</strong> - Lists any custom billing Categories you have set 
+                            up in iMIS. Billing Categories only appear in the list if you have enabled the 
+                            Use Bill Categories option in iMIS and created categories.
+                        </li>
+                        <li><strong>Customer Types</strong> - Lists your iMIS Customer Types. Excluded 
+                            customer types do not appear in tax reclaims. For example, you should exclude 
+                            customer types that relate to non-individual contacts, such as companies 
+                            or charitable trusts. Gift Aid can only be claimed against donations from 
+                            individual supporters.
+                        </li>
+                    </ul>
+				</li>
+			</ul>
+		
+		<p><strong>Notes</strong></p>
+			<ul>
+				<li> 
+					None.
+				</li>
+			</ul>
+	</body>
+</html>

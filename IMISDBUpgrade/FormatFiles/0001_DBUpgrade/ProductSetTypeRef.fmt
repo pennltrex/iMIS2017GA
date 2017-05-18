@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLINT              0       4       ""   1     ProductSetTypeCode                                     ""
+2       SQLNCHAR            2       40      ""   2     ProductSetTypeDesc                                     SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     HasChildOrderLinesFlag                                 ""
+4       SQLBIT              1       1       ""   4     UserSelectionRequiredFlag                              ""

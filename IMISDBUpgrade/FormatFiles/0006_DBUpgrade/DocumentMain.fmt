@@ -1,0 +1,29 @@
+11.0
+27
+1       SQLUNIQUEID         1       16      ""   1     DocumentKey                                            ""
+2       SQLBIT              1       1       ""   2     IsSystem                                               ""
+3       SQLIMAGE            4       0       ""   3     Blob                                                   ""
+4       SQLUNIQUEID         1       16      ""   4     DefaultChildAccessKey                                  ""
+5       SQLUNIQUEID         1       16      ""   5     UpdatedByUserKey                                       ""
+6       SQLDATETIME         0       8       ""   6     UpdatedOn                                              ""
+7       SQLUNIQUEID         1       16      ""   7     LockedByUserKey                                        ""
+8       SQLDATETIME         1       8       ""   8     LockedOn                                               ""
+9       SQLUNIQUEID         1       16      ""   9     AccessKey                                              ""
+10      SQLUNIQUEID         1       16      ""   10    CreatedByUserKey                                       ""
+11      SQLDATETIME         0       8       ""   11    CreatedOn                                              ""
+12      SQLBIT              1       1       ""   12    ContainsChildrenFlag                                   ""
+13      SQLUNIQUEID         1       16      ""   13    DocumentVersionKey                                     ""
+14      SQLNCHAR            2       12      ""   14    DocumentTypeCode                                       SQL_Latin1_General_CP1_CI_AS
+15      SQLINT              0       4       ""   15    DocumentStatusCode                                     ""
+16      SQLNCHAR            2       200     ""   16    DocumentName                                           SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       500     ""   17    DocumentDescription                                    SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       200     ""   18    AlternateName                                          SQL_Latin1_General_CP1_CI_AS
+19      SQLDATETIME         0       8       ""   19    StatusUpdatedOn                                        ""
+20      SQLUNIQUEID         1       16      ""   20    StatusUpdatedByUserKey                                 ""
+21      SQLUNIQUEID         1       16      ""   21    BranchedFromDocumentKey                                ""
+22      SQLUNIQUEID         1       16      ""   22    RelatedDocumentVersionKey                              ""
+23      SQLNCHAR            2       1000    ""   23    VersionComment                                         SQL_Latin1_General_CP1_CI_AS
+24      SQLNCHAR            2       100     ""   24    VersionLabel                                           SQL_Latin1_General_CP1_CI_AS
+25      SQLDATETIME         1       8       ""   25    MarkedForDeleteOn                                      ""
+26      SQLNCHAR            2       200     ""   26    DocumentCode                                           SQL_Latin1_General_CP1_CI_AS
+27      SQLUNIQUEID         1       16      ""   27    SystemKey                                              ""

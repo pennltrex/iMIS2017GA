@@ -1,0 +1,55 @@
+<%@ Control Language="c#" Inherits="Asi.Web.UI.Common.WorkflowManagement.Utilities.AdLibUpdate" CodeFile="AdLibUpdate.ascx.cs" %>
+<table cellpadding="2">
+	<tr>
+		<td colspan="2" align="center"><h3>AdLib&nbsp;Creator</h3>
+		</td>
+	</tr>
+	<tr>
+		<td>Your&nbsp;Name</td>
+		<td>
+			<asp:TextBox id="YourNameTextBox" runat="server"></asp:TextBox></td>
+	</tr>
+	<tr>
+		<td>Your&nbsp;Email</td>
+		<td><asp:TextBox id="YourEmailTextBox" runat="server"></asp:TextBox></td>
+	</tr>
+	<tr>
+		<td>Boy's&nbsp;Name</td>
+		<td><asp:TextBox id="BoyNameTextBox" runat="server"></asp:TextBox></td>
+	</tr>
+	<tr>
+		<td>Girl's&nbsp;Name</td>
+		<td><asp:TextBox id="GirlNameTextBox" runat="server"></asp:TextBox></td>
+	</tr>
+	<tr>
+		<td>Noun</td>
+		<td><asp:TextBox id="Noun1TextBox" runat="server"></asp:TextBox></td>
+	</tr>
+	<tr>
+		<td>Noun</td>
+		<td><asp:TextBox id="Noun2TextBox" runat="server"></asp:TextBox></td>
+	</tr>
+	<tr>
+		<td>Noun</td>
+		<td><asp:TextBox id="Noun3TextBox" runat="server"></asp:TextBox></td>
+	</tr>
+	<tr>
+		<td>Verb</td>
+		<td><asp:TextBox id="VerbTextBox" runat="server"></asp:TextBox></td>
+	</tr>
+	<tr>
+		<td>Verb&nbsp;(Past&nbsp;Tense)</td>
+		<td><asp:TextBox id="PastTenseVerb1TextBox" runat="server"></asp:TextBox></td>
+	</tr>
+	<tr>
+		<td>Verb&nbsp;(Past&nbsp;Tense)</td>
+		<td><asp:TextBox id="PastTenseVerb2TextBox" runat="server"></asp:TextBox></td>
+	</tr>
+	<tr>
+		<td>Verb&nbsp;(Ending&nbsp;in&nbsp;'ing')</td>
+		<td><asp:TextBox id="VerbEndingWithIngTextBox" runat="server"></asp:TextBox></td>
+	</tr>
+	<tr>
+		<td colspan="2"><asp:Label id="MessageLabel" runat="server" ForeColor="Red" Font-Italic="True"></asp:Label></td>
+	</tr>
+</table>

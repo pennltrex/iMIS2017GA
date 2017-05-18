@@ -1,0 +1,20 @@
+11.0
+18
+1       SQLUNIQUEID         1       16      ""   1     PaymentTermsKey                                              ""
+2       SQLNCHAR            2       100     ""   2     PaymentTermsName                                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     PaymentTermsDesc                                             SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              1       4       ""   4     EarlyDiscountDays                                            ""
+5       SQLDECIMAL          1       19      ""   5     EarlyDiscountPercent                                         ""
+6       SQLINT              0       4       ""   6     PaymentIntervalTypeCode                                      ""
+7       SQLINT              0       4       ""   7     PaymentIntervalSize                                          ""
+8       SQLINT              0       4       ""   8     PaymentIntervalCount                                         ""
+9       SQLINT              0       4       ""   9     FirstPaymentDateTypeCode                                     ""
+10      SQLINT              0       4       ""   10    FirstPaymentDateOffset                                       ""
+11      SQLBIT              1       1       ""   11    IsFirstPaymentDateAdjustable                                 ""
+12      SQLBIT              1       1       ""   12    IsSystem                                                     ""
+13      SQLUNIQUEID         1       16      ""   13    CreatedByUserKey                                             ""
+14      SQLDATETIME         0       8       ""   14    CreatedOn                                                    ""
+15      SQLUNIQUEID         1       16      ""   15    UpdatedByUserKey                                             ""
+16      SQLDATETIME         0       8       ""   16    UpdatedOn                                                    ""
+17      SQLUNIQUEID         1       16      ""   17    SystemEntityKey                                              ""
+18      SQLDATETIME         1       8       ""   18    MarkedForDeleteOn                                            ""

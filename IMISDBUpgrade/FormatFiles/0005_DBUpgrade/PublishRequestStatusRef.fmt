@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLINT              0       4       ""   1     PublishRequestStatusCode                             ""
+2       SQLNCHAR            2       60      ""   2     PublishRequestStatusName                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       60      ""   3     PublishRequestStatusDesc                             SQL_Latin1_General_CP1_CI_AS

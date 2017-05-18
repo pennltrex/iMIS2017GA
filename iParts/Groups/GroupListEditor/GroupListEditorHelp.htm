@@ -1,0 +1,140 @@
+<html>
+	
+	<body>
+		<h1>Group List Editor</h1>
+		
+			<ul>
+				<li><strong>Name</strong> - Enter a name for the content item. This text appears during design mode (configuration).</li>
+
+<li><strong>Title</strong> - Enter the text to display above this iPart on the rendered page. If blank, no title displays. 
+    The following variables can be used to display information for the selected 
+    contact: [FirstName], [FullName], [OrgName].</li>
+
+<li><strong>Do not render in design mode</strong> - Select this option to prevent content record data from being loaded in the content editor. This improves performance during design time (configuration).</li>
+<li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class to associate with this iPart. This will add a DIV of the same name around the iPart. Add this CSS class to an appropriate style sheet. Using such classes lets you apply special formatting to targeted iParts in a reusable way.</li>
+<li><strong>Display a border around this content</strong> - Select this option to display a border around this iPart on the rendered page.</li>
+<li class="v10only"><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+<li><strong>Extra-small screens</strong> - When disabled, this content item is hidden on extra small devices, such as smartphones, where the width of the screen is less than 768px.</li>
+<li><strong>Small screens</strong> - When disabled, this content item is hidden on small devices, such as tablets, where the width of the screen is greater than 768px and less than 991px.</li>
+<li><strong>Medium screens</strong> - When disabled, this content item is hidden on medium devices, such as laptops, where the width of the screen is greater than 992px and less than 1199px.</li>
+<li><strong>Large screens</strong> - When disabled, this content item is hidden on large devices, such as wide computer monitors, where the width of the screen is greater than or equal to 1200px wide.
+    <br />
+    <i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for a page are displayed, regardless of the <strong>Display on screen sizes (for responsive themes only) </strong>options that are selected.</li>
+</ul>
+</li>                 
+<li><strong>Hide if user is not the selected contact</strong> - (enabled by default) If this option is enabled, non-authorized 
+                            users will only see this iPart if they are viewing their own information. Authorized users include staff and 
+                           <span class="v10only"> Company Administrators </span> <span class="v100only">Group Member Administrators </span> for a group that the contact belongs to. If a different 
+                            contact is selected, the iPart will be hidden. This prevents other users from changing the ID in the URL to access 
+                            another contact's data. Disable this option to allow all users to view the iPart for other contacts, such as for a public profile. 
+                            If this option is disabled, the system security settings determine whether a user must be logged in to view the iPart for other contacts.</li>
+			    
+                <li>
+                    <b>Display group title</b> - Select this option to display the group title.
+                    This option is enbled by default.</li>			    
+                <li><b>Display profile image</b> - Select this option to display profile images as 
+                        thumbnails in the group list. </li>
+                    <li><b>Show inactive memberships</b> - Select this option to display both current and expired members within a group list (if this option is not selected, only members with current memberships will be displayed). </li>
+                    <li><strong>Allow expanding lists</strong> - Select this option to display an expandable list of groups and group details to appear. When enabled, this option allows users to see all the children by expanding a group to see additional detail.</li>
+                <li class="v100only"><strong>Show membership expiration date - </strong>When enabled, this option limits the information visible to the public in the Membership Group Display to show membership expiration dates only to the logged in user and to staff. </li>
+                <li class="v10only"><strong> Allow editing</strong> - Select this option to allow users to add, edit, or delete members within any group listed. 
+                            Some restrictions apply: Only Company Administrators, Staff (Full and Casual users), and System Administrators can add 
+                            members to a group and edit membership information if available.</li>
+                    <li class="v100only"><strong> Allow editing</strong> - Select this option to allow users to add, edit, or delete members within any group listed. 
+                            Some restrictions apply: Only Group Administrators, Group Member Administrators, Staff, and System Administrators can add or remove members 
+                            from a group and edit membership information if available.</li>
+                <ul><li><b>Link text for adding a contact</b> - Enter the text to display on the 
+                        link a user clicks to add group members.</li>
+                        </ul>
+                </li>
+
+                            
+	                <li><b>Link to</b>
+	                    <ul>                                    
+                            <li><b>Profile</b> - Select this option so 
+                                that users can click names in the list to open the contact&#39;s profile page. <span class="v10only">The 
+                                page that opens when they click the link depends on the rules defined in the <i>Party.aspx</i> file, 
+                                located by default in <i>C:\Program Files\ASI\iMIS\Net</i>.
+                                </span class="v10only"></li>
+                            <li><b>Membership details</b> - Select this option so that users can click names in the list to open the <i>Group Member Detail</i> 
+                                window, from which you can view the contact&#39;s group membership 
+                                information. If you want users to have easy access to both the account pages and 
+                                the <i>Group Member Detail</i> window, enable both this option and <i>Provide option 
+                                to view and edit membership details</i>.&nbsp;&nbsp;
+                            </li>
+                            <li><b>Both of the above</b> - Select this option so that users can click names in the list to open the contact&#39;s profile page
+                                or users can click on the membership portion of each list item to view the detailed group information.
+                            </li>
+                        </ul>
+                <li><b>Is the page context (parent) for this iPart a group?</b> Choose <b>Yes</b> 
+                        if the context for this iPart is a specific group, and you wish to display its 
+                        group members and sub-groups. Choose <b>No</b> for any other type of 
+                        context.
+                        <span class="v100only">For example, choose <b>Yes</b>
+                        to display all members of a chapter and any committee groups within that 
+                        chapter.</span>
+                    <li><b>URL parameter for parent ID </b>- Leave this field blank, unless you want to 
+                        change which URL parameter the iPart uses for a parent ID value. By default, the iPart looks for a <b>UniformKey</b> 
+                        or <b>iUniformKey</b> parameter value. If neither is available, the iPart uses the 
+                        selected or signed-in user as the <b>parent ID</b>.</li>
+                    <li><b>Display a list of</b>
+                        <ul>                                    
+                            <li><b>Groups owned by the parent ID and their members</b> - Select this option to display a list of groups owned by a 
+                                particular parent ID, and the members of those groups. If multiple groups are owned by the parent ID, initially 
+                                only the groups are listed, but each group can be expanded to display 
+                                members. If only a single group is owned by the parent ID, initially all of the 
+                                group members are listed. For example, if you add the Group List Editor to an 
+                                organization contact&#39;s account page (and choose the relevant group type), it will automatically display an organization roster 
+                                (a group member list).
+                            </li>
+                            <li><b>Groups that the parent ID is member of</b> - Select this option to display a list of groups that the parent ID belongs to (memberships).
+                            </li>
+                            <li><b>Both of the above (use this option to display two-way relationships)</b> - Select this option to 
+                            display both groups (and group members) that the parent ID owns AND groups that the parent ID belongs to. This option should be used to 
+                            display relationships between two entities.
+                            </li>
+                        </ul>
+                        <i>Note:</i> The <b>Display a list of</b> section displays only when the page context (parent) for this iPart is not a group.</li>
+                     </li>
+                     <li class="v100only"><b>Automatically create a group if one does not exist</b> - Select this option to allow users to add members to a group 
+                      even if a group of that type does not already exist. This option is only available if <b>Allow editing</b> is enabled and <b>Groups that the 
+                      parent ID is a member of</b> is NOT selected.
+                      For example, you can choose to only display a chapter&#39;s committees. If no committees exist yet, no groups are listed, 
+                      but a user can click the add link to automatically create a committee and add members. 
+                      Select this mode if you want to display an organization roster, so that the organization group can be auto-created when you add the first member. 
+                        <ul>
+                            <li><b>Group owner type</b> - Select the type of owner for the group that will be created automatically. Depending on how your 
+                            system is set up, the available owner types can include broad categories such as Events, Contacts, Groups, and Public. </li>
+                            <li><b>Group type to auto-create</b> - Select the type of group which will be created automatically when users add members. When you 
+                            select a group type for this option, it is automatically added to the list of group types to include.
+                            </li>
+                        </ul>
+                     </li>                                                                    				
+				    <li><b>Choose the group types to include</b> - Select the group types you wish to include in the list of groups, sub-groups, and/or group memberships. 
+                    For example, if a chapter has both committee and club sub-groups, you can select one or both to be displayed within the iPart. If you wish to display 
+                    a contact's memberships in organizations, committees, and chapters, you can choose all of these group types.</li>
+                    </ul>
+			
+			
+		
+		<p><strong>Notes</strong></p>
+			<ul>
+				<li>A good use for this iPart is to add it to a page that already displays 
+                    information about a contact, event, or some other type of group page. In most 
+                    cases, the Group List Editor will detect the group, parent, or contact ID in the 
+                    URL and display a group list in the mode you select. If you add the iPart to a 
+                    group page, and a group list does not display as you would expect, check the URL 
+                    of the web page to determine if it uses a URL parameter other than <b>UniformKey</b> or 
+                    <b>iUniformKey</b>. 
+                </li>
+                <li class="v100only"> 
+					You can create, edit, and delete group types, roles, and statuses 
+                    from <b>Tools &gt; Setup &gt; Groups</b>. A group type that represents a two-way relationship can be defined as a Relationship Group.</li>
+                <li> 
+					                    You can hard code URL parameter values using a 
+                    navigation item. From <b>Site Builder &gt; Manage sitemaps</b>, create or edit a 
+                    navigation item and in the <b>URL Parameters</b> field, enter a parameter name and 
+                    value. For example, ID=123.</li>
+			</ul>
+	</body>
+</html>

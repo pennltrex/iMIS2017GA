@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLUNIQUEID         1       16      ""   1     NavigationKey                        ""
+2       SQLUNIQUEID         1       16      ""   2     OrganizationKey                      ""
+3       SQLNCHAR            2       200     ""   3     Marker                               SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     PageSet                              SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       1000    ""   5     URL                                  SQL_Latin1_General_CP1_CI_AS
+6       SQLUNIQUEID         1       16      ""   6     AccessAreaKey                        ""
+7       SQLUNIQUEID         1       16      ""   7     CreatedByUserKey                     ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                            ""
+9       SQLUNIQUEID         1       16      ""   9     UpdatedByUserKey                     ""
+10      SQLDATETIME         0       8       ""   10    UpdatedOn                            ""

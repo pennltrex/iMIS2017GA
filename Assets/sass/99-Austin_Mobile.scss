@@ -1,0 +1,48 @@
+﻿/* Mobile verison of the Austin Theme for iMIS */
+
+// Core variables and mixins
+@import "breakpoint"; // Sass plugin used to generate responsive media queries
+@import "mixins";
+
+// Variable overrides
+$view-type:                 Mobile;
+$grid-gutter-width:         30px;
+$font-size-h1:              260%;
+
+@import "Cities/variables/variables_Austin";
+// import base variables after theme variables so calculations of dependent variables
+// are based on the theme's variable settings
+@import "variables";
+@import "breakpoint-setup";
+
+// Mobile-specific style overrides
+@import "shared/mobile";
+
+// Typography and other basic setup
+@import "shared/basics";
+
+// Master page elements
+@import "shared/masterpage_styles";
+@import "shared/modules/footer";
+
+// Navigation controls
+@import "Cities/navigation/primary-default";
+@import "Cities/navigation/auxiliary-default";
+
+// Other components
+@import "shared/icon_sprite";
+@import "shared/forms";
+@import "shared/buttons_flat";
+@import "shared/modules/other-iParts";
+@import "shared/modules/search";
+@import "shared/modules/events-products";
+@import "shared/modules/progress-tracker";
+@import "shared/modules/query-menu";
+@import "shared/modules/cart-charges";
+@import "Cities/telerik_overrides";
+@import "Cities/jumbotron";
+@import "shared/modules/communities";
+@import "shared/donor_site";
+@import "Cities/misc";
+@import "shared/panel_callouts";
+@import "shared/dashboards";

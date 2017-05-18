@@ -1,0 +1,13 @@
+10.0
+11
+1       SQLINT              0       4       ""   1     ErrorID                                      ""
+2       SQLNCHAR            2       4096    ""   2     StackTrace                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       2048    ""   3     FriendlyErrorMessage                         SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       2048    ""   4     ErrorType                                    SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     ErrorDate                                    ""
+6       SQLNCHAR            2       512     ""   6     HttpRefer                                    SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       1024    ""   7     HttpPath                                     SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       256     ""   8     HttpHost                                     SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       4096    ""   9     HttpAll                                      SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       120     ""   10    UserID                                       SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       4096    ""   11    CookieData                                   SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLNCHAR            2       64      ""   1     PRODUCT_CODE                 SQL_Latin1_General_CP1_CI_AS
+2       SQLDATETIME         0       8       ""   2     MEETING_DATE                 ""
+3       SQLNCHAR            4       0       ""   3     NOTE                         SQL_Latin1_General_CP1_CI_AS
+4       SQLIMAGE            4       0       ""   4     OBJECT                       ""
+5       SQLINT              0       4       ""   5     UF_1                         ""
+6       SQLINT              0       4       ""   6     UF_2                         ""
+7       SQLNCHAR            2       510     ""   7     UF_3                         SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       510     ""   8     UF_4                         SQL_Latin1_General_CP1_CI_AS
+9       SQLBINARY           2       8       ""   9     TIME_STAMP                   ""

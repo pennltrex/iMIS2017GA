@@ -1,0 +1,224 @@
+
+/*****************************************/
+/***      VENUS MENU STYLE SHEET       ***/
+/*****************************************/
+/**
+ * Venus styles for PageNavR (Telerik RadMenu)
+ *
+ * This document contains Venus styles for the PageNavR/RadMenu control.
+ * 
+ * TABLE OF CONTENTS:
+ * RadMenu Default
+ *  * Root items
+ *  * Submenu items
+ *  *  * expand arrows
+ *  *  * rtl
+ *  * Submenu offsets
+ *  * Scrolling arrows
+ *  * Separators
+ */
+
+/* ######################## */
+/*     RadMenu Styling      */
+/* ######################## */
+
+/* <RadMenu / Default> */
+
+.PrimaryNavPanel {
+    background: url("images/navigation.png") no-repeat scroll 0 0 transparent;
+    height: 66px;
+    margin-left: -23px;
+    padding: 0 23px;
+    width: 994px;
+}
+.RadMenu_Venus {
+    width: 100%;
+}
+.RadMenu_Venus .rmRootGroup {
+    background: url("images/navigation.png") no-repeat scroll 0 0 #BF4D28;
+    height: 44px;
+}
+.RadMenu_Venus .rmText {
+    color: #FFFFFF;
+    font: bold 138.46%/2.4444 'Open Sans Condensed',Arial,sans-serif; /* font-size = 18px, line-height = 44px */
+}
+.RadMenu_Venus a.rmLink, .RadMenu_Venus a.rmDisabled, .RadMenu_Venus a.rmDisabled:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+.RadMenu_Venus a.rmRootLink:hover, .RadMenu_Venus a.rmRootLink.rmFocused, .RadMenu_Venus a.rmRootLink.rmSelected {
+    background: url("images/navselectbg.png") repeat-x scroll 0 0 #E6AC27;
+    border-left: 1px solid #B88820;
+    border-right: 1px solid #B88820;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+.RadMenu_Venus .rmHorizontal .rmRootLink span.rmText {
+    display: inline;
+    padding-left: 12px;
+}
+.RadMenu_Venus_rtl .rmRootLink span.rmText {
+    padding-right: 12px;
+}
+.RadMenu_Venus_Context_rtl .rmRootLink span.rmText {
+    padding-right: 28px;
+}
+.RadMenu_Venus .rmHorizontal a.rmRootLink {
+    padding-left: 0;
+}
+.RadMenu_Venus_rtl a.rmRootLink {
+    margin-left: 0;
+    padding: 0;
+}
+.RadMenu_Venus .rmHorizontal .rmItem > a.rmRootLink {
+    width: 99%;
+}
+.rmRootLink {
+	background: url("images/navigation_slice.png") repeat-x scroll 0 0 #BE4628;
+}
+.RadMenu_Venus ul.rmHorizontal .rmLeftImage {
+    margin: 4px -4px 0 6px;
+}
+.RadMenu_Venus_rtl ul.rmHorizontal .rmLeftImage {
+    margin: 4px 6px 0 -4px;
+}
+.RadMenu_Venus .rmVertical a.rmLink {
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+.RadMenu_Venus .rmVertical a.rmLink:hover, .RadMenu_Venus .rmVertical a.rmFocused, .RadMenu_Venus .rmVertical a.rmSelected, .RadMenu_Venus .rmVertical a.rmExpanded, .RadMenu_Venus .rmVertical a.rmExpanded:hover {
+    border-color: #AC4524;
+    border-style: solid;
+    border-width: 1px 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.RadMenu_Venus .rmVertical .rmFirst a.rmLink:hover, .RadMenu_Venus .rmVertical .rmFirst a.rmFocused, .RadMenu_Venus .rmVertical .rmFirst a.rmSelected, .RadMenu_Venus .rmVertical .rmFirst a.rmExpanded, .RadMenu_Venus .rmVertical .rmFirst a.rmExpanded:hover {
+    border-top-width: 0;
+    padding-bottom: 0;
+    padding-top: 1px;
+}
+.RadMenu_Venus .rmVertical .rmLast a.rmLink:hover, .RadMenu_Venus .rmVertical .rmLast a.rmFocused, .RadMenu_Venus .rmVertical .rmLast a.rmSelected, .RadMenu_Venus .rmVertical .rmLast a.rmExpanded, .RadMenu_Venus .rmVertical .rmLast a.rmExpanded:hover {
+    border-bottom-width: 0;
+    padding-bottom: 1px;
+    padding-top: 0;
+}
+.RadMenu_Venus .rmVertical .rmItem a.rmDisabled:hover {
+    border-width: 0;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+.RadMenu_Venus a.rmDisabled, .RadMenu_Venus a.rmDisabled:hover {
+    background-color: transparent;
+    color: #CCCCCC;
+}
+.RadMenu_Venus .rmGroup, .RadMenu_Venus .rmMultiColumn, .RadMenu_Venus .rmGroup .rmVertical {
+    background: none repeat scroll 0 0 #BF4D28;
+    border: 1px solid #AC4524;
+}
+.RadMenu_Venus .rmGroup .rmItem .rmLink .rmText {
+    padding-left: 15px;
+    padding-right: 54px;
+}
+.RadMenu_Venus .rmTopFix, .RadMenu_Venus .rmBottomFix, .RadMenu_Venus .rmRoundedCorners .rmGroup .rmItem, .RadMenu_Venus .rmRoundedCorners li.rmFirstGroupColumn .rmItem, .RadMenu_Venus .rmRoundedCorners .rmFirstGroupColumn li.rmFirstGroupColumn .rmItem, .RadMenu_Venus .rmRoundedCorners ul.rmHorizontal .rmFirst, .RadMenu_Venus_Context.rmRoundedCorners .rmGroup .rmItem, .RadMenu_Venus_Context.rmRoundedCorners ul.rmHorizontal .rmFirst {
+    background-color: #BF4D28;
+}
+* html .rmRoundedCorners_Venus .rmGroup .rmItem, * html .rmRoundedCorners_Venus ul.rmHorizontal .rmFirst {
+    background-color: #BF4D28;
+}
+.RadMenu_Venus .rmRoundedCorners .rmGroupColumn {
+    background-color: #BF4D28;
+}
+.RadMenu_Venus .rmTopFix, .RadMenu_Venus .rmBottomFix, .RadMenu_Venus .rmRoundedCorners .rmGroup .rmFirst, .RadMenu_Venus_Context.rmRoundedCorners .rmGroup .rmFirst, .rmRoundedCorners_Venus .rmGroup .rmFirst {
+    border-color: #979797;
+}
+.RadMenu_Venus .rmRoundedCorners .rmScrollWrapContainer .rmTopFix, .RadMenu_Venus .rmRoundedCorners .rmScrollWrapContainer .rmBottomFix, .RadMenu_Venus_Context.rmRoundedCorners .rmScrollWrapContainer .rmTopFix, .RadMenu_Venus_Context.rmRoundedCorners .rmScrollWrapContainer .rmBottomFix {
+    background: none repeat scroll 0 0 #BF4D28;
+}
+* html .rmRoundedCorners_Venus .rmScrollWrapContainer .rmTopFix, * html .rmRoundedCorners_Venus .rmScrollWrapContainer .rmBottomFix {
+    background: none repeat scroll 0 0 #BF4D28;
+}
+.RadMenu_Venus .rmRoundedCorners .rmScrollWrapContainer .rmTopArrow, .RadMenu_Venus .rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow, .RadMenu_Venus .rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow, .RadMenu_Venus .rmRoundedCorners .rmScrollWrapContainer .rmRightArrow, .RadMenu_Venus_Context.rmRoundedCorners .rmScrollWrapContainer .rmTopArrow, .RadMenu_Venus_Context.rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow, .RadMenu_Venus_Context.rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow, .RadMenu_Venus_Context.rmRoundedCorners .rmScrollWrapContainer .rmRightArrow {
+    background-color: #BF4D28;
+    border: 0 none;
+}
+* html .rmRoundedCorners_Venus .rmScrollWrapContainer .rmTopArrow, * html .rmRoundedCorners_Venus .rmScrollWrapContainer .rmBottomArrow, * html .rmRoundedCorners_Venus .rmScrollWrapContainer .rmLeftArrow, * html .rmRoundedCorners_Venus .rmScrollWrapContainer .rmRightArrow {
+    background-color: #BF4D28;
+    border: 0 none;
+}
+.RadMenu_Venus .rmRootGroup li.rmItem .rmGroup {
+    padding-bottom: 0;
+}
+.RadMenu_Venus .rmScrollWrap .rmVertical {
+    border: 0 none;
+}
+.RadMenu_Venus .rmGroup .rmItem a.rmLink, .RadMenu_Venus .rmGroup .rmItem a.rmLink:hover, .RadMenu_Venus .rmGroup .rmItem a.rmFocused, .RadMenu_Venus .rmGroup .rmItem a.rmSelected, .RadMenu_Venus .rmGroup .rmItem a.rmExpanded {
+    border: 0 none;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.RadMenu_Venus .rmGroup .rmLast a.rmLink, .RadMenu_Venus .rmGroup .rmLast a.rmLink:hover, .RadMenu_Venus .rmGroup .rmLast a.rmFocused, .RadMenu_Venus .rmGroup .rmLast a.rmSelected, .RadMenu_Venus .rmGroup .rmLast a.rmExpanded {
+    padding-bottom: 1px;
+}
+.RadMenu_Venus .rmGroup .rmText {
+    font-size: 123%; /* 16px */
+    line-height: 2.1875; /* 35px */
+}
+.RadMenu_Venus .rmGroup a.rmLink:hover, .RadMenu_Venus .rmGroup a.rmFocused, .RadMenu_Venus .rmGroup a.rmSelected, .RadMenu_Venus .rmGroup a.rmExpanded {
+    background-color: #D69F25;
+}
+.RadMenu_Venus .rmRootGroup .rmExpandRight, .RadMenu_Venus .rmGroup .rmExpandDown, .RadMenu_Venus_Context .rmGroup .rmExpandRight, .RadMenu_Venus .rmRootGroup .rmItem a.rmDisabled .rmExpandRight, .RadMenu_Venus .rmGroup .rmItem a.rmDisabled .rmExpandDown, .RadMenu_Venus .rmRootGroup .rmItem a.rmDisabled:hover .rmExpandRight, .RadMenu_Venus .rmGroup .rmItem a.rmDisabled:hover .rmExpandDown {
+    background-image: url("images/navrightarrow.png");
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+}
+.RadMenu_Venus .rmSlide {
+    margin: 0 0 0 -1px;
+}
+.RadMenu_Venus .rmVertical .rmSlide, .RadMenu_Venus .rmSlide .rmSlide, .RadMenu_Venus_Context .rmGroup .rmSlide {
+    margin: 0 0 0 -5px;
+}
+.RadMenu_Venus_rtl .rmSlide {
+    margin: 0;
+}
+.RadMenu_Venus_rtl .rmFirst .rmSlide {
+    margin-left: 1px;
+}
+.RadMenu_Venus_rtl .rmVertical .rmSlide, .RadMenu_Venus_rtl .rmSlide .rmSlide, .RadMenu_Venus_Context_rtl .rmGroup .rmSlide {
+    margin: 0 0 0 5px;
+}
+.RadMenu_Venus .rmLeftArrow, .RadMenu_Venus .rmRightArrow {
+    background-color: #E6E6E6;
+}
+.RadMenu_Venus .rmLeftArrow {
+    background-position: -8px -312px;
+    border-right: 1px solid #828282;
+}
+.RadMenu_Venus .rmRightArrow {
+    background-position: -482px -216px;
+    border-left: 1px solid #828282;
+}
+.RadMenu_Venus .rmTopArrow, .RadMenu_Venus .rmBottomArrow, .RadMenu_Venus .rmGroup .rmLeftArrow, .RadMenu_Venus .rmGroup .rmRightArrow {
+    background-color: #666666;
+}
+.RadMenu_Venus .rmTopArrow {
+    background-position: 50% -367px;
+    border-bottom: 1px solid #828282;
+}
+.RadMenu_Venus .rmBottomArrow {
+    background-position: 50% -391px;
+    border-top: 1px solid #828282;
+}
+.RadMenu_Venus .rmHorizontal .rmSeparator .rmText, .RadMenu_Venus .rmVertical .rmHorizontal .rmSeparator .rmText {
+    background-color: #A8A8A8;
+    height: 22px;
+    margin: 1px 0 0;
+    width: 1px;
+}
+.RadMenu_Venus_Context .rmSeparator .rmText, .RadMenu_Venus .rmHorizontal .rmGroup .rmSeparator .rmText, .RadMenu_Venus .rmVertical .rmHorizontal .rmGroup .rmSeparator .rmText {
+    background-color: transparent;
+    background-position: 0 -406px;
+}
+.RadMenu_Venus .rmRootGroup .rmVertical .rmSeparator .rmText, .RadMenu_Venus_Context .rmVertical .rmSeparator .rmText {
+    margin: 1px 5px !important;
+}

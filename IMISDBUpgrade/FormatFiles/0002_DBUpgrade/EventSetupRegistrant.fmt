@@ -1,0 +1,34 @@
+10.0
+32
+1       SQLNCHAR            2       30      ""   1     EventCode                                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       512     ""   2     RegistrantPageMessage                          SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       48      ""   3     FirstName                                      SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     FirstNameEnabled                               ""
+5       SQLBIT              1       1       ""   5     FirstNameRequired                              ""
+6       SQLNCHAR            2       48      ""   6     MiddleInitial                                  SQL_Latin1_General_CP1_CI_AS
+7       SQLBIT              1       1       ""   7     MiddleInitialEnabled                           ""
+8       SQLBIT              1       1       ""   8     MiddleInitialRequired                          ""
+9       SQLNCHAR            2       48      ""   9     LastName                                       SQL_Latin1_General_CP1_CI_AS
+10      SQLBIT              1       1       ""   10    LastNameEnabled                                ""
+11      SQLBIT              1       1       ""   11    LastNameRequired                               ""
+12      SQLNCHAR            2       48      ""   12    Address                                        SQL_Latin1_General_CP1_CI_AS
+13      SQLBIT              1       1       ""   13    AddressEnabled                                 ""
+14      SQLBIT              1       1       ""   14    AddressRequired                                ""
+15      SQLNCHAR            2       48      ""   15    City                                           SQL_Latin1_General_CP1_CI_AS
+16      SQLBIT              1       1       ""   16    CityEnabled                                    ""
+17      SQLBIT              1       1       ""   17    CityRequired                                   ""
+18      SQLNCHAR            2       48      ""   18    StateProvince                                  SQL_Latin1_General_CP1_CI_AS
+19      SQLBIT              1       1       ""   19    StateEnabled                                   ""
+20      SQLBIT              1       1       ""   20    StateRequired                                  ""
+21      SQLNCHAR            2       48      ""   21    PostalCode                                     SQL_Latin1_General_CP1_CI_AS
+22      SQLBIT              1       1       ""   22    PostalCodeEnabled                              ""
+23      SQLBIT              1       1       ""   23    PostalCodeRequired                             ""
+24      SQLNCHAR            2       48      ""   24    Phone                                          SQL_Latin1_General_CP1_CI_AS
+25      SQLBIT              1       1       ""   25    PhoneEnabled                                   ""
+26      SQLBIT              1       1       ""   26    PhoneRequired                                  ""
+27      SQLNCHAR            2       48      ""   27    Email                                          SQL_Latin1_General_CP1_CI_AS
+28      SQLBIT              1       1       ""   28    EmailEnabled                                   ""
+29      SQLBIT              1       1       ""   29    EmailRequired                                  ""
+30      SQLNCHAR            2       50      ""   30    Country                                        SQL_Latin1_General_CP1_CI_AS
+31      SQLBIT              1       1       ""   31    CountryEnabled                                 ""
+32      SQLBIT              1       1       ""   32    CountryRequired                                ""

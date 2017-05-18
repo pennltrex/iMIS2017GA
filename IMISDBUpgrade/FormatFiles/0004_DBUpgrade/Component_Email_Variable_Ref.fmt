@@ -1,0 +1,10 @@
+11.0
+8
+1       SQLNCHAR            0       4       ""   1     ComponentCode                                              SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            0       4       ""   2     ComponentEmailCode                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       200     ""   3     ComponentEmailVariableCode                                 SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            0       2       ""   4     CustomForClientFlag                                        SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       4000    ""   5     ComponentEmailVariableDesc                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       200     ""   6     CodeVariableName                                           SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       2       ""   7     CustomVariableForClientFlag                                SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       2000    ""   8     DefaultValue                                               SQL_Latin1_General_CP1_CI_AS

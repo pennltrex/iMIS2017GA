@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Email Template Example</title>
+</head>
+    <body>
+        <table cellspacing="5" cellpadding="1">
+            <tr style="[LetterheadName.DisplayValue]">
+                <td colspan="2" style="text-align:center;"><strong>[LetterheadName]</strong></td>
+            </tr>        
+            <tr style="[LetterheadAddress.DisplayValue]">
+                <td colspan="2" style="text-align:center;">[LetterheadAddress]</td>
+            </tr>
+            <tr style="[OrderNumber.DisplayValue]">
+                <td><strong>Order Number</strong></td><td style="text-align:right;">[OrderNumber]</td>
+            </tr>
+            <tr style="[OrderDate.DisplayValue]">
+                <td><strong>Order Date</strong></td><td style="text-align:right;">[OrderDate]</td>
+            </tr>   
+            <tr style="[BillTo.DisplayValue]">
+                <td><strong>Bill To</strong></td><td style="text-align:right;">[BillTo]</td>
+            </tr> 
+            <tr style="[TransTotal.DisplayValue]">
+                <td><strong>Order Total</strong></td><td style="text-align:right;">[TransTotal]</td>
+            </tr>               
+            <tr style="[PurchaseOrder.DisplayValue]">
+                <td><strong>Purchase Order</strong></td><td style="text-align:right;">[PurchaseOrder]</td>
+            </tr>
+            <tr style="[PaymentMethod.DisplayValue]">
+                <td><strong>Payment Method</strong></td><td>[PaymentMethod]</td>
+            </tr>
+            <tr style="[NameOnCard.DisplayValue]">
+                <td><strong>Name on Card</strong></td><td>[NameOnCard]</td>
+            </tr>        
+            <tr style="[ShipTo.DisplayValue]">
+                <td valign="top"><strong>Ship To</strong></td><td>[ShipTo]</td>
+            </tr>
+            <tr style="[ShipMethod.DisplayValue]">
+                <td><strong>Shipping Method</strong></td><td>[ShipMethod]</td>
+            </tr>
+        </table>
+        <br /><br />
+        <table cellspacing="5" cellpadding="1">
+            <thead>
+                <tr>
+                    <th>Qty</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            [  <!-- begin repeating detail rows here -->
+            <tr>
+                <td style="text-align:right;vertical-align: top;">[Quantity]</td>
+                <td>[Item]</td>
+                <td style="text-align:right;vertical-align: top;">[Price]</td>
+                <td style="text-align:right;vertical-align: top;">[Total]</td>
+            </tr>
+            ]  <!-- end repeating detail rows here -->
+            <tr><td colspan="4">&nbsp;</td></tr> <!-- blank row here -->
+            <tr style="[ItemTotal.DisplayValue]">
+                <td></td><td colspan="2"><strong>Item Total</strong></td><td style="text-align:right;">[ItemTotal]</td>
+            </tr> 
+            <tr style="[Shipping.DisplayValue]"> 
+                <td></td><td colspan="2"><strong>[ShippingLabel]</strong></td><td style="text-align:right;">[Shipping]</td>
+            </tr>
+            <tr style="[Handling.DisplayValue]">
+                <td></td><td colspan="2"><strong>[HandlingLabel]</strong></td><td style="text-align:right;">[Handling]</td>
+            </tr>
+            <tr style="[TaxAmounts.DisplayValue]">
+                <td></td><td colspan="2"><strong>[TaxAmountsLabel]</strong></td><td style="text-align:right;">[TaxAmounts]</td>
+            </tr>
+            <tr style="[TaxTotal.DisplayValue]">
+                <td></td><td colspan="2"><strong>Tax</strong></td><td style="text-align:right;">[TaxTotal]</td>
+            </tr>
+            <tr style="[GrandTotal.DisplayValue]">
+                <td></td><td colspan="2"><strong>Item Grand Total</strong></td><td style="text-align:right;">[GrandTotal]</td>
+            </tr>
+            <tr style="[InvTotal.DisplayValue]">
+                <td></td><td colspan="2"><strong>Invoice Total</strong></td><td style="text-align:right;">[InvTotal]</td>
+            </tr>
+            <tr style="[AppliedCredit.DisplayValue]">
+                <td></td><td colspan="2"><strong>Applied Credit</strong></td><td style="text-align:right;">[AppliedCredit]</td>
+            </tr>
+            <tr style="[TransTotal.DisplayValue]">
+                <td></td><td colspan="2"><strong>Transaction Grand Total</strong></td><td style="text-align:right;">[TransTotal]</td>
+            </tr>
+            <tr style="[CreditTotal.DisplayValue]">
+                <td></td><td colspan="2"><strong>[CreditLabel]</strong></td><td style="text-align: right;">[CreditTotal]</td>
+            </tr>
+        </table>
+        <br />
+        <p>[AdditionalInfo]</p>
+    </body>
+</html>

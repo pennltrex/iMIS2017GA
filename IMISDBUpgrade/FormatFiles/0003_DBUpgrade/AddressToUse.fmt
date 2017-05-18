@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLUNIQUEID         1       16      ""   1     ContactKey                                                   ""
+2       SQLUNIQUEID         1       16      ""   2     CommunicationReasonKey                                       ""
+3       SQLUNIQUEID         1       16      ""   3     FullAddressKey                                               ""
+4       SQLUNIQUEID         1       16      ""   4     SeasonalRevertFullAddressKey                                 ""
+5       SQLNCHAR            2       2000    ""   5     FullAddressText                                              SQL_Latin1_General_CP1_CI_AS
+6       SQLBIT              1       1       ""   6     IsOverridden                                                 ""
+7       SQLDATETIME         1       8       ""   7     MarkedForDeleteOn                                            ""

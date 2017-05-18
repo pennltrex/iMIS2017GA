@@ -1,0 +1,24 @@
+11.0
+22
+1       SQLNCHAR            2       62      ""   1     PRODUCT_CODE                                           SQL_Latin1_General_CP1_CI_AS
+2       SQLBIT              1       1       ""   2     PARENT                                                 ""
+3       SQLNUMERIC          1       19      ""   3     UNITS_REQUIRED_FOR_CREDIT                              ""
+4       SQLINT              0       4       ""   4     DEPENDENT_FUNCTIONS                                    ""
+5       SQLBIT              1       1       ""   5     TIE_TO_PROGRAM                                         ""
+6       SQLBIT              1       1       ""   6     SKIP_ENROLLMENT                                        ""
+7       SQLNCHAR            2       100     ""   7     ADDRESS_1                                              SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       100     ""   8     ADDRESS_2                                              SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       100     ""   9     ADDRESS_3                                              SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       80      ""   10    CITY                                                   SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       30      ""   11    STATE_PROVINCE                                         SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       20      ""   12    ZIP                                                    SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       50      ""   13    COUNTRY                                                SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            4       0       ""   14    INSTRUCTORS                                            SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            4       0       ""   15    PREREQUISITES                                          SQL_Latin1_General_CP1_CI_AS
+16      SQLINT              0       4       ""   16    CURRENTLY_ENROLLED                                     ""
+17      SQLINT              0       4       ""   17    TOTAL_PASSED                                           ""
+18      SQLINT              0       4       ""   18    TOTAL_FAILED                                           ""
+19      SQLDATETIME         1       8       ""   19    BEGIN_DATE                                             ""
+20      SQLDATETIME         1       8       ""   20    END_DATE                                               ""
+21      SQLBIT              1       1       ""   21    SUBCOMPONENT                                           ""
+22      SQLBINARY           2       8       ""   22    TIME_STAMP                                             ""

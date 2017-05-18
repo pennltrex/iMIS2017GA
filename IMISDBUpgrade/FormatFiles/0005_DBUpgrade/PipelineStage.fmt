@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLUNIQUEID         1       16      ""   1     PipelineStageKey                       ""
+2       SQLNCHAR            2       100     ""   2     Name                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     PipelineKey                            ""
+4       SQLUNIQUEID         1       16      ""   4     ComponentKey                           ""
+5       SQLINT              0       4       ""   5     Sequence                               ""
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                      ""

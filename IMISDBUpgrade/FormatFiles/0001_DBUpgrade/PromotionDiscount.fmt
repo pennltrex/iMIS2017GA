@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     PromotionDiscountKey                         ""
+2       SQLUNIQUEID         1       16      ""   2     PromotionRuleKey                             ""
+3       SQLUNIQUEID         1       16      ""   3     DiscountRuleKey                              ""
+4       SQLDATETIME         0       8       ""   4     UpdatedOn                                    ""
+5       SQLUNIQUEID         1       16      ""   5     UpdatedByUserKey                             ""
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                            ""

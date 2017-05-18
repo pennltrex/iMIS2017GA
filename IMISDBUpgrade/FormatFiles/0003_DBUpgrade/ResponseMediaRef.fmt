@@ -1,0 +1,4 @@
+10.0
+2
+1       SQLNCHAR            2       40      ""   1     ResponseMediaCode                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     ResponseMediaDesc                      SQL_Latin1_General_CP1_CI_AS

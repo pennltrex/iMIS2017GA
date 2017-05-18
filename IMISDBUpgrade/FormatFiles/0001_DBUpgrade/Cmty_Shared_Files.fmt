@@ -1,0 +1,13 @@
+10.0
+11
+1       SQLINT              0       4       ""   1     FILE_SEQ                             ""
+2       SQLINT              0       4       ""   2     FOLDER_SEQ                           ""
+3       SQLINT              0       4       ""   3     COMMUNITY_SEQ                        ""
+4       SQLNCHAR            2       20      ""   4     ID                                   SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       510     ""   5     FILE_DESCRIPTION                     SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       510     ""   6     FILE_NAME                            SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       100     ""   7     FILE_SIZE                            SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       10      ""   8     PRIORITY                             SQL_Latin1_General_CP1_CI_AS
+9       SQLDATETIME         1       8       ""   9     DATE_STORED                          ""
+10      SQLNCHAR            2       10      ""   10    STATUS                               SQL_Latin1_General_CP1_CI_AS
+11      SQLBINARY           2       8       ""   11    TIME_STAMP                           ""

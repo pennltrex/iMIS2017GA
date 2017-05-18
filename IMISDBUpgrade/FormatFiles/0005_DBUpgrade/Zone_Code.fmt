@@ -1,0 +1,10 @@
+11.0
+8
+1       SQLNCHAR            2       80      ""   1     ZONE_TABLE_ID                          SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       510     ""   2     DESCRIPTION                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            4       0       ""   3     ZONE_TABLE                             SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     UPDATED_DATE_TIME                      ""
+5       SQLNCHAR            2       20      ""   5     SHIP_METHOD                            SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       50      ""   6     COUNTRY                                SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       20      ""   7     DEFAULT_ZONE                           SQL_Latin1_General_CP1_CI_AS
+8       SQLBINARY           2       8       ""   8     TIME_STAMP                             ""

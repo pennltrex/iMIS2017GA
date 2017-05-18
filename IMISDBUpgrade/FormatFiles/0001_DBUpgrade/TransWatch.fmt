@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLINT              0       4       ""   1     TransactionNumber                      ""
+2       SQLINT              0       4       ""   2     InvoiceNumber                          ""
+3       SQLDATETIME         1       8       ""   3     CaptureDate                            ""
+4       SQLBINARY           2       8       ""   4     TIME_STAMP                             ""

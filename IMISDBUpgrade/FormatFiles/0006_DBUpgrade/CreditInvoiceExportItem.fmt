@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLUNIQUEID         1       16      ""   1     CreditInvoiceExportKey                           ""
+2       SQLNCHAR            2       24      ""   2     InvoiceNumber                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLMONEY            0       8       ""   3     Amount                                           ""
+4       SQLDATETIME         1       8       ""   4     MarkedForDeleteOn                                ""

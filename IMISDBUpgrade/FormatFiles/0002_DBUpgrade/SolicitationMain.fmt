@@ -1,0 +1,31 @@
+10.0
+29
+1       SQLUNIQUEID         1       16      ""   1     SolicitationKey                                  ""
+2       SQLNCHAR            2       100     ""   2     Name                                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     Description                                      SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              0       4       ""   4     SolicitationStatusCode                           ""
+5       SQLNCHAR            4       0       ""   5     CostCollection                                   SQL_Latin1_General_CP1_CI_AS
+6       SQLDECIMAL          1       19      ""   6     TargetRevenue                                    ""
+7       SQLDECIMAL          1       19      ""   7     TotalRevenue                                     ""
+8       SQLDECIMAL          1       19      ""   8     PredictedResponseRate                            ""
+9       SQLDATETIME         1       8       ""   9     StartDate                                        ""
+10      SQLDATETIME         1       8       ""   10    EndDate                                          ""
+11      SQLDATETIME         1       8       ""   11    ReminderDate                                     ""
+12      SQLDATETIME         0       8       ""   12    UpdatedOn                                        ""
+13      SQLUNIQUEID         1       16      ""   13    UpdatedByUserKey                                 ""
+14      SQLDECIMAL          1       19      ""   14    LowResponseAmount                                ""
+15      SQLDECIMAL          1       19      ""   15    HighResponseAmount                               ""
+16      SQLDECIMAL          1       19      ""   16    ActualCost                                       ""
+17      SQLDECIMAL          1       19      ""   17    EstimatedCost                                    ""
+18      SQLDECIMAL          1       19      ""   18    ExtendedCost                                     ""
+19      SQLDECIMAL          1       19      ""   19    OverheadCost                                     ""
+20      SQLDATETIME         1       8       ""   20    FirstResponseDate                                ""
+21      SQLDATETIME         1       8       ""   21    LastResponseDate                                 ""
+22      SQLINT              0       4       ""   22    TotalPositiveResponse                            ""
+23      SQLINT              0       4       ""   23    TotalNegativeResponse                            ""
+24      SQLINT              0       4       ""   24    TotalSolicited                                   ""
+25      SQLUNIQUEID         1       16      ""   25    CreatedByUserKey                                 ""
+26      SQLDATETIME         0       8       ""   26    CreatedOn                                        ""
+27      SQLUNIQUEID         1       16      ""   27    AppealKey                                        ""
+28      SQLUNIQUEID         1       16      ""   28    AccessKey                                        ""
+29      SQLDATETIME         1       8       ""   29    MarkedForDeleteOn                                ""

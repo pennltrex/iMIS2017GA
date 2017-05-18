@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLFLT8             0       8       ""   1     LINE_NUMBER                  ""
+2       SQLNCHAR            2       510     ""   2     DESCRIPTION                  SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     UserID_Date                  SQL_Latin1_General_CP1_CI_AS
+4       SQLFLT8             0       8       ""   4     ORDER_NUMBER                 ""
+5       SQLNCHAR            2       62      ""   5     KIT_NAME                     SQL_Latin1_General_CP1_CI_AS
+6       SQLBINARY           2       8       ""   6     TIME_STAMP                   ""

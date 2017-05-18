@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLINT              0       4       ""   1     RecurringDonationFrequencyCode                                   ""
+2       SQLNCHAR            2       100     ""   2     Description                                                      SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       40      ""   3     RecurringDonationFrequencyName                                   SQL_Latin1_General_CP1_CI_AS

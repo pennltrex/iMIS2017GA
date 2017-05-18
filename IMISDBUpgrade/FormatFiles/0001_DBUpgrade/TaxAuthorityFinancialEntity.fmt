@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     TaxAuthorityFinancialEntityKey                                   ""
+2       SQLUNIQUEID         1       16      ""   2     TaxAuthorityKey                                                  ""
+3       SQLUNIQUEID         1       16      ""   3     FinancialEntityKey                                               ""
+4       SQLNCHAR            2       100     ""   4     TaxRegistrationID                                                SQL_Latin1_General_CP1_CI_AS
+5       SQLUNIQUEID         1       16      ""   5     TaxLiabilityGLAccountKey                                         ""
+6       SQLUNIQUEID         1       16      ""   6     UpdatedByUserKey                                                 ""
+7       SQLDATETIME         0       8       ""   7     UpdatedOn                                                        ""
+8       SQLUNIQUEID         1       16      ""   8     CreatedByUserKey                                                 ""
+9       SQLDATETIME         0       8       ""   9     CreatedOn                                                        ""
+10      SQLDATETIME         1       8       ""   10    MarkedForDeleteOn                                                ""

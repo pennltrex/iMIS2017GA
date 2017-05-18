@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     UomConversionKey                       ""
+2       SQLUNIQUEID         1       16      ""   2     FromUomKey                             ""
+3       SQLUNIQUEID         1       16      ""   3     ToUomKey                               ""
+4       SQLNUMERIC          1       19      ""   4     ConversionFactor                       ""
+5       SQLDATETIME         1       8       ""   5     MarkedForDeleteOn                      ""

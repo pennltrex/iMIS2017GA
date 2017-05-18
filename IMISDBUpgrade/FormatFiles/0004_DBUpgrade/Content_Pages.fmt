@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLINT              0       4       ""   1     PAGE_NUM                           ""
+2       SQLNCHAR            2       510     ""   2     PAGE_TITLE                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            4       0       ""   3     PAGE_DESCR                         SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     CREATION_DATE                      ""
+5       SQLDATETIME         1       8       ""   5     EXPIRATION_DATE                    ""
+6       SQLDATETIME         1       8       ""   6     BUILD_DATE                         ""
+7       SQLNCHAR            2       60      ""   7     PAGE_TYPE                          SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       60      ""   8     SECURITY_GROUP                     SQL_Latin1_General_CP1_CI_AS
+9       SQLBINARY           2       8       ""   9     TIME_STAMP                         ""

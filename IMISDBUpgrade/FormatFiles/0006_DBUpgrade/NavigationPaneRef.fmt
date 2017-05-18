@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLINT              0       4       ""   1     NavigationPaneCode                                   ""
+2       SQLNCHAR            2       200     ""   2     NavigationPaneName                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     StaticDisplayLevels                                  ""
+4       SQLINT              0       4       ""   4     DynamicDisplayLevels                                 ""
+5       SQLINT              0       4       ""   5     StartingLevel                                        ""
+6       SQLBIT              1       1       ""   6     HighlightTopAncestorFlag                             ""

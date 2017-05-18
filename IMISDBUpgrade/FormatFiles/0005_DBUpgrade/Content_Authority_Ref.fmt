@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLNUMERIC          1       19      ""   1     ContentAuthorityID                                         ""
+2       SQLNCHAR            2       10      ""   2     ContentAuthorityCode                                       SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     ContentAuthorityDesc                                       SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     ContentAuthorityShortDesc                                  SQL_Latin1_General_CP1_CI_AS
+5       SQLNUMERIC          1       19      ""   5     CategoryDepth                                              ""
+6       SQLDECIMAL          1       19      ""   6     SortOrder                                                  ""
+7       SQLNUMERIC          1       19      ""   7     ParentContentAuthorityID                                   ""
+8       SQLNUMERIC          1       19      ""   8     AncestoryContentAuthorityID                                ""
+9       SQLNCHAR            2       2       ""   9     ActiveFlag                                                 SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       100     ""   10    ContentAuthorityLabel                                      SQL_Latin1_General_CP1_CI_AS

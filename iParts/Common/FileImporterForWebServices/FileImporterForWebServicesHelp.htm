@@ -1,0 +1,36 @@
+﻿<html>
+	<body>
+		<h1>File Importer for Web Services</h1>
+The File Importer for Web Services content item imports data into iMIS using iMIS SOA Web Services. The imported files display in the File Viewer for Web Services content item. 
+			<ul>
+				<li><strong>Name</strong> - Enter a name for the content item. This text appears during design mode (configuration).</li>
+
+<li><strong>Title</strong> - Enter the text to display above this content item on the rendered page. If blank, no title displays.</li>
+
+<li><strong>Do not render in design mode</strong> - Select this option to prevent content record data from being loaded in the content editor. This improves performance during design time (configuration).</li>
+
+<li><strong>Display a border around this content</strong> - Select this option to display a border around this content item on the rendered page.</li>
+
+<li><strong>Available file formats</strong> - Lists the file formats provided out-of-the-box that the content item can import, and lists the file formats selected to appear as an import option on the rendered page. A file format identifies the structure of data within the file, so that iMIS can properly import and process the contents.</li>
+    <ul>
+        <li class="v100only"><strong>Standard</strong> - Does not apply</li>
+        <li class="v10only"><strong>Standard</strong> - If this option is selected, enter any available standard file formats, if any exists.</li>
+        <ul>
+            <li><strong>Standing Order payments file - BACS format</strong> - The content of the uploaded file is converted into a common standing order payment file. Each line of the file is then ready to be matched against the Standing Order commitments made to an organization, who can complete the matching process using the File Viewer For Web Services.</liclass>
+            <li><strong>XML file</strong> - If the file is a valid XML format recognized by iMIS SOA Web Services, the contents can be processed through the File Viewer For Web Services. Select this batch type when importing Friendraising data.</li>
+        </ul>
+        <li><strong>Custom</strong> - If this option is selected, enter any available custom file formats, if any exists.</li>
+        <ul>
+        <li><strong>Donations</strong> - Only tab-delimited files that contain your donor and donation data can be uploaded. Rows in the tab-delimited file that contain improperly formatted data or that do not contain required fields are not imported.</li>
+        <li><strong>Source Codes</strong> - Only tab-delimited files that contain your source codes can be uploaded. Rows in the tab-delimited file that contain improperly formatted data or that do not contain required fields are not imported.</li>
+        </ul>
+    </ul>
+
+		<p><strong>Notes</strong></p>
+			<ul>
+				<li> 
+					By default, you can upload files up to 10 megabytes in size. You can increase that value by editing the <strong>MaxAllowedContentLength</strong> and <strong>MaxRequestLength</strong> settings of your Web.config file, however any changes you make affect the whole site.
+				</li>
+			</ul>
+	</body>
+</html>

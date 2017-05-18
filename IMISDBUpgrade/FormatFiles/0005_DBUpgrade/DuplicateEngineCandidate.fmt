@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLNCHAR            2       20      ""   1     ContactID                                        SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       6       ""   2     DuplicateRuleSetCode                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       300     ""   3     DuplicateGroupKey                                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       300     ""   4     DuplicateGroupKeyValue                           SQL_Latin1_General_CP1_CI_AS
+5       SQLINT              0       4       ""   5     Weight                                           ""

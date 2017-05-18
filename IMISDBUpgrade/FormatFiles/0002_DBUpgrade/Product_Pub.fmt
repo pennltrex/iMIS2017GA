@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLNCHAR            2       62      ""   1     PRODUCT_CODE                 SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       200     ""   2     PUB_AUTHOR                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       200     ""   3     PUBLISHER                    SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       200     ""   4     PUB_ISBN                     SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       200     ""   5     PUB_FORMAT                   SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       200     ""   6     PUB_EDITION                  SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       200     ""   7     PUB_PAGES                    SQL_Latin1_General_CP1_CI_AS
+8       SQLDATETIME         1       8       ""   8     PUB_DATE                     ""
+9       SQLBINARY           2       8       ""   9     TIME_STAMP                   ""

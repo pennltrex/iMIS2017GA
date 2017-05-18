@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLNCHAR            2       256     ""   1     TableName                          SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       256     ""   2     ColumnName                         SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     ProcessingOrder                    ""
+4       SQLNCHAR            2       20      ""   4     ProcessingType                     SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       256     ""   5     DataColumnName                     SQL_Latin1_General_CP1_CI_AS
+6       SQLBIT              1       1       ""   6     UseGuidKey                         ""

@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLINT              0       4       ""   1     POST_SEQ                         ""
+2       SQLINT              0       4       ""   2     TOPIC_SEQ                        ""
+3       SQLINT              0       4       ""   3     FORUM_SEQ                        ""
+4       SQLINT              0       4       ""   4     COMMUNITY_SEQ                    ""
+5       SQLNCHAR            2       160     ""   5     POST_TITLE                       SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       510     ""   6     TREE_LOCATION                    SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       20      ""   7     ID                               SQL_Latin1_General_CP1_CI_AS
+8       SQLBIT              1       1       ""   8     ANONYMOUS_FLAG                   ""
+9       SQLDATETIME         1       8       ""   9     DATE_STORED                      ""
+10      SQLNCHAR            2       10      ""   10    STATUS                           SQL_Latin1_General_CP1_CI_AS
+11      SQLDATETIME         1       8       ""   11    DATE_LAST_POST                   ""
+12      SQLINT              1       4       ""   12    POST_COUNT                       ""
+13      SQLBINARY           2       8       ""   13    TIME_STAMP                       ""

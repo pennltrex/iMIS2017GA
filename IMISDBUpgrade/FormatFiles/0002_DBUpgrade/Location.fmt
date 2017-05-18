@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     LocationKey                                ""
+2       SQLUNIQUEID         1       16      ""   2     ContactKey                                 ""
+3       SQLNCHAR            2       100     ""   3     LocationName                               SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       400     ""   4     LocationDescription                        SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       4       ""   5     LocationStatusCode                         SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                          ""
+7       SQLDATETIME         1       8       ""   7     UpdatedOn                                  ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                           ""
+9       SQLDATETIME         0       8       ""   9     CreatedOn                                  ""
+10      SQLUNIQUEID         1       16      ""   10    CreatedByUserKey                           ""

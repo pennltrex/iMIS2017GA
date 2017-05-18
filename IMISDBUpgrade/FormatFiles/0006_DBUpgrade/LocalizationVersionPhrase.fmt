@@ -1,0 +1,19 @@
+11.0
+17
+1       SQLUNIQUEID         1       16      ""   1     LocalizationVersionPhraseId                                      ""
+2       SQLUNIQUEID         1       16      ""   2     LocalizationVersionId                                            ""
+3       SQLUNIQUEID         1       16      ""   3     LocalizationPhraseTranslatedId                                   ""
+4       SQLNCHAR            2       8000    ""   4     Phrase                                                           SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       8000    ""   5     TranslatedPhrase                                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         0       8       ""   6     DateCreated                                                      ""
+7       SQLNCHAR            2       500     ""   7     CreatedBy                                                        SQL_Latin1_General_CP1_CI_AS
+8       SQLDATETIME         0       8       ""   8     DateUpdated                                                      ""
+9       SQLNCHAR            2       500     ""   9     UpdatedBy                                                        SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       800     ""   10    Description                                                      SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       500     ""   11    TranslatedBy                                                     SQL_Latin1_General_CP1_CI_AS
+12      SQLBIT              1       1       ""   12    SystemTranslation                                                ""
+13      SQLNCHAR            2       10      ""   13    Status                                                           SQL_Latin1_General_CP1_CI_AS
+14      SQLDATETIME         0       8       ""   14    StatusDate                                                       ""
+15      SQLUNIQUEID         1       16      ""   15    LocalizationPhraseId                                             ""
+16      SQLBIT              1       1       ""   16    DoNotLocalize                                                    ""
+17      SQLNCHAR            2       600     ""   17    ControlType                                                      SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,9 @@
+<browsers>
+    <browser refID="Default">
+        <controlAdapters>
+           <adapter controlType="System.Web.UI.Page" adapterType="Asi.ControlAdapters.AsiPageAdapter" />
+           <adapter controlType="System.Web.UI.WebControls.WebParts.WebPartZone" adapterType="Asi.ControlAdapters.AsiWebPartZoneAdapter" />
+        </controlAdapters>
+    </browser>
+</browsers>
+

@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLUNIQUEID         1       16      ""   1     CostTierKey                                ""
+2       SQLUNIQUEID         1       16      ""   2     ProductKey                                 ""
+3       SQLDECIMAL          1       19      ""   3     QuantityOnHand                             ""
+4       SQLDECIMAL          1       19      ""   4     QuantityReceived                           ""
+5       SQLDECIMAL          1       19      ""   5     UnitCost                                   ""
+6       SQLDATETIME         0       8       ""   6     DateReceived                               ""
+7       SQLUNIQUEID         1       16      ""   7     WarehouseKey                               ""
+8       SQLDECIMAL          1       19      ""   8     TotalCost                                  ""
+9       SQLUNIQUEID         1       16      ""   9     ProductInventoryKey                        ""
+10      SQLUNIQUEID         1       16      ""   10    UomKey                                     ""
+11      SQLUNIQUEID         1       16      ""   11    OriginalReceiptKey                         ""
+12      SQLINT              1       4       ""   12    CostMethodCode                             ""
+13      SQLDATETIME         1       8       ""   13    MarkedForDeleteOn                          ""

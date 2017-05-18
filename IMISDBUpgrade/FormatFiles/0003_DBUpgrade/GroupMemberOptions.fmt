@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     GroupMemberKey                                             ""
+2       SQLBIT              1       1       ""   2     OptOutFlag                                                 ""
+3       SQLUNIQUEID         1       16      ""   3     GroupContactFullAddressKey                                 ""
+4       SQLUNIQUEID         1       16      ""   4     GroupBillingFullAddressKey                                 ""
+5       SQLUNIQUEID         1       16      ""   5     AlternativeBillToContactKey                                ""
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                                          ""

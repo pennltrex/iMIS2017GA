@@ -1,0 +1,24 @@
+10.0
+22
+1       SQLNCHAR            2       20      ""   1     CLIENT_ID                    SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       40      ""   2     FIRST_NAME                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       40      ""   3     MIDDLE_NAME                  SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       60      ""   4     LAST_NAME                    SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       60      ""   5     LAST_FIRST                   SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       80      ""   6     COMPANY                      SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       80      ""   7     ADDRESS_1                    SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       80      ""   8     ADDRESS_2                    SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       80      ""   9     CITY                         SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       30      ""   10    STATE                        SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       20      ""   11    ZIP                          SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       60      ""   12    COUNTY                       SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       50      ""   13    COUNTRY                      SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       50      ""   14    PHONE                        SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       50      ""   15    FAX                          SQL_Latin1_General_CP1_CI_AS
+16      SQLDATETIME         1       8       ""   16    DATE_CREATED                 ""
+17      SQLDATETIME         1       8       ""   17    DATE_UPDATED                 ""
+18      SQLNCHAR            2       510     ""   18    NOTE                         SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       60      ""   19    CLIENT_TYPE                  SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            2       200     ""   20    EMAIL                        SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       80      ""   21    ADDRESS_3                    SQL_Latin1_General_CP1_CI_AS
+22      SQLBINARY           2       8       ""   22    TIME_STAMP                   ""

@@ -1,0 +1,19 @@
+10.0
+17
+1       SQLUNIQUEID         1       16      ""   1     PaymentDetailKey                                                       ""
+2       SQLUNIQUEID         1       16      ""   2     CreatedByUserKey                                                       ""
+3       SQLDATETIME         0       8       ""   3     CreatedOn                                                              ""
+4       SQLNCHAR            2       6       ""   4     CurrencyCode                                                           SQL_Latin1_General_CP1_CI_AS
+5       SQLDECIMAL          1       19      ""   5     OriginalAmount                                                         ""
+6       SQLINT              0       4       ""   6     PaymentApplicationRestrictionCode                                      ""
+7       SQLINT              0       4       ""   7     PaymentDetailStatusCode                                                ""
+8       SQLUNIQUEID         1       16      ""   8     PaymentMethodKey                                                       ""
+9       SQLUNIQUEID         1       16      ""   9     PaymentTypeKey                                                         ""
+10      SQLUNIQUEID         1       16      ""   10    PayorContactKey                                                        ""
+11      SQLNCHAR            2       40      ""   11    ReferenceNumber                                                        SQL_Latin1_General_CP1_CI_AS
+12      SQLIMAGE            4       0       ""   12    SerializedDetails                                                      ""
+13      SQLNCHAR            2       100     ""   13    SummaryDisplay                                                         SQL_Latin1_General_CP1_CI_AS
+14      SQLUNIQUEID         1       16      ""   14    UpdatedByUserKey                                                       ""
+15      SQLDATETIME         0       8       ""   15    UpdatedOn                                                              ""
+16      SQLNCHAR            2       200     ""   16    PaymentDetailBOName                                                    SQL_Latin1_General_CP1_CI_AS
+17      SQLDATETIME         1       8       ""   17    MarkedForDeleteOn                                                      ""

@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLNCHAR            2       60      ""   1     SECURITY_GROUP                       SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       60      ""   2     SECURITY_MODE                        SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     TABLE_NAME                           SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     TABLE_ACCESSIBLE                     ""
+5       SQLNCHAR            2       508     ""   5     TABLE_FILTER                         SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       510     ""   6     DESCRIPTION                          SQL_Latin1_General_CP1_CI_AS
+7       SQLBINARY           2       8       ""   7     TIME_STAMP                           ""

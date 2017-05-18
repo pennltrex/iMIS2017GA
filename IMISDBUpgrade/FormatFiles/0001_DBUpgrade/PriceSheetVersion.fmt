@@ -1,0 +1,14 @@
+10.0
+12
+1       SQLUNIQUEID         1       16      ""   1     PriceSheetVersionKey                         ""
+2       SQLUNIQUEID         1       16      ""   2     PriceSheetKey                                ""
+3       SQLINT              0       4       ""   3     Version                                      ""
+4       SQLDATETIME         1       8       ""   4     BeginDate                                    ""
+5       SQLDATETIME         1       8       ""   5     EndDate                                      ""
+6       SQLDECIMAL          1       19      ""   6     Adjustment                                   ""
+7       SQLBIT              1       1       ""   7     IsAdjustmentPercent                          ""
+8       SQLUNIQUEID         1       16      ""   8     CreatedByUserKey                             ""
+9       SQLDATETIME         0       8       ""   9     CreatedOn                                    ""
+10      SQLUNIQUEID         1       16      ""   10    UpdatedByUserKey                             ""
+11      SQLDATETIME         0       8       ""   11    UpdatedOn                                    ""
+12      SQLDATETIME         1       8       ""   12    MarkedForDeleteOn                            ""

@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLUNIQUEID         1       16      ""   1     FormResponseFieldKey                             ""
+2       SQLUNIQUEID         1       16      ""   2     FormResponseKey                                  ""
+3       SQLUNIQUEID         1       16      ""   3     FormDefinitionFieldKey                           ""
+4       SQLDECIMAL          1       19      ""   4     FieldDecimalValue                                ""
+5       SQLDATETIME         1       8       ""   5     FieldDateTimeValue                               ""
+6       SQLNCHAR            2       800     ""   6     FieldStringValue                                 SQL_Latin1_General_CP1_CI_AS
+7       SQLINT              1       4       ""   7     FieldIntegerValue                                ""
+8       SQLBIT              1       1       ""   8     FieldBooleanValue                                ""

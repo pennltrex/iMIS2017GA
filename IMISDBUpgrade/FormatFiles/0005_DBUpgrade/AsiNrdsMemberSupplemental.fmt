@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLNCHAR            2       20      ""   1     ID                             SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     SEQN                           ""
+3       SQLNCHAR            2       8       ""   3     AssociationId                  SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     LocalJoinDate                  ""
+5       SQLNCHAR            2       18      ""   5     MemberId                       SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       8       ""   6     MemberType                     SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       18      ""   7     OfficeId                       SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       22      ""   8     RELicense                      SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       2       ""   9     Status                         SQL_Latin1_General_CP1_CI_AS
+10      SQLDATETIME         1       8       ""   10    StatusDate                     ""
+11      SQLNCHAR            2       8       ""   11    Subclass                       SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       40      ""   12    NARTimestamp                   SQL_Latin1_General_CP1_CI_AS
+13      SQLBINARY           2       8       ""   13    TIME_STAMP                     ""

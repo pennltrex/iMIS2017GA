@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLUNIQUEID         1       16      ""   1     RecurringDonationExpectedPaymentSetKey                                                         ""
+2       SQLDATETIME         1       8       ""   2     ExpectedPaymentDate                                                                            ""
+3       SQLSMALLINT         0       2       ""   3     RecurringDonationExpectedPaymentSetStatusCode                                                  ""
+4       SQLUNIQUEID         1       16      ""   4     CreatedByUserKey                                                                               ""
+5       SQLDATETIME         0       8       ""   5     CreatedOn                                                                                      ""
+6       SQLUNIQUEID         1       16      ""   6     UpdatedByUserKey                                                                               ""
+7       SQLDATETIME         0       8       ""   7     UpdatedOn                                                                                      ""

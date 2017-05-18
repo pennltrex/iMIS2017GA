@@ -1,0 +1,28 @@
+10.0
+26
+1       SQLNCHAR            2       20      ""   1     ID                                               SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       46      ""   2     TransactionType                                  SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     TransactionNumber                                ""
+4       SQLINT              0       4       ""   4     InvoiceReferenceNumber                           ""
+5       SQLDATETIME         1       8       ""   5     TransactionDate                                  ""
+6       SQLDATETIME         1       8       ""   6     DateReceived                                     ""
+7       SQLINT              0       4       ""   7     FiscalYear                                       ""
+8       SQLINT              0       4       ""   8     FiscalMonth                                      ""
+9       SQLNCHAR            2       80      ""   9     AppealCode                                       SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       20      ""   10    CampaignCode                                     SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       20      ""   11    Fund                                             SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       20      ""   12    SolicitorID                                      SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       20      ""   13    SourceSystem                                     SQL_Latin1_General_CP1_CI_AS
+14      SQLINT              0       4       ""   14    MatchingTransaction                              ""
+15      SQLTINYINT          0       1       ""   15    IsMatchingGift                                   ""
+16      SQLNCHAR            2       20      ""   16    MemorialID                                       SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       510     ""   17    ListAs                                           SQL_Latin1_General_CP1_CI_AS
+18      SQLNUMERIC          1       19      ""   18    RequestNumber                                    ""
+19      SQLDATETIME         1       8       ""   19    InstallmentDate                                  ""
+20      SQLDATETIME         1       8       ""   20    LastPaymentDate                                  ""
+21      SQLNUMERIC          1       19      ""   21    PledgeAmount                                     ""
+22      SQLNUMERIC          1       19      ""   22    AdjustmentsAmount                                ""
+23      SQLNUMERIC          1       19      ""   23    PaymentsAmount                                   ""
+24      SQLNUMERIC          1       19      ""   24    PledgeFairMarketValue                            ""
+25      SQLNCHAR            2       200     ""   25    MemorialNameText                                 SQL_Latin1_General_CP1_CI_AS
+26      SQLBINARY           2       8       ""   26    TIME_STAMP                                       ""

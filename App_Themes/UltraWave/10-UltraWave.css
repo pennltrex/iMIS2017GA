@@ -1,0 +1,12 @@
+﻿/**
+ * NOTE: This stylesheet is deprecated. 
+ * Please remove any references to it in your master page or theme.
+ * All UltraWave styles are now included in ~/Assets/css/10-UltraWave.css - copy the ThemeSettings.xml file 
+ * from any theme to your theme to include this new style sheet automatically.
+ * 
+ * For archival purposes, styles from the 1/14/14 version of 10-UltraWave are provided in 10-UltraWave.txt.
+ */
+
+/* Line below added so themes importing this file will contine to work.
+ * This method of including UltrawWave is no longer recommended. */
+@import url("../../Assets/css/10-UltraWave.css");

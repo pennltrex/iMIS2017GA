@@ -1,0 +1,29 @@
+11.0
+27
+1       SQLNUMERIC          1       19      ""   1     ORDER_NUMBER                         ""
+2       SQLINT              0       4       ""   2     BADGE_NUMBER                         ""
+3       SQLNCHAR            2       20      ""   3     BADGE_TYPE                           SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       140     ""   4     FULL_NAME                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       160     ""   5     TITLE                                SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       160     ""   6     COMPANY                              SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       510     ""   7     FULL_ADDRESS                         SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       50      ""   8     PREFIX                               SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       40      ""   9     FIRST_NAME                           SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       40      ""   10    MIDDLE_NAME                          SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       60      ""   11    LAST_NAME                            SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       20      ""   12    SUFFIX                               SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       40      ""   13    DESIGNATION                          SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       40      ""   14    INFORMAL                             SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       80      ""   15    ADDRESS_1                            SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       80      ""   16    ADDRESS_2                            SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       80      ""   17    CITY                                 SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       30      ""   18    STATE_PROVINCE                       SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       20      ""   19    ZIP                                  SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            2       50      ""   20    COUNTRY                              SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       28      ""   21    BAR_CODE                             SQL_Latin1_General_CP1_CI_AS
+22      SQLNCHAR            2       20      ""   22    DELEGATE                             SQL_Latin1_General_CP1_CI_AS
+23      SQLBIT              1       1       ""   23    ST_PRINT_COMPANY                     ""
+24      SQLBIT              1       1       ""   24    ST_PRINT_TITLE                       ""
+25      SQLNCHAR            2       80      ""   25    ADDRESS_3                            SQL_Latin1_General_CP1_CI_AS
+26      SQLINT              0       4       ""   26    ADDRESS_NUM                          ""
+27      SQLBINARY           2       8       ""   27    TIME_STAMP                           ""

@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Submit Order Button Link</title>
+        </head>
+	<body>
+		<h1>Submit Order Button Link</h1>
+			<ul>
+				<li>
+                    <strong>Name</strong> - Enter a name for the content item. This text appears during design mode (configuration).
+                </li>
+                <li>
+                    <strong>Title</strong> - Enter the text to display above this iPart on the rendered page. If blank, no title displays.
+                
+                 <br />
+                    <i>Note:</i> When <strong>Purpose</strong> is set to <strong>Cart</strong>, this property will become available.</li>
+                <li>
+                    <strong>Do not render in design mode</strong> - Select this option to prevent content record data from being loaded in the content editor. This improves performance during design time (configuration).
+                </li>
+                <li>
+                    <strong>Display a border around this content</strong> - Select this option to display a border around this iPart on the rendered page.
+                 <br />
+                    <i>Note:</i> When <strong>Purpose</strong> is set to <strong>Cart</strong>, this property will become available.</li>
+                
+                    
+
+                 <li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+            <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                hidden on extra small devices, such as smartphones, where the width of the 
+                screen is less than 768px.</li>
+            <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                small devices, such as tablets, where the width of the screen is greater than 
+                768px and less than 991px.</li>
+            <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                medium devices, such as laptops, where the width of the screen is greater than 
+                992px and less than 1199px.</li>
+            <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                large devices, such as wide computer monitors, where the width of the screen is 
+                greater than or equal to 1200px wide.
+            <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for 
+                a page are displayed, regardless of the <strong>Display on screen sizes (for 
+                responsive themes only)</strong> options that are selected.</li>
+            </ul>
+        </li>
+                 <li>
+					<strong>Prompt unauthenticated users to sign in </strong> - Enable to generate a label with links to sign 
+                    in or create an account. The label appears only if you are an unauthenticated user with items in your cart.</li>
+                
+				<li>
+					<strong>URL for order confirmation </strong> - To use a custom confirmation 
+                    page instead of the default confirmation page, enter the URL for the desired 
+                    page.</li>
+                <li><b>Purpose</b> - This iPart can be used to submit either an 
+                    order or a donation for processing. In both cases, use other iParts with this 
+                    Submit Order Button Link iPart to complete a transaction. Select a processing 
+                    type that best fits your use of this iPart:<ul>
+                        <li><b>Cart</b> - The order is submitted for processing from a shopping cart. The 
+                            button is labeled <b>Submit Order</b>. </li>
+                        <li><b>Donation</b> -<strong> </strong> A donation payment is submitted for processing from a donation 
+                            page. The button is labeled <b>Submit Donation</b>. You must also set a 
+                            <b>Commit sequence</b> value if this option is selected.</li>
+                    </ul>
+                </li>
+                <li><b>Commit sequence</b> - (required when <b> Purpose</b> = <b>Donation</b>)
+                    Commit sequence affects how multiple iParts
+                    interact on a page. Enter a non-zero number to specify the order that changes are
+                    saved relative to other inline editable iParts on the rendered page. Zero (default)
+                    = save order is not important.</li>
+			</ul>
+			<p><strong>Notes</strong></p>
+			<ul>
+                <li>The Submit Order Payment Link iPart is required when you set up a donation page
+                    that processes payments immediately (instead of through the cart). Processing a
+                    donation immediately requires that multiple iParts are defined in a single content
+                    record. It does not matter the order in which the iParts are defined on the page.
+                    In the scenario outlined below, where the Donation Creator is the first iPart displayed
+                    on the page and the Submit Order Button Link is the last iPart displayed, the <b>Commit
+                        sequence </b>value controls the order in which the iParts are processed. When
+                    the donation is &quot;submitted&quot; from the content record, execution control
+                    is given to each iPart based on the <b>Commit sequence</b> value shown in parentheses: 
+                    <ul>
+                        <li>Donation Creator (2) </li>
+                        <li>Contact Account Creator (1) </li>
+                        <li>Submit Order Button Link (3) </li>
+                        <li>Payment Creator (4 or 0) </li>
+                    </ul>
+                </li>
+			<li>The Cart supports new users by allowing them to create an account using the 
+			<b>Account Creator</b> and then complete their order.</li>
+			<li>The Cart supports shopping by anonymous users; they are prompted to log in before 
+			they can use the <b>Submit Order</b> button.</li>
+			<li>The iPart raises a SubmitOrderValidate event to allow other iParts on the page to 
+			perform processes on the Cart before it is submitted.</li>
+                <li>This iPart uses an application that is external to iMIS.</li>
+			</ul>  
+	</body>
+</html>

@@ -1,0 +1,15 @@
+10.0
+13
+1       SQLUNIQUEID         1       16      ""   1     PaymentTypeKey                             ""
+2       SQLNCHAR            2       100     ""   2     PaymentTypeName                            SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     Priority                                   ""
+4       SQLBIT              1       1       ""   4     UsesGatewayFlag                            ""
+5       SQLUNIQUEID         1       16      ""   5     CreatedByUserKey                           ""
+6       SQLDATETIME         0       8       ""   6     CreatedOn                                  ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                           ""
+8       SQLDATETIME         0       8       ""   8     UpdatedOn                                  ""
+9       SQLUNIQUEID         1       16      ""   9     SystemEntityKey                            ""
+10      SQLNCHAR            2       8       ""   10    GatewayTypeCode                            SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       200     ""   11    EditGuiContentCode                         SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       200     ""   12    PaymentDetailBOName                        SQL_Latin1_General_CP1_CI_AS
+13      SQLDATETIME         1       8       ""   13    MarkedForDeleteOn                          ""

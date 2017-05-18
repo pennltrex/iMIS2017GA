@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLUNIQUEID         1       16      ""   1     ContactPictureKey                      ""
+2       SQLUNIQUEID         1       16      ""   2     ContactKey                             ""
+3       SQLIMAGE            4       0       ""   3     Picture                                ""
+4       SQLUNIQUEID         1       16      ""   4     PicturePurposeKey                      ""
+5       SQLNCHAR            2       200     ""   5     MimeType                               SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       510     ""   6     Description                            SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         0       8       ""   7     UpdatedOn                              ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                       ""
+9       SQLBIT              1       1       ""   9     IsPreferred                            ""
+10      SQLDATETIME         1       8       ""   10    MarkedForDeleteOn                      ""

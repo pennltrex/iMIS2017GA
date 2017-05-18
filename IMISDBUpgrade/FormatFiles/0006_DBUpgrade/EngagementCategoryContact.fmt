@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLUNIQUEID         1       16      ""   1     EngagementCategoryContactKey                                 ""
+2       SQLUNIQUEID         1       16      ""   2     ContactKey                                                   ""
+3       SQLUNIQUEID         1       16      ""   3     EngagementScoreKey                                           ""
+4       SQLINT              1       4       ""   4     ScoreYear                                                    ""
+5       SQLINT              1       4       ""   5     ScoreMonth                                                   ""
+6       SQLINT              1       4       ""   6     ScoreWeek                                                    ""
+7       SQLUNIQUEID         1       16      ""   7     EngagementCategoryKey                                        ""

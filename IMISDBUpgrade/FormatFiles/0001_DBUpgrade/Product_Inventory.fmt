@@ -1,0 +1,31 @@
+10.0
+29
+1       SQLNCHAR            2       62      ""   1     PRODUCT_CODE                                     SQL_Latin1_General_CP1_CI_AS
+2       SQLNUMERIC          1       19      ""   2     QUANTITY_ON_HAND                                 ""
+3       SQLNUMERIC          1       19      ""   3     QUANTITY_RESERVED                                ""
+4       SQLNUMERIC          1       19      ""   4     QUANTITY_COMMITTED                               ""
+5       SQLNUMERIC          1       19      ""   5     QUANTITY_AVAILABLE                               ""
+6       SQLNUMERIC          1       19      ""   6     QUANTITY_BACKORDERED                             ""
+7       SQLNUMERIC          1       19      ""   7     QUANTITY_ON_ORDER                                ""
+8       SQLDATETIME         1       8       ""   8     EXPECTED_ARRIVAL_DATE                            ""
+9       SQLINT              0       4       ""   9     LTD_ORDERS                                       ""
+10      SQLNUMERIC          1       19      ""   10    LTD_QUANTITY                                     ""
+11      SQLNUMERIC          1       19      ""   11    LTD_CANCELED_QUANTITY                            ""
+12      SQLNUMERIC          1       19      ""   12    LTD_INCOME                                       ""
+13      SQLNUMERIC          1       19      ""   13    LTD_COST                                         ""
+14      SQLNUMERIC          1       19      ""   14    STANDARD_COST                                    ""
+15      SQLNUMERIC          1       19      ""   15    LATEST_COST                                      ""
+16      SQLNUMERIC          1       19      ""   16    AVERAGE_COST                                     ""
+17      SQLNUMERIC          1       19      ""   17    TOTAL_COST                                       ""
+18      SQLDATETIME         1       8       ""   18    LAST_ORDER_DATE                                  ""
+19      SQLDATETIME         1       8       ""   19    FIRST_ORDER_DATE                                 ""
+20      SQLDATETIME         1       8       ""   20    LAST_RECEIVED_DATE                               ""
+21      SQLINT              0       4       ""   21    MINIMUM_ORDER_POINT                              ""
+22      SQLINT              0       4       ""   22    MINIMUM_ORDER_QUANTITY                           ""
+23      SQLNCHAR            2       20      ""   23    LOCATION                                         SQL_Latin1_General_CP1_CI_AS
+24      SQLNCHAR            2       20      ""   24    BIN                                              SQL_Latin1_General_CP1_CI_AS
+25      SQLNCHAR            2       100     ""   25    INCOME_ACCOUNT                                   SQL_Latin1_General_CP1_CI_AS
+26      SQLNCHAR            2       100     ""   26    INVENTORY_ACCOUNT                                SQL_Latin1_General_CP1_CI_AS
+27      SQLNCHAR            2       100     ""   27    COG_ACCOUNT                                      SQL_Latin1_General_CP1_CI_AS
+28      SQLNCHAR            2       100     ""   28    ADJUSTMENT_ACCOUNT                               SQL_Latin1_General_CP1_CI_AS
+29      SQLBINARY           2       8       ""   29    TIME_STAMP                                       ""

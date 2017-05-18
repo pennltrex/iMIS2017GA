@@ -1,0 +1,259 @@
+﻿<%@ Master Language="C#" Inherits="Asi.Web.UI.UltraWaveMasterPageBase" %>
+<%@ Import Namespace="System.Globalization" %>
+<%@ Import Namespace="Asi" %>
+<%@ Import Namespace="Asi.Business" %>
+<%@ Import Namespace="Asi.Business.ContentManagement" %>
+<%@ Import Namespace="Asi.Security.Utility" %>
+<%@ Import Namespace="Asi.Soa.ClientServices" %>
+<%@ Register TagPrefix="asi" TagName="PageNavR" Src="~/AsiCommon/Controls/Navigation/PageNavR.ascx" %>
+<%@ Register TagPrefix="asi" TagName="ProxyPanel" Src="~/AsiCommon/Controls/Shared/Security/ContactProxyPanel.ascx" %>
+
+<!DOCTYPE html>
+<script language="C#" runat="server">
+
+
+    /// <summary>
+    /// Provides information about content areas that this template uses.
+    /// </summary>
+    override protected void EnsureContentAreas()
+    {
+        PageContentAreas = new List<ContentTemplateArea>(
+            new[] { HeaderLogo, SocialNetworking });
+    }
+
+    protected void ProgressImage2_Load(object sender, EventArgs e)
+    {
+        Image image = sender as Image;
+        if (image != null) 
+            image.ImageUrl = Asi.Web.Utilities.GetTildeExpansion() + "/images/ImageLibrary/loading.gif";
+    }
+
+    /// <summary>
+    /// Return the count of items in the Cart
+    /// </summary>
+    public string CartItemCount
+    {
+        get
+        {
+            return GetCartItemCount();
+        }
+    }
+    
+</script>
+
+<script language="C#" runat="server" id="LoginStatusServerScript">
+    
+    /// <summary>
+    /// Logged in contact
+    /// </summary>    
+    public string OverrideLinkText
+    {
+        get
+        {
+            return Asi.Business.Contact.Contact.GetCachedFirstName(Asi.AppContext.CurrentIdentity.UserKey, Asi.AppContext.CurrentContext.StatefulBusinessContainer);
+        }
+    }
+
+    /// <summary>
+    /// Hide/Show a navigation item conditionally.
+    /// </summary>
+    public bool IsAnonymous
+    {
+        get
+        {
+            return !Asi.AppContext.CurrentIdentity.IsAuthenticated && OverrideLinkText == String.Empty;
+        }
+        set{ ViewState["IsAnonymous"] = value; }
+    }        
+    
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void LoginStatus1_OnLoggedOut(object sender, EventArgs e)
+    {
+        Asi.Web.Security.RevokeAppContext(HttpContext.Current);
+        if (Page is Asi.Web.UI.DisplayPageBase && ((Asi.Web.UI.DisplayPageBase)Page).iMISWebsite != null)
+            Response.Redirect(((Asi.Web.UI.DisplayPageBase)Page).iMISWebsite.WebsiteLink, true);
+        else
+            Response.Redirect(FormsAuthentication.DefaultUrl, true);
+    }
+
+    /// <summary>
+    /// Fires on Page Prerender
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void LoginStatus1_OnPreRender(object sender, EventArgs e)
+    {          
+        // Make Sure that Sign In and Sign Out Text is set properly
+            LoginStatus1.LogoutText = ((Asi.Web.UI.DisplayPageBase)Page).GetTranslatedPhrase(ResourceManager.GetPhrase("Security.SignOut", "Sign Out"));
+            LoginStatus1.LoginText = ((Asi.Web.UI.DisplayPageBase)Page).GetTranslatedPhrase(ResourceManager.GetPhrase("Security.SignIn", "Sign In"));
+    }
+    
+</script>
+
+<html id="MainHtml" lang="en">
+    <head id="Head1" runat="server">
+        <title>iMIS</title>
+        <asp:ContentPlaceHolder ID="TemplateHead" runat="server" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes" />
+        <link rel="apple-touch-icon" href="~/apple-touch-icon.png"/>
+    </head>
+    <body id="MainBody" runat="server" clientidmode="Static">
+        <%-- The following element allows for remembering tabbing on the page for WCAG compliance.  It can be removed if the behavior is not desired. --%>
+        <a href="#contentstart" class="screen-reader-text show-on-focus">Skip to main content</a>
+        <form id="TemplateForm" method="post" runat="server">
+            <asp:HiddenField runat="server" ClientIDMode="Static" id="lastClickedElementId" />
+            <telerik:RadScriptManager ID="ScriptManager1" runat="server" EnableCdn="false" EnablePageMethods="true"
+                EnablePartialRendering="true" EnableScriptGlobalization="true" AsyncPostBackTimeout="3600">
+            </telerik:RadScriptManager>
+            <!-- This control will display the progress image when a page load activity is taking a longer than expected time to load -->
+            <asp:UpdateProgress ID="TemplateFillLoadingPanel" runat="server" Visible="false">
+                <ProgressTemplate>
+                    <div class="NotPrinted ProgressDiv" id="FillProgressDiv">
+                        <asp:label ID="LoadingLabel" runat="server" translate="yes" Text="Loading"/>
+                        <asp:Image ID="ProgressImage2" runat="server" OnLoad="ProgressImage2_Load" AlternateText="Loading" />                          
+                    </div> 
+                </ProgressTemplate>
+            </asp:UpdateProgress>
+            <header id="hd" class="ClearFix">
+                <div id="masterHeaderBackground" class="ClearFix">
+                    <!-- This <div> block is for optional display of a header image -->
+                    <div id="masterLogoArea">
+                        <!-- Logo -->
+                        <asiweb:ContentTemplateArea ID="HeaderLogo" TemplateAreaName="HeaderLogo" HonorContentRecordLayout="true" runat="server" />      
+                    </div>
+                    <div id="Menu" class="ClearFix">
+                        <%-- This will display the collection of Auxiliary controls --%>
+                        <div id="masterTopBarAuxiliary" class="ClearFix">
+                            <div role="navigation">
+                                <%-- This template required to display the (Login/out Link) --%>
+                                <%--<asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Sign In" LogoutText="Sign Out"
+                                    AccessKey="l" OnLoggedOut="LoginStatus1_OnLoggedOut" OnPreRender="LoginStatus1_OnPreRender" />--%>
+                                <%-- Get the Auxiliary Navigation Items from the site map --%>
+                                <asiweb:NavigationList ID="Auxiliary" runat="server" NavigationPaneCode="4" UseGenericMenu="true"
+                                    AnonymousOnly="<%# IsAnonymous %>" EnableAdvancedProperties="True" />
+                                <%-- This control will display the Surf-to-Edit button --%>
+                                <asp:ContentPlaceHolder ID="AuxiliaryNavigationSupplementalContent" runat="server" />
+                                <asp:Image ID="KeepAliveTarget" runat="server" ImageUrl="~/AsiCommon/Images/3x3.gif" AlternateText=" " CssClass="DisplayNone" />
+                                <asiweb:KeepAliveExtender ID="KeepAliveControl" runat="server" TargetControlID="KeepAliveTarget" />
+                            </div>
+                        </div>
+                        <div id="masterTopBarAuxiliaryBottom" class="ClearFix">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="bd">
+                <div id="masterContentArea">
+                    <div id="yui-main">
+                        <div class="yui-b">
+                        <!-- Group Breadcrumbs, Proxy and Page Tasks so they can be controlled together -->
+                        <div id="masterReferenceArea" class="ClearFix">
+                            <div id="masterMainBreadcrumb" role="navigation">
+                                <!-- This control will display the currently applicable Breadcrumb Navigation (if any) -->
+                                <asiweb:SiteMapPath ID="BreadCrumb" runat="server" SiteMapProvider="AsiSiteMapProvider">
+                                    <NodeTemplate>
+                                        <asp:HyperLink ID="NodeLink" runat="server" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'
+                                            CssClass="BreadCrumbLink"></asp:HyperLink>
+                                    </NodeTemplate>
+                                    <CurrentNodeTemplate>
+                                        <asp:Label ID="CurrentNodeLabel" runat="server" Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'></asp:Label>
+                                    </CurrentNodeTemplate>
+                                </asiweb:SiteMapPath>
+                            </div>
+                            <%--<div id="masterPageTasks">
+                                <!-- This control will display the print, text-only and email buttons -->
+                                <asp:Panel ID="PageTasksPanel" runat="server" CssClass="PageTasksPanel NotPrinted">
+                                        <asp:ContentPlaceHolder ID="TemplatePageTasks" runat="server"></asp:ContentPlaceHolder>
+                                </asp:Panel>
+                            </div>--%>
+                            <div id="masterMainImpersonation">
+                                <!-- This control displays the On Behalf Of control -->
+                                <asi:ProxyPanel id="panProxy" runat="server" TargetContactProfileShortcut="~/Party.aspx" 
+                                    Visible="<%# !string.IsNullOrEmpty(SecurityHelper.GetOnBehalfOfUser()) %>" />
+                            </div>
+                        </div>
+                        <!-- This panel contains the Main content area for a page -->
+                        <a id="contentstart" tabindex="-1"></a> 
+                        <asp:Panel role="main" class="ContentPanel" runat="server" ID="ContentPanel">
+                            <%-- This update panel is needed so that any user messages that get configured in the main
+                                content area will cause the TemplateUserMessages panel to be updated --%>
+                            <asp:UpdatePanel ID="UserMessagesUpdatePanel" runat="server">
+                                <ContentTemplate>
+                                <!-- This provides a placeholder for any applicable User Messages that a page needs to display -->
+                                <asp:ContentPlaceHolder ID="TemplateUserMessages" runat="server">
+                                </asp:ContentPlaceHolder>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                            <asp:Panel ID="TemplatePrintDisplay" runat="server">
+                            </asp:Panel>
+                            <asp:ContentPlaceHolder ID="TemplateBody" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </asp:Panel>
+                        <!-- This panel will contain the Button panel for any page that has command buttons (e.g., Save/Cancel) -->
+                        <asp:Panel class="ButtonPanel NotPrinted" runat="server" ID="ButtonPanel">
+                            <div id="masterMainButtonBar" class="CommandBar">
+                                <asiweb:CommandButtonBar ID="ButtonBar" runat="server" TargetControlID="ContentDiv" />
+                                <asp:ContentPlaceHolder ID="TemplateButtonBar" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </asp:Panel>
+                        </div>
+                    </div>
+                </div>
+                <!-- This <div> provides a placeholder for an optional block of sidebar content that -->
+                <!-- will appear to the left of the Main content area. This sidebar panel will only -->
+                <!-- display for pages that display content in the SideBarPlaceHolder control below-->
+                <div id="masterSideBarPanel" class="yui-b">
+                    <asp:ContentPlaceHolder ID="SideBarPlaceHolder" runat="server">
+                        <%--<asi:PageSubNav id="Secondary" runat="server" NavigationPaneCode="2"
+                            StartingNodeOffset="1" StartFromCurrentNode="true" 
+                            StartingNodeOffsetAutoSet="true" SelectDefaultNode="false" />--%>
+                    </asp:ContentPlaceHolder>
+                </div>
+                <asp:Panel role="navigation" runat="server" ID="NavPanel">
+                    <asp:ContentPlaceHolder ID="TemplateMainNavigation" runat="server">
+                        <%-- This control will display the Primary Navigation control --%>
+                        <asi:PageNavR ID="Primary" runat="server" NavigationPaneCode="1" StartFromRootNode="true"
+                            SelectDefaultNode="true" />
+                    </asp:ContentPlaceHolder>
+                </asp:Panel>
+                <div id="masterSearchArea" role="search">
+                    <%-- This control will display the simple search field --%>
+                    <asiweb:SimpleSearchField ID="SearchField" AdvancedLinkVisible="false" runat="server" PromptText="Keyword Search"/>
+                </div>
+            </div>
+            <footer id="ft">
+                <!-- The following control will display the applicable Footer Navigation (if any) -->
+                <div id="masterFooterNavigation" role="navigation">
+                    <div id="masterSocialNetworking">
+                        <asiweb:ContentTemplateArea ID="SocialNetworking" TemplateAreaName="SocialNetworking" HonorContentRecordLayout="true" runat="server" />
+                    </div>
+                    <%-- This template required to display the (Login/out Link) --%>
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" LoginText="Sign In" LogoutText="Sign Out"
+                        AccessKey="l" OnLoggedOut="LoginStatus1_OnLoggedOut" OnPreRender="LoginStatus1_OnPreRender" />
+                    <asiweb:NavigationList ID="Foot" runat="server" NavigationPaneCode="8" UseGenericMenu="true"
+                        AnonymousOnly="<%# IsAnonymous %>" EnableAdvancedProperties="True" />            
+                </div>
+                <div id="masterFooterCopyright" class="ClearFix">
+                    <asiweb:ContentTemplateArea ID="FooterCopyright" TemplateAreaName="FooterCopyright" HonorContentRecordLayout="true" runat="server" />
+                </div>
+            </footer>
+       
+        </form>
+        <script type="text/javascript">
+            //<![CDATA[
+            var ie6 = false;
+            //]]>
+        </script>
+
+        <!--jscript from Page.ResgisterStartupScript extention is loaded here -->
+        <asp:contentplaceholder id ="TemplateScripts" runat="server"></asp:contentplaceholder>	    
+                
+        <!--facebook API is loaded into here -->
+        <div id="fb-root"></div>
+    </body>
+</html>

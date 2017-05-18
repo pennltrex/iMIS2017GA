@@ -1,0 +1,18 @@
+11.0
+16
+1       SQLUNIQUEID         1       16      ""   1     ExperienceDefinitionKey                                          ""
+2       SQLUNIQUEID         1       16      ""   2     ProgramKey                                                       ""
+3       SQLNCHAR            2       100     ""   3     ExperienceDefinitionName                                         SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     ExperienceDefinitionCode                                         SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       500     ""   5     ExperienceDefinitionDesc                                         SQL_Latin1_General_CP1_CI_AS
+6       SQLDECIMAL          1       19      ""   6     NumberOfUnits                                                    ""
+7       SQLBIT              1       1       ""   7     RequiresGradeFlag                                                ""
+8       SQLBIT              1       1       ""   8     RequiresApprovalFlag                                             ""
+9       SQLNCHAR            2       100     ""   9     ExperienceDefinitionLocation                                     SQL_Latin1_General_CP1_CI_AS
+10      SQLDATETIME         1       8       ""   10    ExperienceDefinitionDate                                         ""
+11      SQLNCHAR            2       4       ""   11    ExperienceDefinitionStatusCode                                   SQL_Latin1_General_CP1_CI_AS
+12      SQLDATETIME         0       8       ""   12    UpdatedOn                                                        ""
+13      SQLUNIQUEID         1       16      ""   13    UpdatedByUserKey                                                 ""
+14      SQLDATETIME         0       8       ""   14    CreatedOn                                                        ""
+15      SQLUNIQUEID         1       16      ""   15    CreatedByUserKey                                                 ""
+16      SQLDATETIME         1       8       ""   16    MarkedForDeleteOn                                                ""

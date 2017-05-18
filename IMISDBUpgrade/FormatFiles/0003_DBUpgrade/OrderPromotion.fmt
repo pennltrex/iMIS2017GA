@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLUNIQUEID         1       16      ""   1     OrderPromotionKey                        ""
+2       SQLNCHAR            2       100     ""   2     OrderPromotionCode                       SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     OrderPromotionName                       SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       400     ""   4     OrderPromotionDesc                       SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     BeginDate                                ""
+6       SQLDATETIME         1       8       ""   6     EndDate                                  ""
+7       SQLNCHAR            2       100     ""   7     RuleType                                 SQL_Latin1_General_CP1_CI_AS
+8       SQLDECIMAL          1       19      ""   8     Adjustment                               ""

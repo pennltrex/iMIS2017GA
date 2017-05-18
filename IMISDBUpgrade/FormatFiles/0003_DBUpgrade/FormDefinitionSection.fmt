@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     FormDefinitionSectionKey                                       ""
+2       SQLUNIQUEID         1       16      ""   2     FormDefinitionKey                                              ""
+3       SQLINT              0       4       ""   3     FormDefinitionSectionSequence                                  ""
+4       SQLNCHAR            2       100     ""   4     FormDefinitionSectionName                                      SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       800     ""   5     FormDefinitionSectionDesc                                      SQL_Latin1_General_CP1_CI_AS

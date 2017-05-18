@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLUNIQUEID         1       16      ""   1     FinancialEntityKey                                         ""
+2       SQLUNIQUEID         1       16      ""   2     GLAccountKey                                               ""
+3       SQLNCHAR            2       6       ""   3     GLAccountPurposeCode                                       SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     FinancialEntityGLAccountKey                                ""

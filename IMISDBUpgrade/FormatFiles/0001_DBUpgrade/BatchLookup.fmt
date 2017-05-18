@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLUNIQUEID         1       16      ""   1     BatchKey                               ""
+2       SQLINT              0       4       ""   2     BatchTypeCode                          ""
+3       SQLNCHAR            2       600     ""   3     LookupValue                            SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     MarkedForDeleteOn                      ""

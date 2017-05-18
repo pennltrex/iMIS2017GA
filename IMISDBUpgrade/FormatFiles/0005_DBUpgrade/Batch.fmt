@@ -1,0 +1,29 @@
+11.0
+27
+1       SQLNCHAR            2       30      ""   1     BATCH_NUM                                SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       10      ""   2     ORG_CODE                                 SQL_Latin1_General_CP1_CI_AS
+3       SQLTINYINT          0       1       ""   3     STATUS                                   ""
+4       SQLNCHAR            2       120     ""   4     DESCRIPTION                              SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     DATE_CREATED                             ""
+6       SQLNCHAR            2       120     ""   6     CREATED_BY                               SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         1       8       ""   7     LAST_UPDATED                             ""
+8       SQLNCHAR            2       120     ""   8     UPDATED_BY                               SQL_Latin1_General_CP1_CI_AS
+9       SQLBIT              1       1       ""   9     CONTROLLED                               ""
+10      SQLINT              0       4       ""   10    CONTROL_COUNT                            ""
+11      SQLMONEY            0       8       ""   11    CONTROL_CASH                             ""
+12      SQLINT              0       4       ""   12    TRANS_COUNT                              ""
+13      SQLMONEY            0       8       ""   13    TRANS_CASH                               ""
+14      SQLNCHAR            2       100     ""   14    CASH_PSUEDO                              SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       60      ""   15    CASH_GL_ACCT                             SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       100     ""   16    AR_PSUEDO                                SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       60      ""   17    AR_GL_ACCT                               SQL_Latin1_General_CP1_CI_AS
+18      SQLDATETIME         1       8       ""   18    EFFECTIVE_DATE                           ""
+19      SQLNCHAR            2       10      ""   19    CASH_ENTITY                              SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            2       20      ""   20    CASH_ACCOUNT_CODE                        SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       160     ""   21    INTENT_TO_EDIT                           SQL_Latin1_General_CP1_CI_AS
+22      SQLNCHAR            2       20      ""   22    SOURCE_SYSTEM                            SQL_Latin1_General_CP1_CI_AS
+23      SQLBIT              1       1       ""   23    DUES_CYCLE_FLAG                          ""
+24      SQLNCHAR            2       20      ""   24    MEETING                                  SQL_Latin1_General_CP1_CI_AS
+25      SQLBIT              1       1       ""   25    HAS_EXPORTED_TRANS                       ""
+26      SQLBIT              1       1       ""   26    WEB_BATCH                                ""
+27      SQLBINARY           2       8       ""   27    TIME_STAMP                               ""

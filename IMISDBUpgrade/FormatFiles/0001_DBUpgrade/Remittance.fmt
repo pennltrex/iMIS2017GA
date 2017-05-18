@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     RemittanceKey                              ""
+2       SQLUNIQUEID         1       16      ""   2     CreatedByUserKey                           ""
+3       SQLDATETIME         0       8       ""   3     CreatedOn                                  ""
+4       SQLUNIQUEID         1       16      ""   4     UpdatedByUserKey                           ""
+5       SQLDATETIME         0       8       ""   5     UpdatedOn                                  ""
+6       SQLUNIQUEID         1       16      ""   6     SystemEntityKey                            ""
+7       SQLUNIQUEID         1       16      ""   7     FinancialEntityKey                         ""
+8       SQLNCHAR            2       200     ""   8     PaymentDetailBOName                        SQL_Latin1_General_CP1_CI_AS
+9       SQLUNIQUEID         1       16      ""   9     PaymentDetailKey                           ""
+10      SQLDATETIME         1       8       ""   10    MarkedForDeleteOn                          ""

@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLNCHAR            2       50      ""   1     PrefixCode                       SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       60      ""   2     PrefixDesc                       SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       50      ""   3     SyncPrefixCode                   SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       2       ""   4     Gender                           SQL_Latin1_General_CP1_CI_AS
+5       SQLUNIQUEID         1       16      ""   5     PrefixKey                        ""

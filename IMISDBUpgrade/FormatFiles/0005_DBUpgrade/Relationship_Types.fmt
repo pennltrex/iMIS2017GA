@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLNCHAR            2       20      ""   1     RELATION_TYPE                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       120     ""   2     DESCRIPTION                        SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     RECIPROCAL_TYPE                    SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     USE_TITLE                          ""
+5       SQLBIT              1       1       ""   5     USE_DATES                          ""
+6       SQLBINARY           2       8       ""   6     TIME_STAMP                         ""

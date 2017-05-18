@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>iMIS Desktop</title>
+  </head>
+  <frameset framespacing="0" rows="24,*" frameborder="0">
+       <frameset framespacing="0" cols="65,*" frameborder="0">
+            <frame name="logo" target="imismain" src="Logo.aspx" scrolling="no"/>
+            <frame framespacing="0" name="topnav" scrolling="no" target="leftnav" src="Top.aspx" />
+       </frameset>
+       <frameset framespacing="0" cols="157,*" frameborder="0">
+            <frame name="leftnav" target="imismain" src="about:blank" scrolling="auto"/>
+            <frameset framespacing="0" rows="40,*" frameborder="0">
+               <frame name="taskdescription" scrolling="no" noresize="yes" target="leftnav" src="Task.aspx" />
+               <frame name="imismain" scrolling="auto" src="about:blank"/>
+            </frameset>
+      </frameset>
+      <noframes> 
+        <body>
+            <p>This page uses frames, but your browser doesn't support them.</p>
+        </body>
+        </noframes>
+  </frameset>
+</html>

@@ -1,0 +1,15 @@
+10.0
+13
+1       SQLNCHAR            2       20      ""   1     ID                                   SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       60      ""   2     IP_ADDRESS                           SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     ST_ID                                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       30      ""   4     MEETING                              SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       120     ""   5     TITLE                                SQL_Latin1_General_CP1_CI_AS
+6       SQLMONEY            0       8       ""   6     TOTAL_CHARGES                        ""
+7       SQLNCHAR            2       20      ""   7     DELEGATE                             SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       10      ""   8     REGISTRANT_CLASS                     SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       40      ""   9     MODULE                               SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       120     ""   10    CFTOKEN                              SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       120     ""   11    CFID                                 SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       10      ""   12    ORG_CODE                             SQL_Latin1_General_CP1_CI_AS
+13      SQLBINARY           2       8       ""   13    TIME_STAMP                           ""

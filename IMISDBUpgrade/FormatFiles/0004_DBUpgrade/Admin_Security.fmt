@@ -1,0 +1,4 @@
+11.0
+2
+1       SQLNUMERIC          1       19      ""   1     ContactID                            ""
+2       SQLNCHAR            2       510     ""   2     AdminSectionCode                     SQL_Latin1_General_CP1_CI_AS

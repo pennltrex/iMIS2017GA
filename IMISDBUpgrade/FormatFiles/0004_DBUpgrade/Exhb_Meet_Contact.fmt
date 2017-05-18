@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLNCHAR            2       20      ""   1     EXHB_ID                  SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     MEET_ID                  SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     CONT_ID                  SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       60      ""   4     CONT_TITLE               SQL_Latin1_General_CP1_CI_AS
+5       SQLBIT              1       1       ""   5     MAIN_CONT                ""
+6       SQLBINARY           2       8       ""   6     TIME_STAMP               ""

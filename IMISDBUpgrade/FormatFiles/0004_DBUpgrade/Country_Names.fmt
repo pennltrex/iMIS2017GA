@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLNCHAR            2       50      ""   1     COUNTRY                                            SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     MAIL_GROUP                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLTINYINT          0       1       ""   3     ADDRESS_FORMAT                                     ""
+4       SQLNCHAR            2       4       ""   4     VAT_COUNTRY_CODE                                   SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       4       ""   5     INTRASTAT_CODE                                     SQL_Latin1_General_CP1_CI_AS
+6       SQLBIT              1       1       ""   6     USE_CANADA_TAX                                     ""
+7       SQLNCHAR            2       40      ""   7     DEFAULT_SHIPPING_METHOD                            SQL_Latin1_General_CP1_CI_AS
+8       SQLTINYINT          0       1       ""   8     MIN_VAT_CODE_LEN                                   ""
+9       SQLTINYINT          0       1       ""   9     MAX_VAT_CODE_LEN                                   ""
+10      SQLNCHAR            2       256     ""   10    VAT_CODE_VALID_PROC                                SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       4       ""   11    COUNTRY_CODE                                       SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       6       ""   12    ISO_3DIGIT_CODE                                    SQL_Latin1_General_CP1_CI_AS
+13      SQLBINARY           2       8       ""   13    TIME_STAMP                                         ""

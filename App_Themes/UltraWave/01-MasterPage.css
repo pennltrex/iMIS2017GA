@@ -1,0 +1,162 @@
+﻿/**********************************************/
+/***        MASTERPAGE STYLE SHEET          ***/
+/**********************************************/
+/**
+ * UltraWave MasterPage style sheet
+ *
+ * This document contains styles to properyly align the UltraWave MasterPage.
+ * DO NOT EDIT THIS DOCUMENT DIRECTLY. Your changes WILL be lost when you upgrade.
+ * Instead, create a new style sheet to override the styles that you want to change.
+ *
+ * TABLE OF CONTENTS:
+ * General
+ * Header
+ * Main Content
+ * Footer
+ */
+ 
+/* ################################
+	General Section
+   ################################ */
+
+.NavigationUnorderedList
+{
+	padding-left: 0em;
+	margin-left: 0.125em;
+	margin-right: 0.125em;
+	display: inline;
+}
+
+.NavigationListItem
+{
+	list-style-type: none;
+	display: inline;
+	margin-left: 0em;
+}
+
+/*
+.Breadcrumb
+{
+}
+*/
+
+
+/* ################################
+	Header Section
+   ################################ */
+
+/*
+#masterHeaderBackground
+{
+}
+
+#masterHeaderImage
+{
+}
+
+#masterTopBarAuxiliary
+{
+}
+*/
+
+#masterTopBarAuxiliary div
+{
+	padding-left: 0.125em !important;
+	padding-right: 0.125em !important;
+	white-space: nowrap !important;
+	line-height: 2em; /* was 33px */
+	display: inline !important;
+	clear: both;
+}
+
+#masterTopBarAuxiliary div[role="search"]
+{
+	float: right;
+}
+
+#masterTopBarAuxiliary div[role="navigation"]
+{
+	float: right;
+}
+
+#masterTopBarAuxiliary .NavigationUnorderedList .NavigationListItem .NavigationLink
+{
+	width: auto !important;
+	text-transform: none !important;
+	padding-left: 0.313em !important;
+	padding-right: 0.313em !important;
+}
+
+/*
+#masterTopBarAuxiliaryBottom
+{
+}
+*/
+#Menu
+{
+	padding-right: 1em;
+}
+#doc3
+{
+	margin: auto !important;
+	width: auto !important;
+}
+/* ################################
+	Main Content Section
+   ################################ */
+
+#masterSideBarPanel
+{
+	clear: both;
+}
+#masterMainBreadcrumb
+{
+	float: left;
+}
+#masterMainImpersonation
+{
+	float: right;
+}
+#masterMainRosterImpersonation
+{
+	clear: both;
+}
+#masterMainButtonBar
+{
+	margin-right: 2em; /* was 30px */
+	background-color: White;
+}
+#masterContentArea
+{
+	margin: 0em 0.5em;
+}
+
+
+/* ################################
+	Footer Section
+   ################################ */
+
+#masterFooterContentInfo, #masterFooterNavigation
+{
+	text-align: center;
+}
+
+#masterFooterNavigation
+{
+	display: block;
+	text-align: center;
+	background: #666666;
+	line-height: 3em;
+}
+
+#masterFooterNavigation .NavigationUnorderedList .NavigationListItem .NavigationLink
+{
+	text-decoration: none;
+	padding-left: 0.313em !important;
+	padding-right: 0.313em !important;
+	color: #ffffff;
+}
+#masterPageTasks
+{
+	float: left;
+}

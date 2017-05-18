@@ -1,0 +1,279 @@
+﻿/*****************************************/
+/***      MASTERPAGE STYLE SHEET       ***/
+/*****************************************/
+/**
+ * Forest MasterPage styles for iMIS
+ *
+ * This document contains styles to properly align the Forest MasterPage.
+ * 
+ * TABLE OF CONTENTS:
+ * General
+ * Header
+ * Main Content
+ * Footer
+ * StickyFooter
+ **/
+
+/************************************/
+/*        General Section           */
+/************************************/
+
+/* This defines the width of the content area and the margins */
+#masterTopArea, #masterWrapper, #ft
+{
+    width: 950px;
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+/************************************/
+/*	       Header Section           */
+/************************************/
+
+/* This applies to the area behind the header logo and auxiliary navigation */
+#doc3
+{
+	margin: auto !important;
+	width: auto !important;
+}
+#masterHeaderBackground
+{
+    padding:5px 10px;
+	min-height:50px;
+}
+
+/* This applies to the header logo */
+#masterHeaderImage
+{
+    float:left;
+    margin-top:.4em;
+	padding-bottom: .5em;
+}
+
+/* These styles apply to the auxiliary navigation */
+.NavigationUnorderedList
+{
+	padding-left: 0em;
+	margin-left: 0.125em;
+	margin-right: 0.125em;
+	display: inline;
+}
+
+.NavigationListItem
+{
+	list-style-type: none;
+	display: inline;
+	margin-left: 0em;
+}
+
+#masterTopBarAuxiliary
+{
+    float: right;
+}
+
+#masterTopBarAuxiliary div
+{
+	padding-left: 0.125em !important;
+	padding-right: 0.125em !important;
+	white-space: nowrap !important;
+	line-height: 2em; /* was 33px */
+	display: inline;	
+    float: left;
+}
+
+#masterTopBarAuxiliary input.SurfEdit
+{
+    /* Remove the extra padding from the surf-to-edit button */
+    padding:0!important;
+    vertical-align:middle;
+}
+
+#masterTopBarAuxiliary div[role="navigation"] 
+{
+	
+}
+
+#masterSocialNetworking, #masterSocialNetworking div
+{
+    float:left;
+}
+
+#masterSocialNetworking strong, #masterSocialNetworking img
+{
+	vertical-align:middle;
+}
+
+#ste_container_SocialNetworking > a
+{
+	text-decoration: none;
+}
+
+#masterTopBarAuxiliary div[role="search"] /* This applies to the global search bar */
+{
+	
+}
+
+#masterTopBarAuxiliary .NavigationUnorderedList .NavigationListItem .NavigationLink
+{
+	width: auto !important;
+	text-transform: none !important;
+	padding-left: 0.313em !important;
+	padding-right: 0.313em !important;
+    text-decoration: underline;
+}
+
+#masterTopBarAuxiliaryBottom
+{
+    float:right;
+}
+
+/************************************/
+/*  	Main Content Section        */
+/************************************/
+   
+/* This applies to the breadcrumb area */
+#masterMainBreadcrumb
+{
+	float: none;
+	display:inline;
+	line-height:33px;
+}
+
+/***** Proxy Panel Styling *****/
+/* This applies to the on behalf of (proxy) area */
+#masterMainImpersonation
+{
+	float: right;
+}
+
+.obo-panel {
+    line-height:2.4em;
+    white-space:nowrap;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.obo-panel.on {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.account-menu .obo-panel {
+    padding: 3px 20px;
+}
+.obo-label,
+.obo-actions {
+    display: inline-block;
+}
+
+.obo-label {
+    font-weight: bold;
+}
+.obo-label span:after {
+    content: ':';
+}
+/* This applies to the page tasks (e.g., Print, Email) that appear under the main navigation */
+#masterPageTasks
+{
+	float: right;
+	padding-right: 10px;
+    padding-top: 3px;
+}
+
+/* Lines up the page tasks buttons */
+#masterPageTasks *
+{
+    vertical-align:middle;
+}
+
+#masterContentArea
+{
+	margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 910px;
+}
+
+/* This applies to the button area at the bottom of the page (e.g., Save, Cancel) */
+#masterMainButtonBar
+{
+	margin: .5em 2em .5em 0;
+	background-color: White;
+}
+
+/************************************/
+/*	       Footer Section           */
+/************************************/
+
+#masterFooterNavigation .NavigationUnorderedList .NavigationListItem .NavigationLink
+{
+	padding-left: 0.313em !important;
+	padding-right: 0.313em !important;
+}
+
+#masterFooterNavigation .NavigationUnorderedList .NavigationListItem:first-child .NavigationLink
+{
+    padding-left:0!important;
+}
+
+#masterFooterCopyright, #masterFooterNavigation
+{
+    display:block;
+    line-height:1.8em;
+}
+
+#masterFooterNavigation
+{
+    padding: .5em .5em .25em;
+}
+
+#masterFooterCopyright
+{
+    padding: .25em .5em .5em;
+}
+
+/************************************/
+/*    	StickyFooter Section        */
+/************************************/
+/** Used for Sticky Footer, http://ryanfait.com/sticky-footer/ **/
+/**
+{
+	margin: 0;
+}
+html, body
+{
+    height:100%;
+}
+
+#masterWrapper
+{
+    min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+#masterFooterPush
+{
+    height:6em;
+}
+
+#masterWrapper, #ft
+{
+    min-width:1000px;
+    width:92%;
+    max-width:1200px;
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#masterWrapper
+{
+    margin-bottom: -6em;
+}
+
+#masterFooterNavigation, #masterFooterCopyright
+{
+    height:3em;
+}

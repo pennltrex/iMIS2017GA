@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     SalutationKey                              ""
+2       SQLNCHAR            2       60      ""   2     SalutationDesc                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       1000    ""   3     IndividualFormula                          SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsDefault                                  ""
+5       SQLBIT              1       1       ""   5     IsOverrideable                             ""
+6       SQLBIT              1       1       ""   6     IsActive                                   ""
+7       SQLBIT              1       1       ""   7     AutoCreateFlag                             ""
+8       SQLNCHAR            2       1000    ""   8     InstituteFormula                           SQL_Latin1_General_CP1_CI_AS
+9       SQLBIT              1       1       ""   9     NeedsGenerationFlag                        ""
+10      SQLBIT              1       1       ""   10    NeedsUpdateFlag                            ""

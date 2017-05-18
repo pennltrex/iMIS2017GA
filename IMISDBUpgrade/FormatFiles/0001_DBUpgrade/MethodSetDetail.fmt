@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     MethodSetDetailKey                       ""
+2       SQLUNIQUEID         1       16      ""   2     MethodSetKey                             ""
+3       SQLNCHAR            2       100     ""   3     VisibleName                              SQL_Latin1_General_CP1_CI_AS
+4       SQLSMALLINT         0       2       ""   4     Priority                                 ""
+5       SQLBIT              1       1       ""   5     IsDefault                                ""
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                        ""

@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     PanelDefinitionId                                      ""
+2       SQLNCHAR            2       100     ""   2     Name                                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       1000    ""   3     Description                                            SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     RelatedEntityName                                      SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            4       0       ""   5     SerializedPanelDefinition                              SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLNCHAR            2       510     ""   1     ParameterName                                  SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       50      ""   2     SystemKeyword                                  SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     PropertyDefinitionKey                          ""
+4       SQLNCHAR            2       1000    ""   4     Description                                    SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       5000    ""   5     DefaultParameterValue                          SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,30 @@
+11.0
+28
+1       SQLUNIQUEID         1       16      ""   1     CertificationProgramKey                                            ""
+2       SQLNCHAR            2       500     ""   2     CertificationProgramName                                           SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       500     ""   3     CertificationProgramDescription                                    SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     AddDesignationFlag                                                 ""
+5       SQLBIT              1       1       ""   5     AutoEnrollFlag                                                     ""
+6       SQLUNIQUEID         1       16      ""   6     ExperienceUnitKey                                                  ""
+7       SQLDECIMAL          1       19      ""   7     MinimumValue                                                       ""
+8       SQLDECIMAL          1       19      ""   8     MaximumValue                                                       ""
+9       SQLNCHAR            2       4       ""   9     CertificationProgramStatusCode                                     SQL_Latin1_General_CP1_CI_AS
+10      SQLBIT              1       1       ""   10    RequiresApprovalFlag                                               ""
+11      SQLNCHAR            4       0       ""   11    ProcessBlueprint                                                   SQL_Latin1_General_CP1_CI_AS
+12      SQLNUMERIC          1       19      ""   12    RequiredNumberOfUnits                                              ""
+13      SQLBIT              1       1       ""   13    StagesInOrder                                                      ""
+14      SQLBIGINT           0       8       ""   14    DeadlinePeriodTimeUnit                                             ""
+15      SQLINT              0       4       ""   15    DeadlinePeriodMultiplier                                           ""
+16      SQLBIGINT           1       8       ""   16    GracePeriodTimeUnit                                                ""
+17      SQLINT              1       4       ""   17    GracePeriodMultiplier                                              ""
+18      SQLUNIQUEID         1       16      ""   18    CertificationProgramGroupKey                                       ""
+19      SQLUNIQUEID         1       16      ""   19    PreRequiredProgramKey                                              ""
+20      SQLBIT              1       1       ""   20    IsMultipleIterationFlag                                            ""
+21      SQLNCHAR            4       0       ""   21    FormatCertificationNumber                                          SQL_Latin1_General_CP1_CI_AS
+22      SQLDATETIME         0       8       ""   22    CreatedOn                                                          ""
+23      SQLUNIQUEID         1       16      ""   23    CreatedByUserKey                                                   ""
+24      SQLDATETIME         1       8       ""   24    UpdatedOn                                                          ""
+25      SQLUNIQUEID         1       16      ""   25    UpdatedByUserKey                                                   ""
+26      SQLDATETIME         1       8       ""   26    MarkedForDeleteOn                                                  ""
+27      SQLINT              1       4       ""   27    LastCertificationNumber                                            ""
+28      SQLNCHAR            2       40      ""   28    Designation                                                        SQL_Latin1_General_CP1_CI_AS

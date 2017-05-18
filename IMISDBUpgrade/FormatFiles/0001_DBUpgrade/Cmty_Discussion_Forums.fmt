@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLINT              0       4       ""   1     FORUM_SEQ                              ""
+2       SQLNCHAR            2       160     ""   2     FORUM_TITLE                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     FORUM_DESCRIPTION                      SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              0       4       ""   4     COMMUNITY_SEQ                          ""
+5       SQLNCHAR            2       20      ""   5     ID                                     SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       10      ""   6     STATUS                                 SQL_Latin1_General_CP1_CI_AS
+7       SQLBINARY           2       8       ""   7     TIME_STAMP                             ""

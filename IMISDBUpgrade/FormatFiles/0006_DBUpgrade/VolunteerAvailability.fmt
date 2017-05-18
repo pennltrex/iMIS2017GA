@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLNCHAR            2       20      ""   1     ID                                   SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     Ordinal                              ""
+3       SQLINT              0       4       ""   3     DayOfTheWeekCode                     ""
+4       SQLBIT              1       1       ""   4     Daytime                              ""
+5       SQLBIT              1       1       ""   5     Afternoon                            ""
+6       SQLBIT              1       1       ""   6     Evening                              ""

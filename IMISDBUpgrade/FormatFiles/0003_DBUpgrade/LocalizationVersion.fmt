@@ -1,0 +1,18 @@
+10.0
+16
+1       SQLUNIQUEID         1       16      ""   1     LocalizationVersionId                              ""
+2       SQLNCHAR            2       500     ""   2     LocalizationVersionName                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       800     ""   3     LocalizationVersionDesc                            SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       800     ""   4     Note                                               SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         0       8       ""   5     DateCreated                                        ""
+6       SQLNCHAR            2       500     ""   6     CreatedBy                                          SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         0       8       ""   7     DateUpdated                                        ""
+8       SQLNCHAR            2       500     ""   8     UpdatedBy                                          SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       100     ""   9     CultureId                                          SQL_Latin1_General_CP1_CI_AS
+10      SQLBIT              1       1       ""   10    ActiveVersion                                      ""
+11      SQLDATETIME         1       8       ""   11    ActiveVersionLoaded                                ""
+12      SQLNCHAR            2       500     ""   12    TranslatedBy                                       SQL_Latin1_General_CP1_CI_AS
+13      SQLBIT              1       1       ""   13    SystemTranslation                                  ""
+14      SQLNCHAR            2       10      ""   14    Status                                             SQL_Latin1_General_CP1_CI_AS
+15      SQLDATETIME         0       8       ""   15    StatusDate                                         ""
+16      SQLNCHAR            2       100     ""   16    StatusID                                           SQL_Latin1_General_CP1_CI_AS

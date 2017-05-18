@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLINT              0       4       ""   1     DonationPremiumRuleSourceCodeID                                    ""
+2       SQLINT              0       4       ""   2     DonationPremiumRuleID                                              ""
+3       SQLUNIQUEID         1       16      ""   3     SourceCodeKey                                                      ""

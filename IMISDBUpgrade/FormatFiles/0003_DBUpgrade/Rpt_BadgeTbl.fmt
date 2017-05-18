@@ -1,0 +1,24 @@
+10.0
+22
+1       SQLFLT8             0       8       ""   1     ORDER_NUMBER                         ""
+2       SQLNCHAR            2       20      ""   2     BADGE_TYPE                           SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       140     ""   3     FULL_NAME                            SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       40      ""   4     FIRST_NAME                           SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       40      ""   5     MIDDLE_NAME                          SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       60      ""   6     LAST_NAME                            SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       50      ""   7     PREFIX                               SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       20      ""   8     SUFFIX                               SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       40      ""   9     DESIGNATION                          SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       40      ""   10    INFORMAL                             SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       160     ""   11    TITLE                                SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       160     ""   12    COMPANY                              SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       80      ""   13    CITY                                 SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       30      ""   14    STATE_PROVINCE                       SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       20      ""   15    ZIP                                  SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       20      ""   16    DELEGATE                             SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       80      ""   17    REGISTRANT_CLASS                     SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       80      ""   18    REG_TYPE                             SQL_Latin1_General_CP1_CI_AS
+19      SQLINT              0       4       ""   19    BADGE_NUMBER                         ""
+20      SQLNCHAR            2       50      ""   20    COUNTRY                              SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       100     ""   21    UserID_Date                          SQL_Latin1_General_CP1_CI_AS
+22      SQLBINARY           2       8       ""   22    TIME_STAMP                           ""

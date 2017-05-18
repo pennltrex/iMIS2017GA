@@ -1,0 +1,62 @@
+<asiweb:BusinessDataGrid runat="server" SkinID="StandardGrid"
+    CssClass="Grid"
+	ItemStyle-CssClass="GridRow"
+	PagerStyle-CssClass="GridPager"
+	AlternatingItemStyle-CssClass="GridAlternateRow"
+	HeaderStyle-CssClass="GridHeader"
+	FooterStyle-CssClass="GridFooter"
+	CssClassHover="GridRowHover"
+	UseHoverStyle="true"
+    CssClassNoRecords="PanelTableDataLastRow"
+    SelectedItemStyle-CssClass="GridRowSelected"
+    >
+</asiweb:BusinessDataGrid>
+
+<asp:DataGrid runat="server" SkinID="StandardGrid"
+    CssClass="Grid"
+	ItemStyle-CssClass="GridRow"
+	AlternatingItemStyle-CssClass="GridAlternateRow"
+	HeaderStyle-CssClass="GridHeader"
+	FooterStyle-CssClass="GridFooter"
+	CssClassHover="GridRowHover"
+	UseHoverStyle="true"
+    CssClassNoRecords="PanelTableDataLastRow"
+    SelectedItemStyle-CssClass="GridRowSelected"
+    ></asp:DataGrid>
+    
+    <asp:GridView runat="server" SkinID="StandardGrid"
+    CssClass="Grid"
+	ItemStyle-CssClass="GridRow"
+	AlternatingItemStyle-CssClass="GridAlternateRow"
+	HeaderStyle-CssClass="GridHeader"
+	FooterStyle-CssClass="GridFooter"
+	CssClassHover="GridRowHover"
+	UseHoverStyle="true"
+    CssClassNoRecords="PanelTableDataLastRow"
+    SelectedItemStyle-CssClass="GridRowSelected"
+    >
+    </asp:GridView>
+
+    <asp:Menu runat="server" SkinID="VerticalMenu"     
+    Orientation="Vertical" StaticDisplayLevels="2" MaximumDynamicDisplayLevels="0" ItemWrap="true" 
+    ScrollDownImageUrl="images/nav_expand.gif" ScrollUpImageUrl="images/nav_collapse.gif"
+    StaticMenuItemStyle-CssClass="navlink" 
+    StaticHoverStyle-CssClass="navlinkhover"
+    StaticSelectedStyle-CssClass="navlinkselected"
+    Width="150px"></asp:Menu>
+    
+<asp:Menu runat="server" SkinID="HorizontalTabs"
+    Orientation="Horizontal" StaticDisplayLevels="1"
+    StaticMenuItemStyle-CssClass="HTabStatic" 
+    StaticHoverStyle-CssClass="HTabHover"
+    StaticSelectedStyle-CssClass="HTabSelected"
+    StaticMenuItemStyle-Height="27px"></asp:Menu>
+    
+<asp:TreeView runat="server" SkinID="NavMenuTree" NodeWrap="true" NodeIndent="10"
+    CollapseImageUrl="images/nav_collapse.gif" ExpandImageUrl="images/nav_expand.gif"
+    ShowLines="false" LineImagesFolder="~/AsiCommon/Images/TreeView">
+    <NodeStyle CssClass="navlink" />
+    <LeafNodeStyle ImageUrl="images/nav_dot.gif" />
+    <HoverNodeStyle CssClass="navlinkhover" />
+    <SelectedNodeStyle CssClass="navlinkselected" />
+</asp:TreeView>

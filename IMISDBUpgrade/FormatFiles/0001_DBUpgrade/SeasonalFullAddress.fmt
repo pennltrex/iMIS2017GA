@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLUNIQUEID         1       16      ""   1     SeasonalFullAddressKey                           ""
+2       SQLUNIQUEID         1       16      ""   2     FullAddressKey                                   ""
+3       SQLUNIQUEID         1       16      ""   3     ReplacesFullAddressKey                           ""
+4       SQLDATETIME         0       8       ""   4     BeginDate                                        ""
+5       SQLDATETIME         1       8       ""   5     EndDate                                          ""
+6       SQLBIT              1       1       ""   6     IsSeasonalAnnually                               ""
+7       SQLDATETIME         1       8       ""   7     MarkedForDeleteOn                                ""

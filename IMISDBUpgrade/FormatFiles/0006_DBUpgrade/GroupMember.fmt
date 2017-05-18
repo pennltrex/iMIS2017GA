@@ -1,0 +1,13 @@
+11.0
+11
+1       SQLUNIQUEID         1       16      ""   1     GroupMemberKey                         ""
+2       SQLUNIQUEID         1       16      ""   2     GroupKey                               ""
+3       SQLUNIQUEID         1       16      ""   3     MemberContactKey                       ""
+4       SQLBIT              1       1       ""   4     IsActive                               ""
+5       SQLUNIQUEID         1       16      ""   5     CreatedByUserKey                       ""
+6       SQLDATETIME         0       8       ""   6     CreatedOn                              ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                       ""
+8       SQLDATETIME         0       8       ""   8     UpdatedOn                              ""
+9       SQLDATETIME         1       8       ""   9     DropDate                               ""
+10      SQLDATETIME         1       8       ""   10    JoinDate                               ""
+11      SQLDATETIME         1       8       ""   11    MarkedForDeleteOn                      ""

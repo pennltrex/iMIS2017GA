@@ -1,0 +1,1424 @@
+/*************************************************
+/* DO NOT UPDATE THIS FILE
+/* This stylesheet was created for use
+/* with the old Llano application.  All
+/* new changes should be made in the appropriate
+/* .css file in the iMIS/Templates directory. 
+/* [JG 3/7/2006] 
+/*************************************************
+
+/* general element styles */
+BODY, TABLE, TR, TD
+{
+	font-size: 90%;
+	margin: 0px;
+	color: #000000;
+	font-family: tahoma;
+}
+
+.Empty
+{
+	background-color: #FFFFFF;
+}
+
+A:link
+{
+	color: #5555FF;
+}
+
+INPUT
+{
+	padding-left: 3px;
+	color: black;
+	font-family: tahoma;
+}
+
+SELECT
+{	
+	color: black;
+	font-family: tahoma;
+}
+
+TEXTAREA
+{
+	overflow: auto;
+	width: 80%;
+	color: black;
+	height: 34pt;
+	font-family: tahoma;
+	padding-left: 3px;
+}
+
+.BodyText
+{
+	color: black;	
+}
+
+.BodyText A
+{
+	color: steelblue;
+	line-height: 100%;
+	text-decoration:underline;
+}
+.Border
+{
+	border-right: #cccccc 1px solid;
+	padding-right: 4px;
+	border-top: #cccccc 1px solid;
+	padding-left: 4px;
+	padding-bottom: 4px;
+	overflow: hidden;
+	border-left: #cccccc 1px solid;
+	width: 140px;
+	padding-top: 4px;
+	border-bottom: #cccccc 1px solid;
+	background-color: #eeeeee;
+}
+.iMIS
+{
+	font-weight: bolder;
+	font-size: larger;
+	font-style: italic;
+	font-family: 'Times New Roman';
+}
+
+/* graph images cell style */
+.GraphicContainer
+{
+	border-right: gainsboro 1px solid;
+	border-top: gainsboro 1px solid;
+	border-left: gainsboro 1px solid;
+	border-bottom: gainsboro 1px solid;
+}
+
+/* input field for a date value */
+.InputDate
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	padding-left: 3px;
+	border-left: darkgray 1px solid;
+	width: 156px;
+	color: black;
+	border-bottom: darkgray 1px solid;
+}
+
+/* input field for a numeric value */
+.InputNumeric
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	padding-left: 3px;
+
+	border-left: darkgray 1px solid;
+	width: 50px;
+	color: black;
+	border-bottom: darkgray 1px solid;
+}
+
+/* input field for a short value */
+.InputShort
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	padding-left: 3px;
+
+	border-left: darkgray 1px solid;
+	width: 50px;
+	color: black;
+	border-bottom: darkgray 1px solid;
+}
+
+/* input field for a medium length value */
+.InputMedium
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	padding-left: 3px;
+	border-left: darkgray 1px solid;
+	width: 200px;
+	color: black;
+	border-bottom: darkgray 1px solid;
+}
+
+/* input textarea for SQL statement in IQA */
+.SQLTextField TEXTAREA
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	padding-left: 3px;
+	overflow: auto;
+	border-left: darkgray 1px solid;
+	width: 80%;
+	color: black;
+	border-bottom: darkgray 1px solid;
+	height: 80pt;
+}
+
+/* list source selector widget in CM */
+.ListSourceSelector SELECT
+{
+	width: 100%;
+}
+
+/* title used within the IFC controls */
+.lgTitle
+{
+	font-weight: bold;
+	font-size: 150%;
+	margin: 4px 0px;
+	color: black;
+	font-family: 'Trebuchet MS' , Tahoma;
+}
+
+/* title with a horizontal line used within BOA */
+.lgTitleHLine
+{
+	font-weight: bolder;
+
+	padding-bottom: 3px;
+	margin: 0px 0px 10px;
+	color: silver;
+	line-height: 100%;
+	border-bottom: black 2px solid;
+}
+
+/* title used within the portfolios workspace */
+.mdTitle
+{
+	font-weight: bold;
+	font-size: 120%;
+	margin: 4px 0px;
+	color: black;
+	font-family: 'Trebuchet MS' , Tahoma;
+}
+
+/* title with a horizontal line used within BOA */
+.mdTitleTaskLine
+{
+	font-weight: bolder;
+	padding-bottom: 2px;
+	margin: 0px 0px 10px;
+	color: white;
+	line-height: 100%;
+}
+
+/* title with a horizontal line used within the portfolios workspace  */
+.mdTitleHLine
+{
+	border-bottom: silver 1px solid;
+	font-weight: bold;
+	font-size: 95%;
+	color: dimgray;
+	font-style: normal;
+	letter-spacing: 1pt;
+	height: 20px;
+	font-variant: normal;
+	text-decoration: none;
+}
+
+/* portfolios summary page title bar gradient background */
+.TitleSummary
+{
+	padding-bottom: 0px;
+	padding-left: 3px;
+	padding-top: 1px;
+	padding-right: 1px;
+	font-weight: bold;
+	font-size: 122%; 
+	margin: 0px;
+	color: #003399;
+	border-bottom: #AAAAAA 2px solid;
+	border-right: #AAAAAA 1px solid;
+	font-family: 'Trebuchet MS',Tahoma;
+	background-color: #D3EBF0;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* display generated application feedback to the user */
+.Important
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	color: red;
+}
+
+/* examples relative to a field, i.e; date format - (mm/dd/yyyy) */
+.InLineTip
+{
+	
+	font-size: 80%;
+	color: navy;
+	font-family: Arial;
+	text-decoration: none;
+}
+
+/* table used for prompts, input fields and values */
+.DataTable
+{
+	width: 100%;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: white;
+	border-bottom-style: none;
+}
+
+/* portfolio summary page table used for prompts, and values */
+.SummaryTable
+{
+	width: 90%;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: white;
+	border-bottom-style: none;
+}
+
+/* Nested table within the portfolio summary page table used for prompts and values */
+.SummaryTableNested
+{
+	width: 100%;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: white;
+	border-bottom-style: none;
+}
+
+/* cenetr spacer cell used in summarytable */
+.SpacerCell
+{
+	width: 5px;
+}
+
+/* prompt cell text usually in the left-hand side of a datatable */
+.Prompt
+{
+	padding-right: 3px;
+	width: 20%;
+	color: black;
+	text-align: right;
+	text-decoration: none;
+}
+
+/* prompt styles for summary pages usually found in summarytable */
+.PromptSummary
+{
+	font-weight: bold;
+	padding-bottom: 3px;
+	width: 125px;
+	color: dimgray;
+	padding-top: 3px;
+	border-bottom: gainsboro 1px solid;
+	background-color: white;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* last prompt style for summary pages usually found in summarytable, so there is no trailing style border */
+.PromptSummaryEnd
+{
+	font-weight: bolder;
+	padding-bottom: 3px;
+	width: 125px;
+	color: dimgray;
+	padding-top: 3px;
+	background-color: white;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* prompt style for nested area in the summary page, usually found in summarytable */
+.PromptSummaryNested
+{
+	font-weight: bold;
+	width: 90px;
+	color: dimgray;
+	background-color: white;
+	text-align: left;
+	text-decoration: none;
+}
+
+ /* used as an alt style for text when value not found */
+ .ValueNotFound
+ {
+ 	font-size: 100%;
+ 	color: #999999;
+ 	font-family: Tahoma;
+ 	text-align: left;
+ 	text-decoration: none;
+ }
+
+/* value cell text usually in the right-hand side of a datatable */
+.Value
+{
+	width: 80%;
+	color: black;
+	background-color: #EFEFE7;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* value styles for summary pages */
+.ValueSummary
+{
+	color: black;
+	border-bottom: gainsboro 1px solid;
+	background-color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* last cells value style for summary pages usually found in summarytable, so there is no trailing style border */
+.ValueSummaryEnd
+{
+	color: black;
+	background-color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* value style for nested area in the summary page, usually found in summarytable */
+.ValueSummaryNested
+{
+	color: black;
+	background-color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* value styles for summary pages that spans multiple columns*/
+.ValueSummaryColSpan
+{
+	color: black;
+	border-bottom: gainsboro 1px solid;
+	background-color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* value cell for a date value */
+.ValueDate
+{
+	width: 156px;
+	color: black;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* value cell for a numeric value */
+.ValueNumeric
+{
+	width: auto;
+	color: black;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* value cell for a short value */
+.ValueShort
+{
+	width: 50px;
+	color: black;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* value cell for a medium value */
+.ValueMedium
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	padding-left: 1px;
+	border-left: darkgray 1px solid;
+	width: 125px;
+	color: black;
+	padding-top: 1px;
+	border-bottom: darkgray 1px solid;
+}
+
+/* value cell that spans multiple columns */
+.ValueColspan
+{
+	color: black;
+	background-color: #EFEFE7; 
+	text-align: left;
+	text-decoration: none;
+}
+
+/* value cell that spans multiple rows */
+.ValueMultiLine
+{
+	color: black;
+	background-color: #EFEFE7;
+	overflow: auto;
+	color: black;
+	height: 34pt;
+}
+
+/* applies a disabled style to an object */
+.Disabled
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	padding-top: 1px;
+	padding-left: 1px;
+	border-left: darkgray 1px solid;
+	color: black;
+	border-bottom: darkgray 1px solid;
+	background-color: #EFEFE7;
+}
+
+/* displays a value as a read-only type field, usually used on a label or input object */
+.ReadOnly
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	padding-top: 1px;
+	padding-left: 3px;
+	border-left: darkgray 1px solid;
+	width: 100%;
+	color: black;
+	border-bottom: darkgray 1px solid;
+	background-color: #EFEFE7;
+}
+
+/* displays a date value as a read-only type field, usually used on a label or input object */
+.ValueDateReadOnly
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	padding-top: 1px;
+	padding-left: 3px;
+	border-left: darkgray 1px solid;
+	color: black;
+	border-bottom: darkgray 1px solid;
+	background-color: #EFEFE7;
+	width: 125px;
+}
+
+/* displays a numeric value as a read-only type field, usually used on a label or input object */
+.ValueNumericReadOnly
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	padding-top: 1px;
+	padding-left: 3px;
+	border-left: darkgray 1px solid;
+	width: 50px;
+	color: black;
+	border-bottom: darkgray 1px solid;
+	background-color: #EFEFE7;
+}
+
+/* displays a medium length value as a read-only type field, usually used on a label or input object */
+.ValueMediumReadOnly
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	padding-left: 3px;
+	border-left: darkgray 1px solid;
+	width: 50%;
+	color: black;
+	padding-top: 1px;
+	border-bottom: darkgray 1px solid;
+	background-color: #efefe7;
+}
+
+/* usually the table or cell that contains a lister */
+.ListSpace
+{
+	width: 100%;
+}
+
+/* lister table that is layout is set as fixed */
+.ListTableFixed
+{
+	table-layout: fixed;
+	width: 100%;
+}
+
+/* lister table */
+.ListTable
+{
+	width: 100%;
+}
+
+/* lister tables header row */
+.ListHeader
+{
+	font-weight: bold;
+	color: white;
+	letter-spacing: 1pt;
+	height: 20px;
+	text-align: left;
+	text-decoration: none;
+	background-color: #13920D;
+}
+
+/* lister tables header cell - gradient background */
+.ListHeader TD
+{
+	border-top: black 1px solid;
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType= '0' ,startColorstr= '#13920D' ,endColorstr= '#85C663' );
+	border-bottom: black 1px solid;
+	color: white;
+}
+
+/* lister tables header cell - gradient background */
+.ListHeader TH
+{
+	border-top: black 1px solid;
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType= '0' ,startColorstr= '#13920D' ,endColorstr= '#85C663' );
+	border-bottom: black 1px solid;
+	color: white;
+}
+
+/* lister tables header cell clickable text */
+A.ListHeader:link, A.ListHeader:visited, A.ListHeader:hover, A.ListHeader:active
+{
+	font-weight: bold;
+	color: white;
+	letter-spacing: 1pt;
+	text-align: left;
+	text-decoration: underline;
+}
+
+/* lister tables cell  */
+.ListOdd
+{
+	padding-bottom: 3px;
+	padding-top: 3px;
+	color: black;
+	background-color: #ffffff;
+	text-decoration: none;
+}
+
+/* lister tables cell  */
+.ListOdd TD
+{
+	padding-bottom: 3px;
+	padding-top: 3px;
+	color: black;
+	border-bottom: aliceblue 1px solid;
+	background-color: #ffffff;
+	text-decoration: none;
+}
+
+/* lister tables cell  */
+.ListEven
+{
+	padding-bottom: 3px;
+	padding-top: 3px;
+	background-color: #efefe7;
+	text-decoration: none;
+}
+
+/* lister tables cell  */
+.ListEven TD
+{
+	padding-bottom: 3px;
+	padding-top: 3px;
+	border-bottom: aliceblue 1px solid;
+	background-color: #efefe7;
+	text-decoration: none;
+}
+
+/* lister tables pager style, i.e; 12345...  */
+.ListPager
+{
+	text-align: center;
+	text-decoration: none;
+}
+
+/* lister tables pager style, i.e; 12345...  */
+.ListPager TD
+{
+	margin-top: 0px;
+	padding-top: 0px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* lister tables statistics style, i.e; viewing 1-20 of 100  */
+.ListStats
+{
+	margin-bottom: 2px;
+	width: 100%;
+	border-bottom: gainsboro 1px solid;
+	text-decoration: none;
+}
+
+/* lister tables statistics style, i.e; viewing 1-20 of 100  */
+.ListStats TD
+{
+	padding-bottom: 0px;
+	padding-top: 2px;
+	border-top: gainsboro 1px solid;	
+	text-decoration: none;
+}
+
+/* lister tables results set height multi-line style, i.e; No records were found  */
+.ListResultsEmpty
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	width: 100%;
+	color: #999999;
+	padding-top: 3px;
+	border-bottom: gainsboro 1px solid;
+	height: 250px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* lister tables results set height short-line style, i.e; No records were found  */
+.ListResultsEmptyShort
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	width: 100%;
+	color: #999999;
+	padding-top: 3px;
+	border-bottom: gainsboro 1px solid;
+	position: static;
+	height: 125px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* lister tables results single-line style, i.e; No records were found  */
+.ListResultsEmptySingle
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	width: 100%;
+	color: #999999;
+	padding-top: 3px;
+	border-bottom: gainsboro 1px solid;
+	position: static;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* tables results multi-line style, i.e; No records were found  */
+.ListResultStats
+{
+	padding-right: 3px;
+	margin-top: 20%;
+	padding-left: 3px;
+	margin-bottom: 25%;
+	padding-bottom: 3px;
+	width: 100%;
+	color: #999999;
+	padding-top: 3px;
+	border-bottom: gainsboro 1px solid;
+	position: static;
+	height: 100%;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* tables results single-line style, i.e; No records were found  */
+.ListResultStatSingleLine
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	padding-bottom: 3px;
+	width: 100%;
+	color: #999999;
+	padding-top: 3px;
+	border-bottom: gainsboro 1px solid;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* list header for the list builder widget, i.e; Adding members of security to a list  */
+.ListBuilderHeader
+{
+	font-weight: bold;
+	color: #000000;
+	letter-spacing: 1pt;
+	height: 20px;
+	text-align: left;
+	text-decoration: none;
+	background-color: #EFEFE7;
+}
+
+/* list header for the list builder widget */
+.ListBuilderHeader TD
+{
+	border-top: gray 1px solid;
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType= '0' ,startColorstr= '#EFEFE7' ,endColorstr= '#FFFFFF' );
+	border-bottom: gray 1px solid;
+}
+
+/* list header for the list builder widget */
+.ListBuilderHeader TH
+{
+	border-top: gray 1px solid;
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType= '0' ,startColorstr= '#EFEFE7' ,endColorstr= '#FFFFFF' );
+	border-bottom: gray 1px solid;
+}
+
+/* export icon button - used in lister */
+.ImageButton
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	border-top-style: none;
+	padding-top: 0px;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: transparent;
+	border-bottom-style: none;
+}
+
+/* generic button style - used in BOA */
+.Button
+{	
+	padding-right: 3px;
+	background-position: left center;
+	padding-left: 3px;
+	background-image: url(../Images/btn_tile.gif);
+	width: 65px;
+	color: #003399;
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* generic button style */
+.ButtonAction
+{
+	padding-right: 3px;
+	background-position: left center;
+	padding-left: 3px;
+	background-image: url(../Images/btn_tile.gif);
+	width: 65px;
+	color: #003399;
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* generic button style for extra long text */
+.ButtonActionXLarge
+{
+	padding-right: 3px;
+	background-position: left center;
+	padding-left: 3px;
+	background-image: url(../Images/btn_tile.gif);
+	width: 200px;
+	color: #003399;
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* generic button style for long text */
+.ButtonActionLarge
+{
+	padding-right: 3px;
+	background-position: left center;
+	padding-left: 3px;
+	background-image: url(../Images/btn_tile.gif);
+	width: 155px;
+	color: #003399;
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* generic button style for medium text */
+.ButtonActionMedium
+{
+	padding-right: 3px;
+	background-position: left center;
+	padding-left: 3px;
+	background-image: url(../Images/btn_tile.gif);
+	width: 100px;
+	color: #003399;
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* generic button style for short text */
+.ButtonActionSmall
+{
+	border-right: gainsboro 1px solid;
+	padding-right: 3px;
+	border-top: gainsboro 1px solid;
+	padding-left: 3px;
+	background-color: #FFFFFF; 
+	color: #003399;
+	background-image: url(../Images/btn_tile.gif);
+	border-left: gainsboro 1px solid;
+	width: 25px;
+	border-bottom: gainsboro 1px solid;
+	background-repeat: repeat;
+	background-color: #fffff4;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* button with the 'new' icon used in portfolios */
+.ButtonNew
+{
+	padding-right: 3px;
+	background-position: left center;
+	padding-left: 3px;
+	background-image: url(../Images/btn_tile.gif);
+	width: 65px;
+	color: #003399;
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* button with the 'help' icon used in portfolios */
+
+.ButtonHelp
+{
+	padding-right: 3px;
+	background-position: left center;
+	padding-left: 3px;
+	background-image: url(../Images/btn_tile.gif);
+	width: 65px;
+	color: #003399;
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* button with the 'close' icon used in portfolios */
+.ButtonClose
+{
+	padding-right: 3px;
+	background-position: left center;
+	padding-left: 3px;
+	background-image: url(../Images/btn_tile.gif);
+	width: 65px;
+	color: #003399;
+	background-repeat: repeat-x;
+	background-color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* style for the selectlister widget */
+.SelectLister
+{
+	color: black;
+}
+
+/* style for task area at the top of the portfolio */
+.TaskTable
+{
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	background-color: white;	
+}
+
+/* style for tasktables row, contains the portfolio title and background banner image */
+.TaskHeading
+{
+	padding-left: 6px;
+	font-weight: bold;
+	font-size: 150%;
+	background-image: url(../Images/tasktable_hz_line.gif);
+	padding-bottom: 2px;
+	color: #003366;
+	padding-top: 3px;
+	font-family: 'Trebuchet MS' , Tahoma;
+	height: 37px;
+	background-color: #018aa9;
+	text-decoration: none;
+}
+
+/* style for tasktables row that contains the new, help and close buttons */
+.TaskBar
+{
+	color: black;
+	height: 31px;
+	background-color: #018aa9;
+}
+
+/* style for tasktables row that contains the new, help and close buttons */
+.TaskBar TD
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 2px;
+	height: 31px;		
+}
+
+/* style for task area at the top of the home page lister hosted within imis */
+.TaskTableWithin
+{
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	background-color: white;	
+}
+
+/* style for tasktablewithin row at the top of the home page, usually contains a 'new' and/or 'help' button */
+.TaskBarWithin
+{
+	color: black;
+	height: 31px;
+	background-color: #dcdcc2;
+}
+
+/* style for tasktablewithin row at the top of the home page lister hosted within imis */
+.TaskBarWithin TD
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 2px;
+	height: 31px;		
+}
+
+/* horizontal border line used in the portfolios */
+.HLine
+{
+	width: 100%;
+	height: 1px;
+	background-color: #018aa9;
+}
+
+/* vertical border line used in the portfolios */
+.VLine
+{
+	width: 1px;
+	height: 100%;
+	background-color: #018aa9;
+}
+
+/* used in the doc explorer */
+.VSpacerBar
+{
+	margin-left: 3px;
+	margin-right: 5px;
+}
+
+/* uniform spacer */
+.SpacerA
+{
+	width: 3px;
+	height: 3px;
+}
+
+/* uniform spacer */
+.SpacerB
+{
+	width: 10px;
+	height: 10px;
+}
+
+/* uniform spacer */
+.SpacerC
+{
+	width: 4px;
+	height: 4px;
+}
+
+/* style for table that usually contains the delete, save as, save and/or cancel buttons */
+.CommandBar
+{
+	padding-right: 4px;
+	width: 100%;
+	height: 25px;
+}
+
+
+/* style for links that might be used in the commandbar table */
+.CommandBar A
+{
+	color: #336699;
+}
+
+/* opportunity action item styles */
+.ActionItem A
+{
+	color: #336699;
+}
+.ActionItemInline
+{
+	padding-left: 5px;
+	text-align: left;
+}
+.ActionItemInline A
+{
+	vertical-align: super;
+	color: #336699;
+}
+
+/* table that contains the portfolio */
+.Portfolio
+{
+	width: 100%;
+	height: 100%;
+}
+
+/* workspace within the portfolio */
+.WorkSpace
+{
+	overflow: visible;
+	width: 100%;
+	border-collapse: collapse;
+	height: 95%;
+	background-color: #FEFFFF;
+}
+
+/* workspace sides within the portfolio, used for spacing */
+.WorkSpaceSide
+{
+	height: 95%;
+	background-color: #FEFFFF;
+}
+
+/* error message displayed to user */
+.Error
+{
+	padding-right: 3px;
+	padding-left: 3px;
+	margin-bottom: 4px;
+	padding-bottom: 3px;
+	font: Status-Bar;
+	width: 100%;
+	color: red;
+	padding-top: 3px;
+	background-color: white;
+}
+
+/* status message displayed to user usually at the top of the control */
+.Status
+{
+	border-right: black 1px solid;
+	padding-right: 3px;
+	border-top: black 1px solid;
+	padding-left: 3px;
+	margin-bottom: 4px;
+	padding-bottom: 3px;
+	font: Status-Bar;
+	border-left: black 1px solid;
+	width: 100%;
+	color: black;
+	padding-top: 3px;
+	border-bottom: black 1px solid;
+	background-color: white;
+}
+
+/* process status message displayed to user usually on a summary page */
+.StatusProcess
+{
+	padding-left: 3px;
+	color: dimgray;
+}
+
+/* hidden field space */
+.Hidden
+{
+	display: none;
+	visibility: hidden;
+	width: 0px;
+	height: 5px;
+}
+
+/* IFC tree page style */
+.TreeView
+{
+	font-family:Tahoma;
+	font-size:100%;
+}
+
+/* style for links within the application that open a finder adder */
+.LinkButton
+{	
+	color: #003399;
+	text-align: left;
+	text-decoration: underline;
+}
+
+/* toolbar area for the CORE & export dialog */
+.DocumentExplorerToolBar
+{
+	border-top: gainsboro 1px solid;
+	border-bottom: gainsboro 1px solid;
+	text-decoration: none;
+}
+
+/* toolbar area used in CM */
+.ToolBar
+{
+	padding-right: 0px;
+	border-top: gainsboro 1px solid;
+	padding-left: 0px;
+	padding-bottom: 2px;
+	padding-top: 3px;
+	border-bottom: gainsboro 1px solid;
+	text-decoration: none;
+}
+
+/* style used within the IQA filters */
+.Width100Percent
+{
+	width: 100%;
+}
+
+/* selectbox style used within CM */
+.FilterSelectBox
+{
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	border-left: darkgray 1px solid;
+	color: black;
+	border-bottom: darkgray 1px solid;
+	width: 130px;
+}
+
+/* site login screens table styles */
+.LoginTable
+{
+	width: 50%;
+}
+.LoginTable TD.title
+{
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-top: 1px;
+	padding-right: 1px;
+	font-weight: bold;
+	font-size: 122%; 
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType='1',startColorstr='#FFFFFF',endColorstr='#5A7EDC');	
+	margin: 0px;
+	color: #003399;
+	border-bottom: #5A7EDC 2px solid;
+	font-family: 'Trebuchet MS',Tahoma;
+	background-color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+}
+.LoginTable TD.prompt 
+{
+	font-weight: bold;
+	width: 100px;
+	color: dimgray;
+	background-color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+}
+.LoginTable TD.value 
+{
+	color: black;
+	background-color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+}
+.LoginTable TD.end 
+{
+	border-bottom: #5A7EDC 1px solid;
+	color: black;
+	background-color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* style used within a process engine displaying of it's report */
+.ReportViewer INPUT
+{
+	padding-left: 3px;
+	border-right: darkgray 1px solid;
+	border-top: darkgray 1px solid;
+	border-left: darkgray 1px solid;
+	width: 80%;
+	color: black;
+	border-bottom: darkgray 1px solid;
+	
+}
+
+/* style used in the param collector control */
+.ParentParamTable TD.PromptParam
+{
+	width: 100px;
+}
+
+/* style used in the param collector control */
+.FilterTable2 TD.PromptParam
+{
+	width: 50%;
+}
+
+/* style used in the param collector control value validation */
+.ValidationMessage
+{
+	display: block;
+	page-break-after: always;
+}
+
+/* graph style container in CM */
+.GraphicContainer
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+/* styles to control overflow of text in the CORE */
+.UseOverflowSmall
+{
+	overflow: hidden;
+	width: 85px;
+}
+.UseOverflowMedium
+{
+    width: 105px;
+    overflow: hidden;
+}
+.UseOverflowLarge
+{
+    width: 210px;
+    overflow: hidden;
+}
+.UseOverflowXLarge
+{
+    width: 450px;
+    overflow: hidden;
+}
+
+/* control level help icon */
+.HelpIcon
+{
+	cursor: hand;
+	text-align: center;
+}
+
+
+/* example text area in email PE */
+.Example
+{
+	border-right: dimgray 1px dashed;
+	padding-right: 0px;
+	border-top: dimgray 1px dashed;
+	padding-left: 6px;
+	font-size: 90%;
+	border-left: dimgray 1px dashed;
+	color: dimgray;
+	padding-top: 0px;
+	border-bottom: dimgray 1px dashed;
+	text-decoration: none;
+}
+
+/* vertical spacer used in the export process*/
+.VerticalSpacer
+{
+	height: 20px;
+}
+
+/* opportunities action plan styles */
+.ActionPlanTitle
+{
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-top: 1px;
+	padding-right: 1px;
+	font-weight: bold;
+	font-size: 122%; 
+	filter: progid:DXImageTransform.Microsoft.gradient(gradientType='1',startColorstr='#FFFFFF',endColorstr='#94a6ce');	
+	margin: 0px;
+	color: #003399;
+	border-bottom: #94a6ce 2px solid;
+	font-family: 'Trebuchet MS',Tahoma;
+	background-color: #FFFFFF;
+	text-align: left;
+	text-decoration: none;
+}
+.ActionPlanStageTable
+{
+	border-bottom: #94a6ce 18px solid;
+}
+.ActionPlanStageMove
+{
+	background-color: #94a6ce;
+}
+.ActionPlanStageItemAddTopRow
+{
+	border-bottom: silver 1px solid;
+	font-weight: bold;
+	font-size: 95%;
+	color: dimgray;
+	font-style: normal;
+	letter-spacing: 1pt;
+	height: 20px;
+	font-variant: normal;
+	text-decoration: none;
+}
+.ActionPlanStageItemAdd
+{
+	border-top: silver 1px solid;
+	border-bottom: silver 1px solid;
+	font-weight: bold;
+	font-size: 95%;
+	color: dimgray;
+	font-style: normal;
+	letter-spacing: 1pt;
+	height: 20px;
+	font-variant: normal;
+	text-decoration: none;		
+}
+.ActionPlanStageItem
+{
+	border-top-style: dashed; 
+	border-top-width: 1;
+}
+.ActionPlanPrompt
+{
+	width: 13%;
+	color: black;
+	background-color: white;
+	text-align: right;
+	text-decoration: none;
+}	
+.ActionPlanValue
+{
+	width: 90%;
+	color: black;
+	text-align: left;
+	text-decoration: none;
+}
+
+/* displayed message for a failed authorization or session timeout */
+.AuthorizationMessage
+{
+	border-right: red 1px solid;
+	background-position: center center;
+	border-top: red 1px solid;
+	font-weight: bold;
+	background-image: url(../Images/accessdenied.gif);
+	margin: 3px;
+	vertical-align: sub;
+	border-left: red 1px solid;
+	width: 100%;
+	padding-top: 95px;
+	border-bottom: red 1px solid;
+	background-repeat: no-repeat;
+	height: 200px;
+	text-align: center;
+}

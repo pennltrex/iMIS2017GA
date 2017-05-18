@@ -1,0 +1,17 @@
+10.0
+15
+1       SQLUNIQUEID         1       16      ""   1     FinancialEntityKey                           ""
+2       SQLNCHAR            2       100     ""   2     Name                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     IsDefault                                    ""
+4       SQLUNIQUEID         1       16      ""   4     ContactKey                                   ""
+5       SQLNCHAR            2       510     ""   5     LogoImageURL                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLINT              0       4       ""   6     FirstMonthFiscalYear                         ""
+7       SQLNCHAR            2       100     ""   7     FinancialEntityCode                          SQL_Latin1_General_CP1_CI_AS
+8       SQLUNIQUEID         1       16      ""   8     AccessKey                                    ""
+9       SQLUNIQUEID         1       16      ""   9     CreatedByUserKey                             ""
+10      SQLDATETIME         0       8       ""   10    CreatedOn                                    ""
+11      SQLUNIQUEID         1       16      ""   11    UpdatedByUserKey                             ""
+12      SQLDATETIME         0       8       ""   12    UpdatedOn                                    ""
+13      SQLUNIQUEID         1       16      ""   13    OrganizationKey                              ""
+14      SQLUNIQUEID         1       16      ""   14    SystemEntityKey                              ""
+15      SQLDATETIME         1       8       ""   15    MarkedForDeleteOn                            ""

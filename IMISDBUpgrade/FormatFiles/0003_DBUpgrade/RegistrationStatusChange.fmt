@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     RegistrationStatusChangeKey                                                ""
+2       SQLUNIQUEID         1       16      ""   2     CertificationProgramRegistrationKey                                        ""
+3       SQLNCHAR            0       4       ""   3     RegistrationStatusCode                                                     SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       500     ""   4     RegistrationStatusChangeNote                                               SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         0       8       ""   5     StatusChangedOn                                                            ""
+6       SQLDATETIME         0       8       ""   6     UpdatedOn                                                                  ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                                                           ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                                                                  ""
+9       SQLUNIQUEID         1       16      ""   9     CreatedByUserKey                                                           ""
+10      SQLUNIQUEID         1       16      ""   10    StatusChangedContactKey                                                    ""

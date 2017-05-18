@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLUNIQUEID         1       16      ""   1     FormResponseKey                        ""
+2       SQLUNIQUEID         1       16      ""   2     FormDefinitionKey                      ""
+3       SQLNCHAR            2       20      ""   3     ID                                     SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     CreatedOn                              ""
+5       SQLUNIQUEID         1       16      ""   5     CreatedByUserKey                       ""
+6       SQLDATETIME         1       8       ""   6     UpdatedOn                              ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                       ""

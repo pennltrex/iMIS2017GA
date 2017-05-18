@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLUNIQUEID         1       16      ""   1     AccessKey                              ""
+2       SQLUNIQUEID         1       16      ""   2     Grantee                                ""
+3       SQLINT              0       4       ""   3     Permission                             ""
+4       SQLUNIQUEID         1       16      ""   4     GroupKey                               ""
+5       SQLUNIQUEID         1       16      ""   5     RoleKey                                ""
+6       SQLUNIQUEID         1       16      ""   6     UserKey                                ""
+7       SQLDATETIME         1       8       ""   7     MarkedForDeleteOn                      ""

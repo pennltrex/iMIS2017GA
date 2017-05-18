@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLUNIQUEID         1       16      ""   1     SystemConfigPageKey                          ""
+2       SQLNCHAR            2       60      ""   2     SystemConfigPageName                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     SystemConfigPageDesc                         SQL_Latin1_General_CP1_CI_AS

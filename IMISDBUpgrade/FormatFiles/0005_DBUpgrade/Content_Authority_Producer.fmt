@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLNUMERIC          1       19      ""   1     ContentAuthorityGroupID                            ""
+2       SQLNUMERIC          1       19      ""   2     ContactID                                          ""
+3       SQLNCHAR            2       2       ""   3     ContentEditorFlag                                  SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       2       ""   4     ContentApproverFlag                                SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       2       ""   5     NavCreatorFlag                                     SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       2       ""   6     NavEditorFlag                                      SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       2       ""   7     LayoutFlag                                         SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       2       ""   8     EditorFlag                                         SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       2       ""   9     CustomPageFlag                                     SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       2       ""   10    ComponentScriptFlag                                SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       2       ""   11    UploadFlag                                         SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       2       ""   12    DefaultOwnerFlag                                   SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       2       ""   13    HighestToolbarLevelInd                             SQL_Latin1_General_CP1_CI_AS

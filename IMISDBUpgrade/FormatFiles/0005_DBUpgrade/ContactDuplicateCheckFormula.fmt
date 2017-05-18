@@ -1,0 +1,13 @@
+11.0
+11
+1       SQLUNIQUEID         1       16      ""   1     ContactDuplicateCheckFormulaKey                                    ""
+2       SQLUNIQUEID         1       16      ""   2     CreatedByUserKey                                                   ""
+3       SQLDATETIME         0       8       ""   3     CreatedOn                                                          ""
+4       SQLUNIQUEID         1       16      ""   4     UpdatedByUserKey                                                   ""
+5       SQLDATETIME         0       8       ""   5     UpdatedOn                                                          ""
+6       SQLUNIQUEID         1       16      ""   6     SystemEntityKey                                                    ""
+7       SQLNCHAR            2       100     ""   7     FormulaName                                                        SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       1000    ""   8     FormulaText                                                        SQL_Latin1_General_CP1_CI_AS
+9       SQLINT              0       4       ""   9     FormulaType                                                        ""
+10      SQLINT              0       4       ""   10    MatchPercent                                                       ""
+11      SQLDATETIME         1       8       ""   11    MarkedForDeleteOn                                                  ""

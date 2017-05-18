@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLNCHAR            2       100     ""   1     ColumnName                               SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       510     ""   2     Label                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       2       ""   3     RequiredFlag                             SQL_Latin1_General_CP1_CI_AS
+4       SQLNUMERIC          1       19      ""   4     SortOrder                                ""
+5       SQLNCHAR            2       2       ""   5     UseInSearchFlag                          SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            0       2       ""   6     SimpleAdvancedFlag                       SQL_Latin1_General_CP1_CI_AS
+7       SQLNUMERIC          1       19      ""   7     TextBoxHeight                            ""
+8       SQLNUMERIC          1       19      ""   8     TextBoxWidth                             ""
+9       SQLNCHAR            2       2       ""   9     CheckBox                                 SQL_Latin1_General_CP1_CI_AS

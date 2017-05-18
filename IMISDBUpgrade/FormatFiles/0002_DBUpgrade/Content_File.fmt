@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLNUMERIC          1       19      ""   1     ContentFileID                                  ""
+2       SQLNUMERIC          1       19      ""   2     ContentID                                      ""
+3       SQLNCHAR            2       8       ""   3     FileTypeCode                                   SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       510     ""   4     Description                                    SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       510     ""   5     SourceLocation                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       510     ""   6     PublishLocation                                SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       510     ""   7     FileName                                       SQL_Latin1_General_CP1_CI_AS
+8       SQLNUMERIC          1       19      ""   8     SortOrder                                      ""
+9       SQLNUMERIC          1       19      ""   9     OriginalContentFileID                          ""
+10      SQLNUMERIC          1       19      ""   10    PreviousContentFileID                          ""

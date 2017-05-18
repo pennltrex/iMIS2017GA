@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLNUMERIC          1       19      ""   1     TaggedPageFormatID                                         ""
+2       SQLNCHAR            2       100     ""   2     TaggedPageFormatFileName                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     TaggedPageFormatDisplayName                                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     TaggedPageFormatSmallImage                                 SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     TaggedPageFormatLargeImage                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            0       2       ""   6     TaggedPageFormatTypeCode                                   SQL_Latin1_General_CP1_CI_AS

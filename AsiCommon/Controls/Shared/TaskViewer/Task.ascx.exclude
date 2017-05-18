@@ -1,0 +1,22 @@
+<%@ Control Language="c#" AutoEventWireup="false" Codebehind="Task.ascx.cs" Inherits="Asi.Web.UI.Common.Tasks.Task" TargetSchema="http://schemas.microsoft.com/intellisense/ie5"%>
+
+<asp:placeholder id="SubPlaceHolder" runat="server"></asp:placeholder>
+
+<script type="text/javascript">
+    function RefreshParentRadWindow() {
+        var oWindow = GetRadWindow();
+        if (oWindow != null && oWindow.BrowserWindow != null) {
+            var url = oWindow.BrowserWindow.location.href;
+            oWindow.BrowserWindow.location.href = url;
+        }
+    }
+</script>
+
+<div style="text-align:right">
+    <asiweb:StyledButton id="btnDelete" runat="server" /> 
+    <asiweb:StyledButton id="btnSave" runat="server" />
+    <asiweb:StyledButton id="btnCancel" runat="server" />
+</div>
+
+
+

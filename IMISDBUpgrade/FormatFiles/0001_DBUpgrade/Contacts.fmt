@@ -1,0 +1,17 @@
+10.0
+15
+1       SQLNCHAR            2       150     ""   1     NAME                     SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     SERVICES                 SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       40      ""   3     COUNTY                   SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       80      ""   4     CITY                     SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       30      ""   5     STATE                    SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       100     ""   6     CODES                    SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       20      ""   7     CONTACT_ID               SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       100     ""   8     ADDRESS                  SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       160     ""   9     COMPANY                  SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       50      ""   10    PHONE                    SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       50      ""   11    FAX                      SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       160     ""   12    BRANCH                   SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       200     ""   13    EMAIL                    SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       510     ""   14    WEBSITE                  SQL_Latin1_General_CP1_CI_AS
+15      SQLBINARY           2       8       ""   15    TIME_STAMP               ""

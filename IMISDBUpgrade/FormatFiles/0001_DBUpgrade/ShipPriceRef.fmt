@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLINT              0       4       ""   1     ShipPriceCode                  ""
+2       SQLNCHAR            0       60      ""   2     ShipPriceDesc                  SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       200     ""   3     DisplayPrompt                  SQL_Latin1_General_CP1_CI_AS

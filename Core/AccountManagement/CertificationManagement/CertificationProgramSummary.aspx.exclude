@@ -1,0 +1,100 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeFile="CertificationProgramSummary.aspx.cs" Inherits="Asi.Bae.Web.Customer.AccountManagement.CertificationManagement.CertificationProgramSummary" %>
+<%@ Import namespace="Asi.Web.UI.WebControls"%>
+<%@ Register Src="CertificationModuleList.ascx" TagName="CertificationModuleList" TagPrefix="Certification" %>
+<%@ Register Src="~/AsiCommon/Controls/ReportingServices/ReportingServicesViewer.ascx" TagPrefix="uc" TagName="viewer" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="TemplateBody" runat="server">
+
+    <asiweb:QueryDropDownList ID="QueryDDL" DocumentPath="$/CertificationManagement/DefaultSystem/Queries/CertificationProgramRegistration" runat="server" />
+
+    <div style="text-align: right;">
+	    <asiweb:StyledButton ID="btnPrintTranscript" 
+	        runat="server" />
+	</div>
+    
+    <asp:Repeater ID="CertificationProgramRepeater" runat="server">
+        <ItemTemplate>
+                <div>
+                    <asiweb:StyledLabel ID="lblProgramName"
+                        Text='<%# DataBinder.Eval(Container.DataItem, "CertificationProgramName") %>' 
+                        CssClass="mdTitle"
+                        runat="server" />
+                    &nbsp;
+                    &nbsp;
+                    <asiweb:StyledLabel ID="lblCanceledProgram"
+                        Text='<%# Asi.ResourceManager.GetPhrase("CanceledProgram", "Canceled Program") %>'
+                        ForeColor="red"
+                        Visible='<%# ((string)DataBinder.Eval(Container.DataItem, "Status") == Asi.Business.CertificationManagement.CertificationProgram.CertificationProgramStatus.INACTIVE) %>'
+                        runat="server" />
+                    <asiweb:StyledLabel ID="lblHasIncompletedPreRequisite"
+                        Text='<%# String.Concat(Asi.ResourceManager.GetPhrase("IncompletedPreRequisites1", "This program has pre-requisites for entry. Once "), DataBinder.Eval(Container.DataItem, "PreRequiredProgram"), Asi.ResourceManager.GetPhrase("IncompletedPreRequisites2", " is completed, you can register for the program.")) %>'
+                        ForeColor="red"
+                        Visible='<%# !DataBinder.Eval(Container.DataItem, "PreRequiredProgram").Equals(string.Empty) %>'
+                        runat="server" />
+                    <div>&nbsp;</div>
+                </div>
+                
+                <div style='<%# (!DataBinder.Eval(Container.DataItem, "PreRequiredProgram").Equals(string.Empty) || (bool)DataBinder.Eval(Container.DataItem, "UserHasRegistration") || ((string)DataBinder.Eval(Container.DataItem, "Status") != Asi.Business.CertificationManagement.CertificationProgram.CertificationProgramStatus.ACTIVE)) ? "display:none" : "display:block" %>'>
+                    <asiweb:StyledButton ID="btnRegister" 
+                        Text='<%# Asi.ResourceManager.GetPhrase("RegisterButton", "Register") %>'
+                        OnClick="RegisterButtonClick" 
+                        CommandArgument='<%# DataBinder.Eval(Container.DataItem, "CertificationProgramKey").ToString() %>' 
+                        runat="server" />
+                </div>
+                <div id="divCertificationModuleList" runat="server" visible='<%# DataBinder.Eval(Container.DataItem, "UserHasRegistration")%>'>
+                    <table width="100%" style="word-break:break-all; table-layout:fixed">
+                        <tr>
+                            <td style="width:18%"><asiweb:StyledLabel ID="lblComponent" Text='<%# Asi.ResourceManager.GetPhrase("Component", "Component") %>' CssClass="PanelTablePrompt" runat="server" /></td>
+                            <td style="width:8%"><asiweb:StyledLabel ID="lblDate" Text='<%# Asi.ResourceManager.GetPhrase("Date", "Date") %>' CssClass="PanelTablePrompt" runat="server" /></td>
+                            <td style="width:20%"><asiweb:StyledLabel ID="lblLocation" Text='<%# Asi.ResourceManager.GetPhrase("Location", "Location") %>' CssClass="PanelTablePrompt" runat="server" /></td>
+                            <td style="width:54%"><asiweb:StyledLabel ID="lblUnits" Text='<%# Asi.ResourceManager.GetPhrase("Units", "Units") %>' CssClass="PanelTablePrompt" runat="server" /></td>
+                        </tr>
+                    </table>
+                    <Certification:CertificationModuleList 
+                        ID="CertificationModuleList1"
+                        CertificationProgramRegistrationKey='<%# DataBinder.Eval(Container.DataItem, "CertificationProgramRegistrationKey") %>'
+                        runat="server" />
+                    <div>&nbsp;</div>
+                </div>
+                <div id="divLegendLabels" runat="server" visible='<%# DataBinder.Eval(Container.DataItem, "UserHasRegistration") %>'>
+                    <asiweb:StyledLabel ID="lblProgramCompletedBy"
+                        Text='<%# Asi.ResourceManager.GetPhrase("ProgramCompletedBy", "Program must be completed by:") %>'
+                        CssClass="PanelTablePrompt"
+                        runat="server" />
+                    <asiweb:StyledLabel ID="lblExpirationDate"
+                        Text='<%# DataBinder.Eval(Container.DataItem, "ExpirationDate") %>' 
+                        CssClass="PanelTablePrompt"
+                        runat="server" /> &nbsp;
+                    <asiweb:StyledLabel ID="lblUnitsLegend"
+                        Text='<%# GetTotalUnitsText(DataBinder.Eval(Container.DataItem, "Name"), DataBinder.Eval(Container.DataItem, "EarnedUnits"), DataBinder.Eval(Container.DataItem, "RequiredNumberOfUnits")) %>' 
+                        CssClass="PanelTablePrompt"
+                        runat="server" /> &nbsp;
+                    <asiweb:StyledLabel ID="lblProgramCompleted"
+                        Text='<%# Asi.ResourceManager.GetPhrase("ProgramCompleted", "Program completed") %>'
+                        Visible='<%# (bool)DataBinder.Eval(Container.DataItem, "RegistrationIsActive") %>'
+                        CssClass="PanelTablePrompt"
+                        runat="server" /> &nbsp;
+                    <asiweb:StyledLabel ID="lblProgramWaitingForApproval"
+                        Text='<%# Asi.ResourceManager.GetPhrase("AwaitingApproval", "Awaiting Approval") %>'
+                        Visible='<%# (bool)DataBinder.Eval(Container.DataItem, "RegistrationIsPendingApproval") %>'
+                        ForeColor="red"
+                        runat="server" />
+                </div>
+                <div id="divCancelButton" runat="server" visible='<%# (bool)DataBinder.Eval(Container.DataItem, "UserHasRegistration") && !(bool)DataBinder.Eval(Container.DataItem, "RegistrationIsInactive") %>'>
+                    <asiweb:StyledButton ID="btnCancel"
+                        Text='<%# Asi.ResourceManager.GetPhrase("CancelProgramRegistration", "Cancel Program Registration") %>'
+                        OnClick="CancelButtonClick" 
+                        CommandArgument='<%# DataBinder.Eval(Container.DataItem, "CertificationProgramKey").ToString() %>' 
+                        Visible='<%# HasCancelPermissions %>'
+                        runat="server" />
+                </div> 
+                <div id="divInactiveRegistration" runat="server" visible='<%# DataBinder.Eval(Container.DataItem, "RegistrationIsInactive") %>'>
+                    <asiweb:StyledLabel ID="lblInactiveRegistration" Text='<%# Asi.ResourceManager.GetPhrase("InactiveRegistration", "This registration is now inactive") %>' runat="server" />
+                </div>
+                &nbsp;
+                <hr />
+                &nbsp;
+                &nbsp;
+        </ItemTemplate>
+    </asp:Repeater>
+</asp:Content>

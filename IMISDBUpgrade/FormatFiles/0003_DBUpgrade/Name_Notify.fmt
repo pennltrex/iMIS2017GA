@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLNCHAR            2       20      ""   1     ID                                   SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     NOTIFY_ID                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     MEM_TRIBUTE_CODE                     SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       20      ""   4     RELATIONSHIP                         SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       80      ""   5     MERGE_CODE                           SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       80      ""   6     SALUTATION_CODE                      SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       80      ""   7     SENDER_CODE                          SQL_Latin1_General_CP1_CI_AS
+8       SQLBINARY           2       8       ""   8     TIME_STAMP                           ""

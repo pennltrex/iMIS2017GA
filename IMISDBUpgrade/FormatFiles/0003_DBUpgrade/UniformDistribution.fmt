@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLUNIQUEID         1       16      ""   1     UniformKey                       ""
+2       SQLUNIQUEID         1       16      ""   2     UserKey                          ""
+3       SQLDATETIME         1       8       ""   3     EffectiveDate                    ""
+4       SQLDATETIME         1       8       ""   4     ExpirationDate                   ""

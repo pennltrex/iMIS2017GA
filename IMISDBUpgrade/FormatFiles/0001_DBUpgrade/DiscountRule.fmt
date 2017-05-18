@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     RuleKey                                      ""
+2       SQLBIT              1       1       ""   2     IsPremium                                    ""
+3       SQLBIT              1       1       ""   3     IsOrderDiscount                              ""
+4       SQLUNIQUEID         1       16      ""   4     PromoProductKey                              ""
+5       SQLDECIMAL          1       19      ""   5     PromoProductQuantity                         ""
+6       SQLINT              0       4       ""   6     PriceBasisCode                               ""
+7       SQLDECIMAL          1       19      ""   7     Adjustment                                   ""
+8       SQLBIT              1       1       ""   8     IsPercent                                    ""
+9       SQLINT              0       4       ""   9     PremiumHandlingFlag                          ""
+10      SQLUNIQUEID         1       16      ""   10    HoldCodeKey                                  ""

@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLBIGINT           0       8       ""   1     Id                                       ""
+2       SQLDATETIME         0       8       ""   2     PublishedOn                              ""
+3       SQLUNIQUEID         1       16      ""   3     PublishedByUserKey                       ""
+4       SQLINT              0       4       ""   4     Status                                   ""
+5       SQLINT              0       4       ""   5     Type                                     ""
+6       SQLDATETIME         1       8       ""   6     ProcessedOn                              ""
+7       SQLDATETIME         1       8       ""   7     MinDate                                  ""
+8       SQLDATETIME         1       8       ""   8     MaxDate                                  ""
+9       SQLNCHAR            2       64      ""   9     ItemCode                                 SQL_Latin1_General_CP1_CI_AS
+10      SQLINT              1       4       ""   10    ItemAction                               ""

@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLNCHAR            2       62      ""   1     PRODUCT_CODE                             SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     LINE_NUMBER                              ""
+3       SQLNCHAR            2       62      ""   3     CHILD_PRODUCT_CODE                       SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     REQUIRED                                 ""
+5       SQLBINARY           2       8       ""   5     TIME_STAMP                               ""

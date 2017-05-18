@@ -1,0 +1,13 @@
+10.0
+11
+1       SQLINT              0       4       ""   1     EXPENSE_SEQN                     ""
+2       SQLNCHAR            2       20      ""   2     EXPENSE_TYPE                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       10      ""   3     FUND                             SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       20      ""   4     CAMPAIGN_CODE                    SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       80      ""   5     APPEAL_CODE                      SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       20      ""   6     MEETING                          SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       62      ""   7     PRODUCT_CODE                     SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       120     ""   8     DESCRIPTION                      SQL_Latin1_General_CP1_CI_AS
+9       SQLDATETIME         1       8       ""   9     EXPENSE_DATE                     ""
+10      SQLMONEY            0       8       ""   10    EXPENSE_AMOUNT                   ""
+11      SQLBINARY           2       8       ""   11    TIME_STAMP                       ""

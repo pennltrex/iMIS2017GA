@@ -1,0 +1,14 @@
+10.0
+12
+1       SQLNCHAR            2       30      ""   1     APPLICATION                                SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       60      ""   2     WINDOW_NAME                                SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     ACCESS_KEYWORDS                            SQL_Latin1_General_CP1_CI_AS
+4       SQLTINYINT          0       1       ""   4     SEQ                                        ""
+5       SQLNCHAR            2       60      ""   5     TITLE                                      SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       60      ""   6     TABLE_NAME                                 SQL_Latin1_General_CP1_CI_AS
+7       SQLBIT              1       1       ""   7     AUTO_CREATE                                ""
+8       SQLINT              0       4       ""   8     WINDOW_HEIGHT                              ""
+9       SQLINT              0       4       ""   9     WINDOW_WIDTH                               ""
+10      SQLBIT              1       1       ""   10    USE_VERTICAL_SCROLL                        ""
+11      SQLINT              0       4       ""   11    NUM_OF_COLUMNS                             ""
+12      SQLBINARY           2       8       ""   12    TIME_STAMP                                 ""

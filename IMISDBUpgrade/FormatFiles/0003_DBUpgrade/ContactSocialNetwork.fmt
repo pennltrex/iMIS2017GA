@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     ContactSocialNetworkKey                            ""
+2       SQLUNIQUEID         1       16      ""   2     SocialNetworkKey                                   ""
+3       SQLUNIQUEID         1       16      ""   3     ContactKey                                         ""
+4       SQLNCHAR            2       510     ""   4     SocialNetworkUserName                              SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       510     ""   5     SocialNetworkUserId                                SQL_Latin1_General_CP1_CI_AS

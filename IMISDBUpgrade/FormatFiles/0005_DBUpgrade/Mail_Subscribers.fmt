@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLNCHAR            2       200     ""   1     MAIL_LIST                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     ID                             SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         0       8       ""   3     CREATION_DATE                  ""
+4       SQLBINARY           2       8       ""   4     TIME_STAMP                     ""

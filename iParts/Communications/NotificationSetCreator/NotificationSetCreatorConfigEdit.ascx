@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="NotificationSetCreatorConfigEdit.ascx.cs" Inherits="Asi.Web.iParts.Communications.NotificationSetCreator.NotificationSetCreatorConfigEdit" %>
+ 

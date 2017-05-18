@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     ContactLogKey                          ""
+2       SQLUNIQUEID         1       16      ""   2     ContactKey                             ""
+3       SQLNCHAR            2       80      ""   3     SourceCodeCode                         SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       400     ""   4     Description                            SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         0       8       ""   5     OutputOn                               ""
+6       SQLDATETIME         0       8       ""   6     CreatedOn                              ""
+7       SQLUNIQUEID         1       16      ""   7     CreatedByUserKey                       ""
+8       SQLUNIQUEID         1       16      ""   8     OrganizationKey                        ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                      ""

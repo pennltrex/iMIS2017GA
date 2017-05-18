@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     ChangeLogKey                           ""
+2       SQLUNIQUEID         1       16      ""   2     OrganizationKey                        ""
+3       SQLNCHAR            2       200     ""   3     ObjectTypeName                         SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     ObjectKey                              ""
+5       SQLTINYINT          1       1       ""   5     ActionType                             ""
+6       SQLNCHAR            2       500     ""   6     Description                            SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         0       8       ""   7     CreatedOn                              ""
+8       SQLUNIQUEID         1       16      ""   8     CreatedByUserKey                       ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                      ""

@@ -1,0 +1,22 @@
+11.0
+20
+1       SQLNCHAR            2       20      ""   1     MEETING                            SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       30      ""   2     HOTEL_CODE                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     ID                                 SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       160     ""   4     COMPANY                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       80      ""   5     ADDRESS_1                          SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       80      ""   6     ADDRESS_2                          SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       80      ""   7     CITY                               SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       30      ""   8     STATE_PROVINCE                     SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       20      ""   9     ZIP                                SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       50      ""   10    COUNTRY                            SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       80      ""   11    PRIMARY_CONTACT                    SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       80      ""   12    TITLE                              SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       40      ""   13    PHONE                              SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       40      ""   14    FAX                                SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       40      ""   15    TOLL_FREE                          SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       60      ""   16    COMPANY_SORT                       SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       20      ""   17    HOTEL_CLASS                        SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       510     ""   18    NOTES                              SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       80      ""   19    ADDRESS_3                          SQL_Latin1_General_CP1_CI_AS
+20      SQLBINARY           2       8       ""   20    TIME_STAMP                         ""

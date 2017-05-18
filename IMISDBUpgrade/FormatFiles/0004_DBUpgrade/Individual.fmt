@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLUNIQUEID         1       16      ""   1     ContactKey                                               ""
+2       SQLNCHAR            2       50      ""   2     PrefixCode                                               SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       40      ""   3     FirstName                                                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       40      ""   4     MiddleName                                               SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       60      ""   5     LastName                                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       20      ""   6     SuffixCode                                               SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       40      ""   7     Designation                                              SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       40      ""   8     Informal                                                 SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       2       ""   9     Gender                                                   SQL_Latin1_General_CP1_CI_AS
+10      SQLDATETIME         1       8       ""   10    BirthDate                                                ""
+11      SQLUNIQUEID         1       16      ""   11    PrimaryInstituteContactKey                               ""
+12      SQLNCHAR            2       160     ""   12    PrimaryInstituteName                                     SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       160     ""   13    PrimaryInstituteTitle                                    SQL_Latin1_General_CP1_CI_AS

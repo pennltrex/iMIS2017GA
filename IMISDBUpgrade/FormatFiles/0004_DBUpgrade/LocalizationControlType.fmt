@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLUNIQUEID         1       16      ""   1     LocalizationControlTypeId                                  ""
+2       SQLNCHAR            2       440     ""   2     LocalizationControlTypeName                                SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       440     ""   3     AssemblyName                                               SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     BackOrderKey                           ""
+2       SQLUNIQUEID         1       16      ""   2     OrderLineKey                           ""
+3       SQLDECIMAL          1       19      ""   3     QtyBackOrdered                         ""
+4       SQLDATETIME         0       8       ""   4     DateBackOrdered                        ""
+5       SQLUNIQUEID         1       16      ""   5     ProductKey                             ""
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                      ""

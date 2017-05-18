@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLNCHAR            2       256     ""   1     ObjectName                   SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       256     ""   2     PropertyName                 SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     Slot                         ""
+4       SQLBIT              1       1       ""   4     IsDeleted                    ""
+5       SQLBIT              1       1       ""   5     IsExternal                   ""
+6       SQLNCHAR            2       100     ""   6     DataType                     SQL_Latin1_General_CP1_CI_AS
+7       SQLINT              0       4       ""   7     Length                       ""
+8       SQLINT              0       4       ""   8     Precision                    ""
+9       SQLINT              0       4       ""   9     Scale                        ""

@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLNCHAR            2       510     ""   1     AdminSectionCode                         SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       510     ""   2     AdminSectionDesc                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       2       ""   3     WorkflowTaggingInd                       SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       4       ""   4     ComponentCode                            SQL_Latin1_General_CP1_CI_AS

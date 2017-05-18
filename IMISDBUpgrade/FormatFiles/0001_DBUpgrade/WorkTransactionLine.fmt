@@ -1,0 +1,22 @@
+10.0
+20
+1       SQLUNIQUEID         1       16      ""   1     WorkTransactionKey                                     ""
+2       SQLUNIQUEID         1       16      ""   2     WorkTransactionLineKey                                 ""
+3       SQLINT              0       4       ""   3     TransactionTypeCode                                    ""
+4       SQLUNIQUEID         1       16      ""   4     WarehouseKey                                           ""
+5       SQLUNIQUEID         1       16      ""   5     OrderLineKey                                           ""
+6       SQLUNIQUEID         1       16      ""   6     ProductKey                                             ""
+7       SQLUNIQUEID         1       16      ""   7     UomKey                                                 ""
+8       SQLNCHAR            2       200     ""   8     ProductDescription                                     SQL_Latin1_General_CP1_CI_AS
+9       SQLDECIMAL          1       19      ""   9     Quantity                                               ""
+10      SQLDECIMAL          1       19      ""   10    QuantityOrdered                                        ""
+11      SQLUNIQUEID         1       16      ""   11    ReasonCodeKey                                          ""
+12      SQLNCHAR            2       100     ""   12    LotId                                                  SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       100     ""   13    PurchaseOrderNumber                                    SQL_Latin1_General_CP1_CI_AS
+14      SQLUNIQUEID         1       16      ""   14    InventoryLocationKey                                   ""
+15      SQLUNIQUEID         1       16      ""   15    TargetLocationKey                                      ""
+16      SQLDECIMAL          1       19      ""   16    LandedCost                                             ""
+17      SQLINT              0       4       ""   17    SortOrder                                              ""
+18      SQLUNIQUEID         1       16      ""   18    RelatedTransactionLineKey                              ""
+19      SQLDECIMAL          1       19      ""   19    TotalCost                                              ""
+20      SQLDATETIME         1       8       ""   20    MarkedForDeleteOn                                      ""

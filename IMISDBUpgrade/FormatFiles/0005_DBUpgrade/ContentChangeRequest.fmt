@@ -1,0 +1,10 @@
+11.0
+8
+1       SQLUNIQUEID         1       16      ""   1     ContentChangeRequestKey                                ""
+2       SQLUNIQUEID         1       16      ""   2     ContentDocumentVersionKey                              ""
+3       SQLINT              0       4       ""   3     ContentRequestStatusCode                               ""
+4       SQLUNIQUEID         1       16      ""   4     AssignedByUserKey                                      ""
+5       SQLUNIQUEID         1       16      ""   5     AssignedToUserKey                                      ""
+6       SQLNCHAR            2       4000    ""   6     RequestText                                            SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         0       8       ""   7     RequestDateTime                                        ""
+8       SQLUNIQUEID         1       16      ""   8     ReassignedToUserKey                                    ""

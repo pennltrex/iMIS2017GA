@@ -1,0 +1,13 @@
+10.0
+11
+1       SQLUNIQUEID         1       16      ""   1     RootHierarchyKey                                     ""
+2       SQLNCHAR            2       200     ""   2     HierarchyRootName                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     HierarchyRootDescription                             SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     OrganizationKey                                      ""
+5       SQLUNIQUEID         1       16      ""   5     AccessKey                                            ""
+6       SQLNCHAR            2       200     ""   6     UniformType                                          SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         0       8       ""   7     CreatedOn                                            ""
+8       SQLUNIQUEID         1       16      ""   8     CreatedByUserKey                                     ""
+9       SQLDATETIME         0       8       ""   9     UpdatedOn                                            ""
+10      SQLUNIQUEID         1       16      ""   10    UpdatedByUserKey                                     ""
+11      SQLDATETIME         1       8       ""   11    MarkedForDeleteOn                                    ""

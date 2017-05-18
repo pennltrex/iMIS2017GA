@@ -1,0 +1,20 @@
+10.0
+18
+1       SQLNCHAR            2       20      ""   1     ID                                   SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       120     ""   2     CFID                                 SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       120     ""   3     CFTOKEN                              SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       60      ""   4     IP_ADDRESS                           SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       62      ""   5     PRODUCT_CODE                         SQL_Latin1_General_CP1_CI_AS
+6       SQLFLT8             0       8       ""   6     QUANTITY_ORDERED                     ""
+7       SQLMONEY            0       8       ""   7     EXTENDED_AMOUNT                      ""
+8       SQLNCHAR            2       120     ""   8     TITLE                                SQL_Latin1_General_CP1_CI_AS
+9       SQLDATETIME         1       8       ""   9     BASKET_DATE                          ""
+10      SQLMONEY            0       8       ""   10    PRICE                                ""
+11      SQLNCHAR            2       60      ""   11    UF_1                                 SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       60      ""   12    UF_2                                 SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       60      ""   13    UF_3                                 SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       60      ""   14    UF_4                                 SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       20      ""   15    LOCATION                             SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       20      ""   16    BIN                                  SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       20      ""   17    CATEGORY                             SQL_Latin1_General_CP1_CI_AS
+18      SQLBINARY           2       8       ""   18    TIME_STAMP                           ""

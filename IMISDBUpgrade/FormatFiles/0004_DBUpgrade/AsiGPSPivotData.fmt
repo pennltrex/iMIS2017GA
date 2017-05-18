@@ -1,0 +1,14 @@
+11.0
+12
+1       SQLDATETIME         0       8       ""   1     PeriodBegin                  ""
+2       SQLDATETIME         0       8       ""   2     PeriodEnd                    ""
+3       SQLINT              0       4       ""   3     TotalMembers                 ""
+4       SQLINT              0       4       ""   4     DataYear                     ""
+5       SQLNCHAR            2       80      ""   5     ReportLabel                  SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       80      ""   6     Dimension                    SQL_Latin1_General_CP1_CI_AS
+7       SQLINT              0       4       ""   7     Ordinal                      ""
+8       SQLNCHAR            2       60      ""   8     MeasureName                  SQL_Latin1_General_CP1_CI_AS
+9       SQLDECIMAL          1       19      ""   9     MeasureValue                 ""
+10      SQLDATETIME         0       8       ""   10    RunDate                      ""
+11      SQLNCHAR            2       510     ""   11    SerialNo                     SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       40      ""   12    RowType                      SQL_Latin1_General_CP1_CI_AS

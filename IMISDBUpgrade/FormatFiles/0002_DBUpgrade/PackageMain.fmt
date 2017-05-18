@@ -1,0 +1,16 @@
+10.0
+14
+1       SQLUNIQUEID         1       16      ""   1     PackageKey                             ""
+2       SQLNCHAR            2       100     ""   2     Name                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     Description                            SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     ExpirationDate                         ""
+5       SQLUNIQUEID         1       16      ""   5     PackageMessageKey                      ""
+6       SQLUNIQUEID         1       16      ""   6     OutputMethodKey                        ""
+7       SQLDECIMAL          1       19      ""   7     Cost                                   ""
+8       SQLINT              0       4       ""   8     PackageStatusCode                      ""
+9       SQLDATETIME         0       8       ""   9     UpdatedOn                              ""
+10      SQLUNIQUEID         1       16      ""   10    UpdatedByUserKey                       ""
+11      SQLUNIQUEID         1       16      ""   11    CreatedByUserKey                       ""
+12      SQLDATETIME         0       8       ""   12    CreatedOn                              ""
+13      SQLUNIQUEID         1       16      ""   13    SystemEntityKey                        ""
+14      SQLDATETIME         1       8       ""   14    MarkedForDeleteOn                      ""

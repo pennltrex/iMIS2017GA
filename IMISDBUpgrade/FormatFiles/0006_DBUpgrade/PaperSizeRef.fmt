@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLUNIQUEID         1       16      ""   1     PaperSizeKey                   ""
+2       SQLNCHAR            2       100     ""   2     PaperSizeDesc                  SQL_Latin1_General_CP1_CI_AS
+3       SQLDECIMAL          1       19      ""   3     PageHeight                     ""
+4       SQLDECIMAL          1       19      ""   4     PageWidth                      ""

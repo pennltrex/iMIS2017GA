@@ -1,0 +1,166 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.UI.MasterPage" %>
+<%@ Register Src="~/AsiCommon/Controls/ContentManagement/HeaderScript.ascx" TagName="HeaderScript"
+    TagPrefix="uc1" %>
+<%@ Register Src="~/AsiCommon/Controls/ContentManagement/UserMessageDisplay.ascx" TagName="MessageDisplay"
+    TagPrefix="uc2" %>
+<%@ Register TagPrefix="telerik" Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" %>
+<script language="C#" runat="server">
+    override protected void OnInit(EventArgs e)
+    {
+        this.Load += new System.EventHandler(this.Page_Load);
+        base.OnInit(e);
+    }
+
+    private void Page_Load(object sender, EventArgs e)
+    {
+        Guid hierarchyKey;
+        if (Request.QueryString["hkey"] != null)
+            hierarchyKey = new Guid(Request.QueryString["hkey"]);
+        else
+            hierarchyKey = Asi.AppContext.CurrentContext.HKey;
+        if (!Page.IsPostBack)
+        {
+            bool showOk = true;
+            bool showCancel = true;
+            bool showWaitDialog = false;
+
+            if (Request["iShowOkButton"] != null)
+            {
+                string showOkParam = Request["iShowOkButton"];
+                showOk = bool.Parse(showOkParam);
+            }
+            if (Request["iShowCancelButton"] != null)
+            {
+                string showCancelParam = Request["iShowCancelButton"];
+                showCancel = bool.Parse(showCancelParam);
+            }
+            if (Request["iShowWaitDialog"] != null)
+            {
+                string showWaitParam = Request["iShowWaitDialog"];
+                showWaitDialog = bool.Parse(showWaitParam);
+            }
+
+            OkButton.Visible = showOk;
+
+            CancelButton.Visible = showCancel;
+
+            ViewState["PostOpeningWindow"] = Request["iPostOpeningWindow"] != null && bool.Parse(Request["iPostOpeningWindow"]);
+            ViewState["CallbackFunction"] = Request["iCallbackFunction"];
+        }
+        else
+        {
+            ViewState["PostOpeningWindow"] = ViewState["PostOpeningWindow"];
+            ViewState["CallbackFunction"] = ViewState["CallbackFunction"];
+        }
+
+        okButtonScript.Text = "var DialogHiddenOKButtonID = '" + DialogHiddenOKButton.ClientID + "';\n";
+
+        string tildeExpansion = Asi.Web.Utilities.GetTildeExpansion();
+        ScriptManager1.Scripts.Add(new ScriptReference(tildeExpansion + "/AsiCommon/Scripts/Asi.js"));
+
+        string includeText = String.Format("<link href=\"{0}/Templates/BSA/StyleSheets/BSA.css\" rel=\"stylesheet\" type=\"text/css\" />", Asi.Web.Utilities.GetTildeExpansion());
+        LiteralControl stylesheet = new LiteralControl(includeText);
+        ((HtmlHead)Page.Header).Controls.Add(stylesheet);
+    }
+    private void OkButton_Click(object sender, System.EventArgs e)
+    {
+        if (Page is Asi.Web.UI.DisplayPageBase) {
+            Asi.Web.UI.DisplayPageBase displayPage = (Asi.Web.UI.DisplayPageBase)Page;
+            displayPage.HandleCommandButtonClick(sender, Asi.Web.UI.CommandButtonType.Save);
+            if (displayPage.GetUserMessages().Count == 0)
+            {
+                string script = string.Empty;
+                if (ViewState["PostOpeningWindow"] != null && (bool)ViewState["PostOpeningWindow"])
+                {
+                    script += "if(window.opener) window.opener.submitForm();";
+                }
+
+                string callback = SafeString(ViewState["CallbackFunction"]);
+                if (callback != String.Empty)
+                {
+                    script += "if (window.opener) window.opener." + MakeFunctionCall(callback) + ";";
+                }
+
+                script += "window.returnValue=true;window.close();";
+
+                okButtonScript.Text = script;
+            }
+            DialogHiddenOKButton.Value = "";
+        }
+
+    }
+    private string MakeFunctionCall(string str)
+    {
+        return (str.IndexOf("(") < 0) ? str + "()" : str;
+    }
+    private string SafeString(object obj)
+    {
+        string str = obj as string;
+        return (str == null) ? String.Empty : str;
+    }
+</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<script language="javascript">
+<!--
+    var DialogOKButtonID = 'DialogOKButton';
+    function BSADialogOKClicked(obj)
+    {
+        document.getElementById(DialogHiddenOKButtonID).value = "1";
+        submitForm(obj);
+    }
+//-->
+</script>
+    <uc1:HeaderScript ID="HeaderScript" runat="server" />
+</head>
+<body class="TemplateBodyDialog">
+    <Form id="template" runat="server">
+        <telerik:RadScriptManager ID="ScriptManager1" runat="server" EnableCdn="false" EnablePageMethods="true" EnablePartialRendering="true" EnableScriptGlobalization="true" AsyncPostBackTimeout="3600"></telerik:RadScriptManager>
+            <div id="buttonbar" style="height: 31px; background-repeat: repeat-x; background-image: url('<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_nav_sliver.jpg')">
+            <img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_print_off.jpg"
+                onclick="printWindow();" alt="Print" width="37" height="31" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_print_on.jpg');"
+                onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_print_off.jpg');" /><img
+                    border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_email_off.jpg"
+                    alt="e-mail" onclick="emailWindow();" width="35" height="31" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_email_on.jpg');"
+                    onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_email_off.jpg');" /><img
+                        border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_help_off.jpg"
+                        alt="Help" onclick="showHelp();" width="32" height="31" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_help_on.jpg');"
+                        onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_help_off.jpg');" /><img
+                            border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_paint_off.jpg"
+                            alt="Open in Screen Designer" onclick="showHideBrush();" width="39" height="31"
+                            onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_paint_on.jpg');"
+                            onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_paint_off.jpg');" /><img
+                                border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/dialog_top_center.jpg"
+                                width="185" height="31" />
+            <img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/dialog_top_logo.jpg"
+                width="69" height="31" style="position: absolute; right: 0;" />
+        </div>
+        <div id="BSAcontentdialog">
+            <uc2:MessageDisplay ID="MessageDisplay" runat="server" />
+            <asp:ContentPlaceHolder ID="TemplateBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div style="text-align: right">
+            <input type="hidden" id="DialogHiddenOKButton" runat="server" onserverchange="OkButton_Click"
+                name="DialogHiddenOKButton">
+            <asp:PlaceHolder ID="OkButton" runat="server">
+                <img border="0" id="DialogOKButton" style="cursor: hand;" onclick="BSADialogOKClicked(this);"
+                    src='<%=Asi.Web.Utilities.GetTildeExpansion() + "/Templates/iMIS/images/buttons/ok.gif"%>'>
+            </asp:PlaceHolder>
+            <asp:PlaceHolder ID="CancelButton" runat="server">
+                <img border="0" onclick="window.close();" style="cursor: hand;" src='<%=Asi.Web.Utilities.GetTildeExpansion() + "/Templates/iMIS/images/buttons/cancel.gif"%>'>
+            </asp:PlaceHolder>
+        </div>
+
+        <script language="javascript">
+    <asp:Literal id="okButtonScript" runat="server"></asp:Literal>
+        </script>
+
+    </form>
+        <!--jscript from Page.ResgisterStartupScript extention is loaded here -->
+        <asp:contentplaceholder id ="TemplateScripts" runat="server"></asp:contentplaceholder>	    
+
+</body>
+</html>

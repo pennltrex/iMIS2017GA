@@ -1,0 +1,112 @@
+<%@ Control Language="c#" AutoEventWireup="false" %>
+<%@ Register TagPrefix="asi" Assembly="Asi.Web" Namespace="Asi.Web.UI.WebControls" %>
+<script language="C#" runat="server">
+	private void Page_Load(object sender, EventArgs e)
+	{
+		if (!Page.IsPostBack)
+		{
+			bool showOk = true;
+			bool showCancel = true;
+			bool showWaitDialog = false;
+			
+			if (Request["iShowOkButton"] != null)
+			{
+				string showOkParam = Request["iShowOkButton"];
+				showOk = bool.Parse(showOkParam);
+			}
+			if (Request["iShowCancelButton"] != null)
+			{
+				string showCancelParam = Request["iShowCancelButton"];
+				showCancel = bool.Parse(showCancelParam);
+			}
+			if (Request["iShowWaitDialog"] != null)
+			{
+				string showWaitParam = Request["iShowWaitDialog"];
+				showWaitDialog = bool.Parse(showWaitParam);
+			}			
+			
+			OkButton.Visible = showOk;
+			
+			CancelButton.Visible = showCancel;
+			
+			ViewState["PostOpeningWindow"] = Request["iPostOpeningWindow"] != null && bool.Parse(Request["iPostOpeningWindow"]);
+			ViewState["CallbackFunction"] = Request["iCallbackFunction"];
+		}
+		else
+		{
+			ViewState["PostOpeningWindow"] = ViewState["PostOpeningWindow"];
+			ViewState["CallbackFunction"] = ViewState["CallbackFunction"];
+		}
+		
+		okButtonScript.Text = "var DialogHiddenOKButtonID = '" + DialogHiddenOKButton.ClientID + "';\n";
+	}
+	private void OkButton_Click(object sender, System.EventArgs e){
+	
+		Asi.Web.UI.Common.ContentManagement.Template parentTemplate = (Asi.Web.UI.Common.ContentManagement.Template) Parent.Parent;
+		parentTemplate.HandleCommandButtonClick(sender, Asi.Web.UI.CommandButtonType.Ok);
+		
+		if(parentTemplate.GetUserMessages().Length == 0){
+			string script = string.Empty;
+			if (ViewState["PostOpeningWindow"] != null && (bool)ViewState["PostOpeningWindow"])
+			{
+				script += "if(window.opener) window.opener.submitForm();";
+			}
+			
+			string callback = SafeString(ViewState["CallbackFunction"]);
+			if (callback != String.Empty)
+			{
+				script += "if (window.opener) window.opener." + MakeFunctionCall(callback) + ";";
+			}
+		
+			script += "window.returnValue=true;window.close();";
+		
+			okButtonScript.Text = script;
+		}
+		DialogHiddenOKButton.Value = "";
+	}
+	override protected void OnInit(EventArgs e)
+	{
+		this.Load += new System.EventHandler(this.Page_Load);
+		base.OnInit(e);
+	}
+	private string MakeFunctionCall(string str)
+	{
+		return (str.IndexOf("(") < 0) ? str + "()" : str;
+	}
+	private string SafeString(object obj)
+	{
+		string str = obj as string;
+		return (str == null) ? String.Empty : str;
+	}
+</script>
+<script language="javascript"><!--
+	// the default operation of the ok button is to post back and call the OKButton_Click event server side.  However,
+	// this can be overridden with javascript code like:
+	//	window.onload = SetOKButton;
+	//	function SetOKButton()
+	//	{
+	//		document.getElementById(DialogOKButtonID).onclick = MyOKJavaScriptFunctionName;
+	//	}
+	var DialogOKButtonID = 'DialogOKButton';
+	function BSADialogOKClicked(obj)
+	{
+		document.getElementById(DialogHiddenOKButtonID).value = "1";
+		submitForm(obj);
+	}
+//-->
+</script>
+
+<div style="text-align: right">
+	<input type="hidden" id="DialogHiddenOKButton" runat="server" onserverchange="OkButton_Click" NAME="DialogHiddenOKButton">
+	<asp:PlaceHolder id="OkButton" runat="server">
+		<img border=0 id="DialogOKButton" style="cursor:hand;" onclick="BSADialogOKClicked(this);" src='<%=Asi.Web.Utilities.GetTildeExpansion() + "/Templates/iMIS/images/buttons/ok.gif"%>'>
+	</asp:PlaceHolder>
+	<asp:PlaceHolder id="CancelButton" runat="server">
+		<img border=0 onclick="window.close();" style="cursor:hand;" src='<%=Asi.Web.Utilities.GetTildeExpansion() + "/Templates/iMIS/images/buttons/cancel.gif"%>'>
+	</asp:PlaceHolder></div>
+</div>
+<script language="javascript">
+	<asp:Literal id="okButtonScript" runat="server"></asp:Literal>
+</script>
+
+

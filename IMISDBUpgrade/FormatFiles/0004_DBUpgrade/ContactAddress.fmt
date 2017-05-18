@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLUNIQUEID         1       16      ""   1     ContactAddressKey                                ""
+2       SQLUNIQUEID         1       16      ""   2     AddressKey                                       ""
+3       SQLUNIQUEID         1       16      ""   3     ContactKey                                       ""
+4       SQLUNIQUEID         1       16      ""   4     AddressTypeKey                                   ""
+5       SQLBIT              1       1       ""   5     IsPreferredOverall                               ""
+6       SQLBIT              1       1       ""   6     IsPreferredForCategory                           ""
+7       SQLBIT              1       1       ""   7     IsOptOut                                         ""
+8       SQLBIT              1       1       ""   8     NoSolicitationFlag                               ""
+9       SQLINT              0       4       ""   9     AddressCategoryCode                              ""
+10      SQLDATETIME         1       8       ""   10    MarkedForDeleteOn                                ""

@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLINT              0       4       ""   1     RunNumber                        ""
+2       SQLNCHAR            2       20      ""   2     UserID                           SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       30      ""   3     Status                           SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     Start                            ""
+5       SQLDATETIME         1       8       ""   5     End                              ""
+6       SQLINT              1       4       ""   6     MembersUpdated                   ""
+7       SQLINT              1       4       ""   7     Errors                           ""

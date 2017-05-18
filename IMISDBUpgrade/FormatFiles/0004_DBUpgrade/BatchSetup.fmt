@@ -1,0 +1,17 @@
+11.0
+15
+1       SQLUNIQUEID         1       16      ""   1     BatchSetupKey                            ""
+2       SQLNCHAR            2       200     ""   2     WorkObjectName                           SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       200     ""   3     PostObjectName                           SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     DepartmentGroupKey                       ""
+5       SQLNCHAR            2       40      ""   5     BatchNumberFormat                        SQL_Latin1_General_CP1_CI_AS
+6       SQLINT              0       4       ""   6     BatchTypeCode                            ""
+7       SQLNCHAR            2       100     ""   7     BatchTypeName                            SQL_Latin1_General_CP1_CI_AS
+8       SQLBIT              1       1       ""   8     AutoPostFlag                             ""
+9       SQLBIT              1       1       ""   9     AutoCreateFlag                           ""
+10      SQLUNIQUEID         1       16      ""   10    CreatedByUserKey                         ""
+11      SQLDATETIME         0       8       ""   11    CreatedOn                                ""
+12      SQLUNIQUEID         1       16      ""   12    UpdatedByUserKey                         ""
+13      SQLDATETIME         0       8       ""   13    UpdatedOn                                ""
+14      SQLUNIQUEID         1       16      ""   14    SystemEntityKey                          ""
+15      SQLDATETIME         1       8       ""   15    MarkedForDeleteOn                        ""

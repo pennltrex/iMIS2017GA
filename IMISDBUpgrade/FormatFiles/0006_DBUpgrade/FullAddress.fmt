@@ -1,0 +1,17 @@
+11.0
+15
+1       SQLUNIQUEID         1       16      ""   1     FullAddressKey                                   ""
+2       SQLUNIQUEID         1       16      ""   2     ContactKey                                       ""
+3       SQLUNIQUEID         1       16      ""   3     SalutationKey                                    ""
+4       SQLUNIQUEID         1       16      ""   4     PhysicalAddressKey                               ""
+5       SQLUNIQUEID         1       16      ""   5     DaytimePhoneAddressKey                           ""
+6       SQLUNIQUEID         1       16      ""   6     EveningPhoneAddressKey                           ""
+7       SQLUNIQUEID         1       16      ""   7     FaxAddressKey                                    ""
+8       SQLUNIQUEID         1       16      ""   8     EmailAddressKey                                  ""
+9       SQLNCHAR            2       100     ""   9     AdditionalLine1                                  SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       100     ""   10    AdditionalLine2                                  SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       40      ""   11    FullAddressDesc                                  SQL_Latin1_General_CP1_CI_AS
+12      SQLUNIQUEID         1       16      ""   12    AddressPurposeKey                                ""
+13      SQLNCHAR            2       1000    ""   13    AddresseeText                                    SQL_Latin1_General_CP1_CI_AS
+14      SQLBIT              1       1       ""   14    IsAddresseeOverridden                            ""
+15      SQLDATETIME         1       8       ""   15    MarkedForDeleteOn                                ""

@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     ThemeKey                                     ""
+2       SQLNCHAR            2       60      ""   2     ThemeName                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     ThemeDesc                                    SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            8       0       ""   4     ThemePreviewImage                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     MasterPageFileName                           SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            8       0       ""   6     MasterPage                                   SQL_Latin1_General_CP1_CI_AS
+7       SQLBIT              1       1       ""   7     IsResponsive                                 ""
+8       SQLBIT              1       1       ""   8     IsUltrawaveBased                             ""
+9       SQLDATETIME         1       8       ""   9     ScheduledRemovalDate                         ""

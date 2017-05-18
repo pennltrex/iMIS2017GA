@@ -1,0 +1,232 @@
+﻿<%@ Master Language="C#" Inherits="Asi.Web.UI.WebsiteMasterPageBase" %>
+<%@ Import Namespace="Asi" %>
+<%@ Import Namespace="Asi.Security.Utility" %>
+<%@ Register TagPrefix="CM" TagName="ContentPage" Src="~/AsiCommon/Controls/ContentManagement/ContentPage.ascx" %>
+<%@ Register TagPrefix="CM" TagName="ContentPageFooter" Src="~/AsiCommon/Controls/ContentManagement/ContentPageFooter.ascx" %>
+<%@ Register TagPrefix="CM" TagName="ContentHtml" Src="~/AsiCommon/Controls/ContentManagement/DisplayHtml.ascx" %>
+<%@ Register TagPrefix="CM" TagName="UtilityNavigation" Src="~/iparts/Website/UtilityNavigation/UtilityNavigationDisplay.ascx" %>
+<%@ Register TagPrefix="CM" TagName="PrimaryNavigation" Src="~/iparts/Website/PrimaryNavigation/PrimaryNavigationDisplay.ascx" %>
+<%@ Register TagPrefix="CM" TagName="ContentDisplay" Src="~/iparts/Website/ContentDisplay/ContentDisplayControl.ascx" %>
+
+<!DOCTYPE html>
+
+<script language="C#" runat="server">
+        public string OverrideLinkText
+        {
+            get { return Asi.Business.Contact.Contact.GetCachedFullName(Asi.AppContext.CurrentIdentity.UserKey, Asi.AppContext.CurrentContext.StatefulBusinessContainer); }
+        }
+
+        /// <summary>
+        /// Hide/Show a navigation item conditionally.
+        /// </summary>
+        public bool IsAnonymous
+        {
+            get { return !Asi.AppContext.CurrentIdentity.IsAuthenticated && OverrideLinkText == String.Empty; }
+            set { ViewState["IsAnonymous"] = value; }
+        }
+
+        /// <summary>
+        /// Return the count of items in the Cart
+        /// </summary>
+        public string CartItemCount
+        {
+            get { return GetCartItemCount(); }
+        }
+  
+	protected override void EnsureChildUserControls()
+	{
+		base.EnsureChildUserControls();
+
+		Asi.Web.UI.IUserControl childUserControl;
+		Guid key;
+
+		childUserControl = ciLogoContent_74b4ad1eced84ca2a3067d908f4ad777 as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("74b4ad1e-ced8-4ca2-a306-7d908f4ad777");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciLogoContent_74b4ad1eced84ca2a3067d908f4ad777);
+
+		childUserControl = ciAuxiliaryNavigation as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("b5cc4e88-aa11-4ed1-9085-3083f9356d0a");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciAuxiliaryNavigation);
+
+		childUserControl = ciNavigation as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("9a8fb8ea-c7b1-425c-a928-f5a36dc3fb68");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciNavigation);
+
+		childUserControl = ciHomepageOnlyContent as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("6a627bb6-9faa-4deb-95a3-01d8ca3ed688");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciHomepageOnlyContent);
+
+		childUserControl = ciNewUtilityNavigationCommon as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("3f276637-58f4-42cc-a9c7-3d7e09ac0d01");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciNewUtilityNavigationCommon);
+
+		childUserControl = ciFooterNavigation as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("3d8ff75e-aded-4dbd-9cef-aabe66915527");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciFooterNavigation);
+
+		childUserControl = ciFooterContent as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("7c2dcbab-0a5b-49e8-b83f-e52feb740356");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciFooterContent);
+
+		childUserControl = ciFooterCopyright as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("c8cfed86-d5a8-4606-b28e-2bab1912e791");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciFooterCopyright);
+
+	}
+</script>
+
+<html id="MainHtml" lang="en" class="html-main">
+    <head id="Head1" runat="server">
+        <title>iMIS</title>
+        <asp:ContentPlaceHolder id="TemplateHead" runat="server" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+        <script type="text/javascript">
+            // Add a class to the <html> tag of browsers that do not support Media Queries
+            var mqSupported = Modernizr.mq('only all');
+            if (!mqSupported) {
+                document.documentElement.className += ' no-mqs';
+            }
+        </script>       
+        
+    </head>
+    <body id="MainBody" runat="server" clientidmode="Static">
+        <%-- Skip to main content link for accessibility. Hidden to sighted users except when focused. --%>
+        <a href="#contentstart" class="screen-reader-text show-on-focus">Skip to main content</a>
+        <form class="form-main" id="TemplateForm" method="post" runat="server">
+            <asp:HiddenField runat="server" ClientIDMode="Static" id="lastClickedElementId" />
+            <telerik:RadScriptManager AsyncPostBackTimeout="3600" EnableCdn="false" 
+		EnableHistory="true" EnablePageMethods="true" EnablePartialRendering="true" 
+		EnableScriptGlobalization="true" EnableSecureHistoryState="false" ID="ScriptManager1" runat="server">
+		</telerik:RadScriptManager>
+            <script type="text/javascript">
+                
+            </script>                                 
+            <div class="FullSize">
+	<div id="masterWrapper" runat="server">
+		<header id="hd" class="ClearFix" data-height-offset="true">
+			<div id="masterHeaderBackground" class="ClearFix">
+				<div id="masterLogoArea" class="pull-left" data-label="Logo">
+					<!-- Logo -->
+									<div ID="WTZone1_Page1" class="WTZone ">
+				<CM:ContentHtml ID="ciLogoContent_74b4ad1eced84ca2a3067d908f4ad777" runat="server" ContentKey="01639493-5455-4661-88f7-e0680696b178" ContentItemKey="74b4ad1e-ced8-4ca2-a306-7d908f4ad777" Title="Logo Content" ShowTitleFlag="False" ShowBorder="False"><asp:Panel ID="Panel_LogoContent" runat="server"><a href="<%= ((Asi.Web.UI.DisplayPageBase)Page).iMISWebsite.WebsiteBaseUrl + "/" %>Default.aspx" id="masterHeaderImage" title="Home">iMIS</a></asp:Panel></CM:ContentHtml>
+					</div>
+
+				</div>
+				<div id="Menu" class="ClearFix">
+					<div id="masterTopBarAuxiliary" class="ClearFix pull-right" data-label="Utility Navigation">
+						<!-- Auxiliary area -->
+										<div ID="WTZone2_Page1" class="WTZone ">
+				<CM:UtilityNavigation ID="ciAuxiliaryNavigation" runat="server" ContentKey="01639493-5455-4661-88f7-e0680696b178" ContentItemKey="b5cc4e88-aa11-4ed1-9085-3083f9356d0a" Title="Auxiliary Navigation" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" UniversalSearchDefaultText="Keyword search" SignInText="Sign in" SignOutText="Sign out" NavigationPaneCode="4" SignInOutCssClass="TextButton" UniversalSearchCssClass="header-search" />
+					</div>
+
+					</div>
+				</div>
+				<div class="PrimaryNavPanel" role="navigation" data-label="Primary Navigation">
+					<!-- Primary navigation -->
+									<div ID="WTZone3_Page1" class="WTZone ">
+				<CM:PrimaryNavigation ID="ciNavigation" runat="server" ContentKey="01639493-5455-4661-88f7-e0680696b178" ContentItemKey="9a8fb8ea-c7b1-425c-a928-f5a36dc3fb68" Title="Navigation" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" NavigationLevels="False" MaxDataBindDepth="1" EnableMegaDropDownMenu="False" ExpandDelay="False" CollapseDelay="False" SkinName="Austin" />
+					</div>
+
+				</div>
+			</div>
+		</header>
+		<div class="HomePageFullWidthArea" data-label="Content">
+							<div ID="WTZone4_Page1" class="WTZone ">
+				<CM:ContentDisplay ID="ciHomepageOnlyContent" runat="server" ContentKey="01639493-5455-4661-88f7-e0680696b178" ContentItemKey="6a627bb6-9faa-4deb-95a3-01d8ca3ed688" Title="Homepage Only Content" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="HomePageFullWidthArea" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/Member/ContentAreas/Home_Page_Full_Width_Area" ContentRecordKey="148c0393-4881-442b-8041-37f67071d48c" DisplayOn="Homepage" HonorContentRecordLayout="False" />
+					</div>
+
+		</div>
+		<div id="bd">
+			<div id="masterContentArea">
+				<div id="yui-main">
+					<div class="yui-b" data-label="Main Content">
+						<!-- Main content -->
+										<div ID="WTZone5_Page1" class="WTZone ">
+				<CM:UtilityNavigation ID="ciNewUtilityNavigationCommon" runat="server" ContentKey="01639493-5455-4661-88f7-e0680696b178" ContentItemKey="3f276637-58f4-42cc-a9c7-3d7e09ac0d01" Title="New UtilityNavigationCommon" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="FloatRight" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" UniversalSearchDefaultText="Keyword search" SignInText="Sign in" SignOutText="Sign out" NavigationPaneCode="4" SignInOutCssClass="" UniversalSearchCssClass="header-search" />
+		<a id="contentstart" tabindex="-1"></a>
+		<div id="masterMainBreadcrumb" role="navigation">
+		<asiweb:SiteMapPath ID="BreadCrumb" runat="server" SiteMapProvider="AsiSiteMapProvider" CssClass="breadcrumb" data-height-offset="true">
+		<NodeTemplate>
+		<asp:HyperLink ID="NodeLink" runat="server" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>' CssClass="BreadCrumbLink" />
+		</NodeTemplate>
+		<CurrentNodeTemplate>
+		<asp:Label ID="CurrentNodeLabel" runat="server" Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>' />
+		</CurrentNodeTemplate>
+		</asiweb:SiteMapPath>
+		</div>
+		<asp:UpdatePanel ID="UserMessagesUpdatePanel" runat="server" >
+			<ContentTemplate
+>				<asp:ContentPlaceHolder ID="TemplateUserMessages" runat="server" />
+			</ContentTemplate>
+		</asp:UpdatePanel>
+		<asp:ContentPlaceHolder ID="TemplateBody" runat="server" />
+		<asp:Panel class="ButtonPanel NotPrinted" runat="server" ID="ButtonPanel" data-height-offset="true">
+		<div id="masterMainButtonBar" class="CommandBar">
+		<asiweb:CommandButtonBar ID="ButtonBar" runat="server" TargetControlID="ContentDiv" />
+		<asp:ContentPlaceHolder ID="TemplateButtonBar" runat="server"></asp:ContentPlaceHolder>
+		</div>
+		</asp:Panel>					</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="masterFooterPush">
+		</div>
+	</div>
+	<footer id="ft">
+		<div id="masterFooterContent" class="ClearFix">
+			<div id="masterFooterNavigation" role="navigation"  data-label="Footer">
+								<div ID="WTZone6_Page1" class="WTZone ">
+				<CM:UtilityNavigation ID="ciFooterNavigation" runat="server" ContentKey="01639493-5455-4661-88f7-e0680696b178" ContentItemKey="3d8ff75e-aded-4dbd-9cef-aabe66915527" Title="Footer Navigation" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" UniversalSearchDefaultText="Keyword search" SignInText="Sign in" SignOutText="Sign out" NavigationPaneCode="8" SignInOutCssClass="" UniversalSearchCssClass="header-search" />
+					</div>
+
+			</div>
+			<div id="masterFooterCommunications">
+								<div ID="WTZone7_Page1" class="WTZone ">
+				<CM:ContentDisplay ID="ciFooterContent" runat="server" ContentKey="01639493-5455-4661-88f7-e0680696b178" ContentItemKey="7c2dcbab-0a5b-49e8-b83f-e52feb740356" Title="Footer Content " ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/Member/ContentAreas/Footer_Communications" ContentRecordKey="7c640a87-8331-46dd-aab2-10258765e861" DisplayOn="All" HonorContentRecordLayout="False" />
+					</div>
+
+			</div>
+		</div>
+		<div id="masterFooterCopyright">
+							<div ID="WTZone8_Page1" class="WTZone ">
+				<CM:ContentDisplay ID="ciFooterCopyright" runat="server" ContentKey="01639493-5455-4661-88f7-e0680696b178" ContentItemKey="c8cfed86-d5a8-4606-b28e-2bab1912e791" Title="Footer Copyright" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/Member/ContentAreas/Footer_Copyright" ContentRecordKey="64d3e272-25ec-4a51-b55d-d6c69cbf3865" DisplayOn="All" HonorContentRecordLayout="False" />
+					</div>
+
+		</div>
+	</footer>
+</div>	
+<CM:ContentPageFooter ID="ContentPageFooter1" runat="server" NumberOfPages="1" />
+                                        
+            <!--Jscript from Page.ResgisterStartupScript extention is loaded here -->
+            <asp:ContentPlaceHolder id="TemplateScripts" runat="server" />                    	            
+        </form>
+        <%--facebook API is loaded into here --%>
+        <div id="fb-root"></div>
+    </body>
+</html>

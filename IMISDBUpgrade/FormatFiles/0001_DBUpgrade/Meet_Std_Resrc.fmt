@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLNCHAR            2       20      ""   1     RESOURCE_TYPE                  SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     RES_GROUP                      SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     CODE                           SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       80      ""   4     TITLE                          SQL_Latin1_General_CP1_CI_AS
+5       SQLTINYINT          0       1       ""   5     FIELD1_TYPE                    ""
+6       SQLTINYINT          0       1       ""   6     FIELD2_TYPE                    ""
+7       SQLTINYINT          0       1       ""   7     GROUP_SORT                     ""
+8       SQLINT              0       4       ""   8     ITEM_SORT                      ""
+9       SQLBINARY           2       8       ""   9     TIME_STAMP                     ""

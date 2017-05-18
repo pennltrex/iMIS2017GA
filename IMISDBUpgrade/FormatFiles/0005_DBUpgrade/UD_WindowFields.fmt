@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLNCHAR            2       60      ""   1     WINDOW_NAME                                SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     SEQ                                        ""
+3       SQLNCHAR            2       60      ""   3     TABLE_NAME                                 SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       60      ""   4     FIELD_NAME                                 SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       122     ""   5     TABLE_FIELD_NAME                           SQL_Latin1_General_CP1_CI_AS
+6       SQLINT              0       4       ""   6     VERTICAL_POSITION                          ""
+7       SQLINT              0       4       ""   7     HORIZONTAL_POSITION                        ""
+8       SQLNCHAR            2       60      ""   8     PROMPT                                     SQL_Latin1_General_CP1_CI_AS
+9       SQLINT              0       4       ""   9     PROMPT_WIDTH                               ""
+10      SQLBIT              1       1       ""   10    READ_ONLY                                  ""
+11      SQLBIT              1       1       ""   11    NEW_ROW                                    ""
+12      SQLBIT              1       1       ""   12    SHOW_ON_PROFILE                            ""
+13      SQLBINARY           2       8       ""   13    TIME_STAMP                                 ""

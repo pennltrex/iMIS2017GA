@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLNUMERIC          1       19      ""   1     SEQN                   ""
+2       SQLNCHAR            2       24      ""   2     ID                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       120     ""   3     FULL_NAME              SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              1       4       ""   4     ADDR_1                 ""
+5       SQLINT              1       4       ""   5     ADDR_2                 ""
+6       SQLINT              1       4       ""   6     ADDR_3                 ""

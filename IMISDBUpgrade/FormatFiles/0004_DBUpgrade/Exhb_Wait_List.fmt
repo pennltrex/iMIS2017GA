@@ -1,0 +1,17 @@
+11.0
+15
+1       SQLNCHAR            2       20      ""   1     MEET_ID                        SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     EXHB_ID                        SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         0       8       ""   3     REQ_DATE_TIME                  ""
+4       SQLINT              0       4       ""   4     NBR_UNITS                      ""
+5       SQLINT              0       4       ""   5     NBR_CORNERS                    ""
+6       SQLINT              0       4       ""   6     REQ_LEN                        ""
+7       SQLINT              0       4       ""   7     REQ_WID                        ""
+8       SQLNCHAR            2       200     ""   8     COMMENTS                       SQL_Latin1_General_CP1_CI_AS
+9       SQLTINYINT          0       1       ""   9     STATUS                         ""
+10      SQLNCHAR            2       62      ""   10    PRODUCT_CODE                   SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       20      ""   11    BOOTH_NUMBER                   SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       20      ""   12    EXHB_COMP_ID                   SQL_Latin1_General_CP1_CI_AS
+13      SQLTINYINT          0       1       ""   13    PREF_RANK                      ""
+14      SQLNUMERIC          1       19      ""   14    ORDER_NUMBER                   ""
+15      SQLBINARY           2       8       ""   15    TIME_STAMP                     ""

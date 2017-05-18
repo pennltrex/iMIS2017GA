@@ -1,0 +1,27 @@
+11.0
+25
+1       SQLUNIQUEID         1       16      ""   1     MatchingGiftPlanKey                                        ""
+2       SQLNCHAR            2       100     ""   2     Name                                                       SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     PlanProcedure                                              SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       400     ""   4     RulesDescription                                           SQL_Latin1_General_CP1_CI_AS
+5       SQLUNIQUEID         1       16      ""   5     OwnerContactKey                                            ""
+6       SQLDECIMAL          1       19      ""   6     MatchingRatio                                              ""
+7       SQLDATETIME         1       8       ""   7     EffectiveDate                                              ""
+8       SQLDATETIME         1       8       ""   8     TerminationDate                                            ""
+9       SQLUNIQUEID         1       16      ""   9     MatchingGiftPlanTypeKey                                    ""
+10      SQLBIT              1       1       ""   10    IsPledgeQualified                                          ""
+11      SQLBIT              1       1       ""   11    IsGiftQualified                                            ""
+12      SQLUNIQUEID         1       16      ""   12    MatchingGiftContactKey                                     ""
+13      SQLUNIQUEID         1       16      ""   13    CorporateGiftContactKey                                    ""
+14      SQLBIT              1       1       ""   14    IsAutomatch                                                ""
+15      SQLINT              0       4       ""   15    MatchingMode                                               ""
+16      SQLUNIQUEID         1       16      ""   16    PreferredMatchingProductKey                                ""
+17      SQLDECIMAL          1       19      ""   17    MaximumMatchAmount                                         ""
+18      SQLINT              1       4       ""   18    MaximumMatchPeriod                                         ""
+19      SQLUNIQUEID         1       16      ""   19    UpdatedByUserKey                                           ""
+20      SQLDATETIME         0       8       ""   20    UpdatedOn                                                  ""
+21      SQLUNIQUEID         1       16      ""   21    AccessKey                                                  ""
+22      SQLUNIQUEID         1       16      ""   22    CreatedByUserKey                                           ""
+23      SQLDATETIME         0       8       ""   23    CreatedOn                                                  ""
+24      SQLUNIQUEID         1       16      ""   24    SystemEntityKey                                            ""
+25      SQLDATETIME         1       8       ""   25    MarkedForDeleteOn                                          ""

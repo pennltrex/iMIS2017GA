@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLNCHAR            2       20      ""   1     MEET_ID                        SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     FORM_ID                        SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         1       8       ""   3     FORM_DATE_DUE                  ""
+4       SQLBINARY           2       8       ""   4     TIME_STAMP                     ""

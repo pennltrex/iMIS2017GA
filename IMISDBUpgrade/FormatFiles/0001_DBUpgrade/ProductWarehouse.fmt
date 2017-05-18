@@ -1,0 +1,17 @@
+10.0
+15
+1       SQLUNIQUEID         1       16      ""   1     ProductWarehouseKey                                      ""
+2       SQLUNIQUEID         1       16      ""   2     ProductKey                                               ""
+3       SQLDECIMAL          1       19      ""   3     ReorderQty                                               ""
+4       SQLUNIQUEID         1       16      ""   4     WarehouseKey                                             ""
+5       SQLDECIMAL          1       19      ""   5     UnitRestockingFee                                        ""
+6       SQLNCHAR            2       2       ""   6     ProductWarehouseStatusCode                               SQL_Latin1_General_CP1_CI_AS
+7       SQLDECIMAL          1       19      ""   7     QuantityCommitted                                        ""
+8       SQLDATETIME         1       8       ""   8     DateExpected                                             ""
+9       SQLDECIMAL          1       19      ""   9     QtyOnOrder                                               ""
+10      SQLDECIMAL          1       19      ""   10    ReorderPoint                                             ""
+11      SQLUNIQUEID         1       16      ""   11    CreatedByUserKey                                         ""
+12      SQLDATETIME         0       8       ""   12    CreatedOn                                                ""
+13      SQLUNIQUEID         1       16      ""   13    UpdatedByUserKey                                         ""
+14      SQLDATETIME         0       8       ""   14    UpdatedOn                                                ""
+15      SQLDATETIME         1       8       ""   15    MarkedForDeleteOn                                        ""

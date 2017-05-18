@@ -1,0 +1,28 @@
+<%@ Control Language="C#" AutoEventWireup="true" CodeFile="StageRows.ascx.cs" Inherits="Asi.Bae.Web.Customer.AccountManagement.CertificationManagement.StageRows" %>
+<%@ Register Src="BooleanBinaryOperatorRow.ascx" TagName="BooleanBinaryOperatorRow" TagPrefix="Certification" %>
+<%@ Register Src="BooleanBulkOperatorRows.ascx" TagName="BooleanBulkOperatorRows" TagPrefix="Certification" %>
+
+<asp:Repeater ID="OperandRepeater" runat="server">
+<HeaderTemplate>
+    <table width="100%" style="word-break:break-all; table-layout:fixed">
+</HeaderTemplate>
+<ItemTemplate>
+        <Certification:BooleanBulkOperatorRows 
+            CertificationProgramRegistrationKey='<%# CertificationProgramRegistrationKey %>'
+            StageID='<%# StageID %>'  
+            ActionItemID='<%# Container.DataItem %>' 
+            OperandIndex='<%# Container.ItemIndex %>' 
+            runat="server" />    
+</ItemTemplate>
+<AlternatingItemTemplate>
+        <Certification:BooleanBinaryOperatorRow 
+            CertificationProgramRegistrationKey='<%# CertificationProgramRegistrationKey %>'
+            StageID='<%# StageID %>'  
+            ActionItemID='<%# Container.DataItem %>' 
+            OperandIndex='<%# Container.ItemIndex %>' 
+            runat="server" />  
+</AlternatingItemTemplate>
+<FooterTemplate>
+    </table>
+</FooterTemplate>
+</asp:Repeater>

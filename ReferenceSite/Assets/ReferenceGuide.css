@@ -1,0 +1,119 @@
+﻿/************************************************/
+/***       REFERENCE GUIDE STYLE SHEET        ***/
+/************************************************/
+/*
+ * This document contains the styles to support the Reference Guide pages in iMIS 
+ */
+
+/* Keep the borders and backgrounds consistent */
+.RefExample, .RefExample:before, .RefCode.prettyprint, .RefTOC {
+    border: 1px solid #ccc;
+}
+
+.RefExample:before, .RefCode.prettyprint, code, .RefTOC, .RefIconList li {
+    background-color: #F7F7F7;
+}
+   
+.RefExample
+{
+    padding: 2.3em 1.5em 1.5em;
+    position: relative;
+    margin: 15px 0;
+}
+
+.RefExample:before
+{
+    content: "Example";
+    
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    padding: 0.15em 0.385em 0.307em;
+}
+
+.RefCode
+{
+    position: relative;
+    margin: 0 0 15px 0;
+    padding: 1.5em !important;
+    font-size: 13px;
+}
+
+.RefExample + .RefCode
+{
+    margin-top: -16px;
+}
+
+pre.prettyprint{
+    width: auto;
+    overflow: auto;
+}
+
+code
+{
+    padding: 0 2px !important;
+    white-space: nowrap;
+}
+
+.RefTOC
+{
+    margin-top: 0.4em;
+}
+
+.RefTOC ul li
+{
+    list-style-type: none;
+    padding: 0.8em;
+}
+
+.RefTOC ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .RefTOC {
+        float: left;
+        width: 15em;
+    }
+    .RefTOC + .RefContent
+    {
+        margin-left: 16.5em;
+    }
+}
+
+.RefContent h2, 
+.RefContent h3 {
+    margin-top: 1em;
+}
+
+/* Apply the 'linenums' class to a pre tag to display line numbers. 
+   The following style overrides the default 'linenums' behavior and displays all line numbers  */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 {
+    list-style-type: decimal !important;
+}
+
+.RefIconList {
+    margin: 0;
+    padding: 0;
+}
+
+.RefIconList li {
+    display: inline-block;
+    height: 7em;
+    width: 7em;
+    padding: 10px;
+    margin-bottom: 3px;
+    text-align: center;
+    list-style: none;
+    vertical-align: top;
+    line-height: 1.2;
+}

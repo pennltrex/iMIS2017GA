@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLINT              0       4       ""   1     DataTypeCode                                         ""
+2       SQLNCHAR            2       100     ""   2     DataTypeName                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     DataTypeDesc                                         SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              1       4       ""   4     DefaultHIControlTypeCode                             ""

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" 
+           elementFormDefault="qualified" 
+           targetNamespace="http://imis.com/webservices/membership" 
+           xmlns:mp="http://imis.com/webservices/membership"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="WebServiceProxyableMembershipUser">
+    <xs:sequence>
+        <xs:element name="userName" type="xs:string" />
+        <xs:element name="providerUserKey" type="xs:string" />
+        <xs:element name="email" type="xs:string" />
+        <xs:element name="passwordQuestion" type="xs:string" />
+        <xs:element name="comment" type="xs:string" />
+        <xs:element name="isApproved" type="xs:boolean" />
+        <xs:element name="isLockedOut" type="xs:boolean" />
+        <xs:element name="lastLockoutDate" type="xs:dateTime" />
+        <xs:element name="creationDate" type="xs:dateTime" />
+        <xs:element name="lastLoginDate" type="xs:dateTime" />
+        <xs:element name="lastActivityDate" type="xs:dateTime" />
+        <xs:element name="lastPasswordChangedDate" type="xs:dateTime" />
+        <xs:element name="isOnline" type="xs:boolean" />
+        <xs:element name="providerName" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

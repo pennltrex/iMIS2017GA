@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLUNIQUEID         1       16      ""   1     CommunicationLogKey                                      ""
+2       SQLINT              0       4       ""   2     CommunicationLogStatusCode                               ""
+3       SQLNCHAR            2       1000    ""   3     Subject                                                  SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     SourceProcess                                            SQL_Latin1_General_CP1_CI_AS
+5       SQLUNIQUEID         1       16      ""   5     CommunicationReasonKey                                   ""
+6       SQLUNIQUEID         1       16      ""   6     SourceCodeKey                                            ""
+7       SQLNCHAR            8       0       ""   7     Text                                                     SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            8       0       ""   8     Html                                                     SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            8       0       ""   9     Communication                                            SQL_Latin1_General_CP1_CI_AS
+10      SQLUNIQUEID         1       16      ""   10    CreatedByUserKey                                         ""
+11      SQLDATETIME         0       8       ""   11    CreatedOn                                                ""
+12      SQLUNIQUEID         1       16      ""   12    UpdatedByUserKey                                         ""
+13      SQLDATETIME         1       8       ""   13    UpdatedOn                                                ""

@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLUNIQUEID         1       16      ""   1     LocalizationControlPropertyId                                      ""
+2       SQLUNIQUEID         1       16      ""   2     LocalizationControlTypeId                                          ""
+3       SQLNCHAR            2       440     ""   3     LocalizationControlPropertyName                                    SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       440     ""   4     TypeName                                                           SQL_Latin1_General_CP1_CI_AS
+5       SQLBIT              1       1       ""   5     IsPhrase                                                           ""
+6       SQLBIT              1       1       ""   6     HasWhiteSpace                                                      ""
+7       SQLBIT              1       1       ""   7     IsCollection                                                       ""

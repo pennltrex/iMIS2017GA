@@ -1,0 +1,270 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="Asi.Web.UI.MasterPageBase" %>
+<%@ Register Src="~/AsiCommon/Controls/Navigation/PageNav.ascx" TagPrefix="asi" TagName="PageNav" %>
+<%@ Register Src="~/AsiCommon/Controls/Navigation/PageSubNav.ascx" TagPrefix="asi" TagName="PageSubNav" %>
+
+<%@ Register TagPrefix="telerik" Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" %>
+<script language="C#" runat="server">
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="e"></param>
+    protected override void OnLoad(EventArgs e)
+    {
+        base.OnLoad(e);
+
+        if (!Page.IsPostBack)
+        {
+            DataBind();
+
+            NavTree.Nodes[0].Select();
+            SetMode();
+        }
+    }
+    protected override void OnInit(EventArgs e)
+    {
+        base.OnInit(e);
+        
+        AsyncPostBackTrigger trigger = new AsyncPostBackTrigger();
+        if (NavTree != null)
+        {
+            trigger.ControlID = NavTree.UniqueID;
+            trigger.EventName = "SelectedNodeChanged";
+            TemplateBodyUpdatePanel.Triggers.Add(trigger);
+        }
+        SubNavCollapsibleExtender.CollapsedImage =
+            string.Format("~/App_Themes/{0}/images/splitter/splitbar_expand_v.gif", Page.Theme);
+        SubNavCollapsibleExtender.ExpandedImage =
+            string.Format("~/App_Themes/{0}/images/splitter/splitbar_collapse_v.gif", Page.Theme);
+    }
+    private void SetMode()
+    {
+        // Hide all panels
+        EditPanel.Visible = false;
+        RunPanel.Visible = false;
+        SecurityPanel.Visible = false;
+
+        // Show selected panel
+        switch (NavTree.SelectedValue)
+        {
+            case "Edit":
+                EditPanel.Visible = true;
+                EditPanel.DataBind();
+                break;
+            case "Run":
+                RunPanel.Visible = true;
+                RunPanel.DataBind();
+                break;
+            case "Security":
+                //SecurityPanel.Visible = true;
+                //SecurityPanel.DataBind();
+                break;
+        }
+    }
+    /// <summary>
+    /// 
+    /// </summary>
+    public override void DataBind()
+    {
+        base.DataBind();
+
+        Asi.Web.UI.PortfolioPageBase portfolioPage = Page as Asi.Web.UI.PortfolioPageBase;
+        if (portfolioPage != null)
+        {
+            if (!string.IsNullOrEmpty(portfolioPage.ImageUrl))
+            {
+                PortfolioImage.ImageUrl = portfolioPage.ImageUrl;
+            }
+
+            TaskDescription.Text = portfolioPage.SubjectName;
+            portfolioPage.Enabled = portfolioPage.CheckSecurity();
+        }
+        else
+        {
+            TaskDescription.Text = string.Empty;
+            portfolioPage.Enabled = false;
+        }
+    }
+
+    protected void NavLinks_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        Asi.Web.UI.PortfolioPageBase portfolioPage = Page as Asi.Web.UI.PortfolioPageBase;
+        if (portfolioPage != null)
+        {
+            // Save any unsaved work
+            portfolioPage.DataSave();
+
+            SetMode();
+        }
+    }
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
+    protected void NavTree_SelectedNodeChanged(object sender, EventArgs e)
+    {
+        Asi.Web.UI.PortfolioPageBase portfolioPage = Page as Asi.Web.UI.PortfolioPageBase;
+        if (portfolioPage != null)
+        {
+            // Save any unsaved work
+            portfolioPage.DataSave();
+
+            SetMode();
+        }
+    }
+</script>
+<script id="PopoutScript" type="text/javascript">
+function Popout()
+{
+    window.open(window.location.href, "_blank");
+    <%= CloseWindowClientScript %>;
+}
+</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="height:100%; width:100%;">
+    <head id="Head1" runat="server">
+        <title>iMIS Portfolio</title>
+        <asp:ContentPlaceHolder id="TemplateHead" runat="server"></asp:ContentPlaceHolder>
+    </head>
+    <body style="height:100%; overflow:hidden;" scroll="no">
+        <form id="TemplateForm" method="post" runat="server" style="height:100%;">
+            <telerik:RadScriptManager ID="ScriptManager1" runat="server" EnableCdn="false" EnablePageMethods="true" EnablePartialRendering="true" EnableScriptGlobalization="true" AsyncPostBackTimeout="3600"></telerik:RadScriptManager>
+            <span style="white-space:nowrap; position:absolute; z-index:100; width:100%; text-align: right;">
+                <asp:ContentPlaceHolder ID="TemplateLoadingPanel" runat="server"></asp:ContentPlaceHolder>
+            </span>
+            <div>
+                <asp:HyperLink ID="Popout" runat="server" Text="Popout" NavigateUrl="javascript:Popout();"></asp:HyperLink>
+            </div>
+            <asp:Panel ID="SubNavPanel" runat="server" Width="160px" Height="100%" ScrollBars="None" onresize="CustomResize()" style="float:left;">
+                <div id="subNavBar" style="width:160px;">
+                    <asp:ContentPlaceHolder ID="PageSubNavigationPlaceHolder" runat="server">
+                        <asiweb:PanelTemplateControl ID="SubNavPanelTemplateControl" runat="server" Collapsible="false" Width="160px">
+                            <div id="subNavBarBody" style="overflow:auto;">
+                                <asp:TreeView ID="NavTree" runat="server" OnSelectedNodeChanged="NavTree_SelectedNodeChanged">
+                                    <Nodes>
+                                        <asp:TreeNode Text="Define" Value="Edit"></asp:TreeNode>
+                                        <asp:TreeNode Text="Run" Value="Run"></asp:TreeNode>
+                                        <asp:TreeNode Text="Security" Value="Security"></asp:TreeNode>
+                                    </Nodes>
+                                </asp:TreeView>
+                            </div>
+                        </asiweb:PanelTemplateControl>
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div style="width:100%; text-align:center;">
+                    <asp:Image ID="PortfolioImage" runat="server" style="display:none" ImageUrl="~/AsiCommon/Images/32/32_iqb.gif"></asp:Image>
+                </div>
+            </asp:Panel>
+            <asp:Panel ID="SubNavPanelDivider" runat="server" Width="4px" Height="100%" CssClass="SplitBar" onmouseover="this.className='SplitBarHover';" onmouseout="this.className='SplitBar';" ToolTip="Collapse/expand navigation" style="float:left; vertical-align:middle;">
+                <asp:Image ID="SubNavPanelCollapseImage" runat="server" SkinID="SplitBarCollapseHorizontal" ImageUrl="~/AsiCommon/Images/1.gif" style="vertical-align:middle;" />
+            </asp:Panel>
+            <asp:Panel ID="OuterContentPanel" runat="server" style="float:left;" Height="100%" Width="500px">
+                <asp:Panel ID="ContentTitlePanel" runat="server" Width="100%" style="float:left;">
+                    <span id="mainTitle">
+                        <span id="mainTitleLeft">&nbsp;</span>
+                        <span id="mainTitleLeftText"><asp:Label ID="TaskDescription" runat="server"></asp:Label></span>
+                        <span id="mainTitleRight">&nbsp;</span>
+                        <span id="mainTitleRightText"></span>
+                    </span>
+                </asp:Panel>
+                <asp:Panel ID="ContentPanel" runat="server" ScrollBars="Auto" Width="100%" style="padding:5px 20px 5px 5px; float:left;">
+                    <div id="content" style="width:99%; height:100%; padding-left:2px;">
+                        <asp:UpdatePanel ID="TemplateBodyUpdatePanel" runat="server">
+                            <ContentTemplate>
+                                <asp:ContentPlaceHolder ID="TemplateUserMessages" runat="server"></asp:ContentPlaceHolder>
+                                <asp:Panel ID="EditPanel" runat="server" Visible="false">
+                                    <asp:ContentPlaceHolder id="TemplateBody" runat="server"></asp:ContentPlaceHolder>
+                                </asp:Panel>
+                                <asp:Panel ID="RunPanel" runat="server" Visible="false">
+                                    <asp:ContentPlaceHolder id="TemplateRunBody" runat="server"></asp:ContentPlaceHolder>
+                                </asp:Panel>
+                                <asp:Panel ID="SecurityPanel" runat="server" Visible="false">
+                                    <asp:ContentPlaceHolder id="TemplateSecurityBody" runat="server"></asp:ContentPlaceHolder>
+                                </asp:Panel>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                </asp:Panel>
+                <asp:Panel ID="ButtonPanel" runat="server" ScrollBars="None" Width="100%">
+                    <span style="float:right; white-space:nowrap; margin-right: 10px; background-color:White;">
+                        <asiweb:CommandButtonBar ID="ButtonBar" runat="server" />
+                        <asp:ContentPlaceHolder ID="TemplateButtonBar" runat="server"></asp:ContentPlaceHolder>
+                    </span>
+                </asp:Panel>
+            </asp:Panel>
+
+            <ajaxToolkit:CollapsiblePanelExtender 
+                ID="SubNavCollapsibleExtender" runat="server" CollapsedSize="1" ExpandedSize="160" Collapsed="false"
+                SuppressPostBack="true" TargetControlID="SubNavPanel" ExpandControlID="SubNavPanelDivider" ExpandDirection="Horizontal"
+                CollapseControlID="SubNavPanelDivider" ImageControlID="SubNavPanelCollapseImage" />
+        </form>
+
+        <!--jscript from Page.ResgisterStartupScript extention is loaded here -->
+        <asp:contentplaceholder id ="TemplateScripts" runat="server"></asp:contentplaceholder>	    
+        
+    </body>
+</html>
+
+<script id="ResizeContentScript" type="text/javascript">
+window.onresize = CustomResize;
+if (document.all)
+    CustomResize();
+else
+    window.setTimeout("CustomResize()", 100);
+
+function CustomResize()
+{
+    var outerContentPanel = document.getElementById('<%= OuterContentPanel.ClientID %>');
+    var contentPanel = document.getElementById('<%= ContentPanel.ClientID %>');
+    var contentTitlePanel = document.getElementById('<%= ContentTitlePanel.ClientID %>');
+    var buttonPanel = document.getElementById('<%= ButtonPanel.ClientID %>');
+    var subNavPanel = document.getElementById('<%= SubNavPanel.ClientID %>');
+    var subNavPanelDivider = document.getElementById('<%= SubNavPanelDivider.ClientID %>');
+
+    // get height
+    var mainHeight = livePageHeight();
+    if (mainHeight > 0)
+    {
+        if (subNavPanelDivider != null)
+            document.getElementById('<%= SubNavPanelCollapseImage.ClientID %>').style.marginTop = (mainHeight / 2) + 'px';
+        
+        var contentHeight = mainHeight;
+        if (contentTitlePanel != null)
+            contentHeight -= contentTitlePanel.offsetHeight;
+        if (buttonPanel != null)
+            contentHeight -= buttonPanel.offsetHeight;
+        
+        contentHeight -= 20;
+        if (contentHeight > 0)
+            contentPanel.style.height = contentHeight + 'px';
+
+        var updatePanelDiv = document.getElementById('<= TemplateBodyUpdatePanel.ClientID >');
+        if (updatePanelDiv != null)
+        {
+            updatePanelDiv.style.height = contentHeight + 'px';
+        }
+    }
+    
+    // get width
+    var mainWidth = livePageWidth();
+    if (mainWidth > 0)
+    {
+        if (subNavPanel != null)
+            mainWidth -= subNavPanel.offsetWidth;
+        if (subNavPanelDivider != null)
+            mainWidth -= subNavPanelDivider.offsetWidth;
+        mainWidth -= 30;
+        outerContentPanel.style.width = mainWidth + 'px';
+    }
+
+    try
+    {
+        OnResizeAsiCustom(mainWidth, mainHeight);
+    }
+    catch(exc)
+    {
+    }
+}
+</script>

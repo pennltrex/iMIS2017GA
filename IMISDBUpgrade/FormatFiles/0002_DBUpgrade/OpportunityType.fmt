@@ -1,0 +1,20 @@
+10.0
+18
+1       SQLUNIQUEID         1       16      ""   1     OpportunityTypeKey                                         ""
+2       SQLNCHAR            2       100     ""   2     OpportunityClass                                           SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     Name                                                       SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       400     ""   4     Description                                                SQL_Latin1_General_CP1_CI_AS
+5       SQLUNIQUEID         1       16      ""   5     DefaultActionPlanKey                                       ""
+6       SQLUNIQUEID         1       16      ""   6     DefaultOwnerKey                                            ""
+7       SQLNCHAR            2       40      ""   7     DefaultStatus                                              SQL_Latin1_General_CP1_CI_AS
+8       SQLBIT              1       1       ""   8     AllowCompetitorsFlag                                       ""
+9       SQLUNIQUEID         1       16      ""   9     UpdatedByUserKey                                           ""
+10      SQLDATETIME         0       8       ""   10    UpdatedOn                                                  ""
+11      SQLUNIQUEID         1       16      ""   11    CreatedByUserKey                                           ""
+12      SQLDATETIME         0       8       ""   12    CreatedOn                                                  ""
+13      SQLUNIQUEID         1       16      ""   13    SystemEntityKey                                            ""
+14      SQLUNIQUEID         1       16      ""   14    AccessKey                                                  ""
+15      SQLDATETIME         1       8       ""   15    MarkedForDeleteOn                                          ""
+16      SQLUNIQUEID         1       16      ""   16    OwnerGroupTypeKey                                          ""
+17      SQLUNIQUEID         1       16      ""   17    ContactGroupTypeKey                                        ""
+18      SQLUNIQUEID         1       16      ""   18    OpportunityCreationGroupKey                                ""

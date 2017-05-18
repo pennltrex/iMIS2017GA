@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLUNIQUEID         1       16      ""   1     SalesHistorySoftCreditKey                              ""
+2       SQLUNIQUEID         1       16      ""   2     SalesHistoryKey                                        ""
+3       SQLUNIQUEID         1       16      ""   3     ContactKey                                             ""
+4       SQLDECIMAL          1       19      ""   4     PercentCredit                                          ""
+5       SQLDECIMAL          1       19      ""   5     Amount                                                 ""
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                                      ""

@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLNCHAR            2       50      ""   1     SystemKeyword                          SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     SystemName                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       500     ""   3     SystemDescription                      SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     SystemKey                              ""

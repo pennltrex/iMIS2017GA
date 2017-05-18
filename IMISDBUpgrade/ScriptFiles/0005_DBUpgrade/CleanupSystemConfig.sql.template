@@ -1,0 +1,29 @@
+-- This template has tokens replaced for running:
+--
+-- __TEMPDIR__ and __INSTALLDIR__ get substituted at upgrade time
+--
+--
+UPDATE [dbo].[SystemConfig] 
+   SET [ParameterValue] = '__TEMPDIR__' 
+ WHERE [ParameterName] = 'TempDirectory'
+GO
+
+UPDATE [dbo].[SystemConfig] 
+   SET [ParameterValue] = '__TEMPDIR__' 
+ WHERE [ParameterName] = 'CrystalReports.TempPath'
+GO
+
+UPDATE [dbo].[SystemConfig] 
+   SET [ParameterValue] = '__TEMPDIR__' 
+ WHERE [ParameterName] = 'ReportingServices.TempPath'
+GO
+
+UPDATE [dbo].[SystemConfig] 
+   SET [ParameterValue] = '__INSTALLDIR__\bootstrap'
+ WHERE [ParameterName] = 'BootStrap.Path'
+GO
+
+UPDATE [dbo].[SystemConfig] 
+   SET [ParameterValue] = '__INSTALLDIR__\iMIS\AtomControls'
+ WHERE [ParameterName] = 'AtomBuildPath'
+GO

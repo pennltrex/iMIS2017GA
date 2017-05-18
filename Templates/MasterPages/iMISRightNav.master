@@ -1,0 +1,154 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.UI.MasterPage" %>
+<%@ Register TagPrefix="cc1" Namespace="Asi.Web.UI.Common.ContentManagement" %>
+<%@ Register TagPrefix="asi" Namespace="Asi.Web.UI.WebControls" Assembly="Asi.Web" %>
+<%@ Register Src="~/AsiCommon/Controls/ContentManagement/HeaderScript.ascx" TagName="HeaderScript"
+    TagPrefix="uc1" %>
+<%@ Register Src="~/AsiCommon/Controls/ContentManagement/UserMessageDisplay.ascx" TagName="MessageDisplay"
+    TagPrefix="uc2" %>
+<%@ Register TagPrefix="telerik" Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" %>
+<script language="C#" runat="server">
+    private void Page_Load(object sender, System.EventArgs e)
+    {
+        Guid hierarchyKey;
+        if (Request.QueryString["hkey"] != null)
+            hierarchyKey = new Guid(Request.QueryString["hkey"]);
+        else
+            hierarchyKey = Asi.AppContext.CurrentContext.HKey;
+
+        SideNav.SelectedHierarchyKey = hierarchyKey;
+        SideNav.SessionID = Request["iSession"];
+
+        string includeText = String.Format("<link href=\"{0}/Templates/BSA/StyleSheets/BSA.css\" rel=\"stylesheet\" type=\"text/css\" />", Asi.Web.Utilities.GetTildeExpansion());
+        LiteralControl stylesheet = new LiteralControl(includeText);
+        ((HtmlHead)Page.Header).Controls.Add(stylesheet);
+        string tildeExpansion = Asi.Web.Utilities.GetTildeExpansion();
+        ScriptManager1.Scripts.Add(new ScriptReference(tildeExpansion + "/AsiCommon/Scripts/Asi.js"));
+    }
+
+    override protected void OnInit(EventArgs e)
+    {
+        this.Load += new System.EventHandler(this.Page_Load);
+        base.OnInit(e);
+        this.ButtonBar.CommandButtonClick += new Asi.Web.UI.CommandButtonEventHandler(this.ButtonBar_CommandButtonClick);
+
+    }
+
+    private void ButtonBar_CommandButtonClick(object sender, Asi.Web.UI.CommandButtonEventArgs e)
+    {
+        if (Page is Asi.Web.UI.DisplayPageBase)
+        {
+            ((Asi.Web.UI.DisplayPageBase)Page).HandleCommandButtonClick(sender, e.ButtonType);
+        }
+    }
+</script>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="GENERATOR" content="Microsoft Visual Studio 7.0">
+    <meta name="CODE_LANGUAGE" content="C#">
+    <meta name="vs_defaultClientScript" content="JavaScript">
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+    <uc1:HeaderScript ID="HeaderScript" runat="server" />
+</head>
+<body class="BSATemplateBody">
+    <div id="waitDiv" style="position: absolute; z-index: 1000; display: none; background-color: White;
+        border: solid 1px black;">
+        <asp:Image ID="WaitImg" runat="server" ImageUrl="~/images/imagelibrary/wait_ani.gif"
+            Visible="true" />
+    </div>
+    <form id="template" method="post" runat="server">
+        <telerik:RadScriptManager ID="ScriptManager1" runat="server" EnableCdn="false" EnablePageMethods="true" EnablePartialRendering="true" EnableScriptGlobalization="true" AsyncPostBackTimeout="3600"></telerik:RadScriptManager>
+        <table cellpadding="0" cellspacing="0" border="0" style="height: 100%; width: 100%;">
+            <tr>
+                <td>
+                    <div id="bsalogo">
+                        <img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/top_logo.jpg"
+                            width="406" height="40" />
+                        <img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/top_logo_imis.jpg"
+                            width="303" height="40" style="position: absolute; right: 0px" />
+                    </div>
+                    <div id="bsabuttonbar">
+                        <a href="<%= Asi.ContentManagerNet.Utilities.GetBaseUrl(this.Page) %>/iMIS/ContentManagement/Template.aspx?NavigationCode=Home&iSession=<%= Request["iSession"] %>">
+                            <img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/home_off.jpg"
+                                alt="Home" width="55" height="50" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/home_on.jpg');"
+                                onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/home_off.jpg');" /></a><img
+                                    border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/print_off.jpg"
+                                    onclick="printWindow();" alt="Print" width="30" height="50" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/print_on.jpg');"
+                                    onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/print_off.jpg');" /><img
+                                        border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/email_off.jpg"
+                                        alt="e-mail" onclick="emailWindow();" width="30" height="50" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/email_on.jpg');"
+                                        onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/email_off.jpg');" /><img
+                                            border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/info_off.jpg"
+                                            alt="iMIS Info Center" onclick="showInfoCenter();" width="26" height="50" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/info_on.jpg');"
+                                            onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/info_off.jpg');" /><img
+                                                border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/help_off.jpg"
+                                                alt="Help" onclick="showHelp();" width="27" height="50" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/help_on.jpg');"
+                                                onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/help_off.jpg');" /><img
+                                                    border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/paint_blank.jpg"
+                                                    width="37" height="50" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/nav_filler.jpg"
+                                                        width="30" height="50" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/utility_left.jpg"
+                                                            width="147" height="50" />
+                        <div style="position: absolute; right: 0px; z-index: 999;">
+                            <img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/utility_right.jpg"
+                                width="303" height="50" />
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 100%; width: 100%; vertical-align: top;">
+                    <table style="height: 99%; width: 100%; vertical-align: top;" cellpadding="2" cellspacing="0"
+                        border="0">
+                        <tr>
+                            <td style="vertical-align: top; height: 100%;">
+                                <div id="bsanavigation">
+                                    <cc1:TemplateNavigation ID="SideNav" runat="server" MinimumDepth="2" StyleList="iMISNavDefaultStyle1,iMISNavDefaultStyle2,iMISNavDefaultStyle3,iMISNavDefaultStyle4,iMISNavDefaultStyle5,iMISNavDefaultStyle6"
+                                        SelectedStyleList="iMISNavSelectedStyle1,iMISNavSelectedStyle2,iMISNavSelectedStyle3,iMISNavSelectedStyle4,iMISNavSelectedStyle5,iMISNavSelectedStyle6">
+                                    </cc1:TemplateNavigation>
+                                </div>
+                            </td>
+                            <td style="width: 100%; height: 100%; vertical-align: top;">
+                                <table cellpadding="0" cellspacing="0" id="pagetitle_table">
+                                    <tr>
+                                        <td style="width: 100%">
+                                            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                                <tr>
+                                                    <td id="bsapagetitle" style="white-space: nowrap">
+                                                        <%=Asi.AppContext.CurrentContext.SubjectName %>
+                                                    </td>
+                                                    <td id="pagetitle_sub" style="white-space: nowrap; text-align: right">
+                                                        <% = Asi.Web.Utilities.GetTildeExpansion() %>
+                                                        &nbsp;</td>
+                                                    <td style="white-space: nowrap; width: 25">
+                                                        <img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/buttons/astrix_orange_right.gif"
+                                                            align="absmiddle"></td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <td style="white-space: nowrap">
+                                            &nbsp;<asi:CommandButtonBar ID="ButtonBar" runat="server" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table style="width: 99%; height: 99%; vertical-align: top;" cellpadding="0" cellspacing="0"
+                                    border="0">
+                                    <tr>
+                                        <td style="height: 100%; vertical-align: top;">
+                                            <div style="overflow: auto;">
+                                                <uc2:MessageDisplay ID="MessageDisplay" runat="server" />
+                                                <asp:ContentPlaceHolder ID="TemplateBody" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

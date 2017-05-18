@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLUNIQUEID         1       16      ""   1     ProgramGroupKey                                    ""
+2       SQLNCHAR            2       510     ""   2     ProgramGroupName                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       2046    ""   3     ProgramGroupDescription                            SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       4       ""   4     ProgramGroupStatusCode                             SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         0       8       ""   5     CreatedOn                                          ""
+6       SQLUNIQUEID         1       16      ""   6     CreatedByUserKey                                   ""
+7       SQLDATETIME         0       8       ""   7     UpdatedOn                                          ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                                   ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                                  ""

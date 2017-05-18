@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLINT              0       4       ""   1     CartBillingId                  ""
+2       SQLINT              0       4       ""   2     CartItemId                     ""
+3       SQLNCHAR            2       62      ""   3     ProductCode                    SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       120     ""   4     Title                          SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       20      ""   5     DuesType                       SQL_Latin1_General_CP1_CI_AS
+6       SQLMONEY            0       8       ""   6     Price                          ""
+7       SQLNCHAR            2       20      ""   7     ID                             SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLNCHAR            2       20      ""   1     Meeting                                                                SQL_Latin1_General_CP1_CI_AS
+2       SQLUNIQUEID         1       16      ""   2     EventDefaultDisplayLayoutKey                                           ""
+3       SQLNCHAR            2       200     ""   3     DefaultDisplayLayoutDirectoryName                                      SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     EventOwnerDisplayLayoutKey                                             ""
+5       SQLNCHAR            2       200     ""   5     OwnerDisplayLayoutDirectoryName                                        SQL_Latin1_General_CP1_CI_AS

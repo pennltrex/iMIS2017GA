@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLINT              0       4       ""   1     OrderProductID                   ""
+2       SQLNCHAR            2       120     ""   2     Title                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       2048    ""   3     Description                      SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsSuperProduct                   ""
+5       SQLNCHAR            2       62      ""   5     ProductCode                      SQL_Latin1_General_CP1_CI_AS
+6       SQLINT              1       4       ""   6     SellOnWeb                        ""

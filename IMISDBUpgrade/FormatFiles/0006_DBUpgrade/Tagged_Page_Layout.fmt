@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLNUMERIC          1       19      ""   1     TaggedPageLayoutID                           ""
+2       SQLNCHAR            2       100     ""   2     TaggedPageLayoutName                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNUMERIC          1       19      ""   3     TaggedPageFormatID                           ""
+4       SQLNCHAR            0       2       ""   4     TaggedPageTitleCode                          SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       2       ""   5     TaggedPageSource                             SQL_Latin1_General_CP1_CI_AS

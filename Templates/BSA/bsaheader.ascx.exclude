@@ -1,0 +1,98 @@
+<%@ Register TagPrefix="cc1" Namespace="Asi.Web.UI.Common.ContentManagement" %>
+<%@ Register TagPrefix="asi" Namespace="Asi.Web.UI.WebControls" Assembly="Asi.Web" %>
+<%@ Control Language="c#" AutoEventWireup="false" %>
+<script language="C#" runat="server">
+	private void Page_Load(object sender, System.EventArgs e)
+	{
+		Guid hierarchyKey;
+		if (Request.QueryString["hkey"] != null)
+			hierarchyKey = new Guid(Request.QueryString["hkey"]);
+		else
+			hierarchyKey = Asi.AppContext.CurrentContext.HKey;
+		
+		SideNav.SelectedHierarchyKey = hierarchyKey;
+		SideNav.SessionID = Request["iSession"];
+
+
+	}
+	private Asi.Web.UI.Common.ContentManagement.Template Template
+	{
+		get
+		{
+			return (Asi.Web.UI.Common.ContentManagement.Template) Parent.Parent;
+		}
+	}
+	override protected void OnInit(EventArgs e)
+	{
+        this.Load += new System.EventHandler(this.Page_Load);
+		base.OnInit(e);
+		this.ButtonBar.CommandButtonClick += new Asi.Web.UI.CommandButtonEventHandler(this.ButtonBar_CommandButtonClick);
+	}
+
+	override protected void OnPreRender(EventArgs e)
+	{
+		base.OnPreRender(e);
+
+		Asi.Web.UI.CommandButtonRequisiteArgs buttonArgs = new Asi.Web.UI.CommandButtonRequisiteArgs();
+		Template.CommandButtonRequisites(buttonArgs);
+
+		System.Array commandButtons = Enum.GetValues(typeof(Asi.Web.UI.CommandButtonType));
+		Asi.Web.UI.CommandButtonType flags = 0;
+		foreach (Asi.Web.UI.CommandButtonType commandButton in commandButtons)
+		{
+			if (buttonArgs.ShowButton(commandButton))
+				flags = flags | commandButton;
+		}
+		
+		ButtonBar.VisibleButtons = flags;
+	}
+	private void ButtonBar_CommandButtonClick(object sender, Asi.Web.UI.CommandButtonEventArgs e)
+	{
+		Template.HandleCommandButtonClick(sender, e.ButtonType);		
+	}
+</script>
+<script language="JavaScript" type="text/javascript">
+document.body.className='BSATemplateBody';
+</script>
+<table cellpadding="0" cellspacing="0" border="0" style="height:100%; width: 100%; ">
+    <tr>
+        <td>
+            <div id="bsalogo"><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/top_logo.jpg" width="406" height="40" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/top_logo_imis.jpg" width="303" height="40" style="position: absolute; right:0px" /></div>
+            <div id="bsabuttonbar">
+              <a href="<%= Asi.AppContext.CurrentContext.TemplatePath %>?NavigationCode=Home&iSession=<%= Request["iSession"] %>"><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/home_off.jpg" alt="Home" width="55" height="50" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/home_on.jpg');" onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/home_off.jpg');" /></a><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/print_off.jpg" onclick="printWindow();" alt="Print" width="30" height="50" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/print_on.jpg');" onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/print_off.jpg');" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/email_off.jpg" alt="e-mail" onclick="emailWindow();" width="30" height="50" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/email_on.jpg');" onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/email_off.jpg');" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/info_off.jpg" alt="iMIS Info Center" onclick="showInfoCenter();" width="26" height="50" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/info_on.jpg');" onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/info_off.jpg');" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/help_off.jpg" alt="Help" onclick="showHelp();" width="27" height="50" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/help_on.jpg');" onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/help_off.jpg');" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/paint_blank.jpg" width="37" height="50" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/nav_filler.jpg" width="30" height="50" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/utility_left.jpg" width="147" height="50" /><div style="position: absolute; right:0px; z-index: 999;">
+              <img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/utility_right.jpg" width="303" height="50" />
+              </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="height:100%; width:100%; vertical-align:top;">
+            <table style="height:99%; width:100%; vertical-align: top;" cellpadding="2" cellspacing="0" border="0">
+                <tr>
+                    <td style="vertical-align:top; height: 100%;">
+                        <div id="bsanavigation">
+	                        <cc1:TemplateNavigation id="SideNav" runat="server" MinimumDepth="2" StyleList="iMISNavDefaultStyle1,iMISNavDefaultStyle2,iMISNavDefaultStyle3,iMISNavDefaultStyle4,iMISNavDefaultStyle5,iMISNavDefaultStyle6" SelectedStyleList="iMISNavSelectedStyle1,iMISNavSelectedStyle2,iMISNavSelectedStyle3,iMISNavSelectedStyle4,iMISNavSelectedStyle5,iMISNavSelectedStyle6"></cc1:TemplateNavigation>
+	                    </div>
+                    </td>
+                    <td style="width:100%; height:100%; vertical-align: top;">
+                        <table cellpadding="0" cellspacing="0" id="pagetitle_table">
+                            <tr>
+                                <td style="width:100%">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+	                                    <tr>
+		                                    <td id="bsapagetitle" style="white-space:nowrap"><% =((Asi.Web.UI.Common.ContentManagement.Template) Parent.Parent).PageTitle %> </td>
+		                                    <td id="pagetitle_sub" style="white-space:nowrap; text-align:right"><% =Asi.AppContext.CurrentContext.SubjectName %>&nbsp;</td>
+		                                    <td style="white-space:nowrap; width:25"><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/buttons/astrix_orange_right.gif" align="absmiddle"></td>
+	                                    </tr>
+                                    </table>
+                                </td>
+                                <td style="white-space:nowrap">&nbsp;<asi:CommandButtonBar id="ButtonBar" runat="server" /></td>
+                            </tr>
+                        </table>
+                        <!--div id="bsacontent"-->
+                            <table style="width:99%; height:99%; vertical-align:top;" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td style="height:100%; vertical-align: top;">
+                                        <div style="overflow:auto;">
+                    
+    

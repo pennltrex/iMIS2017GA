@@ -1,0 +1,18 @@
+10.0
+16
+1       SQLUNIQUEID         1       16      ""   1     CertificationProgramRegistrationKey                                        ""
+2       SQLUNIQUEID         1       16      ""   2     CertificationProgramKey                                                    ""
+3       SQLUNIQUEID         1       16      ""   3     UserKey                                                                    ""
+4       SQLDATETIME         0       8       ""   4     RegistrationDate                                                           ""
+5       SQLDATETIME         0       8       ""   5     GracePeriodDate                                                            ""
+6       SQLDATETIME         0       8       ""   6     ExpirationDate                                                             ""
+7       SQLNCHAR            4       0       ""   7     ActionManifest                                                             SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            0       4       ""   8     RegistrationStatusCode                                                     SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       400     ""   9     CurrentStageName                                                           SQL_Latin1_General_CP1_CI_AS
+10      SQLDECIMAL          1       19      ""   10    EarnedUnits                                                                ""
+11      SQLNCHAR            4       0       ""   11    FormattedCertificationNumber                                               SQL_Latin1_General_CP1_CI_AS
+12      SQLINT              1       4       ""   12    CertificationNumber                                                        ""
+13      SQLDATETIME         0       8       ""   13    CreatedOn                                                                  ""
+14      SQLUNIQUEID         1       16      ""   14    CreatedByUserKey                                                           ""
+15      SQLDATETIME         1       8       ""   15    UpdatedOn                                                                  ""
+16      SQLUNIQUEID         1       16      ""   16    UpdatedByUserKey                                                           ""

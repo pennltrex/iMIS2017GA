@@ -1,0 +1,10 @@
+11.0
+8
+1       SQLNCHAR            2       10      ""   1     StateProvinceCode                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       4       ""   2     CountryCode                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     StateProvinceDesc                      SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     ChapterGroupKey                        ""
+5       SQLBIT              1       1       ""   5     IsActive                               ""
+6       SQLBIT              1       1       ""   6     IsHandModified                         ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                       ""
+8       SQLDATETIME         0       8       ""   8     UpdatedOn                              ""

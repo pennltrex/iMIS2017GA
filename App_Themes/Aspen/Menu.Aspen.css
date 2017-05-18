@@ -1,0 +1,596 @@
+
+/*****************************************/
+/***      ASPEN MENU STYLE SHEET       ***/
+/*****************************************/
+/**
+ * Aspen styles for PageNavR (Telerik RadMenu)
+ *
+ * This document contains Aspen styles for the PageNavR/RadMenu control.
+ * 
+ * TABLE OF CONTENTS:
+ * RadMenu Default
+ *  * Root items
+ *  * Submenu items
+ *  *  * expand arrows
+ *  *  * rtl
+ *  * Submenu offsets
+ *  * Scrolling arrows
+ *  * Separators
+ */
+
+/* ######################## */
+/*     RadMenu Styling      */
+/* ######################## */
+
+/* <RadMenu / Default> */
+
+.RadMenu.RadMenu_Aspen {
+    width: 100%;
+}
+
+.RadMenu_Aspen .rmRootGroup, .RadMenu_Aspen a.rmLink, 
+.RadMenu_Aspen .rmGroup .rmText, .RadMenu_Aspen .rmVertical .rmText, 
+.RadMenu_Aspen .rmLeftArrow, .RadMenu_Aspen .rmRightArrow, 
+.RadMenu_Aspen .rmTopArrow, .RadMenu_Aspen .rmBottomArrow
+{
+    background-image: url('Menu/rmSprite.png');
+    background-color: transparent;
+}
+
+.RadMenu_Aspen .rmRootGroup
+{
+    border:none;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-color: #777;
+    -moz-box-shadow: 0px 2px 3px #555;
+    -webkit-box-shadow: 0px 2px 3px #555;
+    box-shadow: 0px 2px 3px #555;
+}
+
+/* <Root items> */
+
+.RadMenu_Aspen, .RadMenu_Aspen a.rmLink
+{
+    font: normal 11px/24px Verdana, Geneva, sans-serif;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.RadMenu_Aspen a.rmLink, .RadMenu_Aspen a.rmDisabled, 
+.RadMenu_Aspen a.rmDisabled:hover
+{
+    background-position: 0 -38px;
+}
+
+.RadMenu_Aspen .rmFirst a.rmLink,
+.RadMenu_Aspen .rmLast .rmText, .RadMenu_Aspen .rmLast a.rmLink:hover .rmText,
+.RadMenu_Aspen .rmVertical a.rmLink, .RadMenu_Aspen .rmVertical .rmText
+{
+    background-repeat: no-repeat;
+    background-position: 0 500px;
+}
+
+.RadMenu_Aspen .rmVertical .rmFirst, .RadMenu_Aspen .rmVertical .rmLast
+{
+    background: none;
+}
+
+.RadMenu_Aspen a.rmLink:hover, .RadMenu_Aspen a.rmFocused, 
+.RadMenu_Aspen a.rmSelected
+{
+    background-position: 0 -71px;
+}
+
+.RadMenu_Aspen .rmFirst a.rmLink:hover
+{
+    background-position: -1px -71px;
+} 
+
+.RadMenu_Aspen .rmHorizontal .rmRootLink span.rmText
+{
+    display: inline;
+    padding-left: 12px;
+}
+
+.RadMenu_Aspen_rtl .rmRootLink span.rmText
+{
+    padding-right: 12px;
+}
+
+.RadMenu_Aspen_Context_rtl .rmRootLink span.rmText
+{
+    padding-right: 28px;
+}
+
+.RadMenu_Aspen .rmHorizontal a.rmRootLink
+{
+    padding-left: 0;
+}
+
+.RadMenu_Aspen_rtl a.rmRootLink
+{
+    margin-left: 0;
+    padding: 0;
+}
+
+.RadMenu_Aspen .rmHorizontal .rmItem > a.rmRootLink /* IE6 doesn't like width: 100% on its items. */
+{
+    width: 100%;
+}
+
+.RadMenu_Aspen ul.rmHorizontal .rmLeftImage
+{
+    margin: 4px -4px 0 6px;
+}
+
+.RadMenu_Aspen_rtl ul.rmHorizontal .rmLeftImage
+{
+    margin: 4px 6px 0 -4px;
+}
+
+.RadMenu_Aspen .rmVertical a.rmLink
+{
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.RadMenu_Aspen .rmVertical a.rmLink:hover, .RadMenu_Aspen .rmVertical a.rmFocused, 
+.RadMenu_Aspen .rmVertical a.rmSelected, .RadMenu_Aspen .rmVertical a.rmExpanded, 
+.RadMenu_Aspen .rmVertical a.rmExpanded:hover
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    border-style: solid;
+    border-color: #414141;
+    border-width: 1px 0;
+}
+
+.RadMenu_Aspen .rmVertical .rmFirst a.rmLink:hover, .RadMenu_Aspen .rmVertical .rmFirst a.rmFocused, 
+.RadMenu_Aspen .rmVertical .rmFirst a.rmSelected, .RadMenu_Aspen .rmVertical .rmFirst a.rmExpanded, 
+.RadMenu_Aspen .rmVertical .rmFirst a.rmExpanded:hover
+{
+    padding-top: 1px;
+    padding-bottom: 0;
+    border-top-width: 0;
+}
+
+.RadMenu_Aspen .rmVertical .rmLast a.rmLink:hover, .RadMenu_Aspen .rmVertical .rmLast a.rmFocused, 
+.RadMenu_Aspen .rmVertical .rmLast a.rmSelected, .RadMenu_Aspen .rmVertical .rmLast a.rmExpanded, 
+.RadMenu_Aspen .rmVertical .rmLast a.rmExpanded:hover
+{
+    padding-bottom: 1px;
+    padding-top: 0;
+    border-bottom-width: 0;
+}
+
+.RadMenu_Aspen .rmVertical .rmItem a.rmDisabled:hover
+{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-width: 0;
+}
+
+.RadMenu_Aspen a.rmDisabled, .RadMenu_Aspen a.rmDisabled:hover
+{
+    color: #CCC;
+    background-color: transparent;
+}
+
+/* </Root items> */
+
+
+/* <Submenu items> */
+
+
+.RadMenu_Aspen .rmGroup, .RadMenu_Aspen .rmMultiColumn, .RadMenu_Aspen .rmGroup .rmVertical
+{
+    border: 1px solid #414141;
+    background: #777;
+}
+
+.RadMenu_Aspen .rmGroup .rmItem .rmLink .rmText
+{
+    padding-left: 15px;
+    padding-right: 54px;
+}
+
+.RadMenu_Aspen .rmTopFix, .RadMenu_Aspen .rmBottomFix, 
+.RadMenu_Aspen .rmRoundedCorners .rmGroup .rmItem, 
+.RadMenu_Aspen .rmRoundedCorners li.rmFirstGroupColumn .rmItem, 
+.RadMenu_Aspen .rmRoundedCorners .rmFirstGroupColumn li.rmFirstGroupColumn .rmItem, 
+.RadMenu_Aspen .rmRoundedCorners ul.rmHorizontal .rmFirst, 
+.RadMenu_Aspen_Context.rmRoundedCorners .rmGroup .rmItem, 
+.RadMenu_Aspen_Context.rmRoundedCorners ul.rmHorizontal .rmFirst
+{
+    background-image: url('Menu/rmVSprite.png');
+    background-color: #777;
+    background-repeat: repeat-y;
+}
+
+* html .rmRoundedCorners_Aspen .rmGroup .rmItem, * html .rmRoundedCorners_Aspen ul.rmHorizontal .rmFirst
+{
+    background-image: url('Menu/rmVSprite.png');
+    background-color: #777;
+    background-repeat: repeat-y;
+}
+
+.RadMenu_Aspen .rmRoundedCorners .rmScrollWrapContainer .rmGroup, 
+.RadMenu_Aspen .rmRoundedCorners .rmScrollWrap .rmItem, 
+.RadMenu_Aspen .rmRoundedCorners .rmGroupColumn .rmItem, 
+.RadMenu_Aspen .rmRoundedCorners .rmGroupColumn .rmGroupColumn .rmItem, 
+.RadMenu_Aspen .rmRoundedCorners .rmHorizontal .rmItem, 
+.RadMenu_Aspen .rmRoundedCorners .rmScrollWrap .rmVertical, 
+.RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrapContainer .rmGroup, 
+.RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrap .rmItem, 
+.RadMenu_Aspen_Context.rmRoundedCorners .rmHorizontal .rmItem, 
+.RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrap .rmVertical
+{
+    background-image: none;
+}
+
+* html .rmRoundedCorners_Aspen .rmScrollWrapContainer .rmGroup, * html .rmRoundedCorners_Aspen .rmScrollWrap .rmItem, * html .rmRoundedCorners_Aspen .rmHorizontal .rmItem, * html .rmRoundedCorners_Aspen .rmScrollWrap .rmVertical
+{
+    background-image: none;
+}
+
+.RadMenu_Aspen .rmRoundedCorners .rmGroupColumn
+{
+    background-color: #777;
+}
+
+.RadMenu_Aspen .rmBottomLeft, .RadMenu_Aspen .rmRoundedCorners .rmScrollWrapContainer, .RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrapContainer, .RadMenu_Aspen_Context.rmRoundedCorners ul.rmGroup, .RadMenu_Aspen .rmRoundedCorners ul.rmGroup, .RadMenu_Aspen .rmRoundedCorners .rmMultiColumn
+{
+    background-image: url('Menu/rmRoundedLeft.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+* html .rmRoundedCorners_Aspen .rmScrollWrapContainer, * html .rmRoundedCorners_Aspen .rmGroup ul.rmGroup, * html .rmRoundedCorners_Aspen ul.rmGroup
+{
+    background-image: url('Menu/rmRoundedLeft.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.RadMenu_Aspen .rmTopRight, .RadMenu_Aspen .rmBottomRight
+{
+    background-image: url('Menu/rmRoundedRight.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.RadMenu_Aspen .rmTopFix, .RadMenu_Aspen .rmBottomFix, .RadMenu_Aspen .rmRoundedCorners .rmGroup .rmFirst, .RadMenu_Aspen_Context.rmRoundedCorners .rmGroup .rmFirst, .rmRoundedCorners_Aspen .rmGroup .rmFirst
+{
+    border-color: #979797;
+}
+
+.RadMenu_Aspen .rmRoundedCorners .rmScrollWrapContainer .rmTopFix, .RadMenu_Aspen .rmRoundedCorners .rmScrollWrapContainer .rmBottomFix, .RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrapContainer .rmTopFix, .RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrapContainer .rmBottomFix
+{
+    background: #777;
+}
+
+* html .rmRoundedCorners_Aspen .rmScrollWrapContainer .rmTopFix, * html .rmRoundedCorners_Aspen .rmScrollWrapContainer .rmBottomFix
+{
+    background: #777;
+}
+
+.RadMenu_Aspen .rmRoundedCorners .rmScrollWrapContainer .rmTopArrow, .RadMenu_Aspen .rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow, .RadMenu_Aspen .rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow, .RadMenu_Aspen .rmRoundedCorners .rmScrollWrapContainer .rmRightArrow, .RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrapContainer .rmTopArrow, .RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow, .RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow, .RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrapContainer .rmRightArrow
+{
+    background-color: #777;
+    border: 0;
+}
+
+* html .rmRoundedCorners_Aspen .rmScrollWrapContainer .rmTopArrow, * html .rmRoundedCorners_Aspen .rmScrollWrapContainer .rmBottomArrow, * html .rmRoundedCorners_Aspen .rmScrollWrapContainer .rmLeftArrow, * html .rmRoundedCorners_Aspen .rmScrollWrapContainer .rmRightArrow
+{
+    background-color: #777;
+    border: 0;
+}
+
+.RadMenu_Aspen_rtl .rmBottomLeft, .RadMenu_Aspen_rtl .rmRoundedCorners ul.rmGroup, .RadMenu_Aspen_rtl .rmRoundedCorners .rmMultiColumn, .RadMenu_Aspen .rmRoundedCorners .rmScrollWrapContainer, .RadMenu_Aspen .rmScrollWrapContainer .rmBottomLeft, .rmRoundedCorners.RadMenu_Aspen_Context_rtl ul.rmGroup, .RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrapContainer
+{
+    background-image: url('Menu/rmRoundedLeft_rtl.png');
+}
+
+.RadMenu_Aspen_rtl .rmTopRight, .RadMenu_Aspen_rtl .rmBottomRight
+{
+    background-image: url('Menu/rmRoundedRight_rtl.png');
+}
+
+.RadMenu_Aspen_rtl li.rmTopFix, .RadMenu_Aspen_rtl li.rmBottomFix, .RadMenu_Aspen_rtl .rmRoundedCorners .rmGroup .rmItem, 
+.rmRoundedCorners.RadMenu_Aspen_Context_rtl .rmGroup .rmItem
+{
+    background-position: 101% 0;
+}
+
+.RadMenu_Aspen .rmSlide .rmScrollWrap
+{
+    background-image: none;
+}
+
+.RadMenu_Aspen_rtl .rmGroup, .RadMenu_Aspen_rtl .rmMultiColumn, .RadMenu_Aspen_rtl .rmGroup .rmVertical
+{
+    background-position: 100% 0;
+}
+
+.RadMenu_Aspen .rmRootGroup li.rmItem .rmGroup
+{
+    padding-bottom: 0;
+}
+
+.RadMenu_Aspen .rmRootGroup .rmHorizontal
+{
+    background-image: none;
+}
+
+.RadMenu_Aspen .rmScrollWrap .rmVertical
+{
+    border: 0;
+}
+
+.RadMenu_Aspen .rmRoundedCorners .rmScrollWrapContainer li.rmItem, 
+.RadMenu_Aspen_Context.rmRoundedCorners .rmScrollWrapContainer li.rmItem, 
+.rmRoundedCorners_Aspen .rmScrollWrapContainer li.rmItem
+{
+    background: none;
+}
+
+.RadMenu_Aspen .rmGroup .rmItem a.rmLink, .RadMenu_Aspen .rmGroup .rmItem a.rmLink:hover, 
+.RadMenu_Aspen .rmGroup .rmItem a.rmFocused, .RadMenu_Aspen .rmGroup .rmItem a.rmSelected, 
+.RadMenu_Aspen .rmGroup .rmItem a.rmExpanded
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+}
+
+.RadMenu_Aspen .rmGroup .rmLast a.rmLink, .RadMenu_Aspen .rmGroup .rmLast a.rmLink:hover, 
+.RadMenu_Aspen .rmGroup .rmLast a.rmFocused, .RadMenu_Aspen .rmGroup .rmLast a.rmSelected, 
+.RadMenu_Aspen .rmGroup .rmLast a.rmExpanded
+{
+    padding-bottom: 1px;
+}
+
+.RadMenu_Aspen .rmGroup a.rmLink, .RadMenu_Aspen .rmGroup .rmText, .RadMenu_Aspen .rmGroup .rmItem a.rmDisabled, 
+.RadMenu_Aspen .rmGroup .rmItem a.rmDisabled:hover, .RadMenu_Aspen .rmGroup .rmItem a.rmDisabled .rmText, 
+.RadMenu_Aspen .rmGroup .rmItem a.rmDisabled:hover .rmText
+{
+    background-position: 0 500px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.RadMenu_Aspen .rmGroup a.rmLink:hover, .RadMenu_Aspen .rmGroup a.rmFocused, 
+.RadMenu_Aspen .rmGroup a.rmSelected, .RadMenu_Aspen .rmGroup a.rmExpanded
+{
+    background-position: 0 -168px;
+}
+
+.RadMenu_Aspen .rmGroup a.rmLink:hover .rmText, .RadMenu_Aspen .rmGroup a.rmFocused .rmText, 
+.RadMenu_Aspen .rmGroup a.rmSelected .rmText, .RadMenu_Aspen .rmGroup a.rmExpanded .rmText
+{
+    background-position: 100% -192px;
+}
+
+/* <expand arrows> */
+
+.RadMenu_Aspen .rmRootGroup .rmExpandRight, .RadMenu_Aspen .rmGroup .rmExpandDown, 
+.RadMenu_Aspen_Context .rmGroup .rmExpandRight, .RadMenu_Aspen .rmRootGroup .rmItem a.rmDisabled .rmExpandRight, 
+.RadMenu_Aspen .rmGroup .rmItem a.rmDisabled .rmExpandDown, 
+.RadMenu_Aspen .rmRootGroup .rmItem a.rmDisabled:hover .rmExpandRight, 
+.RadMenu_Aspen .rmGroup .rmItem a.rmDisabled:hover .rmExpandDown
+{
+    background-position: 100% -216px;
+}
+
+.RadMenu_Aspen a.rmLink:hover .rmExpandRight, .RadMenu_Aspen .rmLast a.rmLink:hover .rmExpandRight, 
+.RadMenu_Aspen a.rmFocused .rmExpandRight, .RadMenu_Aspen a.rmSelected .rmExpandRight, 
+.RadMenu_Aspen a.rmExpanded .rmExpandRight
+{
+    background-position: 100% -312px;
+}
+
+.RadMenu_Aspen .rmGroup a.rmLink:hover .rmExpandRight, .RadMenu_Aspen .rmGroup a.rmFocused .rmExpandRight, 
+.RadMenu_Aspen .rmGroup a.rmSelected .rmExpandRight, .RadMenu_Aspen .rmGroup a.rmExpanded .rmExpandRight, 
+.RadMenu_Aspen .rmGroup a.rmLink:hover .rmExpandDown, .RadMenu_Aspen .rmGroup a.rmFocused .rmExpandDown, 
+.RadMenu_Aspen .rmGroup a.rmSelected .rmExpandDown, .RadMenu_Aspen .rmGroup a.rmExpanded .rmExpandDown
+{
+    background-position: 100% -240px;
+}
+
+.RadMenu_Aspen .rmRootGroup a.rmDisabled:hover .rmExpandRight, .RadMenu_Aspen .rmGroup a.rmDisabled:hover .rmExpandDown
+{
+    background-position: 100% -216px;
+}
+
+/* </expand arrows> */
+
+/* <rtl> */
+
+.RadMenu_Aspen_rtl a.rmLink, .RadMenu_Aspen_rtl .rmRootGroup a.rmDisabled
+{
+    background-position: 100% -96px;
+}
+
+.RadMenu_Aspen_rtl .rmGroup a.rmDisabled
+{
+    background: none;
+}
+
+.RadMenu_Aspen_rtl .rmText
+{
+    background-position: 0 -96px;
+}
+
+.RadMenu_Aspen_rtl .rmVertical a.rmExpanded .rmText, .RadMenu_Aspen_rtl .rmVertical a.rmExpanded:hover .rmText
+{
+    background-position: 0 500px;
+    background-repeat: no-repeat;
+}
+
+.RadMenu_Aspen_rtl .rmGroup a.rmLink:hover, .RadMenu_Aspen_rtl .rmGroup a.rmFocused, 
+.RadMenu_Aspen_rtl .rmGroup a.rmSelected, .RadMenu_Aspen_rtl .rmGroup a.rmExpanded
+{
+    background-position: 100% -264px;
+}
+
+.RadMenu_Aspen_rtl .rmGroup a.rmLink:hover .rmText, .RadMenu_Aspen_rtl .rmGroup a.rmFocused .rmText, 
+.RadMenu_Aspen_rtl .rmGroup a.rmSelected .rmText, .RadMenu_Aspen_rtl .rmGroup a.rmExpanded .rmText
+{
+    background-position: 0 -288px;
+}
+
+.RadMenu_Aspen_Context_rtl .rmVertical .rmExpandLeft, .RadMenu_Aspen_rtl .rmRootGroup .rmExpandLeft
+{
+    background-position: 0 -312px;
+}
+
+.RadMenu_Aspen_rtl .rmVertical a.rmLink:hover .rmExpandLeft, .RadMenu_Aspen_rtl .rmVertical a.rmFocused .rmExpandLeft, 
+.RadMenu_Aspen_rtl .rmVertical a.rmSelected .rmExpandLeft, .RadMenu_Aspen_rtl .rmVertical a.rmExpanded .rmExpandLeft
+{
+    background-position: 0 -216px;
+}
+
+.RadMenu_Aspen_rtl .rmGroup a.rmLink:hover .rmExpandLeft, .RadMenu_Aspen_rtl .rmGroup a.rmFocused .rmExpandLeft, 
+.RadMenu_Aspen_rtl .rmGroup a.rmSelected .rmExpandLeft, .RadMenu_Aspen_rtl .rmGroup a.rmExpanded .rmExpandLeft
+{
+    background-position: 0 -336px;
+}
+
+.RadMenu_Aspen_rtl .rmRootGroup a.rmDisabled:hover .rmExpandLeft
+{
+    background-position: 0 -312px;
+}
+
+/* </rtl> */
+
+/* </Submenu items> */
+
+/* <Submenu offsets (Default - specific, overlapping submenus)> */
+
+.RadMenu_Aspen .rmSlide
+{
+    margin: 0 0 0 -1px;
+}
+
+.RadMenu_Aspen .rmVertical .rmSlide, .RadMenu_Aspen .rmSlide .rmSlide, .RadMenu_Aspen_Context .rmGroup .rmSlide
+{
+    margin: 0 0 0 -5px;
+}
+
+.RadMenu_Aspen_rtl .rmSlide
+{
+    margin: 0 0 0 0;
+}
+
+.RadMenu_Aspen_rtl .rmFirst .rmSlide
+{
+    margin-left: 1px;
+}
+
+.RadMenu_Aspen_rtl .rmVertical .rmSlide, .RadMenu_Aspen_rtl .rmSlide .rmSlide, .RadMenu_Aspen_Context_rtl .rmGroup .rmSlide
+{
+    margin: 0 0 0 5px;
+}
+
+/* </Submenu offsets> */
+
+/* <Scrolling arrows> */
+
+.RadMenu_Aspen .rmLeftArrow, .RadMenu_Aspen .rmRightArrow
+{
+    background-color: #E6E6E6;
+}
+
+.RadMenu_Aspen .rmLeftArrow
+{
+    background-position: -8px -312px;
+    border-right: 1px solid #828282;
+}
+.RadMenu_Aspen .rmRightArrow
+{
+    background-position: -482px -216px;
+    border-left: 1px solid #828282;
+}
+
+.RadMenu_Aspen .rmTopArrow, .RadMenu_Aspen .rmBottomArrow, .RadMenu_Aspen .rmGroup .rmLeftArrow, 
+.RadMenu_Aspen .rmGroup .rmRightArrow
+{
+    background-color: #666;
+}
+
+.RadMenu_Aspen .rmTopArrow
+{
+    background-position: 50% -367px;
+    border-bottom: 1px solid #828282;
+}
+.RadMenu_Aspen .rmBottomArrow
+{
+    background-position: 50% -391px;
+    border-top: 1px solid #828282;
+}
+
+/* </Scrolling arrows> */
+
+/* <Separators> */
+
+.RadMenu_Aspen .rmHorizontal .rmSeparator .rmText, 
+.RadMenu_Aspen .rmVertical .rmHorizontal .rmSeparator .rmText
+{
+    height: 22px;
+    margin: 1px 0 0;
+    width: 1px;
+    background-color: #A8A8A8;
+}
+
+.RadMenu_Aspen_Context .rmSeparator .rmText, 
+.RadMenu_Aspen .rmHorizontal .rmGroup .rmSeparator .rmText, 
+.RadMenu_Aspen .rmVertical .rmHorizontal .rmGroup .rmSeparator .rmText
+{
+    background-color: transparent;
+    background-position: 0 -406px;
+}
+
+/* </Separators> */
+
+/* </RadMenu / Default> */
+
+.RadMenu_Aspen .rmRootGroup .rmVertical .rmSeparator .rmText, 
+.RadMenu_Aspen_Context .rmVertical .rmSeparator .rmText
+{
+    margin: 1px 5px!important;
+}
+
+/* ########################## */
+/*  MegaDropDownMenu Styling  */
+/* ########################## */
+
+.RadMenu .rmGroup .MegaDropDownMenuOuter .rmText 
+{
+    padding: 0;
+    margin: 0;
+    width: 600px !important;
+}
+
+div.MegaDropDownMenu
+{
+    background-color: #f8f7f7;
+    padding-left: 5px !important;
+    padding-right: 5px !important;   
+}
+
+.MegaDropDownMenuToolTip
+{ 
+    padding: 5px;
+}
+
+.MegaDropDownMenuSeperator
+{
+    border-style: dashed none none none;
+    border-width: 1.5px;
+    border-top-color: #c0c0c0;
+    height: 1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 150px;
+}

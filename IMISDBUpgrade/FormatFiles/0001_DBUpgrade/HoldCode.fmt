@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     HoldCodeKey                            ""
+2       SQLNCHAR            2       20      ""   2     Code                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       200     ""   3     Reason                                 SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     OrganizationKey                        ""
+5       SQLDATETIME         1       8       ""   5     MarkedForDeleteOn                      ""

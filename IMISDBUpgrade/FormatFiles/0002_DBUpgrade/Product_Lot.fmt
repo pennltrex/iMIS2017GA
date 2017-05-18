@@ -1,0 +1,15 @@
+10.0
+13
+1       SQLNCHAR            2       62      ""   1     PRODUCT_CODE                   SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       60      ""   2     LOCATION                       SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       40      ""   3     LOT_SERIAL                     SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       120     ""   4     TITLE                          SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       40      ""   5     BIN                            SQL_Latin1_General_CP1_CI_AS
+6       SQLNUMERIC          1       19      ""   6     ON_HAND                        ""
+7       SQLNUMERIC          1       19      ""   7     RESERVED                       ""
+8       SQLNUMERIC          1       19      ""   8     COMMITTED_QTY                  ""
+9       SQLNUMERIC          1       19      ""   9     AVAILABLE                      ""
+10      SQLNCHAR            2       62      ""   10    AVAILABLE_KEY                  SQL_Latin1_General_CP1_CI_AS
+11      SQLDATETIME         1       8       ""   11    LOT_DATE                       ""
+12      SQLNUMERIC          1       19      ""   12    BACKORDERED                    ""
+13      SQLBINARY           2       8       ""   13    TIME_STAMP                     ""

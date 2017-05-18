@@ -1,0 +1,150 @@
+﻿/**** Import the Everest Stylesheets ****/
+@import url("../../Assets/css/10-UltraWave.css");
+@import url("../Everest/01-MasterPage.css");
+@import url("../Everest/30-Compatibility.css");
+@import url("../Everest/99-Everest.css");
+
+/**** Apply needed overrides ****/
+
+#frameworkMaster #doc, #frameworkMaster #doc2, #frameworkMaster #doc3, #frameworkMaster .yui-t1, 
+#frameworkMaster .yui-t2, #frameworkMaster .yui-t3, #frameworkMaster .yui-t4, #frameworkMaster .yui-t5, 
+#frameworkMaster .yui-t6, #frameworkMaster .yui-t7
+{
+    min-width: 100px;
+}
+
+#frameworkMaster #MainBody, #frameworkMaster #MainHtml
+{
+    background: none;
+}
+
+.PanelTitle, .TitleBarCaption span, h2, h1, #mainTitle, h1 small, .PageTitle small
+{
+  font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Hide surf-to-edit on Desktop */
+.SurfEdit, .ContentItemButtonPanel, .ContentRecordPageButtonPanel, .NoContentSTEContainer, .SurfEditOn 
+{
+    display: none!important; 
+}
+
+/**** End Overrides ****/
+
+/**** Navigation ****/
+
+/* <Top Nav> */
+#pagenav, .LogoNavLeft
+{  
+    background-color: #1b6096;
+    border-color: #14476f #14476f #081e2f;
+    height: 24px;
+}
+#test2
+{
+    top: 0!important;
+}
+
+#MenuTable
+{
+    margin-top: 0!important;
+}
+
+#test2>table, table.HTabStatic
+{
+    height:24px;
+    border:none;
+}
+table.HTabStatic
+{
+    border-right: 1px solid #14476f;
+}
+a.HTabStatic
+{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    width: 100%;
+    padding: 0 10px;
+}
+a.HTabStatic, a.HTabStatic:hover, a.HTabStatic:focus, a.HTabStatic:visited
+{
+    color: white;
+    text-decoration: none;
+}
+table.HTabSelected, table.HTabSelected:hover, table.HTabStatic:hover, 
+td:first-child table.HTabSelected, td:first-child table.HTabSelected:hover, td:first-child table.HTabStatic:hover, .HTabHover
+{
+    background: #13446b;
+    text-decoration: none;
+}
+/* </Top Nav> */
+
+/* <Left Nav> */
+.SubNavPanel
+{
+    overflow: auto;
+}
+#pagesubnavhead, #pagesubnavbody
+{
+    width: 100%;
+}
+#frameworkMaster #SideBarPanel
+{
+    /*width: 157px;
+    min-width: 157px;*/
+    width: auto !important;
+    height: 100%;
+    overflow: auto;
+    background-image: url(images/texture.png);
+}
+#frameworkMaster .yui-g
+{
+    height: 100%;
+}
+/* Fix scrollbar issue in the left nav */
+#frameworkMaster #bd:after, #frameworkMaster .yui-g:after
+{
+    content: none;
+}
+
+.PageSubNavMenu table
+{
+    width: 100%;
+}
+
+.PageSubNavMenu .navlink
+{
+    white-space: normal;
+}
+
+.PageSubNavMenu a.navlink, .PageSubNavMenu a.navlink:hover, .PageSubNavMenu a.navlink:active, .PageSubNavMenu a.navlink:visited
+{
+    color: #222;
+    text-decoration: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.PageSubNavMenu .navlinkselected a.navlink
+{
+    font-weight: bold;
+}
+
+.PageSubNavMenu .navlinkselected
+{
+    width: 100%;
+}
+
+.PageSubNavMenu .navlinkhover
+{
+    background-color: #9dc5e5;
+}
+.PageSubNavMenu .navlink hr
+{
+    display: block;
+}
+
+/* </Left Nav> */
+
+/**** End Navigation ****/

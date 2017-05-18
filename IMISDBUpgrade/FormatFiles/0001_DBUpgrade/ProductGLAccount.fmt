@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     ProductGLAccountKey                          ""
+2       SQLUNIQUEID         1       16      ""   2     ParentKey                                    ""
+3       SQLUNIQUEID         1       16      ""   3     GLAccountKey                                 ""
+4       SQLNCHAR            2       6       ""   4     GLAccountPurposeCode                         SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     MarkedForDeleteOn                            ""

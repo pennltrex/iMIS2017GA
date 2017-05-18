@@ -1,0 +1,149 @@
+
+/************************************************/
+/***      ASPEN_MOBILE MENU STYLE SHEET       ***/
+/************************************************/
+/**
+ * Aspen_mobile styles for PageNavR (Telerik RadMenu)
+ *
+ * This document contains Aspen_mobile styles for the PageNavR/RadMenu control.
+ */
+
+/* ######################## */
+/*     RadMenu Styling      */
+/* ######################## */
+
+/* <RadMenu / Default> */
+
+.RadMenu_Aspen_mobile .rmRootGroup
+{
+    background-image: url('Menu/rmSprite.png');
+}
+
+.RadMenu_Aspen_mobile .rmRootGroup
+{
+    border:none;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-color: #777;
+    background-position:0 -408px;
+}
+
+/* <Root items> */
+
+.RadMenu_Aspen_mobile, .RadMenu_Aspen_mobile a.rmLink
+{
+    font: normal 14px/30px Verdana, Geneva, sans-serif;
+    font-weight:bold;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.RadMenu_Aspen_mobile a.rmLink:hover, .RadMenu_Aspen_mobile a.rmFocused, 
+.RadMenu_Aspen_mobile a.rmSelected
+{
+    background-color:#609060;
+}
+
+/*.RadMenu_Aspen_mobile .rmFirst a.rmLink:hover
+{
+    background-color:#609060;
+} */
+
+.RadMenu_Aspen_mobile .rmHorizontal .rmRootLink span.rmText
+{
+    display: inline;
+    padding-left: 12px;
+}
+
+.RadMenu_Aspen_mobile_rtl .rmRootLink span.rmText
+{
+    padding-right: 12px;
+}
+
+.RadMenu_Aspen_mobile_Context_rtl .rmRootLink span.rmText
+{
+    padding-right: 28px;
+}
+
+.RadMenu_Aspen_mobile .rmHorizontal a.rmRootLink
+{
+    padding-left: 0;
+}
+
+.RadMenu_Aspen_mobile_rtl a.rmRootLink
+{
+    margin-left: 0;
+    padding: 0;
+}
+
+.RadMenu_Aspen_mobile .rmHorizontal .rmItem > a.rmRootLink /* IE6 doesn't like width: 100% on its items. */
+{
+    width: 100%;
+}
+
+.RadMenu_Aspen_mobile ul.rmHorizontal .rmLeftImage
+{
+    margin: 4px -4px 0 6px;
+}
+
+.RadMenu_Aspen_mobile_rtl ul.rmHorizontal .rmLeftImage
+{
+    margin: 4px 6px 0 -4px;
+}
+
+.RadMenu_Aspen_mobile .rmVertical a.rmLink
+{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-bottom:1px solid #414141;
+    display:block;
+    width:auto!important;
+}
+
+.RadMenu_Aspen_mobile .rmVertical .rmLast a.rmLink
+{
+    border-bottom:none;
+}
+
+.RadMenu_Aspen_mobile a.rmDisabled, .RadMenu_Aspen_mobile a.rmDisabled:hover
+{
+    color: #CCC;
+    background-color: transparent;
+}
+
+/* </Root items> */
+
+
+/* <Submenu items> */
+
+
+.RadMenu_Aspen_mobile .rmGroup, .RadMenu_Aspen_mobile .rmMultiColumn, .RadMenu_Aspen_mobile .rmGroup .rmVertical
+{
+    border: 1px solid #414141;
+    background: #777;
+}
+
+.RadMenu_Aspen_mobile .rmGroup .rmItem .rmLink .rmText
+{
+    padding-left: 15px;
+    padding-right: 54px;
+}
+
+/* <Separators> */
+
+.RadMenu_Aspen_mobile .rmHorizontal .rmSeparator .rmText, 
+.RadMenu_Aspen_mobile .rmVertical .rmHorizontal .rmSeparator .rmText
+{
+    height: 22px;
+    margin: 1px 0 0;
+    width: 1px;
+    background-color: #A8A8A8;
+}
+
+/* </RadMenu / Default> */
+
+.RadMenu_Aspen_mobile .rmRootGroup .rmVertical .rmSeparator .rmText, 
+.RadMenu_Aspen_mobile_Context .rmVertical .rmSeparator .rmText
+{
+    margin: 1px 5px!important;
+}

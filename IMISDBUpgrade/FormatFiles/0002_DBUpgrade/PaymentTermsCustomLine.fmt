@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     PaymentTermsCustomLineKey                              ""
+2       SQLUNIQUEID         1       16      ""   2     PaymentTermsKey                                        ""
+3       SQLINT              0       4       ""   3     DaysFromEffectiveDate                                  ""
+4       SQLBIT              1       1       ""   4     IsPercent                                              ""
+5       SQLDECIMAL          1       19      ""   5     Amount                                                 ""
+6       SQLINT              0       4       ""   6     Sequence                                               ""

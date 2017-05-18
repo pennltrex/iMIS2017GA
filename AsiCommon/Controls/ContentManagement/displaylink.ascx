@@ -1,0 +1,2 @@
+<%@ Control language="c#" Inherits="Asi.Web.UI.Common.ContentManagement.DisplayLink" Codebehind="DisplayLink.ascx.cs" %>
+<asp:HyperLink ID="LinkControl" runat="server" style="display: block"></asp:HyperLink>

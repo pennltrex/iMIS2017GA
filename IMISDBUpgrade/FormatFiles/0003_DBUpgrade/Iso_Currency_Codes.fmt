@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLNCHAR            2       6       ""   1     CurrencyCode                 SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       510     ""   2     CurrencyName                 SQL_Latin1_General_CP1_CI_AS
+3       SQLBINARY           2       8       ""   3     TIME_STAMP                   ""

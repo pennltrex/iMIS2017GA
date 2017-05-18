@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLNCHAR            2       30      ""   1     EventCode                                                        SQL_Latin1_General_CP1_CI_AS
+2       SQLDATETIME         0       8       ""   2     OnlineCutOffDate                                                 ""
+3       SQLNCHAR            2       512     ""   3     OnlineCutOffMessage                                              SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       48      ""   4     RegistrantClassType                                              SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       128     ""   5     RegistrantClassStoredProcedure                                   SQL_Latin1_General_CP1_CI_AS
+6       SQLBIT              1       1       ""   6     RegisterSomeoneElseOption                                        ""
+7       SQLBIT              1       1       ""   7     PermanentChange                                                  ""

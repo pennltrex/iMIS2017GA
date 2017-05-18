@@ -1,0 +1,24 @@
+10.0
+22
+1       SQLUNIQUEID         1       16      ""   1     AddressKey                                   ""
+2       SQLNCHAR            2       100     ""   2     Address1                                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     Address2                                     SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     Address3                                     SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     City                                         SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       10      ""   6     StateProvinceCode                            SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       100     ""   7     Region                                       SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       40      ""   8     PostalCode                                   SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       4       ""   9     CountryCode                                  SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       100     ""   10    County                                       SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       10      ""   11    MailCode                                     SQL_Latin1_General_CP1_CI_AS
+12      SQLUNIQUEID         1       16      ""   12    TimeZoneKey                                  ""
+13      SQLNCHAR            2       20      ""   13    CarrierRoute                                 SQL_Latin1_General_CP1_CI_AS
+14      SQLNUMERIC          1       19      ""   14    DeliveryPointBarCode                         ""
+15      SQLNCHAR            2       10      ""   15    LineOfTravel                                 SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       28      ""   16    BarCode                                      SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       10      ""   17    USCongress                                   SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       10      ""   18    StateSenate                                  SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       10      ""   19    StateHouse                                   SQL_Latin1_General_CP1_CI_AS
+20      SQLDECIMAL          1       19      ""   20    Latitude                                     ""
+21      SQLDECIMAL          1       19      ""   21    Longitude                                    ""
+22      SQLUNIQUEID         1       16      ""   22    TaxScheduleKey                               ""

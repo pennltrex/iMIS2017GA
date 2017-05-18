@@ -1,0 +1,15 @@
+10.0
+13
+1       SQLUNIQUEID         1       16      ""   1     OrderShipToKey                                         ""
+2       SQLUNIQUEID         1       16      ""   2     OrderKey                                               ""
+3       SQLUNIQUEID         1       16      ""   3     ContactKey                                             ""
+4       SQLUNIQUEID         1       16      ""   4     FullAddressKey                                         ""
+5       SQLUNIQUEID         1       16      ""   5     ShipMethodKey                                          ""
+6       SQLUNIQUEID         1       16      ""   6     CreatedByUserKey                                       ""
+7       SQLDATETIME         0       8       ""   7     CreatedOn                                              ""
+8       SQLBIT              1       1       ""   8     AllowPartialShipmentsFlag                              ""
+9       SQLNCHAR            2       200     ""   9     Instructions                                           SQL_Latin1_General_CP1_CI_AS
+10      SQLDECIMAL          1       19      ""   10    ShippingCharge                                         ""
+11      SQLDECIMAL          1       19      ""   11    HandlingCharge                                         ""
+12      SQLDECIMAL          1       19      ""   12    RestockingCharge                                       ""
+13      SQLDATETIME         1       8       ""   13    MarkedForDeleteOn                                      ""

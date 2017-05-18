@@ -1,0 +1,1785 @@
+@import url("../../../AsiCommon/StyleSheets/SiteStyle_ie.css");
+
+/* Generic stuff - use all over */
+.Text, .TextIndented, .TextBold, .TextLink
+{
+	font-size: 80%;
+	color: black;
+	font-family: verdana,tahoma,arial,helvetica;
+}
+.TextIndented
+{
+	left: 25;
+	position: relative;
+}
+.TextBold
+{
+	font-weight: bold;
+}
+.TextLink
+{
+	cursor: hand;
+}
+.TextLink:hover
+{
+	text-decoration: underline;
+}
+
+/* end Generic Stuff */
+
+/* Template Styles */
+Body.TemplateBody
+{
+	padding: 0;
+	margin: 0;
+	/*background: #E6E7E6 url(../images/navigation/left_nav_sliver.jpg) repeat-y;*/
+}
+
+Body.TemplateBodyDialog
+{
+	padding: 0;
+	margin: 0;
+	/*background: #E6E7E6;*/
+}
+
+#logo
+{
+	background-image: url(../images/header/top_logo_sliver.jpg);
+}
+
+#buttonbar
+{
+	width: 100%;
+	background-image: url(../images/header/nav_main_sliver.jpg);
+}
+
+#dialogbottombuttonbar
+{
+	width: 100%;
+	background-image: url(../images/header/nav_main_sliver.jpg);
+	padding: 10px 5px 5px 10px;
+	text-align: right;
+}
+
+.dialogbutton
+{
+	width: 100px;
+}
+
+#navigation
+{
+	position: absolute;
+	top: 98;
+	left: 5;
+	width: 171;
+	padding: 10px 5px 10px 5px;
+	background-image: url(../images/navigation/striped_background.jpg);
+	font-size: small;
+}
+
+#content
+{
+	padding: 0px 5px 0px 0px;
+}
+
+#contentdialog
+{
+	position: relative;
+}
+
+#pagetitle
+{
+	padding: 0px 0px 0px 20px;
+	margin: 0px 0px 4px 0px;
+	height: 19px;
+	background-image: url(../images/buttons/astrix_orange_left.gif);
+	background-repeat: no-repeat;
+	background-color: #F14200;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 15px;
+	color: White;
+}
+#pagetitle_sub
+{
+	background-color: #F14200;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 15px;
+	color: White;
+}
+#pagetitle_table
+{
+	padding-bottom: 4px;
+}
+
+#login
+{
+	background: #E6E7E6;
+	text-align:center;
+	padding: 10px 5px 5px 10px;
+	height: 100%;
+	width: 100%;
+}
+
+/* END: Template Styles */
+
+/* Navigation Styles */
+.iMISNavDefaultStyle2, .iMISNavDefaultStyle2:link, .iMISNavDefaultStyle2:visited, .iMISNavDefaultStyle2:active,
+.iMISNavSelectedStyle2, .iMISNavSelectedStyle2:visited, .iMISNavSelectedStyle2:active
+{
+	padding: 3px 0px 3px 10px;
+	width: 160px;
+	cursor: hand;
+	color: black;
+	background-color: White;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 70%;
+	text-decoration: none;
+	background-image: url(../images/navigation/bullet1.gif);
+	background-repeat: no-repeat;
+	background-position: 4px 7px;
+}
+
+.iMISNavDefaultStyle2:hover
+{
+	background-color: #E5E5E5;
+}
+
+.iMISNavSelectedStyle2, .iMISNavSelectedStyle2:visited, .iMISNavSelectedStyle2:active
+{
+	font-weight: bolder;
+	background-color: #CCCCCC;
+}
+
+.iMISNavDefaultStyle3, .iMISNavDefaultStyle3:link, .iMISNavDefaultStyle3:visited, .iMISNavDefaultStyle3:active,
+.iMISNavSelectedStyle3, .iMISNavSelectedStyle3:visited, .iMISNavSelectedStyle3:active
+{
+	padding: 3px 0px 3px 16px;
+	width: 160px;
+	cursor: hand;
+	color: black;
+	background-color: White;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 70%;
+	text-decoration: none;
+	background-image: url(../images/navigation/bullet1.gif);
+	background-repeat: no-repeat;
+	background-position: 10px 7px;
+}
+
+.iMISNavDefaultStyle3:hover
+{
+	background-color: #E5E5E5;
+}
+
+.iMISNavSelectedStyle3, .iMISNavSelectedStyle3:visited, .iMISNavSelectedStyle3:active
+{
+	font-weight: bolder;
+	background-color: #CCCCCC;
+}
+
+.iMISNavDefaultStyle4, .iMISNavDefaultStyle4:link, .iMISNavDefaultStyle4:visited, .iMISNavDefaultStyle4:active,
+.iMISNavSelectedStyle4, .iMISNavSelectedStyle4:visited, .iMISNavSelectedStyle4:active
+{
+	padding: 3px 0px 3px 22px;
+	width: 160px;
+	cursor: hand;
+	color: black;
+	background-color: White;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 70%;
+	text-decoration: none;
+	background-image: url(../images/navigation/bullet1.gif);
+	background-repeat: no-repeat;
+	background-position: 16px 7px;
+}
+
+.iMISNavDefaultStyle4:hover
+{
+	background-color: #E5E5E5;
+}
+
+.iMISNavSelectedStyle4, .iMISNavSelectedStyle4:visited, .iMISNavSelectedStyle4:active
+{
+	font-weight: bolder;
+	background-color: #CCCCCC;
+}
+
+.iMISNavDefaultStyle5, .iMISNavDefaultStyle5:link, .iMISNavDefaultStyle5:visited, .iMISNavDefaultStyle5:active,
+.iMISNavSelectedStyle5, .iMISNavSelectedStyle5:visited, .iMISNavSelectedStyle5:active
+{
+	padding: 3px 0px 3px 28px;
+	width: 160px;
+	cursor: hand;
+	color: black;
+	background-color: White;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 70%;
+	text-decoration: none;
+	background-image: url(../images/navigation/bullet1.gif);
+	background-repeat: no-repeat;
+	background-position: 22px 7px;
+}
+
+.iMISNavDefaultStyle5:hover
+{
+	background-color: #E5E5E5;
+}
+
+.iMISNavSelectedStyle5, .iMISNavSelectedStyle5:visited, .iMISNavSelectedStyle5:active
+{
+	font-weight: bolder;
+	background-color: #CCCCCC;
+}
+
+.iMISNavDefaultStyle6, .iMISNavDefaultStyle6:link, .iMISNavDefaultStyle6:visited, .iMISNavDefaultStyle6:active,
+.iMISNavSelectedStyle6, .iMISNavSelectedStyle6:visited, .iMISNavSelectedStyle6:active
+{
+	padding: 3px 0px 3px 34px;
+	width: 160px;
+	cursor: hand;
+	color: black;
+	background-color: White;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 70%;
+	text-decoration: none;
+	background-image: url(../images/navigation/bullet1.gif);
+	background-repeat: no-repeat;
+	background-position: 28px 7px;
+}
+
+.iMISNavDefaultStyle6:hover
+{
+	background-color: #E5E5E5;
+}
+
+.iMISNavSelectedStyle6, .iMISNavSelectedStyle6:visited, .iMISNavSelectedStyle6:active
+{
+	font-weight: bolder;
+	background-color: #CCCCCC;
+}
+/* END Navigation Styles */
+
+/* Floating panel styles */
+.StandardPanel
+{
+	padding: 0px 5px 5px 5px;
+	margin-bottom: 5px;
+	background-color: white;
+	border: solid 1 #CFCFCF;
+}
+
+.StandardPanelMilddle
+{
+	border-right: #cfcfcf 1px solid;
+	padding-right: 5px;
+	border-top: 0px solid;
+	padding-left: 5px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	border-left: #cfcfcf 1px solid;
+	padding-top: 0px;
+	position: relative;
+	top: -1px;
+	background-color: white;
+	
+}
+.StandardPanelBottom
+{
+	border-right: #cfcfcf 1px solid;
+	padding-right: 5px;
+	border-top: 0px solid;
+	padding-left: 5px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-left: #cfcfcf 1px solid;
+	padding-top: 0px;
+	border-bottom: #cfcfcf 1px solid;
+	position: relative;
+	top: -1px;
+	background-color: white;
+}
+.PanelTitle
+{
+	padding-right: 5px;
+	background-position: 0px 2px;
+	padding-left: 18px;
+	font-weight: bold;
+	font-size: 12px;
+	background-image: url(../images/buttons/astrix_orange.gif);
+	padding-bottom: 3px;
+	color: #555555;
+	padding-top: 2px;
+	border-bottom: #999999 4px solid;
+	background-repeat: no-repeat;
+	font-family: verdana,tahoma,arial,helvetica;
+}
+
+.PanelBody
+{
+	padding-right: 0px;
+	border-top: #cfcfcf 1px solid;
+	padding-left: 0px;
+	font-size: 12px;
+	padding-bottom: 0px;
+	color: black;
+	padding-top: 5px;
+	font-family: verdana,tahoma,arial,helvetica;
+}
+
+.PanelPromptBold
+{
+	font-weight: bold;
+	color: #454545;
+	text-align: right;
+}
+
+/* END Floating Panel styles */
+
+
+.iMISBody
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	font-size: 70%;
+	background-image: url(../Images/iMISBackground.gif);
+	padding-bottom: 0px;
+	padding-top: 0px;
+	background-repeat: repeat-x;
+}
+.iMISPanelBody
+{
+	padding-right: 5px;
+	padding-left: 5px;
+	font-size: 70%;
+	background-attachment: fixed;
+	background-image: url(../Images/iMISBackground.gif);
+	padding-bottom: 5px;
+	padding-top: 5px;
+	background-repeat: repeat-x;
+}
+
+.iMISButton
+{
+	background-color: #F14200;
+	color: White;
+	border: solid 1 #a5a5a5;
+	cursor: hand;
+}
+
+.TextButton, .TextButtonWithImage, .TextButtonWithImageOnRight, .TextButtonDisabled, .TextButtonWithImageDisabled, .TextButtonWithImageOnRightDisabled
+{
+	margin: 0px 0px 0px 0px;
+	height: 19px;
+	border-width: 1;
+	border-style: solid;
+	border-color: #a5a5a5;
+	font-weight: bold;
+	font-family: Arial Narrow;
+	/*text-transform: uppercase;*/
+	text-align: center;
+	background-repeat: no-repeat;
+}
+.TextButton, .TextButtonWithImage, .TextButtonWithImageOnRight
+{
+	background-color: #F14200;
+	color: White;
+	cursor: hand;
+}
+.TextButtonDisabled, .TextButtonWithImageDisabled, .TextButtonWithImageOnRightDisabled
+{
+	background-color: #999999;
+	color: #CCCCCC;
+	cursor: default;
+}
+.TextButton
+{
+	padding: 0px 0px 0px 0px;
+}
+.TextButtonWithImage
+{
+	padding: 0px 0px 0px 16px;
+}
+.TextButtonWithImageOnRight
+{
+	padding: 0px 16px 0px 0px;
+}
+
+.BSAObject
+{
+	cursor: hand;
+	color: black;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 90%;
+	text-decoration: none;
+}
+
+.BSAObjectSelected
+{
+	cursor: hand;
+	color: White;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 90%;
+	text-decoration: none;
+	background-color: #3366CC;
+}
+
+.DocumentTreeFolderClosed
+{
+	padding: 0px 0px 1px 4px;
+	height: 10;
+	cursor: hand;
+	color: black;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 90%;
+	text-decoration: none;
+}
+
+.DocumentTreeFolderOpen
+{
+	padding: 0px 4px 1px 4px;
+	height: 10;
+	cursor: hand;
+	color: White;
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 90%;
+	text-decoration: none;
+	background-color: #3366CC;
+}
+
+.DocumentTreeFolderImage
+{
+	cursor: hand;
+}
+
+
+/* top navigation area */
+.iMISNavBanner
+{
+	background-image: url(../Images/HI/sliver_top.gif);
+	background-repeat: repeat-x;
+	height: 54px;
+}
+
+.iMISUserMessage
+{
+	font-weight: bold;
+	font-size: 12pt;
+	color: red;
+	font-family: verdana,tahoma,arial,helvetica;
+}
+
+/* task boxes */
+.iMISTaskTable
+{
+	width: 700px;
+	FILTER: Fade(duration=0.2);Alpha(style=0,opacity=88);Shadow(color='#000000', Direction=135, Strength=0);
+}
+.iMISTasks
+{
+	padding-left: 20px;
+	padding-top: 9px;
+}
+.iMISTaskItem
+{
+	font-weight: bold;
+	font-size: 12pt;
+	color: #000000;
+	line-height: 5px;
+	font-family:  'Trebuchet MS' , Tahoma;
+}
+.iMISTaskItems
+{
+	color: black;
+	font-family: Tahoma, Arial;
+}
+.iMISTaskItems LI
+{
+	font-weight: normal;
+	color: black;
+	line-height: 17px;
+	font-family: Tahoma, Arial;
+	list-style-type: square;
+}
+.iMISTask1
+{
+	background-attachment: fixed;
+	background-image: url(../Images/HI/bg_task_1.gif);
+	width: 200px;
+	background-repeat: no-repeat;
+	height: 172px;
+}
+.iMISTask2
+{
+	background-attachment: fixed;
+	background-image: url(../images/HI/bg_task_2.gif);
+	width: 200px;
+	background-repeat: no-repeat;
+	height: 172px;
+}
+.iMISTask3
+{
+	background-attachment: fixed;
+	background-image: url(../images/HI/bg_task_3.gif);
+	width: 200px;
+	background-repeat: no-repeat;
+	height: 172px;
+}
+.iMISTask4
+{
+	background-attachment: fixed;
+	background-image: url(../images/HI/bg_task_4.gif);
+	width: 200px;
+	background-repeat: no-repeat;
+	height: 172px;
+}
+
+/* role boxes */
+.iMISActiveRoleTitle
+{
+	font-weight: bold;
+	color: black;
+	font-family: 'Trebuchet MS' , Tahoma;
+	height: 16px;
+}
+.iMISRoleItem
+{
+	font-weight: bold;
+	color: black;
+	line-height: 20px;
+	font-family: 'Trebuchet MS' , Tahoma;
+	letter-spacing: 1pt;
+}
+.iMISRoleItems
+{
+	color: black;
+	font-family: Tahoma, Arial;
+}
+.iMISRoleItems LI
+{
+	font-weight: normal;
+	color: black;
+	line-height: 20px;
+	font-family: Tahoma, Arial;
+	list-style-type: square;
+}
+.iMISRoleTopLeft
+{
+	background-attachment: fixed;
+	background-image: url(../images/HI/bg_role_top_left.gif);
+	width: 259px;
+	background-repeat: no-repeat;
+	height: 12px;
+}
+.iMISRoleTopCenter
+{
+	background-attachment: fixed;
+	background-image: url(../images/HI/bg_role_top_center.gif);
+	background-repeat: repeat-x;
+	height: 12px;
+}
+.iMISRoleTopRight
+{
+	height: 12px;
+	width: 259px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;	
+	background-image: url(../images/HI/bg_role_top_right.gif);	
+}
+
+.iMISRoleMiddleLeft
+{
+	padding-right: 20px;
+	padding-left: 20px;
+	background-image: url(../images/HI/bg_role_middle_left.gif);
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background-repeat: repeat-y;
+	height: 175px;
+}
+.iMISRoleMiddleCenter
+{
+	padding-right: 20px;
+	padding-left: 20px;
+	background-image: url(../images/HI/bg_role_middle_center.gif);
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background-repeat: repeat-y;
+	height: 175px;
+	background-color: #e0e3d8;
+}
+.iMISRoleMiddleRight
+{
+	padding-right: 20px;
+	padding-left: 20px;
+	background-image: url(../images/HI/bg_role_middle_right.gif);
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background-repeat: repeat-y;
+	height: 175px;
+}
+
+.iMISRoleBtmLeft
+{
+	height: 15px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;	
+	background-image: url(../images/HI/bg_role_btm_left.gif);	
+}
+.iMISRoleBtmCenter
+{
+	background-attachment: fixed;
+	background-image: url(../images/HI/bg_role_btm_center.gif);
+	background-repeat: repeat-x;
+	height: 15px;
+}
+.iMISRoleBtmRight
+{
+	height: 15px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;	
+	background-image: url(../images/HI/bg_role_btm_right.gif);	
+}
+
+.iMISDetailTitle
+{
+	font-weight: bold;
+	width: 100%;
+	color: black;
+	border-bottom: black 2px solid;
+	font-family: 'Trebuchet MS' , Tahoma;
+}
+
+.iMISDetailTable
+{
+	width: 100%;
+}
+TD .iMISDetailDescription
+{
+	padding-left: 20px;
+}
+
+.iMISDetailOdd TD
+{
+	padding-bottom: 10px;
+	line-height: 12pt;
+}
+.iMISDetailOdd A
+{
+	font-weight: bold;
+	padding-bottom: 10px;
+	color: #000099;
+	line-height: 12pt;
+}
+
+.iMISDetailEven TD
+{
+	padding-bottom: 10px;
+	line-height: 12pt;
+}
+
+.iMISDetailEven A
+{
+	font-weight: bold;
+	padding-bottom: 10px;
+	color: #000099;
+	line-height: 12pt;
+}
+
+/* site map section and info center page */
+.iMISICNews
+{
+	width: 90%;
+	padding-top: 50px;
+}
+.iMISICCaseStudies
+{
+	width: 90%;
+	padding-top: 0px;
+}
+.iMISICGettingStarted
+{
+	width: 90%;
+	padding-top: 55px;
+}
+.iMISICFAQ
+{
+	width: 90%;
+	padding-top: 100px;
+}
+.iMISICCRM
+{
+	padding-left: 90px;
+	width: 90%;
+	padding-top: 50px;
+}
+.iMISICCommerce
+{
+	padding-left: 90px;
+	width: 90%;
+	padding-top: 15px;
+}
+.iMISICBusIntel
+{
+	padding-left: 90px;
+	width: 90%;
+	padding-top: 18px;
+}
+.iMISICProcArch
+{
+	padding-left: 90px;
+	width: 90%;
+	padding-top: 18px;
+}
+.iMISICHelpSupport
+{
+	padding-left: 90px;
+	width: 90%;
+	padding-top: 55px;
+}
+.iMISSiteMapSection B
+{
+	font-weight: bold;
+	font-family: 'Trebuchet MS' , Tahoma;
+	letter-spacing: 1pt;
+}	 
+
+.iMISSiteMapSection A
+{
+	font-weight: normal;
+	
+	line-height: 12pt;
+	font-family: Tahoma, Arial;
+}
+
+.iMISSiteMapItem
+{
+	font-weight: bold;
+	font-size: 14pt;
+	color: gray;
+}
+
+.iMISSiteMapItemAlt
+{
+	font-weight: bold;
+	font-size: 14pt;
+	color: lightgrey;
+}
+
+.iMISSiteMapItems A
+{
+	padding-bottom: 10px;
+	
+	line-height: 12pt;
+}
+
+.iMISSiteMapItems UL
+{
+	line-height: 10pt;
+}
+
+.iMISSiteMapItems LI
+{
+	list-style-position: outside;
+	margin-bottom: 8px;
+	font-family: Tahoma, Arial;
+	list-style-type: square;
+}
+
+.iMISSiteMapItemsSub LI
+{
+	list-style-position: outside;
+	margin-bottom: 8px;
+	font-family: Tahoma, Arial;
+	list-style-type: circle;
+}
+.iMISTabTableHoriz
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;	
+	padding-top: 0px;
+	width: 100%;
+}
+.iMISTabTRHoriz
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;	
+	padding-top: 0px;
+	width: 100%;
+}
+.iMISTabBodyHoriz
+{
+	border-right: #999999 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border-left: #999999 1px solid;
+	color: black;
+	padding-top: 5px;
+	border-bottom: #999999 1px solid;
+	font-family: Tahoma, Arial;
+	text-align: left;
+}
+
+.TabTRHorizEnd
+{
+	background-color: transparent;
+}
+
+.PanelTabBody
+{
+	background-color: #F0F3EA;
+}
+
+.iMISPaletteBar
+{
+	background-image: url(../images/hi/bg_palettebar.gif);
+	padding-bottom: 0px;
+	margin: 0px 0px 5px;
+	width: 100%;
+	padding-top: 3px;
+	border-bottom: black 1px solid;
+	background-repeat: repeat-x;
+	font-family: Tahoma, Arial;
+	height: 24px;
+	background-color: #e0e3d8;
+}
+
+.iMISSecondaryMenu
+{
+	width: 100%;
+	border-bottom: black 1px solid;
+	font-family: Tahoma, Arial;
+	background-color: #E0E3D8;
+}
+
+.iMISSecondaryMenu B
+{
+	padding-left: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #000000;
+}
+
+.iMISVTabBody
+{
+	background-color: #ceccbf;
+}
+
+.iMISVTabBodySpacer 
+{
+	background-color: #e2dfd0;
+}
+
+.iMISVTabBodySpacer DIV
+{
+	width: 7px;
+}
+
+.iMISVTabTopSpacer
+{
+	background-image: url(../images/hi/tab_spacer_top_1.gif);
+	width: 158px;
+	background-repeat: no-repeat;
+	height: 33px;
+}
+
+.iMISVTabMidSpacer
+{
+	background-image: url(../images/hi/tab_spacer_mid_1.gif);
+	width: 158px;
+	background-repeat: no-repeat;
+	height: 20px;
+}
+
+.iMISVTabBottomSpacer
+{
+	background-image: url(../images/hi/tab_spacer_bottom_1.gif);
+	width: 158px;
+	height: 50px;
+}
+
+.iMISVTabDefaultStyle1
+{
+	padding-left: 15px;
+	background-image: url(../images/hi/tab_default_1.gif);
+	width: 158px;
+	cursor: hand;
+	background-repeat: no-repeat;
+	height: 20px;
+}
+
+.iMISVTabSelectedStyle1
+{
+	padding-left: 15px;
+	font-weight: bolder;
+	background-image: url(../images/hi/tab_active_1.gif);
+	width: 158px;
+	cursor: hand;
+	background-repeat: no-repeat;
+	height: 20px;
+}
+
+.iMISVTabDefaultStyle2
+{
+	padding-left: 15px;
+	background-image: url(../images/hi/tab_default_2.gif);
+	width: 158px;
+	cursor: hand;
+	background-repeat: no-repeat;
+	height: 20px;
+}
+
+.iMISVTabSelectedStyle2
+{
+	padding-left: 15px;
+	font-weight: bolder;
+	background-image: url(../images/hi/tab_active_2.gif);
+	width: 158px;
+	cursor: hand;
+	background-repeat: no-repeat;
+	height: 20px;
+}
+
+.iMISVTabBoxTop
+{
+	padding-left: 15px;
+	background-image: url(../images/hi/tab_box_top.gif);
+	width: 158px;
+	background-repeat: no-repeat;
+	height: 18px;
+}
+
+.iMISVTabBoxMiddle
+{
+	padding-left: 15px;
+	background-image: url(../images/hi/tab_box_middle.gif);
+	width: 158px;
+	background-repeat: no-repeat;
+	height: 20px;
+}
+
+.iMISVTabBoxBottom
+{
+	padding-left: 15px;
+	background-image: url(../images/hi/tab_box_bottom.gif);
+	width: 158px;
+	background-repeat: no-repeat;
+	height: 8px;
+}
+
+.StrongPrompt
+{
+	text-align: right;
+	font-weight: bold;
+	font-family: 'Trebuchet MS' , Tahoma;
+}
+.StrongText
+{
+	font-weight: bold;
+	font-family: 'Trebuchet MS' , Tahoma;
+}
+.HistoryTitle
+{
+	font-weight: bold;
+	color: #006665;
+	font-family: 'Trebuchet MS' , Tahoma;
+}
+.HistoryLink
+{
+	font-weight: bold;
+	color: #CF330B;
+	font-family: 'Trebuchet MS' , Tahoma;
+}
+
+.Trans
+{
+	filter:alpha(opacity=50);
+}
+
+.SectionTitle
+{
+	font-weight: bold;
+	font-size: 13px;
+	color: #006394;
+	font-family: Arial;
+}
+
+.SectionLink,a.SectionLink:link,a.SectionLink:hover,a.SectionLink:visited,a.SectionLink:active
+{
+	font-size: 13px;
+	color: #63070A;
+	font-family: Arial;
+	text-decoration: none;
+}
+a.SectionLink:hover
+{
+	color: #006394;
+}
+
+TD, INPUT, SELECT, TEXTAREA
+{
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana,tahoma,arial,helvetica;
+}
+
+.NestedListTable
+{
+	border-right: #ceccbf 0px solid;
+	border-top: #ceccbf 0px solid;
+	border-left: #ceccbf 0px solid;
+	border-bottom: #ceccbf 0px solid;
+}
+
+.NestedListRow TD
+{
+	border-right: #ceccbf 0px solid;
+	border-top: #ceccbf 0px solid;
+	border-left: #ceccbf 0px solid;
+	border-bottom: #ceccbf 0px solid;
+}
+/*Nested GridTables 
+added 08-10 by EO */
+.PanelTableSub
+{
+	background:#003399;
+	background:#E6E8E7;
+	border-collapse: collapse;
+	margin:0;
+	padding:0;
+	border:0;
+	/*
+	border-right: #999999 thin solid;
+	border-top: #999999 thin solid;
+	border-left: #999999 thin solid;
+	border-bottom: #999999 thin solid;	*/
+}
+.PanelTableSubHeader TD
+{
+	color:#000000;
+	font-weight:bold;
+	border-left:#999999 thin solid;
+	border-right:#999999 thin solid;
+	background:#E6E8E7;
+	background:#cecfce;
+}
+.PanelTableSubData
+{
+	border: #999999 thin solid;
+	background:#E6E8E7;	
+	
+}
+.PanelTableSubData TD
+{
+	background:#003399;
+}
+
+/*end nested GridTables */
+/* Screen Designer Specific */
+.PanelTable
+{
+	border-collapse: collapse;
+	border-right: #999999 thin solid;
+	border-top: #999999 thin solid;
+	border-left: #999999 thin solid;
+	border-bottom: #999999 thin solid;	
+}
+
+.PanelTableFull
+{
+	border-right: #999999 thin solid;
+	border-top: #999999 thin solid;
+	border-left: #999999 thin solid;
+	width: 100%;
+	border-bottom: #999999 thin solid;
+}
+
+.PanelTableLastRow
+{
+	border-right: #999999 thin solid;
+	border-top: 0px;
+	border-left: #999999 thin solid;
+	border-bottom: #999999 thin solid;
+	border-collapse: collapse;
+}
+
+.PanelTableHeader, .PanelListerHeader
+{
+	background-color: #cecfce;
+}
+
+.PanelTableHeader TD,.PanelListerHeader TD
+{
+	border-right: #999999 thin solid;
+	border-top: #999999 thin solid;
+	border-left: #999999 thin solid;
+	border-bottom: #999999 thin solid;
+	background-color: #CECFCE;
+	font-weight: bold;
+}
+
+.PanelTableHeader A
+{
+	cursor: hand;
+	color: black;
+	text-decoration: none;
+}
+
+.PanelTableData TD, .PanelTableDataHover TD, .PanelTableDataDisabled TD, .PanelTableDataSelected TD, .PanelTableDataHighlight TD
+{
+	border-right: #999999 thin solid;
+	border-top: #999999 thin solid;
+	border-left: #999999 thin solid;
+	border-bottom: #999999 thin solid;
+	background-color: white;	
+}
+
+.PanelTableDataDisabled TD
+{
+	color:gray;
+	font-style : italic;
+}
+
+.PanelTableDataHover TD
+{
+	background-color: #E5E5E5;
+}
+
+.PanelTableDataSelected TD
+{
+	background-color: #3366CC;
+	color: White;
+}
+
+.PanelTableDataHighlight TD
+{
+	background-color: #99AFDD;
+}
+
+.PanelTableDataLastRow TD, .PanelTableDataLastRowHover TD
+{
+	border-right: #999999 thin solid;
+	border-left: #999999 thin solid;
+	border-bottom: #999999 thin solid;
+	border-top: 0px;
+	background-color: white;	
+}
+
+.PanelTableDataLastRowHover TD
+{
+	background-color: #E1E1D6;
+}
+
+.PanelTableNoData
+{
+	font-style : italic;
+}
+
+.PanelTableValue
+{
+	background-color: #F1F1F1;
+	/*height: 20px;*/
+	vertical-align: top;
+	padding: 2px;
+	border-spacing: 1px;
+}
+
+.PanelTablePrompt,.PanelTablePromptLeft, .PanelTablePromptCenter, .PanelTablePromptRight
+{
+	/*font-size: 100%;*/
+	font-weight: bold;
+	color: #555555;
+	vertical-align: top;
+	padding: 2px;
+	border-spacing: 1px;
+}
+
+.PanelTablePrompt
+{
+	text-align: left;
+}
+
+.PanelTablePromptCenter
+{
+	text-align: center;
+}
+
+.PanelTablePromptRight
+{
+	text-align: right;
+}
+
+.PanelTablePromptMultiLine
+{
+	vertical-align: top;
+	padding-top: 6px;
+	font-weight: bold;
+	text-align: right;
+	color: #555555;
+}
+
+A.PanelListerHeader:link,A.PanelListerHeader:visited,A.PanelListerHeader:active,TD.PanelListerHeader
+{
+	font-weight: bold;
+	font-size: 11px;
+	color: Black;
+	text-decoration: "none";
+}
+A.PanelListerHeader:hover
+{
+	color: #5555FF;
+}
+
+.PanelTabBody
+{
+	border-right: #989A95 1px solid;
+	padding-right: 4px;
+	border-top: none;
+	padding-left: 4px;
+	border-left: #989A95 1px solid;
+	border-bottom: #989A95 1px solid;
+}
+
+.PanelPrompt
+{
+	text-align: right;
+	font-size: 11px;
+	font-weight: normal;
+	font-family: verdana,tahoma,arial,helvetica;
+}
+
+.LeftHandDivider
+{
+	border-left-color: #C3C5B8;
+	border-left-style: solid;
+	border-left-width: 1;
+}
+
+.PanelEditLink
+{
+	border: silver 1px dotted ;
+	padding-right: 3px;
+	margin-bottom: 2px;
+	padding-bottom: 3px;
+	width: 100%;
+}
+
+.iMISPageBody
+{
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	vertical-align:top;
+	height: 100%;
+	background-color: #E2DED2;
+}
+.NavigationTreeTitle, .NavigationTreeTitle:visited
+{
+	font-size: 11px;
+	width: 300px;
+	color: black;
+	font-family: verdana,tahoma,arial,helvetica;
+	text-decoration: none;
+	vertical-align: middle;
+}
+.NavigationTreeDefault, .NavigationTreeDefault:visited
+{
+	height: 20px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	vertical-align: middle;
+}
+.NavigationTreeHover, .NavigationTreeDefault:hover
+{
+	height: 20px;
+	cursor: hand;
+	background-color: #ceccbf;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	vertical-align: middle;
+
+}
+.NavigationTreeSelected
+{
+	padding-top: 5px;
+	font-size: 11px;
+	color: black;
+	font-family: verdana,tahoma,arial,helvetica;
+	text-decoration: none;
+	vertical-align: middle;
+
+}
+
+.Disabled
+{
+	color:Gray;
+	font-style : italic;
+}
+.StrikeOut
+{
+	text-decoration : line-through;
+}
+
+/* originally from SiteStyle.css */
+.HTabTable
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;	
+	padding-top: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 90%;
+	vertical-align: top;
+}
+.HTabTR
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;	
+	padding-top: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 20px;
+	vertical-align: bottom;
+}
+.HTabTD
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;	
+	padding-top: 0px;
+	width: 100%;
+	height: 20px;
+	margin: 0px;
+}
+.HTabDefaultStyle
+{
+	border-right: #94a6ce 1px solid;
+	padding-right: 4px;
+	border-top: #94a6ce 1px solid;
+	padding-left: 4px;
+	border-left: #94a6ce 1px solid;
+	width: 100px;
+	color: black;
+	border-bottom: #94a6ce 1px solid;
+	font-family: tahoma;
+	height: 20px;
+	background-color: #efefe7;
+	text-align: center;
+	text-decoration: none;
+}
+.HTabSelectedStyle
+{
+	border-right: #94a6ce 1px solid;
+	padding-right: 4px;
+	border-top: #F14200 3px solid;
+	padding-left: 4px;
+	font-weight: bold;
+	border-left: #94a6ce 1px solid;
+	width: 100px;
+	color: black;
+	border-bottom: medium none;
+	height: 20px;
+	text-decoration: none;
+}
+.HTabHoverStyle
+{
+	color: #ffffff;
+	color: black;
+	text-decoration: none;
+}
+.HSepDefaultStyle
+{
+	border-bottom:solid 1px #94A6CE;
+}
+.HSepHoverStyle
+{
+}
+.HSepSelectedStyle
+{
+}
+.HTabBody
+{
+	height: 100%;
+	border-right: #94A6CE 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border-left: #94A6CE 1px solid;
+	color: black;
+	padding-top: 5px;
+	border-bottom: #94A6CE 1px solid;
+	font-family: tahoma;
+	background-color: white;
+	text-align: left;
+	vertical-align: top;
+}
+/*
+	z-index: 99;
+	position: relative;
+	clear: both;
+	height: 100%;
+	top: -1px;
+	overflow: auto;
+	padding: 5px; style="
+    border: solid 1px black;
+	width: 100%;
+	height: 100%;
+	"
+	*/
+.HTabBodyRightAlign
+{
+	height: 100%;
+	border-right: #94A6CE 1px solid;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border-left: #94A6CE 1px solid;
+	color: black;
+	padding-top: 5px;
+	font-family: tahoma;
+	background-color: white;
+	text-align: right;
+	vertical-align: top;
+}
+
+
+/* vertical portfolio navigation styles*/
+.VTab
+{
+	width: 100%;
+	cursor: hand;
+	height: 100%;
+}
+.VTab image
+{
+	margin-right: 4px;
+}
+.VTabDefaultStyle
+{
+	border:solid 0px;
+  	background:#EFEFE7;
+  	padding-left:8px;
+  	padding-right:0px;
+  	padding-top:5px;
+  	padding-bottom:5px;
+	border-top: 0px solid;
+	border-left: darkgray 3px solid;
+	width: 150px;
+	border-bottom: darkgray 1px solid;
+}
+.VTabDefaultStyle A
+{
+	font-weight: normal;
+	cursor: hand;
+	color: #336699;
+	font-family: Tahoma;
+	text-decoration: none;
+}
+.VTabSelectedStyle
+{
+	border-right: medium none;
+	padding-right: 0px;
+	padding-left:8px;
+	font-weight: bold;
+	background: #FEFFFF;
+	padding-bottom: 5px;
+	border-left: #FFE36B 3px solid;
+	padding-top: 5px;
+	border-bottom: darkgray 1px solid;
+	text-decoration: none;
+}
+.VTabSelectedStyle A
+{
+	font-weight: bold;
+	color: black;
+	font-family: Tahoma;
+	text-decoration: none;
+}
+.VTabHoverStyle
+{
+	border:solid 0px;
+  	background: #FEFFFF;
+  	padding-left:8px;
+  	padding-right:0px;
+  	padding-top:5px;
+  	padding-bottom:5px;
+	border-top: 0px solid;
+	border-left: darkgray 3px solid;
+	width: 150px;
+	border-bottom: darkgray 1px solid;
+}
+.VTabHoverStyle A
+{
+	font-weight: normal;
+	cursor: hand;
+	color: #336699;
+	font-family: Tahoma;
+	text-decoration: none;
+}
+.VSepDefaultStyle
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	width: 4px;
+	padding-top: 0px;
+	height: 4px;
+}
+.VSepHoverStyle
+{
+}
+.VSepSelectedStyle
+{
+}
+.VTabBody
+{
+	padding-right: 0px;
+	padding-left: 4px;
+	background: #efefe7;
+	padding-bottom: 4px;
+	width: 140px;
+	line-height: 20px;
+	padding-top: 4px;
+	text-decoration: none;
+}
+/* END originally from SiteStyle.css */
+
+/* Calendar */
+#calendar td.selected
+{
+	color: White;
+	border-right:solid 1 #CCCCCC;
+	border-top:solid 1  #CCCCCC;
+	width: 20px;
+	height: 20px;
+	font-family: Verdana;
+	font-size:10;
+	font-weight: bold;
+	text-align: center;
+	vertical-align:middle;
+	background-color: #FF3300;
+}
+#calendar td.today
+{
+	color: #FF3300;
+	border: solid 1 #FF3300;
+	width: 18px;
+	height: 18px;
+	font-family: Verdana;
+	font-size: 10;
+	font-weight: bold;
+	text-align: center;
+	vertical-align:middle;
+	background-color: White;
+}
+#calendar td.day
+{
+	color: #FF3300;
+	border-right:solid 1 #CCCCCC;
+	border-top:solid 1  #CCCCCC;
+	width: 20px;
+	height: 20px;
+	font-family: Verdana;
+	font-size:10;
+	font-weight: bold;
+	text-align: center;
+	vertical-align:middle;
+	background-color: White;
+}
+#calendar td.dayHover
+{
+	color: #FF3300;
+	border-right:solid 1 #CCCCCC;
+	border-top:solid 1  #CCCCCC;
+	width: 20px;
+	height: 20px;
+	font-family: Verdana;
+	font-size:10;
+	font-weight: bold;
+	text-align: center;
+	vertical-align:middle;
+	background-color: #EAEBE1;
+}
+#calendar td.noday
+{
+	color: #FF3300;
+	border-right:solid 1 #CCCCCC;
+	border-top:solid 1  #CCCCCC;
+	width: 20px;
+	height: 20px;
+	font-family: Verdana;
+	font-size:10;
+	font-weight: bold;
+	text-align: center;
+	vertical-align:middle;
+	background-color:#EAEBE1;
+}
+#calendar table.controlBody
+{
+	background-color:#FFFFFF;
+	border:solid 1 #CCCCCC;
+}
+#calendar th
+{
+	background-color:#666666;
+	font-family:Verdana;
+	font-size:8;
+	color:White;
+	font-weight:bold;
+}
+#calendar select
+{
+	font-family:Verdana;
+	font-size:10;
+}
+
+#calendar input
+{
+	font-size:12;
+	height:20px;
+}
+#calendar .year
+{
+	width:57px;
+}
+#calendar .title
+{
+	padding-right: 5px;
+	font-size: 14px;
+	padding-bottom: 3px;
+	color: #555555;
+	padding-top: 2px;
+	font-family: verdana,tahoma,arial,helvetica;
+	vertical-align:middle;
+	writing-mode: tb-rl;
+}
+#calendar .menu
+{
+	text-align:center;
+	background-color: #CCCCCC;
+}
+
+#calendar td.buttonsCell
+{
+	background-color:#FFFFFF;
+	border-top:solid 1 #CCCCCC;
+}
+
+#calendar
+{
+	cursor:default;
+	position:absolute;
+	z-index:999;
+	display:none;
+}
+
+/* END Calendar */
+
+/* BSA */
+.BSATableRow, .BSATableRowPromptShaded
+{
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 90%;
+	text-decoration: none;
+}
+
+.BSATableRowPromptShaded
+{
+	background-color: #EEEEEE;
+	text-align: right;
+	font-size: 80%;
+}
+
+.BSATableData
+{
+	font-family: verdana,tahoma,arial,helvetica;
+	font-size: 90%;
+}
+
+.BSATableRowSelected
+{
+	background-color: #3366CC;
+}
+
+.BSATableRowHighlighted
+{
+	background-color: #99AFDD;
+}
+
+.BSATableRowDragDrop
+{
+	border-bottom: solid 2 #999999;
+}
+
+/* BSA Menu */
+DIV.menu A.menuItem
+{
+	font-weight: normal;
+	color: #000000;
+	font-size: x-small;
+	font-family: verdana,tahoma,arial,helvetica;
+}
+
+DIV.menu
+{
+	border-right: gray 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	z-index: 101;
+	filter: alpha(opacity=95), progid:DXImageTransform.Microsoft.dropShadow( Color=CCCCCC,offX=3,offY=3,positive=true); 
+	left: 0px;
+	visibility: hidden;
+	padding-bottom: 1px;
+	border-left: gray 1px solid;
+	padding-top: 0px;
+	border-bottom: gray 1px solid;
+	position: absolute;
+	top: 0px;
+	background-color: white;
+
+}
+DIV.menu A.menuItem
+{
+	padding-right: 1em;
+	display: block;
+	padding-left: 1em;
+	cursor: default;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+}
+DIV.menu A.menuItem:hover
+{
+	color: #ffffff;
+	background-color: #3366CC;
+}
+DIV.menu A.menuItemHighlight
+{
+	color: #ffffff;
+	background-color: #3366CC;
+}
+DIV.menu A.menuItem SPAN.menuItemArrow
+{
+	margin-right: -0.75em;
+}
+DIV.menu DIV.menuItemSep
+{
+	border-right: inset 1px #e0e0e0;
+	border-top: inset 1px #e0e0e0;
+	margin: 4px 2px;
+	border-left: inset 1px #e0e0e0;
+	border-bottom: inset 1px #e0e0e0;
+}
+/* END BSA Menu */
+
+/* END BSA */

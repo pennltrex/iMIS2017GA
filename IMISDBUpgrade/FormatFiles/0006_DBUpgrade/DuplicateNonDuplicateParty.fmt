@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLNCHAR            2       20      ""   1     PartyId                                    SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     NotDuplicatePartyId                        SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         0       8       ""   3     CreatedOn                                  ""

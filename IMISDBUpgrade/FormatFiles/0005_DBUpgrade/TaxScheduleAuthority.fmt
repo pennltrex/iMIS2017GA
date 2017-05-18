@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     TaxScheduleAuthorityKey                            ""
+2       SQLUNIQUEID         1       16      ""   2     TaxScheduleKey                                     ""
+3       SQLUNIQUEID         1       16      ""   3     TaxAuthorityKey                                    ""
+4       SQLBIT              1       1       ""   4     IsTaxable                                          ""
+5       SQLUNIQUEID         1       16      ""   5     UpdatedByUserKey                                   ""
+6       SQLDATETIME         0       8       ""   6     UpdatedOn                                          ""
+7       SQLUNIQUEID         1       16      ""   7     CreatedByUserKey                                   ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                                          ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                                  ""

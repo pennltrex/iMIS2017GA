@@ -1,0 +1,4 @@
+11.0
+2
+1       SQLNCHAR            2       40      ""   1     SecurityGroupCode                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            0       2       ""   2     BackendSyncInd                         SQL_Latin1_General_CP1_CI_AS

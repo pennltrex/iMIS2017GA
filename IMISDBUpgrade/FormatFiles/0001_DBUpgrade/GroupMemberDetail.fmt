@@ -1,0 +1,19 @@
+10.0
+17
+1       SQLUNIQUEID         1       16      ""   1     GroupMemberKey                                 ""
+2       SQLUNIQUEID         1       16      ""   2     GroupRoleKey                                   ""
+3       SQLDATETIME         0       8       ""   3     EffectiveDate                                  ""
+4       SQLDATETIME         1       8       ""   4     ExpirationDate                                 ""
+5       SQLNCHAR            2       500     ""   5     TypeSpecificData                               SQL_Latin1_General_CP1_CI_AS
+6       SQLUNIQUEID         1       16      ""   6     TypeSpecificKey                                ""
+7       SQLBIT              1       1       ""   7     TypeSpecificFlag                               ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                                      ""
+9       SQLUNIQUEID         1       16      ""   9     CreatedByUserKey                               ""
+10      SQLDATETIME         0       8       ""   10    UpdatedOn                                      ""
+11      SQLUNIQUEID         1       16      ""   11    UpdatedByUserKey                               ""
+12      SQLINT              1       4       ""   12    TypeSpecificInt                                ""
+13      SQLNCHAR            2       8       ""   13    GroupMemberStatusCode                          SQL_Latin1_General_CP1_CI_AS
+14      SQLBIT              1       1       ""   14    IsActive                                       ""
+15      SQLUNIQUEID         1       16      ""   15    GroupMemberDetailKey                           ""
+16      SQLUNIQUEID         1       16      ""   16    GroupKey                                       ""
+17      SQLDATETIME         1       8       ""   17    MarkedForDeleteOn                              ""

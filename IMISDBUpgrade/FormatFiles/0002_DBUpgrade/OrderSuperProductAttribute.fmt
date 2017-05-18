@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLINT              0       4       ""   1     OrderSuperProductAttributeID                                 ""
+2       SQLNCHAR            2       256     ""   2     Code                                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       256     ""   3     Title                                                        SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       2048    ""   4     Description                                                  SQL_Latin1_General_CP1_CI_AS

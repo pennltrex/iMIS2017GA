@@ -1,0 +1,17 @@
+10.0
+15
+1       SQLUNIQUEID         1       16      ""   1     DeferredIncomeWorkKey                                      ""
+2       SQLUNIQUEID         1       16      ""   2     InvoiceKey                                                 ""
+3       SQLNCHAR            2       100     ""   3     InvoiceNumber                                              SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     EffectiveDate                                              ""
+5       SQLNCHAR            2       100     ""   5     FinancialEntityCode                                        SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       200     ""   6     DeferredIncomeGLAccountCode                                SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       200     ""   7     TargetGLAccountCode                                        SQL_Latin1_General_CP1_CI_AS
+8       SQLDECIMAL          1       19      ""   8     AmountDeferred                                             ""
+9       SQLNCHAR            2       100     ""   9     DeferralTermsCode                                          SQL_Latin1_General_CP1_CI_AS
+10      SQLUNIQUEID         1       16      ""   10    OrganizationKey                                            ""
+11      SQLUNIQUEID         1       16      ""   11    GLTransactionLineKey                                       ""
+12      SQLDECIMAL          1       19      ""   12    TotalAmountToBeDeferred                                    ""
+13      SQLUNIQUEID         1       16      ""   13    InvoiceLineKey                                             ""
+14      SQLINT              1       4       ""   14    InvoiceLineNumber                                          ""
+15      SQLUNIQUEID         1       16      ""   15    DeferralTermsKey                                           ""

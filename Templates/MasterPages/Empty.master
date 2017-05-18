@@ -1,0 +1,97 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="Asi.Web.UI.MasterPageBase" %>
+<%@ Register TagPrefix="telerik" Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" %>
+
+<script language="C#" runat="server">
+    protected override void OnInit(EventArgs e){
+        base.OnInit(e);
+        ScrollContentPane = true;
+    }
+    protected void ProgressImage2_Load(object sender, EventArgs e)
+    {
+        Image image = sender as Image;
+        if (image != null) 
+            image.ImageUrl = Asi.Web.Utilities.GetTildeExpansion() + "/images/ImageLibrary/loading.gif";
+    }
+
+    protected override void CreateChildControls()
+    {
+        base.CreateChildControls();
+
+        // Desktop needs to be in IE8 compatibility mode
+        if (Asi.AppContext.CurrentContext.WebsiteKey.Equals(new Guid("FBDF17A3-CAE7-4943-B1EB-71B9C0DD65D2")) // iMIS Desktop View 
+            || Asi.AppContext.CurrentContext.WebsiteKey.Equals(new Guid("FAD2FD17-7E27-4C96-BABE-3291ECDE4822"))) // Administrative Console
+        {
+            Response.AddHeader("X-UA-Compatible", "IE=8");
+        }
+    }
+</script>
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head id="Head1" runat="server">
+        <title>iMIS</title>
+        <asp:ContentPlaceHolder id="TemplateHead" runat="server"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <script type="text/javascript">
+            // add a class to the <html> tag of browsers that do not support Media Queries
+            var mqSupported = Modernizr.mq('only all');
+            if (!mqSupported) {
+                document.documentElement.className += ' no-mqs';
+            }
+        </script>
+    </head>
+    <body id="MainBody" runat="server" clientidmode="Static">                            
+        <form id="TemplateForm" method="post" runat="server">
+            <asp:HiddenField runat="server" ClientIDMode="Static" id="lastClickedElementId" />
+            <telerik:RadScriptManager ID="ScriptManager1" runat="server" EnableCdn="false" EnablePageMethods="true" EnablePartialRendering="true" EnableScriptGlobalization="true" AsyncPostBackTimeout="3600"></telerik:RadScriptManager>
+            <asp:UpdateProgress ID="TemplateFillLoadingPanel" runat="server" >
+                <ProgressTemplate>
+                    <div class="NotPrinted ProgressDiv" id="FillProgressDiv">
+                        <div id="FillProgressLoadingDiv">      
+                        <asp:label ID="LoadingLabel" runat="server" translate="yes" Text="Loading"/>
+                            <asp:Image ID="ProgressImage2" runat="server" OnLoad="ProgressImage2_Load" AlternateText="Loading" style="vertical-align: middle;" />
+                        </div>
+                    </div>     
+                </ProgressTemplate>
+            </asp:UpdateProgress>
+            <div id="MainPanel">
+                <asp:Panel ID="ContentPanel" runat="server" CssClass="EmptyMasterContentPanel" translate="yes">
+                    <%-- The ChildrenAsTriggers and UpdateMode properties of the UpdatePanel are configured in 
+                     MasterPageBase, so don't try to set them here. --%>
+                        <asp:UpdatePanel ID="UserMessagesUpdatePanel" runat="server">
+                            <ContentTemplate>
+                                <!-- This provides a placeholder for any applicable User Messages that a page needs to display -->
+                                <asp:ContentPlaceHolder ID="TemplateUserMessages" runat="server"></asp:ContentPlaceHolder>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    <asp:ContentPlaceHolder id="TemplateBody" runat="server"/>
+                </asp:Panel>                
+                <asp:Panel runat="server" id="ButtonPanel" CssClass="ButtonPanel NotPrinted">
+                    <div class="CommandBar" data-height-offset="true">
+                        <asiweb:CommandButtonBar ID="ButtonBar" runat="server" TargetControlID="ContentDiv" />
+                        <asp:ContentPlaceHolder ID="TemplateButtonBar" runat="server"/>
+                    </div>
+                </asp:Panel>
+                <asp:ContentPlaceHolder ID="SideBarPlaceHolder" runat="server" Visible="false"/>
+            </div>
+        </form>
+
+        <!--jscript from Page.ResgisterStartupScript extention is loaded here -->
+        <asp:contentplaceholder id ="TemplateScripts" runat="server"></asp:contentplaceholder>	    
+        
+        <script id="ResizeContentScript" type="text/javascript">
+            //<![CDATA[
+            // Resizing initialization
+            addLoadEvent(EmptyMaster_Load);
+            function EmptyMaster_Load() {
+                // defined on Asi.Web.MasterPageBase.js
+                MasterPageBase_SetupComponents(null, null, null, '<%= ContentPanel.ClientID %>', '<%= ButtonPanel.ClientID %>', null, null);
+                Window_Load();
+            }
+            //]]>
+        </script>
+    </body>
+</html>
+

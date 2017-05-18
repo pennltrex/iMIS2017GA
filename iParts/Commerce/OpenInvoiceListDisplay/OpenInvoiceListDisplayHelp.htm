@@ -1,0 +1,100 @@
+<html>
+<head>
+    <title>Open Invoice List Display Help</title>
+</head>
+<body>
+	<h1>Open Invoice List Display</h1>
+    <ul>
+        <li>
+            <strong>Name</strong> - Enter a name for the content item.
+            This text only appears during design mode (configuration).
+        </li>
+
+        <li>
+            <strong>Title</strong> - Enter the text to display above this
+            iPart on the rendered page. If blank, no title displays.
+        </li>
+
+        <li>
+            <strong>Do not render in design mode</strong> - Enable this option
+            to prevent content record data from being loaded in the content editor.
+            This improves performance during design time (configuration).
+        </li>
+        <li>
+            <strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class to associate with
+            this iPart, which will add a DIV so named around the iPart. Add this CSS class to an appropriate
+            style sheet. Using such classes lets you apply special formatting to targeted iParts in a reusable way.
+        </li>
+        <li>
+            <strong>Display a border around this content</strong> - Enable this
+            option to display a border around this iPart on the rendered page.
+        </li>
+        <li>
+            <strong>Display content within a collapsible panel</strong> - Enable to allow users to minimize
+            the panel within the page, to work with dense pages more efficiently.
+        </li>
+        <ul>
+            <li>
+                <strong>Show the content as collapsed </strong>- Enable to display the panel minimized by default.
+                <br /><i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is hidden from view.
+            </li>
+        </ul>
+        <li>
+            <strong>Display on screen sizes (for responsive themes only):</strong><ul>
+                <li>
+                    <strong>Extra-small screens</strong> - When disabled, this content item is
+                    hidden on extra small devices, such as smartphones, where the width of the
+                    screen is less than 768px.
+                </li>
+                <li>
+                    <strong>Small screens</strong> - When disabled, this content item is hidden on
+                    small devices, such as tablets, where the width of the screen is greater than
+                    768px and less than 991px.
+                </li>
+                <li>
+                    <strong>Medium screens</strong> - When disabled, this content item is hidden on
+                    medium devices, such as laptops, where the width of the screen is greater than
+                    992px and less than 1199px.
+                </li>
+                <li>
+                    <strong>Large screens</strong> - When disabled, this content item is hidden on
+                    large devices, such as wide computer monitors, where the width of the screen is
+                    greater than or equal to 1200px wide.
+                    <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for
+                    a page are displayed, regardless of the <strong>
+                        Display on screen sizes (for
+                        responsive themes only)
+                    </strong> options that are selected.
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Limit users who can view data for other contacts</strong> - (enabled by default) If this option is enabled,
+            only staff authorized users can view information for contacts other than themselves. This prevents other users from changing the ID in
+            the URL to access another contact's data. Authorized users include staff and Group Member Administrators for a group that the contact belongs to.
+            Disable this option to allow all users to view information for other contacts, such as for a public profile. If this option is disabled,
+            the system security settings determine whether a user must be logged in to view information for other contacts.
+        </li>
+        <li class="v10only">
+            <strong>Restrict invoices by financial entity</strong> - From the drop-down, select a financial entity to filter the open invoices that
+            are displayed. Once selected, only the open invoices for the specified financial entity are displayed.
+        </li>
+        <li>
+            <strong>Display options when no invoices are due</strong> - Select the option for how the iPart
+            is displayed when no open invoices are due.
+            <ul>
+                <li>
+                    <strong>Hide content</strong> - When no invoice is due, the iPart does not display.
+                </li>
+                <li>
+                    <strong>Show empty grid with message</strong> - The empty grid displays with the <strong>No open invoice message</strong> displaying in the middle of the grid.
+                   
+                </li>
+            </ul>
+        </li>
+        <li><strong>No open invoice message</strong> - Enter a message to be displayed when no invoice is due.</li>
+    </ul>							
+	
+</body>
+</html>

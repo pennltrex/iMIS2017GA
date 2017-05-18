@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     GatewayAccountKey                      ""
+2       SQLNCHAR            2       100     ""   2     Vendor                                 SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     Partner                                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       400     ""   4     HostAddress                            SQL_Latin1_General_CP1_CI_AS
+5       SQLINT              0       4       ""   5     HostPort                               ""
+6       SQLNCHAR            2       400     ""   6     ProxyAddress                           SQL_Latin1_General_CP1_CI_AS
+7       SQLINT              1       4       ""   7     ProxyPort                              ""
+8       SQLNCHAR            2       100     ""   8     ProxyLogin                             SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       400     ""   9     ProxyPassword                          SQL_Latin1_General_CP1_CI_AS
+10      SQLINT              1       4       ""   10    Timeout                                ""

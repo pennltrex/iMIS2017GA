@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     DataVaultLogDetailKey                          ""
+2       SQLNCHAR            2       100     ""   2     InvoiceNumber                                  SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     PaymentToken                                   SQL_Latin1_General_CP1_CI_AS
+4       SQLDECIMAL          1       19      ""   4     Balance                                        ""
+5       SQLINT              0       4       ""   5     LastAttempt                                    ""

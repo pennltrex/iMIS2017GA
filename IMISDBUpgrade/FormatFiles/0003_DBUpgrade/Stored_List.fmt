@@ -1,0 +1,37 @@
+10.0
+35
+1       SQLNCHAR            2       120     ""   1     ListName                               SQL_Latin1_General_CP1_CI_AS
+2       SQLNUMERIC          1       19      ""   2     NumberSequence                         ""
+3       SQLDATETIME         1       8       ""   3     DateCreated                            ""
+4       SQLNCHAR            2       30      ""   4     CreatedBy                              SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     Expires                                ""
+6       SQLNCHAR            2       60      ""   6     PrintProcedure                         SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            4       0       ""   7     ReportOptions                          SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       20      ""   8     ListType                               SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            4       0       ""   9     Heading                                SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       150     ""   10    ObsoleteMenuKey                        SQL_Latin1_General_CP1_CI_AS
+11      SQLIMAGE            4       0       ""   11    ListObject                             ""
+12      SQLBIT              1       1       ""   12    ShowPrint                              ""
+13      SQLBIT              1       1       ""   13    ShowSpread                             ""
+14      SQLBIT              1       1       ""   14    ShowGraph                              ""
+15      SQLBIT              1       1       ""   15    Bool4                                  ""
+16      SQLBIT              1       1       ""   16    Bool5                                  ""
+17      SQLBIT              1       1       ""   17    Bool6                                  ""
+18      SQLNCHAR            2       20      ""   18    ImisSystem                             SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       40      ""   19    Category                               SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            2       90      ""   20    Title                                  SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       200     ""   21    Field1                                 SQL_Latin1_General_CP1_CI_AS
+22      SQLNCHAR            2       200     ""   22    Field2                                 SQL_Latin1_General_CP1_CI_AS
+23      SQLNCHAR            2       200     ""   23    Field3                                 SQL_Latin1_General_CP1_CI_AS
+24      SQLNCHAR            2       200     ""   24    Field4                                 SQL_Latin1_General_CP1_CI_AS
+25      SQLNCHAR            2       200     ""   25    Field5                                 SQL_Latin1_General_CP1_CI_AS
+26      SQLNCHAR            2       200     ""   26    Field6                                 SQL_Latin1_General_CP1_CI_AS
+27      SQLNCHAR            2       200     ""   27    field7                                 SQL_Latin1_General_CP1_CI_AS
+28      SQLNCHAR            2       200     ""   28    Field8                                 SQL_Latin1_General_CP1_CI_AS
+29      SQLDATETIME         1       8       ""   29    DateLastRun                            ""
+30      SQLINT              0       4       ""   30    BatchNumber                            ""
+31      SQLBIT              1       1       ""   31    NRDS_Indicator                         ""
+32      SQLBIT              1       1       ""   32    Office_Validation                      ""
+33      SQLBIT              1       1       ""   33    Member_Validation                      ""
+34      SQLNCHAR            2       200     ""   34    Alternate_Check                        SQL_Latin1_General_CP1_CI_AS
+35      SQLBINARY           2       8       ""   35    TIME_STAMP                             ""

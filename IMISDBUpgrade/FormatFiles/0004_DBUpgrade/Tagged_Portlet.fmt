@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLNUMERIC          1       19      ""   1     TaggedPortletID                                      ""
+2       SQLNUMERIC          1       19      ""   2     TaggedTemplateID                                     ""
+3       SQLNCHAR            2       50      ""   3     TaggedPortletDisplayName                             SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            0       2       ""   4     UserDefinedFlag                                      SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       8000    ""   5     UserDefinedContent                                   SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       100     ""   6     BulletImage                                          SQL_Latin1_General_CP1_CI_AS

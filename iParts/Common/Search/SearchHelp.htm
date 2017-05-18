@@ -1,0 +1,188 @@
+﻿<html>
+<head>
+    </head>
+	<body>
+		<h1>Search (Common Search)</h1>
+        <p>This iPart enables users to search across any area of the website, based on the 
+            search area(s) defined. Many Search iPart settings can be overwritten in a URL 
+            parameter by using the Content Record Key (GUID). The URL parameter override 
+            affects all Search iParts on a page.</p>
+        <ul>
+            <li><strong>Name</strong> - Enter a name for the content item. 
+		This text appears during design mode (configuration).</li>
+		<li><strong>Title</strong> - Enter the text to display above this iPart on the rendered page. 
+		If blank, no title displays.</li>
+		<li><strong>Do not render in design mode</strong> - Select this option to prevent content 
+		record data from being loaded in the content editor. This improves performance during design time 
+		(configuration).</li>
+		<li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class to associate with 
+		this iPart, which will add a DIV so named around the iPart. Add this CSS class to an appropriate 
+		style sheet. Using such classes lets you apply special formatting to targeted iParts in a reusable way.</li>
+		<li><strong>Display a border around this content</strong> - Select this option to display a border 
+		around this iPart on the rendered page.</li>
+		<li><strong>Display content within a collapsible panel</strong> - Enable to allow users to minimize 
+		the panel within the page, to work with dense pages more efficiently.</li>
+	    <ul>
+	        <li><strong>Show the content as collapsed </strong>- Enable to display the panel minimized by default. 
+	            <br /><i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is hidden from view.</li>
+	    </ul>
+            <li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+            <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                hidden on extra small devices, such as smartphones, where the width of the 
+                screen is less than 768px.</li>
+            <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                small devices, such as tablets, where the width of the screen is greater than 
+                768px and less than 991px.</li>
+            <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                medium devices, such as laptops, where the width of the screen is greater than 
+                992px and less than 1199px.</li>
+            <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                large devices, such as wide computer monitors, where the width of the screen is 
+                greater than or equal to 1200px wide.
+            <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for 
+                a page are displayed, regardless of the <strong>Display on screen sizes (for 
+                responsive themes only)</strong> options that are selected.</li>
+            </ul>
+        </li>
+        </ul>
+        <p><strong>General Search Settings</strong> - <em>hides or shows the Search box and 
+            permits users broaden or narrow results</em> </p>
+        <ul>
+            <li><strong>Search Text Logic</strong> - Specify the logic to be applied to multiple 
+                text filters and selected tags for search. The default value is <strong>And</strong>. 
+                This can be overwritten by a URL parameter (attribute name = <em>InitialLogic</em>). </li>
+                        <li><strong>Display Search Box</strong> - Select this option to display a Search 
+                text box. This can be overwritten by a URL parameter (attribute name =&nbsp;<em>DisplayTextBox</em>).<ul>
+                    <li><strong>Search Label</strong> - Enter text to display inside the search box. 
+                        This can be overwritten by a URL parameter (attribute name = <em>SearchLabel</em>).</li>
+                    <li><strong>Allow Users to Filter by Search Area</strong> - Select this option to 
+                        display search areas in a drop-down list, allowing the user to broaden or narrow 
+                        the search results specifically. The <strong>All</strong> selection includes all 
+                        search areas and all content records. This can be overwritten by a URL parameter 
+                        (attribute name = <em>Options </em>plus area as displayed in Design view 
+                        (Events, Products, etc.))
+                        <ul>
+                            <li>
+                                <strong>Search Areas to Include</strong> - Choose one or more of the following search areas 
+                                to include in the return of results.
+                                <ul>
+                                <li>All</li>
+                                <li class="v10only">Communities</li>
+                                <li>Content</li>
+                                <li>Donations</li>
+                                <li>Events</li>
+                                <li class="v100only">Groups</li>
+                                <li>Organizations</li>
+                                <li>People</li>
+                                <li>Posts</li>
+                                <li>Products</li>
+                                </ul>
+                            </li>
+                        </ul></li>
+                </ul>
+            </li>
+            <li><strong>Allow Inactive Results</strong> - Select this option to allow staff users to include inactive search results.<br />
+                <em>Note</em>: This field applies to <span class="v10only">product and </span>event searches. When enabled, all <span class="v10only">products and </span>events, even those that have become inactive due to date restrictions will be visible to staff users.</li>
+        </ul>
+        <p><strong>Initial Search Settings</strong> - <em>skips or sets initial settings, to 
+            narrow results to an area or value</em> </p>
+        <ul>
+            <li><strong>Run Search for Initial Display</strong> - Select this option to 
+                automatically run a specified search on page load for the user&#39;s initial view. 
+                If not selected, search is not run until the user clicks the <strong>Go</strong> 
+                button. This can be overwritten by a URL parameter (attribute name =<em>InitialDisplay</em>).
+            </li>
+            <li><strong>Initial Search Area</strong> - Select a search area to display when
+                <strong>Run Search for Initial Display</strong> is selected or when <strong>
+                Display Search Box</strong> is not selected. Only one area may be selected. This 
+                can be overwritten by a URL parameter (attribute name = <em>InitialArea</em>).
+            </li>
+            <li><strong>Initial Search Text</strong> - Enter the text filter for search results 
+                when <strong>Run Search for Initial Display</strong> is selected. This can be 
+                overwritten by a URL parameter (attribute name = <em>InitialText</em>).&nbsp;&nbsp;</li>
+        </ul>
+        <p>
+            <strong>Add New Item Settings</strong> - shows an Add link to create related 
+            content
+        </p>
+        <ul>
+            <li><strong>Content for Add</strong> - Select this option to display an
+                <strong>Add</strong> link to allow additional objects of the same type to be 
+                created. The <strong>Add</strong> 
+                link is only displayed if the logged-on user has the authority to create objects 
+                of the specified type. This property is enabled when <strong>Display Search Area 
+                Options</strong> is disabled and <strong>Initial Search Area</strong> is set to 
+                a single object type (e.g. Products). This can be overwritten by a URL parameter 
+                (attribute name = <em>AddContentItem</em> plus Content Code, as defined on the
+                <strong>Properties</strong> tab of the target content record).</li>
+        </ul>
+        <p>
+            <strong>Search Results Settings</strong> - <em>controls how search results and 
+            messages appear to users</em>
+        </p>
+        <ul>
+            <li><strong>No Results Found Message</strong> -Enter text for the message to display 
+                if no results are found. The default value is set by the system parameter <em>
+                SE.NoResultsMessage</em>. This can be overwritten by a URL parameter (attribute 
+                name = <em>NoResultMsg</em>). </li>
+            <li><strong>General Error Message</strong> - Enter text for the message to display 
+                if search failed. The default value is set by the system parameter <em>SE</em>. 
+                Include &#39;{0}&#39; to display the specific system error message. This can be 
+                overwritten by a URL parameter (attribute name = <em>ErrorMsg</em>). </li>
+            <li><strong>Results to Display per Page</strong> - Enter the number of results to 
+                display per page. 0 = display all results. The default value is set by the 
+                system parameter <em>SE</em>. This can be overwritten by a URL parameter 
+                (attribute name = <em>PageSize</em>). </li>
+            
+               <li><strong>Pager Display Style</strong> - When multiple pages of results are 
+                returned for the search, a paging area is displayed so that users can navigate 
+                through the results. This option specifies the style of the paging area. Select 
+                one of the following:<ul>
+                    <li><strong>Simple</strong>: The paging area displays in a list with a number you 
+                        can click to go to a particular page of results.</li>
+                    <li><strong>Advanced</strong>: The paging area displays arrows and page selection 
+                        links. Also allows the user to specify the number of results displayed on a 
+                        page.</li>
+                    <li><strong>NextPrev</strong>: The paging area displays simple Next and Previous 
+                        buttons that are used to navigate through results.</li>
+                    <li><strong>Slider</strong>: The paging area displays a slider below the list of 
+                        results which can be used to navigate through results.</li>
+                    <li><strong>NextPrevandNumeric</strong>: The paging area displays Next and Previous 
+                        buttons with numbers you can click to go to a particular page of results. Also 
+                        allows the user to specify the number of results displayed on a page.</li>
+                </ul>
+            <li><strong>Pager Location</strong> - The sets of controls to move forward and backwards through the 
+            pages of results can be placed in the following locations on the page:
+            <ul>
+            <li><strong>Top</strong> - Select to show paging controls at the top of the page.</li>
+            <li><strong>Bottom</strong> - Select to show paging controls at the bottom of the page.</li>
+            <li><strong>Both</strong> -  Select to show paging controls twice: once at the top of the page and once at the bottom of the page.</li>
+            <br/><i>Note:</i> Select either <strong>Top</strong> or <strong>Bottom</strong>, but not <strong>Both</strong>, to meet WCAG guidelines</ul>
+            </li>
+         
+            <li><strong>Maximum Results to Display</strong> - Enter the maximum number of 
+                results allowed for display. The default value is set by the system parameter
+                <em>SE</em>. This can be overwritten by a URL parameter (attribute name = parameter (attribute name =<em>MaxResults</em>).
+            </li>
+            <li><strong>Maximum Results Exceeded Message</strong> - Enter the message to display 
+                if the number of results exceeds the maximum allowed by <strong>Maximum Results 
+                to Display</strong>. The default value is set by the system parameter <em>
+                SE.ExceedMax</em>. 
+                This can be overwritten by a URL parameter (attribute name = <em>
+                ExceedResultsMsg</em>).
+            </li>
+            <li><strong>Sort Order</strong> - Select the sort order method for search results. 
+                The date options are based on the Publication Date/Created Date/Start Date in 
+                the item&#39;s metadata. This can be overwritten by a URL parameter (attribute name 
+                = <em>Sort</em>). Use Sort Order = Relevance in conjunction with the <em>
+                SE.UseAdvancedRelevancy</em> search setup option to score search results using 
+                the variables <em>SE.SearchKeywordHint</em>, <em>SE.SearchTitleHint</em>, <em>
+                SE.SearchDescriptionHint</em>, and <em>SE.SearchBodyHint</em>. </li>
+            <li><strong>Selected Tags</strong>&nbsp;- (optional) Select tags to be used to filter 
+                search results. This can be overwritten by a URL parameter (attribute name = <em>
+                Tags</em> plus GUIDs for tags as displayed in Design view).</li>
+        </ul>
+        </body>
+</html>
+
+    

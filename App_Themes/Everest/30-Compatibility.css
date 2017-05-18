@@ -1,0 +1,504 @@
+﻿/*********************************************/
+/***      COMPATIBILITY STYLE SHEET        ***/
+/*********************************************/
+/**
+ * Compatibility styles for iMIS - UltraWave
+ *
+ * This document contains styles for UltraWave Compatibility for controls written for BlueWave.
+ * It is a temporary document to be used until the controls are updated.
+ *
+ * TABLE OF CONTENTS:
+ * Communities
+ * Desktop
+ */
+ 
+
+ /* ################################ */
+ /*    Communities Compatilbility    */
+ /* ################################ */
+ 
+.CommunityItemActionLinks a 
+{
+    display: inline-block;
+    padding: 0 4px 2px 4px;
+    margin-left: -4px;
+    border-right: 1px solid #cccccc; 
+}
+ 
+.CommunityItemActionLinks a:last-child 
+{
+    border-right: none; 
+}
+
+.CommunitySummaryBlock 
+{
+    border: 1px solid #CCC;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+/* Community left nav */
+.CommunitySummaryImage img
+{
+    max-width: 12em;
+}
+
+.CommunityItemActionLinks
+{
+    text-align: right;
+    clear:both;
+    padding:.25em 0;
+}
+
+.CommunityRepeaterList 
+{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CommunityItemTitle
+{
+    font-weight:bold;
+    font-size:120%;
+    padding:.25em 0;
+}
+
+.CommunityNewItem
+{
+    color: red;
+    text-align: right;
+    float: right;
+}
+
+.CommunityDateLine
+{
+    font-size:85%;
+    font-style:italic;
+}
+
+.CommunityDateLine div
+{
+    float:none!important;
+    display:inline!important;
+    padding:0!important;
+}
+
+.CommunitySideBarSearch
+{
+    width: 70% !important;
+    margin-right:.25em;
+}
+
+/* CommunityBreadCrumb */
+.BreadCrumbCurrent
+{
+    font-size:120%;
+    font-weight:bold;
+}
+
+.CommunityRepeaterList hr
+{
+    border: 0;
+    height: 1px;
+    background: #cccccc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+div.CommunityProfileTitle
+{
+    display: table-cell;
+    padding-bottom: 5px;
+}
+
+.CommunityProfilePicture 
+{
+    float:left;
+}
+
+.CommunityProfilePicture img 
+{
+    width: 38px;
+    height: 38px;
+}
+
+.CommunityTitleDate
+{
+    float: left;
+    padding-left: 5px;
+}
+
+.CommunityCommentItem
+{
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 0px;
+    padding: 0px;
+    padding-top: .5em;
+    margin-left: 3em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+
+.CommunityWikiItem .CommunityRepeaterList .CommunityCommentItem
+{
+    background: #f9f9f9;
+    border-left: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 0px;
+    padding: 0px;
+    padding-top: .5em;   
+    margin-left: 0;
+    padding-left: .5em;
+    padding-right: .5em; 
+}
+
+.CommunityReplyForm {
+    margin-left: 3.3em;
+    position:relative;
+    padding:5px 5px;
+    background:#f8f8f8;   
+    border:1px solid #e8e8e8;               
+}
+
+.CommunityLastComment 
+{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    float: right;
+    color: #888     
+}
+
+.CommunityWikiReplyForm
+{    
+    position:relative;
+    padding:5px 5px;
+    background:#f8f8f8;   
+    border:1px solid #e8e8e8;   
+}
+
+/* <Top Nav> */
+#pagenav, .LogoNavLeft
+{  
+    background-color: #1b6096;
+    border-color: #14476f #14476f #081e2f;
+    height: 24px;
+}
+#test2
+{
+    top: 0!important;
+}
+
+#MenuTable
+{
+    margin-top: 0!important;
+}
+
+#test2>table, table.HTabStatic
+{
+	height:24px;
+	border:none;
+}
+table.HTabStatic
+{
+    border-right: 1px solid #14476f;
+}
+a.HTabStatic
+{
+    text-decoration: none;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+	width: 100%;
+	padding: 0 10px;
+}
+a.HTabStatic, a.HTabStatic:hover, a.HTabStatic:focus, a.HTabStatic:visited
+{
+    color: white;
+    text-decoration: none;
+}
+table.HTabSelected, table.HTabSelected:hover, table.HTabStatic:hover, 
+td:first-child table.HTabSelected, td:first-child table.HTabSelected:hover, td:first-child table.HTabStatic:hover, .HTabHover
+{
+    background: #13446b;
+    text-decoration: none;
+}
+/* </Top Nav> */
+
+/* <Left Nav> */
+.SubNavPanel
+{
+    overflow: auto;
+}
+#pagesubnavhead, #pagesubnavbody
+{
+	width: 100%;
+}
+.PageSubNavMenu .navlink
+{
+    white-space: normal;
+}
+
+.PageSubNavMenu a.navlink, .PageSubNavMenu a.navlink:hover, .PageSubNavMenu a.navlink:active, .PageSubNavMenu a.navlink:visited
+{
+    color: #222;
+    text-decoration: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.PageSubNavMenu .navlinkselected a.navlink
+{
+    font-weight: bold;
+}
+
+.PageSubNavMenu .navlinkselected
+{
+    width: 100%;
+}
+
+.PageSubNavMenu .navlinkhover
+{
+    background-color: #9dc5e5;
+}
+.PageSubNavMenu .navlink hr
+{
+    display: block;
+}
+
+/* </Left Nav> */
+
+/* Public View Commerce Setup Icons */
+.PVSprite, input[type="button"].OrderPreviousStepButton, input[type="button"].OrderPreviousStepOffButton, 
+input[type="button"].OrderNextStepButton, input[type="button"].OrderNextStepOffButton, .BallBlue, .BallRed, 
+.ShoppingCart, .ShoppingCartOff, .ShoppingCartOffX, .FeaturedProduct, .FeaturedProductOff, .FeaturedNotAvaiable,
+.CheckImage, .CheckOffImage
+{
+    background-image: url(images/PVSprite.png);
+    background-repeat: no-repeat;
+}
+.PVSprite
+{
+    margin-right: 4px;
+}
+input[type="button"].OrderPreviousStepButton, input[type="button"].OrderPreviousStepOffButton, 
+input[type="button"].OrderNextStepButton, input[type="button"].OrderNextStepOffButton, span.BallBlue, span.BallRed,
+span.ShoppingCart, span.ShoppingCartOff, span.ShoppingCartOffX, span.FeaturedProduct, span.FeaturedProductOff, span.FeaturedNotAvaiable,
+span.ArrowUp, span.ArrowUpOff, span.ArrowDown, span.ArrowDownOff, span.CheckImage, span.CheckOffImage
+{
+    display: block;
+}
+input[type="button"].OrderPreviousStepButton, input[type="button"].OrderPreviousStepOffButton, 
+input[type="button"].OrderNextStepButton, input[type="button"].OrderNextStepOffButton
+{
+    background-color: transparent;
+    border: none;
+    margin: 3px;
+}
+.PVSprite.NewFolderButton
+{
+    background-position: 0 -1px;
+    width: 56px;
+    height: 20px;
+}
+.PVSprite.EditFolderButton
+{
+    background-position: 0 -24px;
+    width: 53px;
+    height: 20px;
+}
+.PVSprite.DeleteFolderButton
+{
+    background-position: 0 -47px;
+    width: 66px;
+    height: 20px;
+}
+.PVSprite.LinkProductButton
+{
+    background-position: 0 -70px;
+    width: 100px;
+    height: 20px;
+}
+.PVSprite.TestURLButton
+{
+    background-position: 0 -139px;
+    width: 77px;
+    height: 20px;
+}
+.PVSprite.CloseImage
+{
+    background-position: 0 -468px;
+    width: 14px;
+    height: 14px;
+}
+input[type="button"].OrderPreviousStepButton, input[type="button"].OrderPreviousStepOffButton,
+input[type="button"].OrderPreviousStepButton:hover, input[type="button"].OrderPreviousStepOffButton:hover
+{
+    background-position: 0 -116px;
+    width: 80px;
+    height: 20px;
+}
+input[type="button"].OrderNextStepButton, input[type="button"].OrderNextStepOffButton,
+input[type="button"].OrderNextStepButton:hover, input[type="button"].OrderNextStepOffButton:hover
+{
+    background-position: 0 -93px;
+    width: 59px;
+    height: 20px;
+}
+.BallBlue
+{
+    background-position: -1px -189px;
+    width: 10px;
+    height: 10px;
+}
+.BallRed
+{
+    background-position: -1px -216px;
+    width: 10px;
+    height: 10px;
+}
+.ShoppingCart, .ShoppingCartOff
+{
+    background-position: -2px -276px;
+    width: 12px;
+    height: 14px;
+}
+.ShoppingCartOffX
+{
+    background-position: -2px -315px;
+    width: 14px;
+    height: 14px;
+}
+.FeaturedProduct, .FeaturedProductOff
+{
+    background-position: -2px -355px;
+    width: 14px;
+    height: 14px;
+}
+.FeaturedNotAvaiable
+{
+    background-position: -2px -397px;
+    width: 14px;
+    height: 14px;
+}
+.CheckImage, .CheckOffImage
+{
+    background-position: 0 -241px;
+    width: 17px;
+    height: 17px;
+}
+input[type="button"].OrderPreviousStepOffButton, input[type="button"].OrderNextStepOffButton, .ShoppingCartOff, 
+.FeaturedProductOff, .CheckOffImage
+{
+    opacity: .4;
+    filter:alpha(opacity=40); /* filter needed for IE compatibility */
+}
+
+
+
+input[type="button"].AddItem, input[type="button"].Edit, .actions input[type="button"].Delete, 
+input[type="button"].MoveUp, input[type="button"].MoveDown,
+input[type="button"].ArrowUp, input[type="button"].ArrowUpOff, 
+input[type="button"].ArrowDown, input[type="button"].ArrowDownOff, 
+input[type="button"].DeleteImage, input[type="submit"].DeleteImage,
+ input[type="button"].EditImage, input[type="submit"].EditImage
+{
+    background-image: url(images/IconSprite.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    float: left;
+}
+input[type="button"].AddItem, input[type="button"][disabled].AddItem:hover
+{
+    background-position: 0 0;
+}
+input[type="button"].AddItem:hover
+{
+    background-position: 0 -35px;
+}
+input[type="button"].Edit, input[type="button"][disabled].Edit:hover, 
+input[type="button"].EditImage, input[type="button"][disabled].EditImage, 
+input[type="submit"].EditImage, input[type="submit"][disabled].EditImage
+{
+    background-position: -35px 0;
+}
+input[type="button"].Edit:hover, input[type="button"].EditImage:hover, input[type="submit"].EditImage:hover
+{
+    background-position: -35px -35px;
+}
+.actions input[type="button"].Delete, .actions input[type="button"][disabled].Delete:hover,
+input[type="button"].DeleteImage, input[type="button"][disabled].DeleteImage:hover, 
+input[type="submit"].DeleteImage, input[type="submit"][disabled].DeleteImage
+{
+    background-position: -70px 0;
+}
+input[type="button"].Delete:hover, input[type="button"].DeleteImage:hover, input[type="submit"].DeleteImage:hover
+{
+    background-position: -70px -35px;
+}
+input[type="button"].MoveUp, input[type="button"][disabled].MoveUp:hover,
+input[type="button"].ArrowUp, input[type="button"].ArrowUpOff, input[type="button"].ArrowUpOff:hover
+{
+    background-position: -105px 0;
+}
+input[type="button"].MoveUp:hover, input[type="button"].ArrowUp:hover
+{
+    background-position: -105px -35px;
+}
+input[type="button"].MoveDown, input[type="button"][disabled].MoveDown:hover,
+input[type="button"].ArrowDown, input[type="button"].ArrowDownOff, input[type="button"].ArrowDownOff:hover
+{
+    background-position: -140px 0;
+}
+input[type="button"].MoveDown:hover, input[type="button"].ArrowDown:hover
+{
+    background-position: -140px -35px;
+}
+
+.popupMenu, .PopUp, #linkProduct
+{
+    background-color: white;
+}
+#sowMenuPerimeter
+{
+    border: 1px solid #333;
+    padding: 3px;
+}
+#categories.PanelColumn, #itemsOrders.PanelColumn, #linkProduct.PanelColumn
+{
+    float: left;
+    display: inherit;
+}
+
+td.PanelTablePrompt, td.PanelTableValue
+{
+    padding-bottom: .35em;
+}
+td.PanelTablePrompt
+{
+    font-weight: bold;
+    color: #444;
+    padding-right: .35em;
+}
+
+td.PanelTablePrompt span 
+{
+    margin-left: -4px;
+    padding-left: 9px;
+    display: block;
+}
+
+.formFieldRequired
+{
+    background-position: left center !important;
+	padding-left: 0.688em !important;
+	margin-left: -0.462em !important;
+	background-image: url(images/required.gif) !important;
+	background-repeat: no-repeat;
+}

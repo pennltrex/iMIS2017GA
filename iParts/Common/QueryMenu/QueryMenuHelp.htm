@@ -1,0 +1,182 @@
+﻿<html>
+<body>
+    <h1>
+        Query Menu</h1>
+    <p>
+        This iPart displays a query, set with whatever title, parameters,
+        columns, labels, and sorting you need. It allows for exports, which adds icons
+        for sending the data to Word, Excel, PDF, and CSV. You can also organize helpful
+        queries into a folder and point the iPart to that folder. When the page loads, the
+        iPart displays the first query at the top of that folder, and it presents a drop-down
+        menu of additional queries available, organizing them by subfolders, if any. When
+        the user clicks on a query from the menu, the iPart immediately runs that query
+        and displays the results.</p>
+    <ul>
+        <li>
+            <strong>Name</strong> - Enter a name for the content item. This text appears during
+            design mode (configuration).
+        </li>
+        <li>
+            <strong>Title</strong> - Enter the text to display above this iPart on the rendered
+            page. If blank, no title displays. The title may contain data placeholders which
+            will be resolved against the data sources e.g. if the iPart is showing details of
+            an Event, the Event name could be shown within the title.
+        </li>
+        <li>
+            <strong>Do not render in design mode</strong> - Select this option to prevent content
+            record data from being loaded in the content editor. This improves performance during
+            design time (configuration).
+        </li>
+        <li>
+            <strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class to associate
+            with this iPart, which will add a DIV so named around the iPart. Add this CSS class
+            to an appropriate style sheet. Using such classes lets you apply special formatting
+            to targeted iParts in a reusable way.
+        </li>
+        <li>
+            <strong>Display a border around this content</strong> - Select this option to display
+            a border around this iPart on the rendered page.
+        </li>
+        <li>
+            <strong>Display content within a collapsible panel</strong> - Enable to allow users
+            to minimize the panel within the page, to work with dense pages more efficiently.
+        </li>
+        <ul>
+            <li>
+                <strong>Show the content as collapsed </strong>- Enable to display the panel minimized
+                by default.
+                <br />
+                <i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is hidden
+                from view.
+            </li>
+        </ul>
+        <li>
+            <strong>Display on screen sizes (for responsive themes only):</strong><ul>
+                <li>
+                    <strong>Extra-small screens</strong> - When disabled, this content item is
+                    hidden on extra small devices, such as smartphones, where the width of the
+                    screen is less than 768px.
+                </li>
+                <li>
+                    <strong>Small screens</strong> - When disabled, this content item is hidden on
+                    small devices, such as tablets, where the width of the screen is greater than
+                    768px and less than 991px.
+                </li>
+                <li>
+                    <strong>Medium screens</strong> - When disabled, this content item is hidden on
+                    medium devices, such as laptops, where the width of the screen is greater than
+                    992px and less than 1199px.
+                </li>
+                <li>
+                    <strong>Large screens</strong> - When disabled, this content item is hidden on
+                    large devices, such as wide computer monitors, where the width of the screen is
+                    greater than or equal to 1200px wide.
+                    <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for
+                    a page are displayed, regardless of the <strong>
+                        Display on screen sizes (for
+                        responsive themes only)
+                    </strong> options that are selected.
+                </li>
+            </ul>
+        </li>
+        <!-- end common base class options -->
+
+        <li class="v10only">
+            <strong> Limit users who can view data for other contacts</strong> - (enabled by default) If this option is enabled,
+            only authorized users can view information for contacts other than themselves. This prevents other users from changing the ID in
+            the URL to access another contact's data. Authorized users include staff and Company Administrators for a group that the contact belongs to.
+            Disable this option to allow all users to view information for other contacts, such as for a public profile. If this option is disabled,
+            the system security settings determine whether a user must be logged in to view information for other contacts.
+        </li>
+
+        <li class="v100only">
+            <strong>Limit users who can view data for other contacts</strong> - (enabled by default) If this option is enabled,
+            only staff authorized users can view information for contacts other than themselves. This prevents other users from changing the ID in
+            the URL to access another contact's data. Authorized users include staff and Group Member Administrators for a group that the contact belongs to.
+            Disable this option to allow all users to view information for other contacts, such as for a public profile. If this option is disabled,
+            the system security settings determine whether a user must be logged in to view information for other contacts.
+        </li>
+
+        <li>
+            <strong>Open link in a pop-up</strong> - Select this option to display the target
+            page in a pop-up. Default is navigate to the target page.
+        </li>
+        <li>
+            <strong>Show initial results for queries with optional filters</strong> - Enable this option to automatically show a list for queries with optional filters. However, queries with a required filter without a default value will not automaticallly display, even if this option is selected.
+        </li>
+        <li>
+            <strong>Enable export of query results</strong> - Select this option to display
+            icons to export the data to .doc (Word document), .xls (Excel spreadsheet), .pdf
+            (Adobe PDF), .csv (comma-delimited file), or .xml (Extensive Markup Language file). Click the <b>Export</b> button above the query results to display these options in a dropdown.
+        </li>
+        <li>
+            <strong>Enable email merge from query results</strong> - Select this option to display
+            an Email button. This button enables sending email to contacts returned from an IQA query.
+        </li>
+        <li>
+            <b>Map query results if address is available</b> - Enable this option if you want
+            to automatically map your query results. Only one address property per query can
+            be mapped. When this option is enabled, the iPart looks for the following address
+            properties in this order and maps the first one it finds: <b>FullAddress</b>, <b>Address</b>,
+            <b>FullAddressText</b>, <b>AddressText</b>, <b>Address Text</b>, and <b>
+                Full Address
+                Text
+            </b>.
+        </li>
+        <li>
+            <strong>Reload list from database when page refreshes</strong> - Enable this option
+            if you want to automatically reload the data list from the each time the
+            page refreshes.
+            <br><i>Note: </i>If <strong>Used cache results</strong> is enabled in your query, the <strong>Reload list from database when page refreshes
+            </strong> option will not apply.
+        </li>
+        <li>
+            <strong>Source query or folder</strong> - Select the the path in the Document System
+            to display for the source of the data.
+        </li>
+        <li>
+            <strong>Menu label</strong> - Enter a label to display next to the drop-down list
+            of available queries for user selection (when multiple queries are available).
+        </li>
+        <li>
+            <strong>Results to display per page</strong> - Enter the number of results to display
+            per page. 0 = display all results. The default value is 20 listings before paging
+            is activated.
+        </li>
+        <li>
+            <strong>Results display style</strong> - When multiple pages of results are
+            returned for the query, a paging area is displayed so that users can navigate
+            through the results. This option specifies the style of the paging area. Select
+            one of the following:<ul>
+                <li>
+                    <strong>Simple</strong>: The paging area displays in a list with a number you
+                    can click to go to a particular page of results.
+                </li>
+                <li>
+                    <strong>Advanced</strong>: The paging area displays arrows and page selection
+                    links. Also allows the user to specify the number of results displayed on a
+                    page.
+                </li>
+                <li>
+                    <strong>NextPrev</strong>: The paging area displays simple Next and Previous
+                    buttons that are used to navigate through results.
+                </li>
+                <li>
+                    <strong>Slider</strong>: The paging area displays a slider below the list of
+                    results which can be used to navigate through results.
+                </li>
+                <li>
+                    <strong>NextPrevandNumeric</strong>: The paging area displays Next and Previous
+                    buttons with numbers you can click to go to a particular page of results. Also
+                    allows the user to specify the number of results displayed on a page.
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        <strong>Notes</strong></p>
+    <ul>
+        <li>This iPart uses an application that is external to iMIS.</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,60 @@
+@import url("VertMenuStyle.css");
+
+DIV.menu A.menuItem
+{
+	font-weight: normal;
+	color: #000000;
+	font-size: x-small;
+	font-family: verdana,tahoma,arial,helvetica;
+}
+
+DIV.menu
+{
+	border-right: gray 1px solid;
+	padding-right: 1px;
+	padding-left: 1px;
+	z-index: 101;
+	filter: alpha(opacity=95), progid:DXImageTransform.Microsoft.dropShadow( Color=CCCCCC,offX=3,offY=3,positive=true); 
+	left: 0px;
+	visibility: hidden;
+	padding-bottom: 1px;
+	border-left: gray 1px solid;
+	padding-top: 0px;
+	border-bottom: gray 1px solid;
+	position: absolute;
+	top: 0px;
+	background-color: white;
+
+}
+DIV.menu A.menuItem
+{
+	padding-right: 1em;
+	display: block;
+	padding-left: 1em;
+	cursor: default;
+	white-space: nowrap;
+	text-align: left;
+	text-decoration: none;
+}
+DIV.menu A.menuItem:hover
+{
+	color: #ffffff;
+	background-color: #3366CC;
+}
+DIV.menu A.menuItemHighlight
+{
+	color: #ffffff;
+	background-color: #3366CC;
+}
+DIV.menu A.menuItem SPAN.menuItemArrow
+{
+	margin-right: -0.75em;
+}
+DIV.menu DIV.menuItemSep
+{
+	border-right: inset 1px #e0e0e0;
+	border-top: inset 1px #e0e0e0;
+	margin: 4px 2px;
+	border-left: inset 1px #e0e0e0;
+	border-bottom: inset 1px #e0e0e0;
+}

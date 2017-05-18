@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLNCHAR            2       8       ""   1     FileTypeCode                 SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     FileTypeDesc                 SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     MimeType                     SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       510     ""   4     IconFileName                 SQL_Latin1_General_CP1_CI_AS

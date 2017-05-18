@@ -1,0 +1,25 @@
+11.0
+23
+1       SQLNCHAR            2       20      ""   1     ID                                     SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     ETHNICITY                              SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     EDUC_LEVEL                             SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       20      ""   4     MARITAL_STATUS                         SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       20      ""   5     PRIMARY_DOCTOR                         SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       20      ""   6     PRIMARY_INCOME                         SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       20      ""   7     NUM_SUPPORTED                          SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       20      ""   8     HEALTH_BENEFIT                         SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       20      ""   9     LOST_BENEFIT                           SQL_Latin1_General_CP1_CI_AS
+10      SQLBIT              1       1       ""   10    REFERRED_VOCREHAB                      ""
+11      SQLNCHAR            2       200     ""   11    LIVING_SITUATION                       SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       20      ""   12    PRIMARY_LANGUAGE                       SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       20      ""   13    TOTAL_INCOME                           SQL_Latin1_General_CP1_CI_AS
+14      SQLDATETIME         1       8       ""   14    FIRST_CONTACT                          ""
+15      SQLDATETIME         1       8       ""   15    DIAGNOSIS_DATE                         ""
+16      SQLDATETIME         1       8       ""   16    SYMPTOM_ONSET                          ""
+17      SQLBIT              1       1       ""   17    FAMILY_HISTORY                         ""
+18      SQLNCHAR            2       50      ""   18    DIAGNOSIS_MADE_BY                      SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       510     ""   19    SECONDARY_MEDICAL                      SQL_Latin1_General_CP1_CI_AS
+20      SQLINT              0       4       ""   20    NUMBER_EMPLOYEES                       ""
+21      SQLMONEY            0       8       ""   21    EARNED_ASSETS                          ""
+22      SQLNCHAR            4       0       ""   22    RESEARCH_NOTES                         SQL_Latin1_General_CP1_CI_AS
+23      SQLBINARY           2       8       ""   23    TIME_STAMP                             ""

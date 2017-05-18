@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLINT              0       4       ""   1     BatchLineStatusCode                        ""
+2       SQLNCHAR            2       60      ""   2     BatchLineStatusDesc                        SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     BatchLineStatusName                        SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLUNIQUEID         1       16      ""   1     CommissionCategoryKey                          ""
+2       SQLNCHAR            2       100     ""   2     Name                                           SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     CreatedByUserKey                               ""
+4       SQLDATETIME         0       8       ""   4     CreatedOn                                      ""
+5       SQLUNIQUEID         1       16      ""   5     UpdatedByUserKey                               ""
+6       SQLDATETIME         0       8       ""   6     UpdatedOn                                      ""
+7       SQLUNIQUEID         1       16      ""   7     SystemEntityKey                                ""
+8       SQLDATETIME         1       8       ""   8     MarkedForDeleteOn                              ""

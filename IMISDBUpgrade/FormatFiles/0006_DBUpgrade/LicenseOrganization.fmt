@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLUNIQUEID         1       16      ""   1     LicenseOrganizationKey                           ""
+2       SQLNCHAR            2       100     ""   2     Name                                             SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     ContactKey                                       ""
+4       SQLNCHAR            2       500     ""   4     Description                                      SQL_Latin1_General_CP1_CI_AS
+5       SQLUNIQUEID         1       16      ""   5     CreatedByUserKey                                 ""
+6       SQLDATETIME         0       8       ""   6     CreatedOn                                        ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                                 ""
+8       SQLDATETIME         0       8       ""   8     UpdatedOn                                        ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                                ""
+10      SQLNCHAR            2       40      ""   10    SerialNumber                                     SQL_Latin1_General_CP1_CI_AS

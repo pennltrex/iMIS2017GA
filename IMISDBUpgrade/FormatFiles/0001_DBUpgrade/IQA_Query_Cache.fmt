@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLNCHAR            2       120     ""   1     UserId             SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     QueryId            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     Value              SQL_Latin1_General_CP1_CI_AS

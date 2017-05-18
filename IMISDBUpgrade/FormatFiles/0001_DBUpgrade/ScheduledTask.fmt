@@ -1,0 +1,21 @@
+10.0
+19
+1       SQLUNIQUEID         1       16      ""   1     ScheduledTaskKey                                               ""
+2       SQLNCHAR            2       400     ""   2     Description                                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     RunAsUserKey                                                   ""
+4       SQLBIT              1       1       ""   4     SingleInstanceConcurrency                                      ""
+5       SQLNCHAR            4       0       ""   5     Schedule                                                       SQL_Latin1_General_CP1_CI_AS
+6       SQLBIT              1       1       ""   6     IsDisabled                                                     ""
+7       SQLNCHAR            2       100     ""   7     Category                                                       SQL_Latin1_General_CP1_CI_AS
+8       SQLUNIQUEID         1       16      ""   8     SelectionLock                                                  ""
+9       SQLDATETIME         1       8       ""   9     KeepAlive                                                      ""
+10      SQLDATETIME         1       8       ""   10    MostRecentRun                                                  ""
+11      SQLUNIQUEID         1       16      ""   11    MostRecentWorkflowInstanceKey                                  ""
+12      SQLUNIQUEID         1       16      ""   12    AtomKey                                                        ""
+13      SQLIMAGE            4       0       ""   13    AtomGraph                                                      ""
+14      SQLUNIQUEID         1       16      ""   14    CreatedByUserKey                                               ""
+15      SQLDATETIME         1       8       ""   15    CreatedOn                                                      ""
+16      SQLUNIQUEID         1       16      ""   16    UpdatedByUserKey                                               ""
+17      SQLDATETIME         1       8       ""   17    UpdatedOn                                                      ""
+18      SQLIMAGE            4       0       ""   18    WorkflowInputParameters                                        ""
+19      SQLDATETIME         1       8       ""   19    MarkedForDeleteOn                                              ""

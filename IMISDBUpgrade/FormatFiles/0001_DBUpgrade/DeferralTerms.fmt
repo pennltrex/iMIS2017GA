@@ -1,0 +1,15 @@
+10.0
+13
+1       SQLUNIQUEID         1       16      ""   1     DeferralTermsKey                                     ""
+2       SQLINT              0       4       ""   2     DeferralIntervalTypeCode                             ""
+3       SQLINT              0       4       ""   3     IntervalCount                                        ""
+4       SQLINT              0       4       ""   4     IntervalDuration                                     ""
+5       SQLINT              0       4       ""   5     IntervalEffectiveCount                               ""
+6       SQLNCHAR            2       100     ""   6     DeferralTermsCode                                    SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       400     ""   7     Description                                          SQL_Latin1_General_CP1_CI_AS
+8       SQLUNIQUEID         1       16      ""   8     CreatedByUserKey                                     ""
+9       SQLDATETIME         0       8       ""   9     CreatedOn                                            ""
+10      SQLUNIQUEID         1       16      ""   10    UpdatedByUserKey                                     ""
+11      SQLDATETIME         0       8       ""   11    UpdatedOn                                            ""
+12      SQLUNIQUEID         1       16      ""   12    SystemEntityKey                                      ""
+13      SQLDATETIME         1       8       ""   13    MarkedForDeleteOn                                    ""

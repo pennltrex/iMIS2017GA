@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     ProductKey                                                           ""
+2       SQLUNIQUEID         1       16      ""   2     MembershipProcessingComponentKey                                     ""
+3       SQLUNIQUEID         1       16      ""   3     TargetUniformKey                                                     ""
+4       SQLDECIMAL          1       19      ""   4     MinimumAmount                                                        ""
+5       SQLUNIQUEID         1       16      ""   5     SuggestedPaymentTermsKey                                             ""
+6       SQLUNIQUEID         1       16      ""   6     SuggestedProductKey                                                  ""

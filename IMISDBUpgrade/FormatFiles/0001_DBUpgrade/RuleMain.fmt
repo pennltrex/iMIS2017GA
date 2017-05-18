@@ -1,0 +1,17 @@
+10.0
+15
+1       SQLUNIQUEID         1       16      ""   1     RuleKey                                                ""
+2       SQLNCHAR            2       100     ""   2     Name                                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     Description                                            SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsActive                                               ""
+5       SQLINT              0       4       ""   5     Priority                                               ""
+6       SQLDATETIME         1       8       ""   6     BeginDate                                              ""
+7       SQLDATETIME         1       8       ""   7     EndDate                                                ""
+8       SQLUNIQUEID         1       16      ""   8     RuleEvaluatorComponentKey                              ""
+9       SQLUNIQUEID         1       16      ""   9     ObjectMapperComponentKey                               ""
+10      SQLDATETIME         0       8       ""   10    UpdatedOn                                              ""
+11      SQLUNIQUEID         1       16      ""   11    UpdatedByUserKey                                       ""
+12      SQLUNIQUEID         1       16      ""   12    CreatedByUserKey                                       ""
+13      SQLDATETIME         0       8       ""   13    CreatedOn                                              ""
+14      SQLUNIQUEID         1       16      ""   14    SystemEntityKey                                        ""
+15      SQLDATETIME         1       8       ""   15    MarkedForDeleteOn                                      ""

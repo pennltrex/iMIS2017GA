@@ -1,0 +1,574 @@
+using System;
+using System.Collections;
+using System.Configuration;
+using System.Text;
+using Asi.Business.CertificationManagement;
+using Asi.Business.Common;
+using Asi.Business.ExperienceManagement;
+using Asi.ProcessManager;
+using Asi.ProcessManager.Actions;
+using Asi.ProcessManager.Operations;
+using Asi.Web.UI.Common.Controls.CertificationManagement;
+using Asi.Web.UI.WebControls;
+using Asi.Security;
+
+namespace Asi.Bae.Web.Customer.AccountManagement.CertificationManagement
+{
+    /// <summary>
+    /// Displays a row with the detail of a component action item
+    /// </summary>
+    public partial class ComponentActionItemRow : CertificationProgramRegistrationControlScreenBase
+    {
+        #region Public Properties
+
+        /// <summary>
+        /// Gets or sets the stage ID.
+        /// </summary>
+        /// <value>The stage ID.</value>
+        public string StageID
+        {
+            get
+            {
+                if (ViewState["StageID"] != null)
+                {
+                    return (string)ViewState["StageID"];
+                }
+                return null;
+            }
+            set { ViewState["StageID"] = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the action item ID.
+        /// </summary>
+        /// <value>The action item ID.</value>
+        public string ActionItemID
+        {
+            get
+            {
+                if (ViewState["ActionItemID"] != null)
+                {
+                    return (string)ViewState["ActionItemID"];
+                }
+                return null;
+            }
+            set { ViewState["ActionItemID"] = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the index of the operands collection, where there is the component container action item.
+        /// </summary>
+        /// <value>The index.</value>
+        public int OperandIndex
+        {
+            get
+            {
+                if (ViewState["OperandIndex"] != null)
+                {
+                    return (int)ViewState["OperandIndex"];
+                }
+                return -1;
+            }
+            set { ViewState["OperandIndex"] = value; }
+        }
+
+        /// <summary>
+        /// Gets or sets the index of the operands collection, where there is the component container action item.
+        /// </summary>
+        /// <value>The index.</value>
+        public int ComponentActionItemIndex
+        {
+            get
+            {
+                if (ViewState["ComponentActionItemIndex"] != null)
+                {
+                    return (int)ViewState["ComponentActionItemIndex"];
+                }
+                return -1;
+            }
+            set { ViewState["ComponentActionItemIndex"] = value; }
+        }
+
+        #endregion Public Properties
+
+        #region Private Properties
+
+        /// <summary>
+        /// Gets the stage.
+        /// </summary>
+        /// <value>The stage.</value>
+        private Stage stage
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(StageID))
+                {
+                    return CertificationProgramRegistration.ActionManifest.Stages[StageID];
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Gets the component container action item.
+        /// </summary>
+        /// <value>The component container action item.</value>
+        private ComponentContainerActionItem componentContainerActionItem
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(ActionItemID) && stage != null)
+                {
+                    return stage.ActionItems[ActionItemID] as ComponentContainerActionItem;
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Gets the boolean bulk operator.
+        /// </summary>
+        /// <value>The boolean bulk operator.</value>
+        private IBooleanBulkOperator bBulkoperator
+        {
+            get
+            {
+                if (OperandIndex != -1 && componentContainerActionItem != null)
+                {
+                    return componentContainerActionItem.GetOperands()[OperandIndex] as IBooleanBulkOperator;
+                }
+                return null;
+            }
+        }
+
+        /// <summary>
+        /// Gets the component action item.
+        /// </summary>
+        /// <value>The component action item.</value>
+        private ComponentActionItem componentActionItem
+        {
+            get
+            {
+                if (ComponentActionItemIndex != -1 && bBulkoperator != null)
+                {
+                    return bBulkoperator.Operands[ComponentActionItemIndex] as ComponentActionItem;
+                }
+                return null;
+            }
+        }
+
+        #endregion Private Properties
+
+        /// <summary>
+        /// <see cref="Asi.Web.UI.UserControlBase.OnInit"/>
+        /// </summary>
+        protected override void OnInit(EventArgs e)
+        {
+            base.OnInit(e);
+
+            btnHasProducts.Click += btnHasProducts_Click;
+            btnCancel.Click += new EventHandler(btnCancel_Click);
+            btnCancel.Text = ResourceManager.GetPhrase("CancelRegistration", "Cancel registration");
+            lblInactive.Text = ResourceManager.GetWord("(Inactive)");
+        }
+
+        /// <summary>
+        /// <see cref="Asi.Web.UI.UserControlBase.OnDataBinding"/>
+        /// </summary>
+        protected override void OnDataBinding(EventArgs e)
+        {
+            base.OnDataBinding(e);
+
+            CertificationModuleRegistrationController cmrController =
+                CertificationModuleRegistrationController.NewCertificationModuleRegistrationController(Container);
+            CertificationModule certificationModule =
+                CertificationModuleController.CertificationModule(componentActionItem.ComponentKey, Container);
+            CertificationModuleRegistration registration =
+                cmrController.GetRegistration(CertificationProgramRegistration.CertificationProgramRegistrationKey, componentActionItem.ComponentKey);
+
+            SetVisibility(certificationModule, registration);
+
+            btnHasOfferings.OnClientClick = RegisterPopupUrl();
+            lblName.Text = certificationModule.Name;
+            lblUnits.Text = WebAid.TrimNumberString(componentActionItem.NumberOfUnits);
+
+            btnHasOfferings.Text = registration != null ? ResourceManager.GetWord("select") : ResourceManager.GetWord("register");
+            btnHasProducts.Text = registration != null ? ResourceManager.GetWord("select") : ResourceManager.GetWord("register");
+
+            if (registration != null && registration.hasOffering())
+            {
+                OfferedCustomerExperience experience = OfferedCustomerExperienceController.OfferedCustomerExperience(
+                    registration.CustomerExperienceKey, Container);
+
+                if (experience != null)
+                {
+                    lblDate.Text = experience.Date != DateTime.MinValue
+                                       ? experience.Date.ToShortDateString()
+                                       : string.Empty;
+                    lblLocation.Text = experience.Location;
+                    btnHasOfferings.OnClientClick = DetailPopupUrl(experience);
+                    hidOfferingKey.Value = experience.OfferingKey.ToString();
+
+                    if (certificationModule.RequiresGrade && !experience.HasGrade && !registration.isInactive())
+                        lblError.Text = ResourceManager.GetPhrase("AwaitingGrade", "Awaiting Grade");
+                    else if (certificationModule.RequiresApproval && !experience.IsActive() && !registration.isInactive() && !experience.IsRejected())
+                        lblError.Text = ResourceManager.GetPhrase("AwaitingApproval", "Awaiting Approval");
+                    else
+                        lblError.Text = string.Empty;
+
+                    if (experience.IsRejected())
+                    {
+                        CustomerExperienceStatusChangeController controller =
+                            CustomerExperienceStatusChangeController.NewCustomerExperienceStatusChangeController(Container);
+
+                        string statusChangeNote = controller.GetLastStatusChangeNote(experience.CustomerExperienceKey);
+                        lblError.Text = statusChangeNote.Equals(string.Empty) ? ResourceManager.GetWord("Rejected") : statusChangeNote;
+                    }
+                    else if (experience.IsPendingInput())
+                    {
+                        CustomerExperienceStatusChangeController controller =
+                            CustomerExperienceStatusChangeController.NewCustomerExperienceStatusChangeController(Container);
+
+                        string statusChangeNote = controller.GetLastStatusChangeNote(experience.CustomerExperienceKey);
+                        lblError.Text = statusChangeNote.Equals(string.Empty) ? ResourceManager.GetPhrase("PendingInput", "Pending Input") : statusChangeNote;
+                    }
+                }
+            }
+        }
+
+        private bool isCurrentStage()
+        {
+            Stage currentStage = CertificationProgramRegistration.ActionManifest.CurrentStage;
+            bool validAMStatus = CertificationProgramRegistration.ActionManifest.Status == ManifestStatus.NotStarted ||
+                                 CertificationProgramRegistration.ActionManifest.Status == ManifestStatus.Started;
+            return (currentStage == null && validAMStatus) || (currentStage != null && stage.ID == currentStage.ID);
+        }
+
+        private void SetVisibility(CertificationModule certificationModule, CertificationModuleRegistration registration)
+        {
+            bool hasregistration = registration != null;
+            bool isRegistrationProgramInactive = CertificationProgramRegistration.IsInactive();
+            bool iscurrentstage = isCurrentStage();
+            bool isStageComplete = (stage.Status == StageStatus.Completed);
+            bool hasStaffRoles = (AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupAdminName) ||
+                                  AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupUserName) ||
+                                  AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupManagerName) ||
+                                  AppPrincipal.CurrentPrincipal.IsInRole(Role.SysAdminRoleKey.ToString()));
+            bool visibileInPublicSite = (certificationModule.CertificationStaffOnly && hasStaffRoles) || !certificationModule.CertificationStaffOnly;
+
+
+            // REQ_CERT_10 define that "components marked as staff only shall not display", 
+            // but when a set includes only staff only components, ANDs and ORs doesnt look fine.
+            // Then, we decide these components will be greyed out.
+            //row.Visible = !certificationModule.CertificationStaffOnly || ConfigurationManager.AppSettings["IsStaffSite"] != null;
+
+            // DT 4685 - This is because if the stage has components or separated
+            // and you complete the stage without doing all the components,
+            // the register button of the not registered components should not be visible.
+            // Original logic !(!hasregistration && isStageComplete) 
+            // but distributing the ! result (hasregistration || !isStageComplete).
+
+            if (ConfigurationManager.AppSettings["IsStaffSite"] != null)
+            {
+                btnHasOfferings.Visible = !certificationModule.HasRelatedProducts
+                                          && (hasregistration || iscurrentstage) 
+                                          && (hasregistration || !isStageComplete) 
+                                          && !isRegistrationProgramInactive;
+                btnHasProducts.Visible = certificationModule.HasRelatedProducts && (iscurrentstage && !hasregistration);
+
+                lblName.Enabled = iscurrentstage;
+                lblUnits.Enabled = iscurrentstage && hasregistration;
+                lblDate.Enabled = iscurrentstage;
+                lblLocation.Enabled = iscurrentstage;
+            }
+            else
+            {
+                btnHasOfferings.Visible = !certificationModule.HasRelatedProducts 
+                                          && (iscurrentstage || hasregistration)
+                                          && (hasregistration || !isStageComplete)
+                                          && visibileInPublicSite 
+                                          && !isRegistrationProgramInactive;
+                btnHasProducts.Visible = certificationModule.HasRelatedProducts && iscurrentstage && !hasregistration && visibileInPublicSite;
+
+                lblName.Visible = visibileInPublicSite;
+                lblUnits.Visible = visibileInPublicSite;
+                lblDate.Visible = visibileInPublicSite;
+                lblLocation.Visible = visibileInPublicSite;
+
+                lblName.Enabled = iscurrentstage;
+                lblUnits.Enabled = iscurrentstage && hasregistration;
+                lblDate.Enabled = iscurrentstage;
+                lblLocation.Enabled = iscurrentstage;
+            }
+
+            if (!certificationModule.StatusCode.Equals(CertificationModule.CertificationModuleStatus.ACTIVE))
+            {
+                btnHasOfferings.Visible = false;
+                btnHasProducts.Visible = false;
+            }
+
+            if (certificationModule.StatusCode.Equals(CertificationModule.CertificationModuleStatus.INACTIVE))
+            {
+                lblCanceled.Text = ResourceManager.GetPhrase("CanceledComponent", "Canceled Component");
+            }
+
+            btnCancel.Visible = false;
+            lblInactive.Visible = false;
+
+
+            if (registration != null)
+            {
+                CustomerExperience customerExperience = CustomerExperienceController.CustomerExperience(
+                    registration.CustomerExperienceKey, Container);
+
+                if (registration.hasProducts() && !customerExperience.IsRejected())
+                {//The registration is associated to some products
+                    // If the user has the correct permissions
+                    btnCancel.Visible = (AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupAdminName) ||
+                                  AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupManagerName) ||
+                                  AppPrincipal.CurrentPrincipal.IsInRole(Role.SysAdminRoleKey.ToString()));
+                }
+
+                if (registration.hasOffering() && !customerExperience.IsRejected())
+                {
+                    if (registration.isInactive())
+                        lblInactive.Visible = true;
+                    else if (customerExperience.Date.CompareTo(AppTime.Now) > 0 
+                            && (componentActionItem.Status == ActionItemStatus.NotStarted || componentActionItem.Status == ActionItemStatus.Started))
+                        // If the user has the correct permissions
+                        btnCancel.Visible = (AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupAdminName) ||
+                                  AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupManagerName) ||
+                                  AppPrincipal.CurrentPrincipal.IsInRole(Role.SysAdminRoleKey.ToString()));
+                }
+            }
+        }
+
+        #region Offerings
+
+        private string RegisterPopupUrl()
+        {
+            StringBuilder url = new StringBuilder();
+            url.Append("~/Core/AccountManagement/CertificationManagement/OfferingList.aspx?");
+            url.Append("&iCertificationModuleKey=" + componentActionItem.ComponentKey);
+            url.Append("&iCertificationProgramKey=" + CertificationProgramRegistration.CertificationProgramKey);
+            url.Append("&iNumberOfUnits=" + componentActionItem.NumberOfUnits);
+            url.Append("&iCertificationProgramRegistrationKey=" + CertificationProgramRegistration.CertificationProgramRegistrationKey);
+
+            return
+                string.Format(
+                    "ShowDialog('{0}', null, 800, 550, null, null, 'E', RegisterCallBackFunction, null, true, true, null, $('{1}'));return CancelEvent();", ResolveUrl(url.ToString()), Parent.ClientID);
+        }
+
+        private string DetailPopupUrl(CustomerExperience experience)
+        {
+            StringBuilder url = new StringBuilder();
+            url.Append("~/Core/AccountManagement/CertificationManagement/CertificationCustomerExperienceEdit.aspx");
+            url.Append("?iNewObject=false");
+            url.Append("&iAssociatedKey=" + componentActionItem.ComponentKey);
+            url.Append("&iCustomerExperienceKey=" + experience.CustomerExperienceKey);
+            url.Append("&iCertificationModuleKey=" + componentActionItem.ComponentKey);
+            url.Append("&iCertificationProgramKey=" + CertificationProgramRegistration.CertificationProgramKey);
+            url.Append("&iNumberOfUnits=" + componentActionItem.NumberOfUnits);
+            url.Append("&iCertificationProgramRegistrationKey=" + CertificationProgramRegistration.CertificationProgramRegistrationKey);
+
+            if (experience is OfferedCustomerExperience)
+            {
+                url.Append("&iCustomerExperienceClass=OfferedCustomerExperience");
+            }
+
+            return
+                string.Format(
+                    "ShowDialog('{0}', null, 800, 550, null, null, 'E', DetailCallBackFunction, null, true, true, null, $('{1}'));return CancelEvent();", ResolveUrl(url.ToString()), Parent.ClientID);
+        }
+
+        #endregion Offerings
+
+
+        /// <summary>
+        /// Handles the Click event of the btnCancel control.
+        /// </summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="System.EventArgs"/> instance containing the event data.</param>
+        void btnCancel_Click(object sender, EventArgs e)
+        {
+            CertificationModuleRegistrationController cmrController =
+               CertificationModuleRegistrationController.NewCertificationModuleRegistrationController(Container);
+
+            IEnumerator registrations = cmrController.GetRegistration(componentActionItem.ComponentKey);
+            registrations.Reset();
+
+            // Cancel all the registrations to the Certification (only those related to the same Offering and created by the same User)
+            while (registrations.MoveNext())
+            {
+                CertificationModuleRegistration registration = (CertificationModuleRegistration)registrations.Current;
+                
+                OfferedCustomerExperience customerExperience =
+                    OfferedCustomerExperienceController.OfferedCustomerExperience(registration.CustomerExperienceKey, Container);
+
+                if (customerExperience.OfferingKey.Equals(new Guid(hidOfferingKey.Value)) && customerExperience.UserKey.Equals(CurrentUser.UserKey))
+                    registration.setInactive();
+            }
+
+            // Redirects the same page so all ComponentActionItemRows are refreshed
+            Response.Redirect(Request.Url.AbsoluteUri);
+        }
+
+        #region Products
+
+        private void btnHasProducts_Click(object sender, EventArgs e)
+        {
+            CertificationProgramRegistrationController cprController =
+                CertificationProgramRegistrationController.NewCertificationProgramRegistrationController(Container);
+            cprController.AddProgramAndModuleRegistrations(CurrentUser.UserKey, componentActionItem.ComponentKey);
+            Container.CommitAll();
+
+            // HACK : Reload the page becouse the registration to a component maybe cause more registrations that are not loaded.
+            Response.Redirect(ResolveUrl("~/Core/AccountManagement/CertificationManagement/CertificationProgramSummary.aspx"));
+        }
+
+        // It has been decided that there will not be an integration with any orders system for the Laudo release of Certification.  
+        // Eventually, the new Certification module will integrate with the Order system released in the Brazos project.
+        #region Order system integration code already made
+
+        //private void btnHasProducts_Click(object sender, System.Web.UI.ImageClickEventArgs e)
+        //{
+        //    List<OrderProduct> orderProducts = GetOrderProducts();
+        //    if (orderProducts.Count != 0 && ValidateOrderProducts(orderProducts))
+        //    {
+        //        AddProductsToCart(orderProducts);
+        //        Response.Redirect(Asi.ContentManagerNet.Utilities.GetBaseUrl(Page) + "/Core/cart/mycart.aspx");
+        //    }
+        //}
+
+
+        //private List<OrderProduct> GetOrderProducts()
+        //{
+        //    List<OrderProduct> orderProducts = new List<OrderProduct>();
+
+        //    // Get the product codes asociated to the certification module
+        //    Dictionary<string, int> productCodes = new Dictionary<string, int>();
+        //    CertificationModule certificationModule =
+        //        CertificationModuleController.CertificationModule(componentActionItem.ComponentKey, Container);
+        //    IEnumerator cmProducts = certificationModule.CertificationModuleProducts;
+        //    cmProducts.Reset();
+        //    while (cmProducts.MoveNext())
+        //    {
+        //        productCodes.Add(((CertificationModuleProduct)cmProducts.Current).ProductCode, -1);
+        //    }
+
+        //    // Get the order product based in product codes
+        //    CDataAccess cDataAccess = null;
+        //    try
+        //    {
+        //        cDataAccess = new CDataAccess();
+        //        cDataAccess.OpenConnection();
+
+        //        // If the order product exists, get it order product id
+        //        cDataAccess.SelectData("BAEOrderProductGetAll");
+        //        while (cDataAccess.ReadNextRow())
+        //        {
+        //            if (!cDataAccess.IsNull("OrderProductID") && !cDataAccess.IsNull("ProductCode"))
+        //            {
+        //                if (productCodes.ContainsKey(cDataAccess.GetString("ProductCode")))
+        //                {
+        //                    productCodes[cDataAccess.GetString("ProductCode")] = cDataAccess.GetInt32("OrderProductID");
+        //                }
+        //            }
+        //        }
+        //        cDataAccess.SelectResults.Close();  
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        AddUserMessage(new UserControlMessage(UserControlMessageTypes.Error, "Could not add the product to cart."));
+        //        log.Error(e.Message, e);
+        //    }
+        //    finally
+        //    {
+        //        if (cDataAccess != null)
+        //        {
+        //            cDataAccess.CloseConnection();
+        //        }
+        //    }
+
+        //    // For all products that don't have a order product associated with it, add it.
+        //    // Else get existing order products.
+        //    foreach (KeyValuePair<string, int> keyValuePair in productCodes)
+        //    {
+        //        if (keyValuePair.Value == -1)
+        //        {
+        //            // TODO : Is necessary something more?
+        //            OrderProduct orderProduct = new OrderProduct(cDataAccess);
+        //            orderProduct.PRODUCT_CODE = keyValuePair.Key;
+        //            orderProduct.Save();
+        //            orderProducts.Add(orderProduct);
+        //        }
+        //        else
+        //        {
+        //            OrderProduct orderProduct = new OrderProduct(keyValuePair.Value, cDataAccess);
+        //            orderProducts.Add(orderProduct);
+        //        }
+        //    }
+
+        //    return orderProducts;
+        //}
+
+        //private bool ValidateOrderProducts(List<OrderProduct> orderProducts)
+        //{
+        //    foreach (OrderProduct orderProduct in orderProducts)
+        //    {
+        //        // There should be enough quantity in stock.
+        //        if (orderProduct.STOCK_ITEM)
+        //        {
+        //            int quantityInStock = (int)orderProduct.GetAvailableInventory();
+        //            if(1 > quantityInStock)
+        //            {
+        //                AddUserMessage(new UserControlMessage(UserControlMessageTypes.Error, string.Format("The product {0} does not have enough quantity in stock.", orderProduct.PRODUCT_CODE)));
+        //                return false;
+        //            }
+        //        }
+
+        //        // The buying product must be available on web
+        //        if(orderProduct.WEB_OPTION < 2)
+        //        {
+        //            AddUserMessage(new UserControlMessage(UserControlMessageTypes.Error, string.Format("The product {0} is not available to buy by web.", orderProduct.PRODUCT_CODE)));
+        //            return false;
+        //        }
+        //    }
+        //    return true;
+        //}
+
+        //private void AddProductsToCart(List<OrderProduct> orderProducts)
+        //{
+        //    // Obtain a cart
+        //    CDataAccess cDataAccess = new CDataAccess();
+        //    Cart cart = new Cart(CurrentUserID, cDataAccess);
+
+        //    foreach (OrderProduct orderProduct in orderProducts)
+        //    {
+        //        // Add to the cart a cart order foreach product
+        //        CartOrder cartOrder = new CartOrder(cDataAccess);
+
+        //        // If already exist a cart order for this product id, use it.
+        //        foreach (CartOrder orders in cart.OrderCollection)
+        //        {
+        //            if (orders.OrderProductID == orderProduct.OrderProductID)
+        //            {
+        //                cartOrder = orders;
+        //                break;
+        //            }
+        //        }
+
+        //        cartOrder.Price = orderProduct.CalculatePricing(CurrentUserID, 1);
+        //        cartOrder.ProductCode = orderProduct.ProductCode;
+        //        cartOrder.OrderProductID = orderProduct.OrderProductID;
+        //        cartOrder.Title = orderProduct.Title;
+        //        cartOrder.Quantity = 1;
+        //        cart.Save(cartOrder);
+        //    }
+        //}
+
+        #endregion Order system integration code already made
+
+        #endregion Products
+    }
+}

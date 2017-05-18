@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLINT              0       4       ""   1     CartEventID                        ""
+2       SQLINT              0       4       ""   2     CartItemID                         ""
+3       SQLNCHAR            2       20      ""   3     RegistrantID                       SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       30      ""   4     EventCode                          SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       120     ""   5     Title                              SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       10      ""   6     RegistrantClass                    SQL_Latin1_General_CP1_CI_AS
+7       SQLBIT              1       1       ""   7     Complete                           ""

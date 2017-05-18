@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLNCHAR            2       2       ""   1     SortNameAdjustmentActionCode                                 SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       40      ""   2     SortNameAdjustmentActionName                                 SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     SortNameAdjustmentActionDesc                                 SQL_Latin1_General_CP1_CI_AS

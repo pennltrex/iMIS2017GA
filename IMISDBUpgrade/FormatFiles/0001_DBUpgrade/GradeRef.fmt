@@ -1,0 +1,4 @@
+10.0
+2
+1       SQLUNIQUEID         1       16      ""   1     GradeKey                 ""
+2       SQLNCHAR            2       100     ""   2     GradeValue               SQL_Latin1_General_CP1_CI_AS

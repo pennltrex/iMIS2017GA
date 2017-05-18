@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLNUMERIC          1       19      ""   1     ContentChangeRequestID                           ""
+2       SQLNUMERIC          1       19      ""   2     ContentID                                        ""
+3       SQLNUMERIC          1       19      ""   3     AssignedToContactID                              ""
+4       SQLNUMERIC          1       19      ""   4     AssignedByContactID                              ""
+5       SQLNCHAR            0       2       ""   5     RequestStatusCode                                SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       1000    ""   6     RequestText                                      SQL_Latin1_General_CP1_CI_AS
+7       SQLNUMERIC          1       19      ""   7     ReassignedToContactID                            ""
+8       SQLDATETIME         0       8       ""   8     RequestDateTime                                  ""

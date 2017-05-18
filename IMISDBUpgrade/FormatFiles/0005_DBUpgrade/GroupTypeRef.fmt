@@ -1,0 +1,22 @@
+11.0
+20
+1       SQLUNIQUEID         1       16      ""   1     GroupTypeKey                                                     ""
+2       SQLNCHAR            2       130     ""   2     GroupTypeName                                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     IsSystem                                                         ""
+4       SQLBIT              1       1       ""   4     IsPaymentRequired                                                ""
+5       SQLBIT              1       1       ""   5     IsDateLimited                                                    ""
+6       SQLNCHAR            2       200     ""   6     GroupMemberBranchName                                            SQL_Latin1_General_CP1_CI_AS
+7       SQLBIT              1       1       ""   7     IsInvitationOnly                                                 ""
+8       SQLNCHAR            2       8       ""   8     DefaultGroupStatusCode                                           SQL_Latin1_General_CP1_CI_AS
+9       SQLBIT              1       1       ""   9     IsSimpleGroup                                                    ""
+10      SQLUNIQUEID         1       16      ""   10    MemberQueryFolderKey                                             ""
+11      SQLBIT              1       1       ""   11    InheritRolesFlag                                                 ""
+12      SQLBIT              1       1       ""   12    IsSingleRole                                                     ""
+13      SQLNCHAR            2       500     ""   13    GroupTypeDesc                                                    SQL_Latin1_General_CP1_CI_AS
+14      SQLUNIQUEID         1       16      ""   14    CreatedByUserKey                                                 ""
+15      SQLUNIQUEID         1       16      ""   15    UpdatedByUserKey                                                 ""
+16      SQLDATETIME         0       8       ""   16    CreatedOn                                                        ""
+17      SQLDATETIME         0       8       ""   17    UpdatedOn                                                        ""
+18      SQLUNIQUEID         1       16      ""   18    LandingPageContentKey                                            ""
+19      SQLBIT              1       1       ""   19    IsRelationshipGroup                                              ""
+20      SQLBIT              1       1       ""   20    ExtendActiveMembershipTermFlag                                   ""

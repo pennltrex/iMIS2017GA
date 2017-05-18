@@ -1,0 +1,14 @@
+<%@ Page language="c#" Inherits="Asi.Web.UI.DisplayPageBase" %>
+<%@ Register TagPrefix="uc1" TagName="NoteEditor" Src="~/AsiCommon/Controls/OpportunityManagement/SetupActionPlanEditorNote.ascx" %>
+
+<script runat="server" language="C#">
+    protected override void EnsureChildUserControls()
+    {
+        base.EnsureChildUserControls();
+
+        AddChildUserControl(NoteEditor1);
+    }
+</script>
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="TemplateBody">
+    <uc1:NoteEditor id="NoteEditor1" runat="server"/>
+</asp:Content>

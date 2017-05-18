@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLUNIQUEID         1       16      ""   1     SalesLocationKey                                   ""
+2       SQLUNIQUEID         1       16      ""   2     FullAddressKey                                     ""
+3       SQLNCHAR            2       100     ""   3     Name                                               SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       500     ""   4     Description                                        SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       512     ""   5     Holidays                                           SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       100     ""   6     HoursOfOperation                                   SQL_Latin1_General_CP1_CI_AS
+7       SQLINT              0       4       ""   7     SalesLocationStatusCode                            ""
+8       SQLBIT              1       1       ""   8     IsSystemDefault                                    ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                                  ""

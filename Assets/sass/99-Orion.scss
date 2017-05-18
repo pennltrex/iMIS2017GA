@@ -1,0 +1,39 @@
+﻿/* Orion Theme for iMIS */
+
+// Core variables and mixins
+@import "breakpoint"; // Sass plugin used to generate responsive media queries
+@import "mixins";
+
+@import "Constellations/variables/variables_Orion";
+// import base variables after theme variables so calculations of dependent variables
+// are based on the theme's variable settings
+@import "variables";
+@import "breakpoint-setup";
+
+// Master page elements
+@import "Constellations/layouts/constellations-mp";
+
+// Typography and other basic setup
+@import "shared/basics";
+@import "shared/forms";
+@import "shared/buttons_flat";
+@import "Constellations/theme_Orion";
+
+
+// Navigation controls
+@import "Constellations/navigation/header";
+@import "Constellations/navigation/secondary";
+@import "Constellations/navigation/footer";
+//
+//// Other components
+@import "Constellations/telerik_overrides";
+@import "shared/icon_sprite";
+@import "shared/modules/other-iParts";
+@import "Constellations/modules/search";
+@import "shared/modules/events-products";
+@import "shared/modules/progress-tracker";
+@import "shared/modules/query-menu";
+@import "shared/modules/communities";
+@import "shared/modules/object-browser";
+@import "shared/dashboards";
+@import "shared/panel_callouts";

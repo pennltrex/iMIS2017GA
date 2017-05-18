@@ -1,0 +1,1447 @@
+Added Documents:
+Atom Panel Control, Default Root, $/ContentManagement/DefaultSystem/TaggedListFormats/BlockTaggedListNoDateTCTAtomPanel
+Communication, Default Root, $/Common/Communications/Templates/Samples/Account Statement
+Communication, Default Root, $/Common/Communications/Templates/Samples/Content Workflow
+Communication, Default Root, $/Common/Communications/Templates/Samples/Event Cancellation Notice
+Communication, Default Root, $/Common/Communications/Templates/Samples/Event confirmations/Sample event confirmation with report
+Communication, Default Root, $/Common/Communications/Templates/Samples/Navigation Workflow
+Communication, Default Root, $/Common/Communications/Templates/Samples/Tribute Notifications/Tribute Notification
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Billing Item Creator
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Engagement Score Formula List
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Finder Adder
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/General Tables Setup
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Tribute Notification Creator
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Offering/Automatic Payment Enrollments
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Offering/Event Update Attendance
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Offering/Payment Option Manager
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Engagement Score Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Website/Content Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Website/Main Content Placeholder
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Website/Primary Navigation
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Website/Secondary Navigation
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Website/Utility Navigation
+Design Business Definition, System Root, $/Design Business Object Definition/AdvancedEmailNinetyDaysEvents
+Design Business Definition, System Root, $/Design Business Object Definition/AdvancedEmailTwelveMonthsDeliveredByDate
+Design Business Definition, System Root, $/Design Business Object Definition/AdvancedEmailTwelveMonthsTotals
+Design Business Definition, System Root, $/Design Business Object Definition/AutoPayAccount
+Design Business Definition, System Root, $/Design Business Object Definition/AutoPayMemberInstructionDetail
+Design Business Definition, System Root, $/Design Business Object Definition/BillingLogByParty
+Design Business Definition, System Root, $/Design Business Object Definition/CMNotificationsDue
+Design Business Definition, System Root, $/Design Business Object Definition/CommunicationLogSummary
+Design Business Definition, System Root, $/Design Business Object Definition/CsAddressFormats
+Design Business Definition, System Root, $/Design Business Object Definition/CsContactBasic
+Design Business Definition, System Root, $/Design Business Object Definition/CsFreightDollar
+Design Business Definition, System Root, $/Design Business Object Definition/CsFreightQuantity
+Design Business Definition, System Root, $/Design Business Object Definition/CsProductLocation
+Design Business Definition, System Root, $/Design Business Object Definition/CsTaxCategory
+Design Business Definition, System Root, $/Design Business Object Definition/CsTransNotify
+Design Business Definition, System Root, $/Design Business Object Definition/DataVaultAttemptSummary
+Design Business Definition, System Root, $/Design Business Object Definition/DayOfTheWeekRef
+Design Business Definition, System Root, $/Design Business Object Definition/EngagementCategory
+Design Business Definition, System Root, $/Design Business Object Definition/EngagementScoreCurrentData
+Design Business Definition, System Root, $/Design Business Object Definition/EngagementScoreFormula
+Design Business Definition, System Root, $/Design Business Object Definition/EngagementScoreMonthlyData
+Design Business Definition, System Root, $/Design Business Object Definition/EngagementScoreResult
+Design Business Definition, System Root, $/Design Business Object Definition/EngagementScoreYearlyData
+Design Business Definition, System Root, $/Design Business Object Definition/ExpiredMemberUpdateDetailLog
+Design Business Definition, System Root, $/Design Business Object Definition/FirstNotifyContactPerGift
+Design Business Definition, System Root, $/Design Business Object Definition/GiftSummary
+Design Business Definition, System Root, $/Design Business Object Definition/GLBatchTransactionData
+Design Business Definition, System Root, $/Design Business Object Definition/GLDailyTransactionData
+Design Business Definition, System Root, $/Design Business Object Definition/GLDetailDueToDueFromTransactionData
+Design Business Definition, System Root, $/Design Business Object Definition/GLDetailTransactionData
+Design Business Definition, System Root, $/Design Business Object Definition/GLDueToDueFromTransactionData
+Design Business Definition, System Root, $/Design Business Object Definition/GLExportFormatTypeRef
+Design Business Definition, System Root, $/Design Business Object Definition/GLMonthlyTransactionData
+Design Business Definition, System Root, $/Design Business Object Definition/GLTransactionData
+Design Business Definition, System Root, $/Design Business Object Definition/GroupPriceSheet
+Design Business Definition, System Root, $/Design Business Object Definition/MemorialTributeTypeRef
+Design Business Definition, System Root, $/Design Business Object Definition/NetContactBasic
+Design Business Definition, System Root, $/Design Business Object Definition/PercentileRanking
+Design Business Definition, System Root, $/Design Business Object Definition/PriceSheet
+Design Business Definition, System Root, $/Design Business Object Definition/ProductPriceSheet
+Design Business Definition, System Root, $/Design Business Object Definition/ProfileDocuments
+Design Business Definition, System Root, $/Design Business Object Definition/Promotion
+Design Business Definition, System Root, $/Design Business Object Definition/ReferenceDate
+Design Business Definition, System Root, $/Design Business Object Definition/SystemParamInt
+Design Business Definition, System Root, $/Design Business Object Definition/VolunteerAvailability
+Design Business Definition, System Root, $/Design Business Object Definition/VolunteerHistory
+Design Business Definition, System Root, $/Design Business Object Definition/VolunteerInformation
+Design Business Definition, System Root, $/Design Business Object Definition/VolunteerSkills
+Folder, Default Root, $/Common/Communications/Templates/Samples/Event confirmations
+Folder, Default Root, $/Common/Communications/Templates/Samples/Tribute Notifications
+Folder, Default Root, $/Common/Engagement/Queries/EngagementScoreDisplay
+Folder, Default Root, $/Common/Queries/Billing
+Folder, Default Root, $/Common/Uploaded files
+Folder, Default Root, $/Communications/DefaultSystem/Queries/ContentWorkflow
+Folder, Default Root, $/ContactManagement/DefaultSystem/Queries/Volunteers
+Folder, Default Root, $/ContactManagement/DefaultSystem/Queries/Volunteers/Find volunteers
+Folder, Default Root, $/ContactManagement/DefaultSystem/Reports/Member Profile
+Folder, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Website
+Folder, Default Root, $/ContentManagement/DefaultSystem/WebsiteLayouts
+Folder, Default Root, $/EventManagement/DefaultSystem/InvoiceReports
+Folder, Default Root, $/EventManagement/DefaultSystem/Queries/Registration confirmations
+Folder, Default Root, $/EventManagement/DefaultSystem/Queries/Registration details
+Folder, Default Root, $/Fundraising/DefaultSystem/Queries/AutoPay
+Folder, Default Root, $/Fundraising/DefaultSystem/Queries/Find gift
+Folder, Default Root, $/Fundraising/DefaultSystem/Queries/MemorialTribute/Tribute Notifications
+Folder, Default Root, $/Fundraising/DefaultSystem/Queries/MemorialTribute/Tribute Notifications/Issue Notifications
+Folder, Default Root, $/Fundraising/DefaultSystem/Queries/MemorialTribute/Tribute Notifications/Regenerate Notifications
+Folder, Default Root, $/Fundraising/DefaultSystem/Reports/Legacy
+Folder, Default Root, $/Membership
+Folder, Default Root, $/Membership/DefaultSystem
+Folder, Default Root, $/Membership/DefaultSystem/Queries
+Folder, Default Root, $/Membership/DefaultSystem/Queries/AutoPay
+Folder, Default Root, $/Membership/DefaultSystem/Reports
+Folder, Default Root, $/OrderManagement/DefaultSystem/Queries/Find orders
+Folder, Default Root, $/OrderManagement/DefaultSystem/Reports
+Folder, Default Root, $/Samples/Dashboards/AutoPay
+Folder, Default Root, $/Samples/Dashboards/AutoPay/Fundraising
+Folder, Default Root, $/Samples/Dashboards/AutoPay/Membership
+Folder, Default Root, $/Samples/Dashboards/Community/My tasks
+Folder, Default Root, $/Samples/Dashboards/Engagement
+Folder, Default Root, $/Samples/Dashboards/Engagement/Top contacts
+Folder, Default Root, $/Samples/Dashboards/Events/Specific Events/Registrants
+Folder, Default Root, $/Samples/Dashboards/MovesManagement
+Folder, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard
+Folder, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Charts
+Folder, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Progress Trackers
+Folder, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Query Tabs
+Folder, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Query Tabs/Moves managers
+Folder, Default Root, $/Samples/Dashboards/Volunteers
+Folder, Default Root, $/Samples/Dashboards/Volunteers/Data Integrity
+Folder, Default Root, $/Samples/Dashboards/Volunteers/Recent and Upcoming Attendance
+Folder, Default Root, $/Samples/Engagement scores
+Layout Definition, Default Root, $/ContentManagement/DefaultSystem/ContentLayouts/OneOverFourOverTwo33-66OverTwo50-50OverOne-TwoBreakpoints
+Layout Definition, Default Root, $/ContentManagement/DefaultSystem/ContentLayouts/OneOverFourOverTwoOverOne-OneRight-TwoBreakpoints
+Layout Definition, Default Root, $/ContentManagement/DefaultSystem/ContentLayouts/Three33-33-33OverOne-FullWidth
+Query, Default Root, $/Accounting/DefaultSystem/Queries/GLExport/GLDetailExportDueToDueFrom
+Query, Default Root, $/Accounting/DefaultSystem/Queries/GLExport/GLExportByBatch
+Query, Default Root, $/Accounting/DefaultSystem/Queries/GLExport/GLExportDetail
+Query, Default Root, $/Accounting/DefaultSystem/Queries/GLExport/GLExportDueToDueFrom
+Query, Default Root, $/Accounting/DefaultSystem/Queries/GLExport/GLExportMultiple
+Query, Default Root, $/Accounting/DefaultSystem/Queries/GLExport/GLExportSummaryByDay
+Query, Default Root, $/Accounting/DefaultSystem/Queries/GLExport/GLExportSummaryByMonth
+Query, Default Root, $/Accounting/DefaultSystem/Queries/Invoices/All invoices
+Query, Default Root, $/Accounting/DefaultSystem/Queries/Invoices/All open invoices
+Query, Default Root, $/Accounting/DefaultSystem/Queries/Payments/By Gateway Transaction ID
+Query, Default Root, $/Accounting/DefaultSystem/Queries/ValueLists/SourceSystemList
+Query, Default Root, $/Common/Communications/Queries/Event waitlisted options
+Query, Default Root, $/Common/Engagement/Queries/CommitteeMemberships
+Query, Default Root, $/Common/Engagement/Queries/CommunitySubscriptions
+Query, Default Root, $/Common/Engagement/Queries/Donations
+Query, Default Root, $/Common/Engagement/Queries/EngagementScoreDisplay/CategoryForContact
+Query, Default Root, $/Common/Engagement/Queries/EngagementScoreDisplay/PercentileForContact
+Query, Default Root, $/Common/Engagement/Queries/EngagementScoreDisplay/ScoreForContact
+Query, Default Root, $/Common/Engagement/Queries/EventRegistrations
+Query, Default Root, $/Common/Engagement/Queries/NumberOfPosts
+Query, Default Root, $/Common/Engagement/Queries/OrgCommitteeMemberships
+Query, Default Root, $/Common/Engagement/Queries/OrgCommunitySubscriptions
+Query, Default Root, $/Common/Engagement/Queries/OrgDonations
+Query, Default Root, $/Common/Engagement/Queries/OrgEventRegistrations
+Query, Default Root, $/Common/Engagement/Queries/OrgMemberDonations
+Query, Default Root, $/Common/Engagement/Queries/OrgMemberEventRegistrations
+Query, Default Root, $/Common/Engagement/Queries/OrgNumberOfPosts
+Query, Default Root, $/Common/Engagement/Queries/OrgPurchases
+Query, Default Root, $/Common/Engagement/Queries/OrgPurchasesByOrgMembers
+Query, Default Root, $/Common/Engagement/Queries/OrgRecentlyLoggedIn
+Query, Default Root, $/Common/Engagement/Queries/OrgVolunteer_attendance
+Query, Default Root, $/Common/Engagement/Queries/Purchases
+Query, Default Root, $/Common/Engagement/Queries/RecentlyLoggedIn
+Query, Default Root, $/Common/Engagement/Queries/Volunteer attendance
+Query, Default Root, $/Common/Queries/Billing/BillingLogByParty
+Query, Default Root, $/Common/Queries/Value Lists/DataVaultAttemptStatusRef
+Query, Default Root, $/Common/Queries/Value Lists/DayOfTheWeekRefList
+Query, Default Root, $/Common/Tasks/Queries/Cancelled event trigger
+Query, Default Root, $/Common/Tasks/Queries/Event function waitlist count
+Query, Default Root, $/Common/Tasks/Queries/Follow up activity  tasks
+Query, Default Root, $/Common/Tasks/Queries/Selected function and event name
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Credit card retention days alert.
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Event registration from URL
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Event registration has invoice
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/New volunteers
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/PasswordExpirationDays
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/PasswordHistorySetup
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Recent gifts by any major donor
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Recent volunteer attendance summary
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/SessionTimeoutMinutes
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Specific event has tickets
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Upcoming scheduled volunteers summary
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Volunteer attendance needing approval summary
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Volunteer background checks needing review summary
+Query, Default Root, $/Common/Tasks/Queries/Unassigned activity tasks
+Query, Default Root, $/Communications/DefaultSystem/Queries/ContentWorkflow/Content Workflow Notifications
+Query, Default Root, $/Communications/DefaultSystem/Queries/ContentWorkflow/Navigation Workflow Notifications
+Query, Default Root, $/Communications/DefaultSystem/Queries/ContentWorkflow/Summary of Content Workflow Notifications
+Query, Default Root, $/Communications/DefaultSystem/Queries/ContentWorkflow/Summary of Navigation Workflow Notifications
+Query, Default Root, $/Communications/DefaultSystem/Queries/Tribute donation details
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Recent Activities/Transactions/All Invoices
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Recent Activities/Transactions/Recent Transactions for Org
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Volunteers/Find volunteers/By availability
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Volunteers/Find volunteers/By skills and interests
+Query, Default Root, $/ContentManagement/DefaultSystem/Queries/Groups/Theme Editors
+Query, Default Root, $/EventManagement/DefaultSystem/Queries/Registration confirmations/All event registrations
+Query, Default Root, $/EventManagement/DefaultSystem/Queries/Registration confirmations/Registrations with email
+Query, Default Root, $/EventManagement/DefaultSystem/Queries/Registration confirmations/Registrations without email
+Query, Default Root, $/EventManagement/DefaultSystem/Queries/Registration details/Badge Information
+Query, Default Root, $/EventManagement/DefaultSystem/Queries/Registration details/Program Item Registrations
+Query, Default Root, $/EventManagement/DefaultSystem/Queries/Registration details/Question Responses
+Query, Default Root, $/EventManagement/DefaultSystem/Queries/Registration details/Registration Details
+Query, Default Root, $/EventManagement/DefaultSystem/Queries/Registration details/Registration Option
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/AutoPay/AutoPay fundraising expiring credit cards
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/AutoPay/Find recurring donation invoices ALL
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/AutoPay/Find recurring donation invoices TODAY
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/Dashboards/Major Donors For Manager
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/Find gift/By common giving criteria
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/Find gift/Donors by lifetime giving amount
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/Find gift/Tributes
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/MemorialTribute/Memorial Tributes
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/MemorialTribute/Tribute Notifications/Issue Notifications/Notifications with email
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/MemorialTribute/Tribute Notifications/Issue Notifications/Notifications with mailing address
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/MemorialTribute/Tribute Notifications/Issue Notifications/Notifications without email or mailing address
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/MemorialTribute/Tribute Notifications/Regenerate Notifications/Issued notifications with email
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/MemorialTribute/Tribute Notifications/Regenerate Notifications/Issued notifications with mailing address
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/MemorialTribute/Tribute Notifications/Regenerate Notifications/Issued notifications without email or mailing address
+Query, Default Root, $/Membership/DefaultSystem/Queries/AutoPay/Automatic payment enrollments
+Query, Default Root, $/Membership/DefaultSystem/Queries/AutoPay/AutoPay membership expiring credit cards
+Query, Default Root, $/Membership/DefaultSystem/Queries/AutoPay/Find renewal invoices due for automatic payment ALL
+Query, Default Root, $/Membership/DefaultSystem/Queries/AutoPay/Find renewal invoices due for automatic payment TODAY
+Query, Default Root, $/Membership/DefaultSystem/Queries/ChapterList
+Query, Default Root, $/Membership/DefaultSystem/Queries/ExpiredMemberUpdateDetailLog
+Query, Default Root, $/Membership/DefaultSystem/Queries/Join billing cycles
+Query, Default Root, $/Membership/DefaultSystem/Queries/ManageExpiredMembers
+Query, Default Root, $/OrderManagement/DefaultSystem/Queries/Find orders/Find orders
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Progress Tracker - Total queued
+Query, Default Root, $/Samples/Dashboards/AutoPay/Fundraising/Cancelled fundraising enrollments
+Query, Default Root, $/Samples/Dashboards/AutoPay/Fundraising/Fundraising credit cards recently expired or expiring
+Query, Default Root, $/Samples/Dashboards/AutoPay/Fundraising/Payment total per fund
+Query, Default Root, $/Samples/Dashboards/AutoPay/Fundraising/Payment total per payment method
+Query, Default Root, $/Samples/Dashboards/AutoPay/Fundraising/Recurring Donation Payment Attempts Failed
+Query, Default Root, $/Samples/Dashboards/AutoPay/Fundraising/Recurring donations by fund
+Query, Default Root, $/Samples/Dashboards/AutoPay/Fundraising/Recurring donor details
+Query, Default Root, $/Samples/Dashboards/AutoPay/Fundraising/Total active recurring donors
+Query, Default Root, $/Samples/Dashboards/AutoPay/Fundraising/Total cancelled fundraising enrollments
+Query, Default Root, $/Samples/Dashboards/AutoPay/Fundraising/Total fundraising credit cards expired
+Query, Default Root, $/Samples/Dashboards/AutoPay/Fundraising/Total Recurring Donation Payment Attempts Failed
+Query, Default Root, $/Samples/Dashboards/AutoPay/Membership/Auto-pay members by region
+Query, Default Root, $/Samples/Dashboards/AutoPay/Membership/Auto-pay membership details
+Query, Default Root, $/Samples/Dashboards/AutoPay/Membership/Auto-Pay Membership Payment Attempts Failed
+Query, Default Root, $/Samples/Dashboards/AutoPay/Membership/Cancelled membership enrollments
+Query, Default Root, $/Samples/Dashboards/AutoPay/Membership/Membership credit cards recently expired or expiring
+Query, Default Root, $/Samples/Dashboards/AutoPay/Membership/Recurring memberships by member type
+Query, Default Root, $/Samples/Dashboards/AutoPay/Membership/Total active auto-renew members
+Query, Default Root, $/Samples/Dashboards/AutoPay/Membership/Total Auto-Pay Membership Payment Attempts Failed
+Query, Default Root, $/Samples/Dashboards/AutoPay/Membership/Total cancelled auto-pay memberships
+Query, Default Root, $/Samples/Dashboards/AutoPay/Membership/Total membership credit cards expired
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Top promotion codes
+Query, Default Root, $/Samples/Dashboards/Community/My tasks/Assigned to me
+Query, Default Root, $/Samples/Dashboards/Community/My tasks/Unassigned tasks
+Query, Default Root, $/Samples/Dashboards/Community/Progress Tracker - Unique Logins
+Query, Default Root, $/Samples/Dashboards/Engagement/By score component
+Query, Default Root, $/Samples/Dashboards/Engagement/Chart - Engagement by category
+Query, Default Root, $/Samples/Dashboards/Engagement/Chart - Engagement by month
+Query, Default Root, $/Samples/Dashboards/Engagement/Engagement by member type
+Query, Default Root, $/Samples/Dashboards/Engagement/Not recently engaged
+Query, Default Root, $/Samples/Dashboards/Engagement/Progress Tracker - Average score
+Query, Default Root, $/Samples/Dashboards/Engagement/Progress Tracker - Engaged contacts
+Query, Default Root, $/Samples/Dashboards/Engagement/Progress Tracker - Engaged organizations
+Query, Default Root, $/Samples/Dashboards/Engagement/Progress Tracker - Engaged past 6 months
+Query, Default Root, $/Samples/Dashboards/Engagement/Progress Tracker - Newly engaged this month
+Query, Default Root, $/Samples/Dashboards/Engagement/Top contacts/Individuals
+Query, Default Root, $/Samples/Dashboards/Engagement/Top contacts/Organizations
+Query, Default Root, $/Samples/Dashboards/Engagement/Top contacts/Organizations by individual engagement
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Progress Tracker - Total Cancellations
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Registrants/Cancelled registrations
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Registrants/Waitlist for program items
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Registrants/Waitlist for registration options
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Registrations over time
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Waitlist for a specific function
+Query, Default Root, $/Samples/Dashboards/Fundraising/Funds raised by month
+Query, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Charts/Major donors by cultivation stage
+Query, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Charts/Major donors by gift type
+Query, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Progress Trackers/Progress Tracker - Potential major donors
+Query, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Progress Trackers/ProgressTracker - Average gift amount
+Query, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Progress Trackers/ProgressTracker - Number of major donors
+Query, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Progress Trackers/ProgressTracker - Revenue from donors
+Query, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Query Tabs/Moves managers/All moves managers
+Query, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Query Tabs/Moves managers/By funds raised
+Query, Default Root, $/Samples/Dashboards/MovesManagement/OverallDashboard/Query Tabs/QueryTab - Potential major donors
+Query, Default Root, $/Samples/Dashboards/Volunteers/Availability
+Query, Default Root, $/Samples/Dashboards/Volunteers/Data Integrity/Attendance needing approval
+Query, Default Root, $/Samples/Dashboards/Volunteers/Data Integrity/Background check failed
+Query, Default Root, $/Samples/Dashboards/Volunteers/Data Integrity/Background check not completed or expired
+Query, Default Root, $/Samples/Dashboards/Volunteers/Data Integrity/Orientation not completed or expired
+Query, Default Root, $/Samples/Dashboards/Volunteers/Progress tracker - Active volunteers
+Query, Default Root, $/Samples/Dashboards/Volunteers/Progress tracker - New volunteers
+Query, Default Root, $/Samples/Dashboards/Volunteers/Progress tracker - Registered volunteers
+Query, Default Root, $/Samples/Dashboards/Volunteers/Progress tracker - Volunteer hours
+Query, Default Root, $/Samples/Dashboards/Volunteers/Recent and Upcoming Attendance/Recent attendance (past 7 days)
+Query, Default Root, $/Samples/Dashboards/Volunteers/Recent and Upcoming Attendance/Scheduled volunteers (next 7 days)
+Query, Default Root, $/Samples/Dashboards/Volunteers/Skills and interests
+Query, Default Root, $/Samples/Dashboards/Volunteers/Top volunteers
+Query, Default Root, $/Samples/Dashboards/Volunteers/Volunteer hours by month
+Query, Default Root, $/Samples/Engagement scores/OrgScoresByContactByYearForChart
+Query, Default Root, $/Samples/Engagement scores/PercentilesByContact
+Query, Default Root, $/Samples/Engagement scores/ScoresByCity
+Query, Default Root, $/Samples/Engagement scores/ScoresByContact
+Query, Default Root, $/Samples/Engagement scores/ScoresByContactByYear
+Query, Default Root, $/Samples/Engagement scores/ScoresByContactByYearForChart
+Query, Default Root, $/Samples/Engagement scores/ScoresByCountry
+Query, Default Root, $/Samples/Engagement scores/SummaryAllContacts
+Query, Default Root, $/Samples/Engagement scores/SummaryByMonth
+Query, Default Root, $/Samples/Engagement scores/SummaryByMonthAllComponents
+Query, Default Root, $/Samples/Events/Event question responses
+Query, Default Root, $/Samples/Security/UserAccess/Contacts available to all users for security
+Reporting Services Report, Default Root, $/Fundraising/DefaultSystem/Reports/Memorial Tributes with Notify Contact
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/AR Cash Daily Distribution Summaries
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/AR Cash Distribution Detail
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/AR Cash Transactions
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/Credit Card Authorization Audit
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/Credit Card Post Authorization
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/Deferred Income Analysis Spread
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/Deferred Income Audit Trail
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/Deferred Income Detail
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/Deferred Income Matrix Summary
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/General Ledger Journal Daily Summary
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/General Ledger Journal Detail
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/General Ledger Journal Monthly Summary
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/PayPal Reconciliation
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/3 Up Labels A4.rdl
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/3 Up Labels.rdl
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/Activity by Name
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/Activity by Type
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/Change Log
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/Committee Roster
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/Member Profile/Member Profile
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/Member Profile/Subreport-Address2.rdl
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/Member Profile/Subreport-Address3.rdl
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/Member Profile/Subreport-PrintActivities.rdl
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/Member Profile/Subreport-PrintNotes.rdl
+Reporting Services Template, Default Root, $/ContactManagement/DefaultSystem/Reports/Member Profile/Subreport-Roster.rdl
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/InvoiceReports/Event Invoice Report
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Combined Badge and Tickets
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Event Certificates
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Event Invoice
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Event Planning Report
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Event Program Item Certificates
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Event Registration Confirmation.rdl
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Event Status Detail
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Event Status Summary
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Formal Meeting Roster
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Function Roster
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Function Tickets
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Meeting Index
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Meeting Roster - Order System Style
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Registration List
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/Weeks Out Report
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Campaign Activity
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Distribution Activity By Campaign
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Distribution Activity Report
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Distribution Performance Analysis
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Donor Renewal Analysis
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Donor Trend Analysis
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Fund Activity Report
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Fund Performance Analysis
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Gift Confirmation Report
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Legacy/Legacy Campaign Performance Analysis
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/LYBUNT
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Meeting Giving Detail
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Meeting Giving Summary
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Memorial Tributes
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Monthly Donations Summary
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Outstanding Pledges
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Past Due Pledges
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Pledge Details
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Pledge Income Forecast
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Previous/Current Event Giving Comparison Details
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Previous/Current Giving Comparison Details
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Previous/Current Giving Comparison Summary
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Soft Credit Report
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Source Code Activity Report
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Source Code Performance Analysis
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/SYBUNT
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Templates/Memorial Tributes
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Templates/TributeNotifications.rdl
+Reporting Services Template, Default Root, $/Fundraising/DefaultSystem/Reports/Yearly Giving Comparison
+Reporting Services Template, Default Root, $/Membership/DefaultSystem/Reports/Dues Cash Distribution
+Reporting Services Template, Default Root, $/Membership/DefaultSystem/Reports/Outstanding Dues Balances by Member
+Reporting Services Template, Default Root, $/OrderManagement/DefaultSystem/Reports/Backorder Summary Report
+Reporting Services Template, Default Root, $/OrderManagement/DefaultSystem/Reports/Inventory Transactions by Date
+Reporting Services Template, Default Root, $/OrderManagement/DefaultSystem/Reports/Order Detail Report
+Reporting Services Template, Default Root, $/OrderManagement/DefaultSystem/Reports/Product Inventory List
+Reporting Services Template, Default Root, $/OrderManagement/DefaultSystem/Reports/Product Inventory Quantity Analysis
+Reporting Services Template, Default Root, $/OrderManagement/DefaultSystem/Reports/Product Price List
+Reporting Services Template, Default Root, $/OrderManagement/DefaultSystem/Reports/Product Sales by Category
+Reporting Services Template, Default Root, $/OrderManagement/DefaultSystem/Reports/Promotion Analysis
+Tagged List Format, Default Root, $/ContentManagement/DefaultSystem/TaggedListFormats/BlockTaggedListNoDate
+Website Content, Website Content Root, @/iCore/Commerce/Find_orders
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Activity_Profile
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Staff/Member_Profile_SSRS
+Website Content, Website Content Root, @/iCore/Contacts/Create_account_for_volunteering
+Website Content, Website Content Root, @/iCore/Contacts/Volunteering/1_Volunteer_information
+Website Content, Website Content Root, @/iCore/Contacts/Volunteering/2_Volunteer_availability
+Website Content, Website Content Root, @/iCore/Contacts/Volunteering/3_Volunteer_skills
+Website Content, Website Content Root, @/iCore/Contacts/Volunteering/Find_volunteers
+Website Content, Website Content Root, @/iCore/Contacts/Volunteering/Thank_you
+Website Content, Website Content Root, @/iCore/Contacts/Volunteering/Volunteer_sign_up
+Website Content, Website Content Root, @/iCore/Engagement/Engagement_score_formulas
+Website Content, Website Content Root, @/iCore/Events/Manage/Event_Add
+Website Content, Website Content Root, @/iCore/Events/Manage/Issue_event_confirmations
+Website Content, Website Content Root, @/iCore/Events/Manage/Manage_templates
+Website Content, Website Content Root, @/iCore/Events/Manage/Update_Attendance
+Website Content, Website Content Root, @/iCore/Events/Registrations/Event_registration
+Website Content, Website Content Root, @/iCore/Events/Staff_Event_Display
+Website Content, Website Content Root, @/iCore/Finance/Invoices
+Website Content, Website Content Root, @/iCore/Fundraising/Add_gift_item
+Website Content, Website Content Root, @/iCore/Fundraising/AutoPay/Review_recurring_donation_invoices
+Website Content, Website Content Root, @/iCore/Fundraising/Find_gifts
+Website Content, Website Content Root, @/iCore/Fundraising/Find_issued_notifications
+Website Content, Website Content Root, @/iCore/Fundraising/MovesManagement/Major_donors_for_manager
+Website Content, Website Content Root, @/iCore/Fundraising/Tribute_Notifications
+Website Content, Website Content Root, @/iCore/Groups/Committee_Detail_Admin
+Website Content, Website Content Root, @/iCore/Groups/Committee_Roster
+Website Content, Website Content Root, @/iCore/Membership/AutoPay/Automatic_Payment_Enrollment_Edit
+Website Content, Website Content Root, @/iCore/Membership/AutoPay/Automatic_payment_instructions
+Website Content, Website Content Root, @/iCore/Membership/AutoPay/Automatic_payment_instructions_with_cash_basis
+Website Content, Website Content Root, @/iCore/Membership/AutoPay/Automatic_payment_options_Edit
+Website Content, Website Content Root, @/iCore/Membership/AutoPay/Recurring_Member_Instruction_Detail
+Website Content, Website Content Root, @/iCore/Membership/AutoPay/Review_renewal_invoices_for_payment
+Website Content, Website Content Root, @/iCore/Membership/Join_Billing_Cycles
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Fundraising/Active_recurring_donors
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Fundraising/Autopay_fundraising_dashboard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Fundraising/Cancelled_enrollments
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Fundraising/Failed_payments
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Fundraising/Fundraising_expiring_credit_cards
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Fundraising/Payments_per_pay_method
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Membership/Active_autopay_members
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Membership/AutoPay_Membership_Dashboard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Membership/Cancelled_enrollments
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Membership/Failed_payments
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Membership/Fundraising_expiring_credit_cards
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Commerce/Promotion_report
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Commerce/Top_promotions
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Community/My_tasks
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Engagement/By_score_component
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Engagement/Engagement_by_member_type
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Engagement/Engagement_dashboard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Engagement/Not_recently_engaged
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Engagement/Organization/Engagement_dashboard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Engagement/Organization/Top_engagement_by_organization
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Engagement/Top_engagement_by_contact
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Moves_management/Major_donors_tab
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Moves_management/OverallMovesManagement
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Moves_management/Potential_major_donors
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Event_certificates_report
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Event_confirmations_report
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Event_confirmations_report_no_params
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Event_invoice_report
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Event_planning_report
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Event_weeks_out_report
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Function_Waitlist
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Program_item_registrations
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Registrations_by_Registration_Option
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Tickets_with_badges
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Tickets_without_badges
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Volunteers/Availability_and_skills
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Volunteers/Data_integrity
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Volunteers/Recent_and_upcoming_attendance
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Volunteers/Top_volunteers
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Volunteers/Volunteers_dashboard
+Website Content, Website Content Root, @/iCore/System_Settings/Addresses/Address_Formats
+Website Content, Website Content Root, @/iCore/System_Settings/Addresses/Countries
+Website Content, Website Content Root, @/iCore/System_Settings/Addresses/State_Codes
+Website Content, Website Content Root, @/iCore/System_Settings/Automatic_Payments
+Website Content, Website Content Root, @/iCore/System_Settings/Commerce/ProductCategories
+Website Content, Website Content Root, @/iCore/System_Settings/Contacts/BillingItem
+Website Content, Website Content Root, @/iCore/System_Settings/Contacts/Committee_Positions
+Website Content, Website Content Root, @/iCore/System_Settings/Contacts/RelationshipTypes
+Website Content, Website Content Root, @/iCore/System_Settings/Finance/TaxCategories
+Website Content, Website Content Root, @/iCore/System_Settings/Finance/Terms
+Website Content, Website Content Root, @/iCore/System_Settings/General_Lookup_Tables
+Website Content, Website Content Root, @/iCore/System_Settings/Indexing_Preferences
+Website Content, Website Content Root, @/iSamples/Member/Volunteer
+Website Content, Website Content Root, @/iSamples/MemberR/Volunteer
+Website Content Folder, Website Content Root, @/iCore/Archive
+Website Content Folder, Website Content Root, @/iCore/Archive/Contacts
+Website Content Folder, Website Content Root, @/iCore/Archive/Fundraising
+Website Content Folder, Website Content Root, @/iCore/Archive/SampleContent
+Website Content Folder, Website Content Root, @/iCore/Commerce/Manage
+Website Content Folder, Website Content Root, @/iCore/Contacts/Volunteering
+Website Content Folder, Website Content Root, @/iCore/Engagement
+Website Content Folder, Website Content Root, @/iCore/Events/Manage
+Website Content Folder, Website Content Root, @/iCore/Events/Registrations
+Website Content Folder, Website Content Root, @/iCore/Finance
+Website Content Folder, Website Content Root, @/iCore/Fundraising/AutoPay
+Website Content Folder, Website Content Root, @/iCore/Membership/AutoPay
+Website Content Folder, Website Content Root, @/iCore/Staff_Dashboards/AutoPay
+Website Content Folder, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Fundraising
+Website Content Folder, Website Content Root, @/iCore/Staff_Dashboards/AutoPay/Membership
+Website Content Folder, Website Content Root, @/iCore/Staff_Dashboards/Engagement
+Website Content Folder, Website Content Root, @/iCore/Staff_Dashboards/Engagement/Organization
+Website Content Folder, Website Content Root, @/iCore/Staff_Dashboards/Moves_management
+Website Content Folder, Website Content Root, @/iCore/Staff_Dashboards/Volunteers
+Website Content Folder, Website Content Root, @/iCore/System_Settings/Addresses
+Website Content Folder, Website Content Root, @/iCore/System_Settings/Commerce
+Website Content Folder, Website Content Root, @/iCore/System_Settings/Contacts
+Website Content Folder, Website Content Root, @/iCore/System_Settings/Finance
+Website Content Folder, Website Content Root, @/iSamples/SharedContent
+Website Content Folder, Website Content Root, @/iSamples/SharedContent/ContactManagement
+Website Content Folder, Website Content Root, @/Website_Templates
+Website Content Folder, Website Content Root, @/Website_Templates/Samples
+Website Layout, Default Root, $/ContentManagement/DefaultSystem/WebsiteLayouts/CitiesResponsiveLayout
+Website Layout, Default Root, $/ContentManagement/DefaultSystem/WebsiteLayouts/CitiesStandardLayout
+Website Layout, Default Root, $/ContentManagement/DefaultSystem/WebsiteLayouts/Default
+Website Layout, Default Root, $/ContentManagement/DefaultSystem/WebsiteLayouts/NaturalHeritageSitesResponsiveLayout
+Website Navigation Item, Administrative Console, ~/Commerce/Orders/Enter_and_edit_orders
+Website Navigation Item, Donor Sample, ~/Manage/Page_builder/Manage_files
+Website Navigation Item, Donor Sample, ~/Manage/Style_Guide/Icons
+Website Navigation Item, Donor Sample, ~/Manage/Theme_Builder
+Website Navigation Item, Donor Sample, ~/Manage/Theme_Builder/Task_list
+Website Navigation Item, Donor Sample, ~/Manage/Theme_Builder/Website_layouts
+Website Navigation Item, Donor Sample, ~/Manage/Theme_Builder/Website_templates
+Website Navigation Item, Member, ~/Manage/Page_builder/Manage_files
+Website Navigation Item, Member, ~/Manage/Style_Guide/Icons
+Website Navigation Item, Member, ~/Manage/Theme_Builder
+Website Navigation Item, Member, ~/Manage/Theme_Builder/Task_list
+Website Navigation Item, Member, ~/Manage/Theme_Builder/Website_layouts
+Website Navigation Item, Member, ~/Manage/Theme_Builder/Website_templates
+Website Navigation Item, Member, ~/Membership/Volunteer
+Website Navigation Item, Member R, ~/Manage/Page_builder/Manage_files
+Website Navigation Item, Member R, ~/Manage/Style_Guide/Icons
+Website Navigation Item, Member R, ~/Manage/Theme_Builder
+Website Navigation Item, Member R, ~/Manage/Theme_Builder/Task_list
+Website Navigation Item, Member R, ~/Manage/Theme_Builder/Website_layouts
+Website Navigation Item, Member R, ~/Manage/Theme_Builder/Website_templates
+Website Navigation Item, Member R, ~/Membership/Directory/Organizations
+Website Navigation Item, Member R, ~/Membership/Volunteer
+Website Navigation Item, Staff, ~/Commerce/Find_orders
+Website Navigation Item, Staff, ~/Community/Engagement
+Website Navigation Item, Staff, ~/Community/Engagement/Organizations
+Website Navigation Item, Staff, ~/Community/Engagement/Overall
+Website Navigation Item, Staff, ~/Community/Volunteers
+Website Navigation Item, Staff, ~/Community/Volunteers/Dashboard
+Website Navigation Item, Staff, ~/Community/Volunteers/Find_volunteers
+Website Navigation Item, Staff, ~/Continuum/Membership_reports
+Website Navigation Item, Staff, ~/Events/Issue_event_confirmations
+Website Navigation Item, Staff, ~/Events/Manage_templates
+Website Navigation Item, Staff, ~/Finance
+Website Navigation Item, Staff, ~/Finance/Invoices
+Website Navigation Item, Staff, ~/Finance/Month-end
+Website Navigation Item, Staff, ~/Finance/Month-end/Credit_invoices
+Website Navigation Item, Staff, ~/Finance/Month-end/GeneralLedgerExport
+Website Navigation Item, Staff, ~/Finance/Month-end/Invoice_write-offs
+Website Navigation Item, Staff, ~/Fundraising/Add_gift_item
+Website Navigation Item, Staff, ~/Fundraising/Automatic_payments/Dashboard
+Website Navigation Item, Staff, ~/Fundraising/Find_gifts
+Website Navigation Item, Staff, ~/Fundraising/Moves_management/Moves_Management_Dashboard
+Website Navigation Item, Staff, ~/Fundraising/Moves_management/My_major_donors
+Website Navigation Item, Staff, ~/Fundraising/Tribute_notification
+Website Navigation Item, Staff, ~/Fundraising/Tribute_notification/Find_issued_notifications
+Website Navigation Item, Staff, ~/Fundraising/Tribute_notification/Issue_notifications
+Website Navigation Item, Staff, ~/Membership/[break]
+Website Navigation Item, Staff, ~/Membership/Automatic_payments/Dashboard
+Website Navigation Item, Staff, ~/Membership/Billing_cycles
+Website Navigation Item, Staff, ~/Membership/Billing_products
+Website Navigation Item, Staff, ~/Membership/Generate_renewals
+Website Navigation Item, Staff, ~/Membership/Manage_Expired_Members
+Website Navigation Item, Staff, ~/RiSE/Page_builder/Manage_files
+Website Navigation Item, Staff, ~/RiSE/Panel_Designer
+Website Navigation Item, Staff, ~/RiSE/Scoring
+Website Navigation Item, Staff, ~/RiSE/Theme_Builder
+Website Navigation Item, Staff, ~/RiSE/Theme_Builder/Task_list
+Website Navigation Item, Staff, ~/RiSE/Theme_Builder/Website_layouts
+Website Navigation Item, Staff, ~/RiSE/Theme_Builder/Website_templates
+Website Navigation Item, Staff, ~/Settings/Addresses
+Website Navigation Item, Staff, ~/Settings/Addresses/Address_formats
+Website Navigation Item, Staff, ~/Settings/Addresses/Countries
+Website Navigation Item, Staff, ~/Settings/Commerce/[break]
+Website Navigation Item, Staff, ~/Settings/Commerce/[break]
+Website Navigation Item, Staff, ~/Settings/Commerce/Order_types
+Website Navigation Item, Staff, ~/Settings/Commerce/Product_categories
+Website Navigation Item, Staff, ~/Settings/Commerce/SetUpWarehouses
+Website Navigation Item, Staff, ~/Settings/Commerce/Shipping
+Website Navigation Item, Staff, ~/Settings/Commerce/SystemOptions
+Website Navigation Item, Staff, ~/Settings/Commerce/Zones
+Website Navigation Item, Staff, ~/Settings/Contacts/[break]
+Website Navigation Item, Staff, ~/Settings/Contacts/[break]
+Website Navigation Item, Staff, ~/Settings/Contacts/[break]
+Website Navigation Item, Staff, ~/Settings/Contacts/ActivityTypes
+Website Navigation Item, Staff, ~/Settings/Contacts/Authentication
+Website Navigation Item, Staff, ~/Settings/Contacts/Committee_Positions
+Website Navigation Item, Staff, ~/Settings/Contacts/CustomerTypes
+Website Navigation Item, Staff, ~/Settings/Contacts/Relationship_types
+Website Navigation Item, Staff, ~/Settings/Contacts/SystemOptions
+Website Navigation Item, Staff, ~/Settings/Events
+Website Navigation Item, Staff, ~/Settings/Finance
+Website Navigation Item, Staff, ~/Settings/Finance/[break]
+Website Navigation Item, Staff, ~/Settings/Finance/[break]
+Website Navigation Item, Staff, ~/Settings/Finance/[break]
+Website Navigation Item, Staff, ~/Settings/Finance/Aging
+Website Navigation Item, Staff, ~/Settings/Finance/Automatic_payments
+Website Navigation Item, Staff, ~/Settings/Finance/CashAccounts
+Website Navigation Item, Staff, ~/Settings/Finance/DueToDueFrom
+Website Navigation Item, Staff, ~/Settings/Finance/Financial_entities
+Website Navigation Item, Staff, ~/Settings/Finance/GatewayAccounts
+Website Navigation Item, Staff, ~/Settings/Finance/General
+Website Navigation Item, Staff, ~/Settings/Finance/TaxCategories
+Website Navigation Item, Staff, ~/Settings/Finance/TaxCodes
+Website Navigation Item, Staff, ~/Settings/Finance/Terms
+Website Navigation Item, Staff, ~/Settings/Fundraising
+Website Navigation Item, Staff, ~/Settings/Membership
+Website Navigation Item, Staff, ~/Settings/Membership/General
+Website Navigation Item, Staff, ~/Settings/RiSE/Indexing
+Website Navigation Item, Staff, ~/Settings/Utilities/General_lookup_tables
+Website Template, Website Content Root, @/Website_Templates/Samples/CitiesResponsive
+Website Template, Website Content Root, @/Website_Templates/Samples/CitiesStandard
+Website Template, Website Content Root, @/Website_Templates/Samples/NaturalHeritageSitesResponsive
+
+Updated Documents:
+Communication, Default Root, $/Common/Communications/Templates/Samples/DonationThankYouTemplate
+Communication, Default Root, $/Common/Communications/Templates/Samples/Event confirmations/Event Confirmation
+Communication, Default Root, $/Common/Communications/Templates/Samples/Event Reminder
+Communication, Default Root, $/Common/Communications/Templates/Samples/Event Thank You
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Alert Set Creator
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Authorization Providers
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Duplicate Merge
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Dynamic Content Collection Organizer
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Email Provider Configuration
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Event Edit
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Function Edit
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Licensing
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Potential Duplicate List Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Quick Links
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Tasks
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Tasks Log
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/ASI Only/Template Manager
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Address Selector
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Cart Charges Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Cart Checkout Button Link
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Cart Details Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Confirmation Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Continue Shopping Button Link
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Invoice Payment Link
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Item Creator
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Open Invoice List Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Order Confirmation Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Payment Creator
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Payment Method Set Creator
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Promotion Creator
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Promotion Manager
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Recurring Donation Expected Payments
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Shipping Method Selector
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Commerce/Submit Order Button Link
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Address Mapper
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Change Logon Password
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Communication Preferences Editor
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Contact Account Creator
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Contact Address
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Contact Address Editor
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Contact Communities
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Contact Mini Profile
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Contact Name
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Contact Profile Picture
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Contact Sign In
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Contact Status
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Contact Status Editor
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Display Name Editor
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Mini Group List Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Contact/Social Profile List Creator
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Content/Content Block
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Content/Content Collection Organizer
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Content/Data Showcase
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Content/Panel Collection Editor
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Content/Panel Editor
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Content/Slideshow
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Groups/Group List Editor
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Offering/Event Calendar
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Offering/General Product Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Offering/Gift Aid Declaration
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Offering/Gift Aid Tax Reclaim
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Offering/Product Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Offering/Product Display List
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Offering/Recurring Donation Commitments
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Offering/Recurring Donation Commitments Public View
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/AddThis For Social Networking
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Advanced Accounting Console
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Alert Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Change History Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Common Search
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Communication Creator
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Embedded Web Page
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/File Importer For Web Services
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/File Viewer For Web Services
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Friendraising Importer
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Friendraising Mapping
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Friendraising Settings
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Interaction Log
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Log Viewer For Web Services
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/NRDS Configuration
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/NRDS Sync Buttons
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/NRDS Sync By ID
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Progress Tracker
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Query Chart Viewer
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Query Menu
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Query Profile Picture List
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Recent History
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Related Items
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Report Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Social Share
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/SSRS Report
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/Summary Display
+Content Type, Default Root, $/ContentManagement/DefaultSystem/ContentTypes/Utility/YouTubeVideo
+Design Business Definition, System Root, $/Design Business Object Definition/Address
+Design Business Definition, System Root, $/Design Business Object Definition/AutoPayInstruction
+Design Business Definition, System Root, $/Design Business Object Definition/AutoPayInstructionDetail
+Design Business Definition, System Root, $/Design Business Object Definition/AutoPayInvoices
+Design Business Definition, System Root, $/Design Business Object Definition/AutoPayInvoicesDues
+Design Business Definition, System Root, $/Design Business Object Definition/AutoPayInvoicesFundraising
+Design Business Definition, System Root, $/Design Business Object Definition/CertificationModule
+Design Business Definition, System Root, $/Design Business Object Definition/CertificationProgram
+Design Business Definition, System Root, $/Design Business Object Definition/CertificationProgramRegistration
+Design Business Definition, System Root, $/Design Business Object Definition/Contact
+Design Business Definition, System Root, $/Design Business Object Definition/ContactCommunicationReasonPreferences
+Design Business Definition, System Root, $/Design Business Object Definition/ContentWorkflow
+Design Business Definition, System Root, $/Design Business Object Definition/CsAddress
+Design Business Definition, System Root, $/Design Business Object Definition/CsCommitteeMember
+Design Business Definition, System Root, $/Design Business Object Definition/CsCommitteePosition
+Design Business Definition, System Root, $/Design Business Object Definition/CsContact
+Design Business Definition, System Root, $/Design Business Object Definition/CsCountryNames
+Design Business Definition, System Root, $/Design Business Object Definition/CsEvent
+Design Business Definition, System Root, $/Design Business Object Definition/CsFunction
+Design Business Definition, System Root, $/Design Business Object Definition/CsGeneralLookupTables
+Design Business Definition, System Root, $/Design Business Object Definition/CsName_Demo
+Design Business Definition, System Root, $/Design Business Object Definition/CsOrderLines
+Design Business Definition, System Root, $/Design Business Object Definition/CsOrders
+Design Business Definition, System Root, $/Design Business Object Definition/CsRegFunctions
+Design Business Definition, System Root, $/Design Business Object Definition/CsRegistration
+Design Business Definition, System Root, $/Design Business Object Definition/CsRelationshipTypes
+Design Business Definition, System Root, $/Design Business Object Definition/CsStateProvinceCodes
+Design Business Definition, System Root, $/Design Business Object Definition/CsTerms
+Design Business Definition, System Root, $/Design Business Object Definition/CultivatingFor
+Design Business Definition, System Root, $/Design Business Object Definition/CustomerExperienceView
+Design Business Definition, System Root, $/Design Business Object Definition/DataVaultLogAttempt
+Design Business Definition, System Root, $/Design Business Object Definition/DataVaultLogDetail
+Design Business Definition, System Root, $/Design Business Object Definition/GiftHistory
+Design Business Definition, System Root, $/Design Business Object Definition/GiftsReceived
+Design Business Definition, System Root, $/Design Business Object Definition/InvoiceSummary
+Design Business Definition, System Root, $/Design Business Object Definition/NavigationWorkflow
+Design Business Definition, System Root, $/Design Business Object Definition/NetContact
+Design Business Definition, System Root, $/Design Business Object Definition/Offering
+Design Business Definition, System Root, $/Design Business Object Definition/Opportunity
+Design Business Definition, System Root, $/Design Business Object Definition/SourceCode
+Design Business Definition, System Root, $/Design Business Object Definition/TransactionDetail
+Design Business Definition, System Root, $/Design Business Object Definition/User
+Design Business Definition, System Root, $/Design Business Object Definition/UserData
+Folder, Default Root, $/Accounting/DefaultSystem/BatchReports
+Query, Default Root, $/Common/Communications/Queries/Event program registrations
+Query, Default Root, $/Common/Communications/Queries/Event registration
+Query, Default Root, $/Common/Queries/Commerce/Billing/WebRenewableBillingCycles
+Query, Default Root, $/Common/Tasks/Queries/Event registration trigger
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/New users
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Recent gifts any size
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Recent gifts by my major donor
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Recent gifts over 500.00
+Query, Default Root, $/Common/Tasks/Queries/Staff dashboard alerts/Recent gifts under 500.00
+Query, Default Root, $/Communications/DefaultSystem/Queries/Communication log
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Advanced/Contact/Activities/Organization
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Advanced/Contact/Activities/Organization and individuals
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/By all criteria
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/By all criteria (multi select fields)
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/Contacts/Default
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/Organization search
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/OrganizationSearch/All organizations
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/OrganizationSearch/Organization search public
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/People search
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/PeopleSearch/By all common criteria
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/PeopleSearch/By all criteria (multi select fields)
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/PeopleSearch/By committee (active mbrs)
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/PeopleSearch/By ID
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/PeopleSearch/By location
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/PeopleSearch/By name
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/PeopleSearch/By task date
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/PeopleSearch/By type
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Directory/PeopleSearch/People search public
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/FindContacts/Current Providers
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/FindContacts/Default
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Groups/Committees/Members/Active members
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Groups/Committees/Members/Future members
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Groups/Committees/Members/Past members
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Groups/Committees/Members/Search members
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/My Registrations
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Org Registrations
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Organizations/OrganizationList
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Organizations/PrimaryOrganizationSelect
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/Recent Activities/Transactions/Recent Transactions
+Query, Default Root, $/ContactManagement/DefaultSystem/Queries/SelectedContact
+Query, Default Root, $/Directory/Contacts/Default
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/AutoPay/Automatic payment enrollments
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/AutoPay/Find recurring donation invoices
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/AutoPay/Payment history for recurring donations
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/AutoPay/Processed payments for recurring donations
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/AutoPay/Submitted payments for recurring donations
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/Dashboards/MyMajorDonors
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/Giving History - Staff/Gifts Received by Calendar Year
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/Giving History - Staff/Giving History by Campaign
+Query, Default Root, $/Fundraising/DefaultSystem/Queries/Giving History - Staff/Giving History by Fund
+Query, Default Root, $/Membership/DefaultSystem/Queries/AutoPay/Find renewal invoices due for automatic payment
+Query, Default Root, $/Membership/DefaultSystem/Queries/AutoPay/Payment history for automatic renewals
+Query, Default Root, $/Membership/DefaultSystem/Queries/AutoPay/Processed automatic payments for renewals
+Query, Default Root, $/Membership/DefaultSystem/Queries/AutoPay/Recurring membership not attached to ACCRUAL based billing cycle
+Query, Default Root, $/Membership/DefaultSystem/Queries/AutoPay/Submitted automatic payments for renewals
+Query, Default Root, $/Samples/Charts/Active Contacts by Customer Type
+Query, Default Root, $/Samples/Charts/Contacts by Last Updated
+Query, Default Root, $/Samples/Communication Preferences/Communication Preferences Log
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Chart - Delivered by month
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Chart - Events by date
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Chart - Events by type
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Chart - Last events
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Progress Tracker - Total delivered
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Progress Tracker - Total queued
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Progress Tracker - Unique clicks
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Progress Tracker - Unique opens
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Responses by communication
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Bounces
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Chart - All events except queued
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Chart - Delivered
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Chart - Events by date
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Chart - Opened
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Deferred
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Dropped
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Links clicked
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Progress Tracker - Total delivered
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Progress Tracker - Unique clicks
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Progress Tracker - Unique opens
+Query, Default Root, $/Samples/Dashboards/Advanced Email/Specific Communication/Spam reports
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/All products
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Invoices/Due soon
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Invoices/Past due
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Open orders
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Orders by Member Type This Year
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Orders By Product Category This Year
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Product Orders
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Progress Tracker - Item Sales This Year
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Progress Tracker - Orders This Year
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Progress Tracker - Sales Revenue Last Year
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Progress Tracker - Sales Revenue This Year
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Progress Tracker - Unique customers this year
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Top customers/All customers
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Top customers/By organization
+Query, Default Root, $/Samples/Dashboards/Commerce/Product Sales/Web Product Details
+Query, Default Root, $/Samples/Dashboards/Community/Community posts
+Query, Default Root, $/Samples/Dashboards/Community/Contacts by Region
+Query, Default Root, $/Samples/Dashboards/Community/Data integrity/Individuals missing primary email
+Query, Default Root, $/Samples/Dashboards/Community/Data integrity/Individuals with no link to company
+Query, Default Root, $/Samples/Dashboards/Community/Data integrity/Locked out users
+Query, Default Root, $/Samples/Dashboards/Community/Members by committee
+Query, Default Root, $/Samples/Dashboards/Community/Progress Tracker - Recent posts
+Query, Default Root, $/Samples/Dashboards/Community/Progress Tracker - Total Active Individuals
+Query, Default Root, $/Samples/Dashboards/Community/Progress Tracker - Total active organizations
+Query, Default Root, $/Samples/Dashboards/Community/Top committees
+Query, Default Root, $/Samples/Dashboards/Community/Top orgs/By individual committee memberships
+Query, Default Root, $/Samples/Dashboards/Community/Top orgs/By individual community subscriptions
+Query, Default Root, $/Samples/Dashboards/Community/Top orgs/By individual posts
+Query, Default Root, $/Samples/Dashboards/Community/Top participants/By committee memberships
+Query, Default Root, $/Samples/Dashboards/Community/Top participants/By community subscriptions
+Query, Default Root, $/Samples/Dashboards/Community/Top participants/By posts
+Query, Default Root, $/Samples/Dashboards/Events/Data Integrity/Events missing dates
+Query, Default Root, $/Samples/Dashboards/Events/Data Integrity/Future events not available for registration
+Query, Default Root, $/Samples/Dashboards/Events/Data Integrity/Future events not available in search
+Query, Default Root, $/Samples/Dashboards/Events/Data Integrity/Past events available for registration
+Query, Default Root, $/Samples/Dashboards/Events/Data Integrity/Past events available in search
+Query, Default Root, $/Samples/Dashboards/Events/Data Integrity/Pending and frozen events
+Query, Default Root, $/Samples/Dashboards/Events/Event Details - Recent and Upcoming
+Query, Default Root, $/Samples/Dashboards/Events/Progress Tracker - Event Registrations Last Year
+Query, Default Root, $/Samples/Dashboards/Events/Progress Tracker - Event Registrations This Year
+Query, Default Root, $/Samples/Dashboards/Events/Progress Tracker - Event Revenue This Year
+Query, Default Root, $/Samples/Dashboards/Events/Progress Tracker - Program Item Registrations This Year
+Query, Default Root, $/Samples/Dashboards/Events/Progress Tracker - Scheduled Events
+Query, Default Root, $/Samples/Dashboards/Events/Registrations by Event This Year
+Query, Default Root, $/Samples/Dashboards/Events/Revenue by Event This Year
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Program Item Reg by Category
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Program Item Reg by Track
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Program Item Registrations
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Progress Tracker - Total Registrations
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Progress Tracker - Total Revenue
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Registrants/Active registrations
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Registrations by Reg Option
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Registrations by Type
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Registrations by Type List
+Query, Default Root, $/Samples/Dashboards/Events/Specific Events/Registrations This Year
+Query, Default Root, $/Samples/Dashboards/Events/Top attendees/Individuals
+Query, Default Root, $/Samples/Dashboards/Events/Top attendees/Organizations
+Query, Default Root, $/Samples/Dashboards/Events/Top Events
+Query, Default Root, $/Samples/Dashboards/Events/Total Event Registrations by Member Type
+Query, Default Root, $/Samples/Dashboards/Fundraising/Distribution Activity This Year
+Query, Default Root, $/Samples/Dashboards/Fundraising/Donations by source code this year
+Query, Default Root, $/Samples/Dashboards/Fundraising/Funds Raised By Year
+Query, Default Root, $/Samples/Dashboards/Fundraising/Progress Tracker - Average gift
+Query, Default Root, $/Samples/Dashboards/Fundraising/Progress Tracker - Funds Raised Last Year
+Query, Default Root, $/Samples/Dashboards/Fundraising/Progress Tracker - Funds Raised This Year
+Query, Default Root, $/Samples/Dashboards/Fundraising/Progress Tracker - Number of donors
+Query, Default Root, $/Samples/Dashboards/Fundraising/Progress Tracker - Number of gifts
+Query, Default Root, $/Samples/Dashboards/Fundraising/Top donors/By donor
+Query, Default Root, $/Samples/Dashboards/Fundraising/Top donors/By moves manager
+Query, Default Root, $/Samples/Dashboards/Fundraising/Top premiums
+Query, Default Root, $/Samples/Dashboards/Membership/Active members by type
+Query, Default Root, $/Samples/Dashboards/Membership/Lapsed and Lapsing/Lapsed members
+Query, Default Root, $/Samples/Dashboards/Membership/Lapsed and Lapsing/Members lapsing soon
+Query, Default Root, $/Samples/Dashboards/Membership/Members by chapter
+Query, Default Root, $/Samples/Dashboards/Membership/New members
+Query, Default Root, $/Samples/Dashboards/Membership/Newest Members
+Query, Default Root, $/Samples/Dashboards/Membership/Progress Tracker - Lapsed members
+Query, Default Root, $/Samples/Dashboards/Membership/Progress Tracker - New members
+Query, Default Root, $/Samples/Dashboards/Membership/Progress Tracker - Renewals This Year
+Query, Default Root, $/Samples/Dashboards/Membership/Progress Tracker - Total Active Members
+Query, Default Root, $/Samples/Dashboards/Membership/Top Chapters
+Query, Default Root, $/Samples/Directory/Members only directory
+Query, Default Root, $/Samples/Directory/OrganizationSearch/All organizations
+Query, Default Root, $/Samples/Directory/OrganizationSearch/Member organizations
+Query, Default Root, $/Samples/Directory/PeopleSearch/By all common criteria
+Query, Default Root, $/Samples/Directory/PeopleSearch/By all criteria (multi select fields)
+Query, Default Root, $/Samples/Directory/PeopleSearch/By ID
+Query, Default Root, $/Samples/Directory/PeopleSearch/By location
+Query, Default Root, $/Samples/Directory/PeopleSearch/By name
+Query, Default Root, $/Samples/Directory/PeopleSearch/By task date
+Query, Default Root, $/Samples/Directory/PeopleSearch/By type
+Query, Default Root, $/Samples/Directory/PeopleSearch/Member directory
+Query, Default Root, $/Samples/ProgressTracker/Progress Tracker - Total Active Members
+Query, Default Root, $/Samples/ReportingServices/Activity List Sample
+Query, Default Root, $/Samples/ReportingServices/Full Roster
+Query, Default Root, $/Samples/ReportingServices/Label Sample Query
+Query, Default Root, $/Samples/ReportingServices/Member Index Sample Query
+Query, Default Root, $/Samples/ReportingServices/Simple Roster
+Query, Default Root, $/Samples/ReportingServices/SSRS Training
+Query, Default Root, $/Samples/ReportingServices/SSRS Training Parameter
+Query, Default Root, $/Samples/Security/UserAccess/All Contacts
+Query, Default Root, $/Samples/Security/UserAccess/Contacts available to all users
+Query, Default Root, $/Samples/Security/UserAccess/Contacts available to members
+Query, Default Root, $/Samples/StaffHome/Active DB records by type
+Query, Default Root, $/Samples/StaffHome/Members by Region
+Reporting Services Report, Default Root, $/CertificationManagement/DefaultSystem/Reports/Transcript Report
+Reporting Services Template, Default Root, $/Accounting/DefaultSystem/Reports/Account Statement
+Reporting Services Template, Default Root, $/CertificationManagement/DefaultSystem/Reports/Templates/Transcript.rdl
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/EventRegistrantsReport.rdl
+Reporting Services Template, Default Root, $/EventManagement/DefaultSystem/Reports/ProgramItemRegistrantsReport.rdl
+Reporting Services Template, Default Root, $/Samples/Dashboards/Events/Specific Events/Reports/Templates/EventFormResponses.rdl
+Website, Default Root, $/ContentManagement/DefaultSystem/Websites/Quick Start Sites/MBRR
+Website Content, Website Content Root, @/iCore/AdminConsole/AccountingLandingPage
+Website Content, Website Content Root, @/iCore/AdminConsole/CommerceLandingPage
+Website Content, Website Content Root, @/iCore/AdminConsole/Configuration_Console
+Website Content, Website Content Root, @/iCore/AdminConsole/Home_Page
+Website Content, Website Content Root, @/iCore/AdminConsole/ReportingConsole
+Website Content, Website Content Root, @/iCore/AdminConsole/System Admin Landing Page
+Website Content, Website Content Root, @/iCore/AdminConsole/Tools_Landing_Page
+Website Content, Website Content Root, @/iCore/Archive/Contacts/Education
+Website Content, Website Content Root, @/iCore/Archive/Contacts/Education_Staff
+Website Content, Website Content Root, @/iCore/Archive/Contacts/Giving_History
+Website Content, Website Content Root, @/iCore/Archive/Contacts/Giving_History_Staff
+Website Content, Website Content Root, @/iCore/Archive/Fundraising/New_Donors
+Website Content, Website Content Root, @/iCore/Archive/Reporting_Services_Samples/Membership_Pie_Chart
+Website Content, Website Content Root, @/iCore/Archive/Reporting_Services_Samples/Membership_Pyramid_Chart
+Website Content, Website Content Root, @/iCore/Archive/SampleContent/MBRRDirectory
+Website Content, Website Content Root, @/iCore/Archive/SampleContent/MobileDirectory
+Website Content, Website Content Root, @/iCore/Certification/Program_Management/Enrollments_by_program
+Website Content, Website Content Root, @/iCore/Certification/Program_Management/Program_enrollments
+Website Content, Website Content Root, @/iCore/Commerce/Batches/Batch_Transaction_Details_by_Payment_Method_Report
+Website Content, Website Content Root, @/iCore/Commerce/Batches/Batch_Transaction_Details_Report
+Website Content, Website Content Root, @/iCore/Commerce/Batches/Batch_Transaction_Summary_by_Payment_Method_Report
+Website Content, Website Content Root, @/iCore/Commerce/Batches/Batch_Transaction_Summary_Report
+Website Content, Website Content Root, @/iCore/Commerce/Batches/BatchDetail
+Website Content, Website Content Root, @/iCore/Commerce/Batches/Batches
+Website Content, Website Content Root, @/iCore/Commerce/Manage/Set_up_AutoPay_payment_gateways
+Website Content, Website Content Root, @/iCore/Commerce/Manage/Set_Up_Payment_Method_Sets
+Website Content, Website Content Root, @/iCore/Communications/Communication_Logs
+Website Content, Website Content Root, @/iCore/Communications/Create_Communication
+Website Content, Website Content Root, @/iCore/Communities/BlogArchive
+Website Content, Website Content Root, @/iCore/Communities/BlogDefault
+Website Content, Website Content Root, @/iCore/Communities/BlogList
+Website Content, Website Content Root, @/iCore/Communities/Communities
+Website Content, Website Content Root, @/iCore/Communities/CommunitiesList
+Website Content, Website Content Root, @/iCore/Communities/CommunityLayouts/CommunityDefault
+Website Content, Website Content Root, @/iCore/Communities/CommunityLayouts/CommunityDescription
+Website Content, Website Content Root, @/iCore/Communities/CommunityLayouts/CommunityNewsFeed
+Website Content, Website Content Root, @/iCore/Communities/CommunityLayouts/CommunityPostSummary
+Website Content, Website Content Root, @/iCore/Communities/CommunityPreferences
+Website Content, Website Content Root, @/iCore/Communities/CommunitySecurity
+Website Content, Website Content Root, @/iCore/Communities/EntryDefault
+Website Content, Website Content Root, @/iCore/Communities/ForumDefault
+Website Content, Website Content Root, @/iCore/Communities/ForumList
+Website Content, Website Content Root, @/iCore/Communities/ParticipantList
+Website Content, Website Content Root, @/iCore/Communities/Resource_Library
+Website Content, Website Content Root, @/iCore/Communities/WikiDefault
+Website Content, Website Content Root, @/iCore/Communities/WikiList
+Website Content, Website Content Root, @/iCore/Contacts/Account_Statement
+Website Content, Website Content Root, @/iCore/Contacts/AddressMap
+Website Content, Website Content Root, @/iCore/Contacts/Authentication_User_Creation
+Website Content, Website Content Root, @/iCore/Contacts/Communication_Preferences_Settings
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/AboutMe
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Account_Page_Staff
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/AccountPage
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Communication_Preferences
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Donor/About_Me
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/My_Participation
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Preferences
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Profile
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Staff/Member_Profile
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Staff/Tabs/0About_Me_Staff
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Staff/Tabs/1Participation
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Staff/Tabs/2History
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Staff/Tabs/3Fundraising_Profile
+Website Content, Website Content Root, @/iCore/Contacts/ContactLayouts/Staff/Tabs/Preferences
+Website Content, Website Content Root, @/iCore/Contacts/Create_Account_no_Sign_In
+Website Content, Website Content Root, @/iCore/Contacts/Create_Contact_Person_or_Org
+Website Content, Website Content Root, @/iCore/Contacts/CreateAccount
+Website Content, Website Content Root, @/iCore/Contacts/CreateAccountSocialMedia
+Website Content, Website Content Root, @/iCore/Contacts/CreateOrganization
+Website Content, Website Content Root, @/iCore/Contacts/CreateOrganizationWithAdministrator
+Website Content, Website Content Root, @/iCore/Contacts/Directory
+Website Content, Website Content Root, @/iCore/Contacts/Manage_Duplicates
+Website Content, Website Content Root, @/iCore/Contacts/Organization_search
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Account_Staff
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/CoAdmin/Account_Page
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/CoAdmin/CoAdmin_Tabs/0About
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/CoAdmin/CoAdmin_Tabs/1Contacts
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/CoAdmin/CoAdmin_Tabs/2Participation
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/CoAdmin/CoAdmin_Tabs/3History
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/CoAdmin/CoAdmin_Tabs/4Preferences
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Demographics
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Organization
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Organization_Profile
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Overview
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Staff/Tabs/0About
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Staff/Tabs/1Contacts
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Staff/Tabs/2Participation
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Staff/Tabs/3History
+Website Content, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Staff/Tabs/4Preferences
+Website Content, Website Content Root, @/iCore/Contacts/People_search
+Website Content, Website Content Root, @/iCore/Contacts/Sign_In
+Website Content, Website Content Root, @/iCore/Contacts/SimpleAccountCreator
+Website Content, Website Content Root, @/iCore/Contacts/Staff_Sign_In
+Website Content, Website Content Root, @/iCore/Content/Content_Search
+Website Content, Website Content Root, @/iCore/Content/Default
+Website Content, Website Content Root, @/iCore/Content/Search
+Website Content, Website Content Root, @/iCore/Content/SearchLite
+Website Content, Website Content Root, @/iCore/Content/SearchResultsRow
+Website Content, Website Content Root, @/iCore/default
+Website Content, Website Content Root, @/iCore/DefaultStaff
+Website Content, Website Content Root, @/iCore/Events/Event_Display
+Website Content, Website Content Root, @/iCore/Events/Events_Calendar
+Website Content, Website Content Root, @/iCore/Events/Events_List
+Website Content, Website Content Root, @/iCore/Events/Function_Display
+Website Content, Website Content Root, @/iCore/Events/Manage/Event_Edit
+Website Content, Website Content Root, @/iCore/Events/Manage/Function_Edit
+Website Content, Website Content Root, @/iCore/Events/Simple_Event_Display
+Website Content, Website Content Root, @/iCore/Fundraising/AutoPay/Automatic_payment_history_for_recurring_donations
+Website Content, Website Content Root, @/iCore/Fundraising/AutoPay/Automatic_payment_instructions
+Website Content, Website Content Root, @/iCore/Fundraising/AutoPay/Generate_recurring_donations
+Website Content, Website Content Root, @/iCore/Fundraising/AutoPay/Process_recurring_donation_payments
+Website Content, Website Content Root, @/iCore/Fundraising/AutoPay/Recurring_Transaction_Instruction_Detail
+Website Content, Website Content Root, @/iCore/Fundraising/AutoPay/Retrieve_processed_payments
+Website Content, Website Content Root, @/iCore/Fundraising/AutoPay/Review_Batches
+Website Content, Website Content Root, @/iCore/Fundraising/AutoPay/Submit_Batch
+Website Content, Website Content Root, @/iCore/Fundraising/AutoPay/Submit_recurring_donation_payments
+Website Content, Website Content Root, @/iCore/Fundraising/Donate/Give_to_a_Cause
+Website Content, Website Content Root, @/iCore/Fundraising/Donate/OngoingGiving
+Website Content, Website Content Root, @/iCore/Fundraising/Donate_Now
+Website Content, Website Content Root, @/iCore/Fundraising/Donation_importer
+Website Content, Website Content Root, @/iCore/Fundraising/Donation_Thank_You_Page
+Website Content, Website Content Root, @/iCore/Fundraising/Expected_payments
+Website Content, Website Content Root, @/iCore/Fundraising/Gift_aid_declaration
+Website Content, Website Content Root, @/iCore/Fundraising/Gift_aid_reclaim
+Website Content, Website Content Root, @/iCore/Fundraising/Gift_Detail
+Website Content, Website Content Root, @/iCore/Fundraising/GiveNow
+Website Content, Website Content Root, @/iCore/Fundraising/GiveNowTribute
+Website Content, Website Content Root, @/iCore/Fundraising/Import_Standing_Order_payment_file
+Website Content, Website Content Root, @/iCore/Fundraising/Manage_Donor
+Website Content, Website Content Root, @/iCore/Fundraising/MovesManagement/Landing_Page
+Website Content, Website Content Root, @/iCore/Fundraising/MovesManagement/Moves_Management
+Website Content, Website Content Root, @/iCore/Fundraising/Recurring_donation_commitment
+Website Content, Website Content Root, @/iCore/Fundraising/Standing_Order_Thank_You_Page
+Website Content, Website Content Root, @/iCore/Fundraising/Ways_to_Give
+Website Content, Website Content Root, @/iCore/Groups/Committee_Detail
+Website Content, Website Content Root, @/iCore/Groups/Find_Chapters
+Website Content, Website Content Root, @/iCore/Groups/Find_Committees
+Website Content, Website Content Root, @/iCore/Groups/Group_Detail
+Website Content, Website Content Root, @/iCore/Membership/AutoPay/Automatic_payment_history_for_renewals
+Website Content, Website Content Root, @/iCore/Membership/AutoPay/Process_automatic_renewal_payments
+Website Content, Website Content Root, @/iCore/Membership/AutoPay/Retrieve_processed_payments
+Website Content, Website Content Root, @/iCore/Membership/AutoPay/Submit_renewal_invoices_for_payment
+Website Content, Website Content Root, @/iCore/Membership/Create_Account_Student
+Website Content, Website Content Root, @/iCore/Membership/General_product_display_without_cart_button
+Website Content, Website Content Root, @/iCore/Membership/Join_Now
+Website Content, Website Content Root, @/iCore/Membership/Organization_Demographics
+Website Content, Website Content Root, @/iCore/Membership/Organization_Join
+Website Content, Website Content Root, @/iCore/Membership/Student Membership Education
+Website Content, Website Content Root, @/iCore/Membership/Student_Membership_Product
+Website Content, Website Content Root, @/iCore/Privacy_Policy
+Website Content, Website Content Root, @/iCore/ProcessManager/Edit_Opportunity
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Advanced_email/Communication_Dashboard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Advanced_email/Delivery_failures_-_Bounces
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Advanced_email/Delivery_failures_-_Deferred
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Advanced_email/Delivery_failures_-_Dropped
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Advanced_email/Delivery_failures_-_Spam
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Commerce/Commerce_Dashboard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Commerce/Invoices
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Commerce/Low_inventory_products
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Commerce/Open_orders
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Commerce/Recent_orders
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Commerce/Top_customers
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Commerce/Top_products
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Community/Community_dashboard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Community/Data_integrity
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Community/Top_commitees
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Community/Top_organizations
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Community/Top_participants
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Events/Data_integrity
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Events/Recent_and_upcoming_events
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Events/Recent_event_registrations
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Events/Top_attendees
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Events/Top_events
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Fundraising/By_gift_item
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Fundraising/By_source_code
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Fundraising/Fundraising_Dashboard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Fundraising/Fundraising_Overview_Dashboard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Fundraising/Recent_gifts
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Fundraising/Top_donors
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Guided_Performance_Scorecard/GpsMeasureInputs
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Guided_Performance_Scorecard/Guided_Performance_Scorecard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Guided_Performance_Scorecard/Scorecard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Membership/Chapter_membership
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Membership/Lapsed_members
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Membership/Members_lapsing_soon
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Membership/New_members
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Membership/Recent_renewals
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Badge Report RDL
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Event_Dashboard
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Event_Detail
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Event_Questions
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Event_Questions_Report
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Event_Roster
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Program Item Registrant
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Registrants Directory
+Website Content, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event/Simple_Event_Dashboard
+Website Content, Website Content Root, @/iCore/Store/Manage/Add_Item
+Website Content, Website Content Root, @/iCore/Store/Manage/ManagePromotions
+Website Content, Website Content Root, @/iCore/Store/Product_Display
+Website Content, Website Content Root, @/iCore/Store/StoreLayouts/Cart_Home
+Website Content, Website Content Root, @/iCore/Store/StoreLayouts/Item_Detail
+Website Content, Website Content Root, @/iCore/Store/StoreLayouts/Order_Confirmation
+Website Content, Website Content Root, @/iCore/Store/StoreLayouts/Store_Home
+Website Content, Website Content Root, @/iCore/System_Settings/Authorization_Providers
+Website Content, Website Content Root, @/iCore/System_Settings/Email_Provider_Configuration
+Website Content, Website Content Root, @/iCore/Tagged_Content/News/CIIP_Certification_and_You
+Website Content, Website Content Root, @/iCore/Tagged_Content/News/Don_t_get_Caught_off_guard_by_new_Regulations
+Website Content, Website Content Root, @/iCore/Tasks/Alert_sets
+Website Content, Website Content Root, @/iCore/Tasks/Process_automation
+Website Content, Website Content Root, @/iCore/Tasks/Tasks
+Website Content, Website Content Root, @/iCore/Tasks/Tasks_Log
+Website Content, Website Content Root, @/iCore/Tools/AACPortal
+Website Content, Website Content Root, @/iCore/Tools/Default
+Website Content, Website Content Root, @/iCore/Tools/Duplicate_Merge
+Website Content, Website Content Root, @/iCore/Tools/Friendraising_Imports
+Website Content, Website Content Root, @/iCore/Tools/Friendraising_Mappings
+Website Content, Website Content Root, @/iCore/Tools/Friendraising_Settings
+Website Content, Website Content Root, @/iCore/Tools/Package_Installer
+Website Content, Website Content Root, @/iCore/Tools/Source_code_importer
+Website Content, Website Content Root, @/iCore/Tools/WorkItemConsole
+Website Content, Website Content Root, @/iCore/Translation/Cultures
+Website Content, Website Content Root, @/iCore/Translation/Phrases
+Website Content, Website Content Root, @/iCore/Translation/Versions
+Website Content, Website Content Root, @/iSamples/AnnualConference/Accommodations
+Website Content, Website Content Root, @/iSamples/AnnualConference/Cart_Home
+Website Content, Website Content Root, @/iSamples/AnnualConference/ContentAreas/Footer_Copyright
+Website Content, Website Content Root, @/iSamples/AnnualConference/ContentAreas/FooterArea
+Website Content, Website Content Root, @/iSamples/AnnualConference/ContentAreas/FooterContent
+Website Content, Website Content Root, @/iSamples/AnnualConference/ContentAreas/HeaderLogo
+Website Content, Website Content Root, @/iSamples/AnnualConference/ContentAreas/Home_Page_Full_Width_Area
+Website Content, Website Content Root, @/iSamples/AnnualConference/ContentAreas/SocialNetworking
+Website Content, Website Content Root, @/iSamples/AnnualConference/Event_blog
+Website Content, Website Content Root, @/iSamples/AnnualConference/Exhibits
+Website Content, Website Content Root, @/iSamples/AnnualConference/Home
+Website Content, Website Content Root, @/iSamples/AnnualConference/Maps
+Website Content, Website Content Root, @/iSamples/AnnualConference/Presentations
+Website Content, Website Content Root, @/iSamples/AnnualConference/Product_Detail
+Website Content, Website Content Root, @/iSamples/AnnualConference/Program
+Website Content, Website Content Root, @/iSamples/AnnualConference/Registration
+Website Content, Website Content Root, @/iSamples/AnnualConference/Speakers
+Website Content, Website Content Root, @/iSamples/AnnualConference/Sponsors
+Website Content, Website Content Root, @/iSamples/AnnualConference/Upcoming_Events
+Website Content, Website Content Root, @/iSamples/AnnualConference/Venue
+Website Content, Website Content Root, @/iSamples/AnnualConferenceMobile/Attendees
+Website Content, Website Content Root, @/iSamples/AnnualConferenceMobile/Cart_Home
+Website Content, Website Content Root, @/iSamples/AnnualConferenceMobile/ContentAreas/Footer_Copyright
+Website Content, Website Content Root, @/iSamples/AnnualConferenceMobile/ContentAreas/HeaderLogo
+Website Content, Website Content Root, @/iSamples/AnnualConferenceMobile/ContentAreas/SocialNetworking
+Website Content, Website Content Root, @/iSamples/AnnualConferenceMobile/Home
+Website Content, Website Content Root, @/iSamples/AnnualConferenceMobile/My_itinerary
+Website Content, Website Content Root, @/iSamples/AnnualConferenceMobile/Profile
+Website Content, Website Content Root, @/iSamples/AnnualConferenceMobile/Program_sessions
+Website Content, Website Content Root, @/iSamples/AnnualConferenceMobile/Social_activities
+Website Content, Website Content Root, @/iSamples/AnnualConferenceMobile/Venue
+Website Content, Website Content Root, @/iSamples/Donor/About_Us/About_Us
+Website Content, Website Content Root, @/iSamples/Donor/About_Us/Career
+Website Content, Website Content Root, @/iSamples/Donor/About_Us/Finances
+Website Content, Website Content Root, @/iSamples/Donor/About_Us/Leadership
+Website Content, Website Content Root, @/iSamples/Donor/About_Us/Mission
+Website Content, Website Content Root, @/iSamples/Donor/ContentAreas/Footer_Copyright
+Website Content, Website Content Root, @/iSamples/Donor/ContentAreas/FooterArea
+Website Content, Website Content Root, @/iSamples/Donor/ContentAreas/FooterContent
+Website Content, Website Content Root, @/iSamples/Donor/ContentAreas/HeaderLogo
+Website Content, Website Content Root, @/iSamples/Donor/ContentAreas/SideBarContent
+Website Content, Website Content Root, @/iSamples/Donor/ContentAreas/SocialNetworking
+Website Content, Website Content Root, @/iSamples/Donor/Corporate_Partnerships
+Website Content, Website Content Root, @/iSamples/Donor/Default
+Website Content, Website Content Root, @/iSamples/Donor/Donate/Choose_a_Project
+Website Content, Website Content Root, @/iSamples/Donor/Donate/Donate
+Website Content, Website Content Root, @/iSamples/Donor/DonateContentAreas/Footer_Copyright
+Website Content, Website Content Root, @/iSamples/Donor/DonateContentAreas/FooterArea
+Website Content, Website Content Root, @/iSamples/Donor/DonateContentAreas/FooterContent
+Website Content, Website Content Root, @/iSamples/Donor/DonateContentAreas/HeaderLogo
+Website Content, Website Content Root, @/iSamples/Donor/DonateContentAreas/Home_Page_Full_Width_Area
+Website Content, Website Content Root, @/iSamples/Donor/DonateContentAreas/SideBarContent
+Website Content, Website Content Root, @/iSamples/Donor/DonateContentAreas/SocialNetworking
+Website Content, Website Content Root, @/iSamples/Donor/Get_Involved_/Be_a_fundraiser
+Website Content, Website Content Root, @/iSamples/Donor/Get_Involved_/Other_ways_to_help
+Website Content, Website Content Root, @/iSamples/Donor/Get_Involved_/Share_your_story
+Website Content, Website Content Root, @/iSamples/Donor/Get_Involved_/Volunteer
+Website Content, Website Content Root, @/iSamples/Donor/Management_Console
+Website Content, Website Content Root, @/iSamples/Donor/News/Blog
+Website Content, Website Content Root, @/iSamples/Donor/News/News
+Website Content, Website Content Root, @/iSamples/Donor/News/RecentProjects
+Website Content, Website Content Root, @/iSamples/Donor/Our_Impact/Our_Impact
+Website Content, Website Content Root, @/iSamples/Member/About
+Website Content, Website Content Root, @/iSamples/Member/ArticlesAndGuides
+Website Content, Website Content Root, @/iSamples/Member/Benefits
+Website Content, Website Content Root, @/iSamples/Member/Certification_Home
+Website Content, Website Content Root, @/iSamples/Member/Certification_Program_Enrollment
+Website Content, Website Content Root, @/iSamples/Member/Chairs_Blog
+Website Content, Website Content Root, @/iSamples/Member/Content_Management
+Website Content, Website Content Root, @/iSamples/Member/ContentAreas/Footer_Communications
+Website Content, Website Content Root, @/iSamples/Member/ContentAreas/Footer_Copyright
+Website Content, Website Content Root, @/iSamples/Member/ContentAreas/FooterArea
+Website Content, Website Content Root, @/iSamples/Member/ContentAreas/HeaderLogo
+Website Content, Website Content Root, @/iSamples/Member/ContentAreas/Home_Page_Full_Width_Area
+Website Content, Website Content Root, @/iSamples/Member/ContentAreas/SocialNetworking
+Website Content, Website Content Root, @/iSamples/Member/Default
+Website Content, Website Content Root, @/iSamples/Member/Donate
+Website Content, Website Content Root, @/iSamples/Member/Featured_Forums
+Website Content, Website Content Root, @/iSamples/Member/Join_Now_Associate
+Website Content, Website Content Root, @/iSamples/Member/Join_Now_Regular
+Website Content, Website Content Root, @/iSamples/Member/Join_Now_Student
+Website Content, Website Content Root, @/iSamples/Member/Leadership
+Website Content, Website Content Root, @/iSamples/Member/Management_Console
+Website Content, Website Content Root, @/iSamples/Member/MemberHome
+Website Content, Website Content Root, @/iSamples/Member/My_Communities
+Website Content, Website Content Root, @/iSamples/Member/My_Groups
+Website Content, Website Content Root, @/iSamples/Member/News
+Website Content, Website Content Root, @/iSamples/Member/Planning_Session
+Website Content, Website Content Root, @/iSamples/Member/Search
+Website Content, Website Content Root, @/iSamples/Member/Spring_Conference
+Website Content, Website Content Root, @/iSamples/Member/Video_Transcript
+Website Content, Website Content Root, @/iSamples/MemberR/Certification_Home
+Website Content, Website Content Root, @/iSamples/MemberR/Certification_Program_Enrollment
+Website Content, Website Content Root, @/iSamples/MemberR/Contact_Management/Membership
+Website Content, Website Content Root, @/iSamples/MemberR/Contact_Management/My_Account
+Website Content, Website Content Root, @/iSamples/MemberR/Contact_Management/My_Participation
+Website Content, Website Content Root, @/iSamples/MemberR/Contact_Management/Organization_Profile
+Website Content, Website Content Root, @/iSamples/MemberR/Contact_Management/Sign_In
+Website Content, Website Content Root, @/iSamples/MemberR/ContentAreas/Footer_Copyright
+Website Content, Website Content Root, @/iSamples/MemberR/ContentAreas/FooterContent
+Website Content, Website Content Root, @/iSamples/MemberR/ContentAreas/HeaderLogo
+Website Content, Website Content Root, @/iSamples/MemberR/ContentAreas/Home_Page_Full_Width_Area
+Website Content, Website Content Root, @/iSamples/MemberR/ContentAreas/SideBarContent
+Website Content, Website Content Root, @/iSamples/MemberR/ContentAreas/SocialNetworking
+Website Content, Website Content Root, @/iSamples/MemberR/Default
+Website Content, Website Content Root, @/iSamples/MemberR/Event_Display
+Website Content, Website Content Root, @/iSamples/MemberR/Fundraising/Donation_Thank_You_Page
+Website Content, Website Content Root, @/iSamples/MemberR/Fundraising/Gift_Detail
+Website Content, Website Content Root, @/iSamples/MemberR/Join_Now_1
+Website Content, Website Content Root, @/iSamples/MemberR/News/About
+Website Content, Website Content Root, @/iSamples/MemberR/News/Chairs_Blog
+Website Content, Website Content Root, @/iSamples/MemberR/News/Featured_Forums
+Website Content, Website Content Root, @/iSamples/MemberR/News/iMIS_goes_mobile
+Website Content, Website Content Root, @/iSamples/MemberR/News/Innovations_15
+Website Content, Website Content Root, @/iSamples/MemberR/News/Leadership
+Website Content, Website Content Root, @/iSamples/MemberR/News/News
+Website Content, Website Content Root, @/iSamples/MemberR/News/Record-Breaking_NiUG_Conference
+Website Content, Website Content Root, @/iSamples/MemberR/News/The_world_of_computing_is_changing_
+Website Content, Website Content Root, @/iSamples/Mobile/Contact_Management/Create_Account
+Website Content, Website Content Root, @/iSamples/Mobile/Contact_Management/My_Account
+Website Content, Website Content Root, @/iSamples/Mobile/Contact_Management/My_Participation
+Website Content, Website Content Root, @/iSamples/Mobile/Contact_Management/Organization_Profile
+Website Content, Website Content Root, @/iSamples/Mobile/Contact_Management/Profile
+Website Content, Website Content Root, @/iSamples/Mobile/Contact_Management/Sign_In
+Website Content, Website Content Root, @/iSamples/Mobile/ContentAreas/Footer_Copyright
+Website Content, Website Content Root, @/iSamples/Mobile/ContentAreas/HeaderLogo
+Website Content, Website Content Root, @/iSamples/Mobile/ContentAreas/SocialNetworking
+Website Content, Website Content Root, @/iSamples/Mobile/Default
+Website Content, Website Content Root, @/iSamples/Mobile/Event_Display
+Website Content, Website Content Root, @/iSamples/Mobile/Fundraising/Donation_Thank_You_Page
+Website Content, Website Content Root, @/iSamples/Mobile/Fundraising/Gift_Detail
+Website Content, Website Content Root, @/iSamples/Mobile/Fundraising/GiveNow
+Website Content, Website Content Root, @/iSamples/Mobile/Join_Now_1
+Website Content, Website Content Root, @/iSamples/Mobile/Membership
+Website Content, Website Content Root, @/iSamples/Mobile/News_For_Mobile
+Website Content, Website Content Root, @/iSamples/Mobile/Store/Cart_Home
+Website Content, Website Content Root, @/iSamples/SharedContent/ContactManagement/Directory
+Website Content, Website Content Root, @/iSamples/SharedContent/ContactManagement/Organization_search
+Website Content, Website Content Root, @/iSamples/SharedContent/ContactManagement/People_search
+Website Content Folder, Website Content Root, @/iCore/Archive/Reporting_Services_Samples
+Website Content Folder, Website Content Root, @/iCore/Contacts/ContactLayouts/Staff
+Website Content Folder, Website Content Root, @/iCore/Contacts/ContactLayouts/Staff/Tabs
+Website Content Folder, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Staff
+Website Content Folder, Website Content Root, @/iCore/Contacts/OrganizationLayouts/Staff/Tabs
+Website Content Folder, Website Content Root, @/iCore/Staff_Dashboards/Specific_Event
+Website Content Folder, Website Content Root, @/iCore/Store/Manage
+Website Content Folder, Website Content Root, @/iCore/Tasks
+Website Content Folder, Website Content Root, @/iCore/Tools
+Website Navigation Item, Administrative Console, ~/Home/Help
+Website Navigation Item, Donor Sample, ~/Manage
+Website Navigation Item, Donor Sample, ~/Manage/Site_builder/Manage_websites
+Website Navigation Item, iMIS 15 UI, ~/Tools/Utilities/Language_Translation_Management
+Website Navigation Item, Member, ~/Manage/Management_Console
+Website Navigation Item, Member, ~/Manage/Page_builder/Task_list
+Website Navigation Item, Member, ~/Manage/Site_builder/Manage_websites
+Website Navigation Item, Member, ~/Membership/Directory
+Website Navigation Item, Member, ~/Membership/Directory/Find
+Website Navigation Item, Member Mobile, ~/Directory
+Website Navigation Item, Member R, ~
+Website Navigation Item, Member R, ~/Manage
+Website Navigation Item, Member R, ~/Manage/Page_builder/Task_list
+Website Navigation Item, Member R, ~/Manage/Site_builder/Manage_websites
+Website Navigation Item, Member R, ~/Membership/Directory
+Website Navigation Item, Member R, ~/Membership/Directory/Add
+Website Navigation Item, Member R, ~/Membership/Directory/Find
+Website Navigation Item, Staff, ~
+Website Navigation Item, Staff, ~/Commerce
+Website Navigation Item, Staff, ~/Community/Committees
+Website Navigation Item, Staff, ~/Continuum
+Website Navigation Item, Staff, ~/Continuum/Accounting_reports
+Website Navigation Item, Staff, ~/Continuum/Commerce_reports
+Website Navigation Item, Staff, ~/Continuum/Contact_reports
+Website Navigation Item, Staff, ~/Continuum/Fundraising_reports
+Website Navigation Item, Staff, ~/Documentation
+Website Navigation Item, Staff, ~/Events/Add_event
+Website Navigation Item, Staff, ~/Finance/[break]
+Website Navigation Item, Staff, ~/Finance/Advanced_Accounting_Console
+Website Navigation Item, Staff, ~/Finance/View_batches
+Website Navigation Item, Staff, ~/Fundraising/Automatic_payments
+Website Navigation Item, Staff, ~/Fundraising/Automatic_payments/Enrollments
+Website Navigation Item, Staff, ~/Fundraising/Automatic_payments/Process_payments
+Website Navigation Item, Staff, ~/Fundraising/Automatic_payments/Review_payments
+Website Navigation Item, Staff, ~/Fundraising/Import_donations
+Website Navigation Item, Staff, ~/Fundraising/Moves_management
+Website Navigation Item, Staff, ~/Marketing/Advanced_email
+Website Navigation Item, Staff, ~/Marketing/Campaigns/Import_source_codes
+Website Navigation Item, Staff, ~/Membership/Automatic_payments
+Website Navigation Item, Staff, ~/Membership/Automatic_payments/Enrollments
+Website Navigation Item, Staff, ~/Membership/Automatic_payments/Process_payments
+Website Navigation Item, Staff, ~/Membership/Automatic_payments/Review_payments
+Website Navigation Item, Staff, ~/Membership/Chapters
+Website Navigation Item, Staff, ~/RiSE/Document_system
+Website Navigation Item, Staff, ~/RiSE/Maintenance/Publish_Code
+Website Navigation Item, Staff, ~/RiSE/Page_builder/Task_list
+Website Navigation Item, Staff, ~/RiSE/Process_automation
+Website Navigation Item, Staff, ~/RiSE/Site_Builder/Manage_websites
+Website Navigation Item, Staff, ~/Settings
+Website Navigation Item, Staff, ~/Settings/About_iMIS
+Website Navigation Item, Staff, ~/Settings/Commerce
+Website Navigation Item, Staff, ~/Settings/Commerce/General
+Website Navigation Item, Staff, ~/Settings/Contacts
+Website Navigation Item, Staff, ~/Settings/Contacts/Account_management
+Website Navigation Item, Staff, ~/Settings/Contacts/Communication_preferences
+Website Navigation Item, Staff, ~/Settings/Contacts/Contact_security
+Website Navigation Item, Staff, ~/Settings/Contacts/Social_media
+Website Navigation Item, Staff, ~/Settings/Finance/Automatic_payment_gateways
+Website Navigation Item, Staff, ~/Settings/Finance/AutoPay_Setup_Status
+Website Navigation Item, Staff, ~/Settings/Finance/Payment_method_sets
+Website Navigation Item, Staff, ~/Settings/RiSE
+Website Navigation Item, Staff, ~/Settings/RiSE/Process_Automation
+
+Deleted Documents:
+Crystal Report, Default Root, $/CampaignManagement/DefaultSystem/Reports/Campaign Confirmation
+Crystal Report, Default Root, $/CampaignManagement/DefaultSystem/Reports/Campaign Performance by Solicitation
+Crystal Report, Default Root, $/CampaignManagement/DefaultSystem/Reports/Campaign Performance by Source Code
+Crystal Report, Default Root, $/CampaignManagement/DefaultSystem/Reports/Campaign Purge
+Crystal Report, Default Root, $/CampaignManagement/DefaultSystem/Reports/Campaign Stage
+Crystal Report, Default Root, $/Common/Reports View/IQA Security Report
+Crystal Report, Default Root, $/Common/Reports/IQA Security Report
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Action Report
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Incomplete Stage Report
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Manager Action Report
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Manager Future Actions
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Manager Incomplete Stage Report
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Manager Overdue Actions
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Manager Project Forecast
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Manager Response Analysis
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Manager Win/Loss Analysis
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Project Forecast
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Project Profile
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Projects by Salesperson
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Projects with Future Actions
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Projects with Overdue Actions
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Response Analysis
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Sales Person Action Report
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Sales Person Future Actions
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Sales Person Overdue Actions
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Sales Person Project Forecast
+Crystal Report, Default Root, $/OpportunityManagement/DefaultSystem/Reports/Won or Lost Process
+Crystal Report, Default Root, $/RFMAnalysis/DefaultSystem/Reports/RFM Analysis Preview Report
+Crystal Report, Default Root, $/RFMAnalysis/DefaultSystem/Reports/RFM Profile
+Crystal Report, Default Root, $/SegmentManagement/DefaultSystem/Reports/Segment Definition
+Crystal Report, Default Root, $/SegmentManagement/DefaultSystem/Reports/Segment Definition by Job
+Crystal Report, Default Root, $/SegmentManagement/DefaultSystem/Reports/Segmentation Job
+Crystal Report, Default Root, $/SegmentManagement/DefaultSystem/ReportsView/Segment Definition
+Design Business Definition, System Root, $/Design Business Object Definition/ContactFundraising
+Design Business Definition, System Root, $/Design Business Object Definition/Fund
+Design Business Definition, System Root, $/Design Business Object Definition/FundFamilyRef
+Design Business Definition, System Root, $/Design Business Object Definition/FundFundType
+Design Business Definition, System Root, $/Design Business Object Definition/FundType
+Design Business Definition, System Root, $/Design Business Object Definition/MatchingGift
+Design Business Definition, System Root, $/Design Business Object Definition/MatchingGiftPlan
+Design Business Definition, System Root, $/Design Business Object Definition/MatchingGiftPlanFundType
+Design Business Definition, System Root, $/Design Business Object Definition/MatchingGiftPlanRelationship
+Design Business Definition, System Root, $/Design Business Object Definition/MatchingGiftPlanRule
+Design Business Definition, System Root, $/Design Business Object Definition/MemorialTribute
+Design Business Definition, System Root, $/Design Business Object Definition/MemorialTributeCodeRef
+Design Business Definition, System Root, $/Design Business Object Definition/PotentialMatchingGift
+Design Business Definition, System Root, $/Design Business Object Definition/Receipt
+Design Business Definition, System Root, $/Design Business Object Definition/ReceiptLine
+Design Business Definition, System Root, $/Design Business Object Definition/ReceiptType
+Design Business Definition, System Root, $/Design Business Object Definition/SalesHistoryMemorialTribute
+Design Business Definition, System Root, $/Design Business Object Definition/SalesHistorySoftCredit
+Shortcut, Default Root, $/CampaignManagement/DefaultSystem/ReportsView/Campaign Confirmation
+Shortcut, Default Root, $/CampaignManagement/DefaultSystem/ReportsView/Campaign Performance by Solicitation
+Shortcut, Default Root, $/CampaignManagement/DefaultSystem/ReportsView/Campaign Performance by Source Code
+Shortcut, Default Root, $/CampaignManagement/DefaultSystem/ReportsView/Campaign Purge
+Shortcut, Default Root, $/CampaignManagement/DefaultSystem/ReportsView/Campaign Stage
+Shortcut, Default Root, $/Common/Reports View/IQA Security Report
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Action Report
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Manager Action Report
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Manager Future Actions
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Manager Incomplete Stage Report
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Manager Overdue Actions
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Manager Process Forecast
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Manager Response Analysis
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Manager Won or Lost Process
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Process Forecast
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Process Profile
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Process with Future Actions
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Process with Incomplete Stage
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Process with Overdue Actions
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Processes by Salesperson
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Response Analysis
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Sales Person Action Report
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Sales Person Future Actions
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Sales Person Overdue Actions
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Sales Person Process Forecast
+Shortcut, Default Root, $/OpportunityManagement/DefaultSystem/ReportsView/Won or Lost Process
+Shortcut, Default Root, $/RFMAnalysis/DefaultSystem/ReportsView/RFM Analysis Preview Report
+Shortcut, Default Root, $/RFMAnalysis/DefaultSystem/ReportsView/RFM Profile
+Shortcut, Default Root, $/SegmentManagement/DefaultSystem/ReportsView/Segment Definition by Job
+Shortcut, Default Root, $/SegmentManagement/DefaultSystem/ReportsView/Segmentation Job
+Website Navigation Item, iMIS 15 UI, ~/Marketing/Campaign reports
+Website Navigation Item, Staff, ~/Continuum/Campaign_reports
+Website Navigation Item, Staff, ~/Continuum/Process_Manager_reports
+Website Navigation Item, Staff, ~/Continuum/RFM_reports
+Website Navigation Item, Staff, ~/Continuum/Segmentation_reports

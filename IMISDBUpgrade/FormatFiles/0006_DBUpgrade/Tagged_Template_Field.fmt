@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLNUMERIC          1       19      ""   1     TaggedTemplateID                     ""
+2       SQLNCHAR            2       100     ""   2     FieldName                            SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       50      ""   3     FieldDisplayName                     SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            0       2       ""   4     ActiveFlag                           SQL_Latin1_General_CP1_CI_AS

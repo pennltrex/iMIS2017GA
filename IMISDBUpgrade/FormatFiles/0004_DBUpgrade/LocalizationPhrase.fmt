@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLUNIQUEID         1       16      ""   1     LocalizationPhraseId                                   ""
+2       SQLINT              0       4       ""   2     LocalizationApplicationId                              ""
+3       SQLNCHAR            2       8000    ""   3     Phrase                                                 SQL_Latin1_General_CP1_CI_AS
+4       SQLBINARY           2       8000    ""   4     Hash                                                   ""
+5       SQLBIT              1       1       ""   5     DoNotLocalize                                          ""
+6       SQLNCHAR            2       600     ""   6     ControlType                                            SQL_Latin1_General_CP1_CI_AS

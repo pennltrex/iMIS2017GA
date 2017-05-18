@@ -1,0 +1,17 @@
+11.0
+15
+1       SQLNCHAR            2       20      ""   1     ID                             SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     SEQN                           ""
+3       SQLNCHAR            2       18      ""   3     Amount                         SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       8       ""   4     AssociationId                  SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       8       ""   5     Category                       SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       160     ""   6     Comment                        SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       12      ""   7     GroupCode                      SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       18      ""   8     MemberId                       SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       18      ""   9     Number                         SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       2       ""   10    PaymentCode                    SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       18      ""   11    PointOfEntry                   SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       8       ""   12    Status                         SQL_Latin1_General_CP1_CI_AS
+13      SQLDATETIME         1       8       ""   13    StatusDate                     ""
+14      SQLNCHAR            2       40      ""   14    NARTimestamp                   SQL_Latin1_General_CP1_CI_AS
+15      SQLBINARY           2       8       ""   15    TIME_STAMP                     ""

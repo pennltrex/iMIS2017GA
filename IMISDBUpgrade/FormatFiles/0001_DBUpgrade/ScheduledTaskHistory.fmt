@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLUNIQUEID         1       16      ""   1     ScheduledTaskHistoryKey                            ""
+2       SQLUNIQUEID         1       16      ""   2     ScheduledTaskKey                                   ""
+3       SQLDATETIME         0       8       ""   3     StartedOn                                          ""
+4       SQLDATETIME         1       8       ""   4     FinishedOn                                         ""
+5       SQLNCHAR            2       40      ""   5     CompletionStatus                                   SQL_Latin1_General_CP1_CI_AS
+6       SQLUNIQUEID         1       16      ""   6     WorkflowInstanceKey                                ""
+7       SQLNCHAR            4       0       ""   7     LogText                                            SQL_Latin1_General_CP1_CI_AS
+8       SQLDATETIME         1       8       ""   8     MarkedForDeleteOn                                  ""

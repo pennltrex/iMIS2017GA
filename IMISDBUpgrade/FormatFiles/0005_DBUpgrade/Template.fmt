@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLUNIQUEID         1       16      ""   1     TemplateKey                          ""
+2       SQLINT              1       4       ""   2     TemplateTypeCode                     ""
+3       SQLNCHAR            2       100     ""   3     TemplateName                         SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       400     ""   4     TemplateDesc                         SQL_Latin1_General_CP1_CI_AS
+5       SQLBIT              1       1       ""   5     IsSystem                             ""
+6       SQLNCHAR            8       0       ""   6     TemplateData                         SQL_Latin1_General_CP1_CI_AS

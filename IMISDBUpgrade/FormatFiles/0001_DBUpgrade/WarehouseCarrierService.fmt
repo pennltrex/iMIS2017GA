@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     WarehouseKey                           ""
+2       SQLUNIQUEID         1       16      ""   2     ShipCarrierKey                         ""
+3       SQLUNIQUEID         1       16      ""   3     ShipMethodKey                          ""
+4       SQLUNIQUEID         1       16      ""   4     CreatedByUserKey                       ""
+5       SQLDATETIME         0       8       ""   5     CreatedOn                              ""
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                      ""

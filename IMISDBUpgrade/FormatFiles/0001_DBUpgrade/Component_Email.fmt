@@ -1,0 +1,14 @@
+10.0
+12
+1       SQLNCHAR            0       4       ""   1     ComponentCode                              SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            0       4       ""   2     ComponentEmailCode                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       2       ""   3     EnabledFlag                                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            0       2       ""   4     CustomForClientFlag                        SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       4000    ""   5     ComponentEmailDesc                         SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       510     ""   6     EmailSubject                               SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       510     ""   7     FromEmailAddress                           SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       510     ""   8     CCEmailAddress                             SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       510     ""   9     BCCEmailAddress                            SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            4       0       ""   10    EmailText                                  SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       510     ""   11    DefaultEmailSubject                        SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            4       0       ""   12    DefaultEmailText                           SQL_Latin1_General_CP1_CI_AS

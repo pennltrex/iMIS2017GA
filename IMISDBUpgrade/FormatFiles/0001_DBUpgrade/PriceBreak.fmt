@@ -1,0 +1,14 @@
+10.0
+12
+1       SQLUNIQUEID         1       16      ""   1     PriceBreakKey                          ""
+2       SQLUNIQUEID         1       16      ""   2     PriceDetailKey                         ""
+3       SQLUNIQUEID         1       16      ""   3     UomKey                                 ""
+4       SQLINT              0       4       ""   4     PriceBasisCode                         ""
+5       SQLDECIMAL          1       19      ""   5     MinQuantity                            ""
+6       SQLDECIMAL          1       19      ""   6     UnitRate                               ""
+7       SQLBIT              1       1       ""   7     IsPercent                              ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                              ""
+9       SQLUNIQUEID         1       16      ""   9     CreatedByUserKey                       ""
+10      SQLDATETIME         0       8       ""   10    UpdatedOn                              ""
+11      SQLUNIQUEID         1       16      ""   11    UpdatedByUserKey                       ""
+12      SQLDATETIME         1       8       ""   12    MarkedForDeleteOn                      ""

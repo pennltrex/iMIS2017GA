@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLNCHAR            2       200     ""   1     RuleName                         SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            4       0       ""   2     RuleCode                         SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     IsDebugEnabled                   ""
+4       SQLNCHAR            2       500     ""   4     DebugFileName                    SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         0       8       ""   5     CreatedOn                        ""

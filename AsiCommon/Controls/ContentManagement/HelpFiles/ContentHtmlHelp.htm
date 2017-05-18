@@ -1,0 +1,27 @@
+<html>
+<body>
+    <h1>Content Html</h1>
+    <p>Inserts simple content: HTML content, such as the body of a blog post or a newsletter.</p>
+    <ul>
+        <li>
+            <strong>Name</strong> - Enter a name for the content item.
+            This text appears during design mode (configuration).
+        </li>
+        <li>
+            <strong>Display a border around this content</strong> - Select this option to display a border
+            around this iPart on the rendered page.
+        </li>
+
+    </ul>
+    <h2>Creating relative paths using variables</h2>
+    <p>The Content Html content item does not support the use of the <b>~/</b> (tilde slash) shortcut,
+        often used to automatically build the correct paths when a control is rendered in different domains. The following variables allow you to enter paths for links and resources that are automatically resolved to various folders in your website.</p>
+    <ul>
+        <li><b>[Website]</b> and <b>[@]</b> – Both variables resolve to the root of the website and contain the website name. For example, <b>[Website]Home.aspx</b> resolves to <b>http://mydomain/Staff/Home.aspx</b>.</li>
+        <li><b>[~]</b> and <b>[Root]</b> – Both variables resolve to the root of the website. For example, <b>[~]Home.aspx</b> resolves to <b>http://mydomain/Home.aspx</b>.</li>       
+        <li><b>[Common]</b> – Resolves to the <b>AsiCommon</b> directory of the website. For example, <b>[Common]images/image.png</b> resolves to <b>http://mydomain/AsiCommon/images/image.png</b>.</li>
+        <li><b>[iMIS]</b> – Resolves to the <b>iMIS</b> directory of the website. For example, <b>[iMIS]images/image.png</b> resolves to <b>http://mydomain/iMIS/images/image.png</b>.</li>
+        <li><b>[Theme]</b> – Resolves to the website’s theme folder. For example, <b>[Theme]images/image.png</b> might resolve to <b>http://mydomain/App_Themes/Orion/images/image.png</b>. This variable can be used to access theme resources such as images and CSS.</li>
+    </ul>
+</body>
+</html>

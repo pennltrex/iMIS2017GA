@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLUNIQUEID         1       16      ""   1     InventoryTransactionLogCostKey                                   ""
+2       SQLUNIQUEID         1       16      ""   2     InventoryTransactionLogKey                                       ""
+3       SQLUNIQUEID         1       16      ""   3     ProductKey                                                       ""
+4       SQLDECIMAL          1       19      ""   4     Quantity                                                         ""
+5       SQLDECIMAL          1       19      ""   5     TotalCost                                                        ""
+6       SQLDECIMAL          1       19      ""   6     QuantityReturned                                                 ""
+7       SQLINT              0       4       ""   7     SortOrder                                                        ""
+8       SQLINT              0       4       ""   8     CostMethodCode                                                   ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                                                ""

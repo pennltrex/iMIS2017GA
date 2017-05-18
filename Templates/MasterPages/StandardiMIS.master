@@ -1,0 +1,94 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.UI.MasterPage" %>
+<%@ Register Src="~/AsiCommon/Controls/ContentManagement/HeaderScript.ascx" TagName="HeaderScript" TagPrefix="uc1" %>
+<%@ Register Src="~/AsiCommon/Controls/ContentManagement/UserMessageDisplay.ascx" TagName="MessageDisplay" TagPrefix="uc2" %>
+<%@ Register Src="~/AsiCommon/Controls/Navigation/PageSubNav.ascx" TagPrefix="asinav" TagName="PageSubNav" %>
+<%@ Register Src="~/AsiCommon/Controls/Navigation/PageNav.ascx" TagPrefix="asinav" TagName="PageNav" %>
+<%@ Register TagPrefix="telerik" Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" %>
+
+<script language="C#" runat="server">
+    private void Page_Load(object sender, System.EventArgs e)
+    {
+        Guid hierarchyKey;
+        if (Request.QueryString["hkey"] != null)
+            hierarchyKey = new Guid(Request.QueryString["hkey"]);
+        else
+            hierarchyKey = Asi.AppContext.CurrentContext.HKey;
+        string tildeExpansion = Asi.Web.Utilities.GetTildeExpansion();
+        ScriptManager1.Scripts.Add(new ScriptReference(tildeExpansion + "/AsiCommon/Scripts/Asi.js"));
+    }
+
+    override protected void OnInit(EventArgs e)
+    {
+        this.Load += new System.EventHandler(this.Page_Load);
+        base.OnInit(e);
+        this.ButtonBar.CommandButtonClick += new Asi.Web.UI.CommandButtonEventHandler(this.ButtonBar_CommandButtonClick);
+    }
+
+    private void ButtonBar_CommandButtonClick(object sender, Asi.Web.UI.CommandButtonEventArgs e)
+    {
+        if (Page is Asi.Web.UI.DisplayPageBase)
+        {
+            ((Asi.Web.UI.DisplayPageBase)Page).HandleCommandButtonClick(sender, e.ButtonType);
+        }
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>iMIS</title>
+    <uc1:HeaderScript ID="HeaderScript" runat="server" />
+</head>
+<body class="TemplateBody">
+<form id="template" method="post" runat="server" style="width:100%; height:100%;">
+    <telerik:RadScriptManager ID="ScriptManager1" runat="server" EnableCdn="false" EnablePageMethods="true" EnablePartialRendering="true" EnableScriptGlobalization="true" AsyncPostBackTimeout="3600"></telerik:RadScriptManager>
+    <div id="waitDiv" style="position: absolute; z-index: 1000; display: none; background-color: White;
+        border: solid 1px black;">
+        <asp:Image ID="WaitImg" runat="server" ImageUrl="~/images/imagelibrary/wait_ani.gif"
+            Visible="true" />
+    </div>
+    <div id="pagehead">
+        <div id="logo"><asp:Image ID="TopRightLogoImage" runat="server" SkinID="TopRightLogo" style="position: absolute; right: 0px" /></div>
+    </div>
+    <div id="pagenav">
+        <span style="vertical-align:top;"><asiweb:StyledButton style="border:solid 1 green" id="HomeLink" runat="server" SkinID="TopHomeLink" NavigateFromNavigationPath="&NavigationCode=Home" AutoPostBack="false" /><asiweb:StyledButton id="PrintLink" runat="server" SkinID="TopPrintLink" OnClientClick="printWindow();" AutoPostBack="false" /><asiweb:StyledButton id="EmailLink" runat="server" SkinID="TopEmailLink" OnClientClick="emailWindow();" AutoPostBack="false" /><asiweb:StyledButton id="InfoLink" runat="server" SkinID="TopInfoLink" OnClientClick="showInfoCenter();" AutoPostBack="false" /><asiweb:StyledButton id="HelpLink" runat="server" SkinID="TopHelpLink" OnClientClick="showHelp();" AutoPostBack="false" /><asiweb:StyledButton id="PainterLink" runat="server" SkinID="TopPaintLink" OnClientClick="showHideBrush();" AutoPostBack="false" /></span><asp:Image ID="Image1" runat="server" SkinID="TopDiagonalImage" />
+        <div style="position: absolute; right:0px; z-index: 999;">
+            <asinav:PageNav NavMenuSkinID="HorizontalImages" ID="TopNavControl" runat="server" NodeClientMouseOver="nodeMouseOver" NodeClientMouseOut="nodeMouseOut" MaximumDynamicDisplayLevels="3" SelectDefaultNode="false" ShowScrollButtons="false" StartFromCurrentNode="true" StartingNodeOffset="-1" SiteMapProvider="AsiSiteMapProvider" />
+        </div>
+    </div>
+    <div id="pagesubnav">
+        <asinav:PageSubNav ID="LeftNav" runat="server" SelectDefaultNode="false" SiteMapProvider="AsiSiteMapProvider" StartFromCurrentNode="true" StartingNodeOffset="0" />
+    </div>
+    <div style="width:100%; height:100%;">
+        <div>
+            <table cellpadding="0" cellspacing="0" border="0" style="width: 100%" id="pagetitle_table">
+                <tr>
+                    <td width="100%">
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td id="pagetitle" style="white-space: nowrap">
+                                   <%= Page.Title %>
+                                </td>
+                                <td id="pagetitleright">
+                                    <%=Asi.AppContext.HtmlEncode(Asi.AppContext.CurrentContext.SubjectName, false) %>
+                                    &nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td style="white-space: nowrap">
+                        &nbsp;<asiweb:commandbuttonbar id="ButtonBar" runat="server" /></td>
+                </tr>
+            </table>
+        </div>
+        <div id="content">
+            <uc2:MessageDisplay ID="MessageDisplay" runat="server" />
+            <asp:ContentPlaceHolder ID="TemplateBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+</form>
+    
+        <!--jscript from Page.ResgisterStartupScript extention is loaded here -->
+        <asp:contentplaceholder id ="TemplateScripts" runat="server"></asp:contentplaceholder>	    
+        
+</body>
+</html>

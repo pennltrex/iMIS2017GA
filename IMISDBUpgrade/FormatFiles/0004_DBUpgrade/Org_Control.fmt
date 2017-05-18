@@ -1,0 +1,33 @@
+11.0
+31
+1       SQLNCHAR            2       10      ""   1     OrgCode                                                          SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       120     ""   2     OrgName                                                          SQL_Latin1_General_CP1_CI_AS
+3       SQLIMAGE            4       0       ""   3     Logo                                                             ""
+4       SQLNCHAR            2       510     ""   4     InvoiceAddress                                                   SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       510     ""   5     LetterheadAddress                                                SQL_Latin1_General_CP1_CI_AS
+6       SQLTINYINT          0       1       ""   6     DefaultFlag                                                      ""
+7       SQLTINYINT          0       1       ""   7     IsFund                                                           ""
+8       SQLNCHAR            2       100     ""   8     DefaultCashAccount                                               SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       100     ""   9     DefaultArAccount                                                 SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       100     ""   10    FinanceAccount                                                   SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       100     ""   11    DiscountAccount                                                  SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       100     ""   12    DefaultTaxAccount                                                SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       100     ""   13    DefaultIncomeAccount                                             SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       100     ""   14    RefundClearingAccount                                            SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       100     ""   15    DefaultFreightAccount                                            SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       100     ""   16    DefaultHandlingAccount                                           SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       100     ""   17    DefaultCancellationAccount                                       SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       100     ""   18    RefundApAccount                                                  SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       40      ""   19    TaxAuthority                                                     SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            2       30      ""   20    GSTRemitNumber                                                   SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       100     ""   21    DefaultPrepaidOrderAccount                                       SQL_Latin1_General_CP1_CI_AS
+22      SQLNCHAR            2       100     ""   22    DefaultTransferClearingAccount                                   SQL_Latin1_General_CP1_CI_AS
+23      SQLNCHAR            2       100     ""   23    DefaultWriteOffOffsetAccount                                     SQL_Latin1_General_CP1_CI_AS
+24      SQLNCHAR            2       40      ""   24    VATRegNumber                                                     SQL_Latin1_General_CP1_CI_AS
+25      SQLNCHAR            2       4       ""   25    VATCountry                                                       SQL_Latin1_General_CP1_CI_AS
+26      SQLNCHAR            2       6       ""   26    VATBranchID                                                      SQL_Latin1_General_CP1_CI_AS
+27      SQLNCHAR            2       40      ""   27    CoVATRegNumber                                                   SQL_Latin1_General_CP1_CI_AS
+28      SQLBIT              1       1       ""   28    UseVATTaxation                                                   ""
+29      SQLBIT              1       1       ""   29    UseCanadianTaxation                                              ""
+30      SQLNCHAR            2       50      ""   30    Registration_Num                                                 SQL_Latin1_General_CP1_CI_AS
+31      SQLBINARY           2       8       ""   31    TIME_STAMP                                                       ""

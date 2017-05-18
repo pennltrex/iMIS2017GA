@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     ContactEducationKey                        ""
+2       SQLUNIQUEID         1       16      ""   2     ContactKey                                 ""
+3       SQLNCHAR            2       20      ""   3     EducationLevelCode                         SQL_Latin1_General_CP1_CI_AS
+4       SQLDECIMAL          1       19      ""   4     StartYear                                  ""
+5       SQLNCHAR            2       100     ""   5     Specialty                                  SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       200     ""   6     School                                     SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         0       8       ""   7     UpdatedOn                                  ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                           ""
+9       SQLDECIMAL          1       19      ""   9     EndYear                                    ""
+10      SQLDATETIME         1       8       ""   10    MarkedForDeleteOn                          ""

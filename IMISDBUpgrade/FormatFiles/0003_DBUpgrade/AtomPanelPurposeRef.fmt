@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLSMALLINT         0       2       ""   1     AtomPanelPurposeCode                         ""
+2       SQLNCHAR            2       100     ""   2     AtomPanelPurposeDesc                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     AtomPanelPurposeName                         SQL_Latin1_General_CP1_CI_AS

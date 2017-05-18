@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLNCHAR            2       20      ""   1     RegistrantID                 SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       30      ""   2     EventCode                    SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     QuestionID                   ""
+4       SQLNCHAR            2       1024    ""   4     Answer                       SQL_Latin1_General_CP1_CI_AS

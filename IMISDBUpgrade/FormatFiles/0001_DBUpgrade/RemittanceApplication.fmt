@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLUNIQUEID         1       16      ""   1     RemittanceApplicationKey                             ""
+2       SQLUNIQUEID         1       16      ""   2     InvoiceKey                                           ""
+3       SQLUNIQUEID         1       16      ""   3     InvoiceLineKey                                       ""
+4       SQLDECIMAL          1       19      ""   4     Amount                                               ""
+5       SQLUNIQUEID         1       16      ""   5     RemittanceKey                                        ""
+6       SQLUNIQUEID         1       16      ""   6     OrderKey                                             ""
+7       SQLNCHAR            2       100     ""   7     OrderNumber                                          SQL_Latin1_General_CP1_CI_AS
+8       SQLINT              1       4       ""   8     OrderLineNumber                                      ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                                    ""

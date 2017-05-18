@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLUNIQUEID         1       16      ""   1     AsyncStatusMonitorKey                          ""
+2       SQLUNIQUEID         1       16      ""   2     ComponentKey                                   ""
+3       SQLUNIQUEID         1       16      ""   3     BusinessItemKey                                ""
+4       SQLUNIQUEID         1       16      ""   4     WorkflowQueueItemKey                           ""
+5       SQLDATETIME         0       8       ""   5     CreatedOn                                      ""

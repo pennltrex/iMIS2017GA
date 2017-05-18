@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLUNIQUEID         1       16      ""   1     ContactTypeKey                     ""
+2       SQLNCHAR            2       100     ""   2     ContactTypeDesc                    SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     GroupTypeKey                       ""
+4       SQLBIT              1       1       ""   4     IsInstitute                        ""

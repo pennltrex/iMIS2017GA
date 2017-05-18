@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLINT              0       4       ""   1     DonationPremiumSetProductID                                                  ""
+2       SQLINT              0       4       ""   2     DonationPremiumSetID                                                         ""
+3       SQLNCHAR            2       62      ""   3     DonationPremiumSetPremiumProductCode                                         SQL_Latin1_General_CP1_CI_AS

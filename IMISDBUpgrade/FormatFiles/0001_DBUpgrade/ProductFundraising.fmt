@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     ProductKey                         ""
+2       SQLUNIQUEID         1       16      ""   2     FundKey                            ""
+3       SQLDECIMAL          1       19      ""   3     MinimumAmount                      ""
+4       SQLDECIMAL          1       19      ""   4     MaximumAmount                      ""
+5       SQLDECIMAL          1       19      ""   5     SuggestedAmount                    ""

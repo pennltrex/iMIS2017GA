@@ -1,0 +1,23 @@
+11.0
+21
+1       SQLUNIQUEID         1       16      ""   1     PropertyDefinitionKey                                                ""
+2       SQLNCHAR            2       510     ""   2     Label                                                                SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     DataTypeCode                                                         ""
+4       SQLINT              1       4       ""   4     MaxLength                                                            ""
+5       SQLINT              1       4       ""   5     Scale                                                                ""
+6       SQLINT              0       4       ""   6     HIControlTypeCode                                                    ""
+7       SQLINT              1       4       ""   7     HIControlHeight                                                      ""
+8       SQLINT              1       4       ""   8     HIControlWidth                                                       ""
+9       SQLNCHAR            2       200     ""   9     DisplayMask                                                          SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            4       0       ""   10    ValueList                                                            SQL_Latin1_General_CP1_CI_AS
+11      SQLUNIQUEID         1       16      ""   11    ValueListQueryDocumentVersionKey                                     ""
+12      SQLNCHAR            2       4096    ""   12    ValueListQueryFolder                                                 SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       256     ""   13    ValueListQueryDisplayColumn                                          SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       256     ""   14    ValueListQueryPersistColumn                                          SQL_Latin1_General_CP1_CI_AS
+15      SQLINT              1       4       ""   15    HIControlRepeatColumns                                               ""
+16      SQLINT              1       4       ""   16    HIControlRepeatDirection                                             ""
+17      SQLBIT              1       1       ""   17    AllowMultiSelectFlag                                                 ""
+18      SQLBIT              1       1       ""   18    IsRequired                                                           ""
+19      SQLUNIQUEID         1       16      ""   19    ForeignObjectDocumentVersionKey                                      ""
+20      SQLNCHAR            2       200     ""   20    DefaultValue                                                         SQL_Latin1_General_CP1_CI_AS
+21      SQLBIT              1       1       ""   21    UseFinder                                                            ""

@@ -1,0 +1,22 @@
+10.0
+20
+1       SQLUNIQUEID         1       16      ""   1     SegmentationJobKey                                     ""
+2       SQLNCHAR            2       200     ""   2     MemberObjectType                                       SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     SegmentationJobStatusCode                              ""
+4       SQLNCHAR            2       100     ""   4     Name                                                   SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       1000    ""   5     Description                                            SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         1       8       ""   6     InactiveDate                                           ""
+7       SQLUNIQUEID         1       16      ""   7     SupersetQueryDocumentKey                               ""
+8       SQLBIT              1       1       ""   8     UseNSelectFlag                                         ""
+9       SQLINT              0       4       ""   9     NSelectSegments                                        ""
+10      SQLINT              0       4       ""   10    NSelectSegmentElements                                 ""
+11      SQLUNIQUEID         1       16      ""   11    LastListCreatedByUserKey                               ""
+12      SQLDATETIME         1       8       ""   12    LastListCreatedOn                                      ""
+13      SQLBIT              1       1       ""   13    IsExecutionEnabled                                     ""
+14      SQLUNIQUEID         1       16      ""   14    UpdatedByUserKey                                       ""
+15      SQLDATETIME         0       8       ""   15    UpdatedOn                                              ""
+16      SQLUNIQUEID         1       16      ""   16    CreatedByUserKey                                       ""
+17      SQLDATETIME         0       8       ""   17    CreatedOn                                              ""
+18      SQLDATETIME         1       8       ""   18    MarkedForDeleteOn                                      ""
+19      SQLUNIQUEID         1       16      ""   19    AccessKey                                              ""
+20      SQLUNIQUEID         1       16      ""   20    SystemEntityKey                                        ""

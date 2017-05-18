@@ -1,0 +1,98 @@
+<%@ Master Language="C#" Inherits="Asi.Web.UI.MasterPageBase" %>
+<%@ Import Namespace="System.Globalization" %>
+<%@ Import Namespace="System.IO" %>
+<%@ Import Namespace="System.Web.Configuration" %>
+
+<%@ Register Src="~/AsiCommon/Controls/ContentManagement/HeaderScript.ascx" TagName="HeaderScript" TagPrefix="uc1" %>
+<%@ Register TagPrefix="telerik" Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" %>
+
+<script runat="server">
+    protected override void OnLoad(EventArgs e)
+    {
+        base.OnLoad(e);
+        DisableContextMenu.Text = Asi.SystemConfig.GetString("Browser.DisableContextMenu");
+        
+        string scriptPathJquery;
+        string scriptPathJqueryMigrate;
+        if (ScriptManager1.IsDebuggingEnabled)
+        {
+            scriptPathJquery = !string.IsNullOrEmpty(ConfigurationManager.AppSettings["jQueryURLDebug"])
+                                ? ConfigurationManager.AppSettings["jQueryURLDebug"]
+                                : Asi.Web.Utilities.GetTildeExpansion() + "/AsiCommon/Scripts/Jquery/Jquery.js";
+            scriptPathJqueryMigrate = !string.IsNullOrEmpty(ConfigurationManager.AppSettings["jQueryURLDebug"])
+                                ? ConfigurationManager.AppSettings["jQueryURLDebug"]
+                                : Asi.Web.Utilities.GetTildeExpansion() +"/AsiCommon/Scripts/Jquery/jquery-migrate-1.4.1.js";
+        }
+        else
+        {
+            scriptPathJquery = !string.IsNullOrEmpty(ConfigurationManager.AppSettings["jQueryURLRelease"])
+                                ? ConfigurationManager.AppSettings["jQueryURLRelease"]
+                                : Asi.Web.Utilities.GetTildeExpansion() + "/AsiCommon/Scripts/Jquery/Jquery.min.js";
+            scriptPathJqueryMigrate = !string.IsNullOrEmpty(ConfigurationManager.AppSettings["jQueryURLRelease"])
+                                ? ConfigurationManager.AppSettings["jQueryURLRelease"]
+                                : Asi.Web.Utilities.GetTildeExpansion() + "/AsiCommon/Scripts/Jquery/jquery-migrate-1.4.1.min.js";
+        }
+        
+        ScriptManager1.Scripts.Add(new ScriptReference(scriptPathJquery));
+        ScriptManager1.Scripts.Add(new ScriptReference(scriptPathJqueryMigrate));
+        ScriptManager1.Scripts.Add(new ScriptReference(Asi.Web.Utilities.GetTildeExpansion() + "/AsiCommon/Scripts/Jquery/jquery-ui.custom.min.js"));
+        ScriptManager1.Scripts.Add(new ScriptReference(Asi.Web.Utilities.GetTildeExpansion() + "/AsiCommon/scripts/Asi.js"));
+        ScriptManager1.Scripts.Add(new ScriptReference(Asi.Web.Utilities.GetTildeExpansion() + "/framework/nav.js"));        
+    
+        
+        
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" id="frameworkMaster">
+<head id="Head1" runat="server">
+    <title>iMIS</title>
+    <script language="javascript" type="text/javascript">
+        function DisableDrag(evt) 
+        {
+            document.body.ondrag = function () { return false; };
+            document.body.onselectstart = function () { return false; };
+        }
+        function DisableContextMenu(evt)
+        {
+            return <asp:Literal id="DisableContextMenu" runat="server" />
+            }
+	
+
+        if (window.addEventListener)
+        {
+            window.addEventListener("onload", DisableDrag, false);
+            window.addEventListener("oncontextmenu", DisableContextMenu, false);
+        } 
+        else if (window.attachEvent) // For IE versions prior to 9.
+        {
+            window.attachEvent("onload", DisableDrag);
+            window.attachEvent("oncontextmenu", DisableContextMenu);
+        }
+	
+    </script>
+    <asp:ContentPlaceHolder ID="TemplateHead" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body id="mainBody" onkeydown="if (event.keyCode==116){window.event.keyCode = 505;}" on_keypress="try{ shortcut(); }catch(e){};" on_click="try{ shortcutCancel(); }catch(e){}" onselectstart="return false">
+    <form id="TemplateForm" runat="server">
+        <telerik:RadScriptManager ID="ScriptManager1" runat="server" EnablePageMethods="true" EnablePartialRendering="true" EnableScriptGlobalization="true" AsyncPostBackTimeout="3600" EnableScriptCombine="false"></telerik:RadScriptManager>
+        <input type="hidden" name="ActiveLink" id="ActiveLink" value="" />
+        <input type="hidden" name="ActiveLink2" id="ActiveLink2" value="" />
+        <input type="hidden" name="NavState" id="NavState" value="enabled" onchange="ChangeNavState()" />
+        <div id="doc3" class="yui-t7" style="height: 100%;">
+            <div id="bd" style="height: 100%;">
+                <div class="yui-g">
+                    <asp:ContentPlaceHolder ID="TemplateUserMessages" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="TemplateBody" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="TemplateLoadingPanel" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder ID="TemplateButtonBar" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <!--jscript from Page.ResgisterStartupScript extention is loaded here -->
+    <asp:ContentPlaceHolder ID="TemplateScripts" runat="server"></asp:ContentPlaceHolder>
+
+</body>
+</html>

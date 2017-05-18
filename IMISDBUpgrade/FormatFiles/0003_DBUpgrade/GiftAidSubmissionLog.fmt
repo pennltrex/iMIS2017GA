@@ -1,0 +1,13 @@
+10.0
+11
+1       SQLINT              0       4       ""   1     GALogID                            ""
+2       SQLDATETIME         1       8       ""   2     SubmittedOn                        ""
+3       SQLNCHAR            2       100     ""   3     ClaimRef                           SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     CorrelationId                      SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     Status                             SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       100     ""   6     StatusTimeStamp                    SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       500     ""   7     ClaimFile                          SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            8       0       ""   8     ResponseText                       SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            8       0       ""   9     ErrorText                          SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            8       0       ""   10    ResponseDetails                    ""
+11      SQLNCHAR            8       0       ""   11    FileDetails                        ""

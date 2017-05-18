@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ProratingScheduleCreatorConfigEdit.ascx.cs" Inherits="Asi.Web.iParts.Commerce.ProratingScheduleCreator.ProratingScheduleCreatorConfigEdit" %>
+ 

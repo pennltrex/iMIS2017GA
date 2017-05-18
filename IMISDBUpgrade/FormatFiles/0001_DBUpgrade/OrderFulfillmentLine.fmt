@@ -1,0 +1,17 @@
+10.0
+15
+1       SQLUNIQUEID         1       16      ""   1     OrderFulfillmentLineKey                                  ""
+2       SQLUNIQUEID         1       16      ""   2     OrderLineKey                                             ""
+3       SQLDECIMAL          1       19      ""   3     Quantity                                                 ""
+4       SQLNCHAR            2       100     ""   4     BinNumber                                                SQL_Latin1_General_CP1_CI_AS
+5       SQLUNIQUEID         1       16      ""   5     InventoryCommitmentKey                                   ""
+6       SQLINT              0       4       ""   6     OrderFulfillmentStatusCode                               ""
+7       SQLUNIQUEID         1       16      ""   7     WarehouseKey                                             ""
+8       SQLDATETIME         1       8       ""   8     DateFulfilled                                            ""
+9       SQLUNIQUEID         1       16      ""   9     UpdatedByUserKey                                         ""
+10      SQLDATETIME         0       8       ""   10    UpdatedOn                                                ""
+11      SQLUNIQUEID         1       16      ""   11    CreatedByUserKey                                         ""
+12      SQLDATETIME         0       8       ""   12    CreatedOn                                                ""
+13      SQLNCHAR            2       100     ""   13    InvoiceNumber                                            SQL_Latin1_General_CP1_CI_AS
+14      SQLDECIMAL          1       19      ""   14    ExtendedCost                                             ""
+15      SQLDATETIME         1       8       ""   15    MarkedForDeleteOn                                        ""

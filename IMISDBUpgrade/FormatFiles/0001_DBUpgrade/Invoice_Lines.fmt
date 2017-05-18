@@ -1,0 +1,23 @@
+10.0
+21
+1       SQLINT              0       4       ""   1     REFERENCE_NUM                          ""
+2       SQLINT              0       4       ""   2     LINE_NUM                               ""
+3       SQLNCHAR            2       20      ""   3     ST_ID                                  SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       62      ""   4     PRODUCT_CODE                           SQL_Latin1_General_CP1_CI_AS
+5       SQLMONEY            0       8       ""   5     CHARGES                                ""
+6       SQLDATETIME         1       8       ""   6     BILL_FROM                              ""
+7       SQLDATETIME         1       8       ""   7     BILL_THRU                              ""
+8       SQLINT              0       4       ""   8     BILL_QTY                               ""
+9       SQLMONEY            0       8       ""   9     CREDITS                                ""
+10      SQLDATETIME         1       8       ""   10    PAID_FROM                              ""
+11      SQLDATETIME         1       8       ""   11    PAID_THRU                              ""
+12      SQLNUMERIC          1       19      ""   12    PAID_QTY                               ""
+13      SQLMONEY            0       8       ""   13    BALANCE                                ""
+14      SQLNCHAR            2       10      ""   14    ORG_CODE                               SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       100     ""   15    AR_ACCOUNT                             SQL_Latin1_General_CP1_CI_AS
+16      SQLMONEY            0       8       ""   16    ADJUSTMENTS                            ""
+17      SQLBIT              1       1       ""   17    IS_FR_ITEM                             ""
+18      SQLNCHAR            2       20      ""   18    CAMPAIGN_CODE                          SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       80      ""   19    APPEAL_CODE                            SQL_Latin1_General_CP1_CI_AS
+20      SQLNUMERIC          1       19      ""   20    FAIR_MARKET_VALUE                      ""
+21      SQLBINARY           2       8       ""   21    TIME_STAMP                             ""

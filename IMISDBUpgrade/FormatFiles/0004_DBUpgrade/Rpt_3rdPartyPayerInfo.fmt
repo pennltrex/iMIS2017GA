@@ -1,0 +1,14 @@
+11.0
+12
+1       SQLNCHAR            2       20      ""   1     BT_ID                                  SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       120     ""   2     PAYER_NAME                             SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     TRANS_NUMBER                           ""
+4       SQLNCHAR            2       80      ""   4     APPEAL_CODE                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       20      ""   5     CAMPAIGN_CODE                          SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         1       8       ""   6     PLEDGE_DATE                            ""
+7       SQLDATETIME         1       8       ""   7     PAYMENT_DATE                           ""
+8       SQLNUMERIC          1       19      ""   8     PAYMENT_AMOUNT                         ""
+9       SQLNUMERIC          1       19      ""   9     REMAINING_BALANCE                      ""
+10      SQLNCHAR            2       100     ""   10    UserID_Date                            SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       20      ""   11    ORG_CODE                               SQL_Latin1_General_CP1_CI_AS
+12      SQLBINARY           2       8       ""   12    TIME_STAMP                             ""

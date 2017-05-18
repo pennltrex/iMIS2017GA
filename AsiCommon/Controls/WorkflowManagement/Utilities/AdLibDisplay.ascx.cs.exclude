@@ -1,0 +1,59 @@
+namespace Asi.Web.UI.Common.WorkflowManagement.Utilities
+{
+	using Asi;
+	using Asi.Atom;
+	using Asi.Business;
+	using Asi.WorkflowManagement.Utilities;
+	using System;
+	using System.Data;
+	using System.Drawing;
+	using System.Web;
+	using System.Web.UI.WebControls;
+	using System.Web.UI.HtmlControls;
+
+	/// <summary>
+	///		Summary description for AdLibDisplay.
+	/// </summary>
+	public partial class AdLibDisplay : Asi.Web.UI.AtomPanelBase
+	{
+
+		private void LoadData()
+		{
+			AdLib ad = Atom as AdLib;
+			if(ad != null)
+			{
+				StoryLabel.Text = ad.Story;
+				NameLabel.Text = ad.YourName;
+				EmailLabel.Text = ad.YourEmail;
+			}
+		}
+	
+		protected void Page_Load(object sender, System.EventArgs e)
+		{
+			if(! IsControlPostBack)
+			{
+				LoadData();
+			}
+		}
+
+		#region Web Form Designer generated code
+		override protected void OnInit(EventArgs e)
+		{
+			//
+			// CODEGEN: This call is required by the ASP.NET Web Form Designer.
+			//
+			InitializeComponent();
+			base.OnInit(e);
+		}
+		
+		/// <summary>
+		///		Required method for Designer support - do not modify
+		///		the contents of this method with the code editor.
+		/// </summary>
+		private void InitializeComponent()
+		{
+
+		}
+		#endregion
+	}
+}

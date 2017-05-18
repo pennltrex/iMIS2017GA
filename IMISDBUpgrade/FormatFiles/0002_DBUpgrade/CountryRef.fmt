@@ -1,0 +1,17 @@
+10.0
+15
+1       SQLNCHAR            2       4       ""   1     CountryCode                                    SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     CountryName                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     AddressFormatKey                               ""
+4       SQLNCHAR            2       4       ""   4     VATCountryCode                                 SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       4       ""   5     IntraStateCode                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLBIT              1       1       ""   6     IsActive                                       ""
+7       SQLBIT              1       1       ""   7     IsHandModified                                 ""
+8       SQLNCHAR            2       20      ""   8     MailGroup                                      SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       40      ""   9     DefaultShippingMethod                          SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       100     ""   10    SyncCountryName                                SQL_Latin1_General_CP1_CI_AS
+11      SQLUNIQUEID         1       16      ""   11    ChapterGroupKey                                ""
+12      SQLNCHAR            2       6       ""   12    ISO3DigitCode                                  SQL_Latin1_General_CP1_CI_AS
+13      SQLDATETIME         0       8       ""   13    UpdatedOn                                      ""
+14      SQLUNIQUEID         1       16      ""   14    UpdatedByUserKey                               ""
+15      SQLUNIQUEID         1       16      ""   15    CountryKey                                     ""

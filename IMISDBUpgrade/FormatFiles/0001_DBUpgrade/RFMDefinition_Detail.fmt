@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLUNIQUEID         1       16      ""   1     RFMKey             ""
+2       SQLNCHAR            0       20      ""   2     Type               SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     Ranking            SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       40      ""   4     Value              SQL_Latin1_General_CP1_CI_AS

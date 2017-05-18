@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLINT              0       4       ""   1     CartOrderID                      ""
+2       SQLINT              0       4       ""   2     CartItemID                       ""
+3       SQLINT              0       4       ""   3     Quantity                         ""
+4       SQLMONEY            0       8       ""   4     Price                            ""
+5       SQLNCHAR            2       120     ""   5     Title                            SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       62      ""   6     ProductCode                      SQL_Latin1_General_CP1_CI_AS
+7       SQLINT              0       4       ""   7     OrderProductID                   ""

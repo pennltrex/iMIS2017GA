@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLNUMERIC          1       19      ""   1     TaggedSectionID                          ""
+2       SQLNUMERIC          1       19      ""   2     TaggedPageFormatID                       ""
+3       SQLNCHAR            0       4       ""   3     TaggedSectionCode                        SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     TaggedSectionName                        SQL_Latin1_General_CP1_CI_AS

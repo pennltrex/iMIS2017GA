@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLNCHAR            2       200     ""   1     WebUserControlName                           SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       510     ""   2     WebUserControlPath                           SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     ParameterControlPath                         SQL_Latin1_General_CP1_CI_AS

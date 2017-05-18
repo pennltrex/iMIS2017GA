@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLINT              0       4       ""   1     SEQN                       ""
+2       SQLNCHAR            2       20      ""   2     ID                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNUMERIC          1       19      ""   3     FROM_AMOUNT                ""
+4       SQLNUMERIC          1       19      ""   4     TO_AMOUNT                  ""
+5       SQLDATETIME         1       8       ""   5     FROM_DATE                  ""
+6       SQLDATETIME         1       8       ""   6     TO_DATE                    ""
+7       SQLNUMERIC          1       19      ""   7     PERCENTAGE                 ""
+8       SQLNCHAR            2       80      ""   8     FORM_NUMBER                SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       510     ""   9     NOTES                      SQL_Latin1_General_CP1_CI_AS
+10      SQLBINARY           2       8       ""   10    TIME_STAMP                 ""

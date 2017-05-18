@@ -1,0 +1,10 @@
+11.0
+8
+1       SQLUNIQUEID         1       16      ""   1     MemorialTributeKey                                     ""
+2       SQLUNIQUEID         1       16      ""   2     FRProductKey                                           ""
+3       SQLUNIQUEID         1       16      ""   3     NotificationGroupKey                                   ""
+4       SQLUNIQUEID         1       16      ""   4     MemorialTributeCodeKey                                 ""
+5       SQLNCHAR            2       400     ""   5     Description                                            SQL_Latin1_General_CP1_CI_AS
+6       SQLBIT              1       1       ""   6     UseDefaultDescriptionFlag                              ""
+7       SQLUNIQUEID         1       16      ""   7     HonoreeContactKey                                      ""
+8       SQLDATETIME         1       8       ""   8     MarkedForDeleteOn                                      ""

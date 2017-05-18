@@ -1,0 +1,19 @@
+10.0
+17
+1       SQLUNIQUEID         1       16      ""   1     MonetaryApplicationKey                           ""
+2       SQLDECIMAL          1       19      ""   2     Amount                                           ""
+3       SQLUNIQUEID         1       16      ""   3     SrcPaymentKey                                    ""
+4       SQLUNIQUEID         1       16      ""   4     InvoiceKey                                       ""
+5       SQLUNIQUEID         1       16      ""   5     InvoiceLineKey                                   ""
+6       SQLUNIQUEID         1       16      ""   6     InvoiceDistributionKey                           ""
+7       SQLUNIQUEID         1       16      ""   7     SrcInvoiceLineKey                                ""
+8       SQLUNIQUEID         1       16      ""   8     PaymentScheduleLineKey                           ""
+9       SQLNCHAR            2       100     ""   9     InvoiceNumber                                    SQL_Latin1_General_CP1_CI_AS
+10      SQLDECIMAL          1       19      ""   10    DiscountTaken                                    ""
+11      SQLDECIMAL          1       19      ""   11    CurrencyVariance                                 ""
+12      SQLNCHAR            2       100     ""   12    OrderNumber                                      SQL_Latin1_General_CP1_CI_AS
+13      SQLINT              1       4       ""   13    OrderLineNumber                                  ""
+14      SQLDATETIME         0       8       ""   14    TransactionDate                                  ""
+15      SQLINT              0       4       ""   15    TransactionType                                  ""
+16      SQLDATETIME         1       8       ""   16    MarkedForDeleteOn                                ""
+17      SQLUNIQUEID         1       16      ""   17    BatchKey                                         ""

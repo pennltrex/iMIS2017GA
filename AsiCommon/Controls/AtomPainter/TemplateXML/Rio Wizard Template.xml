@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AtomPainter:Template xmlns:AtomPainter="http://www.advsol.com/AtomPainter" TemplateTypeCode="1">
+	<AtomPainter:TemplatePage index="0">
+		<p class="WizardTitle">Step <AtomPainter:WizardStep>1</AtomPainter:WizardStep> of <AtomPainter:WizardStepCount>1</AtomPainter:WizardStepCount>: <AtomPainter:TemplateTitle>Title</AtomPainter:TemplateTitle></p>
+		<AtomPainter:TemplateBody></AtomPainter:TemplateBody>
+	</AtomPainter:TemplatePage>
+</AtomPainter:Template>

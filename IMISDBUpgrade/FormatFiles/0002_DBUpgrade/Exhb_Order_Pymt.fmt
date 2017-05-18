@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLNUMERIC          1       19      ""   1     ORDER_NUMBER                 ""
+2       SQLINT              0       4       ""   2     PYMT_NUMBER                  ""
+3       SQLNUMERIC          1       19      ""   3     PYMT_AMOUNT                  ""
+4       SQLDATETIME         1       8       ""   4     CONFIRM_DATE                 ""
+5       SQLDATETIME         1       8       ""   5     PYMT_DATE                    ""
+6       SQLBIT              1       1       ""   6     PCT_DOWN                     ""
+7       SQLBINARY           2       8       ""   7     TIME_STAMP                   ""

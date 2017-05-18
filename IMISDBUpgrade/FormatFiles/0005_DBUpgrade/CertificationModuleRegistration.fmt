@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     CertificationModuleRegistrationKey                                         ""
+2       SQLUNIQUEID         1       16      ""   2     CertificationProgramRegistrationKey                                        ""
+3       SQLUNIQUEID         1       16      ""   3     CertificationModuleKey                                                     ""
+4       SQLUNIQUEID         1       16      ""   4     CustomerExperienceKey                                                      ""
+5       SQLDATETIME         0       8       ""   5     RegistrationDate                                                           ""
+6       SQLNCHAR            0       4       ""   6     RegistrationStatusCode                                                     SQL_Latin1_General_CP1_CI_AS
+7       SQLDECIMAL          1       19      ""   7     EarnedUnits                                                                ""
+8       SQLUNIQUEID         1       16      ""   8     FileAttachmentDocumentKey                                                  ""
+9       SQLDECIMAL          1       19      ""   9     AvailableUnits                                                             ""

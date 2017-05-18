@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     ReceiptLineKey                               ""
+2       SQLUNIQUEID         1       16      ""   2     ReceiptKey                                   ""
+3       SQLDECIMAL          1       19      ""   3     ReceiptedAmount                              ""
+4       SQLUNIQUEID         1       16      ""   4     PaymentKey                                   ""
+5       SQLINT              0       4       ""   5     LineNumber                                   ""
+6       SQLNCHAR            2       400     ""   6     LineDescription                              SQL_Latin1_General_CP1_CI_AS
+7       SQLUNIQUEID         1       16      ""   7     ProductKey                                   ""
+8       SQLUNIQUEID         1       16      ""   8     SourceReceiptLineKey                         ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                            ""

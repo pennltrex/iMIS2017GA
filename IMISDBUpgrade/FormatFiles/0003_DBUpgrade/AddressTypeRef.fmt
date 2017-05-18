@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     AddressTypeKey                             ""
+2       SQLNCHAR            2       40      ""   2     AddressTypeName                            SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     IsSystem                                   ""
+4       SQLBIT              1       1       ""   4     IsActive                                   ""
+5       SQLSMALLINT         0       2       ""   5     DisplayOrder                               ""
+6       SQLINT              0       4       ""   6     AddressCategoryCode                        ""

@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLNUMERIC          1       19      ""   1     NavMenuID                      ""
+2       SQLNCHAR            2       510     ""   2     ImageInitial                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       510     ""   3     ImageOther                     SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       510     ""   4     ImageRollover                  SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       60      ""   5     BreadCrumb                     SQL_Latin1_General_CP1_CI_AS
+6       SQLNUMERIC          1       19      ""   6     ImageWidth                     ""
+7       SQLNUMERIC          1       19      ""   7     ImageHeight                    ""

@@ -1,0 +1,22 @@
+<%@ Control Language="c#" AutoEventWireup="false" %>
+
+<script language="C#" runat="server">
+	private void Page_Load(object sender, System.EventArgs e)
+	{
+		Guid hierarchyKey;
+		if (Request.QueryString["hkey"] != null)
+			hierarchyKey = new Guid(Request.QueryString["hkey"]);
+		else
+			hierarchyKey = Asi.AppContext.CurrentContext.HKey;
+		
+	}
+	override protected void OnInit(EventArgs e)
+	{
+        this.Load += new System.EventHandler(this.Page_Load);
+		base.OnInit(e);
+	}
+</script>
+<div id="buttonbar" style="height: 31px; background-repeat: repeat-x; background-image: url('<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_nav_sliver.jpg')">
+	<img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_print_off.jpg" onclick="printWindow();" alt="Print" width="37" height="31" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_print_on.jpg');" onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_print_off.jpg');" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_email_off.jpg" alt="e-mail" onclick="emailWindow();" width="35" height="31" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_email_on.jpg');" onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_email_off.jpg');" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_help_off.jpg" alt="Help" onclick="showHelp();" width="32" height="31" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_help_on.jpg');" onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_help_off.jpg');" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_paint_off.jpg" alt="Open in Screen Designer" onclick="showHideBrush();" width="39" height="31" onmouseover="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_paint_on.jpg');" onmouseout="Rollover(this,'<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_paint_off.jpg');" /><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/dialog_top_center.jpg" width="185" height="31"/><img border="0" src="<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/BSA/images/header/dialog_top_logo.jpg" width="69" height="31" style="position: absolute; right:0;" />
+</div>
+<div id="BSAcontentdialog">

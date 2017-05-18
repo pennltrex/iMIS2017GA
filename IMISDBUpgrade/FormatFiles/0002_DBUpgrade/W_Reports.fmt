@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLINT              0       4       ""   1     REPORT_NUM                         ""
+2       SQLNCHAR            2       510     ""   2     REPORT_TITLE                       SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            4       0       ""   3     REPORT_DESCR                       SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     CREATION_DATE                      ""
+5       SQLDATETIME         1       8       ""   5     EXPIRATION_DATE                    ""
+6       SQLDATETIME         1       8       ""   6     BUILD_DATE                         ""
+7       SQLNCHAR            2       60      ""   7     REPORT_TYPE                        SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       60      ""   8     SECURITY_GROUP                     SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       510     ""   9     REPORT_PATH                        SQL_Latin1_General_CP1_CI_AS
+10      SQLBINARY           2       8       ""   10    TIME_STAMP                         ""

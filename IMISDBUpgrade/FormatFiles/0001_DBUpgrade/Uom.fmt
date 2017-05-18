@@ -1,0 +1,15 @@
+10.0
+13
+1       SQLUNIQUEID         1       16      ""   1     UomKey                                 ""
+2       SQLNCHAR            2       100     ""   2     Name                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       500     ""   3     Description                            SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     UomGroupKey                            ""
+5       SQLBIT              1       1       ""   5     IsSellable                             ""
+6       SQLNUMERIC          1       19      ""   6     RoundingFactor                         ""
+7       SQLUNIQUEID         1       16      ""   7     CreatedByUserKey                       ""
+8       SQLDATETIME         0       8       ""   8     CreatedOn                              ""
+9       SQLUNIQUEID         1       16      ""   9     UpdatedByUserKey                       ""
+10      SQLDATETIME         0       8       ""   10    UpdatedOn                              ""
+11      SQLUNIQUEID         1       16      ""   11    SystemEntityKey                        ""
+12      SQLBIT              1       1       ""   12    IsInventoryUom                         ""
+13      SQLDATETIME         1       8       ""   13    MarkedForDeleteOn                      ""

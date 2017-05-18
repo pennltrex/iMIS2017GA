@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLUNIQUEID         1       16      ""   1     ProductKey                   ""
+2       SQLNCHAR            2       40      ""   2     Type                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     Size                         SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       40      ""   4     Color                        SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       2       ""   5     Gender                       SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       40      ""   6     Style                        SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       100     ""   7     Manufacturer                 SQL_Latin1_General_CP1_CI_AS

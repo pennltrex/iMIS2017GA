@@ -1,0 +1,15 @@
+11.0
+13
+1       SQLNCHAR            2       20      ""   1     CODE                                           SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       40      ""   2     DESCRIPTION                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       40      ""   3     INVOICE_DESCRIPTION                            SQL_Latin1_General_CP1_CI_AS
+4       SQLTINYINT          0       1       ""   4     TYPE_OF_ORDER                                  ""
+5       SQLBIT              1       1       ""   5     AFFECT_INVENTORY                               ""
+6       SQLTINYINT          0       1       ""   6     SHIPPING_PAPER_ACTION                          ""
+7       SQLBIT              1       1       ""   7     INVOICE_ACTION                                 ""
+8       SQLNCHAR            2       20      ""   8     CONVERSION_CODE                                SQL_Latin1_General_CP1_CI_AS
+9       SQLBIT              1       1       ""   9     PRINTQUOTE_STAGE                               ""
+10      SQLBIT              1       1       ""   10    PICKLIST_STAGE                                 ""
+11      SQLBIT              1       1       ""   11    SHIPPAPER_STAGE                                ""
+12      SQLBIT              1       1       ""   12    INVOICE_STAGE                                  ""
+13      SQLBINARY           2       8       ""   13    TIME_STAMP                                     ""

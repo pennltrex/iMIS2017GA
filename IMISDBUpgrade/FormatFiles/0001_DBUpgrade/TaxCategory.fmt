@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLUNIQUEID         1       16      ""   1     TaxCategoryKey                         ""
+2       SQLNCHAR            2       100     ""   2     Name                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     Description                            SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     UpdatedByUserKey                       ""
+5       SQLDATETIME         0       8       ""   5     UpdatedOn                              ""
+6       SQLUNIQUEID         1       16      ""   6     CreatedByUserKey                       ""
+7       SQLDATETIME         0       8       ""   7     CreatedOn                              ""
+8       SQLUNIQUEID         1       16      ""   8     SystemEntityKey                        ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                      ""

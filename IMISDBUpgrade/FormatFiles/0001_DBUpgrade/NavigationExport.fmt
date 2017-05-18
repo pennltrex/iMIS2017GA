@@ -1,0 +1,29 @@
+10.0
+27
+1       SQLUNIQUEID         1       16      ""   1     NavigationKey                                  ""
+2       SQLNCHAR            2       4       ""   2     NavigationStatusCode                           SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     NavigationTitle                                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       200     ""   4     NavigationName                                 SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       600     ""   5     NavigationDescription                          SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            4       0       ""   6     NavigationAttributes                           SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       200     ""   7     BreadCrumbName                                 SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       510     ""   8     OverrideContentTitle                           SQL_Latin1_General_CP1_CI_AS
+9       SQLINT              0       4       ""   9     NavigationPane                                 ""
+10      SQLBIT              1       1       ""   10    OpenInNewWindowFlag                            ""
+11      SQLUNIQUEID         1       16      ""   11    WorkflowDocumentKey                            ""
+12      SQLBIT              1       1       ""   12    IsHidden                                       ""
+13      SQLDATETIME         1       8       ""   13    PublishedDateTime                              ""
+14      SQLNCHAR            2       2048    ""   14    PrePublishURL                                  SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       2048    ""   15    PostPublishURL                                 SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       510     ""   16    PublishedDirectory                             SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       1000    ""   17    ParameterList                                  SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       200     ""   18    NavigationCode                                 SQL_Latin1_General_CP1_CI_AS
+19      SQLUNIQUEID         1       16      ""   19    ContentKey                                     ""
+20      SQLBIT              1       1       ""   20    IsActive                                       ""
+21      SQLBIT              1       1       ""   21    IsHTTPS                                        ""
+22      SQLBIT              1       1       ""   22    AddKeyToURLFlag                                ""
+23      SQLBIT              1       1       ""   23    IsExpandedByDefault                            ""
+24      SQLUNIQUEID         1       16      ""   24    CreatedByUserKey                               ""
+25      SQLDATETIME         0       8       ""   25    CreatedOn                                      ""
+26      SQLUNIQUEID         1       16      ""   26    UpdatedByUserKey                               ""
+27      SQLDATETIME         0       8       ""   27    UpdatedOn                                      ""

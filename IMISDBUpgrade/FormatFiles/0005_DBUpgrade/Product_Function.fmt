@@ -1,0 +1,37 @@
+11.0
+35
+1       SQLNCHAR            2       62      ""   1     PRODUCT_CODE                                                 SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       10      ""   2     FUNCTION_TYPE                                                SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         1       8       ""   3     BEGIN_DATE_TIME                                              ""
+4       SQLDATETIME         1       8       ""   4     END_DATE_TIME                                                ""
+5       SQLINT              0       4       ""   5     SEQ                                                          ""
+6       SQLINT              0       4       ""   6     MINIMUM_ATTENDANCE                                           ""
+7       SQLINT              0       4       ""   7     EXPECTED_ATTENDANCE                                          ""
+8       SQLINT              0       4       ""   8     GUARANTEED_ATTENDANCE                                        ""
+9       SQLINT              0       4       ""   9     ACTUAL_ATTENDANCE                                            ""
+10      SQLINT              0       4       ""   10    SETTINGS                                                     ""
+11      SQLDATETIME         1       8       ""   11    SETUP_DATE_TIME                                              ""
+12      SQLDATETIME         1       8       ""   12    POST_DATE_TIME                                               ""
+13      SQLBIT              1       1       ""   13    AUTO_ENROLL                                                  ""
+14      SQLBIT              1       1       ""   14    PRINT_TICKET                                                 ""
+15      SQLINT              0       4       ""   15    LAST_TICKET                                                  ""
+16      SQLNCHAR            2       30      ""   16    CEU_TYPE                                                     SQL_Latin1_General_CP1_CI_AS
+17      SQLNUMERIC          1       19      ""   17    CEU_AMOUNT                                                   ""
+18      SQLNCHAR            2       30      ""   18    COURSE_CODE                                                  SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       510     ""   19    OTHER_TICKETS                                                SQL_Latin1_General_CP1_CI_AS
+20      SQLBIT              1       1       ""   20    CEU_ENTERED                                                  ""
+21      SQLINT              0       4       ""   21    MAXIMUM_ATTENDANCE                                           ""
+22      SQLBIT              1       1       ""   22    PARENT                                                       ""
+23      SQLNCHAR            2       20      ""   23    CONFLICT_CODE                                                SQL_Latin1_General_CP1_CI_AS
+24      SQLBIT              1       1       ""   24    WEB_ENABLED                                                  ""
+25      SQLTINYINT          0       1       ""   25    WEB_MULTI_REG                                                ""
+26      SQLNUMERIC          1       19      ""   26    SQUARE_FEET                                                  ""
+27      SQLBIT              1       1       ""   27    IS_FR_ITEM                                                   ""
+28      SQLBIT              1       1       ""   28    IS_GUEST_FUNCTION                                            ""
+29      SQLBIT              1       1       ""   29    CREATE_DETAIL_ACTIVITY                                       ""
+30      SQLNCHAR            2       510     ""   30    EVENT_TRACK                                                  SQL_Latin1_General_CP1_CI_AS
+31      SQLNCHAR            2       510     ""   31    EVENT_CATEGORY                                               SQL_Latin1_General_CP1_CI_AS
+32      SQLBIT              1       1       ""   32    IS_EVENT_REGISTRATION_OPTION                                 ""
+33      SQLNCHAR            2       72      ""   33    FORM_DEFINITION_SECTION_ID                                   SQL_Latin1_General_CP1_CI_AS
+34      SQLINT              0       4       ""   34    AVAILABLE_TO                                                 ""
+35      SQLBINARY           2       8       ""   35    TIME_STAMP                                                   ""

@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     GroupRoleKey                   ""
+2       SQLNCHAR            2       130     ""   2     GroupRoleDesc                  SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     IsActive                       ""
+4       SQLBIT              1       1       ""   4     IsSystem                       ""
+5       SQLNCHAR            2       130     ""   5     GroupRoleName                  SQL_Latin1_General_CP1_CI_AS

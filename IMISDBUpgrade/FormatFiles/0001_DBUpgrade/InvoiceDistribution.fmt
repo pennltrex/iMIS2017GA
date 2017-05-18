@@ -1,0 +1,18 @@
+10.0
+16
+1       SQLUNIQUEID         1       16      ""   1     InvoiceDistributionKey                                   ""
+2       SQLUNIQUEID         1       16      ""   2     InvoiceKey                                               ""
+3       SQLUNIQUEID         1       16      ""   3     InvoiceLineKey                                           ""
+4       SQLDECIMAL          1       19      ""   4     QuantitySold                                             ""
+5       SQLUNIQUEID         1       16      ""   5     FinancialEntityKey                                       ""
+6       SQLDECIMAL          1       19      ""   6     UnitIncome                                               ""
+7       SQLDECIMAL          1       19      ""   7     ExtendedIncome                                           ""
+8       SQLDECIMAL          1       19      ""   8     ExtendedIncomeRecognized                                 ""
+9       SQLUNIQUEID         1       16      ""   9     IncomeGLAccountKey                                       ""
+10      SQLUNIQUEID         1       16      ""   10    ARGLAccountKey                                           ""
+11      SQLUNIQUEID         1       16      ""   11    DeferredIncomeGLAccountKey                               ""
+12      SQLUNIQUEID         1       16      ""   12    DeferralTermsKey                                         ""
+13      SQLDECIMAL          1       19      ""   13    ExtendedCost                                             ""
+14      SQLUNIQUEID         1       16      ""   14    WarehouseKey                                             ""
+15      SQLUNIQUEID         1       16      ""   15    ShipMethodKey                                            ""
+16      SQLDATETIME         1       8       ""   16    MarkedForDeleteOn                                        ""

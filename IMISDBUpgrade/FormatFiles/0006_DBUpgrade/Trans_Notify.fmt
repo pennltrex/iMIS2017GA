@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLINT              0       4       ""   1     TRANS_NUMBER                                 ""
+2       SQLNCHAR            2       20      ""   2     NOTIFY_ID                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         1       8       ""   3     NOTIFICATION_SENT_ON                         ""
+4       SQLINT              0       4       ""   4     SEQN                                         ""
+5       SQLBINARY           2       8       ""   5     TIME_STAMP                                   ""

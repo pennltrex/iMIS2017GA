@@ -1,0 +1,28 @@
+10.0
+26
+1       SQLNCHAR            2       20      ""   1     ID                                                 SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       62      ""   2     PRODUCT_CODE                                       SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         1       8       ""   3     BILL_DATE                                          ""
+4       SQLMONEY            0       8       ""   4     BALANCE                                            ""
+5       SQLDATETIME         1       8       ""   5     BILL_BEGIN                                         ""
+6       SQLDATETIME         1       8       ""   6     BILL_THRU                                          ""
+7       SQLINT              1       4       ""   7     BILL_COPIES                                        ""
+8       SQLDATETIME         1       8       ""   8     PAID_THRU                                          ""
+9       SQLNCHAR            2       10      ""   9     STATUS                                             SQL_Latin1_General_CP1_CI_AS
+10      SQLTINYINT          0       1       ""   10    RENEW_MONTHS                                       ""
+11      SQLMONEY            0       8       ""   11    PRICE_1                                            ""
+12      SQLNCHAR            2       20      ""   12    PROD_TYPE                                          SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       120     ""   13    TITLE                                              SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       100     ""   14    INCOME_ACCOUNT                                     SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       100     ""   15    DEFERRED_INCOME_ACCOUNT                            SQL_Latin1_General_CP1_CI_AS
+16      SQLBIT              1       1       ""   16    PRICE_RULES_EXIST                                  ""
+17      SQLINT              0       4       ""   17    PAYMENT_PRIORITY                                   ""
+18      SQLNCHAR            2       120     ""   18    CFTOKEN                                            SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       100     ""   19    IP_ADDRESS                                         SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            2       120     ""   20    CFID                                               SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       100     ""   21    DESCRIPTION                                        SQL_Latin1_General_CP1_CI_AS
+22      SQLNCHAR            2       10      ""   22    ORG_CODE                                           SQL_Latin1_General_CP1_CI_AS
+23      SQLBIT              1       1       ""   23    IS_FR_ITEM                                         ""
+24      SQLNCHAR            2       80      ""   24    APPEAL_CODE                                        SQL_Latin1_General_CP1_CI_AS
+25      SQLNCHAR            2       20      ""   25    CAMPAIGN_CODE                                      SQL_Latin1_General_CP1_CI_AS
+26      SQLBINARY           2       8       ""   26    TIME_STAMP                                         ""

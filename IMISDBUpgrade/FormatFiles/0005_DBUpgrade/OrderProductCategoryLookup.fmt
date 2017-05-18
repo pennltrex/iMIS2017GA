@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLINT              0       4       ""   1     OrderProductID                     ""
+2       SQLINT              0       4       ""   2     OrderCategoryID                    ""
+3       SQLBIT              1       1       ""   3     IsFeatured                         ""
+4       SQLINT              0       4       ""   4     SortOrder                          ""

@@ -1,0 +1,9 @@
+10.0
+7
+1       SQLUNIQUEID         1       16      ""   1     UserDefinedCustomerExperienceKey                                               ""
+2       SQLUNIQUEID         1       16      ""   2     ProgramKey                                                                     ""
+3       SQLNCHAR            2       100     ""   3     UserDefinedCustomerExperienceName                                              SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       500     ""   4     UserDefinedCustomerExperienceDesc                                              SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         0       8       ""   5     CompletionDate                                                                 ""
+6       SQLDECIMAL          1       19      ""   6     UserDefinedCustomerExperienceUnits                                             ""
+7       SQLNCHAR            2       500     ""   7     UserDefinedCustomerExperienceLocation                                          SQL_Latin1_General_CP1_CI_AS

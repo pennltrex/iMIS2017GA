@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLUNIQUEID         1       16      ""   1     LicenseKey                             ""
+2       SQLUNIQUEID         1       16      ""   2     UserKey                                ""
+3       SQLUNIQUEID         1       16      ""   3     CreatedByUserKey                       ""
+4       SQLDATETIME         0       8       ""   4     CreatedOn                              ""
+5       SQLDATETIME         1       8       ""   5     MarkedForDeleteOn                      ""

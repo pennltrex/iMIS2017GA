@@ -1,0 +1,26 @@
+11.0
+24
+1       SQLNCHAR            2       20      ""   1     ID                                                           SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     SEQN                                                         ""
+3       SQLNCHAR            2       8       ""   3     AssociationId                                                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       8       ""   4     BillingYear                                                  SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       2       ""   5     ContributionType                                             SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         1       8       ""   6     DuesPaidDate                                                 ""
+7       SQLNCHAR            2       24      ""   7     ECControlNumber                                              SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       18      ""   8     IncurringMemberId                                            SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       24      ""   9     IncurringMemberFirstName                                     SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       34      ""   10    IncurringMemberLastName                                      SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       18      ""   11    MemberId                                                     SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       24      ""   12    MemberFirstName                                              SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       34      ""   13    MemberLastName                                               SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       18      ""   14    MemberSsn                                                    SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       18      ""   15    OfficeId                                                     SQL_Latin1_General_CP1_CI_AS
+16      SQLNCHAR            2       18      ""   16    PaymentAmount                                                SQL_Latin1_General_CP1_CI_AS
+17      SQLNCHAR            2       16      ""   17    PaymentType                                                  SQL_Latin1_General_CP1_CI_AS
+18      SQLNCHAR            2       18      ""   18    PointOfEntry                                                 SQL_Latin1_General_CP1_CI_AS
+19      SQLNCHAR            2       8       ""   19    PrimaryAssociationId                                         SQL_Latin1_General_CP1_CI_AS
+20      SQLNCHAR            2       40      ""   20    Sequence                                                     SQL_Latin1_General_CP1_CI_AS
+21      SQLNCHAR            2       4       ""   21    Source                                                       SQL_Latin1_General_CP1_CI_AS
+22      SQLBIT              1       1       ""   22    ValidateFinancialPaymentType                                 ""
+23      SQLNCHAR            2       40      ""   23    NARTimestamp                                                 SQL_Latin1_General_CP1_CI_AS
+24      SQLBINARY           2       8       ""   24    TIME_STAMP                                                   ""

@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     ImportBatchKey                                 ""
+2       SQLNCHAR            2       400     ""   2     ImportBatchName                                SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       200     ""   3     BatchType                                      SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         0       8       ""   4     BatchDate                                      ""
+5       SQLDATETIME         0       8       ""   5     CreatedDateTime                                ""
+6       SQLUNIQUEID         1       16      ""   6     CreatedByUserKey                               ""
+7       SQLNCHAR            8       0       ""   7     SerializedBatch                                SQL_Latin1_General_CP1_CI_AS
+8       SQLINT              0       4       ""   8     ImportBatchStatusCode                          ""
+9       SQLNCHAR            8       0       ""   9     ResultText                                     SQL_Latin1_General_CP1_CI_AS

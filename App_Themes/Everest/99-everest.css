@@ -1,0 +1,2413 @@
+
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:300,700");
+
+/******************************/
+/*          General           */
+/******************************/
+body {
+    color: #222222;
+}
+
+a, 
+#Menu .account-menu .dropdown-menu a,
+#Menu .account-menu .dropdown-menu a:visited {
+    color: #2070b0;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #248cdf;
+}
+
+a:hover,
+a:focus,
+#Menu .account-menu .dropdown-menu a:hover,
+#Menu .account-menu .dropdown-menu a:focus {
+    color: #185585;
+    text-decoration: underline;
+}
+
+.RadGrid a  {
+    color: #2070b0 !important;
+    text-decoration: none!important;
+}
+
+.RadGrid a:visited {
+    color: #248cdf !important;
+}
+
+.RadGrid a:hover,
+.RadGrid a:focus  {
+    color: #185585 !important;
+    text-decoration: underline!important;
+}
+
+/* Support background image with text overlay */
+.bg-img-conference-tall {
+  background-color: #081337;
+  background-image: url("../../images/SampleSites/conferencebannertall.jpg");
+}
+
+.bg-img-conference-small {
+  background-color: #081337;
+  background-image: url("../../images/SampleSites/Member/cairnsnight.jpg");
+}
+
+.bg-img-tiger-tall {
+  background-color: #04080B;
+  background-image: url("../../images/ImageLibrary/tiger-tall.jpg");
+  background-position: center center;
+}
+
+.banner-tall, .banner-short {
+  text-decoration: none;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-radius: 5px;
+}
+.banner-tall, .banner-tall:visited, .banner-tall:active, .banner-tall:hover, .banner-tall:focus, .banner-tall h2, .banner-short, .banner-short:visited, .banner-short:active, .banner-short:hover, .banner-short:focus, .banner-short h2 {
+  color: #fff;
+}
+
+.banner-text h2 {
+  font-size: 100%;
+}
+
+.banner-tall {
+  height: 500px;
+  max-width: 300px;
+}
+.banner-tall .banner-text {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 0 0 5px 5px;
+}
+
+.banner-short {
+  min-height: 150px;
+  max-width: 300px;
+}
+.banner-short .banner-text {
+  padding: 5px;
+  min-height: 150px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+/**** End General styling ****/
+/************************************/
+/*       MasterPage Elements        */
+/************************************/
+
+/* This applies to the loading bar at the top of the page */
+.ProgressDiv {
+    background-color: #ffdd6f;
+}
+
+#MainHtml {
+    background-color: #eeeeee;
+}
+
+#masterWrapper {
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #bbbbbb;
+    background-color: #ffffff;
+}
+
+#masterWrapper.yui-t2 {
+    background-image: url(images/LeftNavBG.png);
+    background-repeat: repeat-y;
+}
+
+#hd,
+#masterFooterContent {
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+    margin: 0 -1px;
+}
+
+#bd {
+    border-top: 1px solid #bbbbbb;
+    margin-top: -1px;
+    /* This is so that when you visit the login page the body has a complete border,
+       but the top border is not visible when you are logged in */
+}
+
+#masterFooterContent {
+    *zoom: 1;
+    border-top: 1px solid #bbbbbb;
+}
+
+#masterFooterContent:before,
+#masterFooterContent:after {
+    display: table;
+    content: "";
+}
+
+#masterFooterContent:after {
+    clear: both;
+}
+
+#Menu {
+    background-color: #222222;
+    /* this is needed to ensure the account area drop-down drops in front of the primary nav */
+    z-index: 1100;
+}
+
+.HeaderLogo {
+    background-image: url("images/HeaderLogo.png");
+    background-position: 7px 6px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 33px;
+    width: 84px;
+    /* The following are needed to hide the text, but allow it to be read by screen readers */
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+#Menu #masterTopBar,
+#Menu #masterTopBarAuxiliary,
+#Menu .AuxiliaryNavigation {
+    height: 100%;
+}
+
+#Menu #masterTopBarAuxiliary {
+    line-height: 2.4em;
+}
+
+#Menu a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+#Menu a:hover {
+    color: #ffffff;
+}
+
+#Menu #masterMainImpersonation {
+    color: #999999;
+}
+
+#Menu .NavigationListItem,
+.account-menu > li {
+    border-left: 2px groove #555555;
+}
+
+.account-menu > li:first-child {
+    border-left: none;
+}
+
+#Menu a.SignInLink,
+#Menu .NavigationListItem,
+.account-menu > li > a {
+    padding: 8px;
+}
+
+.account-menu .dropdown-menu a,
+.account-menu .dropdown-menu a:hover,
+.account-menu .dropdown-menu a:focus,
+.account-menu .dropdown-menu a:active {
+    text-decoration: none;
+}
+
+.account-menu .dropdown-header,
+.account-menu .obo-label {
+    font-weight: bold;
+    font-family:'Open Sans Condensed', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 110%;
+}
+
+.OBOProxyEnabled #Menu {
+    background-color: #c54b24;
+}
+
+.OBOProxyEnabled .account-menu .profile-picture-wrapper .picture-secondary {
+    border: 2px solid #c54b24;
+}
+
+.OBOProxyEnabled #Menu .NavigationListItem,
+.OBOProxyEnabled .account-menu > li {
+    border-left-color: rgba(85, 85, 85, 0.25);
+}
+
+.obo-toggle {
+    /* first hide the text */
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+    /* next set the image background */
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+    height: 24px;
+    background-image: url('images/EverestSprite.png');
+    background-repeat: no-repeat;
+    background-position: 4px -48px;
+    margin-top: -1px;
+    margin-left: 8px!important;
+    border: 1px solid transparent;
+}
+
+.obo-toggle:hover,
+.obo-toggle.on {
+    background-position: -55px -48px;
+}
+
+#Menu .dropdown-header {
+    line-height: 1.385;
+}
+
+#SimpleSearchBlock input {
+    vertical-align: baseline;
+}
+
+#SimpleSearchBlock .TextButton {
+    display: none;
+}
+
+#masterFooterContent a {
+    color: #555555;
+    text-decoration: underline;
+}
+
+#masterFooterContent a:visited {
+    color: #555555;
+}
+
+#masterFooterContent .NavigationListItem {
+    border-left: 1px solid #999999;
+}
+
+#masterFooterContent .NavigationListItem:first-child {
+    border-left: none;
+}
+
+#SimpleSearchBlock input[type="text"] {
+    background-image: url('images/EverestSprite.png');
+    background-position: 4px -23px;
+    background-repeat: no-repeat;
+    padding-left: 21px!important;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    color: #999999;
+}
+/**** End MasterPage element styling ****/
+/******************************************/
+/*         Cart Indicator Styling         */
+/******************************************/
+#masterTopBarAuxiliary .cartSprite {
+    background-image: url('images/EverestSprite.png');
+    background-repeat: no-repeat;
+    height: 15px;
+    display: inline-block;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    vertical-align: top;
+    position: relative;
+    top: 7px;
+}
+
+#masterTopBarAuxiliary .cartEmpty .cartSprite {
+    width: 23px;
+    background-position: 0 0;
+}
+
+#masterTopBarAuxiliary .cartLeft.cartSprite {
+    width: 11px;
+    background-position: -57px 0;
+}
+
+#masterTopBarAuxiliary .cartCenter.cartSprite {
+    background-position: -68px 0;
+}
+
+#masterTopBarAuxiliary .cartCenter span {
+    color: #ffe79c;
+    font-weight: bold;
+    position: relative;
+    top: -12px;
+}
+
+#masterTopBarAuxiliary .cartRight.cartSprite {
+    width: 10px;
+    background-position: -170px 0;
+}
+
+#masterFooterNavigation .cartEmpty,
+#masterFooterNavigation .cartFull {
+    display: none;
+}
+/**** End cart indicator styling ****/
+/******************************/
+/*         Headers            */
+/******************************/
+.PanelTitle, h2, h1, #mainTitle {
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    font-weight: 700;
+}
+
+h1,
+.PageTitle {
+    font-size: 350%;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: .3em;
+}
+
+h1 small,
+.PageTitle small {
+    font-size: 45%;
+    color: #888888;
+    font-style: italic;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: normal;
+}
+
+h2 {
+    border-bottom: none;
+}
+
+h2, .PanelTitle {
+    font-size: 170%;
+}
+
+h3,
+.mdTitle {
+    font-weight: bold;
+}
+
+.SubNavigationHead {
+    font-weight: bold;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 150%;
+    line-height: 1.3em;
+    padding: .2em .3em;
+}
+/**** End header styles ****/
+/*******************************/
+/*       iPart Basics          */
+/*******************************/
+.StandardPanel,
+.PanelHead.Distinguish,
+.panel-border,
+.panel-heading.Distinguish,
+.ContentBorder, .TitleBarCaption {
+    border-color: #bbbbbb;
+}
+
+.panel-heading-collapse-img,
+.panel-heading-collapse-text,
+.PanelHeadCommandButtons,
+.PanelHeadOptionsBox {
+    margin-top: .2em;
+    margin-right: 0;
+}
+
+.ContentWizardDisplay {
+    border-color: #c8d6e5;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    padding: 5px;
+}
+/* Filter Panel (Query Menu)
+   ========================================================================== */
+/* This is an alternate style for the Query Menu filter panel */
+.FilterPanel {
+    background-color: #e6e6e6;
+    border: none;
+    margin-top: -3px;
+}
+.FilterPanel .PanelTitle,
+.FilterPanel .panel-title {
+    background-image: none;
+    padding-left: 0.1em;
+    line-height: normal;
+    margin-left: 0;
+    font-size: 140%;
+}
+.FilterPanel .PanelHead.Distinguish,
+.FilterPanel .panel-heading.Distinguish {
+    border: none;
+    min-height: 1em;
+}
+/**** End iPart basic styles ****/
+/**********************************/
+/*           Overrides            */
+/**********************************/
+.RadGrid.RadGrid_Silk .rgHeader,
+.RadGrid.RadGrid_Silk th.rgResizeCol {
+    font-size: inherit;
+    text-transform: none;
+    letter-spacing: 0;
+}
+/* Overrides the width of the FontSize dropdown in the Telerik RadEditor in the Silk skin */
+.Silk .reDropdown .FontSize {
+    width: 28px !important;
+}
+
+#RoleListContainer .GridTitlePanel, #GroupListContainer .GridTitlePanel, #AccessKeywordListContainer .GridTitlePanel {
+    border-bottom: 1px solid #ccc;
+}
+/******************************************/
+/*             Action Icons               */
+/******************************************/
+/* This is used to display the add, edit, delete, move up, and move down icons */
+.IconSprite,
+.DeleteImage,
+.EditImage,
+.ArrowUp,
+.ArrowUpOff,
+.ArrowDown,
+.ArrowDownOff {
+    background-image: url(images/IconSprite.png);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.IconSprite.AddIcon,
+.IconSprite.SaveIcon,
+.IconSprite.AddIcon[disabled]:hover,
+.IconSprite.SaveIcon[disabled]:hover {
+    background-position: 0 0;
+}
+
+.IconSprite.AddIcon:hover,
+.IconSprite.SaveIcon:hover,
+.IconSprite.AddIcon:focus,
+.IconSprite.SaveIcon:focus,
+a:hover .IconSprite.AddIcon,
+a:hover .IconSprite.SaveIcon,
+a:focus .IconSprite.AddIcon,
+a:focus .IconSprite.SaveIcon {
+    background-position: 0 -35px;
+}
+
+.IconSprite.EditIcon,
+.IconSprite.EditIcon[disabled]:hover,
+.EditImage,
+.EditImage[disabled]:hover {
+    background-position: -35px 0;
+}
+
+.IconSprite.EditIcon:hover,
+.EditImage:hover,
+.IconSprite.EditIcon:focus,
+.EditImage:focus,
+a:hover .IconSprite.EditIcon,
+a:focus .IconSprite.EditIcon {
+    background-position: -35px -35px;
+}
+
+.IconSprite.DeleteIcon,
+.IconSprite.DeleteIcon[disabled]:hover,
+.DeleteImage,
+.DeleteImage[disabled]:hover {
+    background-position: -70px 0;
+}
+
+.IconSprite.DeleteIcon:hover,
+.DeleteImage:hover,
+.IconSprite.DeleteIcon:focus,
+.DeleteImage:focus,
+a:hover .IconSprite.DeleteIcon,
+a:focus .IconSprite.DeleteIcon {
+    background-position: -70px -35px;
+}
+
+.IconSprite.UpIcon,
+.IconSprite.UpIcon[disabled]:hover,
+.ArrowUp,
+.ArrowUpOff,
+.ArrowUp[disabled]:hover {
+    background-position: -105px 0;
+}
+
+.IconSprite.UpIcon:hover,
+.ArrowUp:hover,
+.IconSprite.UpIcon:focus,
+.ArrowUp:focus {
+    background-position: -105px -35px;
+}
+
+.IconSprite.DownIcon,
+.IconSprite.DownIcon[disabled]:hover,
+.ArrowDown,
+.ArrowDownOff,
+.ArrowDown[disabled]:hover {
+    background-position: -140px 0;
+}
+
+.IconSprite.DownIcon:hover,
+.ArrowDown:hover,
+.IconSprite.DownIcon:focus,
+.ArrowDown:focus {
+    background-position: -140px -35px;
+}
+
+.IconSprite.SelectIcon,
+.IconSprite.SelectIcon[disabled]:hover {
+    background-position: -175px 0;
+}
+
+.IconSprite.SelectIcon:hover,
+.IconSprite.SelectIcon:focus {
+    background-position: -175px -35px;
+}
+
+.IconSprite.CheckIcon,
+.IconSprite.CheckIcon[disabled]:hover {
+    background-position: -245px 0;
+}
+
+.IconSprite.CheckIcon:hover,
+.IconSprite.CheckIcon:focus,
+a:hover .IconSprite.CheckIcon,
+a:focus .IconSprite.CheckIcon {
+    background-position: -245px -35px;
+}
+
+.IconSprite.UndoIcon,
+.IconSprite.UndoIcon[disabled]:hover,
+.IconSprite.ResetIcon,
+.IconSprite.ResetIcon[disabled]:hover {
+    background-position: -280px 0;
+}
+
+.IconSprite.UndoIcon:hover,
+.IconSprite.ResetIcon:hover,
+.IconSprite.UndoIcon:focus,
+.IconSprite.ResetIcon:focus {
+    background-position: -280px -35px;
+}
+
+.IconSprite.FindIcon,
+.IconSprite.FindIcon[disabled]:hover {
+    background-position: -315px 0;
+}
+
+.IconSprite.FindIcon:hover,
+.IconSprite.FindIcon:focus {
+    background-position: -315px -35px;
+}
+
+.IconSprite.CancelIcon,
+.IconSprite.CancelIcon[disabled]:hover {
+    background-position: -350px 0;
+}
+
+.IconSprite.CancelIcon:hover,
+.IconSprite.CancelIcon:focus {
+    background-position: -350px -35px;
+}
+
+.IconSprite.ContactIcon,
+.IconSprite.ContactIcon[disabled]:hover {
+    background-position: -385px 0;
+}
+
+.IconSprite.ContactIcon:hover,
+.IconSprite.ContactIcon:focus {
+    background-position: -385px -35px;
+}
+
+.IconSprite.ConfigureIcon, .IconSprite.ConfigureIcon[disabled]:hover {
+    background-position: -420px 0;
+}
+
+.IconSprite.ConfigureIcon:hover, .IconSprite.ConfigureIcon:focus,
+a:hover .IconSprite.ConfigureIcon, a:focus .IconSprite.ConfigureIcon {
+    background-position: -420px -35px;
+}
+
+.ArrowUpOff,
+.ArrowDownOff {
+    opacity: .4;
+    filter: alpha(opacity=40);
+    /* filter needed for IE compatibility */
+}
+/**** End Action Icons Styling ****/
+/****************************/
+/*         Forms            */
+/****************************/
+input,
+select,
+textarea {
+    outline: 0;
+    /* remove focus styling used by Webkit browsers */
+}
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="url"] {
+    line-height: 1.4em;
+    padding: 2px;
+    border: 1px solid #b3b3b3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.075) inset;
+    -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.075) inset;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.075) inset;
+    vertical-align: top;
+    min-height: 1.4em;
+}
+
+input.rdfd_ {
+    min-height: 0; /* Have to specifically reset the min-height for an input that is meant to be hidden in the rad date picker */
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="image"]:focus {
+    border-color: #2070b0;
+    -webkit-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px #2070b0;
+    -moz-box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px #2070b0;
+    box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.075), 0 0 8px #2070b0;
+}
+
+select {
+    line-height: 1.4em;
+    padding: 2px;
+    border: 1px solid #b3b3b3;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.075) inset;
+    -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.075) inset;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.075) inset;
+    vertical-align: top;
+}
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+select:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+/**** End form styles ****/
+/************************************/
+/*            Buttons               */
+/************************************/
+.btn,
+.TextButton,
+.RadUpload .ruButton,
+.RadUploadProgressArea .ruButton {
+    display: inline-block;
+    white-space: normal;
+    padding: 4px 10px 4px!important;
+    margin-bottom: 0;
+    color: #333333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    background-color: #f5f5f5;
+    background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+    background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+    background-image: linear-gradient(top, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border: 1px solid #cccccc;
+    border-bottom-color: #b3b3b3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.btn:hover,
+.TextButton:hover,
+.RadUpload .ruButton:hover,
+.RadUploadProgressArea .ruButton:hover,
+.btn:active,
+.TextButton:active,
+.RadUpload .ruButton:active,
+.RadUploadProgressArea .ruButton:active,
+.btn[disabled],
+.TextButton[disabled],
+.RadUpload .ruButton[disabled],
+.RadUploadProgressArea .ruButton[disabled] {
+    background-color: #e6e6e6;
+}
+
+.btn:active,
+.TextButton:active,
+.RadUpload .ruButton:active,
+.RadUploadProgressArea .ruButton:active {
+    background-color: #cccccc \9;
+}
+
+.btn:hover,
+.TextButton:hover,
+.RadUpload .ruButton:hover,
+.RadUploadProgressArea .ruButton:hover {
+    color: #333333;
+    text-decoration: none;
+    background-color: #e6e6e6;
+    background-position: 0 -15px;
+    -webkit-transition: background-position 0.1s linear;
+    -moz-transition: background-position 0.1s linear;
+    -ms-transition: background-position 0.1s linear;
+    -o-transition: background-position 0.1s linear;
+    transition: background-position 0.1s linear;
+}
+
+.btn:focus,
+.TextButton:focus,
+.RadUpload .ruButton:focus,
+.RadUploadProgressArea .ruButton:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.btn:active,
+.TextButton:active,
+.RadUpload .ruButton:active,
+.RadUploadProgressArea .ruButton:active {
+    background-image: none;
+    -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+    background-color: #e6e6e6;
+    background-color: #d9d9d9 \9;
+    outline: 0;
+}
+
+.TextButton.MediumButton,
+.TextButtonWithImage.MediumButton,
+.btn.MediumButton,
+.UseMediumButton .TextButton {
+    padding: 9px 14px !important;
+    font-size: 120% !important;
+    line-height: normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.TextButton.LargeButton,
+.TextButtonWithImage.LargeButton,
+.btn.LargeButton,
+.UseLargeButton .TextButton {
+    padding: 14px 24px !important;
+    font-size: 160% !important;
+}
+
+.btn-small {
+    padding: 5px 9px;
+    font-size: 85%;
+    line-height: -0.7689999999999999em;
+}
+
+.btn-mini {
+    padding: 2px 6px;
+    font-size: 85%;
+    line-height: -2.769em;
+}
+
+.btn[disabled],
+.TextButton[disabled],
+.RadUpload .ruButton[disabled],
+.RadUploadProgressArea .ruButton[disabled] {
+    cursor: default;
+    background-image: none;
+    background-color: #e6e6e6;
+    opacity: 0.55;
+    filter: alpha(opacity=55);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn[disabled]:hover,
+.TextButton[disabled]:hover,
+.RadUpload .ruButton[disabled]:hover,
+.RadUploadProgressArea .ruButton[disabled]:hover,
+.btn[disabled]:focus,
+.TextButton[disabled]:focus,
+.RadUpload .ruButton[disabled]:focus,
+.RadUploadProgressArea .ruButton[disabled]:focus,
+.btn[disabled]:active,
+.TextButton[disabled]:active,
+.RadUpload .ruButton[disabled]:active,
+.RadUploadProgressArea .ruButton[disabled]:active {
+    background-image: none;
+}
+
+.TextButton.PrimaryButton,
+.UsePrimaryButton .TextButton,
+.PrimaryButton,
+.PrimaryButton:hover,
+.TextButton.Save,
+.TextButton.Save:hover,
+.TextButton.SaveAndClose,
+.TextButton.SaveAndClose:hover,
+.TextButton.SaveAs,
+.TextButton.SaveAs:hover,
+.TextButton.OK,
+.TextButton.OK:hover {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+}
+
+.TextButton.PrimaryButton:active,
+.UsePrimaryButton .TextButton:active,
+.TextButton.Save:active,
+.TextButton.SaveAndClose:active,
+.TextButton.SaveAs:active,
+.TextButton.OK:active {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.TextButton.PrimaryButton,
+.UsePrimaryButton .TextButton,
+.TextButton.Save,
+.TextButton.SaveAndClose,
+.TextButton.SaveAs,
+.TextButton.OK {
+    background-color: #215696;
+    background-image: -moz-linear-gradient(top, #216296, #214496);
+    background-image: -ms-linear-gradient(top, #216296, #214496);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#216296), to(#214496));
+    background-image: -webkit-linear-gradient(top, #216296, #214496);
+    background-image: -o-linear-gradient(top, #216296, #214496);
+    background-image: linear-gradient(top, #216296, #214496);
+    background-repeat: repeat-x;
+    border-color: #214496 #214496 #132857;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+}
+
+.TextButton.PrimaryButton:hover,
+.UsePrimaryButton .TextButton:hover,
+.TextButton.Save:hover,
+.TextButton.SaveAndClose:hover,
+.TextButton.SaveAs:hover,
+.TextButton.OK:hover,
+.TextButton.PrimaryButton:active,
+.UsePrimaryButton .TextButton:active,
+.TextButton.Save:active,
+.TextButton.SaveAndClose:active,
+.TextButton.SaveAs:active,
+.TextButton.OK:active,
+.TextButton.PrimaryButton[disabled],
+.UsePrimaryButton .TextButton[disabled],
+.TextButton.Save[disabled],
+.TextButton.SaveAndClose[disabled],
+.TextButton.OK[disabled] {
+    background-color: #214496;
+}
+
+.TextButton.PrimaryButton:active,
+.UsePrimaryButton .TextButton:active,
+.TextButton.Save:active,
+.TextButton.SaveAndClose:active,
+.TextButton.SaveAs:active,
+.TextButton.OK:active {
+    background-color: #18316c \9;
+}
+
+/* Social sign in buttons*/
+.SignInButton.Facebook {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#3b5998), to(#30487b));
+  background-image: -webkit-linear-gradient(top, #3b5998 0%, #30487b 100%);
+  background-image: -moz-linear-gradient(top, #3b5998 0%, #30487b 100%);
+  background-image: linear-gradient(to bottom, #3b5998 0%, #30487b 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF3B5998', endColorstr='#FF30487B', GradientType=0);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  line-height: 1.9em;
+  border: 1px solid #2a3f6c;
+}
+.SignInButton.Facebook:hover, .SignInButton.Facebook:focus, .SignInButton.Facebook:active, .SignInButton.Facebook:visited {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#466ab5), to(#3b5998));
+  background-image: -webkit-linear-gradient(top, #466ab5 0%, #3b5998 100%);
+  background-image: -moz-linear-gradient(top, #466ab5 0%, #3b5998 100%);
+  background-image: linear-gradient(to bottom, #466ab5 0%, #3b5998 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF466AB5', endColorstr='#FF3B5998', GradientType=0);
+}
+.SignInButton.LinkedIn {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#0077B5), to(#005c8c));
+  background-image: -webkit-linear-gradient(top, #0077B5 0%, #005c8c 100%);
+  background-image: -moz-linear-gradient(top, #0077B5 0%, #005c8c 100%);
+  background-image: linear-gradient(to bottom, #0077b5 0%, #005c8c 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0077B5', endColorstr='#FF005C8C', GradientType=0);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  line-height: 1.9em;
+  border: 1px solid #004f78;
+}
+.SignInButton.LinkedIn:hover, .SignInButton.LinkedIn:active, .SignInButton.LinkedIn:visited {
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#0092de), to(#0077B5));
+  background-image: -webkit-linear-gradient(top, #0092de 0%, #0077B5 100%);
+  background-image: -moz-linear-gradient(top, #0092de 0%, #0077B5 100%);
+  background-image: linear-gradient(to bottom, #0092de 0%, #0077b5 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0092DE', endColorstr='#FF0077B5', GradientType=0);
+}
+
+/* Rad Upload Buttons */
+.RadUpload .ruButton,
+.RadUploadProgressArea .ruButton {
+    background-position: 0 0 !important;
+    cursor: pointer;
+    border: 1px solid #ccc !important;
+    height: auto !important;
+}
+
+.RadUpload .ruFileWrap {
+    height: auto !important;
+}
+
+
+/******************************/
+/*       Dashboards           */
+/******************************/
+/* Zone or iPart style for the staff dashboards for consistent styling */
+.StaffDashboard .PanelHead.Distinguish,
+.StaffDashboard .panel-heading.Distinguish,
+.StaffDashboard .TitleBarCaption {
+    border-bottom: none;
+    min-height: 1.1em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.StaffDashboard .PanelTitle,
+.StaffDashboard .panel-title {
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+.ProgressTracker_Dashboard.CalloutPart2 .panel-heading.Distinguish {
+    background-color: #ddd;
+}
+
+.ProgressTracker ul,
+.ProgressTracker2 ul,
+.ProgressTracker_Dashboard ul {
+    font-family: 'Open Sans Condensed', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.ProgressTracker .count,
+.ProgressTracker2 .count,
+.ProgressTracker_Dashboard .count {
+    font-weight: 700;
+}
+
+.ProgressTracker_Dashboard,
+.StaffDashboard .ProgressTracker2,
+.StaffDashboard .ProgressTracker2 .inset {
+    text-align: right;
+}
+
+.ProgressTracker_Dashboard .panel-body,
+.StaffDashboard .ProgressTracker2 .panel-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.StaffDashboard .ProgressTracker2 .ProgressTrackerPanel .inset {
+    padding: 0;
+}
+
+.ProgressTracker_Dashboard ul,
+.StaffDashboard .ProgressTracker2 ul {
+    margin: 0;
+    font-weight: 700;
+}
+
+.ProgressTracker_Dashboard ul,
+.ProgressTracker_Dashboard li,
+.StaffDashboard .ProgressTracker2 ul,
+.StaffDashboard .ProgressTracker2 li {
+    list-style-type: none;
+}
+
+.ProgressTracker_Dashboard .count,
+.StaffDashboard .ProgressTracker2 .count {
+    display: block;
+    font-size: 500%;
+    line-height: 1;
+}
+
+.StaffDashboard .ProgressTracker2 .label {
+    font-size: 100%;
+}
+
+.ProgressTracker_Dashboard .ProgressBar,
+.StaffDashboard .ProgressTracker2 .ProgressBar {
+    height: 40px;
+    /* Can be anything */
+    margin-top: 3px;
+    margin-bottom: 3px;
+    position: relative;
+    background: #555555;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.ProgressTracker_Dashboard .ProgressBar > span,
+.StaffDashboard .ProgressTracker2 .ProgressBar > span {
+    display: block;
+    height: 100%;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: #82b885;
+    position: relative;
+    overflow: hidden;
+}
+
+.ProgressTracker_Dashboard p,
+.StaffDashboard .ProgressTracker2 p {
+    color: #555555;
+    text-align: center;
+}
+/**** End Dashboard styles ****/
+/*****************************************/
+/***           EVEREST MENU            ***/
+/*****************************************/
+/**
+ * Everest styles for PageNavR (Telerik RadMenu)
+ *
+ * This document contains Everest styles for the PageNavR/RadMenu control.
+ * 
+ * TABLE OF CONTENTS:
+ * RadMenu Default
+ *  * Root items
+ *  * Submenu items
+ *  *  * expand arrows
+ *  *  * rtl
+ *  * Submenu offsets
+ *  * Scrolling arrows
+ *  * Separators
+ */
+/* ########################## */
+/*  MegaDropDownMenu Styling  */
+/* ########################## */
+.RadMenu .rmGroup .MegaDropDownMenuOuter .rmText {
+    padding: 0;
+    margin: 0;
+    width: 600px !important;
+}
+
+div.MegaDropDownMenu {
+    background-color: #f8f7f7;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.MegaDropDownMenuToolTip {
+    padding: 5px;
+}
+
+.RadMenu_Everest {
+    background-color: #1b6096;
+    background-image: -moz-linear-gradient(top, #2070b0, #14476f);
+    background-image: -ms-linear-gradient(top, #2070b0, #14476f);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2070b0), to(#14476f));
+    background-image: -webkit-linear-gradient(top, #2070b0, #14476f);
+    background-image: -o-linear-gradient(top, #2070b0, #14476f);
+    background-image: linear-gradient(top, #2070b0, #14476f);
+    background-repeat: repeat-x;
+    border-color: #14476f #14476f #081e2f;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    /* IE filter was causing errors */
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIwNzBiMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxNDQ3NmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+}
+
+.RadMenu_Everest .rmRootGroup {
+    background: url(images/texture.png);
+}
+
+.RadMenu_Everest,
+.RadMenu_Everest .rmRootGroup {
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.RadMenu_Everest .rmItem.rmFirst a.rmRootLink {
+    -webkit-border-radius: 8px 0 0;
+    -moz-border-radius: 8px 0 0;
+    border-radius: 8px 0 0;
+}
+/* ######################## */
+/*     RadMenu Styling      */
+/* ######################## */
+/* <RadMenu / Default> */
+/* <Root items> */
+.RadMenu_Everest a.rmLink {
+    text-decoration: none;
+    padding: .5em 0;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.RadMenu_Everest a.rmLink.rmRootLink {
+    font-weight: bold;
+    font-size: 110%;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+    color: #DDD;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.RadMenu_Everest a.rmLink.rmRootLink:hover,
+.RadMenu_Everest a.rmLink.rmRootLink.rmExpanded,
+.RadMenu_Everest a.rmLink.rmRootLink.rmSelected,
+.RadMenu_Everest a.rmLink.rmRootLink.rmFocused {
+    color: #ffffff;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+
+.RadMenu_Everest a.rmLink.rmRootLink.rmExpanded {
+    color: #ffffff;
+    margin-top: -0.5em;
+    padding-top: 1em;
+    -webkit-border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 0 0;
+    background-color: #408ecd;
+    -webkit-box-shadow: 0 0 0.75em #000000;
+    -moz-box-shadow: 0 0 0.75em #000000;
+    box-shadow: 0 0 0.75em #000000;
+}
+
+.RadMenu_Everest a.rmLink.rmRootLink.rmFocused,
+.RadMenu_Everest a.rmLink.rmRootLink.rmSelected {
+    -webkit-box-shadow: 0 0 5em rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow: 0 0 5em rgba(0, 0, 0, 0.75) inset;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.75) inset;
+}
+
+.RadMenu_Everest a.rmLink.rmRootLink.rmFocused:hover,
+.RadMenu_Everest a.rmLink.rmRootLink.rmSelected:hover,
+.RadMenu_Everest a.rmLink.rmRootLink.rmFocused.rmExpanded,
+.RadMenu_Everest a.rmLink.rmRootLink.rmSelected.rmExpanded {
+    -webkit-box-shadow: 0 0 0.75em #000000;
+    -moz-box-shadow: 0 0 0.75em #000000;
+    box-shadow: 0 0 0.75em #000000;
+}
+
+.RadMenu_Everest .rmHorizontal .rmRootLink span.rmText {
+    display: block;
+    padding: 0 24px;
+    float: none;
+    text-align: center;
+}
+
+.RadMenu_Everest_rtl .rmRootLink span.rmText {
+    padding-right: 12px;
+}
+
+.RadMenu_Everest_Context_rtl .rmRootLink span.rmText {
+    padding-right: 28px;
+}
+
+.RadMenu_Everest .rmHorizontal a.rmRootLink {
+    padding-left: 0;
+}
+
+.RadMenu_Everest_rtl a.rmRootLink {
+    margin-left: 0;
+    padding: 0;
+}
+
+.RadMenu_Everest .rmHorizontal .rmItem > a.rmRootLink {
+    width: 100%;
+    text-align: center;
+}
+
+.RadMenu_Everest ul.rmHorizontal a.rmRootLink .rmLeftImage {
+    display: inline-block;
+    float: none;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: auto;
+    padding: 0 24px;
+    margin: 0;
+}
+
+.RadMenu_Everest ul.rmHorizontal a.rmRootLink span.rmLeftImage {
+    width: 40px; /* for sprites*/
+}
+
+.RadMenu_Everest a.rmRootLink.HomeLink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% 0;
+}
+
+.RadMenu_Everest a.rmRootLink.HomeLink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.HomeLink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.HomeLink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.HomeLink.rmFocused .rmLeftImage {
+    background-position: 50% -40px;
+}
+
+.RadMenu_Everest a.rmRootLink.MembershipLink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% -80px;
+}
+
+.RadMenu_Everest a.rmRootLink.MembershipLink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.MembershipLink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.MembershipLink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.MembershipLink.rmFocused .rmLeftImage {
+    background-position: 50% -120px;
+}
+
+.RadMenu_Everest a.rmRootLink.EventsLink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% -160px;
+}
+
+.RadMenu_Everest a.rmRootLink.EventsLink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.EventsLink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.EventsLink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.EventsLink.rmFocused .rmLeftImage {
+    background-position: 50% -200px;
+}
+
+.RadMenu_Everest a.rmRootLink.CommerceLink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% -240px;
+}
+
+.RadMenu_Everest a.rmRootLink.CommerceLink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.CommerceLink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.CommerceLink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.CommerceLink.rmFocused .rmLeftImage {
+    background-position: 50% -280px;
+}
+
+.RadMenu_Everest a.rmRootLink.FundraisingLink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% -320px;
+}
+
+.RadMenu_Everest a.rmRootLink.FundraisingLink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.FundraisingLink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.FundraisingLink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.FundraisingLink.rmFocused .rmLeftImage {
+    background-position: 50% -360px;
+}
+
+.RadMenu_Everest a.rmRootLink.ManageLink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% -400px;
+}
+
+.RadMenu_Everest a.rmRootLink.ManageLink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.ManageLink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.ManageLink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.ManageLink.rmFocused .rmLeftImage {
+    background-position: 50% -440px;
+}
+
+.RadMenu_Everest a.rmRootLink.RiSELink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% -480px;
+}
+
+.RadMenu_Everest a.rmRootLink.RiSELink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.RiSELink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.RiSELink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.RiSELink.rmFocused .rmLeftImage {
+    background-position: 50% -520px;
+}
+
+.RadMenu_Everest a.rmRootLink.ToolsLink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% -560px;
+}
+
+.RadMenu_Everest a.rmRootLink.ToolsLink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.ToolsLink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.ToolsLink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.ToolsLink.rmFocused .rmLeftImage {
+    background-position: 50% -600px;
+}
+
+.RadMenu_Everest a.rmRootLink.ReportsLink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% -640px;
+}
+
+.RadMenu_Everest a.rmRootLink.ReportsLink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.ReportsLink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.ReportsLink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.ReportsLink.rmFocused .rmLeftImage {
+    background-position: 50% -680px;
+}
+
+.RadMenu_Everest a.rmRootLink.CommunityLink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% -720px;
+}
+
+.RadMenu_Everest a.rmRootLink.CommunityLink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.CommunityLink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.CommunityLink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.CommunityLink.rmFocused .rmLeftImage {
+    background-position: 50% -760px;
+}
+
+.RadMenu_Everest a.rmRootLink.EducationLink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% -800px;
+}
+
+.RadMenu_Everest a.rmRootLink.EducationLink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.EducationLink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.EducationLink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.EducationLink.rmFocused .rmLeftImage {
+    background-position: 50% -840px;
+}
+
+.RadMenu_Everest a.rmRootLink.SetupLink .rmLeftImage {
+    background-image: url('images/NavSprite.png');
+    background-position: 50% -880px;
+}
+
+.RadMenu_Everest a.rmRootLink.SetupLink:hover .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.SetupLink.rmExpanded .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.SetupLink.rmSelected .rmLeftImage,
+.RadMenu_Everest a.rmRootLink.SetupLink.rmFocused .rmLeftImage {
+    background-position: 50% -920px;
+}
+
+.RadMenu_Everest_rtl ul.rmHorizontal .rmLeftImage {
+    margin: 4px 6px 0 -4px;
+}
+
+.RadMenu_Everest .rmVertical a.rmLink {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.RadMenu_Everest .rmVertical .rmSeparator .rmText {
+    border-bottom: 1px solid #eeeeee;
+}
+
+.RadMenu_Everest .rmVertical a.rmLink:hover,
+.RadMenu_Everest .rmVertical a.rmFocused,
+.RadMenu_Everest .rmVertical a.rmSelected,
+.RadMenu_Everest .rmVertical a.rmExpanded,
+.RadMenu_Everest .rmVertical a.rmExpanded:hover {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-style: solid;
+    border-color: #414141;
+    border-width: 1px 0;
+}
+
+.RadMenu_Everest .rmVertical .rmFirst a.rmLink:hover,
+.RadMenu_Everest .rmVertical .rmFirst a.rmFocused,
+.RadMenu_Everest .rmVertical .rmFirst a.rmSelected,
+.RadMenu_Everest .rmVertical .rmFirst a.rmExpanded,
+.RadMenu_Everest .rmVertical .rmFirst a.rmExpanded:hover {
+    padding-top: 1px;
+    padding-bottom: 0;
+    border-top-width: 0;
+}
+
+.RadMenu_Everest .rmVertical .rmLast a.rmLink:hover,
+.RadMenu_Everest .rmVertical .rmLast a.rmFocused,
+.RadMenu_Everest .rmVertical .rmLast a.rmSelected,
+.RadMenu_Everest .rmVertical .rmLast a.rmExpanded,
+.RadMenu_Everest .rmVertical .rmLast a.rmExpanded:hover {
+    padding-bottom: 1px;
+    padding-top: 0;
+    border-bottom-width: 0;
+}
+
+.RadMenu_Everest .rmVertical .rmItem a.rmDisabled:hover {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-width: 0;
+}
+
+.RadMenu_Everest a.rmDisabled,
+.RadMenu_Everest a.rmDisabled:hover {
+    color: #CCC;
+    background-color: transparent;
+}
+/* </Root items> */
+/* <Submenu items> */
+.RadMenu_Everest .rmSlide .rmVertical .rmItem .rmLeftImage + .rmText,
+.RadMenu_Everest .RadMenu_Context .rmGroup .rmLeftImage + .rmText {
+    padding: 0 54px 0 13px;
+}
+
+.RadMenu_Everest .rmGroup {
+    padding: 5px!important;
+    background: #408ecd;
+    box-shadow: 0 0.5em 0.75em rgba(0, 0, 0, 0.75);
+}
+
+.RadMenu_Everest .rmGroup .rmItem .rmLink .rmText {
+    line-height: 2em;
+    color: #ffffff;
+}
+
+.RadMenu_Everest .rmRoundedCorners .rmScrollWrapContainer .rmTopArrow,
+.RadMenu_Everest .rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow,
+.RadMenu_Everest .rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow,
+.RadMenu_Everest .rmRoundedCorners .rmScrollWrapContainer .rmRightArrow,
+.RadMenu_Everest_Context.rmRoundedCorners .rmScrollWrapContainer .rmTopArrow,
+.RadMenu_Everest_Context.rmRoundedCorners .rmScrollWrapContainer .rmBottomArrow,
+.RadMenu_Everest_Context.rmRoundedCorners .rmScrollWrapContainer .rmLeftArrow,
+.RadMenu_Everest_Context.rmRoundedCorners .rmScrollWrapContainer .rmRightArrow {
+    border: 0;
+}
+
+* html .rmRoundedCorners_Everest .rmScrollWrapContainer .rmTopArrow,
+* html .rmRoundedCorners_Everest .rmScrollWrapContainer .rmBottomArrow,
+* html .rmRoundedCorners_Everest .rmScrollWrapContainer .rmLeftArrow,
+* html .rmRoundedCorners_Everest .rmScrollWrapContainer .rmRightArrow {
+    border: 0;
+}
+
+.RadMenu_Everest .rmRootGroup li.rmItem .rmGroup {
+    padding-bottom: 0;
+}
+
+.RadMenu_Everest .rmScrollWrap .rmVertical {
+    border: 0;
+}
+
+.RadMenu_Everest .rmGroup .rmItem .rmLeftImage {
+    margin: 0;
+    height: 0;
+    width: 0;
+}
+
+.RadMenu_Everest .rmGroup .rmItem a.rmLink,
+.RadMenu_Everest .rmGroup .rmItem a.rmLink:hover,
+.RadMenu_Everest .rmGroup .rmItem a.rmFocused,
+.RadMenu_Everest .rmGroup .rmItem a.rmSelected,
+.RadMenu_Everest .rmGroup .rmItem a.rmExpanded {
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 0;
+}
+
+.RadMenu_Everest .rmGroup .rmLast a.rmLink,
+.RadMenu_Everest .rmGroup .rmLast a.rmLink:hover,
+.RadMenu_Everest .rmGroup .rmLast a.rmFocused,
+.RadMenu_Everest .rmGroup .rmLast a.rmSelected,
+.RadMenu_Everest .rmGroup .rmLast a.rmExpanded {
+    padding-bottom: 1px;
+}
+
+.RadMenu_Everest .rmGroup a.rmLink:hover,
+.RadMenu_Everest .rmGroup a.rmFocused,
+.RadMenu_Everest .rmGroup a.rmSelected,
+.RadMenu_Everest .rmGroup a.rmExpanded {
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    background-color: #a5cae7;
+}
+
+.RadMenu_Everest .rmGroup a.rmLink:hover .rmText,
+.RadMenu_Everest .rmGroup a.rmFocused .rmText,
+.RadMenu_Everest .rmGroup a.rmSelected .rmText,
+.RadMenu_Everest .rmGroup a.rmExpanded .rmText {
+    color: #333333 !important;
+}
+/* <expand arrows> */
+.RadMenu_Everest .rmRootGroup .rmExpandRight:after,
+.RadMenu_Everest .rmGroup .rmExpandDown:after,
+.RadMenu_Everest_Context .rmGroup .rmExpandRight:after,
+.RadMenu_Everest .rmRootGroup .rmItem a.rmDisabled .rmExpandRight:after,
+.RadMenu_Everest .rmGroup .rmItem a.rmDisabled .rmExpandDown:after,
+.RadMenu_Everest .rmRootGroup .rmItem a.rmDisabled:hover .rmExpandRight:after,
+.RadMenu_Everest .rmGroup .rmItem a.rmDisabled:hover .rmExpandDown:after {
+    content: '»';
+    position: absolute;
+    right: 8px;
+}
+/* </rtl> */
+/* </Submenu items> */
+/* <Submenu offsets (Default - specific, overlapping submenus)> */
+.RadMenu_Everest .rmVertical .rmSlide,
+.RadMenu_Everest .rmSlide .rmSlide,
+.RadMenu_Everest_Context .rmGroup .rmSlide {
+    margin: 0 0 0 -5px;
+}
+
+.RadMenu_Everest_rtl .rmSlide {
+    margin: 0 0 0 0;
+}
+
+.RadMenu_Everest_rtl .rmFirst .rmSlide {
+    margin-left: 1px;
+}
+
+.RadMenu_Everest_rtl .rmVertical .rmSlide,
+.RadMenu_Everest_rtl .rmSlide .rmSlide,
+.RadMenu_Everest_Context_rtl .rmGroup .rmSlide {
+    margin: 0 0 0 5px;
+}
+/* </Submenu offsets> */
+/* <Scrolling arrows> */
+.RadMenu_Everest .rmLeftArrow,
+.RadMenu_Everest .rmRightArrow {
+    background-color: #E6E6E6;
+}
+
+.RadMenu_Everest .rmLeftArrow {
+    background-position: -8px -312px;
+    border-right: 1px solid #2d74ad;
+}
+
+.RadMenu_Everest .rmRightArrow {
+    background-position: -482px -216px;
+    border-left: 1px solid #2d74ad;
+}
+
+.RadMenu_Everest .rmTopArrow,
+.RadMenu_Everest .rmBottomArrow,
+.RadMenu_Everest .rmGroup .rmLeftArrow,
+.RadMenu_Everest .rmGroup .rmRightArrow {
+    background-image: url(images/UpDownSprite.png);
+    background-repeat: no-repeat;
+    background-color: #2d74ad;
+}
+
+.RadMenu_Everest .rmTopArrow {
+    background-position: 50% 0;
+    border-bottom: 1px solid #2d74ad;
+}
+
+.RadMenu_Everest .rmBottomArrow {
+    background-position: 50% 100%;
+    border-top: 1px solid #2d74ad;
+}
+/* </Scrolling arrows> */
+/* <Separators> */
+.RadMenu_Everest .rmHorizontal .rmSeparator .rmText,
+.RadMenu_Everest .rmVertical .rmHorizontal .rmSeparator .rmText {   
+    margin: 1px 0 0;
+    width: auto;
+    background-color: #A8A8A8;
+}
+
+.RadMenu_Everest_Context .rmSeparator .rmText,
+.RadMenu_Everest .rmHorizontal .rmGroup .rmSeparator .rmText,
+.RadMenu_Everest .rmVertical .rmHorizontal .rmGroup .rmSeparator .rmText {
+    background-color: transparent;
+    background-position: 0 -406px;
+}
+/* </Separators> */
+/* </RadMenu / Default> */
+.RadMenu_Everest .rmRootGroup .rmVertical .rmSeparator .rmText,
+.RadMenu_Everest_Context .rmVertical .rmSeparator .rmText {
+    margin: 1px 5px!important;
+}
+/**** End Everest menu styles ****/
+/****************************/
+/*      Sub Navigation      */
+/****************************/
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI {
+    width: 100%;
+    margin-bottom: 0;
+    position: relative;
+    white-space: normal;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI .rtSp {
+    display: none;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI .rtIn {
+    color: #333333;
+    display: block;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI .rtPlus,
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI .rtMinus {
+    margin: 0;
+    float: left;
+    height: 28px;
+    width: 13px;
+    background-image: url(images/TreeSprite2.png);
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI .rtPlus {
+    background-position: -21px 11px;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI .rtPlus:hover {
+    background-position: -21px -55px;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI .rtMinus {
+    background-position: -131px 11px;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI .rtMinus:hover {
+    background-position: -131px -54px;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI > div {
+    border-bottom: 1px solid #bbbbbb;
+    border-top: 1px solid #eeeeee;
+    padding: 0;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI > div.rtHover,
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI > div.rtActive,
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI > div.rtSelected {
+    background: #89b9e0 url(images/LeftNavSelected.png) no-repeat right center;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI > div.SubNavigationSeparator {
+    height: .5em;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI > div .rtIn {
+    padding: 6px 9px 6px 15px;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI ul.rtUL {
+    background-color: #eeeeee;
+    padding-left: 0;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI ul.rtUL .rtIn {
+    padding: 4px 2px;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI ul.rtUL .SubNavigationSeparator {
+    padding-right: 5px;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI ul.rtUL .SubNavigationSeparator .rtIn {
+    padding: 0;
+    border-bottom: 1px solid #999999;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI ul.rtUL div:hover,
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI ul.rtUL ul div.rtHover {
+    background-color: #9dc5e5;
+}
+
+.SubNavigationBody .RadTreeView_Everest > .rtUL > .rtLI ul.rtUL div.rtSelected a.rtIn {
+    font-weight: bold!important;
+}
+
+#SideBarPanel .navlink {
+    width: 100%;
+}
+
+#SideBarPanel {
+    width: 14em;
+}
+/* <communities and product portfolio navigation> */
+.SubNavList {
+    margin: 0;
+}
+
+.SubNavList li {
+    list-style-type: none;
+}
+
+.CommunityLinksBlock a, 
+.SubNavList li a {
+    color: #333333;
+    display: block;
+    text-decoration: none;
+    padding: 6px 9px;
+    border-bottom: 1px solid #bbbbbb;
+    border-top: 1px solid #eeeeee;
+}
+
+.CommunityLinksBlock a:hover,
+.CommunityLinksBlock a:active,
+.CommunityLinksBlock a.CommunityLinksSelected,
+.SubNavList li a:hover, .SubNavList li a:active, .SubNavList li a.SelectedLink {
+    color: #333333;
+    text-decoration: none;
+    background: #89b9e0 url(images/LeftNavSelected.png) no-repeat right center;
+}
+
+.CommunityLinksBlock a:visited {
+    color: #333333;
+}
+/**** End sub navigation styles ****/
+/*****************************************/
+/*            iPart Styles               */
+/*****************************************/
+/* These classes may be used in iPart configuration */
+/* Use the iPartChain class along with the appropriate placement class (FirstPart, MiddlePart or LastPart) 
+to give several stacked iParts a conjoined look. */
+.iPartChain.FirstPart > .panel {
+    border-bottom-width: 0;
+}
+
+.iPartChain.MiddlePart > .panel {
+    border-top-width: 0;
+    border-bottom-width: 0;
+}
+
+.iPartChain.LastPart > .panel {
+    border-top-width: 0;
+}
+
+.iPartChain.MiddlePart,
+.iPartChain.LastPart {
+    margin-top: -0.9em;
+}
+/* CalloutPart1 and CalloutPart2 may be used in iPart configuration to add a distinguishing background */
+.CalloutPart1 .PanelBody,
+.CalloutPart1 .PanelHead,
+.CalloutPart1 .panel-body,
+.CalloutPart1 .panel-heading {
+    background-color: #f8e6ad;
+}
+
+.CalloutPart2 .PanelBody,
+.CalloutPart2 .PanelHead,
+.CalloutPart2 .panel-body,
+.CalloutPart2 .panel-heading {
+    background-color: #DDD;
+}
+
+.CalloutPart1 .PanelHead.Distinguish, .CalloutPart2 .PanelHead.Distinguish,
+.CalloutPart1 .panel-heading.Distinguish, .CalloutPart2 .panel-heading.Distinguish {
+    background-color: transparent;
+}
+/* Use the FeatureText class to make a block of text larger for emphasis */
+/*.FeatureText {
+    color: #777777;
+    font-size: 150%;
+    line-height: 170%;
+}*/
+/* Use the CenterText class to center the text within the iPart */
+.CenterText {
+    text-align: center;
+}
+/* Other iPart classes available: 
+ * CalloutBlockType1 - styled like the Zone style of the same class
+ * UsePrimaryButton - all buttons within this class will display as a primary button
+ * UseMediumButton - all buttons within this class will display as the medium size
+ * UseLargeButton - all buttons within this class will display as the large size
+ * ProgressTracker - style the progress tracker iPart (option 1)
+ * ProgressTracker2 - style the progress tracker iPart (option 2)
+ */
+.CalloutBlockType1 .StandardPanel,
+.CalloutBlockType1 .PanelHead,
+.CalloutBlockType1 .panel,
+.CalloutBlockType1 .panel-heading {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.CalloutBlockType1 .PanelHead,
+.CalloutBlockType1 .panel-heading {
+    margin: -1px;
+    padding: .5em .9em;
+    background-color: #256fab;
+    background-image: url(images/texture.png);
+    color: white;
+}
+
+.CalloutBlockType1 .PanelBody,
+.CalloutBlockType1 .panel-body {
+    background-color: #eeeeee;
+}
+/**** End iPart Styles ****/
+/*****************************************/
+/*          PanelField Styles            */
+/*****************************************/
+/* These styles can be used either as a wrapper for or directly on a PanelField to achieve a specific styling */
+/* CalloutPanelField1 can be used on or as a wrapper for a PanelField, or on the PanelField directly, to 
+create a callout on the label. (e.g., see the Tribute Gift Editor display) */
+.CalloutPanelField1 .PanelField label:first-child, .PanelField.CalloutPanelField1 label:first-child,
+.CalloutPanelField1 .PanelField .Label:first-child, .PanelField.CalloutPanelField1 .Label:first-child {
+    width: auto;
+    padding: .75em .75em 1.5em;
+    margin: .25em;
+    background: #94c2e6 url(images/BlueArrow.gif) no-repeat 50% 100%;
+    color: #044c88;
+}
+/* TotalBox can be used as a wrapper for PanelFields, or on the PanelField directly, to visually distinguish a calculated total. */
+.TotalBox .PanelField,
+.PanelField.TotalBox {
+    border-color: #CCC;
+}
+
+.TotalBox .PanelFieldLabel {
+    background-color: #2070b0;
+    color: White;
+    padding: .25em .75em;
+}
+
+.TotalBox .PanelField .PanelFieldLabel label,
+.PanelField.TotalBox .PanelFieldLabel label {
+    color: White;
+}
+/**** End PanelField Styles ****/
+/*############################################################################*/
+/*                       Specific iPart Styles                                */
+/*############################################################################*/
+/* These are styles used for styling of specific iParts */
+/*****************************************/
+/*            Search Results             */
+/*****************************************/
+.SearchField,
+.SearchResultSummary .ListItemTitle a {
+    display: block;
+    padding: 8px 12px;
+}
+
+.SearchField {
+    background-color: #b1d1eb;
+    margin: 0 -4px -4px;
+}
+
+.SearchField label {
+    font-size: 120%;
+}
+
+.SearchResultSummary .ListItemTitle a {
+    background-color: #ffedb6;
+    text-decoration: none;
+    color: #222222 !important;
+    margin: -4px -7px 0;
+}
+
+.SearchResultSummary .ListItemTitle a:hover {
+    text-decoration: underline;
+}
+/**** End Search Results ****/
+/*******************************************/
+/*              Event Display              */
+/*******************************************/
+.EventSummary {
+    background-color: #eeeeee;
+}
+
+.EventSummary .PhotoArea {
+    padding: 2em;
+}
+
+.EventSummary .PhotoArea img {
+    border: 1px solid #bbbbbb !important;
+}
+
+.EventSummary .Description {
+    padding: 2em;
+}
+
+.ProgramGroup .PanelHead,
+.ProgramGroup .panel-heading {
+    background-color: #ffe79c;
+}
+
+.ProgramGroup .PanelTitle,
+.ProgramGroup .panel-title {
+    font-size: 130%;
+    line-height: 1.7;
+}
+/**** End Event Display ****/
+
+/*******************************************/
+/*              Product Display              */
+/*******************************************/
+.ProductDisplay {
+    background-color: #EEE;
+    padding: 1em;
+}
+/**** End Product Display ****/
+
+
+
+/* Carousel
+   ========================================================================== */
+/* Used by the Slideshow iPart */
+.carousel h1, .carousel h2, .carousel h3, .carousel h4, .carousel h5 {
+  color: #fff;
+}
+.carousel h2, .carousel .panel-heading {
+  border-bottom: none;
+}
+
+/**** Styles for site UI content ****/
+.AltBg1 {
+    padding: 20px;
+    background: #d6d6d6;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ebebeb), color-stop(100%, #d6d6d6));
+    background-image: -webkit-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: -moz-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: -o-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: linear-gradient(top, #ebebeb,#d6d6d6);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.AltBg2 {
+    margin-top: 35px;
+    padding-top: 20px;
+    background: #d6d6d6;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ebebeb), color-stop(100%, #d6d6d6));
+    background-image: -webkit-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: -moz-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: -o-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: linear-gradient(top, #ebebeb,#d6d6d6);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.AltBg3 {
+    position: relative;
+    padding: 5px 5px;
+    background: #f8f8f8;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 10px;
+}
+
+h1.ContentTitle {
+    font-size: 300%;
+}
+
+.ContentBlockPrimary {
+    padding: 20px;
+    background: #d6d6d6;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ebebeb), color-stop(100%, #d6d6d6));
+    background-image: -webkit-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: -moz-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: -o-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: linear-gradient(top, #ebebeb,#d6d6d6);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ContentBlockSecondary {
+    margin-top: 35px;
+    padding-top: 20px;
+    background: #d6d6d6;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ebebeb), color-stop(100%, #d6d6d6));
+    background-image: -webkit-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: -moz-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: -o-linear-gradient(top, #ebebeb,#d6d6d6);
+    background-image: linear-gradient(top, #ebebeb,#d6d6d6);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.ContentBlockLeft {
+    display: table-cell;
+    min-width: 250px;
+}
+
+.ContentBlockRight {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 25px;
+}
+
+.BlockList {
+    position: relative;
+    height: auto;
+    width: 100%;
+    font-family: arial, helvetica, clean, sans-serif;
+    font-weight: normal;
+}
+
+.BlockList ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: #afafaf;
+    text-align: left;
+    list-style: none;
+}
+
+.BlockList ul li {
+    vertical-align: middle;
+    border-bottom: #d4d4d4 solid 1px;
+    border-top: #fff solid 1px;
+    list-style: none;
+}
+
+.BlockList ul li span {
+    vertical-align: middle;
+    display: block;
+}
+
+.BlockList ul li p {
+    vertical-align: middle;
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.BlockList ul li img {
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.BlockList ul li div {
+    vertical-align: middle;
+}
+
+.BlockList ul a {
+    text-decoration: none;
+    color: #2070b0;
+    display: block;
+    padding: 10px 20px;
+}
+
+.BlockList ul a:hover {
+    background-color: #EBEBEB;
+}
+
+.BlockList a div span:hover {
+    text-decoration: underline;
+}
+
+blockquote.Quote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px 1.5em 0;
+    padding: 1.5em 10px;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+blockquote.Quote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 500%;
+    line-height: .1em;
+    margin-right: .25em;
+    vertical-align: -.4em;
+}
+
+blockquote.Quote:after {
+    color: #ccc;
+    font-size: 400%;
+    line-height: .1em;
+    margin-right: .25em;
+    vertical-align: -.4em;
+}
+
+blockquote.Quote p {
+    display: inline;
+    font-size: 120%;
+    line-height: 1.6em;
+    font-weight: normal;
+}
+
+/******************************************/
+/* Progress Tracker                       */
+/******************************************/
+.ProgressTracker_Dashboard_Overview .panel{
+    background-color: #f2f6fb;
+    text-align: center;
+    padding-top: 5px;
+      /* Default to the same height */
+      min-height: 122px;
+}
+
+.ProgressTracker_Dashboard_Overview .panel-title {
+      font-size: 115%;
+}
+
+.ProgressTracker_Dashboard_Overview .panel-body {
+      padding-top: 0;
+}
+
+.ProgressTracker_Dashboard_Overview ul, .ProgressTracker_Dashboard_Overview li{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+}
+
+.ProgressTracker_Dashboard_Overview .count {
+      font-size: 300%;
+      font-weight: 700;
+      display: block;
+}
+
+.ProgressTracker_Dashboard_Overview .label {
+    font-weight: 700;
+    color: #777;
+}
+
+.ProgressTracker_Dashboard_Overview .ProgressBar {
+    height: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -5px;
+    margin-top: 5px;
+      position: relative;
+    background-color: #555555;
+}
+
+.ProgressTracker_Dashboard_Overview .ProgressBar > span {
+      display: block;
+    height: 100%;
+      background-color: #82b885;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+/* Alt background colors
+   ========================================================================== */
+.AltBgColor1 {
+  background-color: #f4f5ed;
+  padding: 10px;
+}
+
+.AltBgColor2 > .panel, .AltBgColor2 > .panel h2,
+.AltBgColor3 > .panel,
+.AltBgColor3 > .panel h2,
+.AltBgColor4 > .panel,
+.AltBgColor4 > .panel h2,
+.AltBgColor5 > .panel,
+.AltBgColor5 > .panel h2 {
+  color: #fff;
+}
+.AltBgColor2 > .panel a, .AltBgColor2 > .panel a:hover, .AltBgColor2 > .panel a:active, .AltBgColor2 > .panel a:focus, .AltBgColor2 > .panel a:visited,
+.AltBgColor3 > .panel a,
+.AltBgColor3 > .panel a:hover,
+.AltBgColor3 > .panel a:active,
+.AltBgColor3 > .panel a:focus,
+.AltBgColor3 > .panel a:visited,
+.AltBgColor4 > .panel a,
+.AltBgColor4 > .panel a:hover,
+.AltBgColor4 > .panel a:active,
+.AltBgColor4 > .panel a:focus,
+.AltBgColor4 > .panel a:visited,
+.AltBgColor5 > .panel a,
+.AltBgColor5 > .panel a:hover,
+.AltBgColor5 > .panel a:active,
+.AltBgColor5 > .panel a:focus,
+.AltBgColor5 > .panel a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+.AltBgColor2 > .panel .ProgressBar > span,
+.AltBgColor3 > .panel .ProgressBar > span,
+.AltBgColor4 > .panel .ProgressBar > span,
+.AltBgColor5 > .panel .ProgressBar > span {
+  /* Make the progress tracker indicator use a white bar instead of default */
+  background-color: #fff;
+}
+
+.AltBgColor2 > .panel {
+  background-color: #00abbe;
+}
+.AltBgColor2 > .panel.panel-border {
+  border-color: #0094a5;
+}
+
+.AltBgColor3 > .panel {
+  background-color: #dc4f00;
+}
+.AltBgColor3 > .panel.panel-border {
+  border-color: #c34600;
+}
+
+.AltBgColor4 > .panel {
+  background-color: #e98300;
+}
+.AltBgColor4 > .panel.panel-border {
+  border-color: #d07500;
+}
+
+.AltBgColor5 > .panel {
+  background-color: #8e51ae;
+}
+.AltBgColor5 > .panel.panel-border {
+  border-color: #80499d;
+}
+
+/* ==========================================================================
+   DASHBOARDS
+   ========================================================================== */
+/* Zone or iPart style for the staff dashboards for consistent styling */
+.ProgressTracker_Dashboard .panel-body,
+.ProgressTracker_Dashboard_Overview .panel-body {
+  padding-top: 0;
+}
+.ProgressTracker_Dashboard .label,
+.ProgressTracker_Dashboard_Overview .label {
+  font-size: 120%;
+  display: block;
+  margin-top: 10px;
+}
+.ProgressTracker_Dashboard .ProgressBar,
+.ProgressTracker_Dashboard_Overview .ProgressBar {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.ProgressTracker2 ul,
+.ProgressTracker_Dashboard ul,
+.ProgressTracker_Dashboard_Overview ul {
+  margin: 0;
+  padding: 0;
+}
+.ProgressTracker2 ul, .ProgressTracker2 li,
+.ProgressTracker_Dashboard ul,
+.ProgressTracker_Dashboard li,
+.ProgressTracker_Dashboard_Overview ul,
+.ProgressTracker_Dashboard_Overview li {
+  list-style-type: none;
+}
+.ProgressTracker2 .count,
+.ProgressTracker_Dashboard .count,
+.ProgressTracker_Dashboard_Overview .count {
+  font-weight: bold;
+  display: block;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.ProgressTracker2 .label,
+.ProgressTracker_Dashboard .label,
+.ProgressTracker_Dashboard_Overview .label {
+  line-height: 1;
+}
+.ProgressTracker2 .ProgressBar,
+.ProgressTracker_Dashboard .ProgressBar,
+.ProgressTracker_Dashboard_Overview .ProgressBar {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #e6e6e6;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.ProgressTracker2 .ProgressBar > span,
+.ProgressTracker_Dashboard .ProgressBar > span,
+.ProgressTracker_Dashboard_Overview .ProgressBar > span {
+  display: block;
+  height: 100%;
+  background-color: #dc4f00;
+  position: relative;
+  overflow: hidden;
+}
+.ProgressTracker2 p,
+.ProgressTracker_Dashboard p,
+.ProgressTracker_Dashboard_Overview p {
+  margin-bottom: 0;
+}
+
+.ProgressTracker_Dashboard .panel-heading.Distinguish {
+  padding-bottom: 0;
+}
+.ProgressTracker_Dashboard .inset {
+  display: block;
+  padding-bottom: 15px;
+}
+
+.ProgressTracker2 .count,
+.ProgressTracker_Dashboard .count {
+  font-size: 350%;
+}
+.ProgressTracker2 .ProgressBar,
+.ProgressTracker_Dashboard .ProgressBar {
+  padding: 0;
+  height: 18px;
+}
+
+.ProgressTracker_Dashboard_Overview .panel {
+  /* default the overview PTs to the same height */
+  min-height: 137px;
+}
+.ProgressTracker_Dashboard_Overview .panel-heading.Distinguish {
+  border-bottom-color: transparent;
+}
+.ProgressTracker_Dashboard_Overview .count {
+  font-size: 250%;
+}
+.ProgressTracker_Dashboard_Overview .ProgressBar {
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+.StaffDashboard h2,
+.StaffDashboard .panel-heading.Distinguish,
+.StaffDashboard .PanelHead.Distinguish,
+.StaffDashboard .TitleBarCaption {
+  border-bottom-color: transparent;
+}
+.StaffDashboard h2.Collapsible,
+.StaffDashboard .panel-heading.Distinguish.Collapsible,
+.StaffDashboard .PanelHead.Distinguish.Collapsible,
+.StaffDashboard .TitleBarCaption.Collapsible {
+  border-bottom-color: #ddd;
+}

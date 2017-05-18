@@ -1,0 +1,16 @@
+11.0
+14
+1       SQLUNIQUEID         1       16      ""   1     ProgramKey                                               ""
+2       SQLNCHAR            2       100     ""   2     ProgramName                                              SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     UserDefinedExperiencesFlag                               ""
+4       SQLUNIQUEID         1       16      ""   4     ExperienceUnitKey                                        ""
+5       SQLDECIMAL          1       19      ""   5     MinimumValue                                             ""
+6       SQLDECIMAL          1       19      ""   6     MaximumValue                                             ""
+7       SQLNCHAR            2       500     ""   7     ProgramDescr                                             SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       4       ""   8     ProgramStatusCode                                        SQL_Latin1_General_CP1_CI_AS
+9       SQLDATETIME         0       8       ""   9     CreatedOn                                                ""
+10      SQLUNIQUEID         1       16      ""   10    CreatedByUserKey                                         ""
+11      SQLDATETIME         0       8       ""   11    UpdatedOn                                                ""
+12      SQLUNIQUEID         1       16      ""   12    UpdatedByUserKey                                         ""
+13      SQLBIT              1       1       ""   13    RequiresApprovalFlag                                     ""
+14      SQLDATETIME         1       8       ""   14    MarkedForDeleteOn                                        ""

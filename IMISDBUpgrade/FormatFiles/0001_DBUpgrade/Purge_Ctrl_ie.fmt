@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLNCHAR            2       20      ""   1     ID                                       SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       10      ""   2     STATUS                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     CERT_REGISTER_BTID                       ""
+4       SQLBIT              1       1       ""   4     INVOICE_BALANCE                          ""
+5       SQLBIT              1       1       ""   5     NAME_BT_COID                             ""
+6       SQLBIT              1       1       ""   6     NAME_FIN_BTID                            ""
+7       SQLBIT              1       1       ""   7     OPEN_ORDERS                              ""
+8       SQLBIT              1       1       ""   8     REFERRAL_ORPHAN                          ""
+9       SQLBIT              1       1       ""   9     SUBSCRIPTION                             ""
+10      SQLBIT              1       1       ""   10    OPP_PROSPECT                             ""

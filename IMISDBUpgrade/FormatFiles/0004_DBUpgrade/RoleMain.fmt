@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLUNIQUEID         1       16      ""   1     RoleKey                                ""
+2       SQLNCHAR            2       100     ""   2     Name                                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       500     ""   3     Description                            SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsSystem                               ""
+5       SQLUNIQUEID         1       16      ""   5     UpdatedByUserKey                       ""
+6       SQLDATETIME         0       8       ""   6     UpdatedOn                              ""
+7       SQLDATETIME         1       8       ""   7     MarkedForDeleteOn                      ""

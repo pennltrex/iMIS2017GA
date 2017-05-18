@@ -1,0 +1,174 @@
+/** Tabstrip container */
+.RadTabStrip_Mars {}
+
+
+	.RadTabStripTop_Mars .rtsLevel {}
+	.RadTabStripTop_Mars .rtsLevel1 {
+		background-color: #044f65;
+		-moz-border-radius: 5px 5px 0 0;
+		border-radius: 5px 5px 0 0;
+	}
+
+
+
+
+/** Tabs holder */
+.RadTabStrip_Mars .rtsUL {
+	background-color: #ffffff;
+}
+
+	.RadTabStrip_Mars .rtsLevel1 .rtsUL {
+		background-color: #044f65;
+	}
+
+
+	.RadTabStripTop_Mars .rtsLevel1 .rtsUL {padding: 5px; padding-bottom: 0}
+	.RadTabStripBottom_Mars .rtsLevel1 .rtsUL {padding: 5px; padding-top: 0}
+
+
+
+
+/** rtsLI */
+.RadTabStrip_Mars .rtsLI {
+	color: #757575;
+	font: 12px/22px "Segoe UI", Arial, sans-serif;
+}
+
+
+	.RadTabStrip_Mars .rtsLevel1 .rtsLI {
+		color: #ffffff;
+		-moz-border-radius: 5px 5px 0 0;
+		border-radius: 5px 5px 0 0;
+	}
+
+
+	.RadTabStripTop_Mars .rtsUL .rtsLI,
+	.RadTabStripBottom_Mars .rtsUL .rtsLI {padding: 0 0 0 1px}
+	.RadTabStripTop_Mars .rtsUL .rtsFirst,
+	.RadTabStripBottom_Mars .rtsUL .rtsFirst {padding: 0 0 0 1px}
+
+
+
+
+/** rtsLink */
+.RadTabStrip_Mars .rtsLink {
+	padding: 0 15px;
+	color: #757575;
+	font: 14px/22px "Segoe UI", Arial, sans-serif;
+}
+
+
+	.RadTabStrip_Mars .rtsLink:hover {
+		color: #000000;
+	}
+
+
+	.RadTabStrip_Mars .rtsLevel1 .rtsLink {
+		color: #ffffff;
+		border: 1px solid #044f65;
+	}
+	.RadTabStrip_Mars .rtsLevel1 .rtsLink:hover {
+		border-color: #ffffff;
+	}
+
+
+	.RadTabStripTop_Mars .rtsLevel1 .rtsLink {border-bottom: 0}
+	.RadTabStripBottom_Mars .rtsLevel1 .rtsLink {border-top: 0}
+	.RadTabStripRight_Mars .rtsLevel1 .rtsLink {border-left: 0}
+	.RadTabStripLeft_Mars .rtsLevel1 .rtsLink {border-right: 0}
+
+
+
+
+/** rtsSelected */
+.RadTabStrip_Mars .rtsSelected {
+	color: #000000;
+	background-color: #e6e6e6;
+}
+
+	.RadTabStrip_Mars .rtsSelected:hover {}
+
+
+	.RadTabStrip_Mars .rtsLevel1 .rtsSelected {
+		border-color: #ffffff;
+		color: #757575;
+		background-color: #ffffff;
+	}
+	.RadTabStrip_Mars .rtsLevel1 .rtsSelected:hover {
+		color: #000000;
+	}
+
+
+	.RadTabStripTop_Mars .rtsSelected:hover {}
+	.RadTabStripBottom_Mars .rtsSelected:hover {}
+	.RadTabStripRight_Mars .rtsSelected:hover {}
+	.RadTabStripLeft_Mars .rtsSelected:hover {}
+
+
+
+
+/** rtsDisabled */
+.RadTabStrip_Mars .rtsDisabled,
+.RadTabStrip_Mars .rtsDisabled:hover
+{
+	color: #cccccc;
+}
+
+
+	.RadTabStrip_Mars .rtsLevel1 .rtsDisabled,
+	.RadTabStrip_Mars .rtsLevel1 .rtsDisabled:hover
+	{
+		border-color: #044f65;
+		color: #99d6e8;
+	}
+
+
+
+
+/** rtsText */
+.RadTabStrip_Mars .rtsLevel .rtsOut,
+.RadTabStrip_Mars .rtsLevel .rtsIn,
+.RadTabStrip_Mars .rtsLevel .rtsTxt {padding: 0}
+
+
+
+
+/** rtsSeparator */
+.RadTabStrip_Mars .rtsSeparator {}
+
+
+
+
+/** Scrolling arrows */
+.RadTabStrip_Mars .rtsNextArrow,
+.RadTabStrip_Mars .rtsPrevArrow,
+.RadTabStrip_Mars .rtsPrevArrowDisabled,
+.RadTabStrip_Mars .rtsNextArrowDisabled
+{
+	background-image: url('TabStrip/TabStripStates.png');
+}
+.RadTabStrip_Mars .rtsLevel .rtsNextArrow { background-position: -18px 0; }
+.RadTabStrip_Mars .rtsLevel .rtsPrevArrow { background-position: 0 0; }
+.RadTabStrip_Mars .rtsLevel .rtsNextArrow:hover { background-position: -54px 0; }
+.RadTabStrip_Mars .rtsLevel .rtsPrevArrow:hover { background-position: -36px 0; }
+.RadTabStrip_Mars .rtsLevel .rtsPrevArrowDisabled,
+.RadTabStrip_Mars .rtsLevel .rtsPrevArrowDisabled:hover { background-position: -72px 0; }
+.RadTabStrip_Mars .rtsLevel .rtsNextArrowDisabled,
+.RadTabStrip_Mars .rtsLevel .rtsNextArrowDisabled:hover { background-position: -90px 0; }
+
+.RadTabStripLeft_Mars .rtsLevel .rtsNextArrow,
+.RadTabStripRight_Mars .rtsLevel .rtsNextArrow { background-position: -18px -20px; }
+.RadTabStripLeft_Mars .rtsLevel .rtsPrevArrow,
+.RadTabStripRight_Mars .rtsLevel .rtsPrevArrow { background-position: 0 -20px; }
+.RadTabStripLeft_Mars .rtsLevel .rtsNextArrow:hover,
+.RadTabStripRight_Mars .rtsLevel .rtsNextArrow:hover  { background-position: -54px -20px; }
+.RadTabStripLeft_Mars .rtsLevel .rtsPrevArrow:hover,
+.RadTabStripRight_Mars .rtsLevel .rtsPrevArrow:hover { background-position: -36px -20px; }
+.RadTabStripLeft_Mars .rtsLevel .rtsPrevArrowDisabled,
+.RadTabStripLeft_Mars .rtsLevel .rtsPrevArrowDisabled:hover,
+.RadTabStripRight_Mars .rtsLevel .rtsPrevArrowDisabled,
+.RadTabStripRight_Mars .rtsLevel .rtsPrevArrowDisabled:hover { background-position: -72px -20px; }
+.RadTabStripLeft_Mars .rtsLevel .rtsNextArrowDisabled,
+.RadTabStripLeft_Mars .rtsLevel .rtsNextArrowDisabled:hover,
+.RadTabStripRight_Mars .rtsLevel .rtsNextArrowDisabled,
+.RadTabStripRight_Mars .rtsLevel .rtsNextArrowDisabled:hover { background-position: -90px -20px; }

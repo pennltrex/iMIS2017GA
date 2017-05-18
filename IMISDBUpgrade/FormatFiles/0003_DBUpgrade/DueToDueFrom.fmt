@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLNCHAR            2       10      ""   1     SourceOrg                        SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       10      ""   2     DestinationOrg                   SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       22      ""   3     SourceDestKey                    SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       100     ""   4     DueFromAccount                   SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     DueToAccount                     SQL_Latin1_General_CP1_CI_AS
+6       SQLBINARY           2       8       ""   6     TIME_STAMP                       ""

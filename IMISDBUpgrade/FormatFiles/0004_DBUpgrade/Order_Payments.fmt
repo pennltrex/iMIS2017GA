@@ -1,0 +1,17 @@
+11.0
+15
+1       SQLNUMERIC          1       19      ""   1     ORDER_NUMBER                                               ""
+2       SQLNUMERIC          1       19      ""   2     PAYMENT_NUMBER                                             ""
+3       SQLNCHAR            2       200     ""   3     ENCRYPT_PAY_NUMBER                                         SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       20      ""   4     PAY_TYPE                                                   SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       50      ""   5     PAY_NUMBER                                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       20      ""   6     CREDIT_CARD_EXPIRES                                        SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       20      ""   7     AUTHORIZE                                                  SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       60      ""   8     CREDIT_CARD_NAME                                           SQL_Latin1_General_CP1_CI_AS
+9       SQLNUMERIC          1       19      ""   9     PAY_AMOUNT                                                 ""
+10      SQLNCHAR            2       60      ""   10    CASH_GL_ACCT                                               SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       200     ""   11    ENCRYPT_CREDIT_CARD_EXPIRES                                SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       200     ""   12    ENCRYPT_CSC                                                SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       20      ""   13    ISSUE_DATE                                                 SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       4       ""   14    ISSUE_NUMBER                                               SQL_Latin1_General_CP1_CI_AS
+15      SQLBINARY           2       8       ""   15    TIME_STAMP                                                 ""

@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLUNIQUEID         1       16      ""   1     GroupMemberKey                                                                         ""
+2       SQLUNIQUEID         1       16      ""   2     RelationshipKey                                                                        ""
+3       SQLINT              0       4       ""   3     MemorialTributeNotificationPreferenceCode                                              ""

@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLNCHAR            2       20      ""   1     ID                                   SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     SEQN                                 ""
+3       SQLDATETIME         1       8       ""   3     PG_Date_Notified                     ""
+4       SQLNCHAR            2       40      ""   4     PG_Status                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     PG_Gift_Vehicle                      SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       100     ""   6     PG_Outright                          SQL_Latin1_General_CP1_CI_AS
+7       SQLMONEY            0       8       ""   7     PG_Future_Value                      ""
+8       SQLNCHAR            2       100     ""   8     PG_Source_Code                       SQL_Latin1_General_CP1_CI_AS
+9       SQLBINARY           2       8       ""   9     TIME_STAMP                           ""

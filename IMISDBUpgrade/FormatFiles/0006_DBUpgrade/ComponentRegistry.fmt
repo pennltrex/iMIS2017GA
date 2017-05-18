@@ -1,0 +1,18 @@
+11.0
+16
+1       SQLUNIQUEID         1       16      ""   1     ComponentKey                                             ""
+2       SQLNCHAR            2       100     ""   2     Name                                                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       2000    ""   3     Description                                              SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       200     ""   4     InterfaceName                                            SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       400     ""   5     TypeName                                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       200     ""   6     AssemblyName                                             SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       256     ""   7     ConfigureWebUserControl                                  SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       256     ""   8     ConfigureWindowsControl                                  SQL_Latin1_General_CP1_CI_AS
+9       SQLBIT              1       1       ""   9     IsTyped                                                  ""
+10      SQLBIT              1       1       ""   10    IsBusinessItem                                           ""
+11      SQLUNIQUEID         1       16      ""   11    ComponentSummaryContentKey                               ""
+12      SQLNCHAR            2       1536    ""   12    ComponentNewLink                                         SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       1536    ""   13    ComponentEditLink                                        SQL_Latin1_General_CP1_CI_AS
+14      SQLNCHAR            2       1536    ""   14    ComponentExecuteLink                                     SQL_Latin1_General_CP1_CI_AS
+15      SQLNCHAR            2       100     ""   15    DeploymentPackageCode                                    SQL_Latin1_General_CP1_CI_AS
+16      SQLDATETIME         1       8       ""   16    MarkedForDeleteOn                                        ""

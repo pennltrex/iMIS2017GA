@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLINT              0       4       ""   1     TRANS_NUMBER                                           ""
+2       SQLNCHAR            2       20      ""   2     SOFT_CREDIT_ID                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNUMERIC          1       19      ""   3     PERCENTAGE                                             ""
+4       SQLMONEY            0       8       ""   4     AMOUNT                                                 ""
+5       SQLINT              0       4       ""   5     ORIGINATING_ACTIVITY_SEQN                              ""
+6       SQLNCHAR            2       40      ""   6     FUNDRAISER_TYPE                                        SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       62      ""   7     PRODUCT_CODE                                           SQL_Latin1_General_CP1_CI_AS
+8       SQLBINARY           2       8       ""   8     TIME_STAMP                                             ""

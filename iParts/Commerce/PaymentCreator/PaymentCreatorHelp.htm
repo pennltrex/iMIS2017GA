@@ -1,0 +1,163 @@
+<html>
+	<head>
+        </head>
+	<body>
+		<h1>Payment Creator</h1>
+			<ul>
+                <li><strong>Name</strong> - Enter a name for the content item. 
+                This text appears during design mode (configuration).</li>
+                <li><strong>Title</strong> - Enter the text to display above this content item on the rendered page. 
+                If blank, no title displays.</li>
+                <li><strong>Do not render in design mode</strong> - Select this option to prevent content 
+                record data from being loaded in the content editor. This improves performance during design time 
+                (configuration).</li>
+                <li><strong>iPart CSS class</strong> - (optional) Enter the name of a CSS class that 
+                    will be applied to the content item at runtime. Add this CSS class to an appropriate 
+                style sheet. Using such classes lets you apply special formatting to targeted content items in a reusable way.</li>
+                <li><strong>Display a border around this content</strong> - Select this option to display a border 
+                around this content item on the rendered page.</li>
+                <li><strong>Display content within a collapsible panel</strong> - Enable to allow users to minimize 
+                the panel within the page, to work with dense pages more efficiently.</li>
+                <ul>
+                <li><strong>Show the content as collapsed </strong>- Enable to display the panel minimized by default. 
+                <br /><i>Tip:</i> Be sure that the <strong>Title</strong> makes clear what data is hidden from view.</li>
+                </ul>
+                <li><strong>Display on screen sizes (for responsive themes only):</strong><ul>
+            <li><strong>Extra-small screens</strong> - When disabled, this content item is 
+                hidden on extra small devices, such as smartphones, where the width of the 
+                screen is less than 768px.</li>
+            <li><strong>Small screens</strong> - When disabled, this content item is hidden on 
+                small devices, such as tablets, where the width of the screen is greater than 
+                768px and less than 991px.</li>
+            <li><strong>Medium screens</strong> - When disabled, this content item is hidden on 
+                medium devices, such as laptops, where the width of the screen is greater than 
+                992px and less than 1199px.</li>
+            <li><strong>Large screens</strong> - When disabled, this content item is hidden on 
+                large devices, such as wide computer monitors, where the width of the screen is 
+                greater than or equal to 1200px wide.
+            <br><i>Note: </i>When <strong>Easy Edit</strong> is enabled, all content items for 
+                a page are displayed, regardless of the <strong>Display on screen sizes (for 
+                responsive themes only)</strong> options that are selected.</li>
+            </ul>
+        </li>
+                <li><b>Purpose</b> - This content item can be used to accept payment details in a 
+                    shopping cart or on a donation page. In both cases, use this content item with other 
+                    content items to complete a transaction. Select a processing type that best fits your 
+                    use of this content item: 
+                    <ul>
+                        <li><b>Cart</b> - Default; the order is submitted for processing from a shopping cart. </li>
+                        <li><b>Donation</b> - Required to use this content item in combination with the Donation 
+                            Creator content item, to create a standalone donation page.</li>
+                        <br /><em>Note: </em>When configured for a purpose of <strong>Donation</strong>, the Payment Creator content item must have a connection to a Donation Creator content item on the same content record. </br>
+                    </ul>
+                </li>
+                    
+               <li><b>Display Update button</b> - Select this option when the content item appears on a page without a 
+                   <b>Submit Order Button</b>. 
+                   <ul>
+                       <li class="v10only"><i>Exceptions:</i><ul>
+                           <li>Do not select this option when the <b>Purpose = Donation</b>.</li>
+                           <li>Do not select this option when enabling PayPal Express, which requires the <b>
+                               Submit Order Button</b>.</li>
+                           </ul>
+                       </li>
+                   </ul>
+                </li>
+        
+            <li><b>Commit sequence</b> - (required when <b>Purpose</b> = <b>Donation</b>)
+                    Commit sequence affects how multiple content items interact on a page. Enter a non-zero number 
+                    to specify the order that changes are saved relative to other inline editable content items on 
+                    the rendered page. Zero (default) = save order is unimportant.</li>
+            <li class="v10only"><b>Purchase order number required for Pay Later</b> - (active only if purchase orders are allowed; 
+                   enabled by default) 
+                Disable this option to allow shoppers to check out using <b>Pay Later</b> without 
+                entering a Purchase Order number.</li>
+        </ul>
+                   
+        <p><b>Notes</b></p>
+        <ul>
+          <li>The <strong>Choose another address</strong> link opens a window that is configured for address verification. Postal addresses
+          entered through this window are automatically uploaded to a service that verifies and standardizes the address. Users can then either 
+          accept the suggested address, or keep the original as they entered it.
+         
+        </li>
+          <li>When users select United Kingdom from the <strong>Country</strong> drop-down, a <strong>Postal lookup</strong> field 
+          appears, allowing users to search for an address using a postal code. Users can then select the correct address from a list of returned
+          addresses generated by the iMIS address verification service.
+        </li>
+            <li>Users see the warning &quot;Invalid card number&quot; 
+            if their entry fails the check digit algorithm for credit card verification. </li>
+            <li>The address is passed to the card authorization gateway and may be used to validate 
+                a credit card, depending on 
+            the gateway provider. </li>
+            <li><b>Donations:</b>
+                <ul>
+                    <li><i>Choosing addresses:</i> For credit and debit donations, the donor&#39;s name and 
+                        address are passed to the card authorization gateway and may be used to validate 
+                        the card. Only authenticated users see the link to <b>Choose another address</b>. 
+                            Unauthenticated users (guests) must enter a valid address in the Contact 
+                        Account Creator content item, which is then used to validate the card. </li>
+                    <li><i>Commit sequence: </i>A donation page that processes payments immediately 
+                (instead of through the cart) must include the Payment Creator. Processing a 
+                donation immediately requires the content items to reside on the <em>same</em>
+                content record, but they can display in any order. The <b>Commit sequence </b>values, not the placement order, control 
+                        when 
+                the content items are processed. When the donation is submitted from the content 
+                record, execution control is given to each content item based on the <b>Commit sequence</b> 
+                value shown in parentheses:
+                        <ul>
+                            <li>Donation Creator (2) </li>
+                            <li>Contact Account Creator (1) </li>
+                            <li>Submit Order Button Link (3) </li>
+                            <li>Payment Creator (4 or 0) </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="v10only"><b>Configuring payment options:</b>
+                <ul>
+                    <li><i>Choosing addresses</i>: Whether a user may choose another address when entering payment 
+                    details depends on which <b>Purpose</b> has been selected:
+                        <ul>
+                            <li>If <b>Purpose</b> = <b>Cart</b>, the <b>Choose another address</b> link will display.</li>
+                            <li>If <b>Purpose</b> = <b>Donation</b>, the <b>Choose another address</b> link will display 
+                            only if the user is logged on. Users who have not logged on must enter a valid 
+                            address in the <b>Contact Account Creator</b> content item.</li>
+                        </ul>
+                    </li>
+                    <li><i>Defining the payment options</i>: Only cash 
+                        accounts (as defined in Advanced Accounting Console: <b>Accounting 
+                        &gt; Options &gt; Set up tables &gt; Set up cash accounts</b>)<b> </b>of type Credit card, Debit card or 
+                        Cash will appear as payment options on your website. </li>
+                    <li><i>Requiring the Card Security Code</i> (CSC) for Credit Cards: Open Admin 
+                        Console: <b>Accounting 
+                        &gt; Options &gt; Set up tables &gt; Set up cash accounts</b> and enable the <b>CSC Required Web Entry option</b>. </li>
+                    <li><i>Requiring issue number/date for Debit Cards</i>: Open Advanced Accounting Console: <b>Accounting 
+                        &gt; Options &gt; Set up tables &gt; Set up cash accounts</b>, specify type <b>Debit Card.</b></li>
+                    <li><i>Enabling Pay with PayPal</i>: To enable PayPal payments, one of your cash accounts 
+                        must be a payment service type of cash account, and the cash account title must 
+                        be &#39;PayPal&#39;; if so, this content item renders with a button that lets the user 
+                        submit payment using the PayPal site. If you are designing your own check out pages, 
+                        be sure that the <b>Payment Creator</b> and <b>Submit Order Button</b> content items are on the same page. 
+                        Note that the PayPal option is hidden whenever the signed-in user is working On 
+                        Behalf Of another.</li>
+                </ul>
+            </li>
+            <li class="v100only"><b>Configuring payment options:</b>
+                <ul>
+                    <li>When <b>Purpose</b> = <b>Cart:</b> When paying by credit or debit card, the user 
+                    can specify an alternative card address by either selecting an existing address 
+                    or entering a new one. </li>
+                    <li>Payment Methods are defined in Advanced Accounting Console: <b>Accounting &gt; Options &gt; 
+                        Set up payment method sets</b>. </li>
+                    <li>Requiring the Card Security Code (CSC): This field is optional. </li>
+                    <li>The <b>Pay Later</b> radio button appears only if the default payment method set 
+                        includes a payment method of type 'BillMe'. 
+                    </li>
+                </ul>
+            </li>
+            <li>This content item uses an application that is external to iMIS.</li>
+        </ul>
+	</body>
+</html>

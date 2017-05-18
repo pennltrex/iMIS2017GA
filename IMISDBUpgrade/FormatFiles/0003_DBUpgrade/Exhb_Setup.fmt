@@ -1,0 +1,35 @@
+10.0
+33
+1       SQLNCHAR            2       20      ""   1     MEET_ID                                      SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       40      ""   2     BOOTH_SCALE                                  SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     BOOTH_LEN                                    ""
+4       SQLINT              0       4       ""   4     BOOTH_WIDTH                                  ""
+5       SQLBIT              1       1       ""   5     REG_CITY_ST                                  ""
+6       SQLBIT              1       1       ""   6     REG_BADGE                                    ""
+7       SQLBIT              1       1       ""   7     REG_COUNTRY                                  ""
+8       SQLBIT              1       1       ""   8     REG_FNAME                                    ""
+9       SQLBIT              1       1       ""   9     REG_TRACK                                    ""
+10      SQLBIT              1       1       ""   10    CONTACT_WIN                                  ""
+11      SQLNCHAR            2       20      ""   11    HIST_CODE                                    SQL_Latin1_General_CP1_CI_AS
+12      SQLBIT              1       1       ""   12    VALIDATE_PREF_BOOTHS                         ""
+13      SQLBIT              1       1       ""   13    HIST_NBR                                     ""
+14      SQLBIT              1       1       ""   14    HIST_DIM                                     ""
+15      SQLBIT              1       1       ""   15    HIST_UNIT                                    ""
+16      SQLINT              0       4       ""   16    FREE_PASS                                    ""
+17      SQLNUMERIC          1       19      ""   17    ABOVE_ALLOT                                  ""
+18      SQLNUMERIC          1       19      ""   18    GST_AMT                                      ""
+19      SQLNCHAR            2       20      ""   19    MEETING                                      SQL_Latin1_General_CP1_CI_AS
+20      SQLBIT              1       1       ""   20    PROSP_ADD                                    ""
+21      SQLBIT              1       1       ""   21    PROSP_SECURE                                 ""
+22      SQLNUMERIC          1       19      ""   22    DOWN_PCTG                                    ""
+23      SQLINT              0       4       ""   23    NBR_PAYMENTS                                 ""
+24      SQLDATETIME         1       8       ""   24    PYMT1_DATE                                   ""
+25      SQLDATETIME         1       8       ""   25    PYMT2_DATE                                   ""
+26      SQLDATETIME         1       8       ""   26    PYMT3_DATE                                   ""
+27      SQLDATETIME         1       8       ""   27    PYMT4_DATE                                   ""
+28      SQLDATETIME         1       8       ""   28    PYMT5_DATE                                   ""
+29      SQLDATETIME         1       8       ""   29    PYMT6_DATE                                   ""
+30      SQLBIT              1       1       ""   30    PROD_CONFLICTS                               ""
+31      SQLBIT              1       1       ""   31    COMP_CONFLICTS                               ""
+32      SQLINT              0       4       ""   32    MAX_FREE_PASSES                              ""
+33      SQLBINARY           2       8       ""   33    TIME_STAMP                                   ""

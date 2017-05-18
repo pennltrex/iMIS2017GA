@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLUNIQUEID         1       16      ""   1     ContactKey                             ""
+2       SQLNCHAR            2       160     ""   2     InstituteName                          SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     PrimaryContactKey                      ""
+4       SQLUNIQUEID         1       16      ""   4     InstituteGroupKey                      ""

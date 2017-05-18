@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLUNIQUEID         1       16      ""   1     DeferralMatrixLineDetailKey                                ""
+2       SQLUNIQUEID         1       16      ""   2     DeferralMatrixKey                                          ""
+3       SQLUNIQUEID         1       16      ""   3     DeferralMatrixLineKey                                      ""
+4       SQLDECIMAL          1       19      ""   4     AmountConverted                                            ""
+5       SQLDATETIME         0       8       ""   5     DateConverted                                              ""
+6       SQLDATETIME         1       8       ""   6     MarkedForDeleteOn                                          ""

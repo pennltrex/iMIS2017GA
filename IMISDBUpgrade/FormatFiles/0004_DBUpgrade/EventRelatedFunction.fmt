@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLUNIQUEID         1       16      ""   1     EventRelatedFunctionKey                                  ""
+2       SQLNCHAR            2       62      ""   2     EventFunctionKey                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       62      ""   3     EventRegistrationOptionKey                               SQL_Latin1_General_CP1_CI_AS
+4       SQLINT              0       4       ""   4     DisplayOption                                            ""
+5       SQLBIT              1       1       ""   5     IsAutoEnroll                                             ""

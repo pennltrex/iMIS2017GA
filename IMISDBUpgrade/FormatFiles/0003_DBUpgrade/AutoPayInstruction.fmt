@@ -1,0 +1,28 @@
+10.0
+26
+1       SQLUNIQUEID         1       16      ""   1     InstructionId                                                    ""
+2       SQLNCHAR            2       20      ""   2     Status                                                           SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     CustomerId                                                       SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       20      ""   4     PaymentMethodId                                                  SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     PaymentMethodSummary                                             SQL_Latin1_General_CP1_CI_AS
+6       SQLUNIQUEID         1       16      ""   6     PaymentToken                                                     ""
+7       SQLDATETIME         1       8       ""   7     StartDate                                                        ""
+8       SQLDATETIME         1       8       ""   8     EndDate                                                          ""
+9       SQLNCHAR            2       200     ""   9     ProcessingReference                                              SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            8       0       ""   10    Notes                                                            SQL_Latin1_General_CP1_CI_AS
+11      SQLNCHAR            2       20      ""   11    SourceSystem                                                     SQL_Latin1_General_CP1_CI_AS
+12      SQLUNIQUEID         1       16      ""   12    LinkedFromAutoPayInstructionId                                   ""
+13      SQLDATETIME         1       8       ""   13    CancelledOn                                                      ""
+14      SQLNCHAR            2       2000    ""   14    CancellationReason                                               SQL_Latin1_General_CP1_CI_AS
+15      SQLUNIQUEID         1       16      ""   15    CreatedByUserKey                                                 ""
+16      SQLDATETIME         0       8       ""   16    CreatedOn                                                        ""
+17      SQLUNIQUEID         1       16      ""   17    UpdatedByUserKey                                                 ""
+18      SQLDATETIME         0       8       ""   18    UpdatedOn                                                        ""
+19      SQLNUMERIC          1       19      ""   19    AuthorizedPaymentAmount                                          ""
+20      SQLINT              0       4       ""   20    IntervalTypeCode                                                 ""
+21      SQLINT              0       4       ""   21    CollectionDay                                                    ""
+22      SQLNCHAR            2       62      ""   22    ProductCode                                                      SQL_Latin1_General_CP1_CI_AS
+23      SQLNCHAR            2       80      ""   23    Appeal                                                           SQL_Latin1_General_CP1_CI_AS
+24      SQLNCHAR            2       20      ""   24    Campaign                                                         SQL_Latin1_General_CP1_CI_AS
+25      SQLNCHAR            2       20      ""   25    Fund                                                             SQL_Latin1_General_CP1_CI_AS
+26      SQLDATETIME         1       8       ""   26    PaymentTokenExpirationDate                                       ""

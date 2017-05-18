@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLUNIQUEID         1       16      ""   1     QueryResultKey                       ""
+2       SQLUNIQUEID         1       16      ""   2     CreatedByUserKey                     ""
+3       SQLDATETIME         0       8       ""   3     CreatedOn                            ""

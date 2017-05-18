@@ -1,0 +1,7 @@
+10.0
+5
+1       SQLNCHAR            2       80      ""   1     SOURCE_CODE                    SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     CAMPAIGN_CODE                  SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       120     ""   3     TITLE                          SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            4       0       ""   4     DESCRIPTION                    SQL_Latin1_General_CP1_CI_AS
+5       SQLBINARY           2       8       ""   5     TIME_STAMP                     ""

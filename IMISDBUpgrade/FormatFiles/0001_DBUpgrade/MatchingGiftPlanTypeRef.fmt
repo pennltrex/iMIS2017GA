@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLUNIQUEID         1       16      ""   1     MatchingGiftPlanTypeKey                            ""
+2       SQLBIT              1       1       ""   2     IsActive                                           ""
+3       SQLNCHAR            2       100     ""   3     MatchingGiftPlanDesc                               SQL_Latin1_General_CP1_CI_AS

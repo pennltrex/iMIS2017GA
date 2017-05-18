@@ -1,0 +1,20 @@
+10.0
+18
+1       SQLNCHAR            2       20      ""   1     ID                                           SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     RELATION_TYPE                                SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     TARGET_ID                                    SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       120     ""   4     TARGET_NAME                                  SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       20      ""   5     TARGET_RELATION_TYPE                         SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       160     ""   6     TITLE                                        SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       100     ""   7     FUNCTIONAL_TITLE                             SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       10      ""   8     STATUS                                       SQL_Latin1_General_CP1_CI_AS
+9       SQLDATETIME         1       8       ""   9     EFFECTIVE_DATE                               ""
+10      SQLDATETIME         1       8       ""   10    THRU_DATE                                    ""
+11      SQLNCHAR            4       0       ""   11    NOTE                                         SQL_Latin1_General_CP1_CI_AS
+12      SQLNCHAR            2       510     ""   12    LAST_STRING                                  SQL_Latin1_General_CP1_CI_AS
+13      SQLDATETIME         1       8       ""   13    DATE_ADDED                                   ""
+14      SQLDATETIME         1       8       ""   14    LAST_UPDATED                                 ""
+15      SQLNCHAR            2       120     ""   15    UPDATED_BY                                   SQL_Latin1_General_CP1_CI_AS
+16      SQLINT              0       4       ""   16    SEQN                                         ""
+17      SQLNCHAR            2       60      ""   17    GROUP_CODE                                   SQL_Latin1_General_CP1_CI_AS
+18      SQLBINARY           2       8       ""   18    TIME_STAMP                                   ""

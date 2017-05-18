@@ -1,0 +1,19 @@
+10.0
+17
+1       SQLNCHAR            2       20      ""   1     ID                                                     SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     SOLICITOR_ID                                           SQL_Latin1_General_CP1_CI_AS
+3       SQLBIT              1       1       ""   3     DO_NOT_PHONE                                           ""
+4       SQLBIT              1       1       ""   4     DO_NOT_EMAIL                                           ""
+5       SQLNCHAR            2       510     ""   5     LIST_AS                                                SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       510     ""   6     MATCH_DESCRIP                                          SQL_Latin1_General_CP1_CI_AS
+7       SQLTINYINT          0       1       ""   7     MATCH_PCT                                              ""
+8       SQLMONEY            0       8       ""   8     MIN_EMPL_CONTRIB                                       ""
+9       SQLNUMERIC          1       19      ""   9     MAX_EMPL_CONTRIB                                       ""
+10      SQLDATETIME         1       8       ""   10    VALID_FROM                                             ""
+11      SQLDATETIME         1       8       ""   11    VALID_THRU                                             ""
+12      SQLNCHAR            2       30      ""   12    PREFERRED_DIST_CODE                                    SQL_Latin1_General_CP1_CI_AS
+13      SQLTINYINT          0       1       ""   13    Receipt_Interval                                       ""
+14      SQLDATETIME         1       8       ""   14    Last_Receipt_Printed_Date                              ""
+15      SQLBIT              1       1       ""   15    DO_NOT_SELL                                            ""
+16      SQLBIT              1       1       ""   16    DO_NOT_SOLICIT                                         ""
+17      SQLBINARY           2       8       ""   17    TIME_STAMP                                             ""

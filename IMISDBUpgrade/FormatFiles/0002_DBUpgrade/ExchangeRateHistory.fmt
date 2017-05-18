@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLNCHAR            2       20      ""   1     Ex_Hist_Id                   SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       6       ""   2     CurrencyCode                 SQL_Latin1_General_CP1_CI_AS
+3       SQLNUMERIC          1       19      ""   3     ExchangeRate                 ""
+4       SQLDATETIME         1       8       ""   4     ValidFrom                    ""
+5       SQLDATETIME         1       8       ""   5     ValidTo                      ""
+6       SQLBINARY           2       8       ""   6     TIME_STAMP                   ""

@@ -1,0 +1,9 @@
+11.0
+7
+1       SQLUNIQUEID         1       16      ""   1     RuleCriterionKey                       ""
+2       SQLUNIQUEID         1       16      ""   2     RuleKey                                ""
+3       SQLNCHAR            2       400     ""   3     ObjectName                             SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       200     ""   4     Name                                   SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         0       8       ""   5     UpdatedOn                              ""
+6       SQLUNIQUEID         1       16      ""   6     UpdatedByUserKey                       ""
+7       SQLDATETIME         1       8       ""   7     MarkedForDeleteOn                      ""

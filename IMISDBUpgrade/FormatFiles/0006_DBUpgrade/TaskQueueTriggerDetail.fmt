@@ -1,0 +1,7 @@
+11.0
+5
+1       SQLBIGINT           0       8       ""   1     TaskQueueId                                    ""
+2       SQLINT              0       4       ""   2     TaskQueueStatusId                              ""
+3       SQLDATETIME         1       8       ""   3     StatusUpdatedOn                                ""
+4       SQLNCHAR            8       0       ""   4     ChangeRow                                      ""
+5       SQLINT              0       4       ""   5     TaskQueueChangeTypeId                          ""

@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLNCHAR            2       100     ""   1     DeploymentPackageCode                          SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     DeploymentPackageDesc                          SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       2000    ""   3     DocumentSystemPath                             SQL_Latin1_General_CP1_CI_AS

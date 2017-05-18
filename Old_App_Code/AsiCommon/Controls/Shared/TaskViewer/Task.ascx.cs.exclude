@@ -1,0 +1,193 @@
+using System.Web.UI;
+using Asi;
+using Asi.Web;
+using Asi.Business;
+using System;
+
+namespace Asi.Web.UI.Common.Tasks
+{
+    /// <summary>
+    ///		Summary description for Task.
+    /// </summary>
+    public class Task : TaskPanelBase
+    {
+        #region Fields
+
+        protected System.Web.UI.WebControls.PlaceHolder ErrorMsgPlaceHolder;
+        protected System.Web.UI.WebControls.PlaceHolder SubPlaceHolder;
+        protected Asi.Web.UI.WebControls.StyledButton btnDelete;
+        protected Asi.Web.UI.WebControls.StyledButton btnSave;
+        protected Asi.Web.UI.WebControls.StyledButton btnCancel;
+        protected Microsoft.Web.UI.WebControls.TabStrip SubTabStrip;
+
+        #endregion Fields
+
+        Asi.Business.OpportunityManagement.Opportunity Opportunity
+        {
+            get
+            {
+                if(!string.IsNullOrEmpty(Request["iParentKey"]))
+                {
+                    Asi.Business.OpportunityManagement.Opportunity oppBase =
+                        Asi.Business.OpportunityManagement.OpportunityController.Opportunity(
+                            new Guid(Request["iParentKey"]), Container);
+
+                    return Asi.Business.OpportunityManagement.OpportunityController.Opportunity(
+                            oppBase.OpportunityType.OpportunityClass, new Guid(Request["iParentKey"]), Container);
+                }
+                return null;
+            }
+        }   
+
+        bool AddToActionPlan
+        {
+            get
+            {
+                bool addToActionPlan;
+                bool.TryParse(Request.QueryString["iAddToActionPlan"], out addToActionPlan);
+                return addToActionPlan;
+            }
+        }
+
+        #region Members
+
+        override protected void OnInit(EventArgs e)
+        {
+            UseParentAtomObject = true;
+            base.OnInit(e);
+
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_ServerClick);
+            this.btnSave.Click += new System.EventHandler(this.btnSave_ServerClick);
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_ServerClick);
+
+            LoadSectionControl();
+        }
+
+        override protected void OnLoad(EventArgs e)
+        {
+            if (IsPostBack == false)
+            {
+                InitializeStrings();
+                InitializeControls();
+            }
+            CheckSecurity();
+        }
+
+        private void LoadSectionControl()
+        {
+            int index = 0;
+
+            if (Exists("TaskEditorHTabIndex"))
+            {
+                index = (int)this["TaskEditorHTabIndex"];
+            }
+
+            switch (index)
+            {
+                case 0:
+                    SubPlaceHolder.Controls.Add(Page.LoadControl("~/AsiCommon/Controls/Shared/TaskViewer/TaskDefinition.ascx"));
+                    break;
+            }
+        }
+
+        private void InitializeStrings()
+        {
+            btnDelete.Text = ResourceManager.GetWord("Delete");           
+            btnSave.Text = ResourceManager.GetWord("Save");            
+            btnCancel.Text = ResourceManager.GetWord("Cancel");          
+        }
+
+        private void InitializeControls()
+        {
+            string deleteConfirmation = ResourceManager.GetPhrase("TaskDeleteConfirmation", "Delete this task?");
+            btnDelete.Attributes.Add("onclick", "if ((confirm('" + deleteConfirmation + "')) == false) return false;");
+            btnDelete.CausesValidation = false;
+
+            btnCancel.CausesValidation = false;
+        }
+
+        private void CheckSecurity()
+        {
+            EditEnabled = TaskItem.AccessSet.SoftQuery(AclPermissionType.Edit) || TaskItem.AccessSet.SoftQuery(AclPermissionType.Control);
+            DeleteEnabled = TaskItem.AccessSet.SoftQuery(AclPermissionType.Delete);
+        }
+
+        private bool EditEnabled
+        {
+            set
+            {
+                btnSave.Visible = value;
+                btnCancel.Visible = value;
+            }
+        }
+
+        private bool DeleteEnabled
+        {
+            set { btnDelete.Visible = value; }
+        }
+
+        private void btnSave_ServerClick(object sender, System.EventArgs e)
+        {
+            try
+            {
+                // Don't attempt save if constraint errors exist.
+                if (Exists("ConstraintViolation"))
+                {
+                    RemoveSessionVariable("ConstraintViolation");
+                    return;
+                }
+
+                if (TaskItem != null)
+                {
+                    TaskItem.Commit();
+                    ErrorDisplay.ShowObjectConstraintGuidelines(TaskItem.ConstraintViolations, ErrorMsgPlaceHolder);
+                    TaskItem.ConstraintViolations.Clear();
+
+                    if (Opportunity != null && AddToActionPlan)
+                    {
+                        Opportunity.AddTaskToCurrentStage(TaskItem);
+                    }
+                }
+                Page.ClientScript.RegisterStartupScript(typeof(UserControl), "SubmitParent", "RefreshParentRadWindow();", true);
+                ScriptManager.RegisterStartupScript(this, GetType(), GetType().FullName + ".CloseWindow",
+                    "var oWindow = " + MasterPageBase.WindowClientScript +
+                    ";oWindow.IsDirty=true;oWindow.Close('SaveButton_Click');", true);
+            }
+            catch (CommitWithErrorsException)
+            {
+                ErrorDisplay.ShowObjectConstraintErrors(new CommitWithErrorsException(), TaskItem.ConstraintViolations, ErrorMsgPlaceHolder);
+                TaskItem.ConstraintViolations.Clear();
+            }
+        }
+
+        private void btnDelete_ServerClick(object sender, System.EventArgs e)
+        {
+            if (TaskItem != null)
+            {
+                if (Opportunity != null)
+                {
+                    Opportunity.RemoveTask(TaskItem);
+                }
+
+                TaskItem.Delete();
+                TaskItem.Commit();
+
+                Page.ClientScript.RegisterStartupScript(typeof(UserControl), "SubmitParent", "RefreshParentRadWindow();", true);
+                ScriptManager.RegisterStartupScript(this, GetType(), GetType().FullName + ".CloseWindow",
+                    "var oWindow = " + MasterPageBase.WindowClientScript +
+                    ";oWindow.IsDirty=true;oWindow.Close('DeleteButton_Click');", true);
+            }
+
+        }
+
+        private void btnCancel_ServerClick(object sender, System.EventArgs e)
+        {
+            ScriptManager.RegisterStartupScript(this, GetType(), GetType().FullName + ".CloseWindow",
+                "var oWindow = " + Asi.Web.UI.MasterPageBase.WindowClientScript +
+                ";oWindow.IsDirty=false;oWindow.Close();", true);
+        }
+
+        #endregion       
+
+    }
+}

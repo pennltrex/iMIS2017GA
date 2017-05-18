@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLNUMERIC          1       19      ""   1     ContentID                                ""
+2       SQLNCHAR            0       2       ""   2     WorkflowStatusCode                       SQL_Latin1_General_CP1_CI_AS
+3       SQLNUMERIC          1       19      ""   3     ContactID                                ""
+4       SQLDATETIME         0       8       ""   4     ChangeDateTime                           ""

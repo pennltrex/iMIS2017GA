@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLINT              0       4       ""   1     GLEntryTypeCode                    ""
+2       SQLNCHAR            2       100     ""   2     GLEntryTypeDesc                    SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       60      ""   3     GLEntryTypeName                    SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,36 @@
+10.0
+34
+1       SQLUNIQUEID         1       16      ""   1     InvoiceKey                                       ""
+2       SQLNCHAR            2       100     ""   2     InvoiceNumber                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     SoldToContactKey                                 ""
+4       SQLUNIQUEID         1       16      ""   4     BillToContactKey                                 ""
+5       SQLUNIQUEID         1       16      ""   5     FinancialEntityKey                               ""
+6       SQLNCHAR            2       1000    ""   6     Notes                                            SQL_Latin1_General_CP1_CI_AS
+7       SQLUNIQUEID         1       16      ""   7     PaymentTermsKey                                  ""
+8       SQLDATETIME         0       8       ""   8     InvoiceDate                                      ""
+9       SQLNCHAR            2       2       ""   9     AccountingMethodCode                             SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       2       ""   10    InvoiceTypeCode                                  SQL_Latin1_General_CP1_CI_AS
+11      SQLUNIQUEID         1       16      ""   11    SourceCodeKey                                    ""
+12      SQLNCHAR            2       6       ""   12    CurrencyCode                                     SQL_Latin1_General_CP1_CI_AS
+13      SQLDECIMAL          1       19      ""   13    CurrencyConversionRate                           ""
+14      SQLNCHAR            2       100     ""   14    PurchaseOrderNumber                              SQL_Latin1_General_CP1_CI_AS
+15      SQLUNIQUEID         1       16      ""   15    CommissionPlanKey                                ""
+16      SQLUNIQUEID         1       16      ""   16    SalesTeamGroupKey                                ""
+17      SQLNCHAR            2       100     ""   17    OrderNumber                                      SQL_Latin1_General_CP1_CI_AS
+18      SQLUNIQUEID         1       16      ""   18    SystemEntityKey                                  ""
+19      SQLUNIQUEID         1       16      ""   19    SalesLocationKey                                 ""
+20      SQLUNIQUEID         1       16      ""   20    AccessKey                                        ""
+21      SQLUNIQUEID         1       16      ""   21    CreatedByUserKey                                 ""
+22      SQLDATETIME         0       8       ""   22    CreatedOn                                        ""
+23      SQLUNIQUEID         1       16      ""   23    UpdatedByUserKey                                 ""
+24      SQLDATETIME         0       8       ""   24    UpdatedOn                                        ""
+25      SQLUNIQUEID         1       16      ""   25    OwnerGroupKey                                    ""
+26      SQLDATETIME         1       8       ""   26    FirstPaymentDueDate                              ""
+27      SQLNCHAR            2       100     ""   27    Description                                      SQL_Latin1_General_CP1_CI_AS
+28      SQLNCHAR            2       100     ""   28    PromoCode                                        SQL_Latin1_General_CP1_CI_AS
+29      SQLUNIQUEID         1       16      ""   29    PriceSheetKey                                    ""
+30      SQLDATETIME         1       8       ""   30    MarkedForDeleteOn                                ""
+31      SQLUNIQUEID         1       16      ""   31    FinalBatchKey                                    ""
+32      SQLUNIQUEID         1       16      ""   32    OriginatingBatchKey                              ""
+33      SQLINT              1       4       ""   33    BatchLineStatusCode                              ""
+34      SQLNCHAR            2       400     ""   34    BatchStatusMessage                               SQL_Latin1_General_CP1_CI_AS

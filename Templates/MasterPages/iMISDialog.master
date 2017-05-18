@@ -1,0 +1,64 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="System.Web.UI.MasterPage" %>
+<%@ Register Src="~/AsiCommon/Controls/ContentManagement/HeaderScript.ascx" TagName="HeaderScript"
+    TagPrefix="uc1" %>
+<%@ Register Src="~/AsiCommon/Controls/ContentManagement/UserMessageDisplay.ascx"
+    TagName="MessageDisplay" TagPrefix="uc2" %>
+<%@ Register TagPrefix="asi" Assembly="Asi.Web" Namespace="Asi.Web.UI.WebControls" %>
+<%@ Register TagPrefix="telerik" Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" %>
+
+<script language="C#" runat="server">
+    private void Page_Load(object sender, System.EventArgs e)
+    {
+        Guid hierarchyKey;
+        if (Request.QueryString["hkey"] != null)
+            hierarchyKey = new Guid(Request.QueryString["hkey"]);
+        else
+            hierarchyKey = Asi.AppContext.CurrentContext.HKey;
+
+        string includeText = String.Format("<link href=\"{0}/Templates/iMIS/StyleSheets/iMIS.css\" rel=\"stylesheet\" type=\"text/css\" />", Asi.Web.Utilities.GetTildeExpansion());
+        LiteralControl stylesheet = new LiteralControl(includeText);
+        ((HtmlHead)Page.Header).Controls.Add(stylesheet);
+        
+        string tildeExpansion = Asi.Web.Utilities.GetTildeExpansion();
+        ScriptManager1.Scripts.Add(new ScriptReference(tildeExpansion + "/AsiCommon/Scripts/Asi.js"));
+    }
+    override protected void OnInit(EventArgs e)
+    {
+        this.Load += new System.EventHandler(this.Page_Load);
+        base.OnInit(e);
+        this.ButtonBar.CommandButtonClick += new Asi.Web.UI.CommandButtonEventHandler(this.ButtonBar_CommandButtonClick);
+    }
+    private void ButtonBar_CommandButtonClick(object sender, Asi.Web.UI.CommandButtonEventArgs e)
+    {
+        if (Page is Asi.Web.UI.DisplayPageBase)
+        {
+            ((Asi.Web.UI.DisplayPageBase)Page).HandleCommandButtonClick(sender, e.ButtonType);
+        }
+    }
+</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <uc1:HeaderScript ID="HeaderScript" runat="server" />
+</head>
+<body class="TemplateBodyDialog">
+    <form id="template" runat="server">
+        <telerik:RadScriptManager ID="ScriptManager1" runat="server" EnableCdn="false" EnablePageMethods="true" EnablePartialRendering="true" EnableScriptGlobalization="true" AsyncPostBackTimeout="3600"></telerik:RadScriptManager>
+        <div id="buttonbar" style="height: 31px; background-repeat: repeat-x; background-image: url('<%= Asi.Web.Utilities.GetTildeExpansion() %>/Templates/iMIS/images/header/dialog_nav_sliver.jpg')">
+        </div>
+        <div id="contentdialog">
+            <uc2:MessageDisplay ID="MessageDisplay" runat="server" />
+            <asp:ContentPlaceHolder ID="TemplateBody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="dialogbottombuttonbar">
+            <asi:CommandButtonBar ID="ButtonBar" runat="server" TemplateName="iMIS" />
+            <asi:StyledButton ID="DialogCancelButton" runat="server" AlternateText='<%# Asi.ResourceManager.GetPhrase("CancelAndCloseDialog", "Cancel and close dialog") %>'
+                CommandButtonType="Cancel" OnClientClick="window.close();this.disabled='disabled';" /></div>
+    </form>
+         <!--jscript from Page.ResgisterStartupScript extention is loaded here -->
+        <asp:contentplaceholder id ="TemplateScripts" runat="server"></asp:contentplaceholder>	    
+
+</body>
+</html>

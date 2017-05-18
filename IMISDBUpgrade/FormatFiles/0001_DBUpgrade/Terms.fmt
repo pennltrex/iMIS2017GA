@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLNCHAR            2       10      ""   1     TERMS_CODE                   SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       60      ""   2     DESCRIPTION                  SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     DISC_DAYS                    ""
+4       SQLNUMERIC          1       19      ""   4     DISC_PERCENT                 ""
+5       SQLINT              0       4       ""   5     DUE_DAYS                     ""
+6       SQLBINARY           2       8       ""   6     TIME_STAMP                   ""

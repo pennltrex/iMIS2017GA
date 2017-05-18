@@ -1,0 +1,26 @@
+10.0
+24
+1       SQLDATETIME         0       8       ""   1     PeriodBegin                                        ""
+2       SQLDATETIME         0       8       ""   2     PeriodEnd                                          ""
+3       SQLINT              0       4       ""   3     TotalMembers                                       ""
+4       SQLDECIMAL          1       19      ""   4     Recruit1                                           ""
+5       SQLDECIMAL          1       19      ""   5     Recruit2                                           ""
+6       SQLDECIMAL          1       19      ""   6     Recruit3                                           ""
+7       SQLDECIMAL          1       19      ""   7     Engage1                                            ""
+8       SQLDECIMAL          1       19      ""   8     Engage2                                            ""
+9       SQLDECIMAL          1       19      ""   9     Engage3                                            ""
+10      SQLDECIMAL          1       19      ""   10    Engage4                                            ""
+11      SQLDECIMAL          1       19      ""   11    Engage5                                            ""
+12      SQLDECIMAL          1       19      ""   12    Engage6                                            ""
+13      SQLDECIMAL          1       19      ""   13    Grow1                                              ""
+14      SQLDECIMAL          1       19      ""   14    Grow2                                              ""
+15      SQLDECIMAL          1       19      ""   15    Grow3                                              ""
+16      SQLDECIMAL          1       19      ""   16    Grow4                                              ""
+17      SQLDECIMAL          1       19      ""   17    IndexRecruit                                       ""
+18      SQLDECIMAL          1       19      ""   18    IndexEngage                                        ""
+19      SQLDECIMAL          1       19      ""   19    IndexGrowth                                        ""
+20      SQLDECIMAL          1       19      ""   20    IndexOverallPerformance                            ""
+21      SQLDATETIME         0       8       ""   21    RunDate                                            ""
+22      SQLNCHAR            2       510     ""   22    SerialNo                                           SQL_Latin1_General_CP1_CI_AS
+23      SQLNCHAR            2       40      ""   23    RowType                                            SQL_Latin1_General_CP1_CI_AS
+24      SQLDECIMAL          1       19      ""   24    TotalRevenue                                       ""

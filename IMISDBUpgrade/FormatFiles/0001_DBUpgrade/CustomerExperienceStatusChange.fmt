@@ -1,0 +1,12 @@
+10.0
+10
+1       SQLUNIQUEID         1       16      ""   1     CustomerExperienceStatusChangeKey                                        ""
+2       SQLUNIQUEID         1       16      ""   2     CustomerExperienceKey                                                    ""
+3       SQLUNIQUEID         1       16      ""   3     StatusChangedUserKey                                                     ""
+4       SQLNCHAR            2       500     ""   4     CustomerExperienceStatusChangeNote                                       SQL_Latin1_General_CP1_CI_AS
+5       SQLDATETIME         1       8       ""   5     StatusChangedOn                                                          ""
+6       SQLNCHAR            0       4       ""   6     CustomerExperienceStatusCode                                             SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         1       8       ""   7     UpdatedOn                                                                ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                                                         ""
+9       SQLDATETIME         1       8       ""   9     CreatedOn                                                                ""
+10      SQLUNIQUEID         1       16      ""   10    CreatedByUserKey                                                         ""

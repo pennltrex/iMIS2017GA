@@ -1,0 +1,15 @@
+10.0
+13
+1       SQLNCHAR            2       20      ""   1     ID                                       SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     SEQN                                     ""
+3       SQLNCHAR            2       60      ""   3     ESTATE_TYPE                              SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     DATE_OF_DEATH                            ""
+5       SQLFLT8             0       8       ""   5     TOTAL_AMT_EXPECTED                       ""
+6       SQLFLT8             0       8       ""   6     TOTAL_ESTATE_VALUE                       ""
+7       SQLDATETIME         1       8       ""   7     FORECAST_DATE                            ""
+8       SQLFLT8             0       8       ""   8     FORECAST_DUE_AMT                         ""
+9       SQLDATETIME         1       8       ""   9     RECEIPT_DATE                             ""
+10      SQLFLT8             0       8       ""   10    RECEIPT_AMT                              ""
+11      SQLFLT8             0       8       ""   11    OUTSTANDING_AMT                          ""
+12      SQLBIT              1       1       ""   12    PROBATE                                  ""
+13      SQLBINARY           2       8       ""   13    TIME_STAMP                               ""

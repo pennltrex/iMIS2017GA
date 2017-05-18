@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLUNIQUEID         1       16      ""   1     PaymentMethodSetId                           ""
+2       SQLNCHAR            2       80      ""   2     PaymentMethodSetName                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       400     ""   3     PaymentMethodSetDesc                         SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     ContextId                                    ""
+5       SQLBIT              1       1       ""   5     IsDefault                                    ""
+6       SQLBIT              1       1       ""   6     IsSystem                                     ""

@@ -1,0 +1,92 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="Asi.Web.UI.MasterPageBase" %>
+<%@ Register TagPrefix="telerik" Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" %>
+<script language="C#" runat="server">
+    protected override void OnInit(EventArgs e)
+    {
+        base.OnInit(e);
+
+        ScrollContentPane = true;
+    }
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>iMIS Dialog</title>
+    <asp:ContentPlaceHolder id="TemplateHead" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body id="MainBody" runat="server" clientidmode="Static" scroll="no">
+    <form id="TemplateForm" method="post" runat="server">
+        <telerik:RadScriptManager ID="ScriptManager1" runat="server" EnableCdn="false" EnablePageMethods="true" EnablePartialRendering="true" EnableScriptGlobalization="true" AsyncPostBackTimeout="3600"></telerik:RadScriptManager>
+        <div style="white-space:nowrap; display:inline; float:right; position:absolute;">
+            <asp:ContentPlaceHolder ID="TemplateLoadingPanel" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <asp:Panel ID="ContentTitlePanel" runat="server" Height="18px" ScrollBars="None" style="float:left;">
+            <span style="height:18px" id="mainTitle">
+                <span id="mainTitleLeft">&nbsp;</span>
+                <span id="mainTitleLeftText"><asp:Label ID="TaskDescription" runat="server"></asp:Label></span>
+                <span id="mainTitleRight">&nbsp;</span>
+                <span id="mainTitleRightText"></span>
+            </span>
+        </asp:Panel>
+        <asp:Panel ID="ContentPanel" runat="server" ScrollBars="Auto" Height="380px" Width="100%">
+            <%--<asp:UpdatePanel ID="TemplateBodyUpdatePanel" runat="server" UpdateMode="Always">
+                <ContentTemplate>--%>
+                    <asp:ContentPlaceHolder ID="TemplateUserMessages" runat="server"></asp:ContentPlaceHolder>
+                    <asp:ContentPlaceHolder id="TemplateBody" runat="server"></asp:ContentPlaceHolder>
+                <%--</ContentTemplate>
+            </asp:UpdatePanel>--%>
+        </asp:Panel>
+        <asp:Panel ID="ButtonPanel" runat="server" Height="40px" ScrollBars="None" Width="100%">
+            <div id="dialogbottom" style="float:right; white-space:nowrap; margin-right: 10px; background-color:White; display:inline;">
+                <asiweb:CommandButtonBar ID="ButtonBar" runat="server" />
+                <asp:ContentPlaceHolder ID="TemplateButtonBar" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </asp:Panel>
+    </form>
+        <!--jscript from Page.ResgisterStartupScript extention is loaded here -->
+        <asp:contentplaceholder id ="TemplateScripts" runat="server"></asp:contentplaceholder>	    
+
+</body>
+</html>
+
+<script id="ResizeContentScript" type="text/javascript">
+window.onresize = CustomResize;
+addLoadEvent(CustomResize);
+function CustomResize(evt)
+{
+    var contentPanel = $('<%= ContentPanel.ClientID %>');
+    var buttonPanelVisible = <%= ButtonPanel.Visible.ToString().ToLowerInvariant() %>;
+    if (buttonPanelVisible)
+        var buttonPanel = document.getElementById('<%= ButtonPanel.ClientID %>');
+    
+    var pageHeight;
+    var pageWidth;
+    
+    if (window.innerHeight && window.scrollMaxY ) // Firefox 
+    {
+        pageWidth = window.innerWidth + window.scrollMaxX;
+        pageHeight = window.innerHeight + window.scrollMaxY;
+    }
+    else // works in Explorer 6 Strict, Mozilla (not FF) and Safari
+    { 
+        pageWidth = document.body.offsetWidth + document.body.offsetLeft; 
+        pageHeight = document.body.offsetHeight + document.body.offsetTop; 
+    }
+
+    if (pageHeight > 0)
+    {
+        var contentHeight = pageHeight;
+        if (buttonPanelVisible)
+            contentHeight -= buttonPanel.offsetHeight;
+
+        var contentTitlePanel = $('<%= ContentTitlePanel.ClientID %>');
+        if (contentTitlePanel)
+            contentHeight -= contentTitlePanel.offsetHeight;
+
+        contentPanel.style.height = contentHeight + 'px';
+        
+//        var updatePanelDiv = document.getElementById('<= TemplateBodyUpdatePanel.ClientID >');
+//        if (updatePanelDiv != null)
+//            updatePanelDiv.style.height = contentHeight + 'px';
+    }
+}
+</script>

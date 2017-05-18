@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLNCHAR            2       20      ""   1     DuplicatePartyGroupCode                            SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       6       ""   2     DuplicateRuleSetCode                               SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     PartyId                                            SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         0       8       ""   4     MatchDate                                          ""

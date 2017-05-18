@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AtomPainter:Template xmlns:AtomPainter="http://www.advsol.com/AtomPainter" xmlns:TSNS="http://www.activematter.com/TSNS" TemplateTypeCode="2">
+	<AtomPainter:TemplatePage index="0">
+		<?IMPORT NAMESPACE="TSNS" IMPLEMENTATION="/webctrl_client/1_0/tabstrip.htc" DECLARENAMESPACE ?>
+		<table class="TabTableHoriz" cellSpacing="0" cellPadding="0" border="0" width="100%">
+			<tr class="TabTRHoriz">
+				<td vAlign="bottom">
+					<AtomPainter:TabList>
+						<TSNS:TabStrip selectedIndex="0" tabDefaultStyle="border-right:#999999 1px solid;padding-right:4px;border-top:#999999 1px solid;padding-left:4px;border-left:#999999 1px solid;width:100px;color:black;border-bottom:#999999 1px solid;font-family:tahoma;height:20px;background-image: url(./images/Templates/sliver_tab_off.jpg);;text-align:center;text-decoration:none;"
+							tabHoverStyle="color:black;text-decoration:none;background-image: url(./images/Templates/sliver_tab_on.jpg);" tabSelectedStyle="border-right:#99999 1px solid;padding-right:4px;border-top:#999999 2px solid;padding-left:4px;font-weight:bold;border-left:#999999 1px solid;width:100px;color:black;border-bottom:medium none;height:20px;text-decoration:none;background-image: url(./images/Templates/sliver_tab_on.jpg);"
+							sepDefaultStyle="border-bottom:solid 1px #999999;" onSelectedIndexChange="AtomPainterTabChange(this);">
+							<AtomPainter:Tab>
+								<TSNS:Tab>
+									<AtomPainter:TemplateName>Tab 1</AtomPainter:TemplateName>
+								</TSNS:Tab>
+								<TSNS:TabSeparator />
+							</AtomPainter:Tab>
+							<TSNS:TabSeparator defaultStyle="width:100%;" />
+						</TSNS:TabStrip>
+					</AtomPainter:TabList>
+				</td>
+			</tr>
+			<tr>
+				<td class="TabBodyHoriz" vAlign="top">
+					<table class="PanelTabBody" cellspacing="0" cellpadding="4" align="center" width="100%">
+						<tr>
+							<td>
+								<AtomPainter:TemplateBody>Body</AtomPainter:TemplateBody>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</AtomPainter:TemplatePage>
+</AtomPainter:Template>

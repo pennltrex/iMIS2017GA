@@ -1,0 +1,13 @@
+11.0
+11
+1       SQLUNIQUEID         1       16      ""   1     GroupUpdateInstructionKey                              ""
+2       SQLNCHAR            2       62      ""   2     ItemId                                                 SQL_Latin1_General_CP1_CI_AS
+3       SQLUNIQUEID         1       16      ""   3     GroupKey                                               ""
+4       SQLUNIQUEID         1       16      ""   4     GroupRoleKey                                           ""
+5       SQLINT              1       4       ""   5     TermTypeCode                                           ""
+6       SQLINT              1       4       ""   6     TermSpan                                               ""
+7       SQLBIT              1       1       ""   7     PaymentRequiredFlag                                    ""
+8       SQLDATETIME         0       8       ""   8     UpdatedOn                                              ""
+9       SQLUNIQUEID         1       16      ""   9     UpdatedByUserKey                                       ""
+10      SQLUNIQUEID         1       16      ""   10    CreatedByUserKey                                       ""
+11      SQLDATETIME         0       8       ""   11    CreatedOn                                              ""

@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLNCHAR            2       100     ""   1     LocalizationLookup                       SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     LocalizationCode                         SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       800     ""   3     LocalizationDesc                         SQL_Latin1_General_CP1_CI_AS
+4       SQLBIT              1       1       ""   4     IsActive                                 ""

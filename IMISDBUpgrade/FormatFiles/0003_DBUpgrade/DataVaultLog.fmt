@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLUNIQUEID         1       16      ""   1     DataVaultLogKey                      ""
+2       SQLUNIQUEID         1       16      ""   2     BatchKey                             ""
+3       SQLINT              0       4       ""   3     BatchPart                            ""
+4       SQLNCHAR            2       2       ""   4     Status                               SQL_Latin1_General_CP1_CI_AS
+5       SQLUNIQUEID         1       16      ""   5     CreatedByUserKey                     ""
+6       SQLDATETIME         0       8       ""   6     CreatedOn                            ""
+7       SQLUNIQUEID         1       16      ""   7     UpdatedByUserKey                     ""
+8       SQLDATETIME         0       8       ""   8     UpdatedOn                            ""

@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLUNIQUEID         1       16      ""   1     HandlingPriceKey                       ""
+2       SQLINT              0       4       ""   2     HandlingPriceCode                      ""
+3       SQLDECIMAL          1       19      ""   3     MinAmount                              ""
+4       SQLDECIMAL          1       19      ""   4     Price                                  ""
+5       SQLDATETIME         0       8       ""   5     CreatedOn                              ""
+6       SQLUNIQUEID         1       16      ""   6     CreatedByUserKey                       ""
+7       SQLDATETIME         0       8       ""   7     UpdatedOn                              ""
+8       SQLUNIQUEID         1       16      ""   8     UpdatedByUserKey                       ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                      ""

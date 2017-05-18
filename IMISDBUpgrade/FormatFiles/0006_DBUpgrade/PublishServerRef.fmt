@@ -1,0 +1,19 @@
+11.0
+17
+1       SQLNCHAR            2       2       ""   1     PublishServerCode                                    SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       100     ""   2     PublishServerDesc                                    SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     Frequency                                            ""
+4       SQLINT              0       4       ""   4     PublishingSpeed                                      ""
+5       SQLNCHAR            2       30      ""   5     ServerIPAddress                                      SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       30      ""   6     AlternateServerIPAddress                             SQL_Latin1_General_CP1_CI_AS
+7       SQLBIT              1       1       ""   7     UseServiceRequest                                    ""
+8       SQLNCHAR            2       60      ""   8     IISSecurityDomain                                    SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       60      ""   9     IISSecurityUserName                                  SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       60      ""   10    IISSecurityPassword                                  SQL_Latin1_General_CP1_CI_AS
+11      SQLBIT              1       1       ""   11    IsDefault                                            ""
+12      SQLNCHAR            2       1024    ""   12    LocalPublishPath                                     SQL_Latin1_General_CP1_CI_AS
+13      SQLNCHAR            2       1024    ""   13    LocalProtectedPath                                   SQL_Latin1_General_CP1_CI_AS
+14      SQLDATETIME         0       8       ""   14    CreatedOn                                            ""
+15      SQLUNIQUEID         1       16      ""   15    CreatedByUserKey                                     ""
+16      SQLDATETIME         0       8       ""   16    UpdatedOn                                            ""
+17      SQLUNIQUEID         1       16      ""   17    UpdatedByUserKey                                     ""

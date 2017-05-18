@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLUNIQUEID         1       16      ""   1     ShipMethodKey                            ""
+2       SQLUNIQUEID         1       16      ""   2     MethodSetDetailKey                       ""
+3       SQLSMALLINT         0       2       ""   3     Priority                                 ""
+4       SQLDATETIME         1       8       ""   4     MarkedForDeleteOn                        ""

@@ -1,0 +1,244 @@
+﻿<%@ Master Language="C#" Inherits="Asi.Web.UI.UltraWaveMasterPageBase" %>
+<%@ Import Namespace="Asi" %>
+<%@ Import Namespace="Asi.Security.Utility" %>
+<%@ Register TagPrefix="asi" TagName="SubNavigation" Src="~/AsiCommon/Controls/Navigation/SubNavigation.ascx" %>
+<%@ Register tagPrefix="asi" Tagname="AccountArea" Src="~/AsiCommon/Controls/Navigation/AccountArea.ascx" %>
+
+<!DOCTYPE html>
+
+<script language="C#" runat="server">
+
+    /// <summary>
+    /// Logged in contact
+    /// </summary>    
+    public string OverrideLinkText
+    {
+        get { return Asi.Business.Contact.Contact.GetCachedFullName(Asi.AppContext.CurrentIdentity.UserKey, Asi.AppContext.CurrentContext.StatefulBusinessContainer); }
+    }
+    /// <summary>
+    /// Hide/Show a navigation item conditionally.
+    /// </summary>
+    public bool IsAnonymous
+    {
+        get { return !Asi.AppContext.CurrentIdentity.IsAuthenticated && OverrideLinkText == String.Empty; }
+        set { ViewState["IsAnonymous"] = value; }
+    }  
+    /// <summary>
+    /// Return the count of items in the Cart
+    /// </summary>
+    public string CartItemCount
+    {
+        get { return GetCartItemCount(); }
+    }
+
+    protected override void OnPreRender(EventArgs e)
+    {
+        base.OnPreRender(e);
+        string bodyCssClass = MainBody.Attributes["class"];
+        bodyCssClass += " body-main sidebar-fixed";
+        
+        // Set CSS class if On Behalf Of is enabled
+        if (!string.IsNullOrEmpty(SecurityHelper.GetOnBehalfOfUser()))
+            bodyCssClass += " OBOProxyEnabled obo-on";
+
+        if (SideBarPlaceHolder.HasControls())
+            bodyCssClass += " has-sidebar";
+        else
+            SideBarPlaceHolder.Visible = false;
+        
+       MainBody.Attributes["class"] = bodyCssClass;
+            
+        //Set logo link
+        if (Page is Asi.Web.UI.DisplayPageBase && ((Asi.Web.UI.DisplayPageBase)Page).iMISWebsite != null)
+            HeaderLogoLink.NavigateUrl = ((Asi.Web.UI.DisplayPageBase)Page).iMISWebsite.WebsiteBaseUrl;
+        else
+            HeaderLogoLink.NavigateUrl = Asi.Web.Utilities.GetTildeExpansion();
+    }
+</script>
+
+<html id="MainHtml" lang="en" class="html-main">
+<head id="Head1" runat="server">
+    <title>iMIS</title>
+    <asp:ContentPlaceHolder ID="TemplateHead" runat="server" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script type="text/javascript">
+        // add a class to the <html> tag of browsers that do not support Media Queries
+        var mqSupported = Modernizr.mq('only all');
+        if (!mqSupported) {
+            document.documentElement.className += ' no-mqs';
+        }
+    </script>
+</head>
+<body id="MainBody" runat="server" clientidmode="Static">
+    <%-- Skip to main content link for accessibility. Hidden to sighted users except when focused. --%>
+    <a href="#contentstart" class="screen-reader-text show-on-focus">Skip to main content</a>
+    <form id="TemplateForm" method="post" runat="server" class="form-main">
+        <asp:HiddenField runat="server" ClientIDMode="Static" id="lastClickedElementId" />
+        <telerik:RadScriptManager ID="ScriptManager1" runat="server" EnableCdn="false" EnablePageMethods="true"
+            EnablePartialRendering="true" EnableScriptGlobalization="true" 
+            EnableHistory="true" EnableSecureHistoryState="false" AsyncPostBackTimeout="3600">
+        </telerik:RadScriptManager>
+
+        <%-- This control will display the progress image when a page load activity is taking a longer than expected time to load --%>
+        <asp:UpdateProgress ID="TemplateFillLoadingPanel" runat="server" Visible="false">
+            <ProgressTemplate>
+                <div class="NotPrinted ProgressDiv" id="FillProgressDiv">
+                    <asp:label ID="LoadingLabel" runat="server" translate="yes" Text="Loading"/>
+                    <asp:Image ID="ProgressImage2" runat="server" ImageUrl="~/images/ImageLibrary/loading.gif" AlternateText="Loading" />                          
+                </div> 
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+
+        <div class="wrapper">
+            
+            <!-- primary navigation -->
+            <div id="SideBarPanel" class="col-secondary">
+                <nav class="sub-nav-body">
+                    <asp:HyperLink ID="HeaderLogoLink" runat="server" CssClass="logo">iMIS</asp:HyperLink>
+                    <asi:SubNavigation id="Secondary" runat="server" NavigationPaneCode="1"
+                        StartingNodeOffset="0" StartFromCurrentNode="true" 
+                        StartingNodeOffsetAutoSet="true" SelectDefaultNode="false" />
+                </nav>
+            </div> <!-- /.col-secondary -->
+            
+            <div class="col-primary">
+            
+                <header id="hd" class="header navbar" data-height-offset="true">
+                    <div id="masterTopBarAuxiliary" class="navbar-header nav-auxiliary">
+                        <div class="navbar-left">
+                            <button type="button" class="navbar-toggle primary-nav-toggle collapsed" data-toggle="offcanvas" data-target=".col-secondary">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <%-- This control will display the simple search field --%>
+                            <asiweb:SimpleSearchField ID="SimpleSearchField1" runat="server" AdvancedLinkVisible="false" 
+                                PromptText="Keyword search" InputCssClass="search-field" ButtonCssClass="header-search-submit TextButton" CssClass="header-search" />
+                        </div>
+                        <div class="navbar-right">
+                            <%-- This control renders the sign in link, account dropdown area and on behalf of toggle --%>
+                            <asi:AccountArea runat="server" ID="AccountArea" />
+                            <%-- Get the Auxiliary Navigation Items from the site map --%>
+                            <asiweb:NavigationList ID="Auxiliary" runat="server" NavigationPaneCode="4" UseGenericMenu="true"
+                                AnonymousOnly="<%# IsAnonymous %>" EnableAdvancedProperties="True" />
+                            <div class="dropdown search-dropdown">
+                                <%-- This control will display the simple search field --%>
+                                <button type="button" class="navbar-toggle search-toggle collapsed" data-toggle="dropdown" id="SearchToggle">
+                                    <span class="sr-only">Toggle search</span>
+                                </button>
+                                <div class="dropdown-menu header-search-dropdown">
+                                    <asiweb:SimpleSearchField ID="SearchField" runat="server" AdvancedLinkVisible="false" 
+                                        PromptText="Keyword Search" InputCssClass="search-field" ButtonCssClass="header-search-submit TextButton" CssClass="header-search"
+                                        WrapperDivId="SimpleSearchBlockSmall" />
+                                </div>
+                            </div>
+                            <%-- This control will display the Surf-to-Edit button --%>
+                            <asp:ContentPlaceHolder ID="AuxiliaryNavigationSupplementalContent" runat="server" />
+                            <asp:Image ID="KeepAliveTarget" runat="server" ImageUrl="~/AsiCommon/Images/3x3.gif" AlternateText="" GenerateEmptyAlternateText="True" CssClass="DisplayNone" />
+                            <asiweb:KeepAliveExtender ID="KeepAliveControl" runat="server" TargetControlID="KeepAliveTarget" />
+                        </div>
+                    </div>
+                </header>
+                
+                <%-- This displays the breadcrumb if site is configured to show them --%>
+                <asiweb:SiteMapPath ID="BreadCrumb" runat="server" SiteMapProvider="AsiSiteMapProvider" CssClass="breadcrumb" data-height-offset="true">
+                    <NodeTemplate>
+                        <asp:HyperLink ID="NodeLink" runat="server" NavigateUrl='<%# Eval("Url") %>' Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>'
+                                       CssClass="BreadCrumbLink" />
+                    </NodeTemplate>
+                    <CurrentNodeTemplate>
+                        <asp:Label ID="CurrentNodeLabel" runat="server" Text='<%# Eval("NavigationHierarchy.Navigation.BreadCrumbName") %>' />
+                    </CurrentNodeTemplate>
+                </asiweb:SiteMapPath>
+
+                <%-- Communities sidebar area --%>
+                <asp:Panel runat="server" ID="SecondarySideBarContainer" CssClass="sidebar">
+                    <asp:ContentPlaceHolder ID="SideBarPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+                </asp:Panel>
+
+                <a id="contentstart" tabindex="-1"></a> 
+                <!-- main content start -->
+                <asp:Panel role="main" class="main ContentPanel" runat="server" ID="ContentPanel">
+                
+                    <%-- This provides a placeholder for any applicable User Messages that a page needs to display --%>
+                    <asp:UpdatePanel ID="UserMessagesUpdatePanel" runat="server">
+                        <ContentTemplate>
+                            <asp:ContentPlaceHolder ID="TemplateUserMessages" runat="server" />
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+
+                    <%-- When in print mode this provides a message and a link back to the regular site --%>
+                    <asp:Panel ID="TemplatePrintDisplay" runat="server" Visible="False" />
+                
+                    <%-- Main content goes here --%>
+                    <asp:ContentPlaceHolder ID="TemplateBody" runat="server" />
+                
+                </asp:Panel><!-- /.main -->
+
+                <div style="clear: both;"></div>
+                <%-- This panel will contain the Button panel for any page that has command buttons (e.g., Save/Cancel) --%>
+                <asp:Panel class="button-panel NotPrinted" runat="server" ID="ButtonPanel">
+                    <div id="masterMainButtonBar" class="CommandBar" data-height-offset="true">
+                        <asiweb:CommandButtonBar ID="ButtonBar" runat="server" TargetControlID="ContentPanel" />
+                        <asp:ContentPlaceHolder ID="TemplateButtonBar" runat="server" />
+                    </div>
+                </asp:Panel> <!-- /.button-panel -->
+
+            </div> <!-- /.col-primary -->
+
+            <footer id="ft" class="footer footer-main" data-height-offset="true">
+                <div class="footer-inner">
+                    <div class="footer-content footer-left">
+                        <span class="footer-copyright">&copy; <a href="http://www.advsol.com">ASI</a></span>
+                        <asiweb:NavigationList ID="Foot" runat="server" NavigationPaneCode="8" UseGenericMenu="true"
+                            AnonymousOnly="<%# IsAnonymous %>" EnableAdvancedProperties="True" />
+                    </div>
+                    <div class="footer-right">
+                        <%-- Translation (language) drop-down list --%>
+                        <asp:ContentPlaceHolder ID="TranslationPlaceHolder" runat="server" />
+                        <%-- This control will display the print, text-only and email buttons --%>
+                        <asp:Panel ID="PageTasksPanel" runat="server" CssClass="PageTasksPanel NotPrinted">
+                            <asp:ContentPlaceHolder ID="TemplatePageTasks" runat="server"></asp:ContentPlaceHolder>
+                        </asp:Panel>
+                    </div>
+                </div>
+            </footer> <!-- /.footer -->
+
+        </div> <!-- /.wrapper -->
+    </form>
+    
+    <script>
+        jQuery(document).ready(function () {
+            // set up the event to toggle the off-canvas nav on and off
+            jQuery('[data-toggle="offcanvas"]').click(function () {
+                jQuery('.wrapper').toggleClass('nav-expanded');
+            });
+
+            // when clicking on the search bar in the dropdown (available only on small screens)
+            // make sure the dropdown doesn't close immediately
+            jQuery('.search-dropdown .search-field').click(function (e) {
+                e.stopPropagation();
+            });
+
+            // when the search dropdown is shown put the focus on the search box
+            jQuery('.search-dropdown').on('shown.bs.dropdown', function() {
+                jQuery('.search-dropdown .search-field').focus();
+            });
+
+            jQuery('.sidebar-fixed .sub-nav-body').slimScroll({
+                height: '100%',
+                disableFadeOut: true,
+                color: '#ffffff'
+            });
+        });
+    </script>
+
+    <%--jscript from Page.ResgisterStartupScript extention is loaded here --%>
+    <asp:contentplaceholder id ="TemplateScripts" runat="server"></asp:contentplaceholder>	    
+        
+    <%--facebook API is loaded into here --%>
+    <div id="fb-root"></div>
+</body>
+</html>

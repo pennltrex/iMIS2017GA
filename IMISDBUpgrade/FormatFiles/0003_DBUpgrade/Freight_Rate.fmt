@@ -1,0 +1,8 @@
+10.0
+6
+1       SQLNCHAR            2       20      ""   1     SHIP_METHOD                    SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       20      ""   2     ZONE_TABLE_ID                  SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     ZONE_ID                        SQL_Latin1_General_CP1_CI_AS
+4       SQLNUMERIC          1       19      ""   4     WEIGHT                         ""
+5       SQLNUMERIC          1       19      ""   5     RATE                           ""
+6       SQLBINARY           2       8       ""   6     TIME_STAMP                     ""

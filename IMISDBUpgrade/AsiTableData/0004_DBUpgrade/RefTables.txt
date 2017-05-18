@@ -1,0 +1,11 @@
+AsiGPSMeasureRef
+CommunicationMessageTypeRef
+CommunicationLogEventTypeRef
+CommunicationLogStatusRef
+DataVaultAttemptStatusRef
+DataVaultStatusRef
+DocumentTypeRef
+LocalizationApplication
+LocalizationLookup
+PartyMergeSchemaReference
+URLMappingTypeRef

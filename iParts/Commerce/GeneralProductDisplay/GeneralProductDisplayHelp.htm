@@ -1,0 +1,136 @@
+﻿<html>
+	<head>
+        </head>
+	<body>
+		<h1> General Product Display</h1>
+		This iPart will add its title information, the product name, to the browser window or tab page title when the Use dynamic page titles checkbox is selected on the parent content record. If it is used in a website that uses a responsive theme, it will automatically adjust itself to different screen sizes.
+			 <p class="v100only">* <em>does not apply to "Menu of Options" products</em></p>
+            <ul>
+				<li><strong>Name</strong> - Enter a name for the content item. This text appears during design mode (configuration).</li>
+
+<li><strong>Title</strong> - Enter the text to display above this iPart on the rendered page. If blank, no title displays.</li>
+
+<li><strong>Do not render in design mode</strong> - Select this option to prevent content record data from being loaded in the content editor. This improves performance during design time (configuration).</li>
+
+<li><strong>Display a border around this content</strong> - Select this option to display a border around this iPart on the rendered page.</li>
+
+				<li><strong>Default product to display</strong> - (optional) Specify the code of the 
+                    product to display. <span class="v10only"> For Join Now products, the code should be the product code of the online billing cycle you created in the Advanced Accounting Console. In the <strong>Set up billing cycles</strong> window, you must select the <strong>Use for web joins</strong> checkbox to use a billing cycle online.</span>
+                <li><strong>Display Style<span class="v100only">*</span></strong> - Controls the layout of the content item on the web page. Select <strong>Horizontal</strong> if the content item is in a wide column that spans 66% or more of the width of the web page. Select <strong>Vertical</strong> if the content item is in a narrower column that spans 65% or less of the width of the web page. By default, a <strong>Horizontal</strong> display style is selected when you add a new General Product Display content item to a content record.</li>
+                </li></ul>
+               
+                
+                <p>
+                    <strong>Image</strong></p>
+                <ul>
+                    <li><strong>Display the item picture <span class="v100only">*</span></strong> - Select this option to display the item picture in the listing.<ul>
+                        <li><strong>Picture width (px) <span class="v100only">*</span></strong> - Enter the width, in pixels, for 
+                    the displayed picture. If the picture is too large, it will be scaled down to fit 
+                    the rendered page. To disable all scaling, enter a value of 0; this allows the picture to take as much space as it requires.</li>
+                        </ul>
+                    </li>
+			</ul>
+        <p>
+            <strong>Pricing</strong></p>
+        <p>
+            The customer price is always displayed. Comparison prices, Standard and 
+            Discount, are optional and illustrate the savings a customer receives or could 
+            receive if they qualify for a discount (e.g., are members)
+        </p>
+        <ul>
+                <li><strong>Customer price label <span class="v100only">*</span></strong> - Enter the label to display the customer's price.</li>
+                <li><strong>Comparison prices </strong>- 
+                    Choose how to display item prices.&nbsp; 
+                    <ul>
+                        <li><strong>Do not show comparison prices</strong> </li>
+                    <li><strong>Show only the comparison price which does not apply to the customer (Standard or Discount)</strong> - This option formats the price that does not apply to the customer with strikethrough. </li>
+                    <li><strong>Show both Standard and Discount comparison prices 
+                        </strong></li>
+                    </ul>
+                </li>
+                <li><strong>Standard price label <span class="v100only">*</span></strong> - Enter the label to display the standard (non-discounted) price.</li>
+                <li><strong>Discount price label <span class="v100only">*</span></strong> - Enter the label to display the discounted price.</li>
+                <li><strong>Show discount percentage next to Customer price <span class="v100only">*</span></strong> - Select this option to display the 
+                    percentage the customer is saving. When this option is selected, the following 
+                    settings apply:
+                    <ul>
+                        <li><strong>Label when discount is applied</strong> - Enter the label to display 
+                            when the discount is applied (for example, "Your savings:").  
+                            This label displays when the Customer price is less than the Standard price.                    
+                        </li>
+                        <li><strong>Label when discount is not applied</strong> - Enter the label to display 
+                            in the case when the discount is not applied (for example, "You could save:").  
+                            This label displays when the Customer price matches the default Standard price.                    
+                        </li>
+                        <li><strong>Discount percentage format</strong> - Select or enter a format string 
+                            for the discount percentage.  
+                            See <b>Formatting Numeric Strings</b> below.
+                        </li>
+                    </ul>
+                </li>                
+			</ul>
+        <p>
+            <strong>Shopping</strong></p>
+        <ul>
+                <li><strong>Item added message</strong> - Enter the message to display when an item is 
+                    successfully added to a user&#39;s cart.</li>	
+                <li><strong>Item updated message</strong> - Enter the message to display when an item is successfully updated in the 
+                    cart.</li>
+			</ul>
+        <p class="v100only">
+            <strong>Automatic Renewals</strong>
+        </p>
+        <ul class="v100only">
+            <li>
+                <strong>Automatic Renewal Top Text</strong> - Enter the text to display at the top of your Automatic Renewals message. For example, include specific information about what happens when the
+                user chooses to automatically renew their membership. You can also include general information about the feature.
+            </li>
+            <p><b><i>Note:</i></b> The <b>Automatic Renewal Text</b> and <b>Automatic Renewal Label</b> are only displayed when the <b>Recurring membership</b> options are set to either <b>Allow users to enable</b> or <b></b> in the Staff site.</p>
+            <li>
+                <strong>Automatic Renewal Label</strong> - Enter the text for the label that accompanies the renewal checkbox. For example, "Yes, I would like to have my membership automatically renew each year."
+            </li>
+
+            <li>
+                <strong>Automatic Renewal Bottom Text</strong> - Enter the text to display at the bottom of your <b>Automatic Renewals</b> message. For example, include information about the payment method that will be associated with the renewal and what
+                the user should do if they want to cancel their automatic renewal enrollment.
+        </ul>
+<p><strong>Formatting Numeric Strings</strong></p>
+<p>
+           The formatting rules for numeric strings include:
+             &nbsp;</p>
+<p>
+                    # - displays a number, if&nbsp; relevant<br />
+                    0 - displays a number or zero placeholder<br />
+                </p>
+<p>
+           For example,</p>
+        <ul>
+            <li>
+                20% = <code>0%</code>
+            </li>
+            <li>
+                20.13% = <code>0.00%</code>
+            </li>
+                </ul>
+<p>
+        For more information, see
+        <a href="http://msdn.microsoft.com/en-us/library/0c899ak8.aspx">
+        http://msdn.microsoft.com/en-us/library/0c899ak8.aspx</a></p>
+
+<p><strong>Notes</strong></p>
+			<ul>
+			<li>The Product Code or the Product ID can be passed as a URL parameter.  Use <em>iProductCode</em> for a text 
+			string, such as: "MUG" or "WATERBOTTLE". Use <em>iProductID</em> for the GUID product ID, 
+			such as &quot;iProductID= 4fe78e06-d0ae-4637-8122-c4e56a92f620&quot;.</li>
+            <li>The ID the iPart uses and displays depends on the context:</li>
+			   <ul>
+                <li>If an <strong>On Behalf Of</strong> contact is selected, 
+                    it loads the <strong>On Behalf Of</strong> contact&#39;s information.</li>
+                <li>If no <strong>On Behalf Of</strong> contact is selected, 
+                    it loads the signed in user&#39;s information.</li>
+                <li>If the user is not signed in, it displays limited information.</li>
+                </ul>
+			    <li>If a content record contains several dynamic iParts, it is recommended that you turn dynamic page titles off for the entire page in order to limit the title length. </li>
+			</ul>
+	</body>
+</html>

@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLINT              0       4       ""   1     COMMUNITY_SEQ                          ""
+2       SQLNCHAR            2       20      ""   2     ID                                     SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       10      ""   3     NOTIFICATION_TYPE                      SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       10      ""   4     NOTIFICATION_FREQ                      SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       10      ""   5     STATUS                                 SQL_Latin1_General_CP1_CI_AS
+6       SQLBINARY           2       8       ""   6     TIME_STAMP                             ""

@@ -1,0 +1,288 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Text;
+using Asi.Bae.Web.AccountManagement;
+using Asi.Business;
+using Asi.Business.CertificationManagement;
+using Asi.Business.Common;
+using Asi.ContentManagerNet;
+using Asi.Security;
+using Asi.Web;
+using Asi.Web.UI;
+using Asi.Web.UI.WebControls;
+
+
+namespace Asi.Bae.Web.Customer.AccountManagement.CertificationManagement
+{
+    /// <summary>
+    /// Displays the user certification history
+    /// </summary>
+    public partial class CertificationProgramSummary : Asi.Web.UI.DisplayPageBase
+    {
+        private const string REGISTER_RAD_WINDOW_ID = "PrintTranscriptPopUp";
+
+        #region Properties
+
+        /// <summary>
+        /// If the user has the correct permissions to cancel the program.
+        /// </summary>
+        /// <value>
+        /// 	<c>true</c> if the user has the correct permissions to cancel the program; otherwise, <c>false</c>.
+        /// </value>
+        public bool HasCancelPermissions
+        {
+            get
+            {
+                return (AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupAdminName) ||
+                        AppPrincipal.CurrentPrincipal.IsInRole(CertificationProgram.CertificationGroupManagerName) ||
+                        AppPrincipal.CurrentPrincipal.IsInRole(Role.SysAdminRoleKey.ToString()));
+            }
+        }
+
+        #endregion Properties
+
+
+        #region Current User
+
+        private User user;
+
+        /// <summary>
+        /// The current user for this page
+        /// </summary>
+        public User CurrentUser
+        {
+            get
+            {
+                if (user == null)
+                {
+                    CDataAccess cDataAccess = new CDataAccess();
+                    Business.Customer.User intermediateuser = new Business.Customer.User(IWC.Utilities.GetCurrentUserID(), cDataAccess);
+                    user = UserController.User(intermediateuser.WebLogin, Container);
+                }
+                return user;
+            }
+        }
+
+        #endregion Current User
+
+        /// <summary>
+        /// <see cref="Asi.Web.UI.DisplayPageBase.OnLoad"/>
+        /// </summary>
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            if (SessionState.User == null)
+            {
+                ContentManagerNet.Utilities.RedirectToLogin(this, false);
+            }
+            // The repeater is refreshed always to show when a AutoEnroll program is registered.
+            QueryDDL.DataBind();
+            SetCertificationProgramRepeater();
+        }
+
+        /// <summary>
+        /// <see cref="Asi.Web.UI.DisplayPageBase.OnInit"/>
+        /// </summary>
+        protected override void OnInit(EventArgs e)
+        {
+            base.OnInit(e);
+            QueryDDL.SelectedQueryChanged += new EventHandler(QueryDDL_SelectedQueryChanged);
+
+            btnPrintTranscript.OnClientClick = RegisterTranscriptPopupUrl();
+            btnPrintTranscript.Text = ResourceManager.GetPhrase("PrintTranscriptButton", "Print Transcript");
+
+            if (System.Windows.Forms.SystemInformation.PrimaryMonitorSize.Height < 864 ||
+                   System.Windows.Forms.SystemInformation.VirtualScreen.Height < 864)
+            {
+                AddWindow(REGISTER_RAD_WINDOW_ID, true, 930, 550);
+            }
+            else
+            {
+                if (System.Windows.Forms.SystemInformation.PrimaryMonitorSize.Height < 1024 ||
+                       System.Windows.Forms.SystemInformation.VirtualScreen.Height < 1024)
+                {
+                    AddWindow(REGISTER_RAD_WINDOW_ID, true, 1000, 650);
+                }
+                else
+                {
+                    AddWindow(REGISTER_RAD_WINDOW_ID, true, 1000, 800);
+                }
+            }
+        }
+
+        private void QueryDDL_SelectedQueryChanged(object sender, EventArgs e)
+        {
+            SetCertificationProgramRepeater();
+        }
+
+        private void SetCertificationProgramRepeater()
+        {
+            // Only allows registrations from contact that has a user associated with it.
+            if (CurrentUser == null)
+            {
+                UserControlMessages.Add(new UserControlMessage(UserControlMessageTypes.Information,
+                    ResourceManager.GetPhrase("NotAWebContact", "This contact is not a web contact")));
+                QueryDDL.Visible = false;
+                return;
+            }
+            if (QueryDDL == null || QueryDDL.SelectedQuery == null)
+            {
+                return;
+            }
+
+            string sqlCommandText = QueryDDL.SelectedQuery.SqlCommandText();
+            DataSet dataset = CommandUtility.PagedResults(sqlCommandText, 0, 1000, 1, true);
+
+            DataTable dt = dataset.Tables[0];
+            DataColumn[] columns = new DataColumn[]
+            {
+                new DataColumn("UserHasRegistration", typeof(bool)),
+                new DataColumn("ExpirationDate"), 
+                new DataColumn("CertificationProgramRegistrationKey"),
+                new DataColumn("EarnedUnits"),
+                new DataColumn("Status", typeof(string)),
+                new DataColumn("RegistrationIsInactive", typeof(bool)),
+                new DataColumn("RegistrationIsActive", typeof(bool)),
+                new DataColumn("RegistrationIsPendingApproval", typeof(bool)),
+                new DataColumn("PreRequiredProgram", typeof(string))
+            };
+            dt.Columns.AddRange(columns);
+
+            CertificationProgramRegistrationController controller =
+                CertificationProgramRegistrationController.NewCertificationProgramRegistrationController(Container);
+
+            Dictionary<Guid, CertificationProgramRegistration> dic = controller.Registrations(CurrentUser.UserKey);
+
+            foreach (DataRow row in dt.Rows)
+            {
+                row["UserHasRegistration"] = false;
+                row["RegistrationIsInactive"] = false;
+                row["RegistrationIsActive"] = false;
+                row["RegistrationIsPendingApproval"] = false;
+                row["PreRequiredProgram"] = string.Empty;
+
+                if (dic.ContainsKey((Guid)row["CertificationProgramKey"]))
+                {
+                    CertificationProgramRegistration registration = dic[(Guid)row["CertificationProgramKey"]];
+                    // Prior to grace period, the date should display as the initial date.  
+                    // Once in the grace period, the date should be the initial plus the grace period.
+                    DateTime nextExpirationDate = registration.GracePeriodDate > AppTime.Now ? registration.GracePeriodDate : registration.ExpirationDate;
+
+                    row["RegistrationIsInactive"] = registration.IsInactive();
+                    row["RegistrationIsActive"] = registration.IsApproved();
+                    row["RegistrationIsPendingApproval"] = registration.IsPendingApproval();
+                    row["UserHasRegistration"] = true;
+                    row["ExpirationDate"] = nextExpirationDate.ToShortDateString();
+                    row["CertificationProgramRegistrationKey"] = registration.CertificationProgramRegistrationKey.ToString();
+                    row["EarnedUnits"] = WebAid.TrimNumberString(registration.EarnedUnits);
+                }
+
+                CertificationProgram certificationProgram = CertificationProgramController.CertificationProgram((Guid)row["CertificationProgramKey"], Container);
+                
+                row["Status"] = certificationProgram.CertificationProgramStatusCode;
+
+                // Hide the register button for programs with incompleted pre required programs
+                if (certificationProgram.PreRequiredProgram != null)
+                {
+                    CertificationProgramController programController =
+                        CertificationProgramController.NewCertificationProgramController(Container);
+
+                    CertificationProgram preRequiredProgram = programController[(Guid) certificationProgram.PreRequiredProgram];
+
+                    row["PreRequiredProgram"] = preRequiredProgram.CertificationProgramName;
+                    
+                    // If the CertificationProgram has an approved registration the message shouldn't be displayed and the user should be able to register
+                    if (dic.ContainsKey((Guid)certificationProgram.PreRequiredProgram))
+                    {
+                        CertificationProgramRegistration preRequiredRegistration = dic[(Guid)certificationProgram.PreRequiredProgram];
+
+                        if (preRequiredRegistration != null && preRequiredRegistration.RegistrationStatusCode.Equals(RegistrationStatus.APPROVED))
+                            row["PreRequiredProgram"] = String.Empty;
+                    }
+                }
+            }
+
+            DataView dataview = new DataView(dt);
+            CertificationProgramRepeater.DataSource = dataview;
+            CertificationProgramRepeater.DataBind();
+        }
+
+        /// <summary>
+        /// Builds the string that will display the units information of the Certification Programs.
+        /// </summary>
+        /// <remarks>
+        /// If the Units required by the Certification Program is 0, then this legend shoudn't be displayed (DT 3467)
+        /// </remarks>
+        /// <param name="unitName">The name of the unit</param>
+        /// <param name="earnedUnits">The earned units.</param>
+        /// <param name="requiredNumberOfUnits">The required number of units.</param>
+        protected static string GetTotalUnitsText(object unitName, object earnedUnits, object requiredNumberOfUnits)
+        {
+            if (!DBNull.Value.Equals(earnedUnits) && Convert.ToInt32(earnedUnits) != 0)
+            {
+                String text = string.Format("{0} {1} {2} ", ResourceManager.GetWord("Total"), earnedUnits,
+                                            ResourceManager.GetWord("of"));
+                text = string.Concat(text, string.IsNullOrEmpty(requiredNumberOfUnits.ToString())
+                           ? "0"
+                           : WebAid.TrimNumberString(requiredNumberOfUnits));
+
+                return text;
+            }
+
+            return string.Empty;
+        }
+
+        protected void RegisterButtonClick(object source, EventArgs e)
+        {
+            // Perform a Container clean up to aboid trying to commit old changes
+            Container.Cleanup(ContainerCleanupType.ClearRowStateAdded);
+
+            StyledButton button = (StyledButton)source;
+            CertificationProgram certificationProgram = CertificationProgramController.CertificationProgram(new Guid(button.CommandArgument), Container);
+
+            CertificationProgramRegistrationController controller =
+                CertificationProgramRegistrationController.NewCertificationProgramRegistrationController(Container);
+            controller.SafeRegister(certificationProgram, CurrentUser.UserKey);
+            Container.CommitAll();
+
+            // Load the page
+            SetCertificationProgramRepeater();
+        }
+
+        protected void CancelButtonClick(object source, EventArgs e)
+        {
+            // Perform a Container clean up to aboid trying to commit old changes
+            Container.Cleanup(ContainerCleanupType.ClearRowStateAdded);
+
+            StyledButton button = (StyledButton)source;
+
+            CertificationProgramRegistrationController controller =
+                CertificationProgramRegistrationController.NewCertificationProgramRegistrationController(Container);
+
+            Dictionary<Guid, CertificationProgramRegistration> dictionary;
+            dictionary = controller.Registrations(CurrentUser.UserKey);
+
+            Guid certifProgramKey = new Guid(button.CommandArgument);
+            if (dictionary.ContainsKey(certifProgramKey))
+            {
+                CertificationProgramRegistration registration;
+                registration = dictionary[certifProgramKey];
+                registration.setInactive();
+                Container.CommitAll();
+            }
+            SetCertificationProgramRepeater();
+        }
+
+        private string RegisterTranscriptPopupUrl()
+        {
+            StringBuilder url = new StringBuilder();
+
+            url.Append("~\\Core\\AccountManagement\\CertificationManagement\\PrintTranscriptViewer.aspx?");
+            url.Append("&TemplateType=E");
+
+            return String.Format("window.radopen('{0}','{1}');return false;", Page.ResolveUrl(url.ToString()), REGISTER_RAD_WINDOW_ID);
+        }
+    }
+}

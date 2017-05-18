@@ -1,0 +1,10 @@
+11.0
+8
+1       SQLUNIQUEID         1       16      ""   1     AsiGPSMeasureKey                                 ""
+2       SQLNCHAR            2       100     ""   2     AsiGPSMeasureType                                SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       100     ""   3     AsiGPSMeasureName                                SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       200     ""   4     AsiGPSMeasureDesc                                SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       100     ""   5     AsiGPSMeasureParameter                           SQL_Latin1_General_CP1_CI_AS
+6       SQLBIT              1       1       ""   6     IsSystem                                         ""
+7       SQLBIT              1       1       ""   7     IsActive                                         ""
+8       SQLSMALLINT         0       2       ""   8     DisplayOrder                                     ""

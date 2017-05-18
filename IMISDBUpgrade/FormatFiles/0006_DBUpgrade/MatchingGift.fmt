@@ -1,0 +1,11 @@
+11.0
+9
+1       SQLUNIQUEID         1       16      ""   1     MatchingGiftKey                                            ""
+2       SQLUNIQUEID         1       16      ""   2     OriginalOrderLineKey                                       ""
+3       SQLUNIQUEID         1       16      ""   3     MatchingOrderLineKey                                       ""
+4       SQLUNIQUEID         1       16      ""   4     MatchingGiftPlanKey                                        ""
+5       SQLUNIQUEID         1       16      ""   5     MatchingGiftRelationshipKey                                ""
+6       SQLUNIQUEID         1       16      ""   6     MatchingContactKey                                         ""
+7       SQLNCHAR            2       400     ""   7     MatchingGiftInfo                                           SQL_Latin1_General_CP1_CI_AS
+8       SQLDECIMAL          1       19      ""   8     MatchedAmount                                              ""
+9       SQLDATETIME         1       8       ""   9     MarkedForDeleteOn                                          ""

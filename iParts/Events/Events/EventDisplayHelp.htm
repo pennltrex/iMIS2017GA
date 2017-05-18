@@ -1,0 +1,126 @@
+<html>
+	<body>
+		<h1>Event Display</h1>
+        <p>This content item displays event details and allows users to register for events for 
+            themselves or for someone else. It also allows users to add an event to their itinerary 
+            and adds the registration to the user&#39;s cart. This content item will add its title information, usually the event name, to the browser window or tab page title when the Use dynamic page titles checkbox is selected on the parent content record.</p>
+	    <ul>
+	        <li>
+	            <strong>Name</strong> - Enter a name for the content item. This text only 
+	            appears during design mode (configuration).
+	        </li>
+	        <li>
+	            <strong>Do not render in design mode</strong> - To boost performance 
+	            during design time (configuration), enable this checkbox to prevent 
+	            content record data from being loaded in the content editor.
+	        </li>
+	        <li>
+	            <strong>Display a border around this content</strong> - If you want 
+	            a border to appear around this content item on the rendered page, enable this checkbox.
+	        </li> 
+	        <li>
+	            <strong>Event key</strong> - The key of the specific event to be displayed.  
+	            <span class="v100only">This comes from the <strong>Event.EventKey</strong> column. </span>
+	            <span class="v10only">This comes from the <strong>Event Code</strong> defined in <strong>iMIS Desktop &gt; Events &gt; 
+	                                                                                                 Define an event</strong>.</span> The key may also be supplied using the URL. A key 
+	            specified in the content item configuration takes precedence over a key in the URL.</li> 
+	        <li>
+	            <strong>Width of image</strong> - The width in pixels of the image to be displayed.
+	            Smaller pictures are scaled up to this width; larger pictures are scaled down.
+	        </li>
+	        <ul>
+	            <li><strong>0</strong> - displays the image at full size</li>
+	            <li><strong>1</strong> - hides the image</li>
+	        </ul>	
+            <li><strong>Add to calendar - </strong>Allows users to add the event to their Yahoo!, Google, and iCalendar
+            calendars. iCalendar is compatible with iCal (.ics) files, such as iOS mail, Gmail, and Outlook. 
+            This button can be configured to <strong>Never show</strong>, <strong>Show after registration</strong>, 
+            or <strong>Always show</strong>.</li>						        
+	        <li class="v10only"><strong>Registrant info message</strong> - This text appears in 
+	            three places: on the event page next to the 
+	            registrant information icon and as the page title and heading of the popup 
+	            window used to edit the registrant information. The icon text is configurable and defaults to 
+	            <em>Edit 
+	                registrant information</em>. The registrant information entered can appear, for example, on registration 
+	            badges and in some event reports.</li>
+	        <li><b>IQA query used when registering someone else</b> - The results of the selected query are displayed when using <strong>Register Someone Else</strong> to register an existing contact.
+                The query will alert you if the contact has already been registered. If no query is selected or no contacts are available, you are given the option to add a new contact. The default query <i>$/EventManagement/DefaultSystem/Queries/Advanced/Event/Registrant Search</i> 
+	            lists the user&#39;s coworkers, but you might need to broaden or tighten its criteria. 
+	            If you write your own query, you must include the following <b>Query Display Columns</b>:
+	            <ul>
+	                <li class="v10only">The <b>CsContact.IMIS ID</b> property. On the <b>Display</b> tab in IQA,
+	                    set the <b>Order</b> for this property to <b>1</b>. To hide the <b>ID</b> field in the query 
+	                    results, give this property an <b>Alias</b> of <b>code_ID</b>. </li>
+	                <li class="v100only">An iMIS Id property.</li>
+	                <li>A name property, so that it is clear which contact the user is selecting.</li>
+	            </ul>
+	        </li>
+	        <li class="v10only"><strong>IQA query used when adding a guest </strong>- The results of the selected query are displayed when using <strong>Add a guest </strong>to add a guest registration. The query will alert you if the contact has already been added. If no query is selected or no contacts are available, you are given the option to add a new contact. The default query <em>$/EventManagement/DefaultSystem/Queries/Advanced/Event/Previously Registered Event Guests</em> lists guests previously added by the registrant, but you might need to broaden or tighten its criteria. If you write your own query, you must include the following <strong>Query Display Columns</strong>:
+                <ul>
+                    <li>The <strong>CsContact.IMIS ID</strong> property. On the <strong>Display</strong> tab in IQA, set the <strong>Order</strong> for this property to <strong>1</strong>. To hide the <strong>ID</strong> field in the query results, give this property an <strong>Alias</strong> of <strong>code_ID</strong>. </li>
+                    <li>A name property, so that it is clear which contact the user is selecting. </li>
+                </ul>
+            </li>
+            <li><strong>New contact settings</strong> - Both of these fields apply when a user registers someone else or a guest and that contact is not already in the database. 
+                <ul>
+                    <li><strong>Create address purpose</strong> - Select the address purpose to which the new address will be applied.</li>
+                    <li><strong>Organization list query path </strong>-  If 
+                                    needed, select a custom query for listing appropriate organizations, such as if you have content records specific to different types of users.<ul>
+                            <li><em>Note: </em>If the query is not found (if the query name is mistyped, for instance), the iPart will display an empty list.  Delete the query 
+                                        path to re-instate use of the default query.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+	    </ul>
+		<p><strong>Notes</strong></p>
+			<ul>
+                <li>If a content record contains several dynamic content items, it is recommended that you turn dynamic page titles off for the entire page in order to limit the title length.
+
+                </li>
+                <li>Calling events by URL<ul>
+                    <li>If a key value is not set in the configuration page, the content item looks for the key
+                    in the URL. To include the key in the URL, use the parameter name EventKey, such
+                    as <span class="v10only"><strong>?EventKey=SPR12</strong></span>
+                        <span class="v100only"><strong>?EventKey=72290518-44B9-428B-909D-10142B4B6B9F</strong></span>. A key
+                    specified in the content item configuration takes precedence over a key in the URL.</li>
+                    <li>If no <strong>Event key</strong> is specified, the content item hides itself on the page.
+                    </li>
+                    <li>If the URL includes <strong>iSearchResult=true</strong>, an content item with a valid key
+                    does not hide itself when the event is not found but reports that the event was
+                    deleted.</li>
+                    </ul>
+                </li>
+                <li class="v10only">Defining events in iMIS 
+                    Desktop<ul>
+                        <li class="v10only"><i>Visibility: </i>To make an event appear in the search 
+                            results of any <strong>Common Search</strong> content item (including <b>Event List</b>), flag it for 
+                            web display in <i>iMIS</i> Desktop: when editing an event, enable <strong>More &gt; Web Options,</strong>
+                            <strong>Show this event on the Web?</strong></li>
+                        <li class="v10only"><i>Multiple registrations: </i><b>Max Registrations per Registrant</b> 
+                            function field does not affect the <b>Register Someone Else</b> feature 
+                            supported in content item-based sites. Note that <strong>Register Someone Else</strong> 
+                            must be enabled in Desktop.</li>
+                        <li class="v10only"><i>Web options: </i>Event content items do not support the setup done in the <strong>Web setup wizard</strong>.</li>
+                    </ul>
+                </li>
+				<li class="v10only"> 
+					Setting event pricing<ul>
+                        <li class="v10only">To charge a default fee for an event, create one function that has
+                            <b>Is an Event Option</b> as well as <b>Show this function on the web?</b> 
+                            enabled. </li>
+                        <li class="v10only">To offer a choice of fee levels (such as <i>Full Conference</i> 
+                            versus <i>Exhibition Only</i>), create functions for each level and enable both 
+                            options for each.</li>
+                    </ul>
+                </li>
+                <li class="v10only"> 
+					Entering <em>Registrant Info Message</em><ul>
+                        <li class="v10only">When editing the registrant&#39;s information for the first time, 
+                            the <strong>Informal name</strong>, <strong>Title</strong>, <strong>Organization</strong>, and selected address 
+                            default to the registrant&#39;s preferred mailing address. Any changes made to these 
+                            registrant details update every instance of that address throughout iMIS.</li>
+
+                     </ul>
+	</body>
+</html>

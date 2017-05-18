@@ -1,0 +1,10 @@
+10.0
+8
+1       SQLNCHAR            2       20      ""   1     VAT_RULESET                        SQL_Latin1_General_CP1_CI_AS
+2       SQLTINYINT          0       1       ""   2     RULE_ORDER                         ""
+3       SQLNCHAR            2       2       ""   3     VAT_REGISTERED                     SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       2       ""   4     COMPANY_CONTACT                    SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       20      ""   5     LOCATION                           SQL_Latin1_General_CP1_CI_AS
+6       SQLBIT              1       1       ""   6     VAT_APPLIES                        ""
+7       SQLNCHAR            2       30      ""   7     TAX_CODE_SUB                       SQL_Latin1_General_CP1_CI_AS
+8       SQLBINARY           2       8       ""   8     TIME_STAMP                         ""

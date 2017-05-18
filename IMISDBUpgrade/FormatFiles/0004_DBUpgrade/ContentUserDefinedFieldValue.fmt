@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLUNIQUEID         1       16      ""   1     ContentDocumentVersionKey                              ""
+2       SQLUNIQUEID         1       16      ""   2     UserDefinedFieldKey                                    ""
+3       SQLNCHAR            2       4000    ""   3     Value                                                  SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            4       0       ""   4     ValueText                                              SQL_Latin1_General_CP1_CI_AS

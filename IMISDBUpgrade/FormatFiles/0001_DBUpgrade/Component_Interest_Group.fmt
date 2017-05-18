@@ -1,0 +1,4 @@
+10.0
+2
+1       SQLNCHAR            0       4       ""   1     ComponentCode                            SQL_Latin1_General_CP1_CI_AS
+2       SQLNUMERIC          1       19      ""   2     InterestCategoryID                       ""

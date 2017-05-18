@@ -1,0 +1,6 @@
+10.0
+4
+1       SQLUNIQUEID         1       16      ""   1     WorkflowDemoKey                        ""
+2       SQLNCHAR            2       20      ""   2     DemoAction                             SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       20      ""   3     DemoStatus                             SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     MarkedForDeleteOn                      ""

@@ -1,0 +1,13 @@
+11.0
+11
+1       SQLUNIQUEID         1       16      ""   1     AddressPurposeContactTypeKey                                 ""
+2       SQLUNIQUEID         1       16      ""   2     AddressPurposeKey                                            ""
+3       SQLUNIQUEID         1       16      ""   3     ContactTypeKey                                               ""
+4       SQLBIT              1       1       ""   4     IsSingleUse                                                  ""
+5       SQLSMALLINT         0       2       ""   5     DisplayOrder                                                 ""
+6       SQLBIT              1       1       ""   6     IsAddressRequired                                            ""
+7       SQLBIT              1       1       ""   7     IsPhoneRequired                                              ""
+8       SQLBIT              1       1       ""   8     IsFaxRequired                                                ""
+9       SQLBIT              1       1       ""   9     IsEmailRequired                                              ""
+10      SQLBIT              1       1       ""   10    AlwaysDisplayFlag                                            ""
+11      SQLDATETIME         1       8       ""   11    MarkedForDeleteOn                                            ""

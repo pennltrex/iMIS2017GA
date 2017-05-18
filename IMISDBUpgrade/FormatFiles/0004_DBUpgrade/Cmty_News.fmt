@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLINT              0       4       ""   1     NEWS_SEQ                                           ""
+2       SQLNCHAR            2       160     ""   2     NEWS_TITLE                                         SQL_Latin1_General_CP1_CI_AS
+3       SQLINT              0       4       ""   3     COMMUNITY_SEQ                                      ""
+4       SQLNCHAR            2       20      ""   4     ID                                                 SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       10      ""   5     PRIORITY                                           SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       10      ""   6     STATUS                                             SQL_Latin1_General_CP1_CI_AS
+7       SQLDATETIME         1       8       ""   7     PRIORITY_DOWNGRADE_DATE                            ""
+8       SQLDATETIME         1       8       ""   8     STATUS_DOWNGRADE_DATE                              ""
+9       SQLDATETIME         1       8       ""   9     DATE_STORED                                        ""
+10      SQLBINARY           2       8       ""   10    TIME_STAMP                                         ""

@@ -1,0 +1,4 @@
+11.0
+2
+1       SQLINT              0       4       ""   1     FieldSectionId                   ""
+2       SQLNCHAR            2       256     ""   2     SectionName                      SQL_Latin1_General_CP1_CI_AS

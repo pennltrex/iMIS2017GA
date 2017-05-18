@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLINT              0       4       ""   1     PciAuditLogId                          ""
+2       SQLNCHAR            2       160     ""   2     SqlLogin                               SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       120     ""   3     UserId                                 SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     UserKey                                ""
+5       SQLNCHAR            2       100     ""   5     EventType                              SQL_Latin1_General_CP1_CI_AS
+6       SQLDATETIME         0       8       ""   6     EventTimestamp                         ""
+7       SQLBIT              1       1       ""   7     Result                                 ""
+8       SQLINT              1       4       ""   8     OriginationCode                        ""
+9       SQLNCHAR            2       8       ""   9     CC_LAST4                               SQL_Latin1_General_CP1_CI_AS
+10      SQLNCHAR            2       200     ""   10    ENCRYPT_CC_NUMBER                      SQL_Latin1_General_CP1_CI_AS

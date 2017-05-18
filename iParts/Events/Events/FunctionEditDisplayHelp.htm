@@ -1,0 +1,55 @@
+<html>
+    <body>
+        <h1>Function Edit &nbsp;</h1>
+		   <ul>
+                <li>
+                    <strong>Name</strong> - Enter a name for the iPart. This text only 
+                    appears during design mode (configuration).
+                </li>
+                <li>
+                    <strong>Do not render in design mode</strong> - To boost performance 
+                    during design time (configuration), enable this checkbox to prevent 
+                    content record data from being loaded in the content editor.
+                </li>
+                <li>
+                    <strong>Display a border around this content</strong> - If you want 
+                    a border to appear around this iPart on the rendered page, enable this checkbox.
+                </li> 
+                <li>
+                    <strong>Event key</strong> - (required) The
+                    <span class="v10only">id</span>
+                    <span class="v100only">key</span>
+                    of the parent event for the function.
+                    <span class="v100only">This comes from the <strong>Event.EventKey</strong> column.</span>
+                    The key may also be supplied via the URL. A key specified in the iPart configuration takes
+                    precedence over a key in the URL.
+</li>
+                <li>
+                    <strong>Function key</strong> - (optional) The
+                    <span class="v10only">id</span>
+                    <span class="v100only">key</span> 
+                    of the specific function to edit. 
+                    <span class="v100only">This comes from the <strong>EventFunction.EventFunctionKey</strong> column.</span>
+                    The key may also be supplied via the URL.
+                    A key specified in the iPart configuration takes precedence over a key in the URL.
+                    If no key is specified, the iPart opens in Add mode, for creation of a new function.
+</li>
+
+            </ul>
+        
+        <p><strong>Notes</strong></p>
+            <ul>
+				<li> 
+					If no key values are set in the configuration page, the iPart looks for keys in 
+                    the URL.
+                    To include the event key in the URL, use the parameter name EventKey, such as
+					<span class="v10only"><b>?EventKey=SPR12</b></span>
+                    <span class="v100only"><b>?EventKey=72290518-44B9-428B-909D-10142B4B6B9F</b></span>.
+                    To include the function key in the URL, use the parameter name FunctionKey, such
+                    as <span class="v10only"><b>?FunctionKey=SPR12/LUNCH</b></span> <span class="v100only">
+                    <b>?FunctionKey=C890923B-E6A9-4800-B7DB-FF1988AFAE12</b></span>. A key specified 
+                    in the iPart configuration takes precedence over a key in the URL.
+				</li>
+            </ul>
+    </body>
+</html>

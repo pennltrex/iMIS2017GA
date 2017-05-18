@@ -1,0 +1,13 @@
+11.0
+11
+1       SQLNCHAR            2       20      ""   1     ID                                                     SQL_Latin1_General_CP1_CI_AS
+2       SQLBIT              1       1       ""   2     IsVolunteer                                            ""
+3       SQLDATETIME         1       8       ""   3     AvailableBeginning                                     ""
+4       SQLNCHAR            2       400     ""   4     EmergencyContact                                       SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            2       40      ""   5     EmergencyContactPhone                                  SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            2       140     ""   6     GovernmentIDNumber                                     SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            2       40      ""   7     AgeGroup                                               SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            2       40      ""   8     BackgroundCheckStatus                                  SQL_Latin1_General_CP1_CI_AS
+9       SQLDATETIME         1       8       ""   9     BackgroundCheckValidUntil                              ""
+10      SQLBIT              1       1       ""   10    CompletedOrientation                                   ""
+11      SQLDATETIME         1       8       ""   11    OrientationValidUntil                                  ""

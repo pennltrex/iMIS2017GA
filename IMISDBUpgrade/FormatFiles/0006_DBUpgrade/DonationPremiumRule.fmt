@@ -1,0 +1,8 @@
+11.0
+6
+1       SQLINT              0       4       ""   1     DonationPremiumRuleID                                                        ""
+2       SQLNCHAR            2       130     ""   2     DonationPremiumRuleName                                                      SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       1000    ""   3     DonationPremiumRuleDesc                                                      SQL_Latin1_General_CP1_CI_AS
+4       SQLDATETIME         1       8       ""   4     DonationPremiumRuleOfferBeginDate                                            ""
+5       SQLDATETIME         1       8       ""   5     DonationPremiumRuleOfferEndDate                                              ""
+6       SQLMONEY            1       8       ""   6     DonationPremiumRuleMaximumGiftAmount                                         ""

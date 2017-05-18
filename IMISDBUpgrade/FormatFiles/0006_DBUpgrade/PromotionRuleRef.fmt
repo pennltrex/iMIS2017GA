@@ -1,0 +1,5 @@
+11.0
+3
+1       SQLINT              0       4       ""   1     PromotionRuleCode                      ""
+2       SQLNCHAR            2       100     ""   2     PromotionRuleDesc                      SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       30      ""   3     PromotionRuleName                      SQL_Latin1_General_CP1_CI_AS

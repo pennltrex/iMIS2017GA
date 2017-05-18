@@ -1,0 +1,11 @@
+10.0
+9
+1       SQLUNIQUEID         1       16      ""   1     OpportunityKey                         ""
+2       SQLNCHAR            2       100     ""   2     Product                                SQL_Latin1_General_CP1_CI_AS
+3       SQLDATETIME         1       8       ""   3     DecisionDate                           ""
+4       SQLDECIMAL          1       19      ""   4     TimingProbability                      ""
+5       SQLINT              0       4       ""   5     Units                                  ""
+6       SQLDECIMAL          1       19      ""   6     PotentialSales                         ""
+7       SQLDECIMAL          1       19      ""   7     ActualSales                            ""
+8       SQLNCHAR            2       100     ""   8     Quality                                SQL_Latin1_General_CP1_CI_AS
+9       SQLNCHAR            2       100     ""   9     ResponseMedia                          SQL_Latin1_General_CP1_CI_AS

@@ -1,0 +1,12 @@
+11.0
+10
+1       SQLNCHAR            0       60      ""   1     COUNTER_NAME                 SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     LAST_VALUE                   ""
+3       SQLDATETIME         1       8       ""   3     LAST_UPDATED                 ""
+4       SQLNCHAR            2       510     ""   4     UPDATED_BY                   SQL_Latin1_General_CP1_CI_AS
+5       SQLNCHAR            0       510     ""   5     PAGEPAD1                     SQL_Latin1_General_CP1_CI_AS
+6       SQLNCHAR            0       510     ""   6     PAGEPAD2                     SQL_Latin1_General_CP1_CI_AS
+7       SQLNCHAR            0       510     ""   7     PAGEPAD3                     SQL_Latin1_General_CP1_CI_AS
+8       SQLNCHAR            0       510     ""   8     PAGEPAD4                     SQL_Latin1_General_CP1_CI_AS
+9       SQLBIT              1       1       ""   9     HAS_CHECKSUM                 ""
+10      SQLBINARY           2       8       ""   10    TIME_STAMP                   ""

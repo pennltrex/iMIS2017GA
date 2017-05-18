@@ -1,0 +1,18 @@
+<%@ Control Language="c#" AutoEventWireup="false" %>
+
+<script language="C#" runat="server">
+	private void Page_Load(object sender, System.EventArgs e)
+	{
+	}
+	override protected void OnInit(EventArgs e)
+	{
+        this.Load += new System.EventHandler(this.Page_Load);
+		base.OnInit(e);
+	}
+</script>
+
+<div id="contentdialog">
+    <table style="width:100%; height:100%; vertical-align:top;" border="0">
+        <tr>
+            <td style="height:100%; vertical-align: top;">
+                <div style="overflow:auto;">

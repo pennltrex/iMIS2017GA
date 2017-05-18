@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLNCHAR            2       10      ""   1     REGISTRANT_CLASS                     SQL_Latin1_General_CP1_CI_AS
+2       SQLNCHAR            2       40      ""   2     DESCRIPTION                          SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       80      ""   3     LONG_DESCRIPTION                     SQL_Latin1_General_CP1_CI_AS
+4       SQLBINARY           2       8       ""   4     TIME_STAMP                           ""

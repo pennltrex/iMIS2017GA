@@ -1,0 +1,7 @@
+<%@ Control Language="c#" Inherits="Asi.Web.UI.Common.WorkflowManagement.Utilities.AdLibDisplay" CodeFile="AdLibDisplay.ascx.cs" %>
+<p><h3>AdLib</h3>
+<P></P>
+By&nbsp;<asp:Label id="NameLabel" runat="server"></asp:Label>&nbsp;(<asp:Label id="EmailLabel" runat="server"></asp:Label>)
+<hr>
+<asp:Label id="StoryLabel" runat="server"></asp:Label>
+<hr>

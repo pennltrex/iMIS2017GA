@@ -1,0 +1,6 @@
+11.0
+4
+1       SQLINT              0       4       ""   1     DonationPremiumSetID                             ""
+2       SQLINT              0       4       ""   2     DonationPremiumRuleID                            ""
+3       SQLNCHAR            2       130     ""   3     DonationPremiumSetName                           SQL_Latin1_General_CP1_CI_AS
+4       SQLNCHAR            2       1000    ""   4     DonationPremiumSetDesc                           SQL_Latin1_General_CP1_CI_AS

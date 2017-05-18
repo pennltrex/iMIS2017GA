@@ -1,0 +1,23 @@
+11.0
+21
+1       SQLUNIQUEID         1       16      ""   1     TaskItemKey                              ""
+2       SQLNCHAR            2       100     ""   2     Category                                 SQL_Latin1_General_CP1_CI_AS
+3       SQLNCHAR            2       200     ""   3     Subject                                  SQL_Latin1_General_CP1_CI_AS
+4       SQLUNIQUEID         1       16      ""   4     AssignedToKey                            ""
+5       SQLBIT              1       1       ""   5     IsGroupTask                              ""
+6       SQLDATETIME         1       8       ""   6     DueDate                                  ""
+7       SQLDATETIME         1       8       ""   7     StartDate                                ""
+8       SQLINT              0       4       ""   8     TaskItemStatusCode                       ""
+9       SQLDATETIME         1       8       ""   9     StatusDate                               ""
+10      SQLINT              0       4       ""   10    Priority                                 ""
+11      SQLDATETIME         1       8       ""   11    CompletedOn                              ""
+12      SQLUNIQUEID         1       16      ""   12    CompletedByUserKey                       ""
+13      SQLINT              0       4       ""   13    NotifyCreatorCode                        ""
+14      SQLDATETIME         0       8       ""   14    UpdatedOn                                ""
+15      SQLUNIQUEID         1       16      ""   15    UpdatedByUserKey                         ""
+16      SQLUNIQUEID         1       16      ""   16    CreatedByUserKey                         ""
+17      SQLDATETIME         0       8       ""   17    CreatedOn                                ""
+18      SQLUNIQUEID         1       16      ""   18    AccessKey                                ""
+19      SQLUNIQUEID         1       16      ""   19    OpportunityKey                           ""
+20      SQLNCHAR            4       0       ""   20    Comment                                  SQL_Latin1_General_CP1_CI_AS
+21      SQLDATETIME         1       8       ""   21    MarkedForDeleteOn                        ""

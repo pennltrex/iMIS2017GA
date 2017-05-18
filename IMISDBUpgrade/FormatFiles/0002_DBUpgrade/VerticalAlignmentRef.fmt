@@ -1,0 +1,5 @@
+10.0
+3
+1       SQLNCHAR            2       100     ""   1     VerticalAlignmentDesc                          SQL_Latin1_General_CP1_CI_AS
+2       SQLINT              0       4       ""   2     VerticalAlignmentCode                          ""
+3       SQLNCHAR            2       40      ""   3     VerticalAlignmentName                          SQL_Latin1_General_CP1_CI_AS

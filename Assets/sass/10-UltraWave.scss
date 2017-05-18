@@ -1,0 +1,60 @@
+﻿/**
+ * UltraWave base styles for iMIS
+ *
+ * This document contains the base styles required to properly render iMIS.
+ * DO NOT EDIT THIS DOCUMENT DIRECTLY. Your changes WILL be lost when you upgrade.
+ * Instead, create a new style sheet to override the styles that you want to change.
+ *
+ **/
+
+@import "breakpoint"; // Sass plugin used to generate responsive media queries
+@import "variables";
+@import "breakpoint-setup";
+@import "mixins";
+
+// Reset
+//@import "UltraWave/normalize";
+@import "UltraWave/u-reset";
+
+// Core CSS
+//@import "UltraWave/scaffolding";
+@import "UltraWave/layouts/u-yui_grids";
+@import "UltraWave/layouts/u-grids";
+@import "UltraWave/u-base";
+@import "UltraWave/u-forms";
+
+// Components
+@import "UltraWave/u-component-animations";
+@import "UltraWave/u-standard-panel";
+@import "UltraWave/u-components";
+@import "UltraWave/modules/u-chosen";
+@import "UltraWave/modules/u-dropdowns";
+@import "UltraWave/u-alerts";
+@import "UltraWave/u-states";
+@import "UltraWave/u-utility-classes";
+@import "UltraWave/u-responsive-utilities";
+@import "UltraWave/u-design-flair";
+@import "UltraWave/u-images";
+@import "UltraWave/u-telerik";
+@import "UltraWave/u-rise";
+@import "UltraWave/u-icons";
+@import "UltraWave/u-social_networking";
+@import "UltraWave/u-badges";
+@import "UltraWave/u-modals";
+@import "UltraWave/modules/u-media";
+@import "UltraWave/modules/u-account-menu";
+@import "UltraWave/modules/u-search";
+@import "UltraWave/modules/u-alerts-iPart";
+@import "UltraWave/modules/u-events-products";
+@import "UltraWave/modules/u-related-items";
+@import "UltraWave/modules/u-progress-tracker";
+@import "UltraWave/modules/u-communities";
+@import "UltraWave/modules/u-object-browser";
+@import "UltraWave/modules/u-carousel";
+@import "UltraWave/modules/u-donuts";
+@import "UltraWave/modules/_u-color-picker";
+@import "UltraWave/modules/_u-cookie-consent";
+@import "UltraWave/modules/u-other";
+@import "UltraWave/u-tables";
+@import "UltraWave/u-legacy";
+@import "UltraWave/u-unorganized";
