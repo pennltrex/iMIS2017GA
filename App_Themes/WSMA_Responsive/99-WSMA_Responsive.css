@@ -436,6 +436,73 @@ img.ImgNoResize, .ImgNoResize img {
   margin-bottom: 20px;
 }
 
+/* Styled Headers
+   ========================================================================== */
+.red h1, h1.red {
+    color: #a62d38;
+    font-size: 250%;
+    font-weight: 900;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
+    border-bottom: 3px solid rgb(148, 156, 189);
+}
+
+.dark-blue h1, h1.dark-blue {
+    color: #00837e;
+    font-size: 250%;
+    font-weight: 900;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
+    border-bottom: 3px solid rgb(148, 156, 189);
+}
+
+.medium-blue h1, h1.medium-blue {
+    color: #4bc8b6;
+    font-size: 250%;
+    font-weight: 900;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
+    border-bottom: 3px solid rgb(148, 156, 189);
+}
+
+.light-blue h1, h1.light-blue {
+    color: #9fe6d9;
+    font-size: 250%;
+    font-weight: 900;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
+    border-bottom: 3px solid rgb(148, 156, 189);
+}
+
+.green h1, h1.green {
+    color: #8fd400;
+    font-size: 250%;
+    font-weight: 900;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
+    border-bottom: 3px solid rgb(148, 156, 189);
+}
+
+.dark-grey h1, h1.dark-grey {
+    color: #36424a;
+    font-size: 250%;
+    font-weight: 900;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
+    border-bottom: 3px solid rgb(148, 156, 189);
+}
+
+.medium-grey h1, h1.medium-grey {
+    color: #6c6f70;
+    font-size: 250%;
+    font-weight: 900;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
+    border-bottom: 3px solid rgb(148, 156, 189);
+}
+
+.light-grey h1, h1.light-grey {
+    color: #d0cfcb;
+    font-size: 250%;
+    font-weight: 900;
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
+    border-bottom: 3px solid rgb(148, 156, 189);
+}
+
+
 /* ==========================================================================
    MASTERPAGE ELEMENTS
    ========================================================================== */
