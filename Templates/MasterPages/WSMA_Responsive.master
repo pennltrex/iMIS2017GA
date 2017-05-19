@@ -49,15 +49,63 @@
         }
     }
 
+
+	
+	/// <summary>
+	/// ATS Developed Adds a css class for any tags applied to the page.
+	/// </summary>
+	
     protected override void OnPreRender(EventArgs e)
     {
+        // Weíre overriding the Page_PreRender method ñ but we still want our Base class's PreRender to execute.
         base.OnPreRender(e);
 
-        if (Page is Asi.Web.UI.DisplayPageBase && ((Asi.Web.UI.DisplayPageBase)Page).iMISWebsite != null)
-            ((Asi.Web.UI.DisplayPageBase)Page).SidebarPosition = TextAlign.Right;
+        // Create a "page" variable that attempts to convert our Page instance to a ContentRecordPage
+        var page = Page as Asi.Web.UI.DisplayPageBase;
 
-        masterWrapper.CssClass = "wrapper " + WrapperCssClass;
+        // If "page" is null, then the current page is not a WCM content record and has no tags ñ we can ignore it.
+        if (page != null)
+        {
+            // Get the content object for the current page
+            Asi.Business.ContentManagement.Content content = Asi.Business.ContentManagement.Content.GetFromContentKey(page.ContentRecordKey, page.Container);
+
+            // Set up a dictionary to store both the uppercased tags (for de-duping), and the tags with their original case for use as classes
+            Dictionary<string, string> tagNames = new Dictionary<string, string>();
+
+            // Check to see if our content has any tags, and if so...
+            if (content.Tags.Count() > 0)
+            {
+                // Loop through each of them
+                foreach (Tag tag in content.Tags)
+                {
+                    // As long as we don't already have this tag, and this tag is a child of a tag containing "CSS"...
+                    if (!tagNames.ContainsKey(tag.Name.ToUpper()) && tag.ParentTag != null && tag.ParentTag.Name.Contains("CSS"))
+                        // Add it to the list
+                        tagNames.Add(tag.Name.ToUpper(), tag.Name);
+                }
+            }
+
+            // Now, if we don't have any tags from the content, let's see if the content's containing FOLDER was tagged
+            if (tagNames.Count() <= 0 && content.ParentFolder.Tags.Count() > 0)
+            {
+                // Loop the folder's tags
+                foreach (Tag tag in content.ParentFolder.Tags)
+                {
+                    // And again - add them if we don't already have them and they're CSS tags
+                    if (!tagNames.ContainsKey(tag.Name.ToUpper()) && tag.ParentTag != null && tag.ParentTag.Name.Contains("CSS"))
+                        tagNames.Add(tag.Name.ToUpper(), tag.Name);
+                }
+            }
+
+            // Finally, loop through our "master list" of tags - using the original casing, mind you
+            foreach (string strTag in tagNames.Values)
+            {
+                // And add each to the Body tag as a "class" attribute
+                MainBody.Attributes.Add("class", strTag);
+            }
+        }
     }
+
 
     /// <summary>
     /// Override method to Refresh Contact Proxy Status

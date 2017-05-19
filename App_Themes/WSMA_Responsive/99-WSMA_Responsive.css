@@ -440,15 +440,18 @@ img.ImgNoResize, .ImgNoResize img {
    ========================================================================== */
 .red h1, h1.red {
     color: #a62d38;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 900;
-    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(228,229,238,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(228,229,238,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(228,229,238,0.65) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(228,229,238,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     border-bottom: 3px solid rgb(148, 156, 189);
 }
 
 .dark-blue h1, h1.dark-blue {
     color: #00837e;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 900;
     background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
     border-bottom: 3px solid rgb(148, 156, 189);
@@ -456,7 +459,7 @@ img.ImgNoResize, .ImgNoResize img {
 
 .medium-blue h1, h1.medium-blue {
     color: #4bc8b6;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 900;
     background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
     border-bottom: 3px solid rgb(148, 156, 189);
@@ -464,15 +467,16 @@ img.ImgNoResize, .ImgNoResize img {
 
 .light-blue h1, h1.light-blue {
     color: #9fe6d9;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 900;
     background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
+    
     border-bottom: 3px solid rgb(148, 156, 189);
 }
 
 .green h1, h1.green {
     color: #8fd400;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 900;
     background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
     border-bottom: 3px solid rgb(148, 156, 189);
@@ -480,7 +484,7 @@ img.ImgNoResize, .ImgNoResize img {
 
 .dark-grey h1, h1.dark-grey {
     color: #36424a;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 900;
     background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
     border-bottom: 3px solid rgb(148, 156, 189);
@@ -488,7 +492,7 @@ img.ImgNoResize, .ImgNoResize img {
 
 .medium-grey h1, h1.medium-grey {
     color: #6c6f70;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 900;
     background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
     border-bottom: 3px solid rgb(148, 156, 189);
@@ -496,7 +500,7 @@ img.ImgNoResize, .ImgNoResize img {
 
 .light-grey h1, h1.light-grey {
     color: #d0cfcb;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 900;
     background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgb(228, 229, 238) 100%);
     border-bottom: 3px solid rgb(148, 156, 189);
