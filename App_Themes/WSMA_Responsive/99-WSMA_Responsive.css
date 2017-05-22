@@ -986,7 +986,7 @@ img.ImgNoResize, .ImgNoResize img {
 .RadMenu.RadMenu_Austin .rmRootLink.rmSelected {
   /* root item selected styles */
   color: #fff;
-  background-color: #dc4f00;
+  background-color: #a62d38;
 }
 .RadMenu.RadMenu_Austin .rmRootLink.rmExpanded,
 .RadMenu.RadMenu_Austin .rmRootLink:hover,
