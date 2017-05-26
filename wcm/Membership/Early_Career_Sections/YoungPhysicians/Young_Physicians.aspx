@@ -24,19 +24,21 @@
 
 		AddChildUserControl(ContentPage1);
 
-		childUserControl = ciNewContentHtml_d32d0b51515f4e71a777fa7be906d7f8 as Asi.Web.UI.IUserControl;
-		if (childUserControl != null)
-			AddChildUserControl(childUserControl);
-		key = new System.Guid("d32d0b51-515f-4e71-a777-fa7be906d7f8");
-		if(!ContentItemKeyMap.ContainsKey(key))
-			ContentItemKeyMap.Add(key, ciNewContentHtml_d32d0b51515f4e71a777fa7be906d7f8);
-
 		childUserControl = ciHeaderTesting_6b1e6f70708c42a48df742e1a6be50ca as Asi.Web.UI.IUserControl;
 		if (childUserControl != null)
 			AddChildUserControl(childUserControl);
 		key = new System.Guid("6b1e6f70-708c-42a4-8df7-42e1a6be50ca");
 		if(!ContentItemKeyMap.ContainsKey(key))
 			ContentItemKeyMap.Add(key, ciHeaderTesting_6b1e6f70708c42a48df742e1a6be50ca);
+
+		AddChildUserControl(ContentPage2);
+
+		childUserControl = ciNewContentHtml_d32d0b51515f4e71a777fa7be906d7f8 as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("d32d0b51-515f-4e71-a777-fa7be906d7f8");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciNewContentHtml_d32d0b51515f4e71a777fa7be906d7f8);
 
 	}
 </script>
@@ -49,11 +51,26 @@
 		<StaticConnections>
 		</StaticConnections>
 	</asiweb:AsiWebPartManager>
-<div>
+   <div>
 	<div class="row">
-		<div class="col-sm-12">
-						<CM:ContentPage ID="ContentPage1" runat="server" PageNumber="1">
+    <div class="col-sm-3">
+			<CM:ContentPage ID="ContentPage1" runat="server" PageNumber="1">
 				<asp:WebPartZone ID="WebPartZone1_Page1" runat="server" PartChromeType="None" WebPartVerbRenderMode="TitleBar" CssClass="WebPartZone ">
+					<ZoneTemplate>
+				<CM:ContentHtml ID="ciHeaderTesting_6b1e6f70708c42a48df742e1a6be50ca" runat="server" ContentKey="19e96209-5ace-4274-9cb1-5f947ca26891" ContentItemKey="6b1e6f70-708c-42a4-8df7-42e1a6be50ca" Title="Header Testing" ShowTitleFlag="False" ShowBorder="False"><asp:Panel ID="Panel_HeaderTesting" runat="server"><h1>This is an H1 test line</h1>
+<h2 >This is an H2 test line</h2>
+<h3 >This is an H3 test line</h3>
+<h4 >This is an H4 test line</h4>
+<br />
+<h5>This is an H5 test line</h5>
+<h6 >This is an H6 test line</h6></asp:Panel></CM:ContentHtml>
+					</ZoneTemplate>
+				</asp:WebPartZone>
+			</CM:ContentPage>
+    </div>
+    <div class="col-sm-9">
+			<CM:ContentPage ID="ContentPage2" runat="server" PageNumber="1">
+				<asp:WebPartZone ID="WebPartZone2_Page1" runat="server" PartChromeType="None" WebPartVerbRenderMode="TitleBar" CssClass="WebPartZone ">
 					<ZoneTemplate>
 				<CM:ContentHtml ID="ciNewContentHtml_d32d0b51515f4e71a777fa7be906d7f8" runat="server" ContentKey="19e96209-5ace-4274-9cb1-5f947ca26891" ContentItemKey="d32d0b51-515f-4e71-a777-fa7be906d7f8" Title="New ContentHtml" ShowTitleFlag="False" ShowBorder="False"><asp:Panel ID="Panel_NewContentHtml" runat="server"><p><img alt="" src="/images/WSMA/ForMembers/YPS/YPS-BannerHome718px.png" /></p>
 <p>The Young Physician Section is composed of physician members of the WSMA who are either under 40 years of age or within the first ten years of professional practice after residency and fellowship training.</p>
@@ -140,20 +157,14 @@ The  practice of medicine is likely going to change significantly over the  next
 <div  _rdEditor_temp="1"><strong>How do you think your medical specialty will change in the next decade? </strong><br />
 Molecular pathology is becoming more and more important in bringing  personalized medicine to cancer therapy.  Now with next generation  sequencing, large areas of the genome can be evaluated at a fraction of  the cost and in a more timely manner than many predicted only a few  years ago.   We will likely see further integration of molecular  pathology in pathologic assessment of cancer to broaden our therapeutic  options and to provide more prognostic information.</div>
 <div  _rdEditor_temp="1"> </div>--></asp:Panel></CM:ContentHtml>
-				<CM:ContentHtml ID="ciHeaderTesting_6b1e6f70708c42a48df742e1a6be50ca" runat="server" ContentKey="19e96209-5ace-4274-9cb1-5f947ca26891" ContentItemKey="6b1e6f70-708c-42a4-8df7-42e1a6be50ca" Title="Header Testing" ShowTitleFlag="False" ShowBorder="False"><asp:Panel ID="Panel_HeaderTesting" runat="server"><h1>This is an H1 test line</h1>
-<h2 >This is an H2 test line</h2>
-<h3 >This is an H3 test line</h3>
-<h4 >This is an H4 test line</h4>
-<br />
-<h5>This is an H5 test line</h5>
-<h6 >This is an H6 test line</h6></asp:Panel></CM:ContentHtml>
 					</ZoneTemplate>
 				</asp:WebPartZone>
 			</CM:ContentPage>
+    </div>
+</div>
 
-		</div>
 	</div>
-</div>	
+	
 <CM:ContentPageFooter ID="ContentPageFooter1" runat="server" NumberOfPages="1" />
 
     <asiweb:AsiWebPartEditorZone ID="EditorZone1" runat="server">
