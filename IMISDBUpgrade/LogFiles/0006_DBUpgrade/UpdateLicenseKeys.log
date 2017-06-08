@@ -1,0 +1,26 @@
+Table LicenseRef 
+
+Starting copy...
+
+77 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 1      Average : (77000.00 rows per sec.)
+---------------------------------------------------------------------- 
+Table LicenseLegacyMap 
+
+Starting copy...
+
+81 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 16     Average : (5062.50 rows per sec.)
+---------------------------------------------------------------------- 
+Table UniformLicense 
+
+Starting copy...
+1000 rows sent to SQL Server. Total sent: 1000
+1000 rows sent to SQL Server. Total sent: 2000
+
+2209 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 63     Average : (35063.49 rows per sec.)
+---------------------------------------------------------------------- 

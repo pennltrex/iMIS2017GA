@@ -1,0 +1,17 @@
+BuildPublishBOs: starting. BOD Version 2 selected
+Logged into database iMIS_Prod on Server WIN2012R2
+Compiling 6 items...
+	CsName_Staff
+		CsName_Staff: Published With No Errors.
+	CultivationActivity
+		CultivationActivity: Published With No Errors.
+	EducationInProgress
+		EducationInProgress: Published With No Errors.
+	Profile_Page
+		Profile_Page: Published With No Errors.
+	SocialNetworkLinks
+		SocialNetworkLinks: Published With No Errors.
+	VolunteersInterests
+		VolunteersInterests: Published With No Errors.
+Publish Attempted: 6,  Succeeded: 6,  Failed: 0
+BuildPublishBOs: completed

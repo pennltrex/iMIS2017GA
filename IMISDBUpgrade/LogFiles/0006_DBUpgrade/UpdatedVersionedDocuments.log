@@ -1,0 +1,28 @@
+Loading .\AsiTableData\0006_DBUpgrade\UpdatedVersionedDocuments_0.dat 
+
+Starting copy...
+
+100 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 406    Average : (246.31 rows per sec.)
+Loading .\AsiTableData\0006_DBUpgrade\UpdatedVersionedDocuments_1.dat 
+
+Starting copy...
+
+100 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 343    Average : (291.55 rows per sec.)
+Loading .\AsiTableData\0006_DBUpgrade\UpdatedVersionedDocuments_2.dat 
+
+Starting copy...
+
+100 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 453    Average : (220.75 rows per sec.)
+Loading .\AsiTableData\0006_DBUpgrade\UpdatedVersionedDocuments_3.dat 
+
+Starting copy...
+
+72 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 422    Average : (170.62 rows per sec.)

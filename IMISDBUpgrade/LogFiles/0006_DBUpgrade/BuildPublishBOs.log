@@ -1,0 +1,223 @@
+BuildPublishBOs: starting. BOD Version 2 selected
+Logged into database iMIS_Prod on Server WIN2012R2
+Compiling 91 items...
+	Address
+		Address: Published With No Errors.
+		PhysicalAddress: Published With No Errors.
+	AdvancedEmailNinetyDaysEvents
+		AdvancedEmailNinetyDaysEvents Warning: Object has no Primary Key.
+		AdvancedEmailNinetyDaysEvents: Published With No Errors.
+	AdvancedEmailTwelveMonthsDeliveredByDate
+		AdvancedEmailTwelveMonthsDeliveredByDate Warning: Object has no Primary Key.
+		AdvancedEmailTwelveMonthsDeliveredByDate: Published With No Errors.
+	AdvancedEmailTwelveMonthsTotals
+		AdvancedEmailTwelveMonthsTotals Warning: Object has no Primary Key.
+		AdvancedEmailTwelveMonthsTotals: Published With No Errors.
+	AutoPayAccount
+		AutoPayAccount: Published With No Errors.
+	AutoPayInstruction
+		AutoPayInstruction: Published With No Errors.
+	AutoPayInstructionDetail
+		AutoPayInstructionDetail: Published With No Errors.
+	AutoPayInvoices
+		AutoPayInvoices Warning: Object has no Primary Key.
+		AutoPayInvoices: Published With No Errors.
+	AutoPayInvoicesDues
+		AutoPayInvoicesDues Warning: Object has no Primary Key.
+		AutoPayInvoicesDues: Published With No Errors.
+	AutoPayInvoicesFundraising
+		AutoPayInvoicesFundraising Warning: Object has no Primary Key.
+		AutoPayInvoicesFundraising: Published With No Errors.
+	AutoPayMemberInstructionDetail
+		AutoPayMemberInstructionDetail: Published With No Errors.
+	BillingLogByParty
+		BillingLogByParty Warning: Object has no Primary Key.
+		BillingLogByParty: Published With No Errors.
+	CertificationModule
+		CertificationModule: Published With No Errors.
+	CertificationProgram
+		CertificationProgram: Published With No Errors.
+	CertificationProgramRegistration
+		CertificationProgramRegistration: Published With No Errors.
+	CMNotificationsDue
+		CMNotificationsDue Warning: Object has no Primary Key.
+		CMNotificationsDue: Published With No Errors.
+	CommunicationLogSummary
+		CommunicationLogSummary Warning: Object has no Primary Key.
+		CommunicationLogSummary: Published With No Errors.
+	Contact
+		Contact: Published With No Errors.
+		Institute: Published With No Errors.
+		Individual: Published With No Errors.
+	ContactCommunicationReasonPreferences
+		ContactCommunicationReasonPreferences: Published With No Errors.
+	ContentWorkflow
+		ContentWorkflow: Published With No Errors.
+	CsAddress
+		CsAddress: Published With No Errors.
+	CsAddressFormats
+		CsAddressFormats: Published With No Errors.
+	CsCommitteeMember
+		CsCommitteeMember Warning: Object has no Primary Key.
+		CsCommitteeMember: Published With No Errors.
+	CsCommitteePosition
+		CsCommitteePosition: Published With No Errors.
+	CsContact
+		CsContact: Published With No Errors.
+	CsContactBasic
+		CsContactBasic: Published With No Errors.
+	CsCountryNames
+		CsCountryNames: Published With No Errors.
+	CsEvent
+		CsEvent: Published With No Errors.
+	CsFreightDollar
+		CsFreightDollar: Published With No Errors.
+	CsFreightQuantity
+		CsFreightQuantity: Published With No Errors.
+	CsFunction
+		CsFunction: Published With No Errors.
+	CsGeneralLookupTables
+		CsGeneralLookupTables: Published With No Errors.
+	CsName_Demo
+		CsName_Demo: Published With No Errors.
+	CsOrderLines
+		CsOrderLines: Published With No Errors.
+	CsOrders
+		CsOrders: Published With No Errors.
+	CsProductLocation
+		CsProductLocation: Published With No Errors.
+	CsRegFunctions
+		CsRegFunctions: Published With No Errors.
+	CsRegistration
+		CsRegistration: Published With No Errors.
+	CsRelationshipTypes
+		CsRelationshipTypes: Published With No Errors.
+	CsStateProvinceCodes
+		CsStateProvinceCodes: Published With No Errors.
+	CsTaxCategory
+		CsTaxCategory: Published With No Errors.
+	CsTerms
+		CsTerms: Published With No Errors.
+	CsTransNotify
+		CsTransNotify Warning: Object has no Primary Key.
+		CsTransNotify: Published With No Errors.
+	CultivatingFor
+		CultivatingFor: Published With No Errors.
+	CustomerExperienceView
+		CustomerExperienceView Warning: Object has no Primary Key.
+		CustomerExperienceView: Published With No Errors.
+	DataVaultAttemptSummary
+		DataVaultAttemptSummary Warning: Object has no Primary Key.
+		DataVaultAttemptSummary: Published With No Errors.
+	DataVaultLogAttempt
+		DataVaultLogAttempt: Published With No Errors.
+	DataVaultLogDetail
+		DataVaultLogDetail: Published With No Errors.
+	DayOfTheWeekRef
+		DayOfTheWeekRef: Published With No Errors.
+	EngagementCategory
+		EngagementCategory: Published With No Errors.
+	EngagementScoreCurrentData
+		EngagementScoreCurrentData: Published With No Errors.
+	EngagementScoreFormula
+		EngagementScoreFormula: Published With No Errors.
+	EngagementScoreMonthlyData
+		EngagementScoreMonthlyData: Published With No Errors.
+	EngagementScoreResult
+		EngagementScoreResult Warning: Object has no Primary Key.
+		EngagementScoreResult: Published With No Errors.
+	EngagementScoreYearlyData
+		EngagementScoreYearlyData: Published With No Errors.
+	ExpiredMemberUpdateDetailLog
+		ExpiredMemberUpdateDetailLog: Published With No Errors.
+	FirstNotifyContactPerGift
+		FirstNotifyContactPerGift Warning: Object has no Primary Key.
+		FirstNotifyContactPerGift: Published With No Errors.
+	GiftHistory
+		GiftHistory Warning: Object has no Primary Key.
+		GiftHistory: Published With No Errors.
+	GiftsReceived
+		GiftsReceived Warning: Object has no Primary Key.
+		GiftsReceived: Published With No Errors.
+	GiftSummary
+		GiftSummary Warning: Object has no Primary Key.
+		GiftSummary: Published With No Errors.
+	GLBatchTransactionData
+		GLBatchTransactionData Warning: Object has no Primary Key.
+		GLBatchTransactionData: Published With No Errors.
+	GLDailyTransactionData
+		GLDailyTransactionData Warning: Object has no Primary Key.
+		GLDailyTransactionData: Published With No Errors.
+	GLDetailDueToDueFromTransactionData
+		GLDetailDueToDueFromTransactionData Warning: Object has no Primary Key.
+		GLDetailDueToDueFromTransactionData: Published With No Errors.
+	GLDetailTransactionData
+		GLDetailTransactionData Warning: Object has no Primary Key.
+		GLDetailTransactionData: Published With No Errors.
+	GLDueToDueFromTransactionData
+		GLDueToDueFromTransactionData Warning: Object has no Primary Key.
+		GLDueToDueFromTransactionData: Published With No Errors.
+	GLExportFormatTypeRef
+		GLExportFormatTypeRef: Published With No Errors.
+	GLMonthlyTransactionData
+		GLMonthlyTransactionData Warning: Object has no Primary Key.
+		GLMonthlyTransactionData: Published With No Errors.
+	GLTransactionData
+		GLTransactionData: Published With No Errors.
+	GroupPriceSheet
+		GroupPriceSheet: Published With No Errors.
+	InvoiceSummary
+		InvoiceSummary Warning: Object has no Primary Key.
+		InvoiceSummary: Published With No Errors.
+	MemorialTributeTypeRef
+		MemorialTributeTypeRef Warning: Object has no Primary Key.
+		MemorialTributeTypeRef: Published With No Errors.
+	NavigationWorkflow
+		NavigationWorkflow: Published With No Errors.
+	NetContact
+		NetContact: Published With No Errors.
+	NetContactBasic
+		NetContactBasic: Published With No Errors.
+	Offering
+		Offering: Published With No Errors.
+	Opportunity
+		Opportunity: Published With No Errors.
+		OpportunitySales: Published With No Errors.
+		OpportunityDonor: Published With No Errors.
+		OpportunityMember: Published With No Errors.
+	PercentileRanking
+		PercentileRanking Warning: Object has no Primary Key.
+		PercentileRanking: Published With No Errors.
+	PriceSheet
+		PriceSheet: Published With No Errors.
+	ProductPriceSheet
+		ProductPriceSheet: Published With No Errors.
+	ProfileDocuments
+		ProfileDocuments: Published With No Errors.
+	Promotion
+		Promotion: Published With No Errors.
+	ReferenceDate
+		ReferenceDate Warning: Object has no Primary Key.
+		ReferenceDate: Published With No Errors.
+	SourceCode
+		SourceCode: Published With No Errors.
+	SystemParamInt
+		SystemParamInt Warning: Object has no Primary Key.
+		SystemParamInt: Published With No Errors.
+	TransactionDetail
+		TransactionDetail Warning: Object has no Primary Key.
+		TransactionDetail: Published With No Errors.
+	User
+		User: Published With No Errors.
+	UserData
+		UserData: Published With No Errors.
+	VolunteerAvailability
+		VolunteerAvailability: Published With No Errors.
+	VolunteerHistory
+		VolunteerHistory: Published With No Errors.
+	VolunteerInformation
+		VolunteerInformation: Published With No Errors.
+	VolunteerSkills
+		VolunteerSkills: Published With No Errors.
+Publish Attempted: 91,  Succeeded: 91,  Failed: 0
+BuildPublishBOs: completed

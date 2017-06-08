@@ -1,0 +1,9 @@
+Truncating iMISTable... 
+TRUNCATE TABLE IMISTable
+Bulk-Loading iMISTable...  
+
+Starting copy...
+
+807 rows copied.
+Network packet size (bytes): 4096
+Clock Time (ms.) Total     : 140    Average : (5764.29 rows per sec.)

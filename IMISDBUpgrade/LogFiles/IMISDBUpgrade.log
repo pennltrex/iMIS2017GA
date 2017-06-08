@@ -10,8 +10,8 @@ Running script 7 of 7: .\0006_DBUpgrade.cmd
 = iMIS 20.2.25.x Database Upgrade Driver Script    =
 ===================================================
 
-Mon 05/15/2017 
-01:56 PM
+Thu 06/08/2017 
+10:28 AM
 
 Using
   Server: WIN2012R2
@@ -21,12 +21,387 @@ Using
   Scheduler bin folder: C:\AsiPlatform\Asi.Scheduler_iMIS\bin
   SQL Server Version: 110
   SQL Client Tools Version: 11
+Database at version:  20.2.63.8358
+Upgrading to version: 20.2.64.8405
 
-Database already upgraded to version 20.2.63.8358 ... exiting
+Starting Upgrade Process 
+10:28 AM
+
+Populating IMIS Table List ...
+Step 1 Done.
+
+Removing Obsolete Database Items ...
+Step 2 Done.
+
+Saving Website Customizations ...
+Step 3 Done.
+
+Creating New Database Tables ...
+Step 4 Done.
+
+Renaming Default Constraints ...
+Step 5 Done.
+
+Modifying Existing Tables ...
+Step 6 Done.
+
+Creating User Defined Functions ...
+Step 7 Done.
+
+Creating Views ...
+Step 8 Done.
+
+Creating Triggers ...
+Step 9 Done.
+
+Creating Stored Procedures ...
+Step 10 Done.
+
+Dropping Non-PK Clustered Indexes ...
+Step 11 Done.
+
+Clearing FK Constraints ...
+Step 12 Done.
+
+Loading Ref Tables ...
+Step 13 Done.
+
+Loading Merge Tables ...
+Step 14 Done.
+
+Updating UserKey References ...
+Step 15 Done.
+
+Re-Creating Indexes ...
+Step 16 Done.
+
+Applying Foreign Key Constraints ...
+Step 17 Done.
+
+Updating Table Data ...
+Step 18 Done.
+
+Updating System Configuration ...
+Step 19 Done.
+
+Renumbering Hierarchy Sort Order...
+Step 20 Done.
+
+Preparing To Load New Document System objects ...
+Step 21 Done.
+
+Cleaning New Business Objects ...
+Step 22 Done.
+
+Archiving New Business Objects ...
+Step 23 Done.
+
+Adding New Business Objects ...
+Step 24 Done.
+
+Adding Hierarchy Entries For New Business Objects ...
+Step 25 Done.
+
+Cleaning Updated Business Objects ...
+Step 26 Done.
+
+Archiving Updated Business Objects ...
+Step 27 Done.
+
+Updating Existing Business Objects ...
+Step 28 Done.
+
+Adding Hierarchy Entries For Updated Business Objects ...
+Step 29 Done.
+
+Cleaning New Navigation Documents ...
+Step 30 Done.
+
+Archiving New Navigation Documents ...
+Step 31 Done.
+
+Adding New Navigation Documents ...
+Step 32 Done.
+
+Adding New Navigation Document Hierarchy ...
+Step 33 Done.
+
+Setting Navigation Sort Order for Added Navigation ...
+Step 34 Done.
+
+Determining Updated Navigation Document Sort Orders ...
+Step 35 Done.
+
+Cleaning Updated Navigation Documents ...
+Step 36 Done.
+
+Archiving Updated Navigation Documents ...
+Step 37 Done.
+
+Updating Existing Navigation Documents ...
+Step 38 Done.
+
+Updating Existing Navigation Document Hierarchy ...
+Step 39 Done.
+
+Setting Updated Navigation Document Sort Orders ...
+Step 40 Done.
+
+Cleaning New Versioned Documents ...
+Step 41 Done.
+
+Archiving New Versioned Documents ...
+Step 42 Done.
+
+Adding New Versioned Documents ...
+Step 43 Done.
+
+Adding New Versioned Document Hierarchy ...
+Step 44 Done.
+
+Cleaning Updated Versioned Documents ...
+Step 45 Done.
+
+Archiving Updated Versioned Documents ...
+Step 46 Done.
+
+Updating Existing Versioned Documents ...
+Step 47 Done.
+
+Updating Existing Versioned Document Hierarchy ...
+Step 48 Done.
+
+Cleaning New Documents ...
+Step 49 Done.
+
+Adding New Documents ...
+Step 50 Done.
+
+Adding New Hierarchy Entries For New Documents ...
+Step 51 Done.
+
+Cleaning Updated Documents ...
+Step 52 Done.
+
+Updating Existing Documents ...
+Step 53 Done.
+
+Updating Existing Document Hierarchy ...
+Step 54 Done.
+
+Cleaning Added Storage Documents ...
+Step 55 Done.
+
+Adding New Storage Documents ...
+Step 56 Done.
+
+Cleaning Updated Storage Documents ...
+Step 57 Done.
+
+Updating Existing Storage Documents ...
+Step 58 Done.
+
+Updating Document System Objects ...
+Step 59 Done.
+
+Merging Hierarchy Roots And Perspectives ...
+Step 60 Done.
+
+Restoring Document System After Loading New Objects ...
+Step 61 Done.
+
+Updating URL Shortcut Data ...
+Step 62 Done.
+
+Updating Task Definition Data ...
+Step 63 Done.
+
+Resorting Document Hierarchy ...
+Step 64 Done.
+
+Restoring Website Customizations ...
+Step 65 Done.
+
+Setting System Documents ...
+Step 66 Done.
+
+Setting Document ACLs ...
+Step 67 Done.
+
+Adding Component Registry Entries for New Content Types ...
+Step 68 Done.
+
+Initializing Updated Business Objects ...
+Step 69 Done.
+
+Granting Execute Permissions ...
+Step 70 Done.
+
+Granting Permissions To IMIS ...
+Step 71 Done.
+
+Preparing License Update ...
+Step 72 Done.
+
+Updating License Keys ...
+Step 73 Done.
+
+Rebuilding Product Licenses ...
+Step 74 Done.
+
+Updating Standard Report Specs ...
+Step 75 Done.
+
+Updating UserKey References ...
+Step 76 Done.
+
+Ensuring Required Contact and User Entries Exist ...
+Step 77 Done.
+
+Generating A List Of All Dynamic Business Objects ...
+Step 78 Done.
+
+Building And Publishing Dynamic Business Objects ...
+Processing... 
+Logged into database iMIS_Prod on Server WIN2012R2
+Compiling 6 items...
+	CsName_Staff
+	CultivationActivity
+	EducationInProgress
+	Profile_Page
+	SocialNetworkLinks
+	VolunteersInterests
+Step 79 Done.
+
+Building And Publishing Business Objects ...
+Logged into database iMIS_Prod on Server WIN2012R2
+Compiling 91 items...
+	Address
+	AdvancedEmailNinetyDaysEvents
+	AdvancedEmailTwelveMonthsDeliveredByDate
+	AdvancedEmailTwelveMonthsTotals
+	AutoPayAccount
+	AutoPayInstruction
+	AutoPayInstructionDetail
+	AutoPayInvoices
+	AutoPayInvoicesDues
+	AutoPayInvoicesFundraising
+	AutoPayMemberInstructionDetail
+	BillingLogByParty
+	CertificationModule
+	CertificationProgram
+	CertificationProgramRegistration
+	CMNotificationsDue
+	CommunicationLogSummary
+	Contact
+	ContactCommunicationReasonPreferences
+	ContentWorkflow
+	CsAddress
+	CsAddressFormats
+	CsCommitteeMember
+	CsCommitteePosition
+	CsContact
+	CsContactBasic
+	CsCountryNames
+	CsEvent
+	CsFreightDollar
+	CsFreightQuantity
+	CsFunction
+	CsGeneralLookupTables
+	CsName_Demo
+	CsOrderLines
+	CsOrders
+	CsProductLocation
+	CsRegFunctions
+	CsRegistration
+	CsRelationshipTypes
+	CsStateProvinceCodes
+	CsTaxCategory
+	CsTerms
+	CsTransNotify
+	CultivatingFor
+	CustomerExperienceView
+	DataVaultAttemptSummary
+	DataVaultLogAttempt
+	DataVaultLogDetail
+	DayOfTheWeekRef
+	EngagementCategory
+	EngagementScoreCurrentData
+	EngagementScoreFormula
+	EngagementScoreMonthlyData
+	EngagementScoreResult
+	EngagementScoreYearlyData
+	ExpiredMemberUpdateDetailLog
+	FirstNotifyContactPerGift
+	GiftHistory
+	GiftsReceived
+	GiftSummary
+	GLBatchTransactionData
+	GLDailyTransactionData
+	GLDetailDueToDueFromTransactionData
+	GLDetailTransactionData
+	GLDueToDueFromTransactionData
+	GLExportFormatTypeRef
+	GLMonthlyTransactionData
+	GLTransactionData
+	GroupPriceSheet
+	InvoiceSummary
+	MemorialTributeTypeRef
+	NavigationWorkflow
+	NetContact
+	NetContactBasic
+	Offering
+	Opportunity
+	PercentileRanking
+	PriceSheet
+	ProductPriceSheet
+	ProfileDocuments
+	Promotion
+	ReferenceDate
+	SourceCode
+	SystemParamInt
+	TransactionDetail
+	User
+	UserData
+	VolunteerAvailability
+	VolunteerHistory
+	VolunteerInformation
+	VolunteerSkills
+Step 80 Done.
+
+Cleaning Translation Dictionaries ...
+Step 81 Done.
+
+Loading Updated Translation Dictionaries ...
+
+Updating Translation Phrases ...
+Step 83 Done.
+
+Ensuring Foreign Key Constraints ...
+Step 84 Done.
+
+Refreshing Views ...
+Step 85 Done.
+
+Tuning Contact and Document System Performance ...
+Step 86 Done.
+
+Ensuring SQL Logins Are Correct ...
+Step 87 Done.
+
+Resetting Encryption Keys ...
+Step 88 Done.
+
+Updating DB Version ...
+Step 89 Done.
+
+Upgrade process complete
+Database successfully upgraded to version 20.2.64.8405
+10:37 AM
 
 
 0006_DBUpgrade.cmd Process Exited
-Elapsed Time:  00:00:03
+Elapsed Time:  00:08:48
 
 
-Elapsed Time for all scripts run:  00:00:03
+Elapsed Time for all scripts run:  00:08:48

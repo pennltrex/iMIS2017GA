@@ -1,0 +1,319 @@
+SET ANSI_DEFAULTS ON
+SET IMPLICIT_TRANSACTIONS OFF
+SET CONCAT_NULL_YIELDS_NULL ON
+SET ARITHABORT ON
+SET NUMERIC_ROUNDABORT OFF
+SET NOCOUNT ON
+
+-- Disable all triggers in the database
+DECLARE @string varchar(8000)
+DECLARE @tableName nvarchar(500)
+DECLARE cur CURSOR FAST_FORWARD FOR 
+    SELECT DISTINCT(S2.[name]) AS [TableName]
+    FROM sys.objects S1 JOIN sys.objects S2 ON S1.[parent_object_id] = S2.[object_id] WHERE S1.[type] = 'TR'
+OPEN cur
+FETCH NEXT FROM cur INTO @tableName
+WHILE @@fetch_status = 0
+BEGIN
+    SET @string ='DISABLE TRIGGER ALL ON ' + @tableName
+    EXEC (@string)
+    FETCH NEXT FROM cur INTO @tableName
+END
+CLOSE cur
+DEALLOCATE cur
+AccessArea.CreatedByUserKey
+
+-- Update any UserKey in any column that references a key that doesn't exist in UserMain to be the MANAGER key
+DECLARE @managerKey uniqueidentifier
+DECLARE @tableName sysname
+DECLARE @columnName sysname
+DECLARE @sql nvarchar(2000)
+SELECT @managerKey = [UserKey] FROM [dbo].[UserMain] WHERE [UserId] = 'MANAGER'
+
+DECLARE theCursor CURSOR FAST_FORWARD FOR
+    SELECT isc.TABLE_NAME, isc.COLUMN_NAME 
+      FROM INFORMATION_SCHEMA.COLUMNS isc INNER JOIN 
+           INFORMATION_SCHEMA.TABLES ist ON isc.TABLE_NAME = ist.TABLE_NAME INNER JOIN
+           IMISTable ON ist.TABLE_NAME = IMISTable.IMISTableName
+     WHERE isc.COLUMN_NAME like '%UserKey' AND isc.DATA_TYPE = 'uniqueidentifier' AND ist.TABLE_TYPE = 'BASE TABLE' AND ist.TABLE_SCHEMA = 'dbo'
+       AND isc.TABLE_NAME NOT IN ('UserMain', 'PciAuditLog') AND isc.COLUMN_NAME != 'RespondentUserKey'
+     ORDER BY isc.TABLE_NAME, isc.COLUMN_NAME
+OPEN theCursor
+FETCH NEXT from theCursor INTO @tableName, @columnName
+WHILE (@@FETCH_STATUS =0)
+BEGIN
+    SET @sql = 'UPDATE a SET a.[' + @columnName + '] = ''' + CAST(@managerKey AS nvarchar(40)) + 
+              ''' FROM [dbo].[' + @tableName + '] a LEFT OUTER JOIN [dbo].[UserMain] b ON a.[' + 
+              @columnName + '] = b.[UserKey] WHERE a.[' + @columnName + '] IS NOT NULL AND b.[UserKey] IS NULL'
+    PRINT @tableName + '.' + @columnName
+    EXEC (@sql)
+    FETCH NEXT from theCursor INTO @tableName, @columnName
+END
+CLOSE theCursor
+DEALLOCATE theCursor
+AccessArea.UpdatedByUserKey
+AccessItem.UserKey
+AccessMain.CreatedByUserKey
+AccessMain.UpdatedByUserKey
+ActionPlan.CreatedByUserKey
+ActionPlan.UpdatedByUserKey
+AddressFormatRef.CreatedByUserKey
+AddressFormatRef.UpdatedByUserKey
+AddressMain.CreatedByUserKey
+AddressMain.UpdatedByUserKey
+AddressPurposeRef.CreatedByUserKey
+AddressPurposeRef.UpdatedByUserKey
+AppealMain.CreatedByUserKey
+AppealMain.UpdatedByUserKey
+AppealParticipation.CreatedByUserKey
+AppealParticipation.UpdatedByUserKey
+AtomPanel.UpdatedByUserKey
+AutoPayAccount.CreatedByUserKey
+AutoPayAccount.UpdatedByUserKey
+AutoPayInstruction.CreatedByUserKey
+AutoPayInstruction.UpdatedByUserKey
+BatchSetup.CreatedByUserKey
+BatchSetup.UpdatedByUserKey
+CampaignMain.CreatedByUserKey
+CampaignMain.PrimaryOwnerUserKey
+CampaignMain.UpdatedByUserKey
+CampaignParticipation.CreatedByUserKey
+CampaignParticipation.UpdatedByUserKey
+CertificationModule.CreatedByUserKey
+CertificationModule.UpdatedByUserKey
+CertificationModuleGrade.CreatedByUserKey
+CertificationModuleGrade.UpdatedByUserKey
+CertificationModuleProduct.CreatedByUserKey
+CertificationModuleProduct.UpdatedByUserKey
+CertificationProgram.CreatedByUserKey
+CertificationProgram.UpdatedByUserKey
+CertificationProgramProduct.CreatedByUserKey
+CertificationProgramProduct.UpdatedByUserKey
+CertificationProgramRegistration.CreatedByUserKey
+CertificationProgramRegistration.UpdatedByUserKey
+ChangeLog.CreatedByUserKey
+CommunicationLog.CreatedByUserKey
+CommunicationLog.UpdatedByUserKey
+CommunicationLogEvent.CreatedByUserKey
+CommunicationLogRecipient.CreatedByUserKey
+CommunicationLogRecipient.UpdatedByUserKey
+CommunicationLogRecipientAttachment.CreatedByUserKey
+CommunicationLogRecipientAttachment.UpdatedByUserKey
+ContactBiography.UpdatedByUserKey
+ContactCommunicationReasonPreferences.CreatedByUserKey
+ContactCommunicationReasonPreferences.UpdatedByUserKey
+ContactDuplicateCheckFormula.CreatedByUserKey
+ContactDuplicateCheckFormula.UpdatedByUserKey
+ContactEducation.UpdatedByUserKey
+ContactLog.CreatedByUserKey
+ContactMain.CreatedByUserKey
+ContactMain.UpdatedByUserKey
+ContactPicture.UpdatedByUserKey
+ContentChangeRequest.AssignedByUserKey
+ContentChangeRequest.AssignedToUserKey
+ContentChangeRequest.ReassignedToUserKey
+CountryRef.UpdatedByUserKey
+CreditInvoiceExport.CreatedByUserKey
+CustomerExperience.CreatedByUserKey
+CustomerExperienceStatusChange.CreatedByUserKey
+CustomerExperienceStatusChange.UpdatedByUserKey
+DataVaultLog.CreatedByUserKey
+DataVaultLog.UpdatedByUserKey
+DocumentMain.CreatedByUserKey
+DocumentMain.LockedByUserKey
+DocumentMain.StatusUpdatedByUserKey
+DocumentMain.UpdatedByUserKey
+DocumentStorage.CreatedByUserKey
+DocumentStorage.UpdatedByUserKey
+DocumentStorage.UploadedByUserKey
+EngagementCategory.CreatedByUserKey
+EngagementCategory.UpdatedByUserKey
+EngagementScore.CreatedByUserKey
+EngagementScore.UpdatedByUserKey
+ExperienceDefinition.CreatedByUserKey
+ExperienceDefinition.UpdatedByUserKey
+FormResponse.CreatedByUserKey
+FormResponse.UpdatedByUserKey
+Fund.CreatedByUserKey
+Fund.UpdatedByUserKey
+Generic.CreatedByUserKey
+Generic.UpdatedByUserKey
+GenericLink.CreatedByUserKey
+GiftAidClaimHeader.CreatedByUserKey
+GiftAidClaimHeader.UpdatedByUserKey
+GiftAidDeclaration.CreatedByUserKey
+GiftAidDeclaration.UpdatedByUserKey
+GLExport.CreatedByUserKey
+GLExport.UpdatedByUserKey
+GroupMain.CreatedByUserKey
+GroupMain.UpdatedByUserKey
+GroupMember.CreatedByUserKey
+GroupMember.UpdatedByUserKey
+GroupMemberDetail.CreatedByUserKey
+GroupMemberDetail.UpdatedByUserKey
+GroupTypeRef.CreatedByUserKey
+GroupTypeRef.UpdatedByUserKey
+GroupUpdateInstruction.CreatedByUserKey
+GroupUpdateInstruction.UpdatedByUserKey
+HierarchyRoot.CreatedByUserKey
+HierarchyRoot.UpdatedByUserKey
+ImportBatch.CreatedByUserKey
+InventoryTransactionLogMain.CreatedByUserKey
+InventoryTransactionLogMain.UpdatedByUserKey
+LicenseMaster.CreatedByUserKey
+LicenseMaster.UpdatedByUserKey
+LicenseOrganization.CreatedByUserKey
+LicenseOrganization.UpdatedByUserKey
+LicenseOrganizationVersion.CreatedByUserKey
+LicenseOrganizationVersion.UpdatedByUserKey
+LicenseUser.CreatedByUserKey
+LicenseUser.UserKey
+ListItem.CreatedByUserKey
+Location.CreatedByUserKey
+Location.UpdatedByUserKey
+MailCodeRef.UpdatedByUserKey
+MatchingGiftPlan.CreatedByUserKey
+MatchingGiftPlan.UpdatedByUserKey
+NavigationExport.CreatedByUserKey
+NavigationExport.UpdatedByUserKey
+NavigationMain.CreatedByUserKey
+NavigationMain.UpdatedByUserKey
+Note.CreatedByUserKey
+Note.UpdatedByUserKey
+NotificationSet.CreatedByUserKey
+NotificationSet.UpdatedByUserKey
+NotificationSetDetail.CreatedByUserKey
+NotificationSetDetail.UpdatedByUserKey
+Offering.CreatedByUserKey
+Offering.UpdatedByUserKey
+OpportunityCompetitor.CreatedByUserKey
+OpportunityCompetitor.UpdatedByUserKey
+OpportunityHistory.CreatedByUserKey
+OpportunityHistory.UpdatedByUserKey
+OpportunityMain.CreatedByUserKey
+OpportunityMain.UpdatedByUserKey
+OpportunityType.CreatedByUserKey
+OpportunityType.UpdatedByUserKey
+OrganizationMain.CreatedByUserKey
+OrganizationMain.UpdatedByUserKey
+PackageItem.CreatedByUserKey
+PackageItem.UpdatedByUserKey
+PackageMain.CreatedByUserKey
+PackageMain.UpdatedByUserKey
+PaymentMain.CreatedByUserKey
+PaymentMain.UpdatedByUserKey
+PaymentTerms.CreatedByUserKey
+PaymentTerms.UpdatedByUserKey
+PostalCodeRef.UpdatedByUserKey
+PotentialMatchingGift.CreatedByUserKey
+PotentialMatchingGift.UpdatedByUserKey
+PriceSheet.CreatedByUserKey
+PriceSheet.UpdatedByUserKey
+Program.CreatedByUserKey
+Program.UpdatedByUserKey
+ProgramGroup.CreatedByUserKey
+ProgramGroup.UpdatedByUserKey
+PublishRequest.UserKey
+PublishServerRef.CreatedByUserKey
+PublishServerRef.UpdatedByUserKey
+QueryResultMain.CreatedByUserKey
+ReceiptMain.CreatedByUserKey
+ReceiptMain.UpdatedByUserKey
+RecurringDonationCommitment.CreatedByUserKey
+RecurringDonationCommitment.UpdatedByUserKey
+RecurringDonationExpectedPayment.CreatedByUserKey
+RecurringDonationExpectedPayment.UpdatedByUserKey
+RecurringDonationExpectedPaymentSet.CreatedByUserKey
+RecurringDonationExpectedPaymentSet.UpdatedByUserKey
+RegistrationStatusChange.CreatedByUserKey
+RegistrationStatusChange.UpdatedByUserKey
+RoleMain.UpdatedByUserKey
+RuleCriterion.UpdatedByUserKey
+RuleFilter.UpdatedByUserKey
+RuleMain.CreatedByUserKey
+RuleMain.UpdatedByUserKey
+SalesHistory.CreatedByUserKey
+ScheduledTask.CreatedByUserKey
+ScheduledTask.RunAsUserKey
+ScheduledTask.UpdatedByUserKey
+ScoreComponent.CreatedByUserKey
+ScoreComponent.UpdatedByUserKey
+SegmentationJob.CreatedByUserKey
+SegmentationJob.LastListCreatedByUserKey
+SegmentationJob.UpdatedByUserKey
+SegmentDefinition.CreatedByUserKey
+SegmentDefinition.UpdatedByUserKey
+SequenceCounter.CreatedByUserKey
+SequenceCounter.UpdatedByUserKey
+SoftCreditRelationshipType.UpdatedByUserKey
+SolicitationMain.CreatedByUserKey
+SolicitationMain.UpdatedByUserKey
+SolicitationSource.CreatedByUserKey
+SolicitationSource.UpdatedByUserKey
+SourceCode.CreatedByUserKey
+SourceCode.UpdatedByUserKey
+StateProvinceRef.UpdatedByUserKey
+SupplementMain.CreatedByUserKey
+SupplementMain.UpdatedByUserKey
+SystemConfig.CreatedByUserKey
+SystemConfig.UpdatedByUserKey
+SystemEntity.CreatedByUserKey
+SystemEntity.UpdatedByUserKey
+Tag.CreatedByUserKey
+Tag.UpdatedByUserKey
+TaskDefinition.CreatedByUserKey
+TaskDefinition.UpdatedByUserKey
+TaskItem.CompletedByUserKey
+TaskItem.CreatedByUserKey
+TaskItem.UpdatedByUserKey
+TaskLog.CreatedByUserKey
+TaskLog.UpdatedByUserKey
+TaskLogDetail.CreatedByUserKey
+TaskLogDetail.UpdatedByUserKey
+TaskMain.AssigneeUserKey
+TaskMain.CompletedByUserKey
+TaskMain.CreatedByUserKey
+TaskMain.UpdatedByUserKey
+TaskQueuePublishDetail.PublishedByUserKey
+TaxAuthorityCategory.CreatedByUserKey
+TaxAuthorityCategory.UpdatedByUserKey
+TaxAuthorityFinancialEntity.CreatedByUserKey
+TaxAuthorityFinancialEntity.UpdatedByUserKey
+TaxScheduleAuthority.CreatedByUserKey
+TaxScheduleAuthority.UpdatedByUserKey
+TimeZoneRef.UpdatedByUserKey
+UniformDistribution.UserKey
+UniformTag.CreatedByUserKey
+UserDefinedTableStorage.CreateByUserKey
+UserDefinedTableStorage.UpdatedByUserKey
+UserRole.UserKey
+UserToken.UserKey
+WarehouseCarrier.CreatedByUserKey
+WorkflowInstance.InitiatedByUserKey
+WorkflowInstance.LockedByUserKey
+WorkflowQueue.CreatedByUserKey
+WorkflowQueue.UpdatedByUserKey
+WorkInvoiceMain.CreatedByUserKey
+WorkInvoiceMain.UpdatedByUserKey
+WorkOrderMain.CreatedByUserKey
+WorkOrderMain.UpdatedByUserKey
+
+-- Ensure manager user cannot expire
+UPDATE [UserMain] SET [ExpirationDate] = NULL WHERE [UserId] = 'MANAGER'
+
+-- Enable all triggers in the database
+DECLARE @string varchar(8000)
+DECLARE @tableName nvarchar(500)
+DECLARE cur CURSOR FAST_FORWARD FOR 
+    SELECT DISTINCT(S2.[name]) AS [TableName]
+    FROM sys.objects S1 JOIN sys.objects S2 ON S1.[parent_object_id] = S2.[object_id] WHERE S1.[type] = 'TR'
+OPEN cur
+FETCH NEXT FROM cur INTO @tableName
+WHILE @@fetch_status = 0
+BEGIN
+    SET @string ='ENABLE TRIGGER ALL ON ' + @tableName
+    EXEC (@string)
+    FETCH NEXT FROM cur INTO @tableName
+END
+CLOSE cur
+DEALLOCATE cur

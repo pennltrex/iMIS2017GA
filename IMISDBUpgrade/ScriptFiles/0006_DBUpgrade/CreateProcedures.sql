@@ -24075,6 +24075,43 @@ END;
 GO
 
 
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[asi_MergeReferralProvider]') AND type in (N'P', N'PC'))
+    DROP PROCEDURE [dbo].[asi_MergeReferralProvider]
+GO
+
+SET ANSI_DEFAULTS ON
+SET IMPLICIT_TRANSACTIONS OFF
+SET CONCAT_NULL_YIELDS_NULL ON
+SET ARITHABORT ON
+SET NUMERIC_ROUNDABORT OFF
+GO
+CREATE PROCEDURE [dbo].[asi_MergeReferralProvider]
+    @toContactId varchar(10)
+AS
+BEGIN
+    DECLARE @lastFirst varchar(30)
+    DECLARE @lastName varchar(255)
+    DECLARE @firstName varchar(255)
+    DECLARE @country varchar(255)
+    IF EXISTS (SELECT 1 FROM [dbo].[Referral] WHERE [PROVIDER_ID] = @toContactId)
+    BEGIN
+        IF NOT EXISTS (SELECT 1 FROM [dbo].[Ref_Provider] WHERE PROVIDER_ID = @toContactId)
+        BEGIN
+            SELECT @lastFirst = LAST_FIRST, @lastName = LAST_NAME, @firstName = FIRST_NAME, @country = COUNTRY FROM [dbo].[Name] WHERE [ID] = @toContactId
+            INSERT INTO [dbo].[Ref_Provider] (PROVIDER_ID, LAST_FIRST, INDEX_1, INDEX_2, INDEX_3)
+                VALUES (@toContactId, @lastFirst, @lastName, @firstName, @country)
+        END
+        UPDATE [dbo].[Ref_Provider]
+           SET [REFERRAL_COUNT] = (SELECT COUNT(1) 
+                                     FROM [dbo].[Referral]
+                                    WHERE [PROVIDER_ID] = @toContactId)
+        WHERE [PROVIDER_ID] = @toContactId
+     END
+END
+GO
+
+
+
 IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[asi_MergeSingleInstanceUserDefinedData]') AND type in (N'P', N'PC'))
     DROP PROCEDURE [dbo].[asi_MergeSingleInstanceUserDefinedData]
 GO
@@ -24591,14 +24628,6 @@ SET NUMERIC_ROUNDABORT OFF
 GO
 
 
-
-
-
-
-
-
-
-
 -- =============================================
 -- This is the driver procedure for merging a person.
 -- =============================================
@@ -24646,6 +24675,8 @@ BEGIN
             EXEC dbo.asi_MergeEngagementScores @fromContactId, @toContactId;
             SET @stage = 'asi_MergePartyReferences: ';
             EXEC dbo.asi_MergePartyReferences @fromContactId, @toContactId;
+            SET @stage = 'asi_MergeReferralProvider: ';
+            EXEC dbo.asi_MergeReferralProvider @toContactId;
             SET @stage = 'asi_MergeRebuildGiftHistory: ';
             EXEC dbo.asi_MergeRebuildGiftHistory @toContactId;
             SET @stage = 'asi_UpdateSingleFullName';
@@ -24659,9 +24690,6 @@ BEGIN
         RAISERROR(@errorMessage, 16, 1);
     END CATCH
 END
-
-
-
 GO
 
 

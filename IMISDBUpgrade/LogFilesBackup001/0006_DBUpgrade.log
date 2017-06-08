@@ -1,0 +1,24 @@
+
+
+===================================================
+= iMIS 20.2.25.x Database Upgrade Driver Script    =
+===================================================
+
+Mon 05/15/2017 
+01:56 PM
+
+Using
+  Server: WIN2012R2
+  Database: iMIS_Prod
+  User: sa
+  AppRoot bin folder: C:\Program Files (x86)\ASI\iMIS0\net\bin
+  Scheduler bin folder: C:\AsiPlatform\Asi.Scheduler_iMIS\bin
+  SQL Server Version: 110
+  SQL Client Tools Version: 11
+
+Database already upgraded to version 20.2.63.8358 ... exiting
+
+
+0006_DBUpgrade.cmd Process Exited
+
+Elapsed Time:  00:00:03

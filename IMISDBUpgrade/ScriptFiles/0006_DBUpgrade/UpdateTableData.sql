@@ -1532,8 +1532,16 @@ WHERE EFFECTIVE_DATE IS NOT NULL
    AND CONVERT(TIME, EFFECTIVE_DATE) <> '00:00:00:000'
 GO
 
+----------------------------------------------------------------------------------------------------
+-- PBI 71882 - (AutoPay) v10/v100 BUG - need to persist PaymentMethodSummary (inactive)
+----------------------------------------------------------------------------------------------------
+UPDATE [AutoPayAccount] 
+   SET [PaymentMethodSummary] = [PaymentMethodSummary] + ' (inactive)'
+  FROM [dbo].[AutoPayAccount] 
+ WHERE [AutoPayAccountStatusCode] <> 'Active'
+   AND [PaymentMethodSummary] NOT LIKE '%(inactive)%'
+GO
 -- End of script
-
 
 SET NOCOUNT OFF
 GO

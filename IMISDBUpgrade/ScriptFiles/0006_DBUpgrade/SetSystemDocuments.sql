@@ -2464,9 +2464,6 @@ UPDATE [dbo].[DocumentMain] SET [IsSystem] = 1
  WHERE [DocumentVersionKey] = '7015faac-04bb-4617-ae24-c6e25c4f4dd3' AND [DocumentStatusCode] = 40
 
 UPDATE [dbo].[DocumentMain] SET [IsSystem] = 1 
- WHERE [DocumentVersionKey] = 'a38e41a6-4437-408c-a6be-fd16cadbfe47' AND [DocumentStatusCode] = 40
-
-UPDATE [dbo].[DocumentMain] SET [IsSystem] = 1 
  WHERE [DocumentVersionKey] = 'a9497c53-f78c-454b-9c8e-75a882e4c31c' AND [DocumentStatusCode] = 40
 
 UPDATE [dbo].[DocumentMain] SET [IsSystem] = 1 
@@ -3572,6 +3569,9 @@ UPDATE [dbo].[DocumentMain] SET [IsSystem] = 1
 
 UPDATE [dbo].[DocumentMain] SET [IsSystem] = 1 
  WHERE [DocumentVersionKey] = '4d1422a0-5a25-4264-aba1-1006c84b85fd' AND [DocumentStatusCode] = 40
+
+UPDATE [dbo].[DocumentMain] SET [IsSystem] = 1 
+ WHERE [DocumentVersionKey] = 'a38e41a6-4437-408c-a6be-fd16cadbfe47' AND [DocumentStatusCode] = 40
 
 UPDATE [dbo].[DocumentMain] SET [IsSystem] = 1 
  WHERE [DocumentVersionKey] = 'b6ae7b1a-52f6-46f4-8fcd-c1a4cdb59b84' AND [DocumentStatusCode] = 40

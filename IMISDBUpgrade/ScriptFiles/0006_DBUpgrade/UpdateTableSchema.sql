@@ -1302,6 +1302,20 @@ BEGIN
 END    
 go
 
+------------------------------------------------------------------------------------------
+-- Change length of AutoPayAccount.PaymentMethodSummary to be 65 characters
+------------------------------------------------------------------------------------------
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'AutoPayAccount')
+BEGIN
+   IF EXISTS(SELECT 1 FROM INFORMATION_SCHEMA.COLUMNS
+              WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'AutoPayAccount' AND COLUMN_NAME = 'PaymentMethodSummary'
+                AND CHARACTER_MAXIMUM_LENGTH < 65)
+   BEGIN
+       ALTER TABLE [dbo].[AutoPayAccount] ALTER COLUMN [PaymentMethodSummary] nvarchar(65) NULL
+   END
+END
+GO
+
 -- End of script
 SET NOCOUNT OFF
 GO

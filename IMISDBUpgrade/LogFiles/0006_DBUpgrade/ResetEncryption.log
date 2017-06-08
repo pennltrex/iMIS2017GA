@@ -1,0 +1,3 @@
+Logged into database iMIS_Prod on Server WIN2012R2
+AES Encryption Key already exists. The encryption key was not changed.
+Database data has already been encrypted in AES. Ending ResetEncryption.exe

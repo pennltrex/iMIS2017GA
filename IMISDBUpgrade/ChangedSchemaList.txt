@@ -19,6 +19,7 @@ Procedure, asi_ManageExpiredMembers
 Procedure, asi_MemberTypeCompanyRecordUpdate
 Procedure, asi_MemberTypeMemberRecordUpdate
 Procedure, asi_MergeEngagementScores
+Procedure, asi_MergeReferralProvider
 Procedure, asi_MergeStaticUserDefinedSources
 Procedure, asi_PasswordHistoryTrim
 Procedure, asi_PciBlankCreditCardInfo

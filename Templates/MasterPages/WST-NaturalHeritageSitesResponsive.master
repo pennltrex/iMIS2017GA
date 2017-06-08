@@ -3,11 +3,11 @@
 <%@ Import Namespace="Asi.Security.Utility" %>
 <%@ Register TagPrefix="CM" TagName="ContentPage" Src="~/AsiCommon/Controls/ContentManagement/ContentPage.ascx" %>
 <%@ Register TagPrefix="CM" TagName="ContentPageFooter" Src="~/AsiCommon/Controls/ContentManagement/ContentPageFooter.ascx" %>
-<%@ Register TagPrefix="CM" TagName="ContentDisplay" Src="~/iparts/Website/ContentDisplay/ContentDisplayControl.ascx" %>
-<%@ Register TagPrefix="CM" TagName="SecondaryNavigation" Src="~/iparts/Website/SecondaryNavigation/SecondaryNavigationDisplay.ascx" %>
 <%@ Register TagPrefix="CM" TagName="ContentHtml" Src="~/AsiCommon/Controls/ContentManagement/DisplayHtml.ascx" %>
 <%@ Register TagPrefix="CM" TagName="UtilityNavigation" Src="~/iparts/Website/UtilityNavigation/UtilityNavigationDisplay.ascx" %>
 <%@ Register TagPrefix="CM" TagName="PrimaryNavigation" Src="~/iparts/Website/PrimaryNavigation/PrimaryNavigationDisplay.ascx" %>
+<%@ Register TagPrefix="CM" TagName="ContentDisplay" Src="~/iparts/Website/ContentDisplay/ContentDisplayControl.ascx" %>
+<%@ Register TagPrefix="CM" TagName="SecondaryNavigation" Src="~/iparts/Website/SecondaryNavigation/SecondaryNavigationDisplay.ascx" %>
 
 <!DOCTYPE html>
 
@@ -40,27 +40,6 @@
 
 		Asi.Web.UI.IUserControl childUserControl;
 		Guid key;
-
-		childUserControl = ciFooterContent2 as Asi.Web.UI.IUserControl;
-		if (childUserControl != null)
-			AddChildUserControl(childUserControl);
-		key = new System.Guid("39696ce3-3e95-4326-af61-c37e1e467580");
-		if(!ContentItemKeyMap.ContainsKey(key))
-			ContentItemKeyMap.Add(key, ciFooterContent2);
-
-		childUserControl = ciSideContent as Asi.Web.UI.IUserControl;
-		if (childUserControl != null)
-			AddChildUserControl(childUserControl);
-		key = new System.Guid("4a0cf8ae-b207-4fac-b896-4588965fe19d");
-		if(!ContentItemKeyMap.ContainsKey(key))
-			ContentItemKeyMap.Add(key, ciSideContent);
-
-		childUserControl = ciSecondary as Asi.Web.UI.IUserControl;
-		if (childUserControl != null)
-			AddChildUserControl(childUserControl);
-		key = new System.Guid("8688006a-07d3-4960-a685-5f0ad2aab4f7");
-		if(!ContentItemKeyMap.ContainsKey(key))
-			ContentItemKeyMap.Add(key, ciSecondary);
 
 		childUserControl = ciLogoContent_758280dbd3ce451eb4b46e97f3317374 as Asi.Web.UI.IUserControl;
 		if (childUserControl != null)
@@ -104,12 +83,33 @@
 		if(!ContentItemKeyMap.ContainsKey(key))
 			ContentItemKeyMap.Add(key, ciOBO);
 
+		childUserControl = ciSecondary as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("8688006a-07d3-4960-a685-5f0ad2aab4f7");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciSecondary);
+
+		childUserControl = ciSideContent as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("4a0cf8ae-b207-4fac-b896-4588965fe19d");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciSideContent);
+
 		childUserControl = ciFooterContent1 as Asi.Web.UI.IUserControl;
 		if (childUserControl != null)
 			AddChildUserControl(childUserControl);
 		key = new System.Guid("396a046d-97e2-431a-b3e1-ab888b79f346");
 		if(!ContentItemKeyMap.ContainsKey(key))
 			ContentItemKeyMap.Add(key, ciFooterContent1);
+
+		childUserControl = ciFooterContent2 as Asi.Web.UI.IUserControl;
+		if (childUserControl != null)
+			AddChildUserControl(childUserControl);
+		key = new System.Guid("39696ce3-3e95-4326-af61-c37e1e467580");
+		if(!ContentItemKeyMap.ContainsKey(key))
+			ContentItemKeyMap.Add(key, ciFooterContent2);
 
 	}
 </script>
@@ -147,17 +147,13 @@
 				<div class="header-container">
 					<div id="masterLogoArea" class="header-logo-container pull-left" data-label="Logo">
 										<div ID="WTZone1_Page1" class="WTZone ">
-				<CM:ContentDisplay ID="ciFooterContent2" runat="server" ContentKey="79ee704a-59c5-4b39-ab34-2fcd1ff23f9c" ContentItemKey="39696ce3-3e95-4326-af61-c37e1e467580" Title="Footer Content 2" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/MemberR/ContentAreas/Footer_Copyright" ContentRecordKey="44eb39c8-a534-4736-8981-bd79c027a998" DisplayOn="All" HonorContentRecordLayout="False" />
-				<CM:ContentDisplay ID="ciSideContent" runat="server" ContentKey="79ee704a-59c5-4b39-ab34-2fcd1ff23f9c" ContentItemKey="4a0cf8ae-b207-4fac-b896-4588965fe19d" Title="Side Content" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/MemberR/ContentAreas/SideBarContent" ContentRecordKey="938b16c5-a5d2-4d51-9b7a-b12a481ddae5" DisplayOn="Interior" HonorContentRecordLayout="False" />
-				<CM:SecondaryNavigation ID="ciSecondary" runat="server" ContentKey="79ee704a-59c5-4b39-ab34-2fcd1ff23f9c" ContentItemKey="8688006a-07d3-4960-a685-5f0ad2aab4f7" Title="Secondary" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" SkinName="Austin" NodeStartingLevel="1" MaxLevels="0" />
-			<asp:ContentPlaceHolder ID="SideBarPlaceHolder" runat="server"></asp:ContentPlaceHolder>
-				<CM:ContentHtml ID="ciLogoContent_758280dbd3ce451eb4b46e97f3317374" runat="server" ContentKey="79ee704a-59c5-4b39-ab34-2fcd1ff23f9c" ContentItemKey="758280db-d3ce-451e-b4b4-6e97f3317374" Title="Logo Content" ShowTitleFlag="False" ShowBorder="False"><asp:Panel ID="Panel_LogoContent" runat="server"><a href="<%= ((Asi.Web.UI.DisplayPageBase)Page).iMISWebsite.WebsiteBaseUrl + "/" %>" title="Home" id="masterHeaderImage">iMIS</a></asp:Panel></CM:ContentHtml>
+				<CM:ContentHtml ID="ciLogoContent_758280dbd3ce451eb4b46e97f3317374" runat="server" ContentKey="5707590d-5d58-4006-b7a8-07d927b06520" ContentItemKey="758280db-d3ce-451e-b4b4-6e97f3317374" Title="Logo Content" ShowTitleFlag="False" ShowBorder="False"><asp:Panel ID="Panel_LogoContent" runat="server"><a href="<%= ((Asi.Web.UI.DisplayPageBase)Page).iMISWebsite.WebsiteBaseUrl + "/" %>" title="Home" id="masterHeaderImage">iMIS</a></asp:Panel></CM:ContentHtml>
 					</div>
 
 					</div>
 					<div class="navbar-header nav-auxiliary pull-right" id="auxiliary-container" data-label="Utility">
 										<div ID="WTZone2_Page1" class="WTZone ">
-				<CM:UtilityNavigation ID="ciUtilityNavigation" runat="server" ContentKey="79ee704a-59c5-4b39-ab34-2fcd1ff23f9c" ContentItemKey="0b5b7b99-f15c-42a1-9ce0-5edc14ad849a" Title="Utility Navigation" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" UniversalSearchDefaultText="Keyword search" SignInText="Sign in" SignOutText="Sign out" NavigationPaneCode="4" SignInOutCssClass="" UniversalSearchCssClass="header-search" />
+				<CM:UtilityNavigation ID="ciUtilityNavigation" runat="server" ContentKey="5707590d-5d58-4006-b7a8-07d927b06520" ContentItemKey="0b5b7b99-f15c-42a1-9ce0-5edc14ad849a" Title="Utility Navigation" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" UniversalSearchDefaultText="Keyword search" SignInText="Sign in" SignOutText="Sign out" NavigationPaneCode="4" SignInOutCssClass="" UniversalSearchCssClass="header-search" />
 					</div>
 
 					</div>
@@ -166,20 +162,20 @@
 			<div data-label="Primary" class="ClearFix header-bottom-container">
 				<div class="header-container">
 									<div ID="WTZone3_Page1" class="WTZone ">
-				<CM:PrimaryNavigation ID="ciPrimaryNavigation" runat="server" ContentKey="79ee704a-59c5-4b39-ab34-2fcd1ff23f9c" ContentItemKey="b8760bce-87ca-495e-9c17-f0808b823a2c" Title="Primary Navigation" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" NavigationLevels="False" MaxDataBindDepth="1" EnableMegaDropDownMenu="True" ExpandDelay="False" CollapseDelay="False" SkinName="GreatBarrierReef" />
+				<CM:PrimaryNavigation ID="ciPrimaryNavigation" runat="server" ContentKey="5707590d-5d58-4006-b7a8-07d927b06520" ContentItemKey="b8760bce-87ca-495e-9c17-f0808b823a2c" Title="Primary Navigation" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" NavigationLevels="False" MaxDataBindDepth="1" EnableMegaDropDownMenu="True" ExpandDelay="False" CollapseDelay="False" SkinName="GreatBarrierReef" />
 					</div>
 
 				</div>
 			</div>
                 <div id="HomePageContent" class="HomePageFullWidthArea" data-label="Home Content">	
 							<div ID="WTZone4_Page1" class="WTZone ">
-				<CM:ContentDisplay ID="ciFullWidthContent" runat="server" ContentKey="79ee704a-59c5-4b39-ab34-2fcd1ff23f9c" ContentItemKey="168e2ebe-2ca2-4f42-8351-1782d455dc76" Title="Full Width Content" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/MemberR/ContentAreas/Home_Page_Full_Width_Area" ContentRecordKey="baecc557-d0b8-4257-ab6d-117189f7118e" DisplayOn="Homepage" HonorContentRecordLayout="False" />
+				<CM:ContentDisplay ID="ciFullWidthContent" runat="server" ContentKey="5707590d-5d58-4006-b7a8-07d927b06520" ContentItemKey="168e2ebe-2ca2-4f42-8351-1782d455dc76" Title="Full Width Content" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/MemberR/ContentAreas/Home_Page_Full_Width_Area" ContentRecordKey="baecc557-d0b8-4257-ab6d-117189f7118e" DisplayOn="Homepage" HonorContentRecordLayout="False" />
 					</div>
 
                 </div>
                 <div class="InternalHeaderArea" data-label="Internal Header">
                          				<div ID="WTZone5_Page1" class="WTZone ">
-				<CM:ContentDisplay ID="ciInternalFullWidthHeader" runat="server" ContentKey="79ee704a-59c5-4b39-ab34-2fcd1ff23f9c" ContentItemKey="ec46f266-b9a1-463e-98aa-d0f6c3bdb8b5" Title="Internal Full Width Header" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/MemberR/ContentAreas/Home_Page_Full_Width_Area" ContentRecordKey="baecc557-d0b8-4257-ab6d-117189f7118e" DisplayOn="Interior" HonorContentRecordLayout="False" />
+				<CM:ContentDisplay ID="ciInternalFullWidthHeader" runat="server" ContentKey="5707590d-5d58-4006-b7a8-07d927b06520" ContentItemKey="ec46f266-b9a1-463e-98aa-d0f6c3bdb8b5" Title="Internal Full Width Header" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/MemberR/ContentAreas/Home_Page_Full_Width_Area" ContentRecordKey="baecc557-d0b8-4257-ab6d-117189f7118e" DisplayOn="Interior" HonorContentRecordLayout="False" />
 					</div>
 
                 </div>
@@ -188,7 +184,7 @@
 		<div role="main" class="body-container" id="ContentPanel">
 			<div data-label="On Behalf Of" class="ClearFix OnBehalfOfContainer">
 								<div ID="WTZone6_Page1" class="WTZone ">
-				<CM:UtilityNavigation ID="ciOBO" runat="server" ContentKey="79ee704a-59c5-4b39-ab34-2fcd1ff23f9c" ContentItemKey="de8cce21-c5b2-473f-b0a9-a9e3cecbabd1" Title="OBO" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="FloatRight" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" UniversalSearchDefaultText="Keyword search" SignInText="Sign in" SignOutText="Sign out" NavigationPaneCode="4" SignInOutCssClass="" UniversalSearchCssClass="header-search" />
+				<CM:UtilityNavigation ID="ciOBO" runat="server" ContentKey="5707590d-5d58-4006-b7a8-07d927b06520" ContentItemKey="de8cce21-c5b2-473f-b0a9-a9e3cecbabd1" Title="OBO" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="FloatRight" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" UniversalSearchDefaultText="Keyword search" SignInText="Sign in" SignOutText="Sign out" NavigationPaneCode="4" SignInOutCssClass="" UniversalSearchCssClass="header-search" />
 					</div>
 
 			</div>
@@ -219,14 +215,22 @@
 		</asp:Panel>					</div>
 
 			</div>
-			
+			<div data-label="Secondary Navigation" class="col-secondary cs-right">
+								<div ID="WTZone8_Page1" class="WTZone ">
+				<CM:SecondaryNavigation ID="ciSecondary" runat="server" ContentKey="5707590d-5d58-4006-b7a8-07d927b06520" ContentItemKey="8688006a-07d3-4960-a685-5f0ad2aab4f7" Title="Secondary" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" SkinName="Austin" NodeStartingLevel="1" MaxLevels="0" />
+			<asp:ContentPlaceHolder ID="SideBarPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+				<CM:ContentDisplay ID="ciSideContent" runat="server" ContentKey="5707590d-5d58-4006-b7a8-07d927b06520" ContentItemKey="4a0cf8ae-b207-4fac-b896-4588965fe19d" Title="Side Content" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/MemberR/ContentAreas/SideBarContent" ContentRecordKey="938b16c5-a5d2-4d51-9b7a-b12a481ddae5" DisplayOn="Interior" HonorContentRecordLayout="False" />
+					</div>
+
+			</div>
 		</div>
 	</div>
 	<a class="backToTop" href="#PageTop">Back to Top</a>
 	<footer id="ft" class="footer ClearFix">
 		<div class="footer-content">
 			<div class="container" data-label="Footer 1">
-								<div ID="WTZone8_Page1" class="WTZone ">
+								<div ID="WTZone9_Page1" class="WTZone ">
+				<CM:ContentDisplay ID="ciFooterContent1" runat="server" ContentKey="5707590d-5d58-4006-b7a8-07d927b06520" ContentItemKey="396a046d-97e2-431a-b3e1-ab888b79f346" Title="Footer Content 1" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/MemberR/ContentAreas/FooterContent" ContentRecordKey="a6b4393b-7f2d-49d3-8ffa-6b3441e4ad19" DisplayOn="All" HonorContentRecordLayout="False" />
 					</div>
 
 			</div>
@@ -234,8 +238,8 @@
 		<div class="footer-nav-copyright">
 			<div class="container" role="navigation">
 				<div class="footer-copyright" data-label= "Footer 2">
-									<div ID="WTZone9_Page1" class="WTZone ">
-				<CM:ContentDisplay ID="ciFooterContent1" runat="server" ContentKey="79ee704a-59c5-4b39-ab34-2fcd1ff23f9c" ContentItemKey="396a046d-97e2-431a-b3e1-ab888b79f346" Title="Footer Content 1" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/MemberR/ContentAreas/FooterContent" ContentRecordKey="a6b4393b-7f2d-49d3-8ffa-6b3441e4ad19" DisplayOn="All" HonorContentRecordLayout="False" />
+									<div ID="WTZone10_Page1" class="WTZone ">
+				<CM:ContentDisplay ID="ciFooterContent2" runat="server" ContentKey="5707590d-5d58-4006-b7a8-07d927b06520" ContentItemKey="39696ce3-3e95-4326-af61-c37e1e467580" Title="Footer Content 2" ShowTitleFlag="False" PartTitle="" DoNotRenderInDesignMode="False" CssClass="" ShowBorder="False" Collapsible="False" Collapsed="False" DisplayOnExtraSmallScreens="True" DisplayOnSmallScreens="True" DisplayOnMediumScreens="True" DisplayOnLargeScreens="True" ModuleSpecificSetting="" LicenseKeyRestriction="" ContentRecordPath="@/iSamples/MemberR/ContentAreas/Footer_Copyright" ContentRecordKey="44eb39c8-a534-4736-8981-bd79c027a998" DisplayOn="All" HonorContentRecordLayout="False" />
 					</div>
 
 				</div>

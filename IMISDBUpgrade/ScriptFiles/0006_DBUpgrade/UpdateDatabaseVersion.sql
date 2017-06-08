@@ -4,10 +4,10 @@ UPDATE SystemConfig SET ParameterValue = '20'
  WHERE ParameterName = 'System.Database.Version.Major' AND OrganizationKey = '00000000-0000-0000-0000-000000000000' AND SystemEntityKey = @systemEntity
 UPDATE SystemConfig SET ParameterValue = '2'
  WHERE ParameterName = 'System.Database.Version.Minor' AND OrganizationKey = '00000000-0000-0000-0000-000000000000' AND SystemEntityKey = @systemEntity
-UPDATE SystemConfig SET ParameterValue = '63'
+UPDATE SystemConfig SET ParameterValue = '64'
  WHERE ParameterName = 'System.Database.Version.Patch' AND OrganizationKey = '00000000-0000-0000-0000-000000000000' AND SystemEntityKey = @systemEntity
-UPDATE SystemConfig SET ParameterValue = '8358'
+UPDATE SystemConfig SET ParameterValue = '8405'
  WHERE ParameterName = 'System.Database.Version.Build' AND OrganizationKey = '00000000-0000-0000-0000-000000000000' AND SystemEntityKey = @systemEntity
 GO
-UPDATE [System_Params] SET [ShortValue] = '20.2.63.8358' where ParameterName = 'System_Control.Version'
+UPDATE [System_Params] SET [ShortValue] = '20.2.64.8405' where ParameterName = 'System_Control.Version'
 GO

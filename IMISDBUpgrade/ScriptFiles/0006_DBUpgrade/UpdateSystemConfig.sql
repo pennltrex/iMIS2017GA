@@ -133,7 +133,44 @@ BEGIN
     @systemUserKey, @now, @systemUserKey, @now,@organizationKey, @systemEntityKey)
 END
 GO
+------------------------------------------------------
+-- Create new variable for the password reset token timeout
+------------------------------------------------------
+EXEC [dbo].[asi_InsertSystemConfig]
+     'Organization', 'AccountManagementRiSE', 'MANAGER',
+     '73193412-48BE-4C6D-987F-E0EA20FA938C',
+     'Authentication.PasswordResetTokenExpireMinutes',
+     'BA591C3B-106D-44C1-BF20-B175AB837A29',
+     14, 14, 2,
+     'The number of minutes the reset password token is good.',
+     '20'
+GO
+------------------------------------------------------
 
+---------------------------------------------
+-- Add 'Authentication.PasswordResetTokenExpireMinutes'
+---------------------------------------------
+DECLARE @systemUserKey uniqueidentifier
+DECLARE @organizationKey uniqueidentifier
+DECLARE @systemEntityKey uniqueidentifier
+DECLARE @now datetime
+
+SELECT @systemUserKey = [UserKey] FROM [dbo].[UserMain] WHERE [UserId] = 'MANAGER'
+SELECT @systemEntityKey = [SystemEntityKey] FROM [dbo].[SystemEntity] WHERE [SystemKeyword] = 'Organization'
+SELECT @organizationKey = [OrganizationKey] FROM [dbo].[OrganizationMain] WHERE [IsDefault] = 1
+SELECT @now = dbo.asi_GetAppDatetime()
+
+IF NOT EXISTS (SELECT 1 FROM [dbo].[SystemConfig] WHERE [ParameterName] = 'Authentication.PasswordResetTokenExpireMinutes')
+BEGIN
+    INSERT INTO [dbo].[SystemConfig] ([SystemConfigKey], [ParameterName], [ParameterValue],
+                                      [Description], [CreatedByUserKey], [CreatedOn], [UpdatedByUserKey], [UpdatedOn],
+                                      [OrganizationKey], [SystemEntityKey])
+    VALUES ('73193412-48BE-4C6D-987F-E0EA20FA938C', 'Authentication.PasswordResetTokenExpireMinutes', '20',
+            '', @systemUserKey, @now, @systemUserKey, @now,
+            @organizationKey, @systemEntityKey)
+END
+GO 
+------------------------------------------------------
 ---------------------------------------------------------------------
 --PBI 60221 Modify the password reset email body text if it has not
 --modified
@@ -300,6 +337,40 @@ BEGIN
             @organizationKey, @systemEntityKey)
 END
 GO
+
+
+------------------------------------------------------
+-- PBI 71496 Create new variable for Session Timeout Warning Message
+------------------------------------------------------
+EXEC [dbo].[asi_InsertSystemConfig]
+     'Organization', 'AccountManagementRiSE', 'MANAGER',
+     '70676BBA-5A63-45F0-9943-DA9A81A736D5',
+     'SessionTimeoutWarningMessage',
+     'AE0EE54C-0432-44C4-8A9B-21D610C3EB78',
+     8, 7, 80,
+     'Body of the warning message for a user session that is about to time out (appears 2 minutes before timeout)',
+     '<h2>You are about to be signed out</h2>
+<p>You will be signed out in <strong>[SecondsRemaining]</strong> seconds due to inactivity. Your changes will not be saved. To continue working on the website, click "Stay Signed In" below.</p>',
+24
+GO
+
+------------------------------------------------------
+-- PBI 71496 Create new variable for Session Was Timed Out Mesasge
+------------------------------------------------------
+EXEC [dbo].[asi_InsertSystemConfig]
+     'Organization', 'AccountManagementRiSE', 'MANAGER',
+     'FC3EFD80-C1ED-4E0A-AC1D-AE50FFD9EC4D',
+     'SessionTimeoutMessageSystemText',
+     'CB664111-0719-4927-8E80-98B62580A4A5',
+     8, 7, 80,
+     'Message after session timeout',
+     'Your session has timed out. Please sign in to continue.',
+     28
+GO
+
+
+
+
 
 ------------------------------------------------------
 -- PBI 62222 Create new variable for enabling auto creation of user accounts

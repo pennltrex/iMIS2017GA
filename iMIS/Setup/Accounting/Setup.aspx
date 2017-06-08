@@ -69,6 +69,26 @@
                 <asiweb:BusinessCheckBox DisplayCaption="True" id="ExportSeperateFilesCheckBox" PositionCaption="Right" RenderPanelField="true" runat="server" />   
             </div>
             
+            <div class="ClearFix"></div>
+                               
+            <div class="PanelField AutoWidth AddPaddingHorizontal">        
+                <asiweb:BusinessCheckBox id="ApplyPCIComplianceCheckBox" runat="server" Text='<%#GetTranslatedPhrase(" Enable PCI compliance for cardholder information")%>' class="PanelFieldValue FloatNone" OnCheckedChanged="ApplyPCIComplianceCheckBox_Changed" />
+            </div>  
+            <div class="ClearFix"></div>
+            <asp:Panel ID="PciRadioButtonsPanel" runat="server" >    
+                <div ID="PciRadioButtonsDiv" class="SubItems" runat="server" translate="yes">                                           
+                    <asiweb:BusinessRadioButtonList DisplayCaption="False" ID="PCIOptionRadioButtonList" RepeatDirection="Vertical" RenderPanelField="False" runat="server" OnSelectedIndexChanged="PCIOptionRadioButtonList_Changed">
+                        <asp:ListItem Text="Do not retain cardholder information" Value="2" />
+                        <asp:ListItem Text="Maintain audit log of cardholder information" Value="1" />
+                    </asiweb:BusinessRadioButtonList>
+                    <div class="AddPaddingVertical">                                         
+                        <div class="AutoWidth">                                       
+                            <asiweb:BusinessLabel runat="server" ID="BusinessLabel1" CssClass="Info" Text='<%#GetTranslatedPhrase("To be PCI Compliant, deferred payments must be purged and disabled.")%>'/>
+                        </div>
+                    </div>                                           
+                </div>                                                                                     
+            </asp:Panel>                 
+
             <div class="SectionLabel Section"><%#GetTranslatedPhrase("DataVault")%></div>
             <div class="AddPaddingHorizontal">
                 <div class="AutoWidth">
@@ -178,9 +198,31 @@
             jQuery('div[data-id="VatInstructions"]').hide();
     }
 
+   AdvancedPciCheckbox_CheckedChanged();
+    function AdvancedPciCheckbox_CheckedChanged()
+    {
+        var advancedPciCheckbox = jQuery("#<%#ApplyPCIComplianceCheckBox.ClientID%>");         
+        if (advancedPciCheckbox != null) {
+            var pciOptionRadioButtonList = jQuery("#<%#PCIOptionRadioButtonList.ClientID%>");
+            var pciRadioButtonsPanel = jQuery("#<%#PciRadioButtonsPanel.ClientID%>");
+            if (advancedPciCheckbox.prop('checked') == true) {
+                pciRadioButtonsPanel.show();
+                var selectedItem = pciOptionRadioButtonList.find(":checked").val();
+                if (selectedItem == null) {
+                    jQuery("#<%#PCIOptionRadioButtonList.ClientID%>_0").attr('checked', 'checked');
+                }               
+            } else {
+                jQuery("#<%#PCIOptionRadioButtonList.ClientID%>_0").removeAttr("checked");
+                jQuery("#<%#PCIOptionRadioButtonList.ClientID%>_1").removeAttr("checked");
+                pciRadioButtonsPanel.hide();
+            }
+        }
+    };
+
     function ShowLoadingPanel() {
-        if (Page_IsValid)
-            jQuery("#<%#LoadingPanel.ClientID%>").show();
+        if (!Page_ClientValidate()) return false;
+        jQuery("[id$='_LoadingPanel']").show();
+        return true;
     }
     //]]>
 </script>

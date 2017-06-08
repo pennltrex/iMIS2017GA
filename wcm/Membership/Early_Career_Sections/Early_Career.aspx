@@ -121,8 +121,7 @@
 			<CM:ContentPage ID="ContentPage2" runat="server" PageNumber="1">
 				<asp:WebPartZone ID="WebPartZone2_Page1" runat="server" PartChromeType="None" WebPartVerbRenderMode="TitleBar" CssClass="WebPartZone ">
 					<ZoneTemplate>
-				<CM:ContentHtml ID="ciNewContentHtml2_2aec3327e298498ea104838260f2c5b1" runat="server" ContentKey="4463dcf2-a446-42d6-ac39-819a2e3b9a2c" ContentItemKey="2aec3327-e298-498e-a104-838260f2c5b1" Title="New ContentHtml_2" ShowTitleFlag="False" ShowBorder="False"><asp:Panel ID="Panel_NewContentHtml2" runat="server"><div class="boxes"><a href="<asiweb:FreeLink runat="server" TargetContent="Young_Physicians" CssClass="FreeLink" Text="" />"><img alt="" src="/images/Stock%20Photos/ostrich.jpg" />
-</a>
+				<CM:ContentHtml ID="ciNewContentHtml2_2aec3327e298498ea104838260f2c5b1" runat="server" ContentKey="4463dcf2-a446-42d6-ac39-819a2e3b9a2c" ContentItemKey="2aec3327-e298-498e-a104-838260f2c5b1" Title="New ContentHtml_2" ShowTitleFlag="False" ShowBorder="False"><asp:Panel ID="Panel_NewContentHtml2" runat="server"><div class="boxes"><img alt="" src="/images/Stock%20Photos/ostrich.jpg" />
 <h1><a href="<asiweb:FreeLink runat="server" TargetContent="Young_Physicians" CssClass="FreeLink" Text="" />">Young Career Section</a></h1>
 <h2><a href="<asiweb:FreeLink runat="server" TargetContent="Young_Physicians" CssClass="FreeLink" Text="" />">For physician members of the WSMA who are either under 40 years of age or within the first ten years of professional practice</a></h2>
 </div></asp:Panel></CM:ContentHtml>

@@ -2582,10 +2582,10 @@ DELETE FROM [dbo].[DocumentMain]
 go
 
 -- @/iCore/Contacts/OrganizationLayouts/Staff/Tabs/2Participation
-DELETE h FROM [dbo].[Hierarchy] h WHERE h.UniformKey = 'ff206039-2e5d-4cd7-bd1b-87be6a5c7d7a' 
+DELETE h FROM [dbo].[Hierarchy] h WHERE h.UniformKey = '0f1f882b-2c3d-4a9a-8769-c9c697299d24' 
 DELETE h FROM [dbo].[Hierarchy] h WHERE h.UniformKey = 'a38e41a6-4437-408c-a6be-fd16cadbfe47' 
 DELETE FROM [dbo].[DocumentMain]
- WHERE [DocumentKey] = 'ff206039-2e5d-4cd7-bd1b-87be6a5c7d7a' 
+ WHERE [DocumentKey] = '0f1f882b-2c3d-4a9a-8769-c9c697299d24' 
 go
 
 -- @/iCore/Fundraising/Donation_Thank_You_Page

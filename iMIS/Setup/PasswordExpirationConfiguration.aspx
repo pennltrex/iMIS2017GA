@@ -129,8 +129,8 @@
             <div class="PanelField AutoWidth">
                 <asiweb:BusinessLabel Text="Password expiration" runat="server" CssClass="h3"></asiweb:BusinessLabel>
             </div>         
-            <div class="PanelField AutoWidth">        
-                <asiweb:BusinessCheckBox id="SysAdminEnforcePasswordExpirationCheckbox" runat="server" Text="Enforce password expiration for system administrators" class="PanelFieldValue FloatNone" />
+            <div class="PanelField AutoWidth FloatNone">        
+                <asiweb:BusinessCheckBox id="SysAdminEnforcePasswordExpirationCheckbox" runat="server" Text="Enforce password expiration for system administrators"/>
             </div>  
             <asp:Panel ID="AdminPasswordExpirationNumberOfDaysPanel" runat="server" >                          
                 <div class="SubItems">      
@@ -140,7 +140,8 @@
                             </div>
                             <div class="PanelFieldValue">
                                 <asiweb:BusinessTextBox runat="server" ID="AdminPasswordExpirationNumberOfDaysTextBox"></asiweb:BusinessTextBox>
-                                <asp:RangeValidator ID="AdminPasswordExpirationNumberOfDaysRangeValidator" ControlToValidate="AdminPasswordExpirationNumberOfDaysTextBox" Type="Integer" MinimumValue="0" MaximumValue="999999" ErrorMessage="Please enter a number between 0 and 999999." Display="Dynamic" runat="server"/>
+                                <asp:RangeValidator ID="AdminPassExpDaysValidator" ControlToValidate="AdminPasswordExpirationNumberOfDaysTextBox" Type="Integer" MinimumValue="0" MaximumValue="999999" ErrorMessage="Please enter a number between 0 and 999999." Display="Dynamic" runat="server"/>
+                                <asp:RangeValidator ID="PCIAdminPassExpDaysValidator" ControlToValidate="AdminPasswordExpirationNumberOfDaysTextBox" Type="Integer" MinimumValue="1" MaximumValue="90" ErrorMessage="Must enter value between 1 and 90 to be PCI compliant." Display="Dynamic" runat="server" Enabled="False"/>
                             </div>
                             <div class="PanelField AutoWidth">                                       
                                 <asiweb:BusinessLabel runat="server" ID="PasswordExpirationForSysAdminsLabel" CssClass="Info" Text="To be PCI Compliant, system administrator passwords must expire within 90 days or less."></asiweb:BusinessLabel>
@@ -148,8 +149,8 @@
                         </div>
                 </div>
             </asp:Panel>        
-            <div class="PanelField AutoWidth">        
-                <asiweb:BusinessCheckBox id="NonAdminEnforcePasswordExpirationCheckbox" runat="server" Text="Enforce password expiration for non-administrators" class="PanelFieldValue FloatNone" />                           
+            <div class="PanelField AutoWidth FloatNone">        
+                <asiweb:BusinessCheckBox id="NonAdminEnforcePasswordExpirationCheckbox" runat="server" Text="Enforce password expiration for non-administrators"/>                           
             </div>
             <asp:Panel ID="NonAdminPasswordExpirationNumberOfDaysPanel" runat="server" >                          
                 <div class="SubItems">      
@@ -168,8 +169,8 @@
             <div class="PanelField AutoWidth">
                 <asiweb:BusinessLabel Text="Password reuse" runat="server" CssClass="h3"></asiweb:BusinessLabel>
             </div>
-            <div class="PanelField AutoWidth">        
-                <asiweb:BusinessCheckBox id="AdminEnforcePasswordHistoryCountCheckbox" runat="server" Text="Prevent password reuse for system administrators" class="PanelFieldValue FloatNone" />
+            <div class="PanelField AutoWidth FloatNone">        
+                <asiweb:BusinessCheckBox id="AdminEnforcePasswordHistoryCountCheckbox" runat="server" Text="Prevent password reuse for system administrators"/>
             </div>  
             <asp:Panel ID="AdminPasswordHistoryCountPanel" runat="server" >                          
                 <div class="SubItems">      
@@ -180,6 +181,7 @@
                             <div class="PanelFieldValue">
                                 <asiweb:BusinessTextBox runat="server" ID="AdminPasswordHistoryCountTextBox"></asiweb:BusinessTextBox>
                                 <asp:RangeValidator ID="AdminPasswordHistoryCountRangeValidator" ControlToValidate="AdminPasswordHistoryCountTextBox" Type="Integer" MinimumValue="0" MaximumValue="999999" ErrorMessage="Please enter a number between 0 and 999999." Display="Dynamic" runat="server"/>
+                                <asp:RangeValidator ID="PCIAdminPasswordHistoryCountRangeValidator" ControlToValidate="AdminPasswordHistoryCountTextBox" Type="Integer" MinimumValue="4" MaximumValue="999999" ErrorMessage="Must enter value between 4 and 999999 to be PCI compliant." Display="Dynamic" runat="server" Enabled="False"/>
                             </div>
                             <div class="PanelField AutoWidth">                                       
                                 <asiweb:BusinessLabel runat="server" ID="PasswordHistoryPciNote" CssClass="Info" Text="To be PCI Compliant, system administrators must not be allowed to reuse any of the last 4 passwords."></asiweb:BusinessLabel>
@@ -187,8 +189,8 @@
                         </div>
                 </div>
             </asp:Panel>        
-           <div class="PanelField AutoWidth">        
-                <asiweb:BusinessCheckBox id="NonAdminEnforcePasswordHistoryCountCheckbox" runat="server" Text="Prevent password reuse for non-administrators" class="PanelFieldValue FloatNone" />                           
+           <div class="PanelField AutoWidth FloatNone">        
+                <asiweb:BusinessCheckBox id="NonAdminEnforcePasswordHistoryCountCheckbox" runat="server" Text="Prevent password reuse for non-administrators"/>                           
             </div>
             <asp:Panel ID="NonAdminPasswordHistoryCountPanel" runat="server" >                          
                 <div class="SubItems">      
@@ -207,8 +209,8 @@
             <div class="PanelField AutoWidth">
                 <asiweb:BusinessLabel Text="Session timeout" runat="server" CssClass="h3"></asiweb:BusinessLabel>
             </div>
-            <div class="PanelField AutoWidth">        
-                <asiweb:BusinessCheckBox id="AdminSessionTimeoutCheckbox" runat="server" Text="Enable session timeout for system administrators" class="PanelFieldValue FloatNone" />
+            <div class="PanelField AutoWidth FloatNone">        
+                <asiweb:BusinessCheckBox id="AdminSessionTimeoutCheckbox" runat="server" Text="Enable session timeout for system administrators"/>
             </div>  
             <asp:Panel ID="AdminSessionTimeoutPanel" runat="server" >                          
                 <div class="SubItems">      
@@ -219,6 +221,7 @@
                             <div class="PanelFieldValue">
                                 <asiweb:BusinessTextBox runat="server" ID="AdminSessionTimeoutTextBox"></asiweb:BusinessTextBox>
                                 <asp:RangeValidator ID="AdminSessionTimeoutValidator" ControlToValidate="AdminSessionTimeoutTextBox" Type="Integer" MinimumValue="0" MaximumValue="999999" ErrorMessage="Please enter a number between 0 and 999999." Display="Dynamic" runat="server"/>
+                                <asp:RangeValidator ID="PCIAdminSessionTimeoutValidator" ControlToValidate="AdminSessionTimeoutTextBox" Type="Integer" MinimumValue="1" MaximumValue="15" ErrorMessage="Must enter value between 1 and 15 to be PCI compliant." Display="Dynamic" runat="server" Enabled="False"/>
                             </div>
                             <div class="PanelField AutoWidth">
                                 <asiweb:BusinessLabel runat="server" ID="KeepMeSignedInNoteAdmin" CssClass="Info" Text='Note: The "Keep me signed in" option will not be honored for system administrators.'></asiweb:BusinessLabel>                                
@@ -229,8 +232,8 @@
                         </div>
                 </div>
             </asp:Panel>  
-             <div class="PanelField AutoWidth">        
-                <asiweb:BusinessCheckBox id="NonAdminSessionTimeoutCheckbox" runat="server" Text="Enable session timeout for non-administrators" class="PanelFieldValue FloatNone" />
+             <div class="PanelField AutoWidth FloatNone">        
+                <asiweb:BusinessCheckBox id="NonAdminSessionTimeoutCheckbox" runat="server" Text="Enable session timeout for non-administrators"/>
             </div>  
             <asp:Panel ID="NonAdminSessionTimeoutPanel" runat="server" >                          
                 <div class="SubItems">      
@@ -252,8 +255,8 @@
                  <div class="PanelField AutoWidth">
                     <asiweb:BusinessLabel Text="Multi-factor authentication" runat="server" CssClass="h3"></asiweb:BusinessLabel>
                 </div>
-                 <div class="PanelField AutoWidth">        
-                    <asiweb:BusinessCheckBox id="MultifactorAuthenticaionCheckBox" runat="server" Text="Enable multi-factor authentication" class="PanelFieldValue FloatNone"  />
+                 <div class="PanelField AutoWidth FloatNone">        
+                    <asiweb:BusinessCheckBox id="MultifactorAuthenticaionCheckBox" runat="server" Text="Enable multi-factor authentication"/>
                 </div>
                 <div class="SubItems">
                     <div class="PanelField AutoWidth">                                       

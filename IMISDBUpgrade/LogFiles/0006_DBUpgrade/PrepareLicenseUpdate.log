@@ -1,0 +1,4 @@
+TRUNCATE TABLE [dbo].[LicenseLegacyMap]
+TRUNCATE TABLE [dbo].[UniformLicense]
+DELETE FROM [dbo].[LicenseRef]
+(77 rows affected)
