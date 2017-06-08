@@ -19,7 +19,7 @@
     {
         return Secondary.GetCurrentNode();
     }
-
+	/// Just a line of text to test GIT.
     /// <summary>
     /// Provides information about content areas that this template uses.
     /// </summary>
